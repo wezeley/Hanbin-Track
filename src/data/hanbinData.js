@@ -2,8 +2,8 @@ export const HANBIN_DATA = {
   botName: "HANBIN TRACKER",
   // Nova lista de categorias
   categories: [
-    "Boygroups", 
-    "Girlgroups", 
+    "Boy Group", 
+    "Girl Group", 
     "Soloists", 
     "Co-Ed", 
     "Duos", 
@@ -131,7 +131,7 @@ export const HANBIN_DATA = {
     {
     name: "Mark Tuan",
     code: "MK",
-    category: "Soloist",
+    category: "Soloists",
     folder: "Mark Tuan", // Pasta física: public/cards/IU/
     members: [
       { name: "Mark Tuan", code: "MK", offset: 5 } // Apenas ela
@@ -144,7 +144,7 @@ export const HANBIN_DATA = {
       {
     name: "Cha Eunwoo",
     code: "EW",
-    category: "Soloist",
+    category: "Soloists",
     folder: "Cha Eunwoo", // Pasta física: public/cards/Cha Eunwoo/
     members: [
       { name: "Cha Eunwoo", code: "EW", offset: 0 } // Apenas ela
@@ -157,7 +157,7 @@ export const HANBIN_DATA = {
       {
     name: "From20",
     code: "FM",
-    category: "Soloist",
+    category: "Soloists",
     folder: "From20", // Pasta física: public/cards/From20/
     members: [
       { name: "From20", code: "FM", offset: 0 } // Apenas ela
