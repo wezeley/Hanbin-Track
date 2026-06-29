@@ -44,7 +44,12 @@ header { margin-bottom: 20px; text-align: center; }
 .group-tile:hover { border-color: var(--accent-color); color: var(--accent-color); }
 
 /* Cartas */
-.rarities-container { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
+.rarities-container { display: flex; flex-wrap: wrap; gap: 40px; justify-content: center; align-items: flex-start;
+  width: 100%;  margin-top: 20px;}
+  .rarity-row {
+  flex: 0 1 auto;
+  margin-bottom: 20px; /* Espaço extra caso elas quebrem para a linha de baixo */
+}
 .grid { display: flex; gap: 6px; }
 .card { width: 85px; cursor: pointer; }
 .card-inner { width: 85px; height: 128px; border-radius: 5px; overflow: hidden; border: 1px solid #222; }

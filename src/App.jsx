@@ -14,18 +14,29 @@ function App() {
 
   useEffect(() => localStorage.setItem('hanbin-collection', JSON.stringify(ownedCards)), [ownedCards]);
 
+  // Função para marcar/desmarcar cartas
   const toggleCard = (id) => setOwnedCards(prev => prev.includes(id) ? prev.filter(x => x !== id) : [...prev, id]);
+  
+  // Função para voltar para a Home clicando no Título
   const resetNavigation = () => { setActiveTab(null); setSelectedGroup(null); };
-  const handleTabChange = (cat) => {  setActiveTab(cat);  setSelectedGroup(null); // Isso força a volta para os quadradinhos (tiles)
-};
+
+  // CORREÇÃO AQUI: Função que muda a aba e fecha qualquer grupo aberto
+  const handleTabChange = (cat) => {  
+    setActiveTab(cat);  
+    setSelectedGroup(null); 
+  };
 
   const baseUrl = import.meta.env.BASE_URL;
 
-  // Lógica de Estatísticas
+  // Lógica de Estatísticas para o Dashboard
   const totalAvailable = HANBIN_DATA.groups.reduce((acc, g) => acc + (g.members.length * g.sets.length * 5), 0);
+  
   const statsByCategory = HANBIN_DATA.categories.map(cat => {
     const groupsInCat = HANBIN_DATA.groups.filter(g => g.category?.trim() === cat.trim());
-    const ownedInCat = ownedCards.filter(id => groupsInCat.some(g => g.code === id.split('#')[0])).length;
+    const ownedInCat = ownedCards.filter(id => {
+        const groupCode = id.split('#')[0];
+        return groupsInCat.some(g => g.code === groupCode);
+    }).length;
     const totalInCat = groupsInCat.reduce((acc, g) => acc + (g.members.length * g.sets.length * 5), 0);
     return { name: cat, count: ownedInCat, total: totalInCat };
   });
@@ -34,35 +45,64 @@ function App() {
 
   return (
     <div className="container">
+      {/* Header e Tabs agora usam as funções de reset/mudança corretamente */}
       <Header title={HANBIN_DATA.botName} onHome={resetNavigation} />
       
-      <Tabs categories={HANBIN_DATA.categories} activeTab={activeTab} onTabChange={setActiveTab} />
+      <Tabs 
+        categories={HANBIN_DATA.categories} 
+        activeTab={activeTab} 
+        onTabChange={handleTabChange} 
+      />
 
       <main className="content-area">
         {!activeTab ? (
-          <Dashboard ownedCount={ownedCards.length} totalAvailable={totalAvailable} stats={statsByCategory} onTabChange={setActiveTab} />
+          /* Dashboard agora também reseta o grupo se clicar numa categoria */
+          <Dashboard 
+            ownedCount={ownedCards.length} 
+            totalAvailable={totalAvailable} 
+            stats={statsByCategory} 
+            onTabChange={handleTabChange} 
+          />
         ) : !selectedGroup ? (
           <GroupGrid groups={filteredGroups} onSelectGroup={setSelectedGroup} />
         ) : (
           <div className="focused-group-view">
             <button className="back-button" onClick={() => setSelectedGroup(null)}>← BACK</button>
             <h2 className="focused-group-name">{selectedGroup.name}</h2>
+            
             {selectedGroup.sets.map(set => (
               <div key={set.id} className="set-section">
                 <div className="set-symbol-container">
-                  <img src={`${baseUrl}symbols/S${set.id}.webp`} alt="S" className="set-symbol-icon" />
+                  <img 
+                    src={`${baseUrl}symbols/S${set.id}.png`} // Ajuste para .webp se necessário
+                    alt="S" 
+                    className="set-symbol-icon" 
+                    onError={(e) => e.target.style.display = 'none'}
+                  />
                 </div>
+
+                {/* CONTAINER PARA RARIDADES LADO A LADO */}
                 <div className="rarities-container">
                   {HANBIN_DATA.rarities.map(rarity => (
                     <div key={rarity} className="rarity-row">
                       <div className="grid">
                         {selectedGroup.members.map(member => {
-                          const seq = ((set.id - 1) * 5) + rarity + (member.offset || 0);
+                          const rarityOffset = member.offset || 0;
+                          const seq = ((set.id - 1) * 5) + rarity + rarityOffset;
                           const botId = `${selectedGroup.code}#${member.code}${String(seq).padStart(3, '0')}`;
                           const folder = (selectedGroup.folder || selectedGroup.code).toUpperCase();
+                          
+                          // Verifique se no seu GitHub é .png ou .webp
                           const imgPath = `${baseUrl}cards/${folder}/${encodeURIComponent(botId).toUpperCase()}.png`;
+                          
                           return (
-                            <Card key={botId} botId={botId} imagePath={imgPath} isOwned={ownedCards.includes(botId)} onToggle={toggleCard} />
+                            <Card 
+                                key={botId} 
+                                botId={botId} 
+                                imagePath={imgPath} 
+                                isOwned={ownedCards.includes(botId)} 
+                                onToggle={toggleCard} 
+                            />
                           );
                         })}
                       </div>
