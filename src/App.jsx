@@ -68,9 +68,18 @@ function App() {
 
             <h2 className="focused-group-name">{selectedGroup.name}</h2>
 
-            {selectedGroup.sets.map((set) => (
-              <div key={set.id} className="set-section">
-                <h3 className="set-title-display">{set.name}</h3>
+           {selectedGroup.sets.map((set) => (
+  <div key={set.id} className="set-section">
+    
+    {/* ÁREA DO SÍMBOLO DO SET */}
+    <div className="set-symbol-container">
+      <img 
+        src={`${baseUrl}symbols/S${set.id}.png`} 
+        alt={`Set ${set.id}`} 
+        className="set-symbol-icon"
+        onError={(e) => e.target.style.display = 'none'} // Esconde se não houver imagem
+      />
+    </div>
                 
                 {HANBIN_DATA.rarities.map((rarityLevel) => (
                   <div key={rarityLevel} className="rarity-row">
