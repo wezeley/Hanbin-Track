@@ -1,174 +1,65 @@
-/* Configurações Globais */
-:root {
-  --bg-color: #121212;
-  --card-bg: #1e1e1e;
-  --text-primary: #ffffff;
-  --text-secondary: #b3b3b3;
-  --accent-color: #ff4757; /* Cor das cartas que você tem */
-  --missing-opacity: 0.4;
+/* Reset básico para garantir que nada interfira */
+* {
+  box-sizing: border-box;
 }
 
 body {
-  background-color: var(--bg-color);
-  color: var(--text-primary);
-  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: #121212;
+  color: white;
+  font-family: sans-serif;
   margin: 0;
   padding: 20px;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-/* Header */
-header {
-  text-align: center;
-  margin-bottom: 40px;
-  border-bottom: 1px solid #333;
-  padding-bottom: 20px;
-}
-
-.title {
-  font-size: 2.5rem;
-  margin: 0;
-  color: var(--text-primary);
-}
-
-.subtitle {
-  color: var(--accent-color);
-  font-weight: bold;
-  font-size: 1.2rem;
-}
-
-/* Accordions (Grupos e Sets) */
-.group-accordion, .set-accordion {
-  background: var(--card-bg);
-  border-radius: 12px;
-  margin-bottom: 15px;
-  border: 1px solid #333;
-  overflow: hidden;
-}
-
-.group-header, .set-header {
-  padding: 15px 20px;
-  font-weight: bold;
-  cursor: pointer;
-  background: #252525;
-  user-select: none;
-  transition: background 0.2s;
-}
-
-.group-header:hover, .set-header:hover {
-  background: #303030;
-}
-
-.group-content, .set-content {
-  padding: 20px;
-}
-
-/* Linha de Raridade */
-.rarity-row {
-  margin-bottom: 30px;
-}
-
-.rarity-row h3 {
-  border-left: 4px solid var(--accent-color);
-  padding-left: 15px;
-  margin-bottom: 15px;
-  font-size: 1.1rem;
-  text-transform: uppercase;
-  color: var(--text-secondary);
-}
-
-/* --- O GRID MÁGICO --- */
+/* O CONTAINER DO GRID */
 .grid {
-  display: grid;
-  /* Isso faz caber 4, 13 ou 24 pessoas. 
-     Ele cria colunas de no mínimo 100px e no máximo 1fr (espaço disponível) */
-  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-  gap: 12px;
-  justify-items: center; /* Centraliza as cartas no espaço delas */
+  display: grid !important;
+  /* Isso força as colunas a terem no máximo 120px */
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)) !important;
+  gap: 15px !important;
+  padding: 20px 0;
+  width: 100%;
 }
 
-/* --- A CARTA --- */
+/* A CARTA (O CONTAINER) */
 .card {
-  width: 100px; /* Largura fixa para ficar uniforme */
+  width: 120px !important; /* FORÇA A LARGURA */
   cursor: pointer;
-  transition: all 0.2s ease-in-out;
-  position: relative;
+  transition: transform 0.2s;
 }
 
+/* O QUADRADO ONDE A IMAGEM FICA */
 .card-inner {
-  width: 100%;
-  height: 150px; /* Proporção padrão de card de bot */
-  background: #000;
-  border-radius: 6px;
+  width: 120px !important;
+  height: 180px !important; /* FORÇA A ALTURA */
   overflow: hidden;
+  border-radius: 8px;
   border: 2px solid #333;
-  transition: all 0.2s;
+  background: #000;
 }
 
+/* A IMAGEM DENTRO DA CARTA */
 .card-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Faz a imagem caber sem achatar */
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important; /* FAZ ENCAIXAR SEM DISTORCER */
   display: block;
 }
 
-.card-id-label {
-  font-size: 0.7rem;
-  margin-top: 5px;
-  text-align: center;
-  color: var(--text-secondary);
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis; /* Corta o texto se for muito longo */
+/* EFEITO DE QUANDO VOCÊ TEM A CARTA */
+.card.owned .card-inner {
+  border-color: #ff4757 !important;
+  box-shadow: 0 0 10px rgba(255, 71, 87, 0.5);
 }
 
-/* --- ESTADOS DA CARTA --- */
-
-/* Quando você NÃO tem a carta */
 .card:not(.owned) .card-inner {
-  opacity: var(--missing-opacity);
+  opacity: 0.4;
   filter: grayscale(1);
 }
 
-/* Quando você TEM a carta */
-.card.owned .card-inner {
-  opacity: 1;
-  filter: grayscale(0);
-  border-color: var(--accent-color);
-  box-shadow: 0 0 10px rgba(255, 71, 87, 0.3);
-}
-
-/* Efeito Hover */
-.card:hover {
-  transform: translateY(-5px);
-}
-
-.card:hover .card-inner {
-  opacity: 1;
-  filter: grayscale(0);
-  border-color: #eee;
-}
-
-/* Responsividade para Celular */
-@media (max-width: 480px) {
-  .grid {
-    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
-    gap: 8px;
-  }
-  
-  .card {
-    width: 80px;
-  }
-  
-  .card-inner {
-    height: 120px;
-  }
-  
-  .title {
-    font-size: 1.8rem;
-  }
+.card-id-label {
+  font-size: 11px;
+  text-align: center;
+  color: #aaa;
+  margin-top: 5px;
 }
