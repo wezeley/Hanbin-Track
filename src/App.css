@@ -1,66 +1,157 @@
-/* Isso vai resetar tudo e forçar o tamanho */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+
+:root {
+  --bg-color: #0f0f0f;
+  --panel-bg: #1a1a1a;
+  --accent-color: #00d4ff; /* Cor Neon para coleções */
+  --owned-color: #00ff88;  /* Cor para quando você tem a carta */
+  --text-main: #ffffff;
+  --text-dim: #888888;
+}
+
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body {
-  background-color: #121212 !important;
-  color: white !important;
-  padding: 20px;
-  font-family: sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
 }
 
-/* Força o grid a não deixar as coisas escaparem */
-.grid {
-  display: flex !important;
-  flex-wrap: wrap !important;
-  gap: 10px !important;
-  justify-content: center;
-  width: 100%;
+.container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
 }
 
-/* FORÇA O TAMANHO DA CARTA A QUALQUER CUSTO */
-.card, [class*="card"] {
-  width: 110px !important;
-  margin: 5px;
-}
-
-/* FORÇA O CONTAINER DA IMAGEM */
-.card-inner, [class*="card-inner"] {
-  width: 110px !important;
-  height: 160px !important;
-  overflow: hidden !important;
-  border: 1px solid #444;
-  border-radius: 8px;
-}
-
-/* FORÇA A IMAGEM A ENCOLHER */
-.card-image, .card img, img {
-  width: 110px !important;  /* Largura fixa */
-  height: 160px !important; /* Altura fixa */
-  object-fit: cover !important;
-  display: block !important;
-}
-
-/* Esconde o ID se ele for muito grande */
-.card-id-label {
-  font-size: 10px !important;
+header {
   text-align: center;
+  margin-bottom: 50px;
+}
+
+.title {
+  font-weight: 800;
+  font-size: 3rem;
+  letter-spacing: -2px;
+  background: linear-gradient(to right, #00d4ff, #00ff88);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+  color: var(--text-dim);
+  font-size: 1.1rem;
+}
+
+/* --- ACCORDIONS (GRUPOS) --- */
+.group-accordion {
+  background: var(--panel-bg);
+  border-radius: 16px;
+  margin-bottom: 20px;
+  border: 1px solid #2a2a2a;
+  transition: all 0.3s ease;
+}
+
+.group-accordion[open] {
+  border-color: var(--accent-color);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.group-header {
+  padding: 20px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  list-style: none; /* Esconde a setinha padrão */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.group-header::after {
+  content: '→';
+  transition: transform 0.3s;
+  color: var(--accent-color);
+}
+
+.group-accordion[open] .group-header::after {
+  transform: rotate(90deg);
+}
+
+/* --- GRID E CARDS --- */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+  gap: 15px;
+  padding: 20px;
+}
+
+.card {
   width: 110px;
+  cursor: pointer;
+  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card:hover {
+  transform: scale(1.08);
+}
+
+.card-inner {
+  width: 110px;
+  height: 165px;
+  border-radius: 12px;
   overflow: hidden;
+  background: #000;
+  border: 2px solid #333;
+  position: relative;
 }
 
-/* Quando você tem a carta */
-.owned .card-inner {
-  border: 2px solid #ff4757 !important;
-  opacity: 1 !important;
-  filter: none !important;
+.card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: filter 0.3s;
 }
 
-/* Quando NÃO tem a carta */
-.card:not(.owned) .card-inner {
-  opacity: 0.3 !important;
-  filter: grayscale(1) !important;
+/* Estado da carta: Não Tenho */
+.card:not(.owned) .card-image {
+  filter: grayscale(1) brightness(0.4);
+}
+
+.card:not(.owned):hover .card-image {
+  filter: grayscale(0.5) brightness(0.7);
+}
+
+/* Estado da carta: Tenho */
+.card.owned .card-inner {
+  border-color: var(--owned-color);
+  box-shadow: 0 0 15px rgba(0, 255, 136, 0.4);
+}
+
+.card.owned .card-image {
+  filter: grayscale(0) brightness(1);
+}
+
+.card-id-label {
+  font-size: 0.65rem;
+  color: var(--text-dim);
+  text-align: center;
+  margin-top: 8px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* Estilo para as Raridades (Hearts) */
+.rarity-row h3 {
+  font-size: 0.9rem;
+  color: var(--accent-color);
+  margin: 20px 20px 10px 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-bottom: 1px solid #333;
+  padding-bottom: 5px;
 }
