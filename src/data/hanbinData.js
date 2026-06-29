@@ -119,17 +119,43 @@ export const HANBIN_DATA = {
       sets: [{ id: 1, name: "Set 1" }]
     },
     {
-      name: "Soloist",
-      code: "SOLO",
-      category: "Soloist",
-      members: [
-        { name: "Mark Tuan", code: "MK" },
-        { name: "Cha Eunwoo", code: "EW" },
-        { name: "XngHan", code: "XH" },
-        { name: "From20", code: "FM" },
-        { name: "Kangmin", code: "KM" }
-      ],
-      sets: [{ id: 1, name: "Set 1" }]
-    }
+    name: "Mark Tuan",
+    code: "MK",
+    category: "Soloist",
+    folder: "Mark Tuan", // Pasta física: public/cards/IU/
+    members: [
+      { name: "Mark Tuan", code: "MK", offset: 5 } // Apenas ela
+    ],
+    sets: [
+      { id: 1, name: "Set 1" },
+      { id: 2, name: "Set 2" }
+    ]
+  },
+      {
+    name: "Cha Eunwoo",
+    code: "EW",
+    category: "Soloist",
+    folder: "Cha Eunwoo", // Pasta física: public/cards/Cha Eunwoo/
+    members: [
+      { name: "Cha Eunwoo", code: "EW", offset: 0 } // Apenas ela
+    ],
+    sets: [
+      { id: 1, name: "Set 1" },
+      { id: 2, name: "Set 2" }
+    ]
+  },
+      {
+    name: "From20",
+    code: "FM",
+    category: "Soloist",
+    folder: "From20", // Pasta física: public/cards/From20/
+    members: [
+      { name: "From20", code: "FM", offset: 0 } // Apenas ela
+    ],
+    sets: [
+      { id: 1, name: "Set 1" },
+      { id: 2, name: "Set 2" }
+    ]
+  },
   ]
 };

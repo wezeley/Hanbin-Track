@@ -74,7 +74,7 @@ function App() {
     {/* ÁREA DO SÍMBOLO DO SET */}
     <div className="set-symbol-container">
       <img 
-        src={`${baseUrl}symbols/S${set.id}.png`} 
+        src={`${baseUrl}symbols/S${set.id}.webp`} 
         alt={`Set ${set.id}`} 
         className="set-symbol-icon"
         onError={(e) => e.target.style.display = 'none'} // Esconde se não houver imagem
@@ -87,10 +87,10 @@ function App() {
                       {selectedGroup.members.map((member) => {
                         // Procure a parte onde a imagem é gerada dentro do loop e use isto:
 
-                       const sequenceNumber = ((set.id - 1) * 5) + rarityLevel;
-                       const formattedNumber = String(sequenceNumber).padStart(3, '0');
+                       const rarityOffset = member.offset || 0; // Pega o offset ou 0 se não existir
+                       const sequenceNumber = ((set.id - 1) * 5) + rarityLevel + rarityOffset;
 
-                       // botId continua usando o .code (Ex: ATM#K001)
+                       const formattedNumber = String(sequenceNumber).padStart(3, '0');
                        const botId = `${selectedGroup.code}#${member.code}${formattedNumber}`;
 
                        // --- LOGICA DE CAMINHO COM PASTA PERSONALIZADA ---
