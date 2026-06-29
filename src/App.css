@@ -1,51 +1,167 @@
-/* GRID DE QUADRADINHOS DOS GRUPOS */
-.group-tiles-grid {
-  display: grid;
-  /* Cria os quadradinhos conforme o seu esboço */
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  gap: 20px;
-  padding: 20px 0;
-  animation: fadeIn 0.4s ease;
+@import url('https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&family=Inter:wght@300;600;800&display=swap');
+
+:root {
+  --bg-color: #0a0a0a;
+  --card-bg: #161616;
+  --accent-color: #00f2ff;
+  --owned-color: #00ff88;
+  --text-dim: #666;
 }
 
-/* CADA QUADRADINHO */
-.group-tile {
-  background: rgba(255, 255, 255, 0.05);
-  border: 2px solid rgba(255, 255, 255, 0.1);
-  border-radius: 15px; /* Arredondado igual ao seu esboço */
-  height: 80px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: white;
+  font-family: 'Inter', sans-serif;
+  padding: 20px;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.title {
+  font-family: 'Syncopate', sans-serif;
+  letter-spacing: 10px;
+  font-size: 2.5rem;
+  background: linear-gradient(to right, #fff, #444);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 10px;
+}
+
+/* --- ABAS GIGANTES E ESPAÇADAS --- */
+.tabs-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+  margin-bottom: 50px;
+  width: 100%;
+}
+
+.tab-button {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--text-dim);
+  padding: 35px 20px; /* Bem grande e espaçoso */
   font-family: 'Syncopate', sans-serif;
   font-size: 0.8rem;
-  font-weight: bold;
+  font-weight: 700;
   cursor: pointer;
+  border-radius: 15px;
   transition: all 0.3s ease;
-  text-align: center;
-  padding: 10px;
+  text-transform: uppercase;
   letter-spacing: 2px;
 }
 
-.group-tile:hover {
-  background: white;
-  color: black;
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1);
-  border-color: white;
+.tab-button:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: white;
+  transform: translateY(-3px);
 }
 
-/* BOTÃO DE VOLTAR */
-.back-button {
-  background: transparent;
-  border: 1px solid #444;
-  color: #888;
-  padding: 8px 15px;
-  border-radius: 5px;
+.tab-button.active {
+  background: white;
+  color: black;
+  border-color: white;
+  box-shadow: 0 10px 30px rgba(255, 255, 255, 0.2);
+}
+
+/* --- QUADRADINHOS DOS GRUPOS (TILES) --- */
+.group-tiles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 20px;
+  animation: fadeIn 0.5s ease;
+}
+
+.group-tile {
+  background: #111;
+  border: 1px solid #222;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  font-family: 'Syncopate', sans-serif;
+  font-size: 0.75rem;
   cursor: pointer;
-  font-size: 0.7rem;
-  margin-bottom: 20px;
   transition: all 0.3s;
+  padding: 15px;
+  text-align: center;
+}
+
+.group-tile:hover {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+  background: rgba(0, 242, 255, 0.05);
+  transform: scale(1.05);
+}
+
+/* --- CONTROLE DAS IMAGENS (PARA NÃO FICAREM GIGANTES) --- */
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.card {
+  width: 100px !important; /* LARGURA FIXA */
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.card-inner {
+  width: 100px !important;
+  height: 150px !important; /* ALTURA FIXA */
+  border-radius: 10px;
+  overflow: hidden;
+  background: #000;
+  border: 1px solid #333;
+}
+
+.card-image {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important; /* ENCAIXA A FOTO SEM DISTORCER */
+  display: block;
+}
+
+/* --- ESTADOS DA COLEÇÃO --- */
+.card:not(.owned) .card-image {
+  filter: grayscale(1) brightness(0.2);
+}
+
+.card.owned .card-inner {
+  border-color: var(--owned-color);
+  box-shadow: 0 0 15px rgba(0, 255, 136, 0.3);
+}
+
+/* --- BOTÃO VOLTAR E TÍTULOS --- */
+.back-button {
+  background: none;
+  border: 1px solid #333;
+  color: var(--text-dim);
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 30px;
+  font-size: 0.7rem;
+  text-transform: uppercase;
 }
 
 .back-button:hover {
@@ -55,17 +171,25 @@
 
 .focused-group-name {
   font-family: 'Syncopate', sans-serif;
-  font-size: 2rem;
-  margin-bottom: 30px;
   text-align: center;
-  color: white;
+  font-size: 2rem;
+  margin-bottom: 40px;
+  letter-spacing: 5px;
 }
 
 .set-title-display {
+  font-size: 0.8rem;
+  color: var(--text-dim);
   text-align: center;
-  font-size: 0.9rem;
-  color: #555;
-  margin-bottom: 20px;
-  text-transform: uppercase;
-  letter-spacing: 5px;
+  letter-spacing: 4px;
+  margin: 40px 0 10px 0;
+}
+
+.card-id-label {
+  display: none; /* Mantém limpo, só mostra a carta */
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }

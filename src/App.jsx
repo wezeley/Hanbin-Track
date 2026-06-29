@@ -9,15 +9,12 @@ function App() {
   });
 
   const [activeTab, setActiveTab] = useState(HANBIN_DATA.categories[0]);
-  
-  // NOVO: Estado para o grupo selecionado
   const [selectedGroup, setSelectedGroup] = useState(null);
 
   useEffect(() => {
     localStorage.setItem('hanbin-collection', JSON.stringify(ownedCards));
   }, [ownedCards]);
 
-  // Resetar o grupo selecionado quando mudar de aba
   useEffect(() => {
     setSelectedGroup(null);
   }, [activeTab]);
@@ -38,7 +35,6 @@ function App() {
         <p className="subtitle">COLLECTED: {ownedCards.length}</p>
       </header>
 
-      {/* ABAS SUPERIORES */}
       <nav className="tabs-container">
         {HANBIN_DATA.categories.map((cat) => (
           <button 
@@ -52,7 +48,6 @@ function App() {
       </nav>
 
       <main className="content-area">
-        {/* SE NÃO HÁ GRUPO SELECIONADO: MOSTRA OS QUADRADINHOS (TILES) */}
         {!selectedGroup ? (
           <div className="group-tiles-grid">
             {filteredGroups.map(group => (
@@ -61,12 +56,11 @@ function App() {
                 className="group-tile"
                 onClick={() => setSelectedGroup(group)}
               >
-                {group.name}
+                {group.name.toUpperCase()}
               </div>
             ))}
           </div>
         ) : (
-          /* SE HÁ UM GRUPO SELECIONADO: MOSTRA O CONTEÚDO DELE */
           <div className="focused-group-view">
             <button className="back-button" onClick={() => setSelectedGroup(null)}>
               ← VOLTAR PARA {activeTab.toUpperCase()}
@@ -84,8 +78,15 @@ function App() {
                       {selectedGroup.members.map((member) => {
                         const sequenceNumber = ((set.id - 1) * 5) + rarityLevel;
                         const formattedNumber = String(sequenceNumber).padStart(3, '0');
+                        
+                        // Geramos o botId
                         const botId = `${selectedGroup.code}#${member.code}${formattedNumber}`;
-                        const imagePath = `${baseUrl}cards/${encodeURIComponent(botId).toUpperCase()}.png`;
+                        
+                        // FORÇAMOS TUDO PARA MAIÚSCULO NO CAMINHO
+                        const folder = selectedGroup.code.toUpperCase();
+                        const fileName = encodeURIComponent(botId).toUpperCase();
+                        const imagePath = `${baseUrl}cards/${folder}/${fileName}.png`;
+                        
                         const isOwned = ownedCards.includes(botId);
 
                         return (
