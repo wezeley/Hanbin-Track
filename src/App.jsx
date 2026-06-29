@@ -3,26 +3,33 @@ import './App.css'
 import { HANBIN_DATA } from './data/hanbinData'
 
 function App() {
-  // Estado para salvar as cartas que você possui no navegador
   const [ownedCards, setOwnedCards] = useState(() => {
     const saved = localStorage.getItem('hanbin-collection');
     return saved ? JSON.parse(saved) : [];
   });
 
-  // Salva no localStorage sempre que mudar a coleção
+  const [activeTab, setActiveTab] = useState(HANBIN_DATA.categories[0]);
+  
+  // NOVO: Estado para o grupo selecionado
+  const [selectedGroup, setSelectedGroup] = useState(null);
+
   useEffect(() => {
     localStorage.setItem('hanbin-collection', JSON.stringify(ownedCards));
   }, [ownedCards]);
 
-  // Função para marcar/desmarcar carta
+  // Resetar o grupo selecionado quando mudar de aba
+  useEffect(() => {
+    setSelectedGroup(null);
+  }, [activeTab]);
+
   const toggleCard = (cardId) => {
     setOwnedCards(prev => 
       prev.includes(cardId) ? prev.filter(id => id !== cardId) : [...prev, cardId]
     );
   };
 
-  // Caminho base para as imagens (ajusta automaticamente para GitHub Pages ou Local)
   const baseUrl = import.meta.env.BASE_URL;
+  const filteredGroups = HANBIN_DATA.groups.filter(group => group.category === activeTab);
 
   return (
     <div className="container">
@@ -31,36 +38,53 @@ function App() {
         <p className="subtitle">COLLECTED: {ownedCards.length}</p>
       </header>
 
-      {/* LOOP 1: GRUPOS (AESPA, IVE, BLACKPINK...) */}
-      {HANBIN_DATA.groups.map((group) => (
-        /* Removido o 'open' para que os grupos comecem FECHADOS */
-        <details key={group.code} className="group-accordion">
-          <summary className="group-header">
-            {group.name}
-          </summary>
-          
-          <div className="group-content">
-            {/* LOOP 2: SETS (v1, v2, got the beat...) */}
-            {group.sets.map((set) => (
+      {/* ABAS SUPERIORES */}
+      <nav className="tabs-container">
+        {HANBIN_DATA.categories.map((cat) => (
+          <button 
+            key={cat}
+            className={`tab-button ${activeTab === cat ? 'active' : ''}`}
+            onClick={() => setActiveTab(cat)}
+          >
+            {cat}
+          </button>
+        ))}
+      </nav>
+
+      <main className="content-area">
+        {/* SE NÃO HÁ GRUPO SELECIONADO: MOSTRA OS QUADRADINHOS (TILES) */}
+        {!selectedGroup ? (
+          <div className="group-tiles-grid">
+            {filteredGroups.map(group => (
+              <div 
+                key={group.code} 
+                className="group-tile"
+                onClick={() => setSelectedGroup(group)}
+              >
+                {group.name}
+              </div>
+            ))}
+          </div>
+        ) : (
+          /* SE HÁ UM GRUPO SELECIONADO: MOSTRA O CONTEÚDO DELE */
+          <div className="focused-group-view">
+            <button className="back-button" onClick={() => setSelectedGroup(null)}>
+              ← VOLTAR PARA {activeTab.toUpperCase()}
+            </button>
+
+            <h2 className="focused-group-name">{selectedGroup.name}</h2>
+
+            {selectedGroup.sets.map((set) => (
               <div key={set.id} className="set-section">
-                {/* Nome do Set opcional aqui - Se quiser remover, apague a linha abaixo */}
-                <h2 className="set-title-display">{set.name}</h2>
+                <h3 className="set-title-display">{set.name}</h3>
                 
-                {/* LOOP 3: RARIDADES (1 a 5 Hearts) */}
                 {HANBIN_DATA.rarities.map((rarityLevel) => (
                   <div key={rarityLevel} className="rarity-row">
-                    
-                    {/* AQUI ESTAVA O TEXTO "1 Hearts" - ELE FOI REMOVIDO PARA FICAR LIMPO */}
-                    
                     <div className="grid">
-                      {/* LOOP 4: MEMBROS DO GRUPO */}
-                      {group.members.map((member) => {
-                        // Lógica para gerar o ID igual ao do bot do Discord
+                      {selectedGroup.members.map((member) => {
                         const sequenceNumber = ((set.id - 1) * 5) + rarityLevel;
                         const formattedNumber = String(sequenceNumber).padStart(3, '0');
-                        const botId = `${group.code}#${member.code}${formattedNumber}`;
-                        
-                        // Caminho da imagem (forçando maiúsculas para não dar erro no GitHub)
+                        const botId = `${selectedGroup.code}#${member.code}${formattedNumber}`;
                         const imagePath = `${baseUrl}cards/${encodeURIComponent(botId).toUpperCase()}.png`;
                         const isOwned = ownedCards.includes(botId);
 
@@ -77,13 +101,11 @@ function App() {
                                 className="card-image"
                                 loading="lazy"
                                 onError={(e) => { 
-                                  // Caso a imagem não exista na pasta, mostra um placeholder
                                   e.target.onerror = null; 
                                   e.target.src = 'https://via.placeholder.com/110x165?text=?'; 
                                 }}
                               />
                             </div>
-                            {/* Opcional: ID da carta - O CSS que te mandei antes esconde isso para ficar limpo */}
                             <p className="card-id-label">{botId}</p>
                           </div>
                         );
@@ -94,8 +116,8 @@ function App() {
               </div>
             ))}
           </div>
-        </details>
-      ))}
+        )}
+      </main>
     </div>
   );
 }

@@ -1,137 +1,71 @@
-@import url('https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&family=Inter:wght@300;600&display=swap');
-
-:root {
-  --bg-color: #0a0a0a;
-  --glass-bg: rgba(255, 255, 255, 0.03);
-  --glass-border: rgba(255, 255, 255, 0.1);
-  --accent-pink: #ff007a;
-  --accent-blue: #00f2ff;
+/* GRID DE QUADRADINHOS DOS GRUPOS */
+.group-tiles-grid {
+  display: grid;
+  /* Cria os quadradinhos conforme o seu esboço */
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 20px;
+  padding: 20px 0;
+  animation: fadeIn 0.4s ease;
 }
 
-body {
-  background-color: var(--bg-color);
-  background-image: 
-    radial-gradient(circle at 10% 20%, rgba(255, 0, 122, 0.05) 0%, transparent 20%),
-    radial-gradient(circle at 90% 80%, rgba(0, 242, 255, 0.05) 0%, transparent 20%);
-  color: white;
-  font-family: 'Inter', sans-serif;
-  margin: 0;
-  padding: 20px;
-}
-
-.container {
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
-/* Título estilo Template */
-header {
-  margin: 40px 0;
-  text-align: center;
-}
-
-.title {
-  font-family: 'Syncopate', sans-serif;
-  text-transform: uppercase;
-  font-weight: 700;
-  letter-spacing: 8px;
-  font-size: 2.5rem;
-  margin-bottom: 10px;
-  background: linear-gradient(to right, #fff, #666);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-/* Accordion Estilo Painel de Vidro */
-.group-accordion {
-  background: var(--glass-bg);
-  backdrop-filter: blur(10px);
-  border: 1px solid var(--glass-border);
-  border-radius: 20px;
-  margin-bottom: 30px;
-  padding: 10px;
-}
-
-.group-header {
-  padding: 20px;
-  font-family: 'Syncopate', sans-serif;
-  font-size: 1rem;
-  letter-spacing: 3px;
-  cursor: pointer;
-  list-style: none;
-  text-align: center;
-  color: var(--accent-blue);
-}
-
-/* Removemos as bordas chatas das linhas de raridade */
-.rarity-row {
-  margin-bottom: 10px;
-}
-
-/* Grid compacto como nos templates */
-.grid {
+/* CADA QUADRADINHO */
+.group-tile {
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 15px; /* Arredondado igual ao seu esboço */
+  height: 80px;
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
-  gap: 10px;
-  padding: 10px;
-}
-
-/* Carta mais elegante */
-.card {
-  width: 90px; /* Um pouco menor para caber mais na linha igual às fotos */
+  font-family: 'Syncopate', sans-serif;
+  font-size: 0.8rem;
+  font-weight: bold;
   cursor: pointer;
   transition: all 0.3s ease;
+  text-align: center;
+  padding: 10px;
+  letter-spacing: 2px;
 }
 
-.card-inner {
-  width: 90px;
-  height: 135px;
-  border-radius: 8px;
-  overflow: hidden;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  background: #000;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+.group-tile:hover {
+  background: white;
+  color: black;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1);
+  border-color: white;
 }
 
-.card-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: all 0.4s ease;
+/* BOTÃO DE VOLTAR */
+.back-button {
+  background: transparent;
+  border: 1px solid #444;
+  color: #888;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.7rem;
+  margin-bottom: 20px;
+  transition: all 0.3s;
 }
 
-/* Efeito de "Não Tenho" (Visual de silhueta) */
-.card:not(.owned) .card-image {
-  filter: grayscale(1) brightness(0.2) contrast(1.2);
+.back-button:hover {
+  color: white;
+  border-color: white;
 }
 
-/* Efeito de "Tenho" (Visual vibrante) */
-.card.owned .card-inner {
-  border-color: rgba(255, 255, 255, 0.6);
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+.focused-group-name {
+  font-family: 'Syncopate', sans-serif;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  text-align: center;
+  color: white;
 }
 
-.card.owned .card-image {
-  filter: brightness(1.1) saturate(1.1);
-}
-
-/* Hover efeito suave */
-.card:hover {
-  transform: scale(1.1);
-  z-index: 10;
-}
-
-.card-id-label {
-  display: none; /* Escondi o texto do ID para ficar IDENTICO aos templates */
-}
-
-/* Estilo para quando passar o mouse, mostrar o ID de leve */
-.card:hover .card-id-label {
-  display: block;
-  position: absolute;
-  background: rgba(0,0,0,0.8);
-  padding: 2px 5px;
-  font-size: 8px;
-  border-radius: 4px;
+.set-title-display {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
 }
