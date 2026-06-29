@@ -1,0 +1,178 @@
+/* Estilo para o expansível do GRUPO */
+.group-accordion {
+  margin-bottom: 15px;
+  border: 2px solid #00d4ff;
+  border-radius: 12px;
+  background: #111;
+  overflow: hidden;
+}
+
+.group-header {
+  padding: 20px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(90deg, #00d4ff22, transparent);
+}
+
+.badge {
+  background: #00d4ff;
+  color: #000;
+  padding: 2px 8px;
+  border-radius: 5px;
+  font-size: 0.8rem;
+}
+.group-header {
+  display: flex;
+  justify-content: space-between; /* Empurra o nome pra esquerda e o código pra direita */
+  align-items: center;
+  padding: 15px 20px;
+  cursor: pointer;
+  list-style: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase; /* Deixa tudo em CAIXA ALTA se preferir */
+  letter-spacing: 1px;
+}
+
+/* Esconde a setinha padrão do navegador */
+.group-header::-webkit-details-marker {
+  display: none;
+}
+
+.group-code-badge {
+  font-size: 0.7rem;
+  background-color: #333; /* Cor escura para não chamar tanta atenção */
+  color: #00d4ff;
+  padding: 4px 8px;
+  border-radius: 4px;
+  opacity: 0.6; /* Fica mais discreto */
+}
+.group-content {
+  padding: 10px;
+}
+
+/* O resto do CSS que já tínhamos para os sets e cards... */
+.set-accordion {
+  margin-top: 10px;
+  background: #1a1a1a;
+}
+
+.card-id-label {
+  font-size: 0.6rem;
+  font-weight: bold;
+  color: #00d4ff; /* Azul neon do bot */
+  margin-top: 5px;
+}
+
+.member-name {
+  font-size: 0.55rem;
+  color: #777;
+  text-transform: uppercase;
+}
+
+.card-inner {
+  border: 1px solid #333;
+  /* ... resto do seu css ... */
+}
+
+.container {
+  max-width: 600px; /* Mais estreito, estilo mobile/app */
+  margin: 0 auto;
+  padding: 10px;
+  background-color: #0d0d0d;
+  min-height: 100vh;
+}
+
+.title {
+  color: #00d4ff; /* Cor neon estilo Hanbin Bot */
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  color: #888;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+
+/* Accordion */
+.set-accordion {
+  background: #1a1a1a;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #333;
+}
+
+.set-header {
+  padding: 15px;
+  background: #222;
+  cursor: pointer;
+  list-style: none; /* Remove a setinha padrão */
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  color: #00d4ff;
+}
+
+.set-header::-webkit-details-marker { display: none; } /* Chrome fix */
+
+.set-content {
+  padding: 10px;
+}
+
+/* Raridade */
+.rarity-row h3 {
+  font-size: 0.7rem;
+  color: #555;
+  border-bottom: 1px solid #333;
+  margin: 10px 0;
+}
+
+/* GRID - Aqui as cartas ficam pequenas */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 colunas fixas */
+  gap: 8px;
+}
+
+.card {
+  text-align: center;
+  cursor: pointer;
+}
+
+.card-inner {
+  width: 100%;
+  aspect-ratio: 2/3;
+  background: #2a2a2a;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  color: #444;
+  filter: grayscale(1);
+  opacity: 0.4;
+  transition: 0.2s;
+  border: 1px solid transparent;
+}
+
+.card.owned .card-inner {
+  filter: grayscale(0);
+  opacity: 1;
+  border-color: #00d4ff;
+  color: #00d4ff;
+  box-shadow: 0 0 8px rgba(0, 212, 255, 0.3);
+}
+
+.card p {
+  font-size: 0.65rem; /* Nome do integrante bem pequeno */
+  margin-top: 4px;
+  color: #bbb;
+}
+
