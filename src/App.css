@@ -1,277 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&family=Inter:wght@300;400;600&display=swap');
-
-:root {
-  --bg-color: #0a0a0a;
-  --card-bg: #111;
-  --accent-color: #00f2ff;
-  --owned-color: #00ff88;
-  --text-dim: #555;
-}
-
-/* DASHBOARD HOME */
-.home-dashboard {
-  animation: fadeIn 0.5s ease;
-}
-
-.main-stats {
+/* Container que permite raridades lado a lado (1H e 2H juntas) */
+.rarities-container {
   display: flex;
-  justify-content: center;
-  margin-bottom: 40px;
-}
-
-.stat-card {
-  background: linear-gradient(145deg, #1a1a1a, #0a0a0a);
-  padding: 30px;
-  border-radius: 20px;
-  border: 1px solid #333;
-  text-align: center;
-  min-width: 300px;
-}
-
-.stat-card h3 {
-  font-family: 'Syncopate', sans-serif;
-  font-size: 0.7rem;
-  color: #666;
-  margin-bottom: 10px;
-}
-
-.stat-card p {
-  font-size: 3rem;
-  font-weight: 800;
-  margin-bottom: 15px;
-}
-
-.stat-card p span {
-  font-size: 1rem;
-  color: #444;
-}
-
-/* Barra de progresso */
-.progress-bar {
-  width: 100%;
-  height: 6px;
-  background: #222;
-  border-radius: 10px;
-  overflow: hidden;
-}
-
-.progress-fill {
-  height: 100%;
-  background: var(--owned-color);
-  box-shadow: 0 0 10px var(--owned-color);
-  transition: width 1s ease-in-out;
-}
-
-/* Grid de categorias na Home */
-.category-stats-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  flex-wrap: wrap; 
   gap: 15px;
-}
-
-.cat-stat-tile {
-  background: #111;
-  padding: 20px;
-  border-radius: 12px;
-  text-align: center;
-  cursor: pointer;
-  border: 1px solid #222;
-  transition: 0.3s;
-}
-
-.cat-stat-tile:hover {
-  border-color: #444;
-  transform: translateY(-5px);
-}
-
-.cat-stat-tile h4 {
-  font-size: 0.6rem;
-  font-family: 'Syncopate', sans-serif;
-  color: #555;
-  margin-bottom: 10px;
-}
-
-.cat-stat-tile p {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-/* Ajuste no título para parecer um link */
-.title {
-  cursor: pointer;
-  transition: opacity 0.2s;
-}
-
-.title:hover {
-  opacity: 0.7;
-}
- /*aaa */
-* { box-sizing: border-box; margin: 0; padding: 0; }
-
-body {
-  background-color: var(--bg-color);
-  color: white;
-  font-family: 'Inter', sans-serif;
-  padding: 15px;
-}
-
-.container { max-width: 1000px; margin: 0 auto; }
-
-/* Header bem menor */
-header { margin-bottom: 20px; text-align: center; }
-.title { 
-  font-family: 'Syncopate', sans-serif; 
-  font-size: 1.2rem; /* Bem menor */
-  letter-spacing: 5px; 
-  color: #333; 
-}
-.subtitle { font-size: 0.8rem; color: var(--text-dim); }
-
-/* ABAS COMPACTAS - Estilo barra de navegação */
-.tabs-container {
-  display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  gap: 8px;
-  margin-bottom: 20px;
-}
-
-.tab-button {
-  background: #111;
-  border: 1px solid #222;
-  color: #666;
-  padding: 8px 16px; /* Padding reduzido */
-  font-family: 'Syncopate', sans-serif;
-  font-size: 0.6rem; /* Fonte pequena e elegante */
-  cursor: pointer;
-  border-radius: 6px;
-  transition: 0.2s;
-  text-transform: uppercase;
-}
-
-.tab-button.active {
-  background: white;
-  color: black;
-  border-color: white;
-}
-
-/* QUADRADINHOS DOS GRUPOS - Mais baixos */
-.group-tiles-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
-  gap: 12px;
-}
-
-.group-tile {
-  background: #111;
-  border: 1px solid #222;
-  height: 60px; /* Altura reduzida */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 8px;
-  font-family: 'Syncopate', sans-serif;
-  font-size: 0.65rem;
-  cursor: pointer;
-  transition: 0.2s;
-}
-
-.group-tile:hover { border-color: var(--accent-color); color: var(--accent-color); }
-
-/* VISTA DO GRUPO - Sem espaços gigantes */
-.focused-group-view { animation: fadeIn 0.3s ease; }
-
-.back-button {
-  background: none;
-  border: 1px solid #222;
-  color: #555;
-  padding: 5px 12px;
-  font-size: 0.6rem;
-  border-radius: 4px;
-  cursor: pointer;
-  margin-bottom: 15px;
-}
-
-.focused-group-name {
-  font-family: 'Syncopate', sans-serif;
-  font-size: 1.2rem; /* Diminuído de 2.5rem para 1.2rem */
-  text-align: center;
-  margin-bottom: 15px;
-  letter-spacing: 3px;
-}
-
-.set-title-display {
-  font-size: 0.65rem;
-  color: #333;
-  text-align: center;
-  letter-spacing: 2px;
-  margin-bottom: 10px;
-}
-
-/* GRID DE CARTAS - Compacto */
-.grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  justify-content: center;
-  margin-bottom: 20px;
-}
-
-.card { width: 90px; cursor: pointer; }
-
-.card-inner {
-  width: 90px;
-  height: 135px;
-  border-radius: 6px;
-  overflow: hidden;
-  border: 1px solid #222;
-  position: relative;
-}
-
-.card-image {
+  align-items: flex-start;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  transform: scale(1.05); /* Zoom leve para tirar bordas da foto */
 }
 
-/* Efeito P/B quando não tem */
-.card:not(.owned) .card-image { filter: grayscale(1) brightness(0.3); }
-
-.card.owned .card-inner {
-  border-color: var(--owned-color);
-  box-shadow: 0 0 10px rgba(0, 255, 136, 0.3);
+.rarity-row {
+  flex: 0 1 auto; /* Cada raridade ocupa apenas o seu próprio espaço */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.card-id-label { display: none; }
-
-/* Container do símbolo para não ocupar muito espaço vertical */
+/* Garante que o símbolo do set fique em cima da raridade */
 .set-symbol-container {
   display: flex;
-  justify-content: flex-start; /* Alinha à esquerda. Use 'center' se preferir no meio */
-  padding-left: 10px;
-  margin-bottom: -10px; /* Puxa o grid para mais perto do símbolo */
-  position: relative;
-  z-index: 5;
+  justify-content: center;
+  margin-bottom: 5px;
+  width: 100%;
 }
 
-/* O ícone S1 em si */
 .set-symbol-icon {
-  height: 18px; /* Bem pequeno como você pediu */
+  height: 20px;
   width: auto;
-  image-rendering: pixelated; /* Mantém o estilo pixel art nítido */
-  opacity: 0.7; /* Deixa um pouco transparente para ser discreto */
-  transition: opacity 0.3s;
+  image-rendering: pixelated;
 }
-
-.set-symbol-icon:hover {
-  opacity: 1; /* Acende ao passar o mouse */
-}
-
-/* Removemos o estilo antigo do texto do set caso ainda exista */
-.set-title-display {
-  display: none;
-}
-
-@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }

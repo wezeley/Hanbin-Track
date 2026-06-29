@@ -3,13 +3,14 @@ import './App.css'
 import { HANBIN_DATA } from './data/hanbinData'
 
 function App() {
+  // Estado das cartas possuídas
   const [ownedCards, setOwnedCards] = useState(() => {
     const saved = localStorage.getItem('hanbin-collection');
     return saved ? JSON.parse(saved) : [];
   });
 
-  // Começa como null para mostrar a Home
-  const [activeTab, setActiveTab] = useState(null);
+  // Estados de navegação
+  const [activeTab, setActiveTab] = useState(null); // null = Home
   const [selectedGroup, setSelectedGroup] = useState(null);
 
   useEffect(() => {
@@ -29,7 +30,7 @@ function App() {
 
   const baseUrl = import.meta.env.BASE_URL;
 
-  // Cálculo para o Dashboard
+  // Estatísticas para o Dashboard da Home
   const totalAvailable = HANBIN_DATA.groups.reduce((acc, group) => {
     return acc + (group.members.length * group.sets.length * 5);
   }, 0);
@@ -43,15 +44,19 @@ function App() {
     return { name: cat, count: ownedInCat };
   });
 
+  const filteredGroups = HANBIN_DATA.groups.filter(group => 
+    group.category?.trim().toLowerCase() === activeTab?.trim().toLowerCase()
+  );
+
   return (
     <div className="container">
       <header>
-        {/* Clicar no nome agora volta para a Home */}
         <h1 className="title" onClick={() => {setActiveTab(null); setSelectedGroup(null);}}>
           {HANBIN_DATA.botName}
         </h1>
       </header>
 
+      {/* Navegação por Abas */}
       <nav className="tabs-container">
         {HANBIN_DATA.categories.map((cat) => (
           <button 
@@ -65,7 +70,7 @@ function App() {
       </nav>
 
       <main className="content-area">
-        {/* ABA HOME (Quando activeTab é null) */}
+        {/* TELA 1: HOME DASHBOARD */}
         {!activeTab ? (
           <div className="home-dashboard">
             <div className="main-stats">
@@ -77,7 +82,6 @@ function App() {
                 </div>
               </div>
             </div>
-
             <div className="category-stats-grid">
               {statsByCategory.map(stat => (
                 <div key={stat.name} className="cat-stat-tile" onClick={() => setActiveTab(stat.name)}>
@@ -88,45 +92,81 @@ function App() {
             </div>
           </div>
         ) : 
-        /* VISUALIZAÇÃO DE TILES (Quando aba está selecionada mas grupo não) */
+        /* TELA 2: QUADRADINHOS (TILES) DOS GRUPOS */
         !selectedGroup ? (
           <div className="group-tiles-grid">
-            {HANBIN_DATA.groups.filter(g => g.category === activeTab).map(group => (
+            {filteredGroups.map(group => (
               <div key={group.code} className="group-tile" onClick={() => setSelectedGroup(group)}>
                 {group.name}
               </div>
             ))}
           </div>
         ) : (
-          /* VISUALIZAÇÃO DO GRUPO FOCADO */
+          /* TELA 3: VISTA DO GRUPO (CARTAS) */
           <div className="focused-group-view">
             <button className="back-button" onClick={() => setSelectedGroup(null)}>
               ← BACK TO {activeTab.toUpperCase()}
             </button>
+
             <h2 className="focused-group-name">{selectedGroup.name}</h2>
+
             {selectedGroup.sets.map((set) => (
               <div key={set.id} className="set-section">
+                
+                {/* Símbolo S1, S2... */}
                 <div className="set-symbol-container">
-                  <img src={`${baseUrl}symbols/S${set.id}.webp`} alt="Set Icon" className="set-symbol-icon" onError={(e) => e.target.style.display = 'none'} />
+                  <img 
+                    src={`${baseUrl}symbols/S${set.id}.webp`} 
+                    alt={`S${set.id}`} 
+                    className="set-symbol-icon"
+                    onError={(e) => e.target.style.display = 'none'}
+                  />
                 </div>
-                {HANBIN_DATA.rarities.map((rarityLevel) => (
-                  <div key={rarityLevel} className="grid">
-                    {selectedGroup.members.map((member) => {
-                      const sequenceNumber = ((set.id - 1) * 5) + rarityLevel + (member.offset || 0);
-                      const botId = `${selectedGroup.code}#${member.code}${String(sequenceNumber).padStart(3, '0')}`;
-                      const folder = (selectedGroup.folder || selectedGroup.code).toUpperCase();
-                      const imagePath = `${baseUrl}cards/${folder}/${encodeURIComponent(botId).toUpperCase()}.webp`;
-                      const isOwned = ownedCards.includes(botId);
-                      return (
-                        <div key={botId} className={`card ${isOwned ? 'owned' : ''}`} onClick={() => toggleCard(botId)}>
-                          <div className="card-inner">
-                            <img src={imagePath} alt={botId} className="card-image" loading="lazy" onError={(e) => { e.target.src = 'https://via.placeholder.com/110x165?text=?'; }} />
-                          </div>
-                        </div>
-                      );
-                    })}
-                  </div>
-                ))}
+
+                {/* CONTAINER PARA AS RARIDADES FICAREM LADO A LADO */}
+                <div className="rarities-container">
+                  {HANBIN_DATA.rarities.map((rarityLevel) => (
+                    <div key={rarityLevel} className="rarity-row">
+                      <div className="grid">
+                        {selectedGroup.members.map((member) => {
+                          // Lógica do número da carta (com offset)
+                          const rarityOffset = member.offset || 0;
+                          const sequenceNumber = ((set.id - 1) * 5) + rarityLevel + rarityOffset;
+                          const formattedNumber = String(sequenceNumber).padStart(3, '0');
+                          
+                          const botId = `${selectedGroup.code}#${member.code}${formattedNumber}`;
+                          const folder = (selectedGroup.folder || selectedGroup.code).toUpperCase();
+                          const fileName = encodeURIComponent(botId).toUpperCase();
+                          
+                          // Verifique se seus arquivos são .webp ou .png
+                          const imagePath = `${baseUrl}cards/${folder}/${fileName}.webp`;
+                          const isOwned = ownedCards.includes(botId);
+
+                          return (
+                            <div 
+                              key={botId} 
+                              className={`card ${isOwned ? 'owned' : ''}`}
+                              onClick={() => toggleCard(botId)}
+                            >
+                              <div className="card-inner">
+                                <img 
+                                  src={imagePath} 
+                                  alt={botId} 
+                                  className="card-image" 
+                                  loading="lazy"
+                                  onError={(e) => { 
+                                    e.target.onerror = null;
+                                    e.target.src = 'https://via.placeholder.com/110x165?text=NOT+FOUND'; 
+                                  }} 
+                                />
+                              </div>
+                            </div>
+                          );
+                        })}
+                      </div>
+                    </div>
+                  ))}
+                </div> {/* fim rarities-container */}
               </div>
             ))}
           </div>
@@ -135,5 +175,5 @@ function App() {
     </div>
   );
 }
-// Forçando deploy 123
+
 export default App;
