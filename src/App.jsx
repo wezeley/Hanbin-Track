@@ -16,6 +16,8 @@ function App() {
 
   const toggleCard = (id) => setOwnedCards(prev => prev.includes(id) ? prev.filter(x => x !== id) : [...prev, id]);
   const resetNavigation = () => { setActiveTab(null); setSelectedGroup(null); };
+  const handleTabChange = (cat) => {  setActiveTab(cat);  setSelectedGroup(null); // Isso força a volta para os quadradinhos (tiles)
+};
 
   const baseUrl = import.meta.env.BASE_URL;
 
@@ -58,7 +60,7 @@ function App() {
                           const seq = ((set.id - 1) * 5) + rarity + (member.offset || 0);
                           const botId = `${selectedGroup.code}#${member.code}${String(seq).padStart(3, '0')}`;
                           const folder = (selectedGroup.folder || selectedGroup.code).toUpperCase();
-                          const imgPath = `${baseUrl}cards/${folder}/${encodeURIComponent(botId).toUpperCase()}.webp`;
+                          const imgPath = `${baseUrl}cards/${folder}/${encodeURIComponent(botId).toUpperCase()}.png`;
                           return (
                             <Card key={botId} botId={botId} imagePath={imgPath} isOwned={ownedCards.includes(botId)} onToggle={toggleCard} />
                           );
