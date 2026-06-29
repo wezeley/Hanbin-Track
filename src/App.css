@@ -1,178 +1,174 @@
-/* Estilo para o expansível do GRUPO */
-.group-accordion {
-  margin-bottom: 15px;
-  border: 2px solid #00d4ff;
-  border-radius: 12px;
-  background: #111;
-  overflow: hidden;
+/* Configurações Globais */
+:root {
+  --bg-color: #121212;
+  --card-bg: #1e1e1e;
+  --text-primary: #ffffff;
+  --text-secondary: #b3b3b3;
+  --accent-color: #ff4757; /* Cor das cartas que você tem */
+  --missing-opacity: 0.4;
 }
 
-.group-header {
+body {
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  margin: 0;
   padding: 20px;
-  font-size: 1.4rem;
-  font-weight: bold;
-  cursor: pointer;
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: linear-gradient(90deg, #00d4ff22, transparent);
-}
-
-.badge {
-  background: #00d4ff;
-  color: #000;
-  padding: 2px 8px;
-  border-radius: 5px;
-  font-size: 0.8rem;
-}
-.group-header {
-  display: flex;
-  justify-content: space-between; /* Empurra o nome pra esquerda e o código pra direita */
-  align-items: center;
-  padding: 15px 20px;
-  cursor: pointer;
-  list-style: none;
-  font-size: 1.2rem;
-  font-weight: bold;
-  text-transform: uppercase; /* Deixa tudo em CAIXA ALTA se preferir */
-  letter-spacing: 1px;
-}
-
-/* Esconde a setinha padrão do navegador */
-.group-header::-webkit-details-marker {
-  display: none;
-}
-
-.group-code-badge {
-  font-size: 0.7rem;
-  background-color: #333; /* Cor escura para não chamar tanta atenção */
-  color: #00d4ff;
-  padding: 4px 8px;
-  border-radius: 4px;
-  opacity: 0.6; /* Fica mais discreto */
-}
-.group-content {
-  padding: 10px;
-}
-
-/* O resto do CSS que já tínhamos para os sets e cards... */
-.set-accordion {
-  margin-top: 10px;
-  background: #1a1a1a;
-}
-
-.card-id-label {
-  font-size: 0.6rem;
-  font-weight: bold;
-  color: #00d4ff; /* Azul neon do bot */
-  margin-top: 5px;
-}
-
-.member-name {
-  font-size: 0.55rem;
-  color: #777;
-  text-transform: uppercase;
-}
-
-.card-inner {
-  border: 1px solid #333;
-  /* ... resto do seu css ... */
 }
 
 .container {
-  max-width: 600px; /* Mais estreito, estilo mobile/app */
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 10px;
-  background-color: #0d0d0d;
-  min-height: 100vh;
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #333;
+  padding-bottom: 20px;
 }
 
 .title {
-  color: #00d4ff; /* Cor neon estilo Hanbin Bot */
-  font-size: 1.5rem;
-  margin-bottom: 5px;
+  font-size: 2.5rem;
+  margin: 0;
+  color: var(--text-primary);
 }
 
 .subtitle {
-  color: #888;
-  font-size: 0.9rem;
-  margin-bottom: 20px;
-}
-
-/* Accordion */
-.set-accordion {
-  background: #1a1a1a;
-  margin-bottom: 10px;
-  border-radius: 8px;
-  overflow: hidden;
-  border: 1px solid #333;
-}
-
-.set-header {
-  padding: 15px;
-  background: #222;
-  cursor: pointer;
-  list-style: none; /* Remove a setinha padrão */
-  display: flex;
-  justify-content: space-between;
+  color: var(--accent-color);
   font-weight: bold;
-  color: #00d4ff;
+  font-size: 1.2rem;
 }
 
-.set-header::-webkit-details-marker { display: none; } /* Chrome fix */
-
-.set-content {
-  padding: 10px;
+/* Accordions (Grupos e Sets) */
+.group-accordion, .set-accordion {
+  background: var(--card-bg);
+  border-radius: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #333;
+  overflow: hidden;
 }
 
-/* Raridade */
+.group-header, .set-header {
+  padding: 15px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  background: #252525;
+  user-select: none;
+  transition: background 0.2s;
+}
+
+.group-header:hover, .set-header:hover {
+  background: #303030;
+}
+
+.group-content, .set-content {
+  padding: 20px;
+}
+
+/* Linha de Raridade */
+.rarity-row {
+  margin-bottom: 30px;
+}
+
 .rarity-row h3 {
-  font-size: 0.7rem;
-  color: #555;
-  border-bottom: 1px solid #333;
-  margin: 10px 0;
+  border-left: 4px solid var(--accent-color);
+  padding-left: 15px;
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  color: var(--text-secondary);
 }
 
-/* GRID - Aqui as cartas ficam pequenas */
+/* --- O GRID MÁGICO --- */
 .grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 colunas fixas */
-  gap: 8px;
+  /* Isso faz caber 4, 13 ou 24 pessoas. 
+     Ele cria colunas de no mínimo 100px e no máximo 1fr (espaço disponível) */
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 12px;
+  justify-items: center; /* Centraliza as cartas no espaço delas */
 }
 
+/* --- A CARTA --- */
 .card {
-  text-align: center;
+  width: 100px; /* Largura fixa para ficar uniforme */
   cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  position: relative;
 }
 
 .card-inner {
   width: 100%;
-  aspect-ratio: 2/3;
-  background: #2a2a2a;
-  border-radius: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.2rem;
-  color: #444;
+  height: 150px; /* Proporção padrão de card de bot */
+  background: #000;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 2px solid #333;
+  transition: all 0.2s;
+}
+
+.card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Faz a imagem caber sem achatar */
+  display: block;
+}
+
+.card-id-label {
+  font-size: 0.7rem;
+  margin-top: 5px;
+  text-align: center;
+  color: var(--text-secondary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; /* Corta o texto se for muito longo */
+}
+
+/* --- ESTADOS DA CARTA --- */
+
+/* Quando você NÃO tem a carta */
+.card:not(.owned) .card-inner {
+  opacity: var(--missing-opacity);
   filter: grayscale(1);
-  opacity: 0.4;
-  transition: 0.2s;
-  border: 1px solid transparent;
 }
 
+/* Quando você TEM a carta */
 .card.owned .card-inner {
-  filter: grayscale(0);
   opacity: 1;
-  border-color: #00d4ff;
-  color: #00d4ff;
-  box-shadow: 0 0 8px rgba(0, 212, 255, 0.3);
+  filter: grayscale(0);
+  border-color: var(--accent-color);
+  box-shadow: 0 0 10px rgba(255, 71, 87, 0.3);
 }
 
-.card p {
-  font-size: 0.65rem; /* Nome do integrante bem pequeno */
-  margin-top: 4px;
-  color: #bbb;
+/* Efeito Hover */
+.card:hover {
+  transform: translateY(-5px);
 }
 
+.card:hover .card-inner {
+  opacity: 1;
+  filter: grayscale(0);
+  border-color: #eee;
+}
+
+/* Responsividade para Celular */
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    gap: 8px;
+  }
+  
+  .card {
+    width: 80px;
+  }
+  
+  .card-inner {
+    height: 120px;
+  }
+  
+  .title {
+    font-size: 1.8rem;
+  }
+}
