@@ -181,7 +181,7 @@ header {
   border-color: var(--owned-color) !important;
   box-shadow: 0 0 15px rgba(0, 255, 136, 0.5);
   border-width: 2px;
-
+}
 /* --- BOTÃO VOLTAR E TÍTULOS --- */
 .back-button {
   background: none;
