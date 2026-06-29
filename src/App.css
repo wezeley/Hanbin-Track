@@ -43,42 +43,59 @@ header {
 }
 
 /* --- ABAS GIGANTES E ESPAÇADAS --- */
+/* CONTAINER DAS ABAS - Mais compacto e centralizado */
 .tabs-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 15px;
-  margin-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
   width: 100%;
 }
 
+/* BOTÃO DA ABA - Menos alto, mais elegante */
 .tab-button {
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(255, 255, 255, 0.1);
   color: var(--text-dim);
-  padding: 35px 20px; /* Bem grande e espaçoso */
+  
+  /* Diminuímos o padding (era 35px, agora 15px) */
+  padding: 15px 25px; 
+  
   font-family: 'Syncopate', sans-serif;
-  font-size: 0.8rem;
+  font-size: 0.7rem; /* Fonte um pouquinho menor */
   font-weight: 700;
   cursor: pointer;
-  border-radius: 15px;
+  border-radius: 12px;
   transition: all 0.3s ease;
   text-transform: uppercase;
   letter-spacing: 2px;
+  
+  /* Garante que não fiquem gigantes em telas muito largas */
+  min-width: 140px; 
 }
 
 .tab-button:hover {
   background: rgba(255, 255, 255, 0.08);
   color: white;
-  transform: translateY(-3px);
+  transform: translateY(-2px);
 }
 
 .tab-button.active {
   background: white;
   color: black;
   border-color: white;
-  box-shadow: 0 10px 30px rgba(255, 255, 255, 0.2);
+  box-shadow: 0 5px 20px rgba(255, 255, 255, 0.2);
 }
 
+/* Ajuste para telas pequenas */
+@media (max-width: 600px) {
+  .tab-button {
+    flex: 1 1 40%; /* No celular ficam duas por linha */
+    padding: 12px 5px;
+    font-size: 0.6rem;
+  }
+}
 /* --- QUADRADINHOS DOS GRUPOS (TILES) --- */
 .group-tiles-grid {
   display: grid;
