@@ -76,18 +76,22 @@ function App() {
                   <div key={rarityLevel} className="rarity-row">
                     <div className="grid">
                       {selectedGroup.members.map((member) => {
-                        const sequenceNumber = ((set.id - 1) * 5) + rarityLevel;
-                        const formattedNumber = String(sequenceNumber).padStart(3, '0');
-                        
-                        // Geramos o botId
-                        const botId = `${selectedGroup.code}#${member.code}${formattedNumber}`;
-                        
-                        // FORÇAMOS TUDO PARA MAIÚSCULO NO CAMINHO
-                        const folder = selectedGroup.code.toUpperCase();
-                        const fileName = encodeURIComponent(botId).toUpperCase();
-                        const imagePath = `${baseUrl}cards/${folder}/${fileName}.png`;
-                        
-                        const isOwned = ownedCards.includes(botId);
+                        // Procure a parte onde a imagem é gerada dentro do loop e use isto:
+
+                       const sequenceNumber = ((set.id - 1) * 5) + rarityLevel;
+                       const formattedNumber = String(sequenceNumber).padStart(3, '0');
+
+                       // botId continua usando o .code (Ex: ATM#K001)
+                       const botId = `${selectedGroup.code}#${member.code}${formattedNumber}`;
+
+                       // --- LOGICA DE CAMINHO COM PASTA PERSONALIZADA ---
+                       // Se existir selectedGroup.folder, usa ele. Se não, usa o .code normal.
+                       const folderName = (selectedGroup.folder || selectedGroup.code).toUpperCase();
+                       const fileName = encodeURIComponent(botId).toUpperCase();
+
+                       // O resultado será: /Hanbin-Track/cards/ANDTEAM/ATM%23K001.png
+                       const imagePath = `${baseUrl}cards/${folderName}/${fileName}.png`;
+                       const isOwned = ownedCards.includes(botId);
 
                         return (
                           <div 
