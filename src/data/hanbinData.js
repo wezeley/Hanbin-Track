@@ -1,7 +1,17 @@
 export const HANBIN_DATA = {
-  botName: "HANBIN",
-  // Defina aqui as categorias que você quer que apareçam nas abas
-  categories: ["Girl Group", "Boy Group", "Soloist", "Co-ed", "Duo", "Event", "Survival"],
+  botName: "HANBIN TRACKER",
+  // Nova lista de categorias
+  categories: [
+    "Boygroups", 
+    "Girlgroups", 
+    "Soloists", 
+    "Co-Ed", 
+    "Duos", 
+    "Survival Shows", 
+    "Radiant", 
+    "Events", 
+    "Limiteds"
+  ],
   rarities: [1, 2, 3, 4, 5],
   groups: [
     {

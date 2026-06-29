@@ -8,6 +8,104 @@
   --text-dim: #555;
 }
 
+/* DASHBOARD HOME */
+.home-dashboard {
+  animation: fadeIn 0.5s ease;
+}
+
+.main-stats {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.stat-card {
+  background: linear-gradient(145deg, #1a1a1a, #0a0a0a);
+  padding: 30px;
+  border-radius: 20px;
+  border: 1px solid #333;
+  text-align: center;
+  min-width: 300px;
+}
+
+.stat-card h3 {
+  font-family: 'Syncopate', sans-serif;
+  font-size: 0.7rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.stat-card p {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+.stat-card p span {
+  font-size: 1rem;
+  color: #444;
+}
+
+/* Barra de progresso */
+.progress-bar {
+  width: 100%;
+  height: 6px;
+  background: #222;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: var(--owned-color);
+  box-shadow: 0 0 10px var(--owned-color);
+  transition: width 1s ease-in-out;
+}
+
+/* Grid de categorias na Home */
+.category-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 15px;
+}
+
+.cat-stat-tile {
+  background: #111;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid #222;
+  transition: 0.3s;
+}
+
+.cat-stat-tile:hover {
+  border-color: #444;
+  transform: translateY(-5px);
+}
+
+.cat-stat-tile h4 {
+  font-size: 0.6rem;
+  font-family: 'Syncopate', sans-serif;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.cat-stat-tile p {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Ajuste no título para parecer um link */
+.title {
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.title:hover {
+  opacity: 0.7;
+}
+
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
 body {
