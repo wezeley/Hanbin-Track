@@ -7,6 +7,7 @@ export const HANBIN_DATA = {
     {
       name: "Aespa",
       code: "AES",
+      folder: "AESPA",
       category: "Girl Group",
       members: [
         { name: "Karina", code: "KR" }, { name: "Giselle", code: "GS" },
