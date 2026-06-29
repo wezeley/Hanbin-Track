@@ -18,6 +18,9 @@ function App() {
     );
   };
 
+  // Pega a base do site (ex: /Hanbin-Track/) definida no vite.config.js
+  const baseUrl = import.meta.env.BASE_URL;
+
   return (
     <div className="container">
       <header>
@@ -25,33 +28,35 @@ function App() {
         <p className="subtitle">Total de Cartas: {ownedCards.length}</p>
       </header>
 
-      {/* LOOP 1: GRUPOS (AESPA, IVE...) */}
       {HANBIN_DATA.groups.map((group) => (
-        <details key={group.code} className="group-accordion">
-          {/* Onde estava o LOOP 1 dos grupos */}
+        <details key={group.code} className="group-accordion" open>
           <summary className="group-header">
             {group.name} 
           </summary>
           <div className="group-content">
-            {/* LOOP 2: SETS (v1, v2...) */}
             {group.sets.map((set) => (
               <details key={set.id} className="set-accordion" open>
                 <summary className="set-header">{set.name}</summary>
                 
                 <div className="set-content">
-                  {/* LOOP 3: RARIDADES */}
                   {HANBIN_DATA.rarities.map((rarityLevel) => (
                     <div key={rarityLevel} className="rarity-row">
                       <h3>{rarityLevel} Hearts</h3>
                       <div className="grid">
                         
-                        {/* LOOP 4: MEMBROS */}
                         {group.members.map((member) => {
                           const sequenceNumber = ((set.id - 1) * 5) + rarityLevel;
                           const formattedNumber = String(sequenceNumber).padStart(3, '0');
                           const botId = `${group.code}#${member.code}${formattedNumber}`;
-                          console.log("Tentando carregar:", `/cards/${encodeURIComponent(botId)}.png`);
+                          
+                          // EXPLICAÇÃO DO CAMINHO DA IMAGEM:
+                          // 1. baseUrl: Garante que funcione no GitHub Pages (/Hanbin-Track/)
+                          // 2. encodeURIComponent: Transforma o # em %23 para o navegador não bugar
+                          // 3. .toUpperCase(): Garante que procure por AESPA#WINTER e não aespa#winter
+                          const imagePath = `${baseUrl}cards/${encodeURIComponent(botId).toUpperCase()}.png`;
+
                           const isOwned = ownedCards.includes(botId);
+
                           return (
                             <div 
                               key={botId} 
@@ -59,15 +64,17 @@ function App() {
                               onClick={() => toggleCard(botId)}
                             >
                               <div className="card-inner">
-                              <img 
-                              // Mudamos de .jpg para .png aqui no final
-                              src={`/cards/${encodeURIComponent(botId)}.png`} 
-                              alt={botId}
-                              className="card-image"
-                              onError={(e) => { 
-                              e.target.src = 'https://via.placeholder.com/80x120?text=FOTO+FALTANDO'; 
-                              }}
-                            />
+                                <img 
+                                  src={imagePath} 
+                                  alt={botId}
+                                  className="card-image"
+                                  loading="lazy"
+                                  onError={(e) => { 
+                                    // Se a imagem falhar, mostra um placeholder
+                                    e.target.onerror = null; 
+                                    e.target.src = 'https://via.placeholder.com/80x120?text=NOT+FOUND'; 
+                                  }}
+                                />
                               </div>
                               <p className="card-id-label">{botId}</p>
                             </div>
