@@ -143,18 +143,32 @@ header {
 }
 
 .card-inner {
-  width: 100px !important;
-  height: 150px !important; /* ALTURA FIXA */
+  width: 110px !important; /* Ajuste para o tamanho que você preferir */
+  height: 165px !important; 
   border-radius: 10px;
   overflow: hidden;
-  background: #000;
-  border: 1px solid #333;
+  background: transparent; /* Removemos o fundo preto para não dar moldura */
+  
+  /* A borda agora fica aqui, colada na imagem */
+  border: 2px solid rgba(255, 255, 255, 0.1); 
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+/* A IMAGEM EM SI */
 .card-image {
   width: 100% !important;
   height: 100% !important;
-  object-fit: cover !important; /* ENCAIXA A FOTO SEM DISTORCER */
+  
+  /* O 'cover' faz ela preencher tudo. 
+     Se ainda sobrar espaço, podemos usar 'fill' (mas pode esticar um pouco) 
+     ou dar um leve scale. */
+  object-fit: cover !important; 
+  
+  /* Opcional: esse scale de 1.02 tira aquelas rebarbas brancas 
+     que algumas fotos de bot trazem nos cantos */
+  transform: scale(1.02); 
   display: block;
 }
 
@@ -164,9 +178,9 @@ header {
 }
 
 .card.owned .card-inner {
-  border-color: var(--owned-color);
-  box-shadow: 0 0 15px rgba(0, 255, 136, 0.3);
-}
+  border-color: var(--owned-color) !important;
+  box-shadow: 0 0 15px rgba(0, 255, 136, 0.5);
+  border-width: 2px;
 
 /* --- BOTÃO VOLTAR E TÍTULOS --- */
 .back-button {
