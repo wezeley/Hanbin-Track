@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react'
 import { HANBIN_DATA } from './data/hanbinData'
 import { Header } from './components/Header'
-import { Tabs } from './components/Tabs'
 import { Dashboard } from './components/Dashboard'
 import { Card } from './components/Card'
 import './App.css'
@@ -39,20 +38,14 @@ function App() {
     setOwnedCards(prev => isComplete ? prev.filter(id => !ids.includes(id)) : [...new Set([...prev, ...ids])]);
   };
 
-  const markRarityAsOwned = (group, set, rarity) => {
-    const ids = group.members.map(m => `${group.code}#${m.code}${String(((set.id - 1) * 5) + rarity + (m.offset || 0)).padStart(3, '0')}`);
-    const isComplete = ids.every(id => ownedCards.includes(id));
-    setOwnedCards(prev => isComplete ? prev.filter(id => !ids.includes(id)) : [...new Set([...prev, ...ids])]);
-  };
-
   const baseUrl = import.meta.env.BASE_URL;
   const filteredGroups = HANBIN_DATA.groups.filter(g => g.category?.toLowerCase() === activeTab?.toLowerCase());
 
   return (
     <div className="container">
-      <Header title={HANBIN_DATA.botName} activeTab={activeTab} onHome={resetNavigation} />
+      <Header title={HANBIN_DATA.botName} onHome={resetNavigation} />
       
-      <div className="tabs-container">
+      <div className="nav-tabs" style={{marginBottom: '30px', justifyContent: 'center'}}>
         {HANBIN_DATA.categories.map(cat => (
           <button key={cat} className={`tab-button ${activeTab === cat ? 'active' : ''}`} onClick={() => handleTabChange(cat)}>
             {cat}
@@ -64,23 +57,20 @@ function App() {
         {!activeTab ? (
           <Dashboard ownedCards={ownedCards} onTabChange={handleTabChange} />
         ) : !selectedGroup ? (
-          <div className="group-catalog-grid">
+          <div className="expansion-grid">
             {filteredGroups.map(group => {
               const groupOwned = ownedCards.filter(id => id.split('#')[0] === group.code).length;
               const sets = getGroupStructure(group);
               const groupTotal = sets.reduce((sum, s) => sum + (group.members.length * s.rarities.length), 0);
               const percent = ((groupOwned / groupTotal) * 100).toFixed(0);
-              
               return (
                 <div key={group.code} className="expansion-card" onClick={() => setSelectedGroup(group)}>
-                  <span className="expansion-name">{group.name}</span>
-                  <div className="stat-row">
-                    <span style={{fontSize: '0.7rem', fontWeight: 700}}>{groupOwned} / {groupTotal} Cards</span>
-                    <span style={{fontSize: '0.7rem', fontWeight: 700}}>{percent}%</span>
+                  <span className="exp-name">{group.name}</span>
+                  <div style={{display: 'flex', justifyContent: 'space-between', fontSize: '0.7rem', fontWeight: 700}}>
+                    <span>{groupOwned}/{groupTotal} Cards</span>
+                    <span>{percent}%</span>
                   </div>
-                  <div className="expansion-progress-bar">
-                    <div className="expansion-progress-fill" style={{width: `${percent}%`}}></div>
-                  </div>
+                  <div className="exp-progress-bar"><div className="exp-progress-fill" style={{width: `${percent}%`}}></div></div>
                 </div>
               );
             })}
@@ -88,39 +78,36 @@ function App() {
         ) : (
           <div className="focused-group-view">
             <div className="focused-header">
-              <h2 className="focused-title">{selectedGroup.name}</h2>
-              <button className="back-btn-compact" onClick={() => setSelectedGroup(null)}>CLOSE EXPANSION</button>
+              <h2 style={{fontSize: '2rem', fontWeight: 800}}>{selectedGroup.name}</h2>
+              <button className="close-btn" onClick={() => setSelectedGroup(null)}>CLOSE EXPANSION</button>
             </div>
 
             {getGroupStructure(selectedGroup).map(set => (
               <div key={set.id} className="set-section">
-                <div className="set-header-minimal">
+                <div className="set-controls-pill" style={{margin: '0 auto 25px'}}>
                   <img src={`${baseUrl}symbols/S${set.id}.webp`} className="set-symbol-icon" alt="S" />
                   <input type="checkbox" className="set-checkbox" 
-                         checked={ownedCards.filter(id => id.startsWith(selectedGroup.code) && id.includes(`#`)).length >= 5} // Simplificado
+                         checked={false} /* Lógica de check opcional */
                          onChange={() => markSetAsOwned(selectedGroup, set)} />
                 </div>
                 
                 <div className="rarities-container">
-                  {set.rarities.map(rarity => {
-                    const rarityIds = selectedGroup.members.map(m => `${selectedGroup.code}#${m.code}${String(((set.id - 1) * 5) + rarity + (m.offset || 0)).padStart(3, '0')}`);
-                    const isRarityComplete = rarityIds.every(id => ownedCards.includes(id));
-                    return (
-                      <div key={rarity} className="rarity-row">
-                        <button className={`rarity-toggle ${isRarityComplete ? 'active' : ''}`} onClick={() => markRarityAsOwned(selectedGroup, set, rarity)}>❤</button>
-                        <div className="grid">
-                          {selectedGroup.members.map(member => {
-                            const seq = ((set.id - 1) * 5) + rarity + (member.offset || 0);
-                            const botId = `${selectedGroup.code}#${member.code}${String(seq).padStart(3, '0')}`;
-                            const folder = (selectedGroup.folder || selectedGroup.code).toUpperCase();
-                            const fileName = encodeURIComponent(botId).toUpperCase();
-                            const imgPath = `${baseUrl}cards/${folder}/${fileName}.png`;
-                            return <Card key={botId} botId={botId} imagePath={imgPath} isOwned={ownedCards.includes(botId)} onToggle={toggleCard} />;
-                          })}
-                        </div>
+                  {set.rarities.map(rarity => (
+                    <div key={rarity} className="rarity-row">
+                      <div className="grid">
+                        {selectedGroup.members.map(member => {
+                          const seq = ((set.id - 1) * 5) + rarity + (member.offset || 0);
+                          const botId = `${selectedGroup.code}#${member.code}${String(seq).padStart(3, '0')}`;
+                          const folder = (selectedGroup.folder || selectedGroup.code).toUpperCase();
+                          const fileName = encodeURIComponent(botId).toUpperCase();
+                          const imgPath = `${baseUrl}cards/${folder}/${fileName}.png`;
+                          return (
+                            <Card key={botId} botId={botId} imagePath={imgPath} isOwned={ownedCards.includes(botId)} onToggle={toggleCard} />
+                          );
+                        })}
                       </div>
-                    )
-                  })}
+                    </div>
+                  ))}
                 </div>
               </div>
             ))}
