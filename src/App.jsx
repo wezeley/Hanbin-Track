@@ -14,77 +14,49 @@ function App() {
 
   useEffect(() => localStorage.setItem('hanbin-collection', JSON.stringify(ownedCards)), [ownedCards]);
 
-  // Função para marcar/desmarcar cartas
   const toggleCard = (id) => setOwnedCards(prev => prev.includes(id) ? prev.filter(x => x !== id) : [...prev, id]);
   
-  // Função para voltar para a Home clicando no Título
+  const handleTabChange = (cat) => { setActiveTab(cat); setSelectedGroup(null); };
   const resetNavigation = () => { setActiveTab(null); setSelectedGroup(null); };
 
-  // CORREÇÃO AQUI: Função que muda a aba e fecha qualquer grupo aberto
-  const handleTabChange = (cat) => {  
-    setActiveTab(cat);  
-    setSelectedGroup(null); 
+  // FUNÇÃO PARA MARCAR/DESMARCAR O SET INTEIRO
+  const markSetAsOwned = (group, set) => {
+    const allIdsInSet = [];
+    HANBIN_DATA.rarities.forEach(r => {
+      group.members.forEach(m => {
+        const seq = ((set.id - 1) * 5) + r + (m.offset || 0);
+        allIdsInSet.push(`${group.code}#${m.code}${String(seq).padStart(3, '0')}`);
+      });
+    });
+
+    const isComplete = allIdsInSet.every(id => ownedCards.includes(id));
+    if (isComplete) {
+      setOwnedCards(prev => prev.filter(id => !allIdsInSet.includes(id)));
+    } else {
+      setOwnedCards(prev => [...new Set([...prev, ...allIdsInSet])]);
+    }
   };
 
   const baseUrl = import.meta.env.BASE_URL;
 
-  // Lógica de Estatísticas para o Dashboard
   const totalAvailable = HANBIN_DATA.groups.reduce((acc, g) => acc + (g.members.length * g.sets.length * 5), 0);
-  
   const statsByCategory = HANBIN_DATA.categories.map(cat => {
     const groupsInCat = HANBIN_DATA.groups.filter(g => g.category?.trim() === cat.trim());
-    const ownedInCat = ownedCards.filter(id => {
-        const groupCode = id.split('#')[0];
-        return groupsInCat.some(g => g.code === groupCode);
-    }).length;
+    const ownedInCat = ownedCards.filter(id => groupsInCat.some(g => g.code === id.split('#')[0])).length;
     const totalInCat = groupsInCat.reduce((acc, g) => acc + (g.members.length * g.sets.length * 5), 0);
     return { name: cat, count: ownedInCat, total: totalInCat };
   });
-
-const markSetAsOwned = (group, set) => {
-  const allIdsInSet = [];
-  
-  // Percorre todas as raridades e membros para gerar os IDs
-  HANBIN_DATA.rarities.forEach(rarity => {
-    group.members.forEach(member => {
-      const seq = ((set.id - 1) * 5) + rarity + (member.offset || 0);
-      const botId = `${group.code}#${member.code}${String(seq).padStart(3, '0')}`;
-      allIdsInSet.push(botId);
-    });
-  });
-
-  // Verifica se você já tem todos. Se tiver, a gente desmarca tudo (limpa).
-  const hasAll = allIdsInSet.every(id => ownedCards.includes(id));
-
-  if (hasAll) {
-    setOwnedCards(prev => prev.filter(id => !allIdsInSet.includes(id)));
-  } else {
-    setOwnedCards(prev => [...new Set([...prev, ...allIdsInSet])]);
-  }
-};
 
   const filteredGroups = HANBIN_DATA.groups.filter(g => g.category?.trim().toLowerCase() === activeTab?.trim().toLowerCase());
 
   return (
     <div className="container">
-      {/* Header e Tabs agora usam as funções de reset/mudança corretamente */}
       <Header title={HANBIN_DATA.botName} onHome={resetNavigation} />
-      
-      <Tabs 
-        categories={HANBIN_DATA.categories} 
-        activeTab={activeTab} 
-        onTabChange={handleTabChange} 
-      />
+      <Tabs categories={HANBIN_DATA.categories} activeTab={activeTab} onTabChange={handleTabChange} />
 
       <main className="content-area">
         {!activeTab ? (
-          /* Dashboard agora também reseta o grupo se clicar numa categoria */
-          <Dashboard 
-            ownedCount={ownedCards.length} 
-            totalAvailable={totalAvailable} 
-            stats={statsByCategory} 
-            onTabChange={handleTabChange} 
-          />
+          <Dashboard ownedCount={ownedCards.length} totalAvailable={totalAvailable} stats={statsByCategory} onTabChange={handleTabChange} />
         ) : !selectedGroup ? (
           <GroupGrid groups={filteredGroups} onSelectGroup={setSelectedGroup} />
         ) : (
@@ -92,60 +64,51 @@ const markSetAsOwned = (group, set) => {
             <button className="back-button" onClick={() => setSelectedGroup(null)}>← BACK</button>
             <h2 className="focused-group-name">{selectedGroup.name}</h2>
             
-            {selectedGroup.sets.map(set => (
-              <div key={set.id} className="set-section">
-                <div className="set-symbol-container">
-                  <img 
-                    src={`${baseUrl}symbols/S${set.id}.webp`} // Ajuste para .webp se necessário
-                    alt="S" 
-                    className="set-symbol-icon" 
-                    onError={(e) => e.target.style.display = 'none'}
-                  />
-                </div>
-                <div className="set-symbol-container">
-                <img src={`${baseUrl}symbols/S${set.id}.webp`} className="set-symbol-icon" />
-  
-                {/* BOTÃO DE MARCAR TUDO */}
-                <button 
-                  className="bulk-action-btn" 
-                  onClick={() => markSetAsOwned(selectedGroup, set)}
-                >
-                  {/* Muda o texto se já tiver tudo marcado */}
-                  {HANBIN_DATA.rarities.every(r => selectedGroup.members.every(m => ownedCards.includes(`${selectedGroup.code}#${m.code}${String(((set.id - 1) * 5) + r + (m.offset || 0)).padStart(3, '0')}`))) 
-                    ? "Uncheck All" 
-                    : "Check All Set"}
-                </button>
-              </div>
-                {/* CONTAINER PARA RARIDADES LADO A LADO */}
-                <div className="rarities-container">
-                  {HANBIN_DATA.rarities.map(rarity => (
-                    <div key={rarity} className="rarity-row">
-                      <div className="grid">
-                        {selectedGroup.members.map(member => {
-                          const rarityOffset = member.offset || 0;
-                          const seq = ((set.id - 1) * 5) + rarity + rarityOffset;
-                          const botId = `${selectedGroup.code}#${member.code}${String(seq).padStart(3, '0')}`;
-                          const folder = (selectedGroup.folder || selectedGroup.code).toUpperCase();
-                          
-                          // Verifique se no seu GitHub é .png ou .webp
-                          const imgPath = `${baseUrl}cards/${folder}/${encodeURIComponent(botId).toUpperCase()}.png`;
-                          
-                          return (
-                            <Card 
-                                key={botId} 
-                                botId={botId} 
-                                imagePath={imgPath} 
-                                isOwned={ownedCards.includes(botId)} 
-                                onToggle={toggleCard} 
-                            />
-                          );
-                        })}
+                {selectedGroup.sets.map(set => {
+                  // Lógica para saber se o set está completo
+                  const ids = [];
+                  HANBIN_DATA.rarities.forEach(r => selectedGroup.members.forEach(m => {
+                    ids.push(`${selectedGroup.code}#${m.code}${String(((set.id - 1) * 5) + r + (m.offset || 0)).padStart(3, '0')}`);
+                  }));
+                  const isSetComplete = ids.every(id => ownedCards.includes(id));
+
+                  return (
+                    <div key={set.id} className="set-section">
+                      {/* CONTAINER DO SÍMBOLO + QUADRADINHO */}
+                      <div className="set-symbol-container">
+                        <img 
+                          src={`${baseUrl}symbols/S${set.id}.webp`} 
+                          className="set-symbol-icon" 
+                          onError={(e) => e.target.style.display = 'none'} 
+                        />
+                        <input 
+                          type="checkbox" 
+                          className="set-checkbox" 
+                          checked={isSetComplete} 
+                          onChange={() => markSetAsOwned(selectedGroup, set)} 
+                        />
                       </div>
-                    </div>
-                  ))}
+
+                      <div className="rarities-container">
+                    {HANBIN_DATA.rarities.map(rarity => (
+                      <div key={rarity} className="rarity-row">
+                        <div className="grid">
+                          {selectedGroup.members.map(member => {
+                            const seq = ((set.id - 1) * 5) + rarity + (member.offset || 0);
+                            const botId = `${selectedGroup.code}#${member.code}${String(seq).padStart(3, '0')}`;
+                            const folder = (selectedGroup.folder || selectedGroup.code).toUpperCase();
+                            const imgPath = `${baseUrl}cards/${folder}/${encodeURIComponent(botId).toUpperCase()}.webp`;
+                            return (
+                              <Card key={botId} botId={botId} imagePath={imgPath} isOwned={ownedCards.includes(botId)} onToggle={toggleCard} />
+                            );
+                          })}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
                 </div>
-              </div>
-            ))}
+              )
+            })}
           </div>
         )}
       </main>

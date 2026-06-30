@@ -105,14 +105,56 @@ header { margin-bottom: 20px; text-align: center; }
 .card.owned .card-inner { border-color: var(--owned-color); box-shadow: 0 0 8px rgba(0, 255, 136, 0.3); }
 
 /* Checkbox do Set */
-.set-symbol-container { display: flex; align-items: center; justify-content: center; gap: 10px; margin-bottom: 10px; }
-.set-symbol-icon { height: 18px; width: auto; image-rendering: pixelated; opacity: 0.7; }
-
-.set-checkbox {
-  appearance: none; width: 14px; height: 14px; border: 1px solid #444; border-radius: 3px; cursor: pointer; position: relative;
+.set-symbol-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* Espaço entre o S1 e o quadradinho */
+  margin-bottom: 8px;
 }
-.set-checkbox:checked { background: var(--owned-color); border-color: var(--owned-color); }
-.set-checkbox:checked::after { content: '✓'; position: absolute; color: black; font-size: 10px; top: -1px; left: 2px; font-weight: bold; }
+
+/* O símbolo S1 */
+.set-symbol-icon {
+  height: 18px;
+  width: auto;
+  image-rendering: pixelated;
+  opacity: 0.8;
+}
+
+/* O QUADRADINHO (Checkmark) */
+.set-checkbox {
+  appearance: none; /* Remove o visual padrão do navegador */
+  width: 14px;
+  height: 14px;
+  border: 1px solid #444; /* Borda fininha */
+  border-radius: 3px;
+  cursor: pointer;
+  position: relative;
+  background: transparent;
+  transition: all 0.2s;
+}
+
+/* Quando estiver marcado (Toggle Ativo) */
+.set-checkbox:checked {
+  background-color: var(--owned-color); /* Fica verde (ou a cor que você usa) */
+  border-color: var(--owned-color);
+}
+
+/* O desenho do "V" dentro do quadradinho */
+.set-checkbox:checked::after {
+  content: '✓';
+  position: absolute;
+  color: black;
+  font-size: 10px;
+  top: -1px;
+  left: 2px;
+  font-weight: bold;
+}
+
+/* Hover para dar um feedback */
+.set-checkbox:hover {
+  border-color: #888;
+}
 
 /* Botão Back e Nome Grupo */
 .back-button { background: none; border: 1px solid #222; color: #444; padding: 4px 10px; font-size: 0.55rem; border-radius: 3px; cursor: pointer; margin-bottom: 15px; }
