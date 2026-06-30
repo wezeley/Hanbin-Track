@@ -13,11 +13,23 @@ function App() {
 
   useEffect(() => localStorage.setItem('hanbin-collection', JSON.stringify(ownedCards)), [ownedCards]);
 
+  // --- FUNÇÕES DE NAVEGAÇÃO ---
   const toggleCard = (id) => setOwnedCards(prev => prev.includes(id) ? prev.filter(x => x !== id) : [...prev, id]);
-  const handleTabChange = (cat) => { setActiveTab(cat); setSelectedGroup(null); };
+  
+  const handleTabChange = (cat) => { 
+    setActiveTab(cat); 
+    setSelectedGroup(null); 
+  };
+
+  // ESTA É A FUNÇÃO QUE ESTAVA FALTANDO:
+  const resetNavigation = () => { 
+    setActiveTab(null); 
+    setSelectedGroup(null); 
+  };
+
   const toggleSet = (id) => setExpandedSets(p => ({ ...p, [id]: p[id] === undefined ? false : !p[id] }));
 
-  // Lógica do maxSet (1.1, 2.5, etc)
+  // Lógica do maxSet (Ex: 3.2)
   const getGroupStructure = (group) => {
     const maxVal = group.maxSet || 1;
     const lastSetId = Math.floor(maxVal);
@@ -35,28 +47,27 @@ function App() {
 
   return (
     <div className="app-skeleton">
-      {/* SIDEBAR DE NAVEGAÇÃO */}
+      {/* SIDEBAR */}
       <aside className="skeleton-sidebar">
-        <h2 onClick={() => {setActiveTab(null); setSelectedGroup(null);}}>HOME</h2>
+        <h2 onClick={resetNavigation} style={{cursor: 'pointer'}}>HOME</h2>
         {HANBIN_DATA.categories.map(cat => (
-          <button key={cat} onClick={() => handleTabChange(cat)} className={activeTab === cat ? 'active' : ''}>
+          <button 
+            key={cat} 
+            onClick={() => handleTabChange(cat)} 
+            className={activeTab === cat ? 'active' : ''}
+          >
             {cat}
           </button>
         ))}
       </aside>
 
-// No App.jsx, dentro do <main className="skeleton-main">
-<Header 
-  title={HANBIN_DATA.botName} 
-  onHome={resetNavigation} 
-/>
+      <main className="skeleton-main">
+        {/* HEADER CHAMANDO A FUNÇÃO RESET */}
+        <Header title={HANBIN_DATA.botName} onHome={resetNavigation} />
 
-        {/* 1. TELA HOME */}
         {!activeTab ? (
           <Dashboard ownedCards={ownedCards} onTabChange={handleTabChange} />
-        ) : 
-        /* 2. TELA LISTA DE GRUPOS */
-        !selectedGroup ? (
+        ) : !selectedGroup ? (
           <div className="skeleton-group-list">
             {filteredGroups.map(g => (
               <div key={g.code} className="skeleton-group-item" onClick={() => setSelectedGroup(g)}>
@@ -65,7 +76,6 @@ function App() {
             ))}
           </div>
         ) : (
-          /* 3. TELA DENTRO DO GRUPO */
           <div className="skeleton-group-view">
             <button onClick={() => setSelectedGroup(null)}>VOLTAR</button>
             <h1>{selectedGroup.name}</h1>
@@ -77,7 +87,7 @@ function App() {
                 </div>
                 
                 {expandedSets[set.id] !== false && (
-                  <div className="skeleton-rarities">
+                  <div className="rarities-container">
                     {set.rarities.map(r => (
                       <div key={r} className="skeleton-rarity-row">
                         <span>{r}H</span>
@@ -88,7 +98,15 @@ function App() {
                             const folder = (selectedGroup.folder || selectedGroup.code).toUpperCase();
                             const fileName = encodeURIComponent(botId).toUpperCase();
                             const path = `${baseUrl}cards/${folder}/${fileName}.png`;
-                            return <Card key={botId} botId={botId} imagePath={path} isOwned={ownedCards.includes(botId)} onToggle={toggleCard} />;
+                            return (
+                              <Card 
+                                key={botId} 
+                                botId={botId} 
+                                imagePath={path} 
+                                isOwned={ownedCards.includes(botId)} 
+                                onToggle={toggleCard} 
+                              />
+                            );
                           })}
                         </div>
                       </div>
