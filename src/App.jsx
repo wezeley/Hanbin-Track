@@ -11,12 +11,23 @@ function App() {
   const [ownedCards, setOwnedCards] = useState(() => JSON.parse(localStorage.getItem('hanbin-collection')) || []);
   const [activeTab, setActiveTab] = useState(null);
   const [selectedGroup, setSelectedGroup] = useState(null);
+  
+  // NOVO: Estado para controlar quais sets estão abertos
+  const [expandedSets, setExpandedSets] = useState({});
 
   useEffect(() => localStorage.setItem('hanbin-collection', JSON.stringify(ownedCards)), [ownedCards]);
 
   const toggleCard = (id) => setOwnedCards(prev => prev.includes(id) ? prev.filter(x => x !== id) : [...prev, id]);
   const handleTabChange = (cat) => { setActiveTab(cat); setSelectedGroup(null); };
   const resetNavigation = () => { setActiveTab(null); setSelectedGroup(null); };
+
+  // Função para abrir/fechar o set
+  const toggleSetExpand = (setId) => {
+    setExpandedSets(prev => ({
+      ...prev,
+      [setId]: prev[setId] === undefined ? false : !prev[setId]
+    }));
+  };
 
   const getGroupStructure = (group) => {
     const maxVal = group.maxSet || 1;
@@ -73,35 +84,56 @@ function App() {
                 setIds.push(`${selectedGroup.code}#${m.code}${String(((set.id - 1) * 5) + r + (m.offset || 0)).padStart(3, '0')}`);
               }));
               const isSetComplete = setIds.every(id => ownedCards.includes(id));
+              
+              // Verifica se o set está aberto ou fechado (padrão é aberto)
+              const isExpanded = expandedSets[set.id] !== false;
 
               return (
-                <div key={set.id} className="set-section">
-                  <div className="set-symbol-container">
-                    <img src={`${baseUrl}symbols/S${set.id}.webp`} className="set-symbol-icon" alt="S" />
-                    <input type="checkbox" className="set-checkbox" checked={isSetComplete} onChange={() => markSetAsOwned(selectedGroup, set)} />
+                <div key={set.id} className={`set-section ${!isExpanded ? 'collapsed' : ''}`}>
+                  <div className="set-header-minimal">
+                    <div className="set-controls-group">
+                      <img 
+                        src={`${baseUrl}symbols/S${set.id}.webp`} 
+                        className="set-symbol-icon" 
+                        alt="S" 
+                        onClick={() => toggleSetExpand(set.id)} 
+                        style={{cursor: 'pointer'}}
+                      />
+                      <input 
+                        type="checkbox" 
+                        className="set-checkbox" 
+                        checked={isSetComplete} 
+                        onChange={() => markSetAsOwned(selectedGroup, set)} 
+                      />
+                      <button className="expand-toggle-btn" onClick={() => toggleSetExpand(set.id)}>
+                        {isExpanded ? '▼' : '▶'}
+                      </button>
+                    </div>
                   </div>
                   
-                  <div className="rarities-container">
-                    {set.rarities.map(rarity => {
-                      const rarityIds = selectedGroup.members.map(m => `${selectedGroup.code}#${m.code}${String(((set.id - 1) * 5) + rarity + (m.offset || 0)).padStart(3, '0')}`);
-                      const isRarityComplete = rarityIds.every(id => ownedCards.includes(id));
-                      return (
-                        <div key={rarity} className="rarity-row">
-                          <button className={`rarity-toggle ${isRarityComplete ? 'active' : ''}`} onClick={() => markRarityAsOwned(selectedGroup, set, rarity)}>❤</button>
-                          <div className="grid">
-                            {selectedGroup.members.map(member => {
-                              const seq = ((set.id - 1) * 5) + rarity + (member.offset || 0);
-                              const botId = `${selectedGroup.code}#${member.code}${String(seq).padStart(3, '0')}`;
-                              const folder = (selectedGroup.folder || selectedGroup.code).toUpperCase();
-                              const fileName = encodeURIComponent(botId).toUpperCase();
-                              const imgPath = `${baseUrl}cards/${folder}/${fileName}.png`;
-                              return <Card key={botId} botId={botId} imagePath={imgPath} isOwned={ownedCards.includes(botId)} onToggle={toggleCard} />;
-                            })}
+                  {isExpanded && (
+                    <div className="rarities-container">
+                      {set.rarities.map(rarity => {
+                        const rarityIds = selectedGroup.members.map(m => `${selectedGroup.code}#${m.code}${String(((set.id - 1) * 5) + rarity + (m.offset || 0)).padStart(3, '0')}`);
+                        const isRarityComplete = rarityIds.every(id => ownedCards.includes(id));
+                        return (
+                          <div key={rarity} className="rarity-row">
+                            <button className={`rarity-toggle ${isRarityComplete ? 'active' : ''}`} onClick={() => markRarityAsOwned(selectedGroup, set, rarity)}>❤</button>
+                            <div className="grid">
+                              {selectedGroup.members.map(member => {
+                                const seq = ((set.id - 1) * 5) + rarity + (member.offset || 0);
+                                const botId = `${selectedGroup.code}#${member.code}${String(seq).padStart(3, '0')}`;
+                                const folder = (selectedGroup.folder || selectedGroup.code).toUpperCase();
+                                const fileName = encodeURIComponent(botId).toUpperCase();
+                                const imgPath = `${baseUrl}cards/${folder}/${fileName}.png`;
+                                return <Card key={botId} botId={botId} imagePath={imgPath} isOwned={ownedCards.includes(botId)} onToggle={toggleCard} />;
+                              })}
+                            </div>
                           </div>
-                        </div>
-                      )
-                    })}
-                  </div>
+                        )
+                      })}
+                    </div>
+                  )}
                 </div>
               )
             })}
