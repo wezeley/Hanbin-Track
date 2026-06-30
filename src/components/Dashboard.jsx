@@ -20,7 +20,11 @@ export function Dashboard({ ownedCards = [], onTabChange }) {
           const seq = ((set.id - 1) * 5) + rarity + (member.offset || 0);
           const botId = `${group.code}#${member.code}${String(seq).padStart(3, '0')}`;
           const isOwned = ownedCards?.includes(botId);
-          let target = group.category === "Radiant" ? "radiant" : group.category === "Survival Shows" ? "survival" : (group.category === "Events" || group.category === "Limiteds") ? "event" : `s${set.id}`;
+          
+          let target = group.category === "Radiant" ? "radiant" : 
+                       group.category === "Survival Shows" ? "survival" : 
+                       (group.category === "Events" || group.category === "Limiteds") ? "event" : `s${set.id}`;
+          
           if (stats[target]) { stats[target].total++; if (isOwned) stats[target].owned++; }
           if (!isOwned) groupMissingCount++;
         });
@@ -54,7 +58,7 @@ export function Dashboard({ ownedCards = [], onTabChange }) {
           {missingGroups.map(g => (
             <div key={g.name} className="missing-item" onClick={() => onTabChange(g.category)}>
               <span className="group-name">{g.name}</span>
-              <span className="missing-count">{g.missing} left</span>
+              <span className="missing-count">{g.missing} cards left</span>
             </div>
           ))}
         </div>

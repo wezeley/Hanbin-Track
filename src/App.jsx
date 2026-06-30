@@ -49,35 +49,40 @@ function App() {
           <GroupGrid groups={filteredGroups} onSelectGroup={setSelectedGroup} />
         ) : (
           <div className="focused-group-view">
-            <button className="back-button" onClick={() => setSelectedGroup(null)}>← BACK</button>
-            <h2 className="focused-group-name">{selectedGroup.name}</h2>
+            <div className="focused-header-row">
+              <button className="back-btn-compact" onClick={() => setSelectedGroup(null)}>← BACK</button>
+              <h2 className="group-name-compact">{selectedGroup.name}</h2>
+              <div style={{width: '60px'}}></div>
+            </div>
+
             {selectedGroup.sets.map(set => {
               const setIds = [];
               HANBIN_DATA.rarities.forEach(r => selectedGroup.members.forEach(m => {
                 setIds.push(`${selectedGroup.code}#${m.code}${String(((set.id - 1) * 5) + r + (m.offset || 0)).padStart(3, '0')}`);
               }));
+              const isSetComplete = setIds.every(id => ownedCards.includes(id));
+
               return (
                 <div key={set.id} className="set-section">
                   <div className="set-symbol-container">
                     <img src={`${baseUrl}symbols/S${set.id}.webp`} className="set-symbol-icon" alt="S" />
-                    <input type="checkbox" className="set-checkbox" checked={setIds.every(id => ownedCards.includes(id))} onChange={() => markSetAsOwned(selectedGroup, set)} />
+                    <input type="checkbox" className="set-checkbox" checked={isSetComplete} onChange={() => markSetAsOwned(selectedGroup, set)} />
                   </div>
+                  
                   <div className="rarities-container">
                     {HANBIN_DATA.rarities.map(rarity => {
                       const rarityIds = selectedGroup.members.map(m => `${selectedGroup.code}#${m.code}${String(((set.id - 1) * 5) + rarity + (m.offset || 0)).padStart(3, '0')}`);
+                      const isRarityComplete = rarityIds.every(id => ownedCards.includes(id));
                       return (
                         <div key={rarity} className="rarity-row">
-                          <button className={`rarity-toggle ${rarityIds.every(id => ownedCards.includes(id)) ? 'active' : ''}`} onClick={() => markRarityAsOwned(selectedGroup, set, rarity)}>❤</button>
+                          <button className={`rarity-toggle ${isRarityComplete ? 'active' : ''}`} onClick={() => markRarityAsOwned(selectedGroup, set, rarity)}>❤</button>
                           <div className="grid">
                             {selectedGroup.members.map(member => {
                               const seq = ((set.id - 1) * 5) + rarity + (member.offset || 0);
                               const botId = `${selectedGroup.code}#${member.code}${String(seq).padStart(3, '0')}`;
                               const folder = (selectedGroup.folder || selectedGroup.code).toUpperCase();
-                              
-                              // SUA LINHA ADICIONADA:
                               const fileName = encodeURIComponent(botId).toUpperCase();
                               const imgPath = `${baseUrl}cards/${folder}/${fileName}.png`;
-                              
                               return <Card key={botId} botId={botId} imagePath={imgPath} isOwned={ownedCards.includes(botId)} onToggle={toggleCard} />;
                             })}
                           </div>
