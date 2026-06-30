@@ -159,3 +159,68 @@ header { margin-bottom: 20px; text-align: center; }
 /* Botão Back e Nome Grupo */
 .back-button { background: none; border: 1px solid #222; color: #444; padding: 4px 10px; font-size: 0.55rem; border-radius: 3px; cursor: pointer; margin-bottom: 15px; }
 .focused-group-name { font-family: 'Syncopate', sans-serif; font-size: 1.1rem; text-align: center; margin-bottom: 20px; }
+
+/* --- AJUSTES PARA CELULAR (Telas menores que 600px) --- */
+@media (max-width: 600px) {
+  
+  /* 1. Título menor para não ocupar espaço */
+  .title {
+    font-size: 0.8rem;
+    letter-spacing: 3px;
+  }
+
+  /* 2. Abas agora viram uma barra de rolagem horizontal (estilo Instagram) 
+     Isso evita que elas fiquem empilhadas ocupando a tela toda */
+  .tabs-container {
+    display: flex;
+    flex-wrap: nowrap; /* Força ficar em uma linha só */
+    overflow-x: auto;  /* Permite arrastar pro lado */
+    justify-content: flex-start;
+    padding: 10px 5px;
+    -webkit-overflow-scrolling: touch; /* Deixa a rolagem lisinha */
+  }
+
+  .tab-button {
+    flex: 0 0 auto; /* Não deixa o botão encolher */
+    padding: 8px 12px;
+    font-size: 0.5rem;
+  }
+
+  /* 3. Dashboard da Home mais compacto */
+  .stat-card p {
+    font-size: 1.5rem;
+  }
+  
+  .category-stats-grid {
+    grid-template-columns: 1fr 1fr; /* Duas colunas fixas na Home */
+  }
+
+  /* 4. Cartas e Raridades */
+  .rarities-container {
+    gap: 10px; /* Menos espaço entre 1H e 2H */
+  }
+
+  .grid {
+    display: flex;
+    flex-wrap: wrap;   /* NO CELULAR: Deixa as cartas quebrarem de linha */
+    justify-content: center;
+    gap: 4px;
+  }
+
+  /* 5. ZOOM NO MOBILE - Muito importante! */
+  /* Reduzimos o zoom para 1.5x no toque para não cobrir a tela */
+  .card:active, .card:hover {
+    transform: scale(1.5) !important;
+    z-index: 999;
+  }
+
+  /* 6. Quadradinhos dos Grupos (Tiles) */
+  .group-tiles-grid {
+    grid-template-columns: 1fr 1fr; /* Dois grupos por linha */
+  }
+  
+  .group-tile {
+    height: 45px;
+    font-size: 0.55rem;
+  }
+}
