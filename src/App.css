@@ -44,15 +44,33 @@ header { margin-bottom: 20px; text-align: center; }
 .group-tile:hover { border-color: var(--accent-color); color: var(--accent-color); }
 
 /* Cartas */
-.rarities-container { display: flex; flex-wrap: wrap; gap: 40px; justify-content: center; align-items: flex-start;
-  width: 100%;  margin-top: 20px;}
-  .rarity-row {
-  flex: 0 1 auto;
-  margin-bottom: 20px; /* Espaço extra caso elas quebrem para a linha de baixo */
+.rarities-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px; /* Reduzido de 40px para 15px */
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 10px; /* Menos espaço no topo */
 }
-.grid { display: flex; gap: 6px; }
-.card { width: 85px; cursor: pointer; }
-.card-inner { width: 85px; height: 128px; border-radius: 5px; overflow: hidden; border: 1px solid #222; }
+.rarity-row {
+  flex: 0 1 auto;
+  margin-bottom: 5px; /* Quase nenhum espaço sobrando abaixo */
+}
+.grid {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 5px; /* Espaço lateral entre os integrantes menor */
+  padding: 2px;
+}
+
+.card-inner {
+  width: 80px !important;
+  height: 120px !important; /* Proporção mantida, mas menor */
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid #222;
+  background: #000;
+}
 .card-image { width: 100%; height: 100%; object-fit: cover; transform: scale(1.05); }
 .card:not(.owned) .card-image { filter: grayscale(1) brightness(0.3); }
 .card.owned .card-inner { border-color: var(--owned-color); box-shadow: 0 0 8px rgba(0, 255, 136, 0.3); }
@@ -60,4 +78,22 @@ header { margin-bottom: 20px; text-align: center; }
 /* Símbolos */
 .set-symbol-icon { height: 16px; image-rendering: pixelated; margin-bottom: 10px; opacity: 0.6; }
 .back-button { background: none; border: 1px solid #222; color: #444; padding: 4px 10px; font-size: 0.55rem; border-radius: 3px; cursor: pointer; margin-bottom: 15px; }
-.focused-group-name { font-family: 'Syncopate', sans-serif; font-size: 1.1rem; text-align: center; margin-bottom: 20px; }
+.focused-group-name {
+  font-size: 1.1rem;
+  margin-bottom: 10px; /* Menos espaço abaixo do nome do grupo */
+}
+
+.set-section {
+  margin-bottom: 20px; /* Menos espaço entre o Set 1 e Set 2 */
+}
+
+/* 5. Ajuste no ícone S1 para não empurrar muito pra baixo */
+.set-symbol-container {
+  margin-bottom: 0px; 
+}
+
+/* DICA DE VISIBILIDADE: Aumentar o zoom no hover */
+.card:hover {
+  transform: scale(1.2); /* Quando passar o mouse, ela cresce bem para você ver os detalhes */
+  z-index: 100;
+}
