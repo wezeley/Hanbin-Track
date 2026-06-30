@@ -97,7 +97,8 @@ function App() {
                             const seq = ((set.id - 1) * 5) + rarity + (member.offset || 0);
                             const botId = `${selectedGroup.code}#${member.code}${String(seq).padStart(3, '0')}`;
                             const folder = (selectedGroup.folder || selectedGroup.code).toUpperCase();
-                            const imgPath = `${baseUrl}cards/${folder}/${encodeURIComponent(botId).toUpperCase()}.webp`;
+                            const fileName = encodeURIComponent(botId).toUpperCase();
+                            const imgPath = `${baseUrl}cards/${folder}/${encodeURIComponent(botId).toUpperCase()}.png`;
                             return (
                               <Card key={botId} botId={botId} imagePath={imgPath} isOwned={ownedCards.includes(botId)} onToggle={toggleCard} />
                             );
