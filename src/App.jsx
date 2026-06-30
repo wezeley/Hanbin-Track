@@ -41,6 +41,28 @@ function App() {
     return { name: cat, count: ownedInCat, total: totalInCat };
   });
 
+const markSetAsOwned = (group, set) => {
+  const allIdsInSet = [];
+  
+  // Percorre todas as raridades e membros para gerar os IDs
+  HANBIN_DATA.rarities.forEach(rarity => {
+    group.members.forEach(member => {
+      const seq = ((set.id - 1) * 5) + rarity + (member.offset || 0);
+      const botId = `${group.code}#${member.code}${String(seq).padStart(3, '0')}`;
+      allIdsInSet.push(botId);
+    });
+  });
+
+  // Verifica se você já tem todos. Se tiver, a gente desmarca tudo (limpa).
+  const hasAll = allIdsInSet.every(id => ownedCards.includes(id));
+
+  if (hasAll) {
+    setOwnedCards(prev => prev.filter(id => !allIdsInSet.includes(id)));
+  } else {
+    setOwnedCards(prev => [...new Set([...prev, ...allIdsInSet])]);
+  }
+};
+
   const filteredGroups = HANBIN_DATA.groups.filter(g => g.category?.trim().toLowerCase() === activeTab?.trim().toLowerCase());
 
   return (
@@ -74,13 +96,26 @@ function App() {
               <div key={set.id} className="set-section">
                 <div className="set-symbol-container">
                   <img 
-                    src={`${baseUrl}symbols/S${set.id}.png`} // Ajuste para .webp se necessário
+                    src={`${baseUrl}symbols/S${set.id}.webp`} // Ajuste para .webp se necessário
                     alt="S" 
                     className="set-symbol-icon" 
                     onError={(e) => e.target.style.display = 'none'}
                   />
                 </div>
-
+                <div className="set-symbol-container">
+                <img src={`${baseUrl}symbols/S${set.id}.webp`} className="set-symbol-icon" />
+  
+                {/* BOTÃO DE MARCAR TUDO */}
+                <button 
+                  className="bulk-action-btn" 
+                  onClick={() => markSetAsOwned(selectedGroup, set)}
+                >
+                  {/* Muda o texto se já tiver tudo marcado */}
+                  {HANBIN_DATA.rarities.every(r => selectedGroup.members.every(m => ownedCards.includes(`${selectedGroup.code}#${m.code}${String(((set.id - 1) * 5) + r + (m.offset || 0)).padStart(3, '0')}`))) 
+                    ? "Uncheck All" 
+                    : "Check All Set"}
+                </button>
+              </div>
                 {/* CONTAINER PARA RARIDADES LADO A LADO */}
                 <div className="rarities-container">
                   {HANBIN_DATA.rarities.map(rarity => (

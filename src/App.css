@@ -46,31 +46,36 @@ header { margin-bottom: 20px; text-align: center; }
 /* Cartas */
 .rarities-container {
   display: flex;
-  flex-wrap: wrap;
-  gap: 15px; /* Reduzido de 40px para 15px */
-  justify-content: center;
-  align-items: flex-start;
-  margin-top: 10px; /* Menos espaço no topo */
+  flex-wrap: nowrap; /* ISSO impede que o 2H desça para baixo do 1H */
+  gap: 15px; 
+  justify-content: flex-start;
+  overflow-x: auto; /* Se a tela for pequena, você arrasta pro lado */
+  padding-bottom: 10px;
 }
+
 .rarity-row {
-  flex: 0 1 auto;
-  margin-bottom: 5px; /* Quase nenhum espaço sobrando abaixo */
+  flex: 0 0 auto; /* Não deixa o bloco encolher */
 }
+
 .grid {
   display: flex;
   flex-wrap: nowrap;
-  gap: 5px; /* Espaço lateral entre os integrantes menor */
+  gap: 3px; /* Espaço lateral entre os integrantes menor */
   padding: 2px;
+}
+.card {
+  width: 60px !important; 
+  cursor: pointer;
+  transition: transform 0.2s ease; 
 }
 
 .card-inner {
-  width: 80px !important;
-  height: 120px !important; /* Proporção mantida, mas menor */
-  border-radius: 6px;
-  overflow: hidden;
+  width: 60px !important;
+  height: 90px !important; /* Proporção 2:3 mantida */
+  border-radius: 4px;
   border: 1px solid #222;
-  background: #000;
 }
+
 .card-image { width: 100%; height: 100%; object-fit: cover; transform: scale(1.05); }
 .card:not(.owned) .card-image { filter: grayscale(1) brightness(0.3); }
 .card.owned .card-inner { border-color: var(--owned-color); box-shadow: 0 0 8px rgba(0, 255, 136, 0.3); }
