@@ -1,82 +1,79 @@
-/* Centralização total das abas */
-.tabs-container {
-  display: flex;
-  gap: 10px;
-  overflow-x: auto;
-  padding: 10px 0 20px 0;
-  justify-content: center; /* Centraliza no Desktop */
-  margin: 0 auto;
-  max-width: 100%;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Space+Grotesk:wght@500;700&display=swap');
+
+:root {
+  --bg: #09090b;
+  --surface: #131316;
+  --surface-brighter: #1c1c21;
+  --accent: #3b82f6;
+  --owned: #22c55e;
+  --text: #fafafa;
+  --text-dim: #71717a;
+  --border: rgba(255, 255, 255, 0.08);
 }
 
-/* Header do Set (S1 + Checkbox + Toggle) */
-.set-header-minimal {
-  display: flex;
-  justify-content: center; /* Centraliza a header do set com as cartas */
-  width: 100%;
-  margin-bottom: 10px;
-}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background-color: var(--bg); color: var(--text); font-family: 'Inter', sans-serif; overflow-x: hidden; }
+.container { max-width: 1100px; margin: 0 auto; padding: 20px; }
 
-.set-controls-group {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  background: var(--surface-brighter);
-  padding: 6px 15px;
-  border-radius: 20px;
-  border: 1px solid var(--border);
-  /* Isso move o controle levemente para a esquerda do centro 
-     para ficar "no meio do caminho" entre a margem e o início das cartas */
-  transform: translateX(-20px); 
-}
+/* HEADER E TABS */
+header { display: flex; justify-content: center; margin-bottom: 20px; }
+.title { font-family: 'Space Grotesk'; font-size: 1rem; letter-spacing: 4px; cursor: pointer; text-transform: uppercase; color: white; }
 
-.expand-toggle-btn {
-  background: none;
-  border: none;
-  color: var(--text-dim);
-  font-size: 0.6rem;
-  cursor: pointer;
-  padding: 0 5px;
+.tabs-container { display: flex; gap: 8px; overflow-x: auto; padding-bottom: 15px; justify-content: center; margin-bottom: 25px; scrollbar-width: none; }
+.tabs-container::-webkit-scrollbar { display: none; }
+.tab-button {
+  background: var(--surface); border: 1px solid var(--border); color: var(--text-dim);
+  padding: 8px 16px; border-radius: 99px; font-size: 0.7rem; font-weight: 600; cursor: pointer; white-space: nowrap; transition: 0.2s;
 }
+.tab-button.active { background: var(--text); color: var(--bg); border-color: var(--text); }
 
-.expand-toggle-btn:hover {
-  color: white;
-}
+/* DASHBOARD DUAS COLUNAS */
+.dashboard-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 10px; }
+.dashboard-column { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 20px; }
+.section-header { font-family: 'Space Grotesk'; font-size: 0.7rem; color: var(--text-dim); letter-spacing: 2px; margin-bottom: 15px; }
 
-/* Ajuste das Raridades para acompanhar o fechamento */
-.set-section {
-  margin-bottom: 30px;
-  transition: all 0.3s ease;
-}
+.stat-row-premium { margin-bottom: 20px; }
+.stat-info { display: flex; justify-content: space-between; margin-bottom: 8px; font-family: 'Space Grotesk'; font-size: 0.7rem; }
+.stat-bar-bg { width: 100%; height: 8px; background: #222; border-radius: 10px; overflow: hidden; }
+.stat-bar-fill { height: 100%; background: #fff; box-shadow: 0 0 10px rgba(255,255,255,0.2); transition: width 1s; }
 
-.set-section.collapsed {
-  margin-bottom: 10px;
-  opacity: 0.6;
-}
+.missing-scroll-area { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; max-height: 450px; overflow-y: auto; }
+.missing-card-mini { background: var(--surface-brighter); padding: 12px; border-radius: 10px; border: 1px solid var(--border); cursor: pointer; transition: 0.2s; }
+.m-name { display: block; font-size: 0.75rem; font-weight: 700; color: #eee; }
+.m-count { font-size: 0.6rem; color: var(--text-dim); }
 
-/* Espaçamento das fileiras de cartas */
-.rarities-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 35px; /* Espaço entre 1H, 2H... */
-  margin-top: 15px;
-}
+/* FOCO NO GRUPO */
+.focused-header-row { display: flex; align-items: center; justify-content: space-between; width: 100%; margin-bottom: 25px; padding: 10px; border-bottom: 1px solid var(--border); }
+.back-btn-compact { background: var(--surface-brighter); border: 1px solid var(--border); color: white; padding: 6px 12px; border-radius: 6px; font-size: 0.65rem; cursor: pointer; }
+.group-name-compact { font-family: 'Space Grotesk'; font-size: 1.2rem; text-transform: uppercase; letter-spacing: 3px; }
 
-/* Grid e Cartas */
-.grid {
-  display: flex;
-  gap: 5px;
-}
+/* SETS E ABRE/FECHA */
+.set-section { margin-bottom: 30px; display: flex; flex-direction: column; align-items: center; }
+.set-header-minimal { display: flex; justify-content: center; width: 100%; margin-bottom: 10px; }
+.set-controls-group { display: flex; align-items: center; gap: 12px; background: var(--surface-brighter); padding: 6px 15px; border-radius: 20px; border: 1px solid var(--border); }
+.set-symbol-icon { height: 18px; width: auto; image-rendering: pixelated; }
+.expand-toggle-btn { background: none; border: none; color: var(--text-dim); font-size: 0.6rem; cursor: pointer; }
 
-/* Responsividade: No mobile as abas alinham à esquerda para rolagem */
+/* CARTAS 55x77 */
+.rarities-container { display: flex; flex-direction: column; align-items: center; gap: 30px; margin-top: 15px; }
+.rarity-row { display: flex; align-items: center; gap: 12px; }
+.grid { display: flex; gap: 4px; }
+.card { width: 55px; height: 77px; cursor: pointer; transition: transform 0.2s; }
+.card-inner { width: 55px; height: 77px; border-radius: 4px; overflow: hidden; border: 1px solid var(--border); background: #000; }
+.card-image { width: 100%; height: 100%; object-fit: fill; display: block; }
+.card:hover { transform: scale(1.8); z-index: 50; box-shadow: 0 0 15px rgba(0,0,0,1); }
+.card:not(.owned) img { opacity: 0.25; filter: grayscale(1); }
+.card.owned .card-inner { border-color: var(--owned); box-shadow: 0 0 10px rgba(34, 197, 94, 0.3); }
+
+/* CHECKBOX E CORAÇÃO */
+.set-checkbox { appearance: none; width: 15px; height: 15px; border: 1px solid #444; border-radius: 4px; cursor: pointer; position: relative; }
+.set-checkbox:checked { background: var(--owned); }
+.set-checkbox:checked::after { content: '✓'; position: absolute; color: black; font-size: 10px; top: -2px; left: 3px; font-weight: bold; }
+.rarity-toggle { background: none; border: none; color: #222; cursor: pointer; font-size: 1rem; width: 20px; }
+.rarity-toggle.active { color: var(--owned); }
+
 @media (max-width: 800px) {
-  .tabs-container {
-    justify-content: flex-start;
-    padding-left: 15px;
-  }
-  
-  .set-controls-group {
-    transform: none; /* No mobile fica centralizado puro */
-  }
+  .dashboard-layout { grid-template-columns: 1fr; }
+  .grid { flex-wrap: wrap; justify-content: center; }
+  .rarity-row { flex-direction: column; }
 }
