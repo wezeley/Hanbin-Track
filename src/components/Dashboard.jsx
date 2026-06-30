@@ -16,7 +16,7 @@ export function Dashboard({ ownedCards = [], onTabChange }) {
     const groupOwned = ownedCards.filter(id => id.split('#')[0] === g.code).length;
     const total = getGroupTotal(g);
     return { ...g, missing: total - groupOwned };
-  }).filter(g => g.missing > 0);
+  }).filter(g => g.missing > 0).slice(0, 9); // LIMITADO A 9
 
   return (
     <div className="dashboard-layout">
@@ -24,24 +24,24 @@ export function Dashboard({ ownedCards = [], onTabChange }) {
         <div className="section-header">📊 Global Progress</div>
         <div className="circle-container">
           <div className="circle-value">{percent}%</div>
-          <svg style={{position: 'absolute', transform: 'rotate(-90deg)'}} width="150" height="150">
-            <circle cx="75" cy="75" r="65" fill="none" stroke="#f1f5f9" strokeWidth="10" />
-            <circle cx="75" cy="75" r="65" fill="none" stroke="#3b82f6" strokeWidth="10" 
-                    strokeDasharray="408.4" strokeDashoffset={408.4 - (408.4 * percent) / 100} 
+          <svg style={{position: 'absolute', transform: 'rotate(-90deg)'}} width="120" height="120">
+            <circle cx="60" cy="60" r="54" fill="none" stroke="#1a1a1a" strokeWidth="8" />
+            <circle cx="60" cy="60" r="54" fill="none" stroke="#3b82f6" strokeWidth="8" 
+                    strokeDasharray="339.3" strokeDashoffset={339.3 - (339.3 * percent) / 100} 
                     strokeLinecap="round" style={{transition: 'stroke-dashoffset 1s ease'}} />
           </svg>
         </div>
-        <div className="stat-row-tcg"><span>Collected</span><b>{totalOwned}</b></div>
-        <div className="stat-row-tcg"><span>Total Cards</span><b>{totalPossible}</b></div>
+        <div style={{fontSize: '0.8rem', display: 'flex', justifyContent: 'space-between', marginBottom: '5px'}}><span>Collected</span><b>{totalOwned}</b></div>
+        <div style={{fontSize: '0.8rem', display: 'flex', justifyContent: 'space-between'}}><span>Total Cards</span><b>{totalPossible}</b></div>
       </div>
 
       <div className="dashboard-column">
-        <div className="section-header">📄 Missing from Collection</div>
+        <div className="section-header">📄 Missing (Top 9)</div>
         <div className="missing-grid">
           {missingGroups.map(g => (
             <div key={g.code} className="missing-item-tcg" onClick={() => onTabChange(g.category)}>
               <b>{g.name}</b>
-              <span>{g.missing} cards remaining</span>
+              <span>{g.missing} left</span>
             </div>
           ))}
         </div>
