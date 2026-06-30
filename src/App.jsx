@@ -45,8 +45,11 @@ function App() {
         ))}
       </aside>
 
-      <main className="skeleton-main">
-        <Header title={HANBIN_DATA.botName} ownedCards={ownedCards} baseUrl={baseUrl} hanbinData={HANBIN_DATA} />
+// No App.jsx, dentro do <main className="skeleton-main">
+<Header 
+  title={HANBIN_DATA.botName} 
+  onHome={resetNavigation} 
+/>
 
         {/* 1. TELA HOME */}
         {!activeTab ? (

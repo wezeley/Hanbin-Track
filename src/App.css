@@ -30,3 +30,41 @@
 
 /* Set Header */
 .skeleton-set-header { background: #333; padding: 10px; margin-bottom: 10px; cursor: pointer; }
+
+/* Cabeçalho alinhado e simples */
+.skeleton-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #333;
+}
+
+.user-section {
+  display: flex;
+  align-items: center;
+}
+
+.username-minimal {
+  background: transparent;
+  border: none;
+  border-bottom: 1px dashed #555;
+  color: #888;
+  font-family: inherit;
+  font-size: 0.8rem;
+  text-align: right;
+  width: 120px;
+  outline: none;
+  transition: 0.2s;
+}
+
+.username-minimal:focus {
+  color: white;
+  border-bottom-color: white;
+}
+
+/* Remove qualquer resquício da bolinha/avatar gigante */
+.avatar-circle, .avatar-modal {
+  display: none !important;
+}
