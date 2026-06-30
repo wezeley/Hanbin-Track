@@ -23,11 +23,7 @@ export const HANBIN_DATA = {
         { name: "Karina", code: "KR" }, { name: "Giselle", code: "GS" },
         { name: "Winter", code: "WT" }, { name: "Ningning", code: "NI" }
       ],
-      sets: [
-    { id: 1, name: "Set 1" }, // Mostra cartas 001 a 005
-    { id: 2, name: "Set 2" }, // Mostra cartas 006 a 010 (calculado automaticamente)
-    { id: 3, name: "Set 3" }  // Mostra cartas 011 a 015
-      ]
+      maxSet: 3.2,
     },
     {
       name: "&Team",
@@ -39,11 +35,7 @@ export const HANBIN_DATA = {
         { name: "EJ", code: "EJ" }, { name: "Yuma", code: "YM" }, { name: "Jo", code: "JO" },
         { name: "Harua", code: "HR" }, { name: "Taki", code: "TK" }, { name: "Maki", code: "MK" }
       ],
-      sets: [
-    { id: 1, name: "Set 1" }, // Mostra cartas 001 a 005
-    { id: 2, name: "Set 2" }, // Mostra cartas 006 a 010 (calculado automaticamente)
-    { id: 3, name: "Set 3" }  // Mostra cartas 011 a 015
-      ]
+      maxSet: 3.2,
     },
     {
       name: "Enhypen",
@@ -53,11 +45,7 @@ export const HANBIN_DATA = {
         { name: "Heeseung", code: "HS" }, { name: "Jay", code: "JY" }, { name: "Jake", code: "JK" },
         { name: "Sunghoon", code: "SH" }, { name: "Sunoo", code: "SN" }, { name: "Jungwon", code: "JW" }, { name: "Ni-ki", code: "NK" }
       ],
-       sets: [
-    { id: 1, name: "Set 1" }, // Mostra cartas 001 a 005
-    { id: 2, name: "Set 2" }, // Mostra cartas 006 a 010 (calculado automaticamente)
-    { id: 3, name: "Set 3" }  // Mostra cartas 011 a 015
-      ]
+       maxSet: 3.2,
     },
     {
       name: "NEXZ",
@@ -67,10 +55,7 @@ export const HANBIN_DATA = {
         { name: "Yu", code: "YU" }, { name: "Tomoya", code: "TM" }, { name: "Haru", code: "HR" },
         { name: "Ken", code: "KN" }, { name: "Seita", code: "ST" }, { name: "Hyui", code: "HY" }, { name: "Yuki", code: "YK" }
       ],
-      sets: [
-    { id: 1, name: "Set 1" }, // Mostra cartas 001 a 005
-    { id: 2, name: "Set 2" }, // Mostra cartas 006 a 010 (calculado automaticamente)
-      ]
+      maxSet: 2,
     },
     {
       name: "Alpha Drive One",
@@ -79,7 +64,7 @@ export const HANBIN_DATA = {
       members: [
         { name: "Member 1", code: "M1" }, { name: "Member 2", code: "M2" }
       ],
-      sets: [{ id: 1, name: "Set 1" }]
+      maxSet: 1
     },
     {
       name: "Seventeen",
@@ -91,11 +76,7 @@ export const HANBIN_DATA = {
         { name: "Woozi", code: "WZ" }, { name: "The8", code: "T8" }, { name: "Mingyu", code: "MG" },
         { name: "DK", code: "DK" }, { name: "Seungkwan", code: "SK" }, { name: "Vernon", code: "VN" }, { name: "Dino", code: "DN" }
       ],
-      sets: [
-    { id: 1, name: "Set 1" }, // Mostra cartas 001 a 005
-    { id: 2, name: "Set 2" }, // Mostra cartas 006 a 010 (calculado automaticamente)
-    { id: 3, name: "Set 3" }  // Mostra cartas 011 a 015
-      ]
+      maxSet: 3.2
     },
     {
       name: "NCT Dream",
@@ -105,10 +86,7 @@ export const HANBIN_DATA = {
         { name: "Mark", code: "MK" }, { name: "Renjun", code: "RJ" }, { name: "Jeno", code: "JN" },
         { name: "Haechan", code: "HC" }, { name: "Jaemin", code: "JM" }, { name: "Chenle", code: "CL" }, { name: "Jisung", code: "JS" }
       ],
-      sets: [
-    { id: 1, name: "Set 1" }, // Mostra cartas 001 a 005
-    { id: 2, name: "Set 2" }, // Mostra cartas 006 a 010 (calculado automaticamente)
-      ]
+      maxSet: 2,
     },
     {
       name: "P1Harmony",
@@ -118,11 +96,7 @@ export const HANBIN_DATA = {
         { name: "Keeho", code: "KH" }, { name: "Theo", code: "TH" }, { name: "Jiung", code: "JU" },
         { name: "Intak", code: "IT" }, { name: "Soul", code: "SL" }, { name: "Jongseob", code: "JS" }
       ],
-      sets: [
-    { id: 1, name: "Set 1" }, // Mostra cartas 001 a 005
-    { id: 2, name: "Set 2" }, // Mostra cartas 006 a 010 (calculado automaticamente)
-    { id: 3, name: "Set 3" }  // Mostra cartas 011 a 015
-      ]
+      maxSet: 3.2,
     },
     {
       name: "RIIZE",
@@ -132,10 +106,7 @@ export const HANBIN_DATA = {
         { name: "Shotaro", code: "ST" }, { name: "Eunseok", code: "ES" }, { name: "Sungchan", code: "SC" },
         { name: "Wonbin", code: "WB" }, { name: "Seunghan", code: "SH" }, { name: "Sohee", code: "SO" }, { name: "Anton", code: "AT" }
       ],
-      sets: [
-    { id: 1, name: "Set 1" }, // Mostra cartas 001 a 005
-    { id: 2, name: "Set 2" }, // Mostra cartas 006 a 010 (calculado automaticamente)
-      ]
+      maxSet: 2,
     },
     {
       name: "BoyNextDoor",
@@ -145,11 +116,7 @@ export const HANBIN_DATA = {
         { name: "Sungho", code: "SH" }, { name: "Riwoo", code: "RW" }, { name: "Jaehyun", code: "JH" },
         { name: "Taesan", code: "TS" }, { name: "Leehan", code: "LH" }, { name: "Woonhak", code: "WH" }
       ],
-      sets: [
-    { id: 1, name: "Set 1" }, // Mostra cartas 001 a 005
-    { id: 2, name: "Set 2" }, // Mostra cartas 006 a 010 (calculado automaticamente)
-    { id: 3, name: "Set 3" }  // Mostra cartas 011 a 015
-      ]
+      maxSet: 3.2,
     },
     {
       name: "Evnne",
@@ -159,11 +126,7 @@ export const HANBIN_DATA = {
         { name: "Keita", code: "KT" }, { name: "Park Hanbin", code: "HB" }, { name: "Lee Jeonghyeon", code: "JH" },
         { name: "Yoo Seungeon", code: "SE" }, { name: "Ji Yunseo", code: "YS" }, { name: "Mun Junghyun", code: "MH" }, { name: "Park Jihoo", code: "JH" }
       ],
-      sets: [
-    { id: 1, name: "Set 1" }, // Mostra cartas 001 a 005
-    { id: 2, name: "Set 2" }, // Mostra cartas 006 a 010 (calculado automaticamente)
-    { id: 3, name: "Set 3" }  // Mostra cartas 011 a 015
-      ]
+      maxSet: 3.2,
     },
     {
     name: "Mark Tuan",
@@ -173,9 +136,7 @@ export const HANBIN_DATA = {
     members: [
       { name: "Mark Tuan", code: "MK", offset: 5 } // Apenas ela
     ],
-    sets: [
-      { id: 1, name: "Set 1" },
-    ]
+    maxSet: 1,
   },
       {
     name: "Cha Eunwoo",
@@ -185,9 +146,7 @@ export const HANBIN_DATA = {
     members: [
       { name: "Cha Eunwoo", code: "EW", offset: 0 } // Apenas ela
     ],
-    sets: [
-      { id: 1, name: "Set 1" },
-    ]
+    maxSet: 1,
   },
       {
     name: "From20",
@@ -197,10 +156,7 @@ export const HANBIN_DATA = {
     members: [
       { name: "From20", code: "FM", offset: 0 } // Apenas ela
     ],
-    sets: [
-      { id: 1, name: "Set 1" },
-      { id: 2, name: "Set 2" }
-    ]
+    maxSet: 2,
   },
   ]
 };
