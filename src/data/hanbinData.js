@@ -13,11 +13,17 @@ export const HANBIN_DATA = {
     "Limiteds"
   ],
   rarities: [1, 2, 3, 4, 5],
+  upcoming: [
+    { group: "STRAY KIDS", info: "Ate - Set 4 Release" },
+    { group: "AESPA", info: "Whiplash Concept Photos" },
+    { group: "NCT DREAM", info: "New Limited Event" }
+  ],
   groups: [
     {
   name: "STRAY KIDS",
   code: "SKZ",
   category: "Boy Group",
+  banner: "https://link-da-foto-do-grupo.png",
   maxSet: 3.2, // Set 3 até a raridade 2H
   members: [
     { 
@@ -232,4 +238,5 @@ export const HANBIN_DATA = {
     maxSet: 2,
   },
   ]
+
 };
