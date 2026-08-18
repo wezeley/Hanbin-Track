@@ -2,12 +2,18 @@ import { useState, useEffect } from 'react'
 import { HANBIN_DATA } from './data/hanbinData'
 import { Header } from './components/Header'
 import { Dashboard } from './components/Dashboard'
+import { Card } from './components/Card'
 import './App.css'
 
 function App() {
   const [ownedCards, setOwnedCards] = useState(() => JSON.parse(localStorage.getItem('hanbin-collection')) || []);
-  const [activeTab, setActiveTab] = useState(null);
+  const [currentView, setCurrentView] = useState('dashboard'); // Tabs principais
   const [selectedGroup, setSelectedGroup] = useState(null);
+  
+  // Estados de Filtro da Coleção
+  const [colCategory, setColCategory] = useState('Groups'); // Groups, Soloists, Specials
+  const [colSubCategory, setColSubCategory] = useState('ALL');
+  const [searchTerm, setSearchString] = useState('');
   const [openSet, setOpenSet] = useState(null);
 
   useEffect(() => localStorage.setItem('hanbin-collection', JSON.stringify(ownedCards)), [ownedCards]);
@@ -27,121 +33,119 @@ function App() {
   };
 
   const baseUrl = import.meta.env.BASE_URL;
-  const filteredGroups = HANBIN_DATA.groups.filter(g => !activeTab || g.category?.toLowerCase() === activeTab?.toLowerCase());
+
+  // --- FILTROS DE COLEÇÃO ---
+  const filteredGroups = HANBIN_DATA.groups.filter(g => {
+    const matchesSearch = g.name.toLowerCase().includes(searchTerm.toLowerCase());
+    
+    if (colCategory === 'Groups') {
+      const isGroup = ["Boygroups", "Girlgroups", "Co-Ed"].includes(g.category);
+      if (!isGroup) return false;
+      if (colSubCategory !== 'ALL' && g.category !== colSubCategory) return false;
+    } 
+    else if (colCategory === 'Soloists') {
+      if (g.category !== 'Soloists') return false;
+    } 
+    else if (colCategory === 'Specials') {
+      const isSpecial = ["Events", "Radiant", "Special", "Limiteds"].includes(g.category);
+      if (!isSpecial) return false;
+      if (colSubCategory !== 'ALL' && g.category !== colSubCategory) return false;
+    }
+
+    return matchesSearch;
+  });
 
   return (
     <div className="container">
-      <Header title={HANBIN_DATA.botName} onHome={() => {setActiveTab(null); setSelectedGroup(null);}} />
-
-      {!activeTab && !selectedGroup ? (
-        <Dashboard ownedCards={ownedCards} onTabChange={setActiveTab} />
-      ) : null}
-
-      <main style={{marginTop: '40px'}}>
-        {/* NAVEGAÇÃO / FILTROS (Igual ao site de referência) */}
-        {!selectedGroup && (
-          <div className="nav-tabs" style={{marginBottom: '30px'}}>
-             <button className={`tab-button ${activeTab === null ? 'active' : ''}`} onClick={() => setActiveTab(null)}>All</button>
-             {HANBIN_DATA.categories.map(cat => (
-               <button key={cat} className={`tab-button ${activeTab === cat ? 'active' : ''}`} onClick={() => setActiveTab(cat)}>{cat}</button>
-             ))}
-          </div>
-        )}
-
-        {/* 1. DIRETÓRIO (Lista de Grupos com Banner) */}
-        {!selectedGroup ? (
-          <div className="group-directory-grid">
-            {filteredGroups.map(group => (
-              <div key={group.code} className="directory-card" onClick={() => setSelectedGroup(group)}>
-                <div className="card-banner">
-                  <img src={group.banner || 'https://via.placeholder.com/400x200?text=NO+BANNER'} alt={group.name} />
-                </div>
-                <div className="card-info">
-                  <h3>{group.name}</h3>
-                  <div className="card-mini-stats">
-                    <span>{group.members.length} Members</span> • <span>{group.category}</span>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        ) : (
-          /* 2. SETS VIEW (Sets como coleções individuais) */
-          <div className="group-detail-view">
-            <div className="detail-header-nav">
-                <button className="back-link-btn" onClick={() => setSelectedGroup(null)}>← Back to Directory</button>
-            </div>
-            
-            <div className="directory-header">
-              <h1 style={{textTransform: 'uppercase'}}>{selectedGroup.name}</h1>
-              <p style={{color: '#999'}}>Select a collection to track cards</p>
-            </div>
-
-            <div className="sets-grid">
-              {getGroupStructure(selectedGroup).map(set => {
-                const previewImages = selectedGroup.members.slice(0, 4).map(m => m.links?.[`s${set.id}h1`]);
-                return (
-                  <div key={set.id} className="set-card" onClick={() => setOpenSet(set)}>
-                    <div className="set-preview-row">
-                      {previewImages.map((url, i) => <img key={i} src={url || 'https://via.placeholder.com/50x70'} className="set-preview-img" />)}
-                    </div>
-                    <div className="set-card-label">
-                        <span className="set-tag">Set {set.id}</span>
-                        <span className="set-name-text">Standard Collection</span>
-                    </div>
-                  </div>
-                )
-              })}
-            </div>
-          </div>
-        )}
-      </main>
-
-      {/* 3. MODAL DE RARIDADES (O CORAÇÃO DO HANBIN BOT) */}
-      {openSet && (
-        <div className="modal-overlay" onClick={() => setOpenSet(null)}>
-          <div className="modal-content" onClick={e => e.stopPropagation()}>
-            <div className="modal-header">
-              <div className="modal-title">
-                <span className="modal-subtitle">SET {openSet.id} • {selectedGroup.name}</span>
-                <h2>{selectedGroup.name} Collection</h2>
-              </div>
-              <button className="modal-close" onClick={() => setOpenSet(null)}>&times;</button>
-            </div>
-
-            <div className="modal-body-scroll">
-              {/* LOOP DE RARIDADES (1H até 5H) */}
-              {openSet.rarities.map(r => (
-                <div key={r} className="modal-rarity-section">
-                  <div className="rarity-indicator">
-                    {Array.from({ length: r }).map((_, i) => <span key={i}>❤</span>)}
-                    <span className="rarity-label">{r} Hearts</span>
-                  </div>
-                  
-                  <div className="modal-cards-grid">
-                    {selectedGroup.members.map(m => {
-                      const seq = ((openSet.id - 1) * 5) + r + (m.offset || 0);
-                      const botId = `${selectedGroup.code}#${m.code}${String(seq).padStart(3, '0')}`;
-                      const isOwned = ownedCards.includes(botId);
-                      const imgUrl = m.links?.[`s${openSet.id}h${r}`];
-
-                      return (
-                        <div key={botId} className={`card-item ${isOwned ? 'owned' : ''}`} onClick={() => toggleCard(botId)}>
-                          <div className="card-img-wrapper">
-                            <img src={imgUrl} alt={botId} />
-                          </div>
-                          <span className="card-member-name">{m.name}</span>
-                          <span className="card-id-text">#{botId}</span>
-                        </div>
-                      )
-                    })}
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
+      {/* 1. NAVBAR PRINCIPAL (TOP) */}
+      <nav className="main-navbar">
+        <div className="nav-logo" onClick={() => setCurrentView('dashboard')}>HANBIN</div>
+        <div className="nav-main-links">
+          {['dashboard', 'cards', 'coleção', 'commands', 'status'].map(view => (
+            <button key={view} className={currentView === view ? 'active' : ''} onClick={() => {setCurrentView(view); setSelectedGroup(null)}}>
+              {view}
+            </button>
+          ))}
         </div>
-      )}
+        <Header title="" /> {/* User editável aqui */}
+      </nav>
+
+      <main className="view-container">
+        
+        {/* VIEW: DASHBOARD */}
+        {currentView === 'dashboard' && (
+          <Dashboard ownedCards={ownedCards} />
+        )}
+
+        {/* VIEW: CARDS (MOSTRAR TODAS) */}
+        {currentView === 'cards' && (
+          <div className="all-cards-view">
+             <h2>All Cards Archive</h2>
+             <p>Em breve: Lista de todas as {864} cartas do bot</p>
+          </div>
+        )}
+
+        {/* VIEW: COLEÇÃO (DIRETÓRIO) */}
+        {currentView === 'coleção' && !selectedGroup && (
+          <div className="collection-layout">
+            <div className="collection-sidebar">
+              <input 
+                type="text" 
+                placeholder="Search groups..." 
+                className="search-input" 
+                onChange={(e) => setSearchString(e.target.value)}
+              />
+              
+              <div className="filter-section">
+                <button className={colCategory === 'Groups' ? 'active' : ''} onClick={() => {setColCategory('Groups'); setColSubCategory('ALL')}}>GROUPS</button>
+                {colCategory === 'Groups' && (
+                  <div className="sub-filters">
+                    {['ALL', 'Girlgroups', 'Boygroups', 'Co-Ed'].map(s => (
+                      <span key={s} className={colSubCategory === s ? 'active' : ''} onClick={() => setColSubCategory(s)}>{s}</span>
+                    ))}
+                  </div>
+                )}
+                
+                <button className={colCategory === 'Soloists' ? 'active' : ''} onClick={() => setColCategory('Soloists')}>SOLOISTS</button>
+                
+                <button className={colCategory === 'Specials' ? 'active' : ''} onClick={() => {setColCategory('Specials'); setColSubCategory('ALL')}}>SPECIALS</button>
+                {colCategory === 'Specials' && (
+                  <div className="sub-filters">
+                    {['ALL', 'Events', 'Radiant', 'Special'].map(s => (
+                      <span key={s} className={colSubCategory === s ? 'active' : ''} onClick={() => setColSubCategory(s)}>{s}</span>
+                    ))}
+                  </div>
+                )}
+              </div>
+            </div>
+
+            <div className="collection-content">
+              <div className="directory-grid">
+                {filteredGroups.map(group => (
+                  <div key={group.code} className="directory-card-new" onClick={() => setSelectedGroup(group)}>
+                    <img src={group.banner} alt="" className="card-bg-blur" />
+                    <div className="card-front">
+                      <h3>{group.name}</h3>
+                      <span>{group.category}</span>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* VIEW: DENTRO DO GRUPO (EXPANSÃO) */}
+        {currentView === 'coleção' && selectedGroup && (
+           <div className="group-detail-view">
+             <button className="btn-back" onClick={() => setSelectedGroup(null)}>← BACK TO COLLECTIONS</button>
+             {/* ... lógica de sets e modal que já temos ... */}
+             <h1 style={{fontSize: '3rem', margin: '20px 0'}}>{selectedGroup.name}</h1>
+             {/* (Aqui entra o loop de sets que fizemos antes) */}
+           </div>
+        )}
+
+      </main>
     </div>
   )
 }
