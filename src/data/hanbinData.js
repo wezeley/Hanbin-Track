@@ -15,6 +15,79 @@ export const HANBIN_DATA = {
   rarities: [1, 2, 3, 4, 5],
   groups: [
     {
+  name: "STRAY KIDS",
+  code: "SKZ",
+  category: "Boy Group",
+  maxSet: 3.2, // Set 3 até a raridade 2H
+  members: [
+    { 
+      name: "Bang Chan", code: "BC",
+      links: {
+        s1h1: "https://i.imgur.com/qlY9f5o.png", s1h2: "https://i.imgur.com/FeS3Q31.png", s1h3: "https://i.imgur.com/0O19dom.png", s1h4: "https://i.imgur.com/4zstXnF.png", s1h5: "https://i.imgur.com/oSwI2Ao.png",
+        s2h1: "https://i.imgur.com/03vAdgO.png", s2h2: "https://i.imgur.com/0w6qX3A.png", s2h3: "https://i.imgur.com/GnNG88R.png", s2h4: "https://i.imgur.com/SOD9B6z.png", s2h5: "https://i.imgur.com/0Y1UGiA.png",
+        s3h1: "https://i.imgur.com/7M8Tj55.png", s3h2: "https://i.imgur.com/51GhTqM.png"
+      }
+    },
+    { 
+      name: "Lee Know", code: "MH",
+      links: {
+        s1h1: "https://i.imgur.com/cJvmM9g.png", s1h2: "https://i.imgur.com/FAW6Ox5.png", s1h3: "https://i.imgur.com/bi81M2M.png", s1h4: "https://i.imgur.com/ZFR1YLo.png", s1h5: "https://i.imgur.com/UrKFOIe.png",
+        s2h1: "https://i.imgur.com/m36PLJ5.png", s2h2: "https://i.imgur.com/K0r9TdK.png", s2h3: "https://i.imgur.com/Kl8ofmG.png", s2h4: "https://i.imgur.com/cqmP6ac.png", s2h5: "https://i.imgur.com/uDvSxxw.png",
+        s3h1: "https://i.imgur.com/feUpXiu.png", s3h2: "https://i.imgur.com/vV13f6F.png"
+      }
+    },
+    { 
+      name: "Changbin", code: "CB",
+      links: {
+        s1h1: "https://i.imgur.com/t3o3MCm.png", s1h2: "https://i.imgur.com/Rzq2KKH.png", s1h3: "https://i.imgur.com/ghLj9Zq.png", s1h4: "https://i.imgur.com/bRIB9D5.png", s1h5: "https://i.imgur.com/8MNb5Q3.png",
+        s2h1: "https://i.imgur.com/xQPhECu.png", s2h2: "https://i.imgur.com/hc6Zg7R.png", s2h3: "https://i.imgur.com/vVhIlCc.png", s2h4: "https://i.imgur.com/sIHnDnw.png", s2h5: "https://i.imgur.com/IuvRku5.png",
+        s3h1: "https://i.imgur.com/EZJprgZ.png", s3h2: "https://i.imgur.com/vKNPCIe.png"
+      }
+    },
+    { 
+      name: "Hyunjin", code: "HJ",
+      links: {
+        s1h1: "https://i.imgur.com/wVHbynF.png", s1h2: "https://i.imgur.com/NOq3oDg.png", s1h3: "https://i.imgur.com/pVIfyQs.png", s1h4: "https://i.imgur.com/FyKVokv.png", s1h5: "https://i.imgur.com/CNiwh5C.png",
+        s2h1: "https://i.imgur.com/VRRBYVM.png", s2h2: "https://i.imgur.com/fd3Fu7x.png", s2h3: "https://i.imgur.com/WRdlRo3.png", s2h4: "https://i.imgur.com/oMon5N3.png", s2h5: "https://i.imgur.com/I522pun.png",
+        s3h1: "https://i.imgur.com/5R8dVYJ.png", s3h2: "https://i.imgur.com/NiHQbMO.png"
+      }
+    },
+    { 
+      name: "Han", code: "JS",
+      links: {
+        s1h1: "https://i.imgur.com/98Esz23.png", s1h2: "https://i.imgur.com/MJTN2wU.png", s1h3: "https://i.imgur.com/jrowcD7.png", s1h4: "https://i.imgur.com/vxikRmO.png", s1h5: "https://i.imgur.com/642liwX.png",
+        s2h1: "https://i.imgur.com/w5Q2SCm.png", s2h2: "https://i.imgur.com/ZZXZiae.png", s2h3: "https://i.imgur.com/WubJGYb.png", s2h4: "https://i.imgur.com/nlaKx6Y.png", s2h5: "https://i.imgur.com/hxJAHp6.png",
+        s3h1: "https://i.imgur.com/jFrlfIy.png", s3h2: "https://i.imgur.com/mTwef0V.png"
+      }
+    },
+    { 
+      name: "Felix", code: "FL",
+      links: {
+        s1h1: "https://i.imgur.com/B12uCnu.png", s1h2: "https://i.imgur.com/99KqZka.png", s1h3: "https://i.imgur.com/uyZWCPq.png", s1h4: "https://i.imgur.com/n22MQT7.png", s1h5: "https://i.imgur.com/KxVtneV.png",
+        s2h1: "https://i.imgur.com/33R9raf.png", s2h2: "https://i.imgur.com/e1rtY73.png", s2h3: "https://i.imgur.com/LgctQNJ.png", s2h4: "https://i.imgur.com/rgIVifu.png", s2h5: "https://i.imgur.com/YXpFbkT.png",
+        s3h1: "https://i.imgur.com/H51OfHQ.png", s3h2: "https://i.imgur.com/fRapSR4.png"
+      }
+    },
+    { 
+      name: "Seungmin", code: "SM",
+      links: {
+        s1h1: "https://i.imgur.com/55d21X4.png", s1h2: "https://i.imgur.com/9xy7Wl5.png", s1h3: "https://i.imgur.com/uszM69N.png", s1h4: "https://i.imgur.com/7XDZeii.png", s1h5: "https://i.imgur.com/kWjw3Wi.png",
+        s2h1: "https://i.imgur.com/0B7WHD7.png", s2h2: "https://i.imgur.com/lllHZNB.png", s2h3: "https://i.imgur.com/Uzy4NOB.png", s2h4: "https://i.imgur.com/cXY0X4g.png", s2h5: "https://i.imgur.com/so7ORnJ.png",
+        s3h1: "https://i.imgur.com/iJNLJAs.png", s3h2: "https://i.imgur.com/UtNUimI.png"
+      }
+    },
+    { 
+      name: "I.N", code: "JI",
+      links: {
+        s1h1: "https://i.imgur.com/MdJomKD.png", s1h2: "https://i.imgur.com/nt7ZkWO.png", s1h3: "https://i.imgur.com/g0zumcE.png", s1h4: "https://i.imgur.com/aMsRyOD.png", s1h5: "https://i.imgur.com/SGMJeVp.png",
+        s2h1: "https://i.imgur.com/OcsSIzj.png", s2h2: "https://i.imgur.com/VzFqsil.png", s2h3: "https://i.imgur.com/SfimUN1.png", s2h4: "https://i.imgur.com/WRYB56L.png", s2h5: "https://i.imgur.com/3ck8PhU.png",
+        s3h1: "https://i.imgur.com/3Fu9Sg3.png", s3h2: "https://i.imgur.com/AETN6th.png"
+      }
+    }
+  ]
+},
+
+    {
       name: "Aespa",
       code: "AES",
       folder: "AESPA",

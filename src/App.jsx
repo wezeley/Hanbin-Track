@@ -21,7 +21,6 @@ function App() {
     setSelectedGroup(null); 
   };
 
-  // ESTA É A FUNÇÃO QUE ESTAVA FALTANDO:
   const resetNavigation = () => { 
     setActiveTab(null); 
     setSelectedGroup(null); 
@@ -29,7 +28,7 @@ function App() {
 
   const toggleSet = (id) => setExpandedSets(p => ({ ...p, [id]: p[id] === undefined ? false : !p[id] }));
 
-  // Lógica do maxSet (Ex: 3.2)
+  // Lógica do maxSet
   const getGroupStructure = (group) => {
     const maxVal = group.maxSet || 1;
     const lastSetId = Math.floor(maxVal);
@@ -62,7 +61,6 @@ function App() {
       </aside>
 
       <main className="skeleton-main">
-        {/* HEADER CHAMANDO A FUNÇÃO RESET */}
         <Header title={HANBIN_DATA.botName} onHome={resetNavigation} />
 
         {!activeTab ? (
@@ -95,14 +93,25 @@ function App() {
                           {selectedGroup.members.map(m => {
                             const seq = ((set.id - 1) * 5) + r + (m.offset || 0);
                             const botId = `${selectedGroup.code}#${m.code}${String(seq).padStart(3, '0')}`;
-                            const folder = (selectedGroup.folder || selectedGroup.code).toUpperCase();
-                            const fileName = encodeURIComponent(botId).toUpperCase();
-                            const path = `${baseUrl}cards/${folder}/${fileName}.png`;
+                            
+                            // --- NOVA LÓGICA DE IMAGEM (LINKS EXTERNOS) ---
+                            let finalPath = "";
+                            
+                            // 1. Tenta pegar o link do Spreadsheet (ex: m.links.s1h1)
+                            if (m.links && m.links[`s${set.id}h${r}`]) {
+                              finalPath = m.links[`s${set.id}h${r}`];
+                            } else {
+                              // 2. Fallback: Se não tiver link, usa a pasta local
+                              const folder = (selectedGroup.folder || selectedGroup.code).toUpperCase();
+                              const fileName = encodeURIComponent(botId).toUpperCase();
+                              finalPath = `${baseUrl}cards/${folder}/${fileName}.png`;
+                            }
+
                             return (
                               <Card 
                                 key={botId} 
                                 botId={botId} 
-                                imagePath={path} 
+                                imagePath={finalPath} 
                                 isOwned={ownedCards.includes(botId)} 
                                 onToggle={toggleCard} 
                               />
