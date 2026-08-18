@@ -2,33 +2,18 @@ import { useState, useEffect } from 'react'
 import { HANBIN_DATA } from './data/hanbinData'
 import { Header } from './components/Header'
 import { Dashboard } from './components/Dashboard'
-import { Card } from './components/Card'
 import './App.css'
 
 function App() {
   const [ownedCards, setOwnedCards] = useState(() => JSON.parse(localStorage.getItem('hanbin-collection')) || []);
   const [activeTab, setActiveTab] = useState(null);
   const [selectedGroup, setSelectedGroup] = useState(null);
-  const [expandedSets, setExpandedSets] = useState({});
+  const [openSet, setOpenSet] = useState(null);
 
   useEffect(() => localStorage.setItem('hanbin-collection', JSON.stringify(ownedCards)), [ownedCards]);
 
-  // --- FUNÇÕES DE NAVEGAÇÃO ---
   const toggleCard = (id) => setOwnedCards(prev => prev.includes(id) ? prev.filter(x => x !== id) : [...prev, id]);
-  
-  const handleTabChange = (cat) => { 
-    setActiveTab(cat); 
-    setSelectedGroup(null); 
-  };
 
-  const resetNavigation = () => { 
-    setActiveTab(null); 
-    setSelectedGroup(null); 
-  };
-
-  const toggleSet = (id) => setExpandedSets(p => ({ ...p, [id]: p[id] === undefined ? false : !p[id] }));
-
-  // Lógica do maxSet
   const getGroupStructure = (group) => {
     const maxVal = group.maxSet || 1;
     const lastSetId = Math.floor(maxVal);
@@ -42,91 +27,121 @@ function App() {
   };
 
   const baseUrl = import.meta.env.BASE_URL;
-  const filteredGroups = HANBIN_DATA.groups.filter(g => g.category?.toLowerCase() === activeTab?.toLowerCase());
+  const filteredGroups = HANBIN_DATA.groups.filter(g => !activeTab || g.category?.toLowerCase() === activeTab?.toLowerCase());
 
   return (
-    <div className="app-skeleton">
-      {/* SIDEBAR */}
-      <aside className="skeleton-sidebar">
-        <h2 onClick={resetNavigation} style={{cursor: 'pointer'}}>HOME</h2>
-        {HANBIN_DATA.categories.map(cat => (
-          <button 
-            key={cat} 
-            onClick={() => handleTabChange(cat)} 
-            className={activeTab === cat ? 'active' : ''}
-          >
-            {cat}
-          </button>
-        ))}
-      </aside>
+    <div className="container">
+      <Header title={HANBIN_DATA.botName} onHome={() => {setActiveTab(null); setSelectedGroup(null);}} />
 
-      <main className="skeleton-main">
-        <Header title={HANBIN_DATA.botName} onHome={resetNavigation} />
+      {!activeTab && !selectedGroup ? (
+        <Dashboard ownedCards={ownedCards} onTabChange={setActiveTab} />
+      ) : null}
 
-        {!activeTab ? (
-          <Dashboard ownedCards={ownedCards} onTabChange={handleTabChange} />
-        ) : !selectedGroup ? (
-          <div className="skeleton-group-list">
-            {filteredGroups.map(g => (
-              <div key={g.code} className="skeleton-group-item" onClick={() => setSelectedGroup(g)}>
-                {g.name}
+      <main style={{marginTop: '40px'}}>
+        {/* NAVEGAÇÃO / FILTROS (Igual ao site de referência) */}
+        {!selectedGroup && (
+          <div className="nav-tabs" style={{marginBottom: '30px'}}>
+             <button className={`tab-button ${activeTab === null ? 'active' : ''}`} onClick={() => setActiveTab(null)}>All</button>
+             {HANBIN_DATA.categories.map(cat => (
+               <button key={cat} className={`tab-button ${activeTab === cat ? 'active' : ''}`} onClick={() => setActiveTab(cat)}>{cat}</button>
+             ))}
+          </div>
+        )}
+
+        {/* 1. DIRETÓRIO (Lista de Grupos com Banner) */}
+        {!selectedGroup ? (
+          <div className="group-directory-grid">
+            {filteredGroups.map(group => (
+              <div key={group.code} className="directory-card" onClick={() => setSelectedGroup(group)}>
+                <div className="card-banner">
+                  <img src={group.banner || 'https://via.placeholder.com/400x200?text=NO+BANNER'} alt={group.name} />
+                </div>
+                <div className="card-info">
+                  <h3>{group.name}</h3>
+                  <div className="card-mini-stats">
+                    <span>{group.members.length} Members</span> • <span>{group.category}</span>
+                  </div>
+                </div>
               </div>
             ))}
           </div>
         ) : (
-          <div className="skeleton-group-view">
-            <button onClick={() => setSelectedGroup(null)}>VOLTAR</button>
-            <h1>{selectedGroup.name}</h1>
+          /* 2. SETS VIEW (Sets como coleções individuais) */
+          <div className="group-detail-view">
+            <div className="detail-header-nav">
+                <button className="back-link-btn" onClick={() => setSelectedGroup(null)}>← Back to Directory</button>
+            </div>
+            
+            <div className="directory-header">
+              <h1 style={{textTransform: 'uppercase'}}>{selectedGroup.name}</h1>
+              <p style={{color: '#999'}}>Select a collection to track cards</p>
+            </div>
 
-            {getGroupStructure(selectedGroup).map(set => (
-              <div key={set.id} className="skeleton-set">
-                <div className="skeleton-set-header" onClick={() => toggleSet(set.id)}>
-                   SET {set.id} {expandedSets[set.id] === false ? '[Abrir]' : '[Fechar]'}
-                </div>
-                
-                {expandedSets[set.id] !== false && (
-                  <div className="rarities-container">
-                    {set.rarities.map(r => (
-                      <div key={r} className="skeleton-rarity-row">
-                        <span>{r}H</span>
-                        <div className="skeleton-grid">
-                          {selectedGroup.members.map(m => {
-                            const seq = ((set.id - 1) * 5) + r + (m.offset || 0);
-                            const botId = `${selectedGroup.code}#${m.code}${String(seq).padStart(3, '0')}`;
-                            
-                            // --- NOVA LÓGICA DE IMAGEM (LINKS EXTERNOS) ---
-                            let finalPath = "";
-                            
-                            // 1. Tenta pegar o link do Spreadsheet (ex: m.links.s1h1)
-                            if (m.links && m.links[`s${set.id}h${r}`]) {
-                              finalPath = m.links[`s${set.id}h${r}`];
-                            } else {
-                              // 2. Fallback: Se não tiver link, usa a pasta local
-                              const folder = (selectedGroup.folder || selectedGroup.code).toUpperCase();
-                              const fileName = encodeURIComponent(botId).toUpperCase();
-                              finalPath = `${baseUrl}cards/${folder}/${fileName}.png`;
-                            }
-
-                            return (
-                              <Card 
-                                key={botId} 
-                                botId={botId} 
-                                imagePath={finalPath} 
-                                isOwned={ownedCards.includes(botId)} 
-                                onToggle={toggleCard} 
-                              />
-                            );
-                          })}
-                        </div>
-                      </div>
-                    ))}
+            <div className="sets-grid">
+              {getGroupStructure(selectedGroup).map(set => {
+                const previewImages = selectedGroup.members.slice(0, 4).map(m => m.links?.[`s${set.id}h1`]);
+                return (
+                  <div key={set.id} className="set-card" onClick={() => setOpenSet(set)}>
+                    <div className="set-preview-row">
+                      {previewImages.map((url, i) => <img key={i} src={url || 'https://via.placeholder.com/50x70'} className="set-preview-img" />)}
+                    </div>
+                    <div className="set-card-label">
+                        <span className="set-tag">Set {set.id}</span>
+                        <span className="set-name-text">Standard Collection</span>
+                    </div>
                   </div>
-                )}
-              </div>
-            ))}
+                )
+              })}
+            </div>
           </div>
         )}
       </main>
+
+      {/* 3. MODAL DE RARIDADES (O CORAÇÃO DO HANBIN BOT) */}
+      {openSet && (
+        <div className="modal-overlay" onClick={() => setOpenSet(null)}>
+          <div className="modal-content" onClick={e => e.stopPropagation()}>
+            <div className="modal-header">
+              <div className="modal-title">
+                <span className="modal-subtitle">SET {openSet.id} • {selectedGroup.name}</span>
+                <h2>{selectedGroup.name} Collection</h2>
+              </div>
+              <button className="modal-close" onClick={() => setOpenSet(null)}>&times;</button>
+            </div>
+
+            <div className="modal-body-scroll">
+              {/* LOOP DE RARIDADES (1H até 5H) */}
+              {openSet.rarities.map(r => (
+                <div key={r} className="modal-rarity-section">
+                  <div className="rarity-indicator">
+                    {Array.from({ length: r }).map((_, i) => <span key={i}>❤</span>)}
+                    <span className="rarity-label">{r} Hearts</span>
+                  </div>
+                  
+                  <div className="modal-cards-grid">
+                    {selectedGroup.members.map(m => {
+                      const seq = ((openSet.id - 1) * 5) + r + (m.offset || 0);
+                      const botId = `${selectedGroup.code}#${m.code}${String(seq).padStart(3, '0')}`;
+                      const isOwned = ownedCards.includes(botId);
+                      const imgUrl = m.links?.[`s${openSet.id}h${r}`];
+
+                      return (
+                        <div key={botId} className={`card-item ${isOwned ? 'owned' : ''}`} onClick={() => toggleCard(botId)}>
+                          <div className="card-img-wrapper">
+                            <img src={imgUrl} alt={botId} />
+                          </div>
+                          <span className="card-member-name">{m.name}</span>
+                          <span className="card-id-text">#{botId}</span>
+                        </div>
+                      )
+                    })}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   )
 }
