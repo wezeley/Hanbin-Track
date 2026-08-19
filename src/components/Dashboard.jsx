@@ -28,5 +28,25 @@ export function Dashboard({ ownedCards = [] }) {
             <span className="val">{ownedCards.length}</span>
             <span className="total">/ {totalPossible} Cards</span>
           </div>
-          <div className="progress-bar-glow">
-            <div className="fill" style={{width: `${(ownedCards.length/totalPossible)*100}%
+          <div className="stat-bar-bg">
+          <div className="stat-bar-fill" style={{ width: `${(ownedCards.length / (totalPossible || 1)) * 100}%` }}>
+        </div>
+      </div>
+
+      <div className="dash-col">
+        <div className="section-label">🚀 UPCOMING RELEASES</div>
+        <div className="upcoming-container">
+          {HANBIN_DATA.upcoming?.map((item, i) => (
+            <div key={i} className="upcoming-card-minimal">
+              <span className="date">{item.date}</span>
+              <div className="info">
+                <b>{item.group}</b>
+                <p>{item.info}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}

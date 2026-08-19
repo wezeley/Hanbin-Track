@@ -92,151 +92,170 @@ export const HANBIN_DATA = {
     }
   ]
 },
+{
+  name: "TWICE",
+  code: "TWC",
+  category: "Girlgroups",
+  maxSet: 3.2, // Set 3 até a raridade 2H (Cartas 011 e 012)
+  banner: "https://i.imgur.com/XF9Qn7s.jpeg", // Link de exemplo, você pode trocar
+  members: [
+    { 
+      name: "Jihyo", code: "JH",
+      links: {
+        s1h1: "https://i.imgur.com/hiB3oXJ.png", s1h2: "https://i.imgur.com/h26zvVk.png", s1h3: "https://i.imgur.com/vYICvFz.png", s1h4: "https://i.imgur.com/80CyzyW.png", s1h5: "https://i.imgur.com/cTQnDfI.png",
+        s2h1: "https://i.imgur.com/Qz8mgfN.png", s2h2: "https://i.imgur.com/JB1zASU.png", s2h3: "https://i.imgur.com/pvzGd0s.png", s2h4: "https://i.imgur.com/7ov1lU6.png", s2h5: "https://i.imgur.com/ctXzzE8.png",
+        s3h1: "https://i.imgur.com/Tnmb5jV.png", s3h2: "https://i.imgur.com/wvxCrW6.png"
+      }
+    },
+    { 
+      name: "Nayeon", code: "NY",
+      links: {
+        s1h1: "https://i.imgur.com/og6MdJA.png", s1h2: "https://i.imgur.com/6vfusxp.png", s1h3: "https://i.imgur.com/H9PAaga.png", s1h4: "https://i.imgur.com/xotdJbO.png", s1h5: "https://i.imgur.com/AtxU1g8.png",
+        s2h1: "https://i.imgur.com/viL1YML.png", s2h2: "https://i.imgur.com/jEaQRI4.png", s2h3: "https://i.imgur.com/RPjKXKe.png", s2h4: "https://i.imgur.com/fR5KBuL.png", s2h5: "https://i.imgur.com/fEf7gq5.png",
+        s3h1: "https://i.imgur.com/ReXXade.png", s3h2: "https://i.imgur.com/31sbDBL.png"
+      }
+    },
+    { 
+      name: "Jeongyeon", code: "JY",
+      links: {
+        s1h1: "https://i.imgur.com/yUK2vt1.png", s1h2: "https://i.imgur.com/1Oj8IXz.png", s1h3: "https://i.imgur.com/OnnxhkA.png", s1h4: "https://i.imgur.com/lypczxe.png", s1h5: "https://i.imgur.com/ghWPxz8.png",
+        s2h1: "https://i.imgur.com/q23UPsw.png", s2h2: "https://i.imgur.com/YQnkGMw.png", s2h3: "https://i.imgur.com/cXfZ0FU.png", s2h4: "https://i.imgur.com/TQoQkXl.png", s2h5: "https://i.imgur.com/kFAc7op.png",
+        s3h1: "https://i.imgur.com/GwVR2wi.png", s3h2: "https://i.imgur.com/ioiG61h.png"
+      }
+    },
+    { 
+      name: "Momo", code: "MO",
+      links: {
+        s1h1: "https://i.imgur.com/ny0gN08.png", s1h2: "https://i.imgur.com/Hic7tqU.png", s1h3: "https://i.imgur.com/R7jrcVK.png", s1h4: "https://i.imgur.com/CHVtGrD.png", s1h5: "https://i.imgur.com/uVMvEnf.png",
+        s2h1: "https://i.imgur.com/PahrTLA.png", s2h2: "https://i.imgur.com/uaQHdxv.png", s2h3: "https://i.imgur.com/D4Crdui.png", s2h4: "https://i.imgur.com/2lgzxIz.png", s2h5: "https://i.imgur.com/7ZEj920.png",
+        s3h1: "https://i.imgur.com/3YMmlvw.png", s3h2: "https://i.imgur.com/wpplYvo.png"
+      }
+    },
+    { 
+      name: "Sana", code: "SN",
+      links: {
+        s1h1: "https://i.imgur.com/HFhVjhI.png", s1h2: "https://i.imgur.com/ucIE59z.png", s1h3: "https://i.imgur.com/fk9gfRf.png", s1h4: "https://i.imgur.com/cmCkCBu.png", s1h5: "https://i.imgur.com/dlyOUrT.png",
+        s2h1: "https://i.imgur.com/BIPLwIX.png", s2h2: "https://i.imgur.com/9M4bmOr.png", s2h3: "https://i.imgur.com/QLdeI1o.png", s2h4: "https://i.imgur.com/X4nBAKi.png", s2h5: "https://i.imgur.com/DkLoo3x.png",
+        s3h1: "https://i.imgur.com/GvYWoEJ.png", s3h2: "https://i.imgur.com/qhOjtqj.png"
+      }
+    },
+    { 
+      name: "Mina", code: "MN",
+      links: {
+        s1h1: "https://i.imgur.com/hUkltty.png", s1h2: "https://i.imgur.com/LVRnMr3.png", s1h3: "https://i.imgur.com/2zijp7R.png", s1h4: "https://i.imgur.com/rqyPF3G.png", s1h5: "https://i.imgur.com/YPNMD2b.png",
+        s2h1: "https://i.imgur.com/xB5SaHM.png", s2h2: "https://i.imgur.com/PtK5oTy.png", s2h3: "https://i.imgur.com/hopGzjU.png", s2h4: "https://i.imgur.com/AHzQ42q.png", s2h5: "https://i.imgur.com/ZLhYS24.png",
+        s3h1: "https://i.imgur.com/F6cSS0D.png", s3h2: "https://i.imgur.com/MmuQxNX.png"
+      }
+    },
+    { 
+      name: "Dahyun", code: "DH",
+      links: {
+        s1h1: "https://i.imgur.com/gjNHxQD.png", s1h2: "https://i.imgur.com/n52rmga.png", s1h3: "https://i.imgur.com/N4uLiAr.png", s1h4: "https://i.imgur.com/Ko3c3Rz.png", s1h5: "https://i.imgur.com/m3VqMPq.png",
+        s2h1: "https://i.imgur.com/gJ1JiWJ.png", s2h2: "https://i.imgur.com/79nwwWS.png", s2h3: "https://i.imgur.com/E1cECXC.png", s2h4: "https://i.imgur.com/CJvy8sd.png", s2h5: "https://i.imgur.com/BgD3uNN.png",
+        s3h1: "https://i.imgur.com/VUoKSqD.png", s3h2: "https://i.imgur.com/ZzFI2E8.png"
+      }
+    },
+    { 
+      name: "Chaeyoung", code: "CY",
+      links: {
+        s1h1: "https://i.imgur.com/J0HWvnf.png", s1h2: "https://i.imgur.com/UkhnpxK.png", s1h3: "https://i.imgur.com/yYbDUX5.png", s1h4: "https://i.imgur.com/AiVUTF7.png", s1h5: "https://i.imgur.com/l5FrXOw.png",
+        s2h1: "https://i.imgur.com/Zkqmo1N.png", s2h2: "https://i.imgur.com/mUQVhUr.png", s2h3: "https://i.imgur.com/tYopJy3.png", s2h4: "https://i.imgur.com/obKwR5v.png", s2h5: "https://i.imgur.com/AjYJ4Or.png",
+        s3h1: "https://i.imgur.com/nQDPqYh.png", s3h2: "https://i.imgur.com/hlSEqqK.png"
+      }
+    },
+    { 
+      name: "Tzuyu", code: "TZ",
+      links: {
+        s1h1: "https://i.imgur.com/XMqBAzw.png", s1h2: "https://i.imgur.com/Z9z3aBc.png", s1h3: "https://i.imgur.com/KXt3y8A.png", s1h4: "https://i.imgur.com/0aTV6Sz.png", s1h5: "https://i.imgur.com/x9v1xI0.png",
+        s2h1: "https://i.imgur.com/BP0JcPW.png", s2h2: "https://i.imgur.com/j5ebPhL.png", s2h3: "https://i.imgur.com/j0YoFXV.png", s2h4: "https://i.imgur.com/0mR89br.png", s2h5: "https://i.imgur.com/PJxS7Yi.png",
+        s3h1: "https://i.imgur.com/S46JHxr.png", s3h2: "https://i.imgur.com/g539sEA.png"
+      }
+    }
+  ]
+},
 
-    {
-      name: "Aespa",
-      code: "AES",
-      folder: "AESPA",
-      category: "Girl Group",
-      members: [
-        { name: "Karina", code: "KR" }, { name: "Giselle", code: "GS" },
-        { name: "Winter", code: "WT" }, { name: "Ningning", code: "NI" }
-      ],
-      maxSet: 3.2,
+{
+  name: "ZEROBASEONE",
+  code: "ZB1",
+  category: "Boygroups",
+  maxSet: 3.2,
+  banner: "https://i.imgur.com/7oH7kXq.jpeg", // Link de exemplo
+  members: [
+    { 
+      name: "Hanbin", code: "HB",
+      links: {
+        s1h1: "https://i.imgur.com/B4yiizT.png", s1h2: "https://i.imgur.com/w3F5AWq.png", s1h3: "https://i.imgur.com/whzx2HG.png", s1h4: "https://i.imgur.com/7vyELH0.png", s1h5: "https://i.imgur.com/jinM87i.png",
+        s2h1: "https://i.imgur.com/z8wcmOR.png", s2h2: "https://i.imgur.com/j6JcGck.png", s2h3: "https://i.imgur.com/mkLBJpm.png", s2h4: "https://i.imgur.com/7vN9IBH.png", s2h5: "https://i.imgur.com/QKLyYZC.png",
+        s3h1: "https://i.imgur.com/cFloyrV.png", s3h2: "https://i.imgur.com/lKQ6N9A.png"
+      }
     },
-    {
-      name: "&Team",
-      code: "ATM",
-      folder: "ANDTEAM",
-      category: "Boy Group",
-      members: [
-        { name: "K", code: "KY" }, { name: "Fuma", code: "FM" }, { name: "Nicholas", code: "NC" },
-        { name: "EJ", code: "EJ" }, { name: "Yuma", code: "YM" }, { name: "Jo", code: "JO" },
-        { name: "Harua", code: "HR" }, { name: "Taki", code: "TK" }, { name: "Maki", code: "MK" }
-      ],
-      maxSet: 3.2,
+    { 
+      name: "Jiwoong", code: "JW",
+      links: {
+        s1h1: "https://i.imgur.com/at29y1Z.png", s1h2: "https://i.imgur.com/hBra1u5.png", s1h3: "https://i.imgur.com/QBiyZ5r.png", s1h4: "https://i.imgur.com/96GodkZ.png", s1h5: "https://i.imgur.com/1lmhDk0.png",
+        s2h1: "https://i.imgur.com/1Nmm7CC.png", s2h2: "https://i.imgur.com/MI8NYg1.png", s2h3: "https://i.imgur.com/ZzBVuhQ.png", s2h4: "https://i.imgur.com/fzI85QF.png", s2h5: "https://i.imgur.com/VGiQiLw.png",
+        s3h1: "https://i.imgur.com/2xue4GJ.png", s3h2: "https://i.imgur.com/SWVGpK9.png"
+      }
     },
-    {
-      name: "Enhypen",
-      code: "EN", // Ajustado para EN (2 letras)
-      category: "Boy Group",
-      members: [
-        { name: "Heeseung", code: "HS" }, { name: "Jay", code: "JY" }, { name: "Jake", code: "JK" },
-        { name: "Sunghoon", code: "SH" }, { name: "Sunoo", code: "SN" }, { name: "Jungwon", code: "JW" }, { name: "Ni-ki", code: "NK" }
-      ],
-       maxSet: 3.2,
+    { 
+      name: "Zhang Hao", code: "ZH",
+      links: {
+        s1h1: "https://i.imgur.com/a6YHMDW.png", s1h2: "https://i.imgur.com/Um91yYL.png", s1h3: "https://i.imgur.com/tJ9dNSr.png", s1h4: "https://i.imgur.com/TcVItuG.png", s1h5: "https://i.imgur.com/JxAAacC.png",
+        s2h1: "https://i.imgur.com/2Zyk3En.png", s2h2: "https://i.imgur.com/JWiONgT.png", s2h3: "https://i.imgur.com/DUQYkNZ.png", s2h4: "https://i.imgur.com/tULaw1f.png", s2h5: "https://i.imgur.com/QtUGAs8.png",
+        s3h1: "https://i.imgur.com/5V2cloh.png", s3h2: "https://i.imgur.com/ufRsZ7F.png"
+      }
     },
-    {
-      name: "NEXZ",
-      code: "NEXZ", // Ajustado para NEXZ (4 letras)
-      category: "Boy Group",
-      members: [
-        { name: "Yu", code: "YU" }, { name: "Tomoya", code: "TM" }, { name: "Haru", code: "HR" },
-        { name: "Ken", code: "KN" }, { name: "Seita", code: "ST" }, { name: "Hyui", code: "HY" }, { name: "Yuki", code: "YK" }
-      ],
-      maxSet: 2,
+    { 
+      name: "Matthew", code: "MT",
+      links: {
+        s1h1: "https://i.imgur.com/zRLM2QA.png", s1h2: "https://i.imgur.com/4ktC8qj.png", s1h3: "https://i.imgur.com/3Y6UiOf.png", s1h4: "https://i.imgur.com/uLmCo4i.png", s1h5: "https://i.imgur.com/49J2rAP.png",
+        s2h1: "https://i.imgur.com/ts4k0DY.png", s2h2: "https://i.imgur.com/d8XAd2f.png", s2h3: "https://i.imgur.com/gmkq19P.png", s2h4: "https://i.imgur.com/scrJiac.png", s2h5: "https://i.imgur.com/tfJhWBd.png",
+        s3h1: "https://i.imgur.com/CiROvG8.png", s3h2: "https://i.imgur.com/REheiRD.png"
+      }
     },
-    {
-      name: "Alpha Drive One",
-      code: "ALD1", // Ajustado para ALD1 (4 caracteres)
-      category: "Boy Group",
-      members: [
-        { name: "Member 1", code: "M1" }, { name: "Member 2", code: "M2" }
-      ],
-      maxSet: 1
+    { 
+      name: "Taerae", code: "TR",
+      links: {
+        s1h1: "https://i.imgur.com/wm4nuqp.png", s1h2: "https://i.imgur.com/ApjHP7U.png", s1h3: "https://i.imgur.com/DlpOtHv.png", s1h4: "https://i.imgur.com/ftD2zvV.png", s1h5: "https://i.imgur.com/5k42J8F.png",
+        s2h1: "https://i.imgur.com/PrXGLTg.png", s2h2: "https://i.imgur.com/zCtK0D7.png", s2h3: "https://i.imgur.com/59q3wg1.png", s2h4: "https://i.imgur.com/REjud5V.png", s2h5: "https://i.imgur.com/gQKKh52.png",
+        s3h1: "https://i.imgur.com/UC4e4vQ.png", s3h2: "https://i.imgur.com/j7AjTsB.png"
+      }
     },
-    {
-      name: "Seventeen",
-      code: "SVT",
-      category: "Boy Group",
-      members: [
-        { name: "S.Coups", code: "SC" }, { name: "Jeonghan", code: "JH" }, { name: "Joshua", code: "JS" },
-        { name: "Jun", code: "JN" }, { name: "Hoshi", code: "HS" }, { name: "Wonwoo", code: "WW" },
-        { name: "Woozi", code: "WZ" }, { name: "The8", code: "T8" }, { name: "Mingyu", code: "MG" },
-        { name: "DK", code: "DK" }, { name: "Seungkwan", code: "SK" }, { name: "Vernon", code: "VN" }, { name: "Dino", code: "DN" }
-      ],
-      maxSet: 3.2
+    { 
+      name: "Ricky", code: "RY",
+      links: {
+        s1h1: "https://i.imgur.com/hhyqaVg.png", s1h2: "https://i.imgur.com/YazVyDu.png", s1h3: "https://i.imgur.com/K1yjme5.png", s1h4: "https://i.imgur.com/xjAcx0J.png", s1h5: "https://i.imgur.com/lyEhJrl.png",
+        s2h1: "https://i.imgur.com/7hWmuYn.png", s2h2: "https://i.imgur.com/r9ayhlU.png", s2h3: "https://i.imgur.com/YjT5Na0.png", s2h4: "https://i.imgur.com/TKgksnD.png", s2h5: "https://i.imgur.com/jZPJ4Ws.png",
+        s3h1: "https://i.imgur.com/88Uz8dF.png", s3h2: "https://i.imgur.com/lSnyhMk.png"
+      }
     },
-    {
-      name: "NCT Dream",
-      code: "NCTD",
-      category: "Boy Group",
-      members: [
-        { name: "Mark", code: "MK" }, { name: "Renjun", code: "RJ" }, { name: "Jeno", code: "JN" },
-        { name: "Haechan", code: "HC" }, { name: "Jaemin", code: "JM" }, { name: "Chenle", code: "CL" }, { name: "Jisung", code: "JS" }
-      ],
-      maxSet: 2,
+    { 
+      name: "Gyuvin", code: "GV",
+      links: {
+        s1h1: "https://i.imgur.com/Ezuhxrq.png", s1h2: "https://i.imgur.com/FIgbeP9.png", s1h3: "https://i.imgur.com/qfYArat.png", s1h4: "https://i.imgur.com/SekFa4n.png", s1h5: "https://i.imgur.com/dfFhwle.png",
+        s2h1: "https://i.imgur.com/wsVO5es.png", s2h2: "https://i.imgur.com/sUgmI3U.png", s2h3: "https://i.imgur.com/Xb2hjWK.png", s2h4: "https://i.imgur.com/tK2WAD8.png", s2h5: "https://i.imgur.com/qXpPvzV.png",
+        s3h1: "https://i.imgur.com/Byx9XG0.png", s3h2: "https://i.imgur.com/9LjQyJK.png"
+      }
     },
-    {
-      name: "P1Harmony",
-      code: "P1H",
-      category: "Boy Group",
-      members: [
-        { name: "Keeho", code: "KH" }, { name: "Theo", code: "TH" }, { name: "Jiung", code: "JU" },
-        { name: "Intak", code: "IT" }, { name: "Soul", code: "SL" }, { name: "Jongseob", code: "JS" }
-      ],
-      maxSet: 3.2,
+    { 
+      name: "Gunwook", code: "GW",
+      links: {
+        s1h1: "https://i.imgur.com/dcxbaL4.png", s1h2: "https://i.imgur.com/1smPfcS.png", s1h3: "https://i.imgur.com/MxeR9X4.png", s1h4: "https://i.imgur.com/MdRFBIp.png", s1h5: "https://i.imgur.com/chzA4Uk.png",
+        s2h1: "https://i.imgur.com/qCrYKRe.png", s2h2: "https://i.imgur.com/rGDDFqJ.png", s2h3: "https://i.imgur.com/CtPynPV.png", s2h4: "https://i.imgur.com/BGCyRF7.png", s2h5: "https://i.imgur.com/HkAHz2N.png",
+        s3h1: "https://i.imgur.com/duneiUy.png", s3h2: "https://i.imgur.com/WmQp5KJ.png"
+      }
     },
-    {
-      name: "RIIZE",
-      code: "RIZ",
-      category: "Boy Group",
-      members: [
-        { name: "Shotaro", code: "ST" }, { name: "Eunseok", code: "ES" }, { name: "Sungchan", code: "SC" },
-        { name: "Wonbin", code: "WB" }, { name: "Seunghan", code: "SH" }, { name: "Sohee", code: "SO" }, { name: "Anton", code: "AT" }
-      ],
-      maxSet: 2,
-    },
-    {
-      name: "BoyNextDoor",
-      code: "BND",
-      category: "Boy Group",
-      members: [
-        { name: "Sungho", code: "SH" }, { name: "Riwoo", code: "RW" }, { name: "Jaehyun", code: "JH" },
-        { name: "Taesan", code: "TS" }, { name: "Leehan", code: "LH" }, { name: "Woonhak", code: "WH" }
-      ],
-      maxSet: 3.2,
-    },
-    {
-      name: "Evnne",
-      code: "EVN",
-      category: "Boy Group",
-      members: [
-        { name: "Keita", code: "KT" }, { name: "Park Hanbin", code: "HB" }, { name: "Lee Jeonghyeon", code: "JH" },
-        { name: "Yoo Seungeon", code: "SE" }, { name: "Ji Yunseo", code: "YS" }, { name: "Mun Junghyun", code: "MH" }, { name: "Park Jihoo", code: "JH" }
-      ],
-      maxSet: 3.2,
-    },
-    {
-    name: "Mark Tuan",
-    code: "MK",
-    category: "Soloists",
-    folder: "Mark Tuan", // Pasta física: public/cards/IU/
-    members: [
-      { name: "Mark Tuan", code: "MK", offset: 5 } // Apenas ela
-    ],
-    maxSet: 1,
-  },
-      {
-    name: "Cha Eunwoo",
-    code: "EW",
-    category: "Soloists",
-    folder: "Cha Eunwoo", // Pasta física: public/cards/Cha Eunwoo/
-    members: [
-      { name: "Cha Eunwoo", code: "EW", offset: 0 } // Apenas ela
-    ],
-    maxSet: 1,
-  },
-      {
-    name: "From20",
-    code: "FM",
-    category: "Soloists",
-    folder: "From20", // Pasta física: public/cards/From20/
-    members: [
-      { name: "From20", code: "FM", offset: 0 } // Apenas ela
-    ],
-    maxSet: 2,
-  },
+    { 
+      name: "Yujin", code: "YJ",
+      links: {
+        s1h1: "https://i.imgur.com/4XlEMns.png", s1h2: "https://i.imgur.com/0b7s2xf.png", s1h3: "https://i.imgur.com/b7bVsXs.png", s1h4: "https://i.imgur.com/MbdX3AV.png", s1h5: "https://i.imgur.com/JyQCxUi.png",
+        s2h1: "https://i.imgur.com/QOuAaHZ.png", s2h2: "https://i.imgur.com/X5aFooc.png", s2h3: "https://i.imgur.com/heTdf5L.png", s2h4: "https://i.imgur.com/vN9qTLf.png", s2h5: "https://i.imgur.com/2yhgErl.png",
+        s3h1: "https://i.imgur.com/DnfKQzf.png", s3h2: "https://i.imgur.com/W4HL4Mk.png"
+      }
+    }
+  ]
+},
+
   ]
 
 };
