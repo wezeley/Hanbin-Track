@@ -1,117 +1,129 @@
 import { useState, useEffect } from 'react'
 import { HANBIN_DATA } from './data/hanbinData'
 import { Header } from './components/Header'
+import { Dashboard } from './components/Dashboard'
+import { Card } from './components/Card'
 import './App.css'
 
 function App() {
   const [ownedCards, setOwnedCards] = useState(() => JSON.parse(localStorage.getItem('hanbin-collection')) || []);
-  const [currentView, setCurrentView] = useState('Groups');
-  const [activeTab, setActiveTab] = useState('All');
-  const [searchTerm, setSearchTerm] = useState('');
+  const [activeTab, setActiveTab] = useState(null);
   const [selectedGroup, setSelectedGroup] = useState(null);
+  const [expandedSets, setExpandedSets] = useState({});
 
   useEffect(() => localStorage.setItem('hanbin-collection', JSON.stringify(ownedCards)), [ownedCards]);
 
+  // --- FUNÇÕES DE NAVEGAÇÃO ---
   const toggleCard = (id) => setOwnedCards(prev => prev.includes(id) ? prev.filter(x => x !== id) : [...prev, id]);
+  
+  const handleTabChange = (cat) => { 
+    setActiveTab(cat); 
+    setSelectedGroup(null); 
+  };
 
-  const filteredGroups = HANBIN_DATA.groups.filter(g => {
-    const matchesSearch = g.name.toLowerCase().includes(searchTerm.toLowerCase());
-    const matchesTab = activeTab === 'All' || g.category === activeTab;
-    return matchesSearch && matchesTab;
-  });
+  const resetNavigation = () => { 
+    setActiveTab(null); 
+    setSelectedGroup(null); 
+  };
+
+  const toggleSet = (id) => setExpandedSets(p => ({ ...p, [id]: p[id] === undefined ? false : !p[id] }));
+
+  // Lógica do maxSet
+  const getGroupStructure = (group) => {
+    const maxVal = group.maxSet || 1;
+    const lastSetId = Math.floor(maxVal);
+    const lastRarity = maxVal % 1 === 0 ? 5 : Math.round((maxVal % 1) * 10);
+    const sets = [];
+    for (let s = 1; s <= lastSetId; s++) {
+      const rarities = s < lastSetId ? [1, 2, 3, 4, 5] : Array.from({ length: lastRarity }, (_, i) => i + 1);
+      sets.push({ id: s, rarities });
+    }
+    return sets;
+  };
+
+  const baseUrl = import.meta.env.BASE_URL;
+  const filteredGroups = HANBIN_DATA.groups.filter(g => g.category?.toLowerCase() === activeTab?.toLowerCase());
 
   return (
-    <div className="app-wrapper">
-      {/* HEADER IGUAL AO PRINT */}
-      <nav className="main-navbar">
-        <div className="nav-logo" style={{fontWeight: 900, fontSize: '1.2rem'}}>HANBIN</div>
-        <div className="nav-links">
-           <button onClick={() => {setCurrentView('Dashboard'); setSelectedGroup(null)}}>Cards</button>
-           <button onClick={() => {setCurrentView('Dashboard'); setSelectedGroup(null)}}>Collections</button>
-           <button className="active" onClick={() => {setCurrentView('Groups'); setSelectedGroup(null)}}>Groups</button>
-           <button>Event</button>
-           <button>Leaderboard</button>
-           <button>Status</button>
-        </div>
-        <div className="nav-user">
-           <Header /> {/* Seu componente de nome editável */}
-        </div>
-      </nav>
+    <div className="app-skeleton">
+      {/* SIDEBAR */}
+      <aside className="skeleton-sidebar">
+        <h2 onClick={resetNavigation} style={{cursor: 'pointer'}}>HOME</h2>
+        {HANBIN_DATA.categories.map(cat => (
+          <button 
+            key={cat} 
+            onClick={() => handleTabChange(cat)} 
+            className={activeTab === cat ? 'active' : ''}
+          >
+            {cat}
+          </button>
+        ))}
+      </aside>
 
-      <main className="container">
-        {currentView === 'Groups' && !selectedGroup && (
-          <>
-            {/* HERO SECTION */}
-            <section className="hero-section">
-              <div className="hero-text">
-                <h4>THE COMPLETE ARTIST DIRECTORY</h4>
-                <h1>Find every group<br/>and soloist.</h1>
-                <p>Browse every artist represented in the card archive, then open a profile to explore their members, cards, and collections.</p>
-              </div>
-              <div className="stats-summary">
-                <div className="stat-box"><label>Groups</label><span>{HANBIN_DATA.groups.length}</span></div>
-                <div className="stat-box"><label>Total Cards</label><span>864</span></div>
-                <div className="stat-box" style={{borderRight: 'none'}}><label>Collections</label><span>{HANBIN_DATA.groups.length * 3}</span></div>
-              </div>
-            </section>
+      <main className="skeleton-main">
+        <Header title={HANBIN_DATA.botName} onHome={resetNavigation} />
 
-            {/* SEARCH & FILTERS */}
-            <section className="search-filter-row">
-              <div className="search-container">
-                <input 
-                  type="text" 
-                  className="search-input-big" 
-                  placeholder="Search groups..." 
-                  onChange={(e) => setSearchTerm(e.target.value)}
-                />
+        {!activeTab ? (
+          <Dashboard ownedCards={ownedCards} onTabChange={handleTabChange} />
+        ) : !selectedGroup ? (
+          <div className="skeleton-group-list">
+            {filteredGroups.map(g => (
+              <div key={g.code} className="skeleton-group-item" onClick={() => setSelectedGroup(g)}>
+                {g.name}
               </div>
-              <div className="filter-pills">
-                {['All', 'Girlgroups', 'Boygroups', 'Mixed'].map(cat => (
-                  <button 
-                    key={cat} 
-                    className={`pill ${activeTab === cat ? 'active' : ''}`}
-                    onClick={() => setActiveTab(cat)}
-                  >
-                    {cat}
-                  </button>
-                ))}
-              </div>
-            </section>
+            ))}
+          </div>
+        ) : (
+          <div className="skeleton-group-view">
+            <button onClick={() => setSelectedGroup(null)}>VOLTAR</button>
+            <h1>{selectedGroup.name}</h1>
 
-            {/* DIRECTORY GRID */}
-            <h4 style={{color: '#8a3d4f', fontSize: '0.7rem', marginBottom: '20px', fontWeight: 800}}>ARTISTS ACROSS THE ARCHIVE</h4>
-            <div className="group-grid">
-              {filteredGroups.map(group => (
-                <div key={group.code} className="group-card" onClick={() => setSelectedGroup(group)}>
-                  <div className="group-banner">
-                    <span className="group-tag">{group.category}</span>
-                    <img src={group.banner || 'https://via.placeholder.com/400x200'} alt={group.name} />
-                  </div>
-                  <div className="group-card-content">
-                    <h3>{group.name}</h3>
-                    <div className="group-card-stats">
-                      <div className="stat-item">
-                        <span className="stat-mini-label">Cards</span>
-                        <span className="stat-mini-val">94</span>
-                      </div>
-                      <div className="stat-item">
-                        <span className="stat-mini-label">Members</span>
-                        <span className="stat-mini-val">{group.members.length}</span>
-                      </div>
-                    </div>
-                  </div>
+            {getGroupStructure(selectedGroup).map(set => (
+              <div key={set.id} className="skeleton-set">
+                <div className="skeleton-set-header" onClick={() => toggleSet(set.id)}>
+                   SET {set.id} {expandedSets[set.id] === false ? '[Abrir]' : '[Fechar]'}
                 </div>
-              ))}
-            </div>
-          </>
-        )}
+                
+                {expandedSets[set.id] !== false && (
+                  <div className="rarities-container">
+                    {set.rarities.map(r => (
+                      <div key={r} className="skeleton-rarity-row">
+                        <span>{r}H</span>
+                        <div className="skeleton-grid">
+                          {selectedGroup.members.map(m => {
+                            const seq = ((set.id - 1) * 5) + r + (m.offset || 0);
+                            const botId = `${selectedGroup.code}#${m.code}${String(seq).padStart(3, '0')}`;
+                            
+                            // --- NOVA LÓGICA DE IMAGEM (LINKS EXTERNOS) ---
+                            let finalPath = "";
+                            
+                            // 1. Tenta pegar o link do Spreadsheet (ex: m.links.s1h1)
+                            if (m.links && m.links[`s${set.id}h${r}`]) {
+                              finalPath = m.links[`s${set.id}h${r}`];
+                            } else {
+                              // 2. Fallback: Se não tiver link, usa a pasta local
+                              const folder = (selectedGroup.folder || selectedGroup.code).toUpperCase();
+                              const fileName = encodeURIComponent(botId).toUpperCase();
+                              finalPath = `${baseUrl}cards/${folder}/${fileName}.png`;
+                            }
 
-        {/* LOGICA PARA QUANDO CLICAR NO GRUPO (ABRE OS SETS/MODAL) */}
-        {selectedGroup && (
-          <div style={{marginTop: '40px'}}>
-             <button className="pill" onClick={() => setSelectedGroup(null)}>← Back to Directory</button>
-             <h1 style={{fontFamily: 'Instrument Serif', fontSize: '4rem', marginTop: '20px'}}>{selectedGroup.name}</h1>
-             {/* Aqui entra o loop de sets que fizemos antes */}
+                            return (
+                              <Card 
+                                key={botId} 
+                                botId={botId} 
+                                imagePath={finalPath} 
+                                isOwned={ownedCards.includes(botId)} 
+                                onToggle={toggleCard} 
+                              />
+                            );
+                          })}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </div>
+            ))}
           </div>
         )}
       </main>
