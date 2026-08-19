@@ -1,105 +1,133 @@
-/* DASHBOARD STYLES */
-.dashboard-wrapper {
-  margin-top: 20px;
-  animation: fadeIn 0.4s ease;
+import { useState, useEffect } from 'react'
+import { HANBIN_DATA } from './data/hanbinData'
+import { Header } from './components/Header'
+import { Dashboard } from './components/Dashboard'
+import { Card } from './components/Card'
+import './App.css'
+
+function App() {
+  const [ownedCards, setOwnedCards] = useState(() => JSON.parse(localStorage.getItem('hanbin-collection')) || []);
+  const [activeTab, setActiveTab] = useState(null);
+  const [selectedGroup, setSelectedGroup] = useState(null);
+  const [expandedSets, setExpandedSets] = useState({});
+
+  useEffect(() => localStorage.setItem('hanbin-collection', JSON.stringify(ownedCards)), [ownedCards]);
+
+  // --- FUNÇÕES DE NAVEGAÇÃO ---
+  const toggleCard = (id) => setOwnedCards(prev => prev.includes(id) ? prev.filter(x => x !== id) : [...prev, id]);
+  
+  const handleTabChange = (cat) => { 
+    setActiveTab(cat); 
+    setSelectedGroup(null); 
+  };
+
+  const resetNavigation = () => { 
+    setActiveTab(null); 
+    setSelectedGroup(null); 
+  };
+
+  const toggleSet = (id) => setExpandedSets(p => ({ ...p, [id]: p[id] === undefined ? false : !p[id] }));
+
+  // Lógica do maxSet
+  const getGroupStructure = (group) => {
+    const maxVal = group.maxSet || 1;
+    const lastSetId = Math.floor(maxVal);
+    const lastRarity = maxVal % 1 === 0 ? 5 : Math.round((maxVal % 1) * 10);
+    const sets = [];
+    for (let s = 1; s <= lastSetId; s++) {
+      const rarities = s < lastSetId ? [1, 2, 3, 4, 5] : Array.from({ length: lastRarity }, (_, i) => i + 1);
+      sets.push({ id: s, rarities });
+    }
+    return sets;
+  };
+
+  const baseUrl = import.meta.env.BASE_URL;
+  const filteredGroups = HANBIN_DATA.groups.filter(g => g.category?.toLowerCase() === activeTab?.toLowerCase());
+
+  return (
+    <div className="app-skeleton">
+      {/* SIDEBAR */}
+      <aside className="skeleton-sidebar">
+        <h2 onClick={resetNavigation} style={{cursor: 'pointer'}}>HOME</h2>
+        {HANBIN_DATA.categories.map(cat => (
+          <button 
+            key={cat} 
+            onClick={() => handleTabChange(cat)} 
+            className={activeTab === cat ? 'active' : ''}
+          >
+            {cat}
+          </button>
+        ))}
+      </aside>
+
+      <main className="skeleton-main">
+        <Header title={HANBIN_DATA.botName} onHome={resetNavigation} />
+
+        {!activeTab ? (
+          <Dashboard ownedCards={ownedCards} onTabChange={handleTabChange} />
+        ) : !selectedGroup ? (
+          <div className="skeleton-group-list">
+            {filteredGroups.map(g => (
+              <div key={g.code} className="skeleton-group-item" onClick={() => setSelectedGroup(g)}>
+                {g.name}
+              </div>
+            ))}
+          </div>
+        ) : (
+          <div className="skeleton-group-view">
+            <button onClick={() => setSelectedGroup(null)}>VOLTAR</button>
+            <h1>{selectedGroup.name}</h1>
+
+            {getGroupStructure(selectedGroup).map(set => (
+              <div key={set.id} className="skeleton-set">
+                <div className="skeleton-set-header" onClick={() => toggleSet(set.id)}>
+                   SET {set.id} {expandedSets[set.id] === false ? '[Abrir]' : '[Fechar]'}
+                </div>
+                
+                {expandedSets[set.id] !== false && (
+                  <div className="rarities-container">
+                    {set.rarities.map(r => (
+                      <div key={r} className="skeleton-rarity-row">
+                        <span>{r}H</span>
+                        <div className="skeleton-grid">
+                          {selectedGroup.members.map(m => {
+                            const seq = ((set.id - 1) * 5) + r + (m.offset || 0);
+                            const botId = `${selectedGroup.code}#${m.code}${String(seq).padStart(3, '0')}`;
+                            
+                            // --- NOVA LÓGICA DE IMAGEM (LINKS EXTERNOS) ---
+                            let finalPath = "";
+                            
+                            // 1. Tenta pegar o link do Spreadsheet (ex: m.links.s1h1)
+                            if (m.links && m.links[`s${set.id}h${r}`]) {
+                              finalPath = m.links[`s${set.id}h${r}`];
+                            } else {
+                              // 2. Fallback: Se não tiver link, usa a pasta local
+                              const folder = (selectedGroup.folder || selectedGroup.code).toUpperCase();
+                              const fileName = encodeURIComponent(botId).toUpperCase();
+                              finalPath = `${baseUrl}cards/${folder}/${fileName}.png`;
+                            }
+
+                            return (
+                              <Card 
+                                key={botId} 
+                                botId={botId} 
+                                imagePath={finalPath} 
+                                isOwned={ownedCards.includes(botId)} 
+                                onToggle={toggleCard} 
+                              />
+                            );
+                          })}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+        )}
+      </main>
+    </div>
+  )
 }
-
-.dashboard-top-row {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 25px;
-  margin-bottom: 30px;
-}
-
-.dash-card {
-  background: white;
-  padding: 30px;
-  border-radius: 24px;
-  border: 1px solid var(--border);
-  box-shadow: 0 4px 20px rgba(0,0,0,0.02);
-}
-
-.dash-label {
-  display: block;
-  font-size: 0.65rem;
-  font-weight: 800;
-  color: var(--accent);
-  letter-spacing: 2px;
-  margin-bottom: 20px;
-}
-
-.progress-stats { margin-bottom: 15px; }
-.current-val { font-family: 'Instrument Serif'; font-size: 4rem; font-weight: 400; line-height: 1; }
-.total-divider { font-size: 1.2rem; color: #cbd5e1; font-weight: 700; margin-left: 10px; }
-
-.pro-progress-bar {
-  height: 8px; background: #f1f1f1; border-radius: 10px; overflow: hidden; margin-bottom: 10px;
-}
-.pro-progress-bar .fill {
-  height: 100%; background: var(--owned); transition: width 1s ease;
-}
-.percent-tag { font-size: 0.7rem; font-weight: 800; color: var(--owned); }
-
-/* UPCOMING DASHBOARD */
-.upcoming-mini-list { display: flex; flex-direction: column; gap: 12px; }
-.upcoming-row { display: flex; gap: 15px; align-items: center; border-bottom: 1px solid #f9f9f9; padding-bottom: 10px; }
-.u-date { font-size: 0.7rem; font-weight: 800; background: var(--bg); padding: 4px 8px; border-radius: 6px; }
-.u-text b { font-size: 0.85rem; }
-.u-text p { font-size: 0.75rem; color: var(--text-dim); }
-
-/* GLOBAL SEARCH */
-.global-search-section {
-  background: white;
-  padding: 40px;
-  border-radius: 24px;
-  border: 1px solid var(--border);
-  position: relative;
-}
-
-.main-search-input {
-  width: 100%;
-  padding: 20px 30px;
-  border-radius: 15px;
-  border: 1px solid var(--border);
-  font-size: 1.2rem;
-  font-family: inherit;
-  outline: none;
-  background: #fdfdfd;
-}
-
-.search-results-overlay {
-  position: absolute;
-  top: 100%; left: 40px; right: 40px;
-  background: white;
-  border: 1px solid var(--border);
-  border-radius: 0 0 15px 15px;
-  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
-  z-index: 100;
-  overflow: hidden;
-}
-
-.search-result-item {
-  padding: 15px 30px;
-  cursor: pointer;
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 1px solid #f9f9f9;
-}
-.search-result-item:hover { background: #fcfaf6; }
-
-/* BOTÃO VOLTAR GLOBAL */
-.back-btn-global {
-  background: white;
-  border: 1px solid var(--border);
-  padding: 10px 20px;
-  border-radius: 12px;
-  font-weight: 700;
-  font-size: 0.75rem;
-  color: var(--accent);
-  cursor: pointer;
-  margin-bottom: 20px;
-  transition: 0.2s;
-}
-.back-btn-global:hover { background: var(--bg); transform: translateX(-5px); }
-
-@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+export default App;
