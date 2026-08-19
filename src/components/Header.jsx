@@ -1,28 +1,38 @@
 import { useState } from 'react';
 
-export function Header({ title, onHome }) {
-  // Mantive apenas o nome editável, sem fotos
-  const [userName, setUserName] = useState(localStorage.getItem('tracker-user') || 'USER');
+export function Header({ currentView, onViewChange, title }) {
+  const [userName, setUserName] = useState(localStorage.getItem('tracker-user') || 'KiTae');
 
   const handleNameChange = (e) => {
     setUserName(e.target.value);
     localStorage.setItem('tracker-user', e.target.value);
   };
 
+  const navItems = [
+    { id: 'dashboard', label: 'Cards' },
+    { id: 'coleção', label: 'Collection' },
+    { id: 'events', label: 'Events' },
+    { id: 'commands', label: 'Commands' },
+    { id: 'status', label: 'Status' }
+  ];
+
   return (
-    <div className="skeleton-header-row">
-      <h1 className="title" onClick={onHome} style={{ cursor: 'pointer' }}>
-        {title}
-      </h1>
-      
-      <div className="user-section">
-        <input 
-          className="username-minimal" 
-          value={userName} 
-          onChange={handleNameChange} 
-          title="Clique para editar"
-        />
+    <nav className="main-navbar">
+      <div className="nav-left">
+        <input className="nav-username-input" value={userName} onChange={handleNameChange} spellCheck="false" />
       </div>
-    </div>
+
+      <div className="nav-center">
+        {navItems.map((item) => (
+          <button key={item.id} className={`nav-link ${currentView === item.id ? 'active' : ''}`} onClick={() => onViewChange(item.id)}>
+            {item.label}
+          </button>
+        ))}
+      </div>
+
+      <div className="nav-right">
+        <span className="bot-label">{title} BOT</span>
+      </div>
+    </nav>
   );
 }

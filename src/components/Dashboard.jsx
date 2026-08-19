@@ -1,32 +1,57 @@
+import { useState } from 'react';
 import { HANBIN_DATA } from '../data/hanbinData';
 
-export function Dashboard({ ownedCards = [] }) {
-  const totalPossible = 864; // O total de cartas do bot
-  const totalOwned = ownedCards.length;
-  const percent = ((totalOwned / totalPossible) * 100).toFixed(1);
+export function Dashboard({ ownedCards, onGroupSelect }) {
+  const [query, setQuery] = useState('');
+  const totalBotCards = 864; // O valor que você definiu
+
+  const results = HANBIN_DATA.groups.filter(g => 
+    g.name.toLowerCase().includes(query.toLowerCase())
+  ).slice(0, 5);
 
   return (
-    <div className="dashboard-grid">
-      <div className="dash-column">
-        <div className="section-label">📊 GLOBAL PROGRESS</div>
-        <div style={{textAlign: 'center', padding: '20px 0'}}>
-            <div className="progress-value-big">{totalOwned}</div>
-            <div className="progress-total-label">/ {totalPossible} Cards</div>
-            <p style={{marginTop: '10px', color: '#94a3b8', fontWeight: 700}}>{percent}% Collected</p>
+    <div className="dashboard-container">
+      <div className="dashboard-top-row">
+        {/* LADO ESQUERDO: TOTAL PROGRESS */}
+        <div className="dash-box">
+          <label className="dash-label">📊 GLOBAL PROGRESS</label>
+          <div className="dash-stats">
+            <span className="current">{ownedCards.length}</span>
+            <span className="total">/ {totalBotCards} Cards Added</span>
+          </div>
+        </div>
+
+        {/* LADO DIREITO: UPCOMING */}
+        <div className="dash-box">
+          <label className="dash-label">🚀 UPCOMING RELEASES</label>
+          <div className="upcoming-mini-list">
+            {HANBIN_DATA.upcoming?.map((item, i) => (
+              <div key={i} className="upcoming-row-small">
+                <b>{item.group}</b> <span>{item.info}</span>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
 
-      <div className="dash-column">
-        <div className="section-label">🚀 UPCOMING RELEASES</div>
-        {HANBIN_DATA.upcoming?.map((item, i) => (
-          <div key={i} className="upcoming-card-mini">
-            <span className="u-date-tag">{item.date}</span>
-            <div>
-              <b style={{fontSize: '0.85rem'}}>{item.group}</b>
-              <p style={{fontSize: '0.75rem', color: '#64748b'}}>{item.info}</p>
-            </div>
+      {/* EMBAIXO: BARRA DE PESQUISA */}
+      <div className="dash-search-box">
+        <label className="dash-label">🔍 QUICK SEARCH</label>
+        <input 
+          type="text" 
+          placeholder="Search for a group..." 
+          value={query}
+          onChange={(e) => setQuery(e.target.value)}
+        />
+        {query && (
+          <div className="search-dropdown">
+            {results.map(g => (
+              <div key={g.code} className="search-item" onClick={() => onGroupSelect(g)}>
+                {g.name}
+              </div>
+            ))}
           </div>
-        ))}
+        )}
       </div>
     </div>
   );
