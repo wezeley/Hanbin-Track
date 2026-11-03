@@ -1,4 +1,4 @@
-<h1 align="center">🃏 Hanbin Tracker</h1>
+<h1 align="center">Hanbin Tracker</h1>
 
 <p align="center">
   Aplicação web para acompanhar a coleção de cards de K-pop do <b>Hanbin Bot</b>:<br>
@@ -6,7 +6,7 @@
 </p>
 
 <p align="center">
-  <a href="https://wezeley.github.io/Hanbin-Track/"><b>🔗 Ver demo ao vivo</b></a>
+  <a href="https://wezeley.github.io/Hanbin-Track/"><b>Ver demo ao vivo</b></a>
 </p>
 
 <p align="center">
@@ -20,13 +20,13 @@
 
 ---
 
-## 📌 Sobre o projeto
+## Sobre o projeto
 
 Quem coleciona cards no Hanbin Bot precisa controlar centenas de cartas espalhadas por grupos, sets e raridades. O **Hanbin Tracker** resolve isso com uma interface simples: você clica no card para marcar que já tem, e o app guarda sua coleção no navegador e mostra seu progresso geral.
 
 Projeto pessoal criado para praticar **React** do zero ao deploy, com foco em resolver um problema real de uma comunidade.
 
-## ✨ Funcionalidades
+## Funcionalidades
 
 - **Dashboard** com progresso global da coleção (cards adicionados / total) e lista de próximos lançamentos
 - **Navegação por categorias**: Boy Group, Girl Group, Soloists, Co-Ed, Duos, Survival Shows, Radiant, Events e Limiteds
@@ -36,7 +36,7 @@ Projeto pessoal criado para praticar **React** do zero ao deploy, com foco em re
 - **Nome de usuário editável**, também persistido
 - **Busca rápida** de grupos pelo nome
 
-## 🛠️ Tecnologias
+## Tecnologias
 
 | Camada | Ferramenta |
 |---|---|
@@ -48,7 +48,7 @@ Projeto pessoal criado para praticar **React** do zero ao deploy, com foco em re
 | CI/CD | GitHub Actions |
 | Hospedagem | GitHub Pages |
 
-## 🧠 Destaques técnicos
+## Destaques técnicos
 
 - **Estado com React Hooks**: `useState` com *lazy initialization* para carregar a coleção salva só uma vez, e `useEffect` para sincronizar cada alteração com o `localStorage`.
 - **Geração dinâmica dos cards**: em vez de cadastrar card por card, cada grupo informa até onde vai a coleção (ex.: `maxSet: 3.2` = até o Set 3, raridade 2H) e o app calcula os sets, as raridades e os IDs no formato do bot (`SKZ#BC001`).
@@ -56,7 +56,7 @@ Projeto pessoal criado para praticar **React** do zero ao deploy, com foco em re
 - **Imagens resilientes**: links externos com *fallback* para pasta local, `loading="lazy"` para performance e imagem substituta quando um card não carrega.
 - **Deploy contínuo**: a cada `push` na branch `main`, um workflow do GitHub Actions instala as dependências, gera o build e publica no GitHub Pages automaticamente.
 
-## 📂 Estrutura
+## Estrutura
 
 ```
 src/
@@ -75,7 +75,7 @@ src/
 └── deploy.yml           # CI/CD para o GitHub Pages
 ```
 
-## 🚀 Como rodar localmente
+## Como rodar localmente
 
 Pré-requisito: [Node.js](https://nodejs.org/) 20 ou superior.
 
@@ -94,7 +94,7 @@ npm run preview   # serve o build localmente
 npm run lint      # analisa o código com Oxlint
 ```
 
-## 🗺️ Próximos passos
+## Próximos passos
 
 - [ ] Nova interface visual (o layout atual é uma base focada em funcionalidade)
 - [ ] Layout responsivo para celular
@@ -103,11 +103,11 @@ npm run lint      # analisa o código com Oxlint
 - [ ] Filtros por raridade e por cards que faltam
 - [ ] Exportar e importar a coleção
 
-## 🌎 English summary
+## English summary
 
 **Hanbin Tracker** is a React + Vite web app to track a K-pop trading card collection from the Hanbin Bot. Users mark owned cards with one click, browse groups by category, set and rarity, and see their global progress. The collection is persisted with `localStorage`, card data is generated dynamically from a single data file, and every push to `main` is built and deployed to GitHub Pages through a GitHub Actions CI/CD pipeline.
 
-## 👤 Autor
+## Autor
 
 **Wesley Lima**, desenvolvedor full stack em formação (ADS)
 
