@@ -64,10 +64,7 @@ src/
 ├── components/
 │   ├── Dashboard.jsx    # progresso, lançamentos e busca
 │   ├── Header.jsx       # barra superior e nome do usuário
-│   ├── Card.jsx         # card clicável (tem / não tem)
-│   ├── GroupView.jsx
-│   ├── GroupGrid.jsx
-│   └── Tabs.jsx
+│   └── Card.jsx         # card clicável (tem / não tem)
 ├── data/
 │   └── hanbinData.js    # grupos, membros, sets e lançamentos
 └── App.css
