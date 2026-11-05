@@ -2,6 +2,8 @@ import { useState } from 'react';
 import { HANBIN_DATA } from '../data/hanbinData';
 import { getGroupStructure } from '../utils/groupStructure'
 
+export function Dashboard({ ownedCards, onGroupSelect }) {
+  const [query, setQuery] = useState('');
 const totalCards = HANBIN_DATA.groups.reduce((total, group) => {
   const raritiesPerMember = getGroupStructure(group)
     .reduce((sum, set) => sum + set.rarities.length, 0);
