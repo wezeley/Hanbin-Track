@@ -91,11 +91,11 @@ function App() {
 
             {getGroupStructure(selectedGroup).map(set => (
               <div key={set.id} className="skeleton-set">
-                <div className="skeleton-set-header" onClick={() => toggleSet(set.id)}>
-                   SET {set.id} {expandedSets[set.id] === false ? '[Abrir]' : '[Fechar]'}
+                <div className="skeleton-set-header" onClick={() => toggleSet(`${selectedGroup.code}-${set.id}`)}>
+                   SET {set.id} {expandedSets[`${selectedGroup.code}-${set.id}`] === false ? '[Abrir]' : '[Fechar]'}
                 </div>
                 
-                {expandedSets[set.id] !== false && (
+                {expandedSets[`${selectedGroup.code}-${set.id}`] !== false && (
                   <div className="rarities-container">
                     {set.rarities.map(r => (
                       <div key={r} className="skeleton-rarity-row">
