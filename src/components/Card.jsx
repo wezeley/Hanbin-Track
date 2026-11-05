@@ -10,7 +10,7 @@ export function Card({ botId, imagePath, isOwned, onToggle }) {
           onError={(e) => { 
             e.target.onerror = null;
             // Se der erro, ele mostra o placeholder
-            e.target.src = 'https://via.placeholder.com/110x165?text=NOT+FOUND'; 
+            e.target.src = '`${import.meta.env.BASE_URL}card-placeholder.svg`'; 
             console.log("Erro ao carregar:", imagePath); // Isso ajuda a debugar
           }} 
         />
