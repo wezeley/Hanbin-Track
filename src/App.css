@@ -1,0 +1,70 @@
+/* CSS SKELETON - FOCO EM FUNCIONAMENTO */
+.app-skeleton { display: flex; min-height: 100vh; background: #111; color: white; }
+
+.skeleton-sidebar { 
+  width: 200px; border-right: 1px solid #333; padding: 20px; 
+  display: flex; flex-direction: column; gap: 10px; 
+}
+.skeleton-sidebar button { cursor: pointer; padding: 10px; text-align: left; }
+.skeleton-sidebar button.active { background: blue; color: white; }
+
+.skeleton-main { flex: 1; padding: 20px; }
+
+/* Dashboard Duas Colunas */
+.dashboard-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+
+/* Grid de Grupos */
+.skeleton-group-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 10px; }
+.skeleton-group-item { border: 1px solid #444; padding: 20px; cursor: pointer; text-align: center; }
+
+/* Raridades e Cartas */
+.skeleton-rarity-row { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; border-bottom: 1px solid #222; padding: 5px 0; }
+.skeleton-grid { display: flex; flex-direction: row; gap: 5px; overflow-x: auto; }
+
+/* Cartas Medida Fixa */
+.card { width: 55px; height: 77px; cursor: pointer; flex-shrink: 0; }
+.card-inner { width: 55px; height: 77px; border: 1px solid #555; overflow: hidden; }
+.card-image { width: 100%; height: 100%; object-fit: fill; display: block; }
+.card.owned .card-inner { border-color: green; }
+.card:not(.owned) img { opacity: 0.2; }
+
+/* Set Header */
+.skeleton-set-header { background: #333; padding: 10px; margin-bottom: 10px; cursor: pointer; }
+
+/* Cabeçalho alinhado e simples */
+.skeleton-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #333;
+}
+
+.user-section {
+  display: flex;
+  align-items: center;
+}
+
+.username-minimal {
+  background: transparent;
+  border: none;
+  border-bottom: 1px dashed #555;
+  color: #888;
+  font-family: inherit;
+  font-size: 0.8rem;
+  text-align: right;
+  width: 120px;
+  outline: none;
+  transition: 0.2s;
+}
+
+.username-minimal:focus {
+  color: white;
+  border-bottom-color: white;
+}
+
+/* Remove qualquer resquício da bolinha/avatar gigante */
+.avatar-circle, .avatar-modal {
+  display: none !important;
+}
