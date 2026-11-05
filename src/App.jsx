@@ -3,6 +3,7 @@ import { HANBIN_DATA } from './data/hanbinData'
 import { Header } from './components/Header'
 import { Dashboard } from './components/Dashboard'
 import { Card } from './components/Card'
+import { getGroupStructure } from './utils/groupStructure'
 import './App.css'
 
 function App() {
@@ -44,18 +45,6 @@ function App() {
 
   const toggleSet = (id) => setExpandedSets(p => ({ ...p, [id]: p[id] === undefined ? false : !p[id] }));
 
-  // Lógica do maxSet
-  const getGroupStructure = (group) => {
-    const maxVal = group.maxSet || 1;
-    const lastSetId = Math.floor(maxVal);
-    const lastRarity = maxVal % 1 === 0 ? 5 : Math.round((maxVal % 1) * 10);
-    const sets = [];
-    for (let s = 1; s <= lastSetId; s++) {
-      const rarities = s < lastSetId ? [1, 2, 3, 4, 5] : Array.from({ length: lastRarity }, (_, i) => i + 1);
-      sets.push({ id: s, rarities });
-    }
-    return sets;
-  };
 
   const baseUrl = import.meta.env.BASE_URL;
   const filteredGroups = HANBIN_DATA.groups.filter(g => g.category?.toLowerCase() === activeTab?.toLowerCase());
