@@ -1,9 +1,12 @@
 import { useState } from 'react';
 import { HANBIN_DATA } from '../data/hanbinData';
+import { getGroupStructure } from '../utils/groupStructure'
 
-export function Dashboard({ ownedCards, onGroupSelect }) {
-  const [query, setQuery] = useState('');
-  const totalBotCards = 864; // O valor que você definiu
+const totalCards = HANBIN_DATA.groups.reduce((total, group) => {
+  const raritiesPerMember = getGroupStructure(group)
+    .reduce((sum, set) => sum + set.rarities.length, 0);
+  return total + group.members.length * raritiesPerMember;
+}, 0);
 
   const results = HANBIN_DATA.groups.filter(g => 
     g.name.toLowerCase().includes(query.toLowerCase())
@@ -17,7 +20,7 @@ export function Dashboard({ ownedCards, onGroupSelect }) {
           <label className="dash-label">📊 GLOBAL PROGRESS</label>
           <div className="dash-stats">
             <span className="current">{ownedCards.length}</span>
-            <span className="total">/ {totalBotCards} Cards Added</span>
+            <span className="total">/ {totalCards} Cards Added</span>
           </div>
         </div>
 
