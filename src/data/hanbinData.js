@@ -95,7 +95,7 @@ export const HANBIN_DATA = {
 {
   name: "TWICE",
   code: "TWC",
-  category: "Girlgroups",
+  category: "Girl Group",
   maxSet: 3.2, // Set 3 até a raridade 2H (Cartas 011 e 012)
   banner: "https://i.imgur.com/XF9Qn7s.jpeg", // Link de exemplo, você pode trocar
   members: [
@@ -177,7 +177,7 @@ export const HANBIN_DATA = {
 {
   name: "ZEROBASEONE",
   code: "ZB1",
-  category: "Boygroups",
+  category: "Boy Group",
   maxSet: 3.2,
   banner: "https://i.imgur.com/7oH7kXq.jpeg", // Link de exemplo
   members: [
