@@ -10,7 +10,7 @@ function App() {
   const [activeTab, setActiveTab] = useState(null);
   const [selectedGroup, setSelectedGroup] = useState(null);
   const [expandedSets, setExpandedSets] = useState({});
-  const [currentView, setCurrentView] = useState('dashboard'); // NOVO: aba ativa do Header
+  const [currentView, setCurrentView] = useState('dashboard');
 
   useEffect(() => localStorage.setItem('hanbin-collection', JSON.stringify(ownedCards)), [ownedCards]);
 
@@ -18,21 +18,25 @@ function App() {
   const toggleCard = (id) => setOwnedCards(prev => prev.includes(id) ? prev.filter(x => x !== id) : [...prev, id]);
   
   const handleTabChange = (cat) => { 
-    setCurrentView('dashboard'); // ALTERADO: escolher categoria sempre volta para a view de cards
+    setCurrentView('dashboard');
     setActiveTab(cat); 
     setSelectedGroup(null); 
   };
 
+  const handleGroupSelect = (group) => {
+    setActiveTab(group.category);
+    setSelectedGroup(group);
+  };
+
   const resetNavigation = () => { 
-    setCurrentView('dashboard'); // ALTERADO: HOME também volta para a view de cards
+    setCurrentView('dashboard');
     setActiveTab(null); 
     setSelectedGroup(null); 
   };
 
-  // NOVO: chamada pelo Header ao clicar em uma aba
   const handleViewChange = (view) => {
     if (view === 'dashboard') {
-      resetNavigation(); // "Cards" volta para a Home (já define currentView como 'dashboard')
+      resetNavigation();
     } else {
       setCurrentView(view);
     }
@@ -73,18 +77,16 @@ function App() {
       </aside>
 
       <main className="skeleton-main">
-        {/* ALTERADO: props que o Header espera */}
         <Header
           title={HANBIN_DATA.botName}
           currentView={currentView}
           onViewChange={handleViewChange}
         />
 
-        {/* NOVO: abas ainda não implementadas mostram "Em breve." */}
         {currentView !== 'dashboard' ? (
           <p>Em breve.</p>
         ) : !activeTab ? (
-          <Dashboard ownedCards={ownedCards} onTabChange={handleTabChange} />
+          <Dashboard ownedCards={ownedCards} onGroupSelect={handleGroupSelect} />
         ) : !selectedGroup ? (
           <div className="skeleton-group-list">
             {filteredGroups.map(g => (
