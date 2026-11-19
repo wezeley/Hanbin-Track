@@ -8,6 +8,8 @@ export function Header({ currentView, onViewChange, title }) {
     localStorage.setItem('tracker-user', e.target.value);
   };
 
+  const initial = userName.trim().charAt(0).toUpperCase();
+
   const navItems = [
     { id: 'dashboard', label: 'Cards' },
     { id: 'coleção', label: 'Collection' },
@@ -17,22 +19,34 @@ export function Header({ currentView, onViewChange, title }) {
   ];
 
   return (
-    <nav className="main-navbar">
-      <div className="nav-left">
-        <input className="nav-username-input" value={userName} onChange={handleNameChange} spellCheck="false" />
+    <header className="header">
+      <div className="header-user">
+        <span className="header-avatar" aria-hidden="true">{initial}</span>
+        <label className="header-collector">
+          Collector
+          <input
+            className="header-name"
+            value={userName}
+            onChange={handleNameChange}
+            spellCheck="false"
+          />
+        </label>
       </div>
 
-      <div className="nav-center">
+      <nav className="header-nav" aria-label="Main">
         {navItems.map((item) => (
-          <button key={item.id} className={`nav-link ${currentView === item.id ? 'active' : ''}`} onClick={() => onViewChange(item.id)}>
+          <button
+            key={item.id}
+            type="button"
+            className={`header-pill ${currentView === item.id ? 'active' : ''}`}
+            onClick={() => onViewChange(item.id)}
+          >
             {item.label}
           </button>
         ))}
-      </div>
+      </nav>
 
-      <div className="nav-right">
-        <span className="bot-label">{title} BOT</span>
-      </div>
-    </nav>
+      <span className="header-badge">{title}</span>
+    </header>
   );
 }

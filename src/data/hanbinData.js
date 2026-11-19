@@ -1,5 +1,5 @@
 export const HANBIN_DATA = {
-  botName: "HANBIN TRACKER",
+  botName: "HANBIN BOT TRACKER",
   // Nova lista de categorias
   categories: [
     "Boy Group", 
