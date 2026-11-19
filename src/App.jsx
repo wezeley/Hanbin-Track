@@ -48,22 +48,49 @@ function App() {
 
   const baseUrl = import.meta.env.BASE_URL;
   const filteredGroups = HANBIN_DATA.groups.filter(g => g.category?.toLowerCase() === activeTab?.toLowerCase());
+  const isHomeActive = currentView !== 'dashboard' || !activeTab;
 
   return (
         <div className="app">
       {/* SIDEBAR */}
-      <aside className="sidebar">
-        <h2 onClick={resetNavigation} style={{cursor: 'pointer'}}>HOME</h2>
-        {HANBIN_DATA.categories.map(cat => (
-          <button 
-            key={cat} 
-            onClick={() => handleTabChange(cat)} 
-            className={activeTab === cat ? 'active' : ''}
+            <aside className="sidebar">
+        <button type="button" className="sidebar-logo" onClick={resetNavigation}>
+          <span className="sidebar-logo-mark" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+          <span className="sidebar-logo-text">Hanbin Tracker</span>
+        </button>
+
+        <nav className="sidebar-nav" aria-label="Categories">
+          <button
+            type="button"
+            className={`sidebar-home ${isHomeActive ? 'active' : ''}`}
+            onClick={resetNavigation}
           >
-            {cat}
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+              <path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z" />
+            </svg>
+            Home
           </button>
-        ))}
+
+          <span className="sidebar-label">Categories</span>
+
+          {HANBIN_DATA.categories.map(cat => (
+            <button
+              key={cat}
+              type="button"
+              className={`sidebar-item ${currentView === 'dashboard' && activeTab === cat ? 'active' : ''}`}
+              onClick={() => handleTabChange(cat)}
+            >
+              <span>{cat}</span>
+              <span className="sidebar-count">{HANBIN_DATA.groups.filter(g => g.category?.toLowerCase() === cat.toLowerCase()).length}</span>
+            </button>
+          ))}
+        </nav>
       </aside>
+
 
             <div className="app-column">
         <Header
