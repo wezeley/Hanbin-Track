@@ -1,6 +1,45 @@
+:root {
+  /* Cores */
+  --color-bg: #F2F1F6;
+  --color-surface: #FFFFFF;
+  --color-text: #18152B;
+  --color-text-muted: #5C5873;
+  --color-border: #E2E0EA;
+  --color-divider: #ECEAF2;
+  --color-underline: #C9C5D8;
+  --color-accent: #5B3DF5;
+  --color-accent-soft: #ECE8FF;
+  --color-on-accent-soft: #2E1A9E;
+  --color-success: #0B6B53;
+  --color-success-soft: #D7F4EA;
+
+  /* Fontes */
+  --font-body: Inter, system-ui, sans-serif;
+  --font-display: 'Bricolage Grotesque', sans-serif;
+
+  /* Cantos arredondados */
+  --radius-sm: 10px;
+  --radius-lg: 18px;
+  --radius-pill: 999px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
-  background-color: #1a1a1a;
-  color: white;
-  font-family: sans-serif;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+button,
+input {
+  font: inherit;
+  color: inherit;
 }
