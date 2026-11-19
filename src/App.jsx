@@ -50,9 +50,9 @@ function App() {
   const filteredGroups = HANBIN_DATA.groups.filter(g => g.category?.toLowerCase() === activeTab?.toLowerCase());
 
   return (
-    <div className="app-skeleton">
+        <div className="app">
       {/* SIDEBAR */}
-      <aside className="skeleton-sidebar">
+      <aside className="sidebar">
         <h2 onClick={resetNavigation} style={{cursor: 'pointer'}}>HOME</h2>
         {HANBIN_DATA.categories.map(cat => (
           <button 
@@ -65,12 +65,14 @@ function App() {
         ))}
       </aside>
 
-      <main className="skeleton-main">
+            <div className="app-column">
         <Header
           title={HANBIN_DATA.botName}
           currentView={currentView}
           onViewChange={handleViewChange}
         />
+
+        <main className="app-main">
 
         {currentView !== 'dashboard' ? (
           <p>Em breve.</p>
@@ -137,7 +139,8 @@ function App() {
             ))}
           </div>
         )}
-      </main>
+              </main>
+      </div>
     </div>
   )
 }
