@@ -10,8 +10,14 @@ export function Dashboard({ ownedCards, onGroupSelect }) {
   // ===== Cálculos =====
   const totalCards = HANBIN_DATA.groups.reduce((sum, g) => sum + getGroupProgress(g, ownedCards).total, 0);
   const ownedCount = ownedCards.length;
-  const progressPct = 0; // PARTE 2
-  const rarityCounts = [0, 0, 0, 0, 0]; // PARTE 2
+  const progressPct = totalCards ? Math.round(ownedCount / totalCards * 100) : 0;
+
+  const rarityCounts = [0, 0, 0, 0, 0];
+  ownedCards.forEach(id => {
+    const seq = Number(id.slice(-3));
+    const rarity = ((seq - 1) % 5) + 1;
+    rarityCounts[rarity - 1] += 1;
+  });
 
   const results = HANBIN_DATA.groups
     .filter(g => g.name.toLowerCase().includes(query.toLowerCase()))
