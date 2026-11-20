@@ -33,19 +33,6 @@
   gap: 20px;
 }
 
-/* Cabeçalho de cada set */
-.skeleton-set-header { background: var(--color-divider); padding: 10px; margin-bottom: 10px; cursor: pointer; }
-
-/* Raridades e cartas */
-.skeleton-rarity-row { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; border-bottom: 1px solid var(--color-divider); padding: 5px 0; }
-.skeleton-grid { display: flex; flex-direction: row; gap: 5px; overflow-x: auto; }
-
-.card { width: 55px; height: 77px; cursor: pointer; flex-shrink: 0; }
-.card-inner { width: 55px; height: 77px; border: 1px solid var(--color-border); overflow: hidden; }
-.card-image { width: 100%; height: 100%; object-fit: fill; display: block; }
-.card.owned .card-inner { border-color: var(--color-accent); }
-.card:not(.owned) img { opacity: 0.2; }
-
 /* ===== Sidebar ===== */
 .sidebar button {
   border: 0;
@@ -533,4 +520,336 @@
 .group-card-count {
   font-size: 12px;
   font-weight: 700;
+}
+
+/* ===== Página do grupo ===== */
+.app-main-wide {
+  max-width: 1180px;
+  padding-top: 24px;
+}
+
+.group-page {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.back-link {
+  align-self: flex-start;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 44px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--color-link);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.back-link:hover { color: var(--color-on-accent-soft); }
+
+.group-header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px 32px;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.group-header-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.group-title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 44px;
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+}
+
+.group-header-progress {
+  flex: 0 1 320px;
+  min-width: 220px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.group-header-progress-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.group-header-progress-row .text-muted { font-size: 14px; }
+.group-header-progress-row b { font-size: 18px; }
+.group-header-bar { background: var(--color-border); }
+
+/* Filtro */
+.group-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.filter-pills {
+  display: flex;
+  gap: 4px;
+  padding: 4px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-pill);
+}
+
+.filter-pill {
+  min-height: 40px;
+  padding: 0 18px;
+  border: 0;
+  border-radius: var(--radius-pill);
+  background: transparent;
+  color: var(--color-text-muted);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.filter-pill.active {
+  background: var(--color-text);
+  color: var(--color-surface);
+}
+
+.group-toolbar-help {
+  margin: 0;
+  font-size: 14px;
+  color: var(--color-text-muted);
+}
+
+/* Fichário: as cores vêm de --set-* (setColors nos dados) */
+.binder {
+  position: relative;
+  padding: 0 7px 7px 0;
+}
+
+.binder-back {
+  position: absolute;
+  left: 7px;
+  top: 7px;
+  right: 0;
+  bottom: 0;
+  border-radius: var(--radius-lg);
+  background: var(--set-back);
+  border: 1px solid var(--set-edge);
+}
+
+.binder-page {
+  position: relative;
+  overflow: hidden;
+  padding-left: 36px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+}
+
+.binder-spine {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 36px;
+  background: var(--set-spine);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.binder-spine span {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--color-surface);
+  border: 1px solid var(--set-edge);
+}
+
+/* Cabeçalho do set (botão de abrir/fechar) */
+.set-header {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px 24px;
+  padding: 18px 22px;
+  border: 0;
+  background: transparent;
+  text-align: left;
+  cursor: pointer;
+}
+
+.set-title {
+  display: flex;
+  align-items: center;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 22px;
+  letter-spacing: -0.02em;
+}
+
+.set-symbol {
+  display: block;
+  height: 28px;
+  width: auto;
+}
+
+.set-sub {
+  font-size: 13px;
+  color: var(--color-text-muted);
+}
+
+.set-progress {
+  flex: 1 1 160px;
+  min-width: 160px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.set-bar {
+  flex: 1;
+  height: 8px;
+}
+
+.set-bar .progress-fill { background: var(--set-strong); }
+
+.set-count {
+  font-size: 14px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.set-complete {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--color-success);
+  background: var(--color-success-soft);
+  border-radius: var(--radius-pill);
+  padding: 4px 10px;
+}
+
+.set-chevron {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--color-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Conteúdo do set */
+.set-content {
+  padding: 18px 22px 22px;
+  border-top: 1px solid var(--color-divider);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.rarity-row {
+  display: grid;
+  grid-template-columns: 56px minmax(0, 1fr);
+  gap: 10px;
+  align-items: center;
+}
+
+.rarity-row-label {
+  font-size: 16px;
+  font-weight: 800;
+}
+
+/* --cols vem do SetBinder (getCardColumns); cada carta tem no máximo 120px.
+   A área tem só a largura das colunas, e a última linha fica centralizada nela. */
+.cards-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  max-width: calc(var(--cols) * 120px + (var(--cols) - 1) * 10px);
+}
+
+.cards-grid > * {
+  flex: 0 0 calc((100% - (var(--cols) - 1) * 10px) / var(--cols));
+}
+
+/* Sleeve */
+.card-sleeve {
+  position: relative;
+  width: 100%;
+  padding: 12px 6px 6px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-sleeve);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.card-sleeve.owned { border-color: var(--color-accent); }
+
+.card-sleeve-mouth {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 7px;
+  border-bottom: 1px solid rgba(24, 21, 43, 0.08);
+}
+
+.card-sleeve-image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 55 / 85;
+  border-radius: 7px;
+  overflow: hidden;
+  filter: grayscale(1);
+  opacity: 0.3;
+}
+
+.card-sleeve.owned .card-sleeve-image {
+  filter: none;
+  opacity: 1;
+  box-shadow: 0 2px 6px rgba(24, 21, 43, 0.18);
+}
+
+.card-sleeve-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-sleeve-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4px;
+  padding: 0 2px;
+  font-size: 11px;
+  color: var(--color-text-muted);
+}
+
+.card-sleeve-footer svg { color: var(--color-success); }
+
+.card-slot-empty {
+  width: 100%;
+  aspect-ratio: 55 / 92;
+  border: 2px dashed var(--color-border);
+  border-radius: 12px;
 }

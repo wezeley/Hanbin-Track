@@ -1,20 +1,37 @@
-export function Card({ botId, imagePath, isOwned, onToggle }) {
+const PLACEHOLDER = `${import.meta.env.BASE_URL}card-placeholder.svg`;
+
+export function Card({ cardId, label, imagePath, isOwned, isHidden, onToggle }) {
+  if (isHidden) return <div className="card-slot-empty" aria-hidden="true" />;
+
   return (
-    <div className={`card ${isOwned ? 'owned' : ''}`} onClick={() => onToggle(botId)}>
-      <div className="card-inner">
-        <img 
-          src={imagePath} 
-          alt={botId} 
-          className="card-image" 
+    <button
+      type="button"
+      className={`card-sleeve ${isOwned ? 'owned' : ''}`}
+      onClick={() => onToggle(cardId)}
+      aria-pressed={isOwned}
+      aria-label={label}
+      title={label}
+    >
+      <span className="card-sleeve-mouth" aria-hidden="true" />
+      <span className="card-sleeve-image">
+        <img
+          src={imagePath}
+          alt=""
           loading="lazy"
-          onError={(e) => { 
-            e.target.onerror = null;
-            // Se der erro, ele mostra o placeholder
-            e.target.src = `${import.meta.env.BASE_URL}card-placeholder.svg`;
-            console.log("Erro ao carregar:", imagePath); // Isso ajuda a debugar
-          }} 
+          onError={(e) => {
+            e.currentTarget.onerror = null;
+            e.currentTarget.src = PLACEHOLDER;
+          }}
         />
-      </div>
-    </div>
+      </span>
+      <span className="card-sleeve-footer">
+        <span>{cardId}</span>
+        {isOwned && (
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+            <path d="M5 12l5 5 9-10" />
+          </svg>
+        )}
+      </span>
+    </button>
   );
 }

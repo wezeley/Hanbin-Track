@@ -3,8 +3,7 @@ import { HANBIN_DATA } from "./data/hanbinData";
 import { Header } from "./components/Header";
 import { CategoryView } from "./components/CategoryView";
 import { Dashboard } from "./components/Dashboard";
-import { Card } from "./components/Card";
-import { getGroupStructure } from "./utils/groupStructure";
+import { GroupView } from "./components/GroupView";
 import "./App.css";
 
 function App() {
@@ -58,7 +57,6 @@ function App() {
       [id]: p[id] === undefined ? false : !p[id],
     }));
 
-  const baseUrl = import.meta.env.BASE_URL;
   const filteredGroups = HANBIN_DATA.groups.filter(
     (g) => g.category?.toLowerCase() === activeTab?.toLowerCase(),
   );
@@ -132,7 +130,9 @@ function App() {
           onViewChange={handleViewChange}
         />
 
-        <main className="app-main">
+        <main
+          className={`app-main ${selectedGroup && currentView === "dashboard" ? "app-main-wide" : ""}`}
+        >
           {currentView !== "dashboard" ? (
             <p>Em breve.</p>
           ) : !activeTab ? (
@@ -148,68 +148,14 @@ function App() {
               onGroupSelect={setSelectedGroup}
             />
           ) : (
-            <div className="skeleton-group-view">
-              <button onClick={() => setSelectedGroup(null)}>VOLTAR</button>
-              <h1>{selectedGroup.name}</h1>
-
-              {getGroupStructure(selectedGroup).map((set) => (
-                <div key={set.id} className="skeleton-set">
-                  <div
-                    className="skeleton-set-header"
-                    onClick={() => toggleSet(`${selectedGroup.code}-${set.id}`)}
-                  >
-                    SET {set.id}{" "}
-                    {expandedSets[`${selectedGroup.code}-${set.id}`] === false
-                      ? "[Abrir]"
-                      : "[Fechar]"}
-                  </div>
-
-                  {expandedSets[`${selectedGroup.code}-${set.id}`] !==
-                    false && (
-                    <div className="rarities-container">
-                      {set.rarities.map((r) => (
-                        <div key={r} className="skeleton-rarity-row">
-                          <span>{r}H</span>
-                          <div className="skeleton-grid">
-                            {selectedGroup.members.map((m) => {
-                              const seq =
-                                (set.id - 1) * 5 + r + (m.offset || 0);
-                              const botId = `${selectedGroup.code}#${m.code}${String(seq).padStart(3, "0")}`;
-
-                              // --- NOVA LÓGICA DE IMAGEM (LINKS EXTERNOS) ---
-                              let finalPath = "";
-
-                              // 1. Tenta pegar o link do Spreadsheet (ex: m.links.s1h1)
-                              if (m.links && m.links[`s${set.id}h${r}`]) {
-                                finalPath = m.links[`s${set.id}h${r}`];
-                              } else {
-                                // 2. Fallback: Se não tiver link, usa a pasta local
-                                const folder = (
-                                  selectedGroup.folder || selectedGroup.code
-                                ).toUpperCase();
-                                const fileName =
-                                  encodeURIComponent(botId).toUpperCase();
-                                finalPath = `${baseUrl}cards/${folder}/${fileName}.png`;
-                              }
-
-                              return (
-                                <Card
-                                  key={botId}
-                                  botId={botId}
-                                  imagePath={finalPath}
-                                  isOwned={ownedCards.includes(botId)}
-                                  onToggle={toggleCard}
-                                />
-                              );
-                            })}
-                          </div>
-                        </div>
-                      ))}
-                    </div>
-                  )}
-                </div>
-              ))}
-            </div>
+            <GroupView
+              group={selectedGroup}
+              ownedCards={ownedCards}
+              expandedSets={expandedSets}
+              onToggleSet={toggleSet}
+              onToggleCard={toggleCard}
+              onBack={() => setSelectedGroup(null)}
+            />
           )}
         </main>
       </div>

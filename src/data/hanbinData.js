@@ -13,7 +13,7 @@ export const HANBIN_DATA = {
     "Limiteds"
   ],
   rarities: [1, 2, 3, 4, 5],
-    // Cores de cada set: spine = lombada, back = página de trás,
+  // Cores de cada set: spine = lombada, back = página de trás,
   // edge = bordas e argolas, strong = barra de progresso.
   // Quando sair um set novo, adicione a cor dele aqui e o símbolo
   // em public/symbols/S<numero>.webp.
@@ -24,9 +24,9 @@ export const HANBIN_DATA = {
   },
 
   upcoming: [
-    { group: "STRAY KIDS", info: "Ate - Set 4 Release" },
-    { group: "AESPA", info: "Whiplash Concept Photos" },
-    { group: "NCT DREAM", info: "New Limited Event" }
+    { group: "STRAY KIDS", info: "next release" },
+    { group: "AESPA", info: "next release" },
+    { group: "NCT DREAM", info: "next release" }
   ],
   groups: [
     {
