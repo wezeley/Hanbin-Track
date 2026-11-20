@@ -8,7 +8,8 @@
     "build": "vite build",
     "lint": "oxlint",
     "preview": "vite preview",
-    "fotos": "node scripts/buscar-fotos.mjs"
+    "fotos": "node scripts/buscar-fotos.mjs",
+    "planilha": "node scripts/baixar-planilha.mjs"
   },
   "dependencies": {
     "react": "^19.2.7",
