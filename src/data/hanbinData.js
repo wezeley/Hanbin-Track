@@ -23,7 +23,7 @@ export const HANBIN_DATA = {
   name: "STRAY KIDS",
   code: "SKZ",
   category: "Boy Group",
-  banner: "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Stray_Kids_at_the_40th_Golden_Disc_Awards%2C_January_10%2C_2026_%281%29.png/960px-Stray_Kids_at_the_40th_Golden_Disc_Awards%2C_January_10%2C_2026_%281%29.png",
+  banner: "",
   maxSet: 3.2, // Set 3 até a raridade 2H
   members: [
     { 
@@ -97,7 +97,7 @@ export const HANBIN_DATA = {
   code: "TWC",
   category: "Girl Group",
   maxSet: 3.2, // Set 3 até a raridade 2H (Cartas 011 e 012)
-  banner: "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Twice_260618.jpg/960px-Twice_260618.jpg",
+  banner: "",
   members: [
     { 
       name: "Jihyo", code: "JH",
@@ -179,7 +179,7 @@ export const HANBIN_DATA = {
   code: "ZB1",
   category: "Boy Group",
   maxSet: 3.2,
-  banner: "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/ZEROBASEONE_%40_40th_Golden_Disc_Awards_%2820260110%29.jpg/960px-ZEROBASEONE_%40_40th_Golden_Disc_Awards_%2820260110%29.jpg",
+  banner: "",
   members: [
     { 
       name: "Hanbin", code: "HB",

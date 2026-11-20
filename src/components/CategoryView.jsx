@@ -1,10 +1,14 @@
 import { useState } from 'react';
 import { getGroupProgress } from '../utils/groupProgress';
+import BANNERS from '../data/banners.json';
 
-function GroupPhoto({ src }) {
+function GroupPhoto({ group }) {
   const [failed, setFailed] = useState(false);
+  const src = group.banner || BANNERS[group.code];
   if (!src || failed) return null;
-  return <img src={src} alt="" loading="lazy" onError={() => setFailed(true)} />;
+
+  const url = src.startsWith('http') ? src : `${import.meta.env.BASE_URL}${src}`;
+  return <img src={url} alt="" loading="lazy" onError={() => setFailed(true)} />;
 }
 
 export function CategoryView({ category, groups, ownedCards, onGroupSelect }) {
@@ -27,7 +31,7 @@ export function CategoryView({ category, groups, ownedCards, onGroupSelect }) {
           return (
             <button key={g.code} type="button" className="group-card" onClick={() => onGroupSelect(g)}>
               <span className="group-card-photo">
-                <GroupPhoto src={g.banner} />
+                <GroupPhoto group={g} />
               </span>
               <span className="group-card-info">
                 <span className="group-card-title">
