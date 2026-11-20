@@ -13,6 +13,16 @@ export const HANBIN_DATA = {
     "Limiteds"
   ],
   rarities: [1, 2, 3, 4, 5],
+    // Cores de cada set: spine = lombada, back = página de trás,
+  // edge = bordas e argolas, strong = barra de progresso.
+  // Quando sair um set novo, adicione a cor dele aqui e o símbolo
+  // em public/symbols/S<numero>.webp.
+  setColors: {
+    1: { spine: "#CFF3F8", back: "#E6F9FB", edge: "#9ADDE8", strong: "#12A4BC" },
+    2: { spine: "#E6DDFF", back: "#F1ECFF", edge: "#C3B2FA", strong: "#7C4DFF" },
+    3: { spine: "#FFDCEB", back: "#FFEEF5", edge: "#F7A9C9", strong: "#E5468A" },
+  },
+
   upcoming: [
     { group: "STRAY KIDS", info: "Ate - Set 4 Release" },
     { group: "AESPA", info: "Whiplash Concept Photos" },
