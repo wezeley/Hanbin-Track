@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { HANBIN_DATA } from '../data/hanbinData';
+import { GROUPS } from '../data/groups';
 import { getGroupProgress } from '../utils/groupProgress';
 
 const RARITIES = [1, 2, 3, 4, 5];
@@ -8,10 +9,12 @@ export function Dashboard({ ownedCards, onGroupSelect }) {
   const [query, setQuery] = useState('');
 
   // ===== Cálculos =====
-  const totalCards = HANBIN_DATA.groups.reduce((sum, g) => sum + getGroupProgress(g, ownedCards).total, 0);
+  const totalCards = GROUPS.reduce((sum, g) => sum + g.cards, 0);
   const ownedCount = ownedCards.length;
   const progressPct = totalCards ? Math.round(ownedCount / totalCards * 100) : 0;
 
+  // Raridade pelo número do ID (001 = 1H, 007 = 2H...): vale para todos os
+  // grupos da planilha. Solistas e eventos (partes 5 e 6) vão precisar de outra conta.
   const rarityCounts = [0, 0, 0, 0, 0];
   ownedCards.forEach(id => {
     const seq = Number(id.slice(-3));
@@ -19,7 +22,7 @@ export function Dashboard({ ownedCards, onGroupSelect }) {
     rarityCounts[rarity - 1] += 1;
   });
 
-  const results = HANBIN_DATA.groups
+  const results = GROUPS
     .filter(g => g.name.toLowerCase().includes(query.toLowerCase()))
     .slice(0, 5);
 
@@ -91,7 +94,7 @@ export function Dashboard({ ownedCards, onGroupSelect }) {
 
       <section className="dash-box dash-groups">
         <h2 className="dash-label">Your groups</h2>
-        {HANBIN_DATA.groups.map(g => {
+        {GROUPS.map(g => {
           const { owned, total, pct } = getGroupProgress(g, ownedCards);
           return (
             <button key={g.code} type="button" className="group-row" onClick={() => onGroupSelect(g)}>

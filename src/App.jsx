@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { HANBIN_DATA } from "./data/hanbinData";
+import { GROUPS } from "./data/groups";
 import { Header } from "./components/Header";
 import { CategoryView } from "./components/CategoryView";
 import { Dashboard } from "./components/Dashboard";
@@ -57,7 +58,7 @@ function App() {
       [id]: p[id] === undefined ? false : !p[id],
     }));
 
-  const filteredGroups = HANBIN_DATA.groups.filter(
+  const filteredGroups = GROUPS.filter(
     (g) => g.category?.toLowerCase() === activeTab?.toLowerCase(),
   );
   const isHomeActive = currentView !== "dashboard" || !activeTab;
@@ -113,7 +114,7 @@ function App() {
               <span>{cat}</span>
               <span className="sidebar-count">
                 {
-                  HANBIN_DATA.groups.filter(
+                  GROUPS.filter(
                     (g) => g.category?.toLowerCase() === cat.toLowerCase(),
                   ).length
                 }

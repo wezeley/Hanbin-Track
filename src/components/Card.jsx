@@ -15,7 +15,7 @@ export function Card({ cardId, label, imagePath, isOwned, isHidden, onToggle }) 
       <span className="card-sleeve-mouth" aria-hidden="true" />
       <span className="card-sleeve-image">
         <img
-          src={imagePath}
+          src={imagePath || PLACEHOLDER}
           alt=""
           loading="lazy"
           onError={(e) => {

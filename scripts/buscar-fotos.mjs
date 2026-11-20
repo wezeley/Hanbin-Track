@@ -5,8 +5,12 @@
 //   foto, apague o arquivo dele (ou coloque a sua por cima) e rode de novo.
 // - No final, gera src/data/banners.json com todas as fotos da pasta.
 
-import { mkdir, readdir, writeFile } from 'node:fs/promises';
+import { mkdir, readdir, readFile, writeFile } from 'node:fs/promises';
 import { HANBIN_DATA } from '../src/data/hanbinData.js';
+
+// Mesmos grupos do site: os da planilha (npm run planilha) que têm categoria.
+const SHEET_INDEX = JSON.parse(await readFile(new URL('../src/data/sheet/index.json', import.meta.url), 'utf8'));
+const GROUPS = SHEET_INDEX.groups.filter(group => HANBIN_DATA.groupCategories[group.code]);
 
 const BANNERS_DIR = new URL('../public/banners/', import.meta.url);
 const MANIFEST = new URL('../src/data/banners.json', import.meta.url);
@@ -34,7 +38,7 @@ async function findPhoto(groupName) {
 await mkdir(BANNERS_DIR, { recursive: true });
 const existing = await readdir(BANNERS_DIR);
 
-for (const group of HANBIN_DATA.groups) {
+for (const group of GROUPS) {
   const current = existing.find(f => f.startsWith(`${group.code}.`));
   if (current) {
     console.log(`=  ${group.code}: já tem ${current}, pulando`);

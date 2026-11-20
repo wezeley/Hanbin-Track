@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import { getGroupStructure } from '../utils/groupStructure';
+import { useGroupData } from '../hooks/useGroupData';
+import { getGroupSets } from '../utils/groupSets';
 import { getGroupProgress } from '../utils/groupProgress';
 import { plural } from '../utils/plural';
 import { SetBinder } from './SetBinder';
@@ -12,9 +13,14 @@ const FILTERS = [
 
 export function GroupView({ group, ownedCards, expandedSets, onToggleSet, onToggleCard, onBack }) {
   const [filter, setFilter] = useState('all');
-  const sets = getGroupStructure(group);
+  const { data, error } = useGroupData(group.code);
+
+  // ===== Cálculos =====
+  // O cabeçalho usa os números do index.json (já estão na tela antes de carregar).
+  // Os sets só existem depois que o arquivo do grupo chega.
+  const sets = data ? getGroupSets(data) : [];
   const { owned, total, pct } = getGroupProgress(group, ownedCards);
-  const metaLabel = `${group.code} · ${plural(group.members.length, 'member')} · ${plural(sets.length, 'set')} · ${plural(total, 'card')}`;
+  const metaLabel = `${group.code} · ${plural(group.members, 'member')} · ${plural(group.sets, 'set')} · ${plural(total, 'card')}`;
 
   return (
     <div className="group-page">
@@ -60,12 +66,14 @@ export function GroupView({ group, ownedCards, expandedSets, onToggleSet, onTogg
         </p>
       </div>
 
+      {error && <p className="text-muted">Could not load the cards of this group.</p>}
+      {!data && !error && <p className="text-muted">Loading cards...</p>}
+
       {sets.map(set => {
         const key = `${group.code}-${set.id}`;
         return (
           <SetBinder
             key={set.id}
-            group={group}
             set={set}
             ownedCards={ownedCards}
             filter={filter}

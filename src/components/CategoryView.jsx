@@ -1,12 +1,11 @@
 import { useState } from 'react';
 import { getGroupProgress } from '../utils/groupProgress';
-import { getGroupStructure } from '../utils/groupStructure';
 import { plural } from '../utils/plural';
 import BANNERS from '../data/banners.json';
 
 function GroupPhoto({ group }) {
   const [failed, setFailed] = useState(false);
-  const src = group.banner || BANNERS[group.code];
+  const src = BANNERS[group.code];
   if (!src || failed) return null;
 
   const url = src.startsWith('http') ? src : `${import.meta.env.BASE_URL}${src}`;
@@ -28,9 +27,7 @@ export function CategoryView({ category, groups, ownedCards, onGroupSelect }) {
       <div className="group-grid">
         {groups.map(g => {
           const { owned, total, pct } = getGroupProgress(g, ownedCards);
-          const memberCount = g.members.length;
-          const setCount = getGroupStructure(g).length;
-          const metaLabel = `${plural(memberCount, 'member')} · ${plural(setCount, 'set')} · ${plural(total, 'card')}`;
+          const metaLabel = `${plural(g.members, 'member')} · ${plural(g.sets, 'set')} · ${plural(total, 'card')}`;
 
           return (
             <button key={g.code} type="button" className="group-card" onClick={() => onGroupSelect(g)}>
