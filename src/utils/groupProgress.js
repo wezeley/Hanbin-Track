@@ -1,8 +1,10 @@
 import { getGroupStructure } from './groupStructure';
 
 export const getGroupProgress = (group, ownedCards) => {
-  const total = 0; // PARTE 3
-  const owned = 0; // PARTE 3
-  const pct = 0; // PARTE 3
+  const cardsPerMember = getGroupStructure(group)
+    .reduce((sum, set) => sum + set.rarities.length, 0);
+  const total = group.members.length * cardsPerMember;
+  const owned = ownedCards.filter(id => id.startsWith(`${group.code}#`)).length;
+  const pct = total ? Math.round(owned / total * 100) : 0;
   return { owned, total, pct };
 };
