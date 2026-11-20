@@ -15,6 +15,16 @@
   --color-success: #0B6B53;
   --color-success-soft: #D7F4EA;
 
+  /* Paleta pastel dos grupos */
+  --pastel-1: #DCE1FF;
+  --pastel-2: #D4F1E4;
+  --pastel-3: #FFDCEB;
+  --pastel-4: #FFE8D1;
+  --pastel-5: #E6DDFF;
+  --pastel-6: #CFF3F8;
+
+
+
   /* Fontes */
   --font-body: Inter, system-ui, sans-serif;
   --font-display: 'Bricolage Grotesque', sans-serif;
