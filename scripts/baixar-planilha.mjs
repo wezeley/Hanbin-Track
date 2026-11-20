@@ -176,8 +176,9 @@ function readOverview(rows) {
 
 const GROUP_COLUMNS = ['Group', 'Short', 'Name', 'Initial', 'Rarity', 'Code', 'Link'];
 
-// O nome vem do Overview; se o grupo não estiver lá, fica o da coluna Group.
-function readGroupTab(tab, number, official, rows) {
+// O nome é o título da aba, sem o número ("1 - Stray Kids" -> "Stray Kids"):
+// é o que quase sempre está certo (a coluna Group e o Overview têm mais erros).
+function readGroupTab(tab, number, rows) {
   const where = tab.name;
   const col = findColumns(rows[0] ?? [], GROUP_COLUMNS);
   if (!col) {
@@ -250,7 +251,7 @@ function readGroupTab(tab, number, official, rows) {
 
   return {
     number,
-    name: official?.name ?? [...groupNames][0],
+    name: tab.name.slice(tab.name.indexOf(' - ') + 3).trim(),
     code: [...shorts][0],
     type: isSolo ? 'solo' : 'group',
     members: [...members.values()],
@@ -478,7 +479,7 @@ for (const [i, tab] of groupTabs.entries()) {
     skippedAsEvent.push(tab.name);
     continue;
   }
-  const group = readGroupTab(tab, number, official, rows);
+  const group = readGroupTab(tab, number, rows);
   if (!group) continue;
 
   if (number !== 0) {
