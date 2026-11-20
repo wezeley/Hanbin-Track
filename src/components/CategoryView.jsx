@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import { getGroupProgress } from '../utils/groupProgress';
+import { getGroupStructure } from '../utils/groupStructure';
+import { plural } from '../utils/plural';
 import BANNERS from '../data/banners.json';
 
 function GroupPhoto({ group }) {
@@ -13,7 +15,7 @@ function GroupPhoto({ group }) {
 
 export function CategoryView({ category, groups, ownedCards, onGroupSelect }) {
   // ===== Cálculos =====
-  const groupCountLabel = `${groups.length} groups`; // PARTE 2
+  const groupCountLabel = plural(groups.length, 'group');
 
   // ===== Tela =====
   return (
@@ -26,7 +28,9 @@ export function CategoryView({ category, groups, ownedCards, onGroupSelect }) {
       <div className="group-grid">
         {groups.map(g => {
           const { owned, total, pct } = getGroupProgress(g, ownedCards);
-          const metaLabel = `0 members · 0 sets · ${total} cards`; // PARTE 2
+          const memberCount = g.members.length;
+          const setCount = getGroupStructure(g).length;
+          const metaLabel = `${plural(memberCount, 'member')} · ${plural(setCount, 'set')} · ${plural(total, 'card')}`;
 
           return (
             <button key={g.code} type="button" className="group-card" onClick={() => onGroupSelect(g)}>
