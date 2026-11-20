@@ -33,14 +33,28 @@ export function SetBinder({ group, set, ownedCards, filter, isOpen, onToggleOpen
   const lastRarity = set.rarities[set.rarities.length - 1];
   const setSize = group.members.length * set.rarities.length;
 
-  // Mede a área das cartas da 1ª raridade (todas têm a mesma largura)
+  // Mede a área das cartas da 1ª raridade visível (todas têm a mesma largura)
   const [cardsRef, cardsWidth] = useElementWidth();
   const columns = getCardColumns(group.members.length, cardsWidth);
 
   // ===== Cálculos =====
-  const ownedInSet = 0; // PARTE 3
-  const setPct = 0; // PARTE 3
-  const isComplete = false; // PARTE 3
+  let ownedInSet = 0;
+  set.rarities.forEach(r => {
+    group.members.forEach(m => {
+      if (ownedCards.includes(getCardId(group, m, set.id, r))) ownedInSet += 1;
+    });
+  });
+  const setPct = setSize ? Math.round(ownedInSet / setSize * 100) : 0;
+  const isComplete = setSize > 0 && ownedInSet === setSize;
+
+  // Filtro: Owned esconde o que falta, Missing esconde o que tenho
+  const isCardHidden = (isOwned) =>
+    (filter === 'owned' && !isOwned) || (filter === 'missing' && isOwned);
+
+  // Só mostra a raridade se pelo menos uma carta dela estiver visível
+  const visibleRarities = set.rarities.filter(r =>
+    group.members.some(m => !isCardHidden(ownedCards.includes(getCardId(group, m, set.id, r))))
+  );
 
   return (
     <div
@@ -81,9 +95,9 @@ export function SetBinder({ group, set, ownedCards, filter, isOpen, onToggleOpen
           </span>
         </button>
 
-        {isOpen && (
+        {isOpen && visibleRarities.length > 0 && (
           <div className="set-content">
-            {set.rarities.map((r, i) => (
+            {visibleRarities.map((r, i) => (
               <div key={r} className="rarity-row">
                 <span className="rarity-row-label">{r}H</span>
                 <div className="rarity-row-cards" ref={i === 0 ? cardsRef : undefined}>
@@ -91,7 +105,7 @@ export function SetBinder({ group, set, ownedCards, filter, isOpen, onToggleOpen
                     {group.members.map(m => {
                       const cardId = getCardId(group, m, set.id, r);
                       const isOwned = ownedCards.includes(cardId);
-                      const isHidden = false; // PARTE 3 (filtro)
+                      const isHidden = isCardHidden(isOwned);
 
                       return (
                         <Card
