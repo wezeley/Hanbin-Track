@@ -1,12 +1,16 @@
 import { useState } from 'react';
-import { HANBIN_DATA } from '../data/hanbinData';
 import { GROUPS } from '../data/groups';
 import { getGroupProgress } from '../utils/groupProgress';
+import { pickUpcoming } from '../utils/upcoming';
+import TODO from '../data/sheet/todo.json';
 
 const RARITIES = [1, 2, 3, 4, 5];
+const UPCOMING_COUNT = 5;
 
 export function Dashboard({ ownedCards, onGroupSelect }) {
   const [query, setQuery] = useState('');
+  // Sorteia uma vez cada vez que a Home aparece (não a cada tecla na busca).
+  const [upcoming] = useState(() => pickUpcoming(TODO, UPCOMING_COUNT));
 
   // ===== Cálculos =====
   const totalCards = GROUPS.reduce((sum, g) => sum + g.cards, 0);
@@ -56,9 +60,9 @@ export function Dashboard({ ownedCards, onGroupSelect }) {
 
         <section className="dash-box dash-upcoming">
           <h2 className="dash-label">Upcoming releases</h2>
-          {HANBIN_DATA.upcoming?.map((item, i) => (
+          {upcoming.map((item, i) => (
             <div key={i} className="upcoming-row">
-              <b>{item.group}</b>
+              <b>{item.name}</b>
               <span className="upcoming-info">{item.info}</span>
             </div>
           ))}

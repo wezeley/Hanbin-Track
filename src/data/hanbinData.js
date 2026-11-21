@@ -23,12 +23,6 @@ export const HANBIN_DATA = {
     3: { spine: "#FFDCEB", back: "#FFEEF5", edge: "#F7A9C9", strong: "#E5468A" },
   },
 
-  upcoming: [
-    { group: "STRAY KIDS", info: "next release" },
-    { group: "AESPA", info: "next release" },
-    { group: "NCT DREAM", info: "next release" }
-  ],
-
   // Correções de nome, pelo código do grupo na planilha. O nome vem do título
   // da aba; o que estiver aqui sempre vence.
   groupNames: {

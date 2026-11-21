@@ -16,7 +16,7 @@
 //   groups/<código>.json   as cartas de um grupo
 //   events.json     Event Overview (blocos de evento + legenda Event/Limited)
 //   radiants.json   Radiant Overview (blocos de radiantes)
-//   todo.json       To-Do Order e To-Do Order Solo
+//   todo.json       To-Do Order e To-Do Order Solo ("released" = já tem carta)
 
 import { mkdir, rm, writeFile } from 'node:fs/promises';
 
@@ -405,6 +405,35 @@ function readTodo(rows, where) {
   return columns;
 }
 
+// ---------- To-Do: o que já foi lançado ----------
+
+// Nome "solto", para comparar jeitos diferentes de escrever (NCT127 e NCT 127).
+const looseName = name => name.toLowerCase().replace(/[^a-z0-9]/g, '');
+
+// Dono do nome: primeiro o nome exato (LISA e LiSA são pessoas diferentes);
+// se não achar, o nome solto, mas só se der um único resultado.
+function findOwners(name, owners) {
+  const exact = owners.filter(owner => owner.name === name);
+  if (exact.length > 0) return exact;
+  const loose = owners.filter(owner => looseName(owner.name) === looseName(name));
+  return loose.length === 1 ? loose : [];
+}
+
+// released = nomes da coluna que já têm carta naquele set e raridade.
+// A coluna "Ideas" não é usada no site, então não é conferida.
+function addReleased(columns, owners, where) {
+  for (const column of columns) {
+    if (/Ideas/i.test(column.header)) {
+      column.released = [];
+      continue;
+    }
+    column.released = column.names.filter(name =>
+      findOwners(name, owners).some(owner =>
+        owner.cards.some(card => card.set === column.set && card.rarity === column.rarity)));
+    warnList('Já lançado, mas ainda na To-Do', `${where} › Set ${column.set} · ${column.rarity}H`, column.released);
+  }
+}
+
 // ---------- Gravar ----------
 
 // JSON com 2 espaços, mas cada objeto simples (uma carta, um membro) numa linha só.
@@ -490,6 +519,16 @@ for (const [i, tab] of groupTabs.entries()) {
   }
   groups.push(group);
 }
+
+// To-Do: marca o que já tem carta. O Solo vira uma lista de solistas,
+// cada um com as próprias cartas, para comparar igual aos grupos.
+const solo = groups.find(group => group.type === 'solo');
+const soloists = (solo?.members ?? []).map(member => ({
+  name: member.name,
+  cards: solo.cards.filter(card => card.member === member.name),
+}));
+addReleased(todo.groups, groups.filter(group => group.type === 'group'), 'To-Do Order');
+addReleased(todo.solo, soloists, 'To-Do Order Solo');
 
 // Tudo baixado: agora sim apaga os arquivos antigos e grava os novos.
 await rm(GROUPS_DIR, { recursive: true, force: true });
