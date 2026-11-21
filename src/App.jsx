@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { HANBIN_DATA } from "./data/hanbinData";
-import { GROUPS } from "./data/groups";
+import { GROUPS, SIDEBAR_CATEGORIES } from "./data/groups";
 import { Header } from "./components/Header";
 import { CategoryView } from "./components/CategoryView";
 import { Dashboard } from "./components/Dashboard";
@@ -104,7 +104,7 @@ function App() {
 
           <span className="sidebar-label">Categories</span>
 
-          {HANBIN_DATA.categories.map((cat) => (
+          {SIDEBAR_CATEGORIES.map((cat) => (
             <button
               key={cat}
               type="button"

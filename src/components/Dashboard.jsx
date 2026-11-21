@@ -22,6 +22,9 @@ export function Dashboard({ ownedCards, onGroupSelect }) {
     rarityCounts[rarity - 1] += 1;
   });
 
+  // "Your groups": só os grupos em que tenho pelo menos uma carta
+  const yourGroups = GROUPS.filter(g => getGroupProgress(g, ownedCards).owned > 0);
+
   const results = GROUPS
     .filter(g => g.name.toLowerCase().includes(query.toLowerCase()))
     .slice(0, 5);
@@ -94,7 +97,7 @@ export function Dashboard({ ownedCards, onGroupSelect }) {
 
       <section className="dash-box dash-groups">
         <h2 className="dash-label">Your groups</h2>
-        {GROUPS.map(g => {
+        {yourGroups.map(g => {
           const { owned, total, pct } = getGroupProgress(g, ownedCards);
           return (
             <button key={g.code} type="button" className="group-row" onClick={() => onGroupSelect(g)}>

@@ -9,7 +9,8 @@
     "lint": "oxlint",
     "preview": "vite preview",
     "fotos": "node scripts/buscar-fotos.mjs",
-    "planilha": "node scripts/baixar-planilha.mjs"
+    "planilha": "node scripts/baixar-planilha.mjs",
+    "categorias": "node scripts/buscar-categorias.mjs"
   },
   "dependencies": {
     "react": "^19.2.7",
