@@ -4,9 +4,14 @@ import { plural } from '../utils/plural';
 import { getNameSize } from '../utils/groupCard';
 import BANNERS from '../data/banners.json';
 
+// Evento: sorteia uma das cartas dele cada vez que a categoria aparece.
+const pickPhoto = (group) => group.photos?.length
+  ? group.photos[Math.floor(Math.random() * group.photos.length)]
+  : BANNERS[group.code];
+
 function GroupPhoto({ group }) {
   const [failed, setFailed] = useState(false);
-  const src = BANNERS[group.code];
+  const [src] = useState(() => pickPhoto(group));
   if (!src || failed) return null;
 
   const url = src.startsWith('http') ? src : `${import.meta.env.BASE_URL}${src}`;
@@ -20,8 +25,10 @@ export function CategoryView({ category, groups, query, onQueryChange, ownedCard
   const visibleGroups = search
     ? groups.filter(g => g.name.toLowerCase().includes(search) || g.tag.toLowerCase().includes(search))
     : groups;
-  // Soloists conta "artists"; as outras categorias, "groups"
-  const noun = groups.length > 0 && groups.every(g => g.type === 'soloist') ? 'artist' : 'group';
+  // Soloists conta "artists"; Events, Limiteds e Radiant, "events"; o resto, "groups"
+  const NOUNS = { soloist: 'artist', event: 'event' };
+  const types = [...new Set(groups.map(g => g.type))];
+  const noun = types.length === 1 ? (NOUNS[types[0]] ?? 'group') : 'group';
   const groupCountLabel = search
     ? `${visibleGroups.length} of ${plural(groups.length, noun)}`
     : plural(groups.length, noun);
@@ -53,10 +60,13 @@ export function CategoryView({ category, groups, query, onQueryChange, ownedCard
       <div className="group-grid">
         {visibleGroups.map(g => {
           const { owned, total, pct } = getGroupProgress(g, ownedCards);
-          // Solista não tem "Members" (seria sempre 1)
-          const stats = g.type === 'soloist'
-            ? [['Cards', total], ['Sets', g.sets]]
-            : [['Cards', total], ['Members', g.members], ['Sets', g.sets]];
+          // Solista não tem "Members" (seria sempre 1); evento só mostra "Sets"
+          // se tiver mais de uma página (Hanbin Comics)
+          const stats = [
+            ['Cards', total],
+            g.type === 'group' && ['Members', g.members],
+            (g.type !== 'event' || g.sets > 1) && ['Sets', g.sets],
+          ].filter(Boolean);
 
           return (
             <button key={g.code} type="button" className="group-card" onClick={() => onGroupSelect(g)}>

@@ -60,8 +60,27 @@ const SOLOISTS = (SHEET_INDEX.soloists ?? [])
   }))
   .sort((a, b) => a.name.localeCompare(b.name, 'en', { sensitivity: 'base' }));
 
-// Tudo o que aparece no site como "grupo": grupos e solistas.
-export const GROUPS = [...SHEET_GROUPS, ...SOLOISTS];
+// Eventos, Limiteds e radiantes: cada um aparece como um grupo, na ordem da
+// planilha. O code e a etiqueta são o código do bloco (SS24); "kind" diz o
+// tipo (event, limited ou radiant) e "photos" são os links das cartas, para
+// sortear a foto do card. "sets" = páginas (Hanbin Comics tem 3).
+const EVENT_CATEGORIES = { event: 'Events', limited: 'Limiteds', radiant: 'Radiant' };
+const EVENTS = (SHEET_INDEX.events ?? []).map(event => ({
+  number: null,
+  name: event.name,
+  code: event.id,
+  type: 'event',
+  kind: event.kind,
+  cards: event.cards,
+  members: 0,
+  sets: event.sets,
+  category: EVENT_CATEGORIES[event.kind],
+  tag: event.id,
+  photos: event.photos,
+}));
+
+// Tudo o que aparece no site como "grupo": grupos, solistas e eventos.
+export const GROUPS = [...SHEET_GROUPS, ...SOLOISTS, ...EVENTS];
 
 // Categorias da sidebar: as fixas e, se tiver algum grupo sem categoria, Uncategorized no fim.
 export const SIDEBAR_CATEGORIES = GROUPS.some(group => group.category === UNCATEGORIZED)
@@ -71,9 +90,28 @@ export const SIDEBAR_CATEGORIES = GROUPS.some(group => group.category === UNCATE
 // Um arquivo por grupo. O Vite só baixa o arquivo quando loadGroup é chamado.
 const GROUP_FILES = import.meta.glob('./sheet/groups/*.json', { import: 'default' });
 
+// Os arquivos dos eventos e dos radiantes também só são baixados quando um abre.
+const loadEventBlocks = () => Promise.all([
+  import('./sheet/events.json'),
+  import('./sheet/radiants.json'),
+]).then(([events, radiants]) => [...events.default.blocks, ...radiants.default.blocks]);
+
 // Devolve uma Promise com { number, name, code, members, cards } do grupo.
 // Solista: abre o arquivo do Solo e fica só com as cartas dele.
+// Evento: devolve { name, code, pages: [{ name, cards }] }, uma página por bloco.
 export function loadGroup(code) {
+  const event = EVENTS.find(e => e.code === code);
+  if (event) {
+    return loadEventBlocks().then(blocks => ({
+      name: event.name,
+      code,
+      pages: blocks
+        .filter(block => block.code === code)
+        .map(block => ({ name: block.name, cards: block.cards })),
+    }));
+  }
+
+
   const soloist = SOLOISTS.find(s => s.code === code);
   if (soloist) {
     return loadGroup('SOLO').then(solo => {

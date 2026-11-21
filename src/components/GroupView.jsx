@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useGroupData } from '../hooks/useGroupData';
-import { getGroupSets } from '../utils/groupSets';
+import { getEventSets, getGroupSets } from '../utils/groupSets';
 import { getGroupProgress } from '../utils/groupProgress';
 import { plural } from '../utils/plural';
 import { SetBinder } from './SetBinder';
@@ -18,14 +18,16 @@ export function GroupView({ group, ownedCards, expandedSets, onToggleSet, onTogg
   // ===== Cálculos =====
   // O cabeçalho usa os números do index.json (já estão na tela antes de carregar).
   // Os sets só existem depois que o arquivo do grupo chega.
-  const sets = data ? getGroupSets(data) : [];
+  // group.type: 'group', 'soloist' ou 'event' (também Limited e radiante)
+  const isEvent = group.type === 'event';
+  const sets = !data ? [] : isEvent ? getEventSets(data) : getGroupSets(data);
   const { owned, total, pct } = getGroupProgress(group, ownedCards);
-  const isSoloist = group.type === 'soloist';
-  // Solista: sem "members" (LS · 1 set · 5 cards)
+  // Solista: sem "members" (LS · 1 set · 5 cards).
+  // Evento: sem members, e os sets só se tiver mais de um (SS24 · 15 cards).
   const metaLabel = [
     group.tag,
-    !isSoloist && plural(group.members, 'member'),
-    plural(group.sets, 'set'),
+    group.type === 'group' && plural(group.members, 'member'),
+    (!isEvent || group.sets > 1) && plural(group.sets, 'set'),
     plural(total, 'card'),
   ].filter(Boolean).join(' · ');
 
@@ -84,7 +86,7 @@ export function GroupView({ group, ownedCards, expandedSets, onToggleSet, onTogg
             set={set}
             ownedCards={ownedCards}
             filter={filter}
-            isSoloist={isSoloist}
+            layout={group.type}
             isOpen={expandedSets[key] !== false}
             onToggleOpen={() => onToggleSet(key)}
             onToggleCard={onToggleCard}

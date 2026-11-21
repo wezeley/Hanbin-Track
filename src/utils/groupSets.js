@@ -32,3 +32,18 @@ export function getGroupSets(groupData) {
     return { id, members, rarities, rows, codes: setCards.map(card => card.code) };
   });
 }
+
+// Evento, Limited ou radiante: cada bloco vira uma página do fichário, sem
+// raridades nem membros (tudo é do mesmo tipo). "title" é o nome do bloco
+// (DC, Marvel...), mostrado no lugar do símbolo do set.
+export function getEventSets(eventData) {
+  return eventData.pages.map((page, i) => ({
+    id: i + 1,
+    title: page.name,
+    cards: page.cards,
+    members: [],
+    rarities: [],
+    rows: [],
+    codes: page.cards.map(card => card.code),
+  }));
+}

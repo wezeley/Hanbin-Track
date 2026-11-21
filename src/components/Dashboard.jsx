@@ -4,7 +4,19 @@ import { getGroupProgress } from '../utils/groupProgress';
 import { pickUpcoming } from '../utils/upcoming';
 import TODO from '../data/sheet/todo.json';
 
-const RARITIES = [1, 2, 3, 4, 5];
+// Caixinhas do Global progress: as 5 raridades e os 3 tipos especiais
+const RARITY_BOXES = [
+  { key: 1, label: '1H' },
+  { key: 2, label: '2H' },
+  { key: 3, label: '3H' },
+  { key: 4, label: '4H' },
+  { key: 5, label: '5H' },
+  { key: 'event', label: 'EV' },
+  { key: 'limited', label: 'LTD' },
+  { key: 'radiant', label: 'RAD' },
+];
+// Código do evento (SS24) -> tipo (event, limited ou radiant)
+const EVENT_KINDS = new Map(GROUPS.filter(g => g.type === 'event').map(g => [g.code, g.kind]));
 const UPCOMING_COUNT = 5;
 
 export function Dashboard({ ownedCards, onGroupSelect }) {
@@ -13,17 +25,23 @@ export function Dashboard({ ownedCards, onGroupSelect }) {
   const [upcoming] = useState(() => pickUpcoming(TODO, UPCOMING_COUNT));
 
   // ===== Cálculos =====
-  const totalCards = GROUPS.reduce((sum, g) => sum + g.cards, 0);
-  const ownedCount = ownedCards.length;
+  // Specials (Limiteds) ficam fora da contagem total, como no bot:
+  // não entram no total nem nas cartas que tenho (só na caixinha delas).
+  const isSpecial = id => EVENT_KINDS.get(id.split('#')[0]) === 'limited';
+  const totalCards = GROUPS
+    .filter(g => g.kind !== 'limited')
+    .reduce((sum, g) => sum + g.cards, 0);
+  const ownedCount = ownedCards.filter(id => !isSpecial(id)).length;
   const progressPct = totalCards ? Math.round(ownedCount / totalCards * 100) : 0;
 
-  // Raridade pelo número do ID (001 = 1H, 007 = 2H...): vale para todos os
-  // grupos e solistas da planilha. Eventos (parte 6) vão precisar de outra conta.
-  const rarityCounts = [0, 0, 0, 0, 0];
+  // Carta de evento, Limited ou radiante conta na caixinha do tipo (pelo código
+  // antes do #). As outras, pelo número do ID (001 = 1H, 007 = 2H...): vale
+  // para todos os grupos e solistas da planilha.
+  const rarityCounts = Object.fromEntries(RARITY_BOXES.map(box => [box.key, 0]));
   ownedCards.forEach(id => {
+    const kind = EVENT_KINDS.get(id.split('#')[0]);
     const seq = Number(id.slice(-3));
-    const rarity = ((seq - 1) % 5) + 1;
-    rarityCounts[rarity - 1] += 1;
+    rarityCounts[kind ?? ((seq - 1) % 5) + 1] += 1;
   });
 
   // "Your groups": só os grupos em que tenho pelo menos uma carta
@@ -49,10 +67,10 @@ export function Dashboard({ ownedCards, onGroupSelect }) {
             <div className="progress-fill" style={{ width: `${progressPct}%` }} />
           </div>
           <div className="rarity-grid">
-            {RARITIES.map((r, i) => (
-              <div key={r} className="rarity-box">
-                <div className="rarity-label">{r}H</div>
-                <div className="rarity-count">{rarityCounts[i]}</div>
+            {RARITY_BOXES.map(box => (
+              <div key={box.key} className="rarity-box">
+                <div className="rarity-label">{box.label}</div>
+                <div className="rarity-count">{rarityCounts[box.key]}</div>
               </div>
             ))}
           </div>

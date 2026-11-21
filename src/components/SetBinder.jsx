@@ -26,21 +26,27 @@ function SetSymbol({ setId }) {
   );
 }
 
-// set vem de getGroupSets (src/utils/groupSets.js)
-// isSoloist: o set vira UMA fileira, as raridades lado a lado, com a raridade embaixo
-// de cada carta (no grupo, cada raridade é uma linha com uma carta por membro).
-export function SetBinder({ set, ownedCards, filter, isSoloist, isOpen, onToggleOpen, onToggleCard, onSetCardsOwned }) {
+// set vem de getGroupSets ou getEventSets (src/utils/groupSets.js)
+// layout (o tipo do grupo):
+//   'group'   cada raridade é uma linha, com uma carta por membro
+//   'soloist' UMA faixa com as raridades lado a lado e a raridade embaixo de cada carta
+//   'event'   UMA faixa com todas as cartas e o grupo de origem embaixo de cada uma
+export function SetBinder({ set, ownedCards, filter, layout, isOpen, onToggleOpen, onToggleCard, onSetCardsOwned }) {
   const colors = HANBIN_DATA.setColors[set.id] || NEUTRAL_COLORS;
   const firstRarity = set.rarities[0];
   const lastRarity = set.rarities[set.rarities.length - 1];
   const setSize = set.codes.length;
 
-  // Solista: uma carta por raridade que existe no set (a que ainda não saiu não aparece)
-  const soloCards = set.rows.map(row => row.cards[0]);
+  // Faixa (solista e evento): cada carta com o rótulo que vai embaixo dela.
+  // Solista: só as raridades que existem no set (a que ainda não saiu não aparece).
+  const isStrip = layout !== 'group';
+  const stripSlots = layout === 'event'
+    ? set.cards.map(card => ({ card, label: card.group }))
+    : set.rows.map(row => ({ card: row.cards[0], label: `${row.rarity}H` }));
 
   // Mede a área das cartas da 1ª linha visível (todas têm a mesma largura)
   const [cardsRef, cardsWidth] = useElementWidth();
-  const columns = getCardColumns(isSoloist ? soloCards.length : set.members.length, cardsWidth);
+  const columns = getCardColumns(isStrip ? stripSlots.length : set.members.length, cardsWidth);
 
   // ===== Cálculos =====
   const ownedInSet = set.codes.filter(code => ownedCards.includes(code)).length;
@@ -55,6 +61,8 @@ export function SetBinder({ set, ownedCards, filter, isSoloist, isOpen, onToggle
   const visibleRows = set.rows.filter(row =>
     row.cards.some(card => card && !isCardHidden(ownedCards.includes(card.code)))
   );
+  // Faixa: só aparece se pelo menos uma carta estiver visível
+  const hasVisibleSlot = stripSlots.some(({ card }) => !isCardHidden(ownedCards.includes(card.code)));
 
   // Clique no rótulo da raridade (1H, 2H...): se falta alguma carta da linha,
   // marca todas; se já tenho todas, desmarca todas. Bolso vazio (null) não conta.
@@ -62,14 +70,15 @@ export function SetBinder({ set, ownedCards, filter, isSoloist, isOpen, onToggle
   const isRowComplete = (row) => rowCodes(row).every(code => ownedCards.includes(code));
   const toggleRow = (row) => onSetCardsOwned(rowCodes(row), !isRowComplete(row));
 
-  // Uma carta do fichário (igual para grupo e solista)
+  // Uma carta do fichário (igual para grupo, solista e evento)
   const renderCard = (card) => {
     const isOwned = ownedCards.includes(card.code);
+    const where = layout === 'event' ? `${card.group}, ${set.title}` : `set ${set.id}, ${card.rarity}H`;
     return (
       <Card
         key={card.code}
         cardId={card.code}
-        label={`${card.member}, set ${set.id}, ${card.rarity}H, ${isOwned ? 'owned' : 'missing'}`}
+        label={`${card.member}, ${where}, ${isOwned ? 'owned' : 'missing'}`}
         imagePath={card.link}
         isOwned={isOwned}
         isHidden={isCardHidden(isOwned)}
@@ -98,10 +107,11 @@ export function SetBinder({ set, ownedCards, filter, isSoloist, isOpen, onToggle
 
         <button type="button" className="set-header" onClick={onToggleOpen} aria-expanded={isOpen}>
           <span className="set-title">
-            <SetSymbol setId={set.id} />
+            {/* Evento: o nome do bloco (DC, Marvel...) no lugar do símbolo S1 */}
+            {set.title ? <span className="set-name">{set.title}</span> : <SetSymbol setId={set.id} />}
           </span>
           <span className="set-sub">
-            {firstRarity}H – {lastRarity}H · {plural(setSize, 'card')}
+            {set.rarities.length > 0 && `${firstRarity}H – ${lastRarity}H · `}{plural(setSize, 'card')}
           </span>
           <span className="set-progress">
             <span className="progress set-bar">
@@ -117,14 +127,16 @@ export function SetBinder({ set, ownedCards, filter, isSoloist, isOpen, onToggle
           </span>
         </button>
 
-        {isOpen && visibleRows.length > 0 && isSoloist && (
+        {isOpen && isStrip && hasVisibleSlot && (
           <div className="set-content">
             <div ref={cardsRef}>
               <div className="cards-grid" style={{ '--cols': columns }}>
-                {soloCards.map(card => (
-                  <div key={card.code} className="solo-slot">
+                {stripSlots.map(({ card, label }) => (
+                  <div key={card.code} className="strip-slot">
                     {renderCard(card)}
-                    <span className="solo-slot-label">{card.rarity}H</span>
+                    <span className={`strip-slot-label ${layout === 'event' ? 'is-group' : ''}`} title={label}>
+                      {label}
+                    </span>
                   </div>
                 ))}
               </div>
@@ -132,7 +144,7 @@ export function SetBinder({ set, ownedCards, filter, isSoloist, isOpen, onToggle
           </div>
         )}
 
-        {isOpen && visibleRows.length > 0 && !isSoloist && (
+        {isOpen && !isStrip && visibleRows.length > 0 && (
           <div className="set-content">
             {visibleRows.map((row, i) => (
               <div key={row.rarity} className="rarity-row">

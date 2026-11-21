@@ -294,10 +294,15 @@
   background: var(--color-accent);
 }
 
+/* 1H a 5H e EV, LTD, RAD: 8 caixinhas numa linha; no celular, 2 linhas de 4 */
 .rarity-grid {
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-columns: repeat(8, minmax(0, 1fr));
   gap: 8px;
+}
+
+@media (max-width: 560px) {
+  .rarity-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 }
 
 .rarity-box {
@@ -741,6 +746,12 @@
   width: auto;
 }
 
+/* Evento: nome do bloco (DC, Marvel...) no lugar do símbolo, na cor do set */
+.set-name {
+  font-size: 18px;
+  color: var(--set-strong);
+}
+
 .set-sub {
   font-size: 13px;
   color: var(--color-text-muted);
@@ -917,15 +928,27 @@
   border-radius: 12px;
 }
 
-/* Solista: cada carta com a raridade embaixo (1H a 5H na mesma fileira) */
-.solo-slot {
+/* Faixa (solista e evento): cada carta com um rótulo embaixo —
+   a raridade no solista, o grupo de origem no evento */
+.strip-slot {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 8px;
 }
 
-.solo-slot-label {
+.strip-slot-label {
   font-size: 14px;
   font-weight: 800;
+}
+
+/* Grupo de origem: menor e cortado com "…" se não couber (nome completo no title) */
+.strip-slot-label.is-group {
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-text-muted);
 }

@@ -14,6 +14,7 @@
 // Arquivos gerados:
 //   index.json      lista dos grupos (número, nome, código, cartas, membros, sets)
 //                   e dos solistas (id, nome, inicial, cartas, sets, IDs das cartas)
+//                   e dos eventos/Limiteds/radiantes (id, nome, tipo, cartas, páginas, fotos)
 //   groups/<código>.json   as cartas de um grupo
 //   events.json     Event Overview (blocos de evento + legenda Event/Limited)
 //   radiants.json   Radiant Overview (blocos de radiantes)
@@ -305,10 +306,15 @@ function readBlocks(rows, where, hasRarityColumn) {
     seenCodes.add(code);
     if (block.number === null && /^\d+$/.test(first)) block.number = Number(first);
 
+    // Do Pool Party em diante, o Event Overview vem com as colunas trocadas:
+    // Group tem o membro, Short tem o grupo e Name tem o código do evento (PPTY).
+    // Reconhece pelo conteúdo, não pela posição: se Name for o código do evento,
+    // lê o membro em Group e o grupo em Short.
+    const swapped = row[col.Name] === code.split('#')[0];
     const card = {
       code,
-      group: row[col.Group],
-      member: row[col.Name],
+      group: swapped ? row[col.Short] : row[col.Group],
+      member: swapped ? row[col.Group] : row[col.Name],
       initial: row[col.Initial],
       rarity: EVENT_RARITY,
     };
@@ -454,6 +460,31 @@ function soloSummary(solo) {
   });
 }
 
+// ---------- Eventos, Limiteds e Radiantes ----------
+
+// Cada evento, Limited e radiante vira um "grupo" no site, com o código do
+// bloco como id (SS24, CHLV...). Blocos com o mesmo código viram um só, com
+// uma página por bloco (Hanbin Comics: DC, Marvel e Invincible); o nome vem
+// do Overview. "photos" são os links das cartas: o site sorteia um para o card.
+function eventSummary(blocks) {
+  const byCode = new Map();
+  for (const block of blocks) {
+    if (!byCode.has(block.code)) byCode.set(block.code, []);
+    byCode.get(block.code).push(block);
+  }
+  return [...byCode].map(([code, parts]) => {
+    const cards = parts.flatMap(part => part.cards);
+    return {
+      id: code,
+      name: parts.length > 1 ? (overview.get(parts[0].number)?.name ?? parts[0].name) : parts[0].name,
+      kind: parts[0].kind ?? 'event', // fora da legenda (já avisado) conta como evento
+      cards: cards.length,
+      sets: parts.length,
+      photos: cards.map(card => card.link).filter(Boolean),
+    };
+  });
+}
+
 // ---------- Gravar ----------
 
 // JSON com 2 espaços, mas cada objeto simples (uma carta, um membro) numa linha só.
@@ -570,6 +601,10 @@ await save(new URL('index.json', OUT_DIR), {
     sets: Math.max(0, ...g.cards.map(c => c.set ?? 0)),
   })),
   soloists: solo ? soloSummary(solo) : [],
+  events: eventSummary([
+    ...events.blocks,
+    ...radiants.blocks.map(block => ({ ...block, kind: 'radiant' })),
+  ]),
 });
 await save(new URL('events.json', OUT_DIR), events);
 await save(new URL('radiants.json', OUT_DIR), radiants);
