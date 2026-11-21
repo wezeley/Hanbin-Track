@@ -2,10 +2,12 @@
 //   /                      Home
 //   /category/boy-group    categoria (nome em minúsculas, com "-")
 //   /group/SKZ             grupo, solista (SOLO-LS001) ou evento (SS24), pelo código
-//   /collection, /events, /commands   abas do topo
+//   /collection            lista das coleções (cartas com a mesma Description)
+//   /collection/SKZ-3      uma coleção, pelo id do collections.json
+//   /cards, /commands      abas do topo
 // Endereço que não existe (código errado, categoria apagada) volta para a Home.
 
-export const TOP_TABS = ['collection', 'events', 'commands'];
+export const TOP_TABS = ['cards', 'collection', 'commands'];
 
 // "Boy Group" -> "boy-group"; "Uncategorized" -> "uncategorized"
 const slug = (text) => text.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
@@ -15,12 +17,25 @@ export const categoryPath = (category) => `/category/${slug(category)}`;
 // encodeURIComponent: código com símbolo (como &) não quebra o endereço
 export const groupPath = (group) => `/group/${encodeURIComponent(group.code)}`;
 export const tabPath = (tab) => `/${tab}`;
+export const collectionPath = (collection) => `/collection/${encodeURIComponent(collection.id)}`;
 
 // "/group/SKZ" -> { view: 'group', group, category }
-// view: 'home', 'category', 'group' ou uma das TOP_TABS
+// view: 'home', 'category', 'group' ou uma das TOP_TABS.
+// Na Collection, collectionId é a coleção aberta (ou null na lista); ela só é
+// conferida depois que o collections.json carrega.
 export function parseRoute(path, categories, groups) {
   const [, section = '', value = ''] = path.split('/');
   const home = { view: 'home', category: null, group: null };
+
+  if (section === 'collection') {
+    let collectionId = null;
+    try {
+      collectionId = value ? decodeURIComponent(value) : null;
+    } catch {
+      // endereço com % quebrado: abre a lista
+    }
+    return { view: 'collection', category: null, group: null, collectionId };
+  }
 
   if (section === 'category') {
     const category = categories.find(c => slug(c) === value);

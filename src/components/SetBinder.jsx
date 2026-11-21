@@ -4,6 +4,7 @@ import { getCardColumns } from '../utils/cardColumns';
 import { plural } from '../utils/plural';
 import { useElementWidth } from '../hooks/useElementWidth';
 import { Card } from './Card';
+import { shortDescription } from '../utils/description';
 
 // Cor usada enquanto um set novo não tiver cor em setColors
 const NEUTRAL_COLORS = {
@@ -31,18 +32,19 @@ function SetSymbol({ setId }) {
 //   'group'   cada raridade é uma linha, com uma carta por membro
 //   'soloist' UMA faixa com as raridades lado a lado e a raridade embaixo de cada carta
 //   'event'   UMA faixa com todas as cartas e o grupo de origem embaixo de cada uma
+//   'collection' UMA faixa com as cartas da coleção e o membro embaixo de cada uma
 export function SetBinder({ set, ownedCards, filter, layout, isOpen, onToggleOpen, onToggleCard, onSetCardsOwned }) {
   const colors = HANBIN_DATA.setColors[set.id] || NEUTRAL_COLORS;
   const firstRarity = set.rarities[0];
   const lastRarity = set.rarities[set.rarities.length - 1];
   const setSize = set.codes.length;
 
-  // Faixa (solista e evento): cada carta com o rótulo que vai embaixo dela.
+  // Faixa (solista, evento e coleção): cada carta com o rótulo que vai embaixo dela.
   // Solista: só as raridades que existem no set (a que ainda não saiu não aparece).
   const isStrip = layout !== 'group';
-  const stripSlots = layout === 'event'
-    ? set.cards.map(card => ({ card, label: card.group }))
-    : set.rows.map(row => ({ card: row.cards[0], label: `${row.rarity}H` }));
+  const stripSlots = layout === 'soloist'
+    ? set.rows.map(row => ({ card: row.cards[0], label: `${row.rarity}H` }))
+    : set.cards.map(card => ({ card, label: layout === 'event' ? card.group : card.member }));
 
   // Mede a área das cartas da 1ª linha visível (todas têm a mesma largura)
   const [cardsRef, cardsWidth] = useElementWidth();
@@ -69,11 +71,19 @@ export function SetBinder({ set, ownedCards, filter, layout, isOpen, onToggleOpe
   const rowCodes = (row) => row.cards.filter(Boolean).map(card => card.code);
   const isRowComplete = (row) => rowCodes(row).every(code => ownedCards.includes(code));
   const toggleRow = (row) => onSetCardsOwned(rowCodes(row), !isRowComplete(row));
+  // Description da linha (o comeback ou photoshoot), pela 1ª carta que tiver,
+  // sem "Teaser Image" / "Concept Photos"
+  const rowDescription = (row) => {
+    const text = row.cards.find(card => card?.description)?.description;
+    return text && shortDescription(text);
+  };
 
-  // Uma carta do fichário (igual para grupo, solista e evento)
+  // Uma carta do fichário (igual para grupo, solista, evento e coleção)
   const renderCard = (card) => {
     const isOwned = ownedCards.includes(card.code);
-    const where = layout === 'event' ? `${card.group}, ${set.title}` : `set ${set.id}, ${card.rarity}H`;
+    const where = layout === 'event' ? `${card.group}, ${set.title}`
+      : layout === 'collection' ? set.title
+      : `set ${set.id}, ${card.rarity}H`;
     return (
       <Card
         key={card.code}
@@ -134,7 +144,7 @@ export function SetBinder({ set, ownedCards, filter, layout, isOpen, onToggleOpe
                 {stripSlots.map(({ card, label }) => (
                   <div key={card.code} className="strip-slot">
                     {renderCard(card)}
-                    <span className={`strip-slot-label ${layout === 'event' ? 'is-group' : ''}`} title={label}>
+                    <span className={`strip-slot-label ${layout !== 'soloist' ? 'is-group' : ''}`} title={label}>
                       {label}
                     </span>
                   </div>
@@ -157,6 +167,7 @@ export function SetBinder({ set, ownedCards, filter, layout, isOpen, onToggleOpe
                   {row.rarity}H
                 </button>
                 <div className="rarity-row-cards" ref={i === 0 ? cardsRef : undefined}>
+                  {rowDescription(row) && <p className="rarity-row-desc">{rowDescription(row)}</p>}
                   <div className="cards-grid" style={{ '--cols': columns }}>
                     {row.cards.map((card, col) =>
                       // Membro sem essa carta: bolso vazio, para as colunas não andarem

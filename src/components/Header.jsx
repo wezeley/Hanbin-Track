@@ -10,11 +10,12 @@ export function Header({ currentView, onViewChange, title }) {
 
   const initial = userName.trim().charAt(0).toUpperCase();
 
-  // O id é o endereço da aba (#/collection...); "dashboard" é a Home
+  // O id é o endereço da aba (#/collection...); "dashboard" é a Home (e as
+  // categorias e grupos, que saem dela)
   const navItems = [
-    { id: 'dashboard', label: 'Cards' },
+    { id: 'dashboard', label: 'Home' },
+    { id: 'cards', label: 'Cards' },
     { id: 'collection', label: 'Collection' },
-    { id: 'events', label: 'Events' },
     { id: 'commands', label: 'Commands' },
   ];
 

@@ -1,22 +1,13 @@
-import { useState } from 'react';
 import { getGroupProgress } from '../utils/groupProgress';
 import { plural } from '../utils/plural';
-import { getNameSize } from '../utils/groupCard';
 import BANNERS from '../data/banners.json';
+import { GroupCard } from './GroupCard';
 
-// Evento: sorteia uma das cartas dele cada vez que a categoria aparece.
+// Foto do card: a do grupo (banners.json); evento sorteia uma das cartas dele
+// cada vez que a categoria aparece.
 const pickPhoto = (group) => group.photos?.length
   ? group.photos[Math.floor(Math.random() * group.photos.length)]
   : BANNERS[group.code];
-
-function GroupPhoto({ group }) {
-  const [failed, setFailed] = useState(false);
-  const [src] = useState(() => pickPhoto(group));
-  if (!src || failed) return null;
-
-  const url = src.startsWith('http') ? src : `${import.meta.env.BASE_URL}${src}`;
-  return <img src={url} alt="" loading="lazy" onError={() => setFailed(true)} />;
-}
 
 export function CategoryView({ category, groups, query, onQueryChange, ownedCards, onGroupSelect }) {
   // ===== Cálculos =====
@@ -69,31 +60,17 @@ export function CategoryView({ category, groups, query, onQueryChange, ownedCard
           ].filter(Boolean);
 
           return (
-            <button key={g.code} type="button" className="group-card" onClick={() => onGroupSelect(g)}>
-              <span className="group-card-info">
-                <span className="group-card-name" style={{ fontSize: getNameSize(g.name) }}>{g.name}</span>
-                <span className="group-card-stats">
-                  {stats.map(([label, value]) => (
-                    <span key={label} className="group-card-stat">
-                      <span className="group-card-label">{label}</span>
-                      <b>{value}</b>
-                    </span>
-                  ))}
-                </span>
-                <span className="group-card-progress">
-                  <span className="progress group-card-bar">
-                    <span className="progress-fill" style={{ width: `${pct}%` }} />
-                  </span>
-                  <span className="group-card-count">{owned} / {total}</span>
-                </span>
-              </span>
-              <span className="group-card-photo">
-                <span className="group-card-photo-img">
-                  <GroupPhoto group={g} />
-                </span>
-                <span className="group-card-code">{g.tag}</span>
-              </span>
-            </button>
+            <GroupCard
+              key={g.code}
+              name={g.name}
+              stats={stats}
+              owned={owned}
+              total={total}
+              pct={pct}
+              tag={g.tag}
+              getPhoto={() => pickPhoto(g)}
+              onClick={() => onGroupSelect(g)}
+            />
           );
         })}
       </div>

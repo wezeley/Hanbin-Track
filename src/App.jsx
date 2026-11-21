@@ -5,8 +5,9 @@ import { Header } from "./components/Header";
 import { CategoryView } from "./components/CategoryView";
 import { Dashboard } from "./components/Dashboard";
 import { GroupView } from "./components/GroupView";
+import { CollectionView } from "./components/CollectionView";
 import { navigate, useHashRoute } from "./hooks/useHashRoute";
-import { categoryPath, groupPath, homePath, parseRoute, tabPath } from "./utils/routes";
+import { categoryPath, collectionPath, groupPath, homePath, parseRoute, tabPath } from "./utils/routes";
 import "./App.css";
 
 function App() {
@@ -69,7 +70,7 @@ function App() {
 
   // Largura da área principal: a página do grupo é um pouco mais larga e a
   // da categoria usa a tela inteira (até 1600px) para caber mais cards.
-  const isGroupPage = currentView === "dashboard" && selectedGroup;
+  const isGroupPage = (currentView === "dashboard" && selectedGroup) || currentView === "collection";
   const isCategoryPage = currentView === "dashboard" && activeTab && !selectedGroup;
   const mainWidthClass = isGroupPage ? "app-main-wide" : isCategoryPage ? "app-main-full" : "";
   const isHomeActive = currentView !== "dashboard" || !activeTab;
@@ -145,7 +146,15 @@ function App() {
         <main
           className={`app-main ${mainWidthClass}`}
         >
-          {currentView !== "dashboard" ? (
+          {currentView === "collection" ? (
+            <CollectionView
+              collectionId={route.collectionId}
+              ownedCards={ownedCards}
+              onOpen={(collection) => navigate(collectionPath(collection))}
+              onBack={() => navigate(tabPath("collection"))}
+              onToggleCard={toggleCard}
+            />
+          ) : currentView !== "dashboard" ? (
             <p>Em breve.</p>
           ) : !activeTab ? (
             <Dashboard
