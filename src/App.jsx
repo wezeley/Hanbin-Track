@@ -65,11 +65,11 @@ function App() {
     (g) => g.category?.toLowerCase() === activeTab?.toLowerCase(),
   );
 
-  // Largura da área principal: a página do grupo é um pouco mais larga e a
-  // da categoria usa a tela inteira (até 1600px) para caber mais cards.
+  // Página do grupo (e a Collection): menos espaço em cima do conteúdo.
+  // A largura é a mesma em todas as páginas (1360px, no App.css).
   const isGroupPage = (currentView === "dashboard" && selectedGroup) || currentView === "collection";
-  const isCategoryPage = currentView === "dashboard" && activeTab && !selectedGroup;
-  const mainWidthClass = isGroupPage ? "app-main-wide" : isCategoryPage ? "app-main-full" : "";
+  const mainWidthClass = isGroupPage ? "app-main-wide" : "";
+
   // Chips da página de categoria: nome e quantidade de grupos de cada uma.
   const categoryChips = SIDEBAR_CATEGORIES.map((name) => ({
     name,

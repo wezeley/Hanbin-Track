@@ -4,10 +4,13 @@
   min-height: 100vh;
 }
 
+/* Mesma largura e mesmo recuo do header (.header-inner): o conteúdo começa
+   alinhado com o logo. margin auto divide a sobra entre os dois lados. */
 .app-main {
   width: 100%;
-  max-width: 1120px;
-  padding: 32px 28px 56px;
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 32px 32px 56px;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -658,16 +661,11 @@
 }
 
 /* ===== Página do grupo ===== */
-/* Página do grupo: mesma largura da categoria, para as cartas não encolherem
-   em grupos grandes (9 cartas de 120px precisam de ~1160px só para a fileira). */
+/* Página do grupo: um pouco menos de espaço em cima. A largura é a mesma de
+   todas as páginas (1360px); grupos com mais de ~10 membros (Seventeen)
+   dividem a fileira em 2 linhas equilibradas. */
 .app-main-wide {
-  max-width: 1600px;
   padding-top: 24px;
-}
-
-/* Página da categoria: usa a largura do monitor para caber mais cards por linha */
-.app-main-full {
-  max-width: 1600px;
 }
 
 .group-page {
