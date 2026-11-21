@@ -1,0 +1,15 @@
+{
+  "number": 323,
+  "name": "AWU",
+  "code": "AWU",
+  "members": [
+    { "name": "Dia", "initial": "DA" },
+    { "name": "Lola", "initial": "LL" },
+    { "name": "U_Chae", "initial": "UC" }
+  ],
+  "cards": [
+    { "code": "AWU#DA001", "member": "Dia", "initial": "DA", "rarity": 1, "set": 1, "description": "RE:FRAME (2026)", "link": "https://i.imgur.com/1yNXyjG.png" },
+    { "code": "AWU#LL001", "member": "Lola", "initial": "LL", "rarity": 1, "set": 1, "description": "RE:FRAME (2026)", "link": "https://i.imgur.com/Ls5agaH.png" },
+    { "code": "AWU#UC001", "member": "U_Chae", "initial": "UC", "rarity": 1, "set": 1, "description": "RE:FRAME (2026)", "link": "https://i.imgur.com/6GyCDqh.png" }
+  ]
+}

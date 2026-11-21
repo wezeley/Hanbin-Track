@@ -1,0 +1,19 @@
+{
+  "number": 216,
+  "name": "TIOT",
+  "code": "TIOT",
+  "members": [
+    { "name": "Junhyeon", "initial": "JH" },
+    { "name": "Keonhee", "initial": "KH" },
+    { "name": "Minseoung", "initial": "MS" },
+    { "name": "Woojin", "initial": "WJ" },
+    { "name": "Yechan", "initial": "YC" }
+  ],
+  "cards": [
+    { "code": "TIOT#JH001", "member": "Junhyeon", "initial": "JH", "rarity": 1, "set": 1, "description": "Run Run Barefoot", "link": "https://i.imgur.com/Y6r9Tji.png" },
+    { "code": "TIOT#KH001", "member": "Keonhee", "initial": "KH", "rarity": 1, "set": 1, "description": "Run Run Barefoot", "link": "https://i.imgur.com/Di3wGpo.png" },
+    { "code": "TIOT#MS001", "member": "Minseoung", "initial": "MS", "rarity": 1, "set": 1, "description": "Run Run Barefoot", "link": "https://i.imgur.com/rPJbH9i.png" },
+    { "code": "TIOT#WJ001", "member": "Woojin", "initial": "WJ", "rarity": 1, "set": 1, "description": "Run Run Barefoot", "link": "https://i.imgur.com/wCJLS6i.png" },
+    { "code": "TIOT#YC001", "member": "Yechan", "initial": "YC", "rarity": 1, "set": 1, "description": "Run Run Barefoot", "link": "https://i.imgur.com/rsPy0ma.png" }
+  ]
+}

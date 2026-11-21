@@ -1,0 +1,100 @@
+{
+  "number": 271,
+  "name": "n.SSign",
+  "code": "NSSN",
+  "members": [
+    { "name": "Doha", "initial": "DH" },
+    { "name": "Hanjun", "initial": "HJ" },
+    { "name": "Huiwon", "initial": "HW" },
+    { "name": "Kazuta", "initial": "KZ" },
+    { "name": "Laurence", "initial": "LR" },
+    { "name": "Robin", "initial": "RB" },
+    { "name": "Sungyun", "initial": "SY" }
+  ],
+  "cards": [
+    { "code": "NSSN#DH001", "member": "Doha", "initial": "DH", "rarity": 1, "set": 1, "description": "Love Potion - Concept Photos", "link": "https://i.imgur.com/NizCiSP.png" },
+    { "code": "NSSN#HJ001", "member": "Hanjun", "initial": "HJ", "rarity": 1, "set": 1, "description": "Love Potion - Concept Photos", "link": "https://i.imgur.com/qDQ9AXp.png" },
+    { "code": "NSSN#HW001", "member": "Huiwon", "initial": "HW", "rarity": 1, "set": 1, "description": "Love Potion - Concept Photos", "link": "https://i.imgur.com/PgclV7d.png" },
+    { "code": "NSSN#KZ001", "member": "Kazuta", "initial": "KZ", "rarity": 1, "set": 1, "description": "Love Potion - Concept Photos", "link": "https://i.imgur.com/SQwHK6W.png" },
+    { "code": "NSSN#LR001", "member": "Laurence", "initial": "LR", "rarity": 1, "set": 1, "description": "Love Potion - Concept Photos", "link": "https://i.imgur.com/GCClIK2.png" },
+    { "code": "NSSN#RB001", "member": "Robin", "initial": "RB", "rarity": 1, "set": 1, "description": "Love Potion - Concept Photos", "link": "https://i.imgur.com/SFoq5t5.png" },
+    { "code": "NSSN#SY001", "member": "Sungyun", "initial": "SY", "rarity": 1, "set": 1, "description": "Love Potion - Concept Photos", "link": "https://i.imgur.com/c1tEV3n.png" },
+    { "code": "NSSN#DH002", "member": "Doha", "initial": "DH", "rarity": 2, "set": 1, "description": "Itty Bitty - Concept Photos", "link": "https://i.imgur.com/ts1tv2k.png" },
+    { "code": "NSSN#HJ002", "member": "Hanjun", "initial": "HJ", "rarity": 2, "set": 1, "description": "Itty Bitty - Concept Photos", "link": "https://i.imgur.com/Xi6XAm3.png" },
+    { "code": "NSSN#HW002", "member": "Huiwon", "initial": "HW", "rarity": 2, "set": 1, "description": "Itty Bitty - Concept Photos", "link": "https://i.imgur.com/pjn6AHk.png" },
+    { "code": "NSSN#KZ002", "member": "Kazuta", "initial": "KZ", "rarity": 2, "set": 1, "description": "Itty Bitty - Concept Photos", "link": "https://i.imgur.com/CiaAzBw.png" },
+    { "code": "NSSN#LR002", "member": "Laurence", "initial": "LR", "rarity": 2, "set": 1, "description": "Itty Bitty - Concept Photos", "link": "https://i.imgur.com/NyiBSkZ.png" },
+    { "code": "NSSN#RB002", "member": "Robin", "initial": "RB", "rarity": 2, "set": 1, "description": "Itty Bitty - Concept Photos", "link": "https://i.imgur.com/0Z2fOLX.png" },
+    { "code": "NSSN#SY002", "member": "Sungyun", "initial": "SY", "rarity": 2, "set": 1, "description": "Itty Bitty - Concept Photos", "link": "https://i.imgur.com/LGSTmTM.png" },
+    { "code": "NSSN#DH003", "member": "Doha", "initial": "DH", "rarity": 3, "set": 1, "description": "Funky like me - Concept Photos", "link": "https://i.imgur.com/B2oVe4j.png" },
+    { "code": "NSSN#HJ003", "member": "Hanjun", "initial": "HJ", "rarity": 3, "set": 1, "description": "Funky like me - Concept Photos", "link": "https://i.imgur.com/dks2b5u.png" },
+    { "code": "NSSN#HW003", "member": "Huiwon", "initial": "HW", "rarity": 3, "set": 1, "description": "Funky like me - Concept Photos", "link": "https://i.imgur.com/MsiLxdQ.png" },
+    { "code": "NSSN#KZ003", "member": "Kazuta", "initial": "KZ", "rarity": 3, "set": 1, "description": "Funky like me - Concept Photos", "link": "https://i.imgur.com/xbXQuyB.png" },
+    { "code": "NSSN#LR003", "member": "Laurence", "initial": "LR", "rarity": 3, "set": 1, "description": "Funky like me - Concept Photos", "link": "https://i.imgur.com/TydEDWX.png" },
+    { "code": "NSSN#RB003", "member": "Robin", "initial": "RB", "rarity": 3, "set": 1, "description": "Funky like me - Concept Photos", "link": "https://i.imgur.com/3E625hu.png" },
+    { "code": "NSSN#SY003", "member": "Sungyun", "initial": "SY", "rarity": 3, "set": 1, "description": "Funky like me - Concept Photos", "link": "https://i.imgur.com/o55ilVh.png" },
+    {
+      "code": "NSSN#DH004",
+      "member": "Doha",
+      "initial": "DH",
+      "rarity": 4,
+      "set": 1,
+      "description": "JAPAN TOUR [EVERBLUE] Final D-1 - Twitter Update",
+      "link": "https://i.imgur.com/c991MwG.png"
+    },
+    {
+      "code": "NSSN#HJ004",
+      "member": "Hanjun",
+      "initial": "HJ",
+      "rarity": 4,
+      "set": 1,
+      "description": "JAPAN TOUR [EVERBLUE] Final D-1 - Twitter Update",
+      "link": "https://i.imgur.com/bljlJej.png"
+    },
+    {
+      "code": "NSSN#HW004",
+      "member": "Huiwon",
+      "initial": "HW",
+      "rarity": 4,
+      "set": 1,
+      "description": "JAPAN TOUR [EVERBLUE] Final D-1 - Twitter Update",
+      "link": "https://i.imgur.com/rCi7hsD.png"
+    },
+    {
+      "code": "NSSN#KZ004",
+      "member": "Kazuta",
+      "initial": "KZ",
+      "rarity": 4,
+      "set": 1,
+      "description": "JAPAN TOUR [EVERBLUE] Final D-1 - Twitter Update",
+      "link": "https://i.imgur.com/2zHayW7.png"
+    },
+    {
+      "code": "NSSN#LR004",
+      "member": "Laurence",
+      "initial": "LR",
+      "rarity": 4,
+      "set": 1,
+      "description": "JAPAN TOUR [EVERBLUE] Final D-1 - Twitter Update",
+      "link": "https://i.imgur.com/bqdxEPd.png"
+    },
+    {
+      "code": "NSSN#RB004",
+      "member": "Robin",
+      "initial": "RB",
+      "rarity": 4,
+      "set": 1,
+      "description": "JAPAN TOUR [EVERBLUE] Final D-1 - Twitter Update",
+      "link": "https://i.imgur.com/vkxEwcJ.png"
+    },
+    {
+      "code": "NSSN#SY004",
+      "member": "Sungyun",
+      "initial": "SY",
+      "rarity": 4,
+      "set": 1,
+      "description": "JAPAN TOUR [EVERBLUE] Final D-1 - Twitter Update",
+      "link": "https://i.imgur.com/8XWEpb1.png"
+    }
+  ]
+}

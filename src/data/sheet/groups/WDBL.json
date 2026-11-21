@@ -1,0 +1,24 @@
+{
+  "number": 298,
+  "name": "Wild Blue",
+  "code": "WDBL",
+  "members": [
+    { "name": "Coki", "initial": "CK" },
+    { "name": "Hayate", "initial": "HY" },
+    { "name": "Hinata", "initial": "HN" },
+    { "name": "Naoya", "initial": "NY" },
+    { "name": "Yuto", "initial": "YT" }
+  ],
+  "cards": [
+    { "code": "WDBL#CK001", "member": "Coki", "initial": "CK", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/GphI9Hq.png" },
+    { "code": "WDBL#HY001", "member": "Hayate", "initial": "HY", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/GbxactA.png" },
+    { "code": "WDBL#HN001", "member": "Hinata", "initial": "HN", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/3jRGPWk.png" },
+    { "code": "WDBL#NY001", "member": "Naoya", "initial": "NY", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/ZYpaVK8.png" },
+    { "code": "WDBL#YT001", "member": "Yuto", "initial": "YT", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/dj9LIfC.png" },
+    { "code": "WDBL#CK002", "member": "Coki", "initial": "CK", "rarity": 2, "set": 1, "description": null, "link": "https://i.imgur.com/VgXegd4.png" },
+    { "code": "WDBL#HY002", "member": "Hayate", "initial": "HY", "rarity": 2, "set": 1, "description": null, "link": "https://i.imgur.com/icn7Bj3.png" },
+    { "code": "WDBL#HN002", "member": "Hinata", "initial": "HN", "rarity": 2, "set": 1, "description": null, "link": "https://i.imgur.com/8EzjV0c.png" },
+    { "code": "WDBL#NY002", "member": "Naoya", "initial": "NY", "rarity": 2, "set": 1, "description": null, "link": "https://i.imgur.com/QKQrvDH.png" },
+    { "code": "WDBL#YT002", "member": "Yuto", "initial": "YT", "rarity": 2, "set": 1, "description": null, "link": "https://i.imgur.com/bJsHEhg.png" }
+  ]
+}

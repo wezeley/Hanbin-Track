@@ -1,0 +1,21 @@
+{
+  "number": 109,
+  "name": "Apink Chobom",
+  "code": "APKC",
+  "members": [
+    { "name": "Bomi", "initial": "BM" },
+    { "name": "Chorong", "initial": "CR" }
+  ],
+  "cards": [
+    { "code": "APKC#BM001", "member": "Bomi", "initial": "BM", "rarity": 1, "set": 1, "description": "Copycat", "link": "https://i.imgur.com/EoBO9A3.png" },
+    { "code": "APKC#CR001", "member": "Chorong", "initial": "CR", "rarity": 1, "set": 1, "description": "Copycat", "link": "https://i.imgur.com/vMvbaUO.png" },
+    { "code": "APKC#BM002", "member": "Bomi", "initial": "BM", "rarity": 2, "set": 1, "description": "Copycat", "link": "https://i.imgur.com/d4lTwM4.png" },
+    { "code": "APKC#CR002", "member": "Chorong", "initial": "CR", "rarity": 2, "set": 1, "description": "Copycat", "link": "https://i.imgur.com/kg2B8a6.png" },
+    { "code": "APKC#BM003", "member": "Bomi", "initial": "BM", "rarity": 3, "set": 1, "description": "Copycat", "link": "https://i.imgur.com/YhD3Vre.png" },
+    { "code": "APKC#CR003", "member": "Chorong", "initial": "CR", "rarity": 3, "set": 1, "description": "Copycat", "link": "https://i.imgur.com/rjf1rNt.png" },
+    { "code": "APKC#BM004", "member": "Bomi", "initial": "BM", "rarity": 4, "set": 1, "description": "1TheK Selca", "link": "https://i.imgur.com/9rre4XJ.png" },
+    { "code": "APKC#CR004", "member": "Chorong", "initial": "CR", "rarity": 4, "set": 1, "description": "1TheK Selca", "link": "https://i.imgur.com/0dIDQRP.png" },
+    { "code": "APKC#BM005", "member": "Bomi", "initial": "BM", "rarity": 5, "set": 1, "description": "Y Magazine", "link": "https://i.imgur.com/JsmsCwR.png" },
+    { "code": "APKC#CR005", "member": "Chorong", "initial": "CR", "rarity": 5, "set": 1, "description": "Y Magazine", "link": "https://i.imgur.com/rX7dKUI.png" }
+  ]
+}

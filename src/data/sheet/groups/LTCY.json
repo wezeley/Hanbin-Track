@@ -1,0 +1,24 @@
+{
+  "number": 263,
+  "name": "Latency",
+  "code": "LTCY",
+  "members": [
+    { "name": "Haeun", "initial": "HA" },
+    { "name": "Heeyeon", "initial": "HE" },
+    { "name": "Hyunjin", "initial": "HY" },
+    { "name": "ZZONE", "initial": "JW" },
+    { "name": "Semi", "initial": "SM" }
+  ],
+  "cards": [
+    { "code": "LTCY#HA001", "member": "Haeun", "initial": "HA", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/pbsEbzm.png" },
+    { "code": "LTCY#HE001", "member": "Heeyeon", "initial": "HE", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/2KdfSXH.png" },
+    { "code": "LTCY#HY001", "member": "Hyunjin", "initial": "HY", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/zSkbZln.png" },
+    { "code": "LTCY#JW001", "member": "ZZONE", "initial": "JW", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/3DF9iSj.png" },
+    { "code": "LTCY#SM001", "member": "Semi", "initial": "SM", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/fOIeFnd.png" },
+    { "code": "LTCY#HA002", "member": "Haeun", "initial": "HA", "rarity": 2, "set": 1, "description": "LATE O' CLOCK - Concept Photos", "link": "https://i.imgur.com/OMQugti.png" },
+    { "code": "LTCY#HE002", "member": "Heeyeon", "initial": "HE", "rarity": 2, "set": 1, "description": "LATE O' CLOCK - Concept Photos", "link": "https://i.imgur.com/cML0sJP.png" },
+    { "code": "LTCY#HY002", "member": "Hyunjin", "initial": "HY", "rarity": 2, "set": 1, "description": "LATE O' CLOCK - Concept Photos", "link": "https://i.imgur.com/pu3EsN9.png" },
+    { "code": "LTCY#JW002", "member": "ZZONE", "initial": "JW", "rarity": 2, "set": 1, "description": "LATE O' CLOCK - Concept Photos", "link": "https://i.imgur.com/7fMkZ2o.png" },
+    { "code": "LTCY#SM002", "member": "Semi", "initial": "SM", "rarity": 2, "set": 1, "description": "LATE O' CLOCK - Concept Photos", "link": "https://i.imgur.com/1isUY0p.png" }
+  ]
+}

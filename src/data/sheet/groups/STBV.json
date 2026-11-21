@@ -1,0 +1,24 @@
+{
+  "number": 269,
+  "name": "Santos Bravos",
+  "code": "STBV",
+  "members": [
+    { "name": "Alejandro", "initial": "AJ" },
+    { "name": "Drew", "initial": "DW" },
+    { "name": "Gabi", "initial": "GB" },
+    { "name": "Kaue", "initial": "KA" },
+    { "name": "Kenneth", "initial": "KN" }
+  ],
+  "cards": [
+    { "code": "STBV#AJ001", "member": "Alejandro", "initial": "AJ", "rarity": 1, "set": 1, "description": "Kawasaki - Concept Photos", "link": "https://i.imgur.com/JnzcbSW.png" },
+    { "code": "STBV#DW001", "member": "Drew", "initial": "DW", "rarity": 1, "set": 1, "description": "Kawasaki - Concept Photos", "link": "https://i.imgur.com/LBP5b8H.png" },
+    { "code": "STBV#GB001", "member": "Gabi", "initial": "GB", "rarity": 1, "set": 1, "description": "Kawasaki - Concept Photos", "link": "https://i.imgur.com/hwO0sQC.png" },
+    { "code": "STBV#KA001", "member": "Kaue", "initial": "KA", "rarity": 1, "set": 1, "description": "Kawasaki - Concept Photos", "link": "https://i.imgur.com/a1bFUx2.png" },
+    { "code": "STBV#KN001", "member": "Kenneth", "initial": "KN", "rarity": 1, "set": 1, "description": "Kawasaki - Concept Photos", "link": "https://i.imgur.com/mq3Tkc1.png" },
+    { "code": "STBV#AJ002", "member": "Alejandro", "initial": "AJ", "rarity": 2, "set": 1, "description": null, "link": "https://i.imgur.com/Ne1w8Fl.png" },
+    { "code": "STBV#DW002", "member": "Drew", "initial": "DW", "rarity": 2, "set": 1, "description": null, "link": "https://i.imgur.com/WLgS6hG.png" },
+    { "code": "STBV#GB002", "member": "Gabi", "initial": "GB", "rarity": 2, "set": 1, "description": null, "link": "https://i.imgur.com/KdG1Xle.png" },
+    { "code": "STBV#KA002", "member": "Kaue", "initial": "KA", "rarity": 2, "set": 1, "description": null, "link": "https://i.imgur.com/VuDVFiC.png" },
+    { "code": "STBV#KN002", "member": "Kenneth", "initial": "KN", "rarity": 2, "set": 1, "description": null, "link": "https://i.imgur.com/KbqDdNK.png" }
+  ]
+}

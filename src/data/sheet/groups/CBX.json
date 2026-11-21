@@ -1,0 +1,27 @@
+{
+  "number": 321,
+  "name": "EXO-CBX",
+  "code": "CBX",
+  "members": [
+    { "name": "Baekhyun", "initial": "BH" },
+    { "name": "Chen", "initial": "CH" },
+    { "name": "Xiumin", "initial": "XM" }
+  ],
+  "cards": [
+    { "code": "CBX#BH001", "member": "Baekhyun", "initial": "BH", "rarity": 1, "set": 1, "description": "Hey Mama!", "link": "https://i.imgur.com/B2ET9pR.png" },
+    { "code": "CBX#CH001", "member": "Chen", "initial": "CH", "rarity": 1, "set": 1, "description": "Hey Mama!", "link": "https://i.imgur.com/6vVojUw.png" },
+    { "code": "CBX#XM001", "member": "Xiumin", "initial": "XM", "rarity": 1, "set": 1, "description": "Hey Mama!", "link": "https://i.imgur.com/v7HqTM3.png" },
+    { "code": "CBX#BH002", "member": "Baekhyun", "initial": "BH", "rarity": 2, "set": 1, "description": "Girls", "link": "https://i.imgur.com/OoXGjr7.png" },
+    { "code": "CBX#CH002", "member": "Chen", "initial": "CH", "rarity": 2, "set": 1, "description": "Girls", "link": "https://i.imgur.com/1LEwJ9R.png" },
+    { "code": "CBX#XM002", "member": "Xiumin", "initial": "XM", "rarity": 2, "set": 1, "description": "Girls", "link": "https://i.imgur.com/jfQV884.png" },
+    { "code": "CBX#BH003", "member": "Baekhyun", "initial": "BH", "rarity": 3, "set": 1, "description": "Blooming Days", "link": "https://i.imgur.com/NcwoYKg.png" },
+    { "code": "CBX#CH003", "member": "Chen", "initial": "CH", "rarity": 3, "set": 1, "description": "Blooming Days", "link": "https://i.imgur.com/uy98RRk.png" },
+    { "code": "CBX#XM003", "member": "Xiumin", "initial": "XM", "rarity": 3, "set": 1, "description": "Blooming Days", "link": "https://i.imgur.com/DZscEHi.png" },
+    { "code": "CBX#BH004", "member": "Baekhyun", "initial": "BH", "rarity": 4, "set": 1, "description": "EXO-CBX 1077power radio behind IG update", "link": "https://i.imgur.com/dc6D3GZ.png" },
+    { "code": "CBX#CH004", "member": "Chen", "initial": "CH", "rarity": 4, "set": 1, "description": "EXO-CBX 1077power radio behind IG update", "link": "https://i.imgur.com/JEj0K6e.png" },
+    { "code": "CBX#XM004", "member": "Xiumin", "initial": "XM", "rarity": 4, "set": 1, "description": "EXO-CBX 1077power radio behind IG update", "link": "https://i.imgur.com/u1ZwQyY.png" },
+    { "code": "CBX#BH005", "member": "Baekhyun", "initial": "BH", "rarity": 5, "set": 1, "description": "EXO-CBX Popteen Magazine", "link": "https://i.imgur.com/yGx5rDu.png" },
+    { "code": "CBX#CH005", "member": "Chen", "initial": "CH", "rarity": 5, "set": 1, "description": "EXO-CBX Popteen Magazine", "link": "https://i.imgur.com/zgO95Jc.png" },
+    { "code": "CBX#XM005", "member": "Xiumin", "initial": "XM", "rarity": 5, "set": 1, "description": "EXO-CBX Popteen Magazine", "link": "https://i.imgur.com/7rdEDDg.png" }
+  ]
+}

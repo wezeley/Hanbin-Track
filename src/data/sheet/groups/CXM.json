@@ -1,0 +1,21 @@
+{
+  "number": 258,
+  "name": "CXM",
+  "code": "CXM",
+  "members": [
+    { "name": "Mingyu", "initial": "MG" },
+    { "name": "S.Coups", "initial": "SC" }
+  ],
+  "cards": [
+    { "code": "CXM#MG001", "member": "Mingyu", "initial": "MG", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/bN1AVVz.png" },
+    { "code": "CXM#SC001", "member": "S.Coups", "initial": "SC", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/7WHfbdo.png" },
+    { "code": "CXM#MG002", "member": "Mingyu", "initial": "MG", "rarity": 2, "set": 1, "description": null, "link": "https://i.imgur.com/QrCeq27.png" },
+    { "code": "CXM#SC002", "member": "S.Coups", "initial": "SC", "rarity": 2, "set": 1, "description": null, "link": "https://i.imgur.com/uDhrC2v.png" },
+    { "code": "CXM#MG003", "member": "Mingyu", "initial": "MG", "rarity": 3, "set": 1, "description": null, "link": "https://i.imgur.com/upZo30A.png" },
+    { "code": "CXM#SC003", "member": "S.Coups", "initial": "SC", "rarity": 3, "set": 1, "description": null, "link": "https://i.imgur.com/Nylm8AI.png" },
+    { "code": "CXM#MG004", "member": "Mingyu", "initial": "MG", "rarity": 4, "set": 1, "description": null, "link": "https://i.imgur.com/uxrHzY7.png" },
+    { "code": "CXM#SC004", "member": "S.Coups", "initial": "SC", "rarity": 4, "set": 1, "description": null, "link": "https://i.imgur.com/dKkOG3H.png" },
+    { "code": "CXM#MG005", "member": "Mingyu", "initial": "MG", "rarity": 5, "set": 1, "description": null, "link": "https://i.imgur.com/g7hnnY3.png" },
+    { "code": "CXM#SC005", "member": "S.Coups", "initial": "SC", "rarity": 5, "set": 1, "description": null, "link": "https://i.imgur.com/TZ2quCm.png" }
+  ]
+}

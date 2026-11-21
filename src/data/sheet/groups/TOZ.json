@@ -1,0 +1,21 @@
+{
+  "number": 144,
+  "name": "TOZ",
+  "code": "TOZ",
+  "members": [
+    { "name": "Anthonny", "initial": "AT" },
+    { "name": "Hart", "initial": "HT" },
+    { "name": "Takuto", "initial": "TK" },
+    { "name": "Yuto", "initial": "YT" }
+  ],
+  "cards": [
+    { "code": "TOZ#AT001", "member": "Anthonny", "initial": "AT", "rarity": 1, "set": 1, "description": "Magic Hour", "link": "https://i.imgur.com/XnBC2cR.png" },
+    { "code": "TOZ#HT001", "member": "Hart", "initial": "HT", "rarity": 1, "set": 1, "description": "Magic Hour", "link": "https://i.imgur.com/aIi3Wzy.png" },
+    { "code": "TOZ#TK001", "member": "Takuto", "initial": "TK", "rarity": 1, "set": 1, "description": "Magic Hour", "link": "https://i.imgur.com/3irY91d.png" },
+    { "code": "TOZ#YT001", "member": "Yuto", "initial": "YT", "rarity": 1, "set": 1, "description": "Magic Hour", "link": "https://i.imgur.com/r6UfQ3Y.png" },
+    { "code": "TOZ#AT002", "member": "Anthonny", "initial": "AT", "rarity": 2, "set": 1, "description": "TO my new friends", "link": "https://i.imgur.com/1dk9mwu.png" },
+    { "code": "TOZ#HT002", "member": "Hart", "initial": "HT", "rarity": 2, "set": 1, "description": "TO my new friends", "link": "https://i.imgur.com/26QSSra.png" },
+    { "code": "TOZ#TK002", "member": "Takuto", "initial": "TK", "rarity": 2, "set": 1, "description": "TO my new friends", "link": "https://i.imgur.com/TPE5TlC.png" },
+    { "code": "TOZ#YT002", "member": "Yuto", "initial": "YT", "rarity": 2, "set": 1, "description": "TO my new friends", "link": "https://i.imgur.com/Mb5vRew.png" }
+  ]
+}

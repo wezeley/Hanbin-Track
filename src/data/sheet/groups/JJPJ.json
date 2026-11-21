@@ -1,0 +1,21 @@
+{
+  "number": 294,
+  "name": "JJ Project",
+  "code": "JJPJ",
+  "members": [
+    { "name": "JB", "initial": "JB" },
+    { "name": "Jinyoung", "initial": "JY" }
+  ],
+  "cards": [
+    { "code": "JJPJ#JB001", "member": "JB", "initial": "JB", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/87yfZ3X.png" },
+    { "code": "JJPJ#JY001", "member": "Jinyoung", "initial": "JY", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/O2ZHrRa.png" },
+    { "code": "JJPJ#JB002", "member": "JB", "initial": "JB", "rarity": 2, "set": 1, "description": null, "link": "https://i.imgur.com/OFGnFtD.png" },
+    { "code": "JJPJ#JY002", "member": "Jinyoung", "initial": "JY", "rarity": 2, "set": 1, "description": null, "link": "https://i.imgur.com/Zsy2fbS.png" },
+    { "code": "JJPJ#JB003", "member": "JB", "initial": "JB", "rarity": 3, "set": 1, "description": null, "link": "https://i.imgur.com/zO7Avag.png" },
+    { "code": "JJPJ#JY003", "member": "Jinyoung", "initial": "JY", "rarity": 3, "set": 1, "description": null, "link": "https://i.imgur.com/QN9iO0t.png" },
+    { "code": "JJPJ#JB004", "member": "JB", "initial": "JB", "rarity": 4, "set": 1, "description": null, "link": "https://i.imgur.com/EB54jwo.png" },
+    { "code": "JJPJ#JY004", "member": "Jinyoung", "initial": "JY", "rarity": 4, "set": 1, "description": null, "link": "https://i.imgur.com/FhfXsuA.png" },
+    { "code": "JJPJ#JB005", "member": "JB", "initial": "JB", "rarity": 5, "set": 1, "description": null, "link": "https://i.imgur.com/csic4v3.png" },
+    { "code": "JJPJ#JY005", "member": "Jinyoung", "initial": "JY", "rarity": 5, "set": 1, "description": null, "link": "https://i.imgur.com/Xz22QhS.png" }
+  ]
+}

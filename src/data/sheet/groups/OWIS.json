@@ -1,0 +1,19 @@
+{
+  "number": 331,
+  "name": "Owis",
+  "code": "OWIS",
+  "members": [
+    { "name": "Haru", "initial": "HR" },
+    { "name": "Serene", "initial": "SR" },
+    { "name": "Soi", "initial": "SI" },
+    { "name": "Summer", "initial": "SM" },
+    { "name": "Yuni", "initial": "YN" }
+  ],
+  "cards": [
+    { "code": "OWIS#HR001", "member": "Haru", "initial": "HR", "rarity": 1, "set": 1, "description": "Museum", "link": "https://i.imgur.com/4V9iKz4.png" },
+    { "code": "OWIS#SR001", "member": "Serene", "initial": "SR", "rarity": 1, "set": 1, "description": "Museum", "link": "https://i.imgur.com/K2Gt9Xr.png" },
+    { "code": "OWIS#SI001", "member": "Soi", "initial": "SI", "rarity": 1, "set": 1, "description": "Museum", "link": "https://i.imgur.com/nwMCg3I.png" },
+    { "code": "OWIS#SM001", "member": "Summer", "initial": "SM", "rarity": 1, "set": 1, "description": "Museum", "link": "https://i.imgur.com/OsaPPZN.png" },
+    { "code": "OWIS#YN001", "member": "Yuni", "initial": "YN", "rarity": 1, "set": 1, "description": "Museum", "link": "https://i.imgur.com/Hu5nLP1.png" }
+  ]
+}

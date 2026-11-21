@@ -1,0 +1,33 @@
+{
+  "number": 90,
+  "name": "2PM",
+  "code": "2PM",
+  "members": [
+    { "name": "Chansung", "initial": "CS" },
+    { "name": "Jun.K", "initial": "JK" },
+    { "name": "Junho", "initial": "JH" },
+    { "name": "Nichkhun", "initial": "NK" },
+    { "name": "Taecyeon", "initial": "TY" },
+    { "name": "Wooyoung", "initial": "WY" }
+  ],
+  "cards": [
+    { "code": "2PM#CS001", "member": "Chansung", "initial": "CS", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/ok54dRn.png" },
+    { "code": "2PM#JK001", "member": "Jun.K", "initial": "JK", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/N2hjIa8.png" },
+    { "code": "2PM#JH001", "member": "Junho", "initial": "JH", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/cbk7IkC.png" },
+    { "code": "2PM#NK001", "member": "Nichkhun", "initial": "NK", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/I1PPi7b.png" },
+    { "code": "2PM#TY001", "member": "Taecyeon", "initial": "TY", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/qSi8bd7.png" },
+    { "code": "2PM#WY001", "member": "Wooyoung", "initial": "WY", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/8ABP757.png" },
+    { "code": "2PM#CS002", "member": "Chansung", "initial": "CS", "rarity": 2, "set": 1, "description": null, "link": "https://i.imgur.com/4r3xdvb.png" },
+    { "code": "2PM#JK002", "member": "Jun.K", "initial": "JK", "rarity": 2, "set": 1, "description": null, "link": "https://i.imgur.com/SSTQzk5.png" },
+    { "code": "2PM#JH002", "member": "Junho", "initial": "JH", "rarity": 2, "set": 1, "description": null, "link": "https://i.imgur.com/Y0jjE4b.png" },
+    { "code": "2PM#NK002", "member": "Nichkhun", "initial": "NK", "rarity": 2, "set": 1, "description": null, "link": "https://i.imgur.com/EeVuAYU.png" },
+    { "code": "2PM#TY002", "member": "Taecyeon", "initial": "TY", "rarity": 2, "set": 1, "description": null, "link": "https://i.imgur.com/n6xT5uy.png" },
+    { "code": "2PM#WY002", "member": "Wooyoung", "initial": "WY", "rarity": 2, "set": 1, "description": null, "link": "https://i.imgur.com/3jLP64k.png" },
+    { "code": "2PM#CS003", "member": "Chansung", "initial": "CS", "rarity": 3, "set": 1, "description": "With Me Again - Concept Photo", "link": "https://i.imgur.com/CyL0Kmq.png" },
+    { "code": "2PM#JK003", "member": "Jun.K", "initial": "JK", "rarity": 3, "set": 1, "description": "With Me Again - Concept Photo", "link": "https://i.imgur.com/yZeJDKf.png" },
+    { "code": "2PM#JH003", "member": "Junho", "initial": "JH", "rarity": 3, "set": 1, "description": "With Me Again - Concept Photo", "link": "https://i.imgur.com/pVtkcxP.png" },
+    { "code": "2PM#NK003", "member": "Nichkhun", "initial": "NK", "rarity": 3, "set": 1, "description": "With Me Again - Concept Photo", "link": "https://i.imgur.com/mGlkK0e.png" },
+    { "code": "2PM#TY003", "member": "Taecyeon", "initial": "TY", "rarity": 3, "set": 1, "description": "With Me Again - Concept Photo", "link": "https://i.imgur.com/xI6Ij5V.png" },
+    { "code": "2PM#WY003", "member": "Wooyoung", "initial": "WY", "rarity": 3, "set": 1, "description": "With Me Again - Concept Photo", "link": "https://i.imgur.com/wcuOhBt.png" }
+  ]
+}

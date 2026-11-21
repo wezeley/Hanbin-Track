@@ -1,0 +1,27 @@
+{
+  "number": 134,
+  "name": "Tri.Be",
+  "code": "TRIB",
+  "members": [
+    { "name": "Hyunbin", "initial": "HB" },
+    { "name": "Jia", "initial": "JA" },
+    { "name": "Kelly", "initial": "KL" },
+    { "name": "Mire", "initial": "MR" },
+    { "name": "Soeun", "initial": "SE" },
+    { "name": "Songsun", "initial": "SS" }
+  ],
+  "cards": [
+    { "code": "TRIB#HB001", "member": "Hyunbin", "initial": "HB", "rarity": 1, "set": 1, "description": "Leviosa", "link": "https://i.imgur.com/0PVxL3i.png" },
+    { "code": "TRIB#JA001", "member": "Jia", "initial": "JA", "rarity": 1, "set": 1, "description": "Leviosa", "link": "https://i.imgur.com/gy5ajVZ.png" },
+    { "code": "TRIB#KL001", "member": "Kelly", "initial": "KL", "rarity": 1, "set": 1, "description": "Leviosa", "link": "https://i.imgur.com/nyBTpF1.png" },
+    { "code": "TRIB#MR001", "member": "Mire", "initial": "MR", "rarity": 1, "set": 1, "description": "Leviosa", "link": "https://i.imgur.com/GUni8mi.png" },
+    { "code": "TRIB#SE001", "member": "Soeun", "initial": "SE", "rarity": 1, "set": 1, "description": "Leviosa", "link": "https://i.imgur.com/kiW6I8q.png" },
+    { "code": "TRIB#SS001", "member": "Songsun", "initial": "SS", "rarity": 1, "set": 1, "description": "Leviosa", "link": "https://i.imgur.com/seEYGAX.png" },
+    { "code": "TRIB#HB002", "member": "Hyunbin", "initial": "HB", "rarity": 2, "set": 1, "description": null, "link": "https://i.imgur.com/ZewZz8U.png" },
+    { "code": "TRIB#JA002", "member": "Jia", "initial": "JA", "rarity": 2, "set": 1, "description": null, "link": "https://i.imgur.com/VMULmkH.png" },
+    { "code": "TRIB#KL002", "member": "Kelly", "initial": "KL", "rarity": 2, "set": 1, "description": null, "link": "https://i.imgur.com/yE8UIoE.png" },
+    { "code": "TRIB#MR002", "member": "Mire", "initial": "MR", "rarity": 2, "set": 1, "description": null, "link": "https://i.imgur.com/5pubisu.png" },
+    { "code": "TRIB#SE002", "member": "Soeun", "initial": "SE", "rarity": 2, "set": 1, "description": null, "link": "https://i.imgur.com/BYAOgZS.png" },
+    { "code": "TRIB#SS002", "member": "Songsun", "initial": "SS", "rarity": 2, "set": 1, "description": null, "link": "https://i.imgur.com/YY6Hsq6.png" }
+  ]
+}

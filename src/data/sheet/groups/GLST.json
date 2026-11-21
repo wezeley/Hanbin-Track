@@ -1,0 +1,25 @@
+{
+  "number": 241,
+  "name": "Girlset",
+  "code": "GLST",
+  "members": [
+    { "name": "Camila", "initial": "CM" },
+    { "name": "Kendall", "initial": "KD" },
+    { "name": "Lexi", "initial": "LX" },
+    { "name": "Savanna", "initial": "SV" }
+  ],
+  "cards": [
+    { "code": "GLST#CM001", "member": "Camila", "initial": "CM", "rarity": 1, "set": 1, "description": "Commas", "link": "https://i.imgur.com/9paDfBN.png" },
+    { "code": "GLST#KD001", "member": "Kendall", "initial": "KD", "rarity": 1, "set": 1, "description": "Commas", "link": "https://i.imgur.com/td5dXFW.png" },
+    { "code": "GLST#LX001", "member": "Lexi", "initial": "LX", "rarity": 1, "set": 1, "description": "Commas", "link": "https://i.imgur.com/9x9gNiW.png" },
+    { "code": "GLST#SV001", "member": "Savanna", "initial": "SV", "rarity": 1, "set": 1, "description": "Commas", "link": "https://i.imgur.com/mSm3KOs.png" },
+    { "code": "GLST#CM002", "member": "Camila", "initial": "CM", "rarity": 2, "set": 1, "description": "Little Miss", "link": "https://i.imgur.com/qZzgCOY.png" },
+    { "code": "GLST#KD002", "member": "Kendall", "initial": "KD", "rarity": 2, "set": 1, "description": "Little Miss", "link": "https://i.imgur.com/ijmw5js.png" },
+    { "code": "GLST#LX002", "member": "Lexi", "initial": "LX", "rarity": 2, "set": 1, "description": "Little Miss", "link": "https://i.imgur.com/1l6UpxL.png" },
+    { "code": "GLST#SV002", "member": "Savanna", "initial": "SV", "rarity": 2, "set": 1, "description": "Little Miss", "link": "https://i.imgur.com/lLlr5aS.png" },
+    { "code": "GLST#CM003", "member": "Camila", "initial": "CM", "rarity": 3, "set": 1, "description": "Tweak", "link": "https://i.imgur.com/Ve0f2Yc.png" },
+    { "code": "GLST#KD003", "member": "Kendall", "initial": "KD", "rarity": 3, "set": 1, "description": "Tweak", "link": "https://i.imgur.com/twiO7ZG.png" },
+    { "code": "GLST#LX003", "member": "Lexi", "initial": "LX", "rarity": 3, "set": 1, "description": "Tweak", "link": "https://i.imgur.com/2qv6Bzv.png" },
+    { "code": "GLST#SV003", "member": "Savanna", "initial": "SV", "rarity": 3, "set": 1, "description": "Tweak", "link": "https://i.imgur.com/CWX88uQ.png" }
+  ]
+}

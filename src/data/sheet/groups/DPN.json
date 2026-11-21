@@ -1,0 +1,27 @@
+{
+  "number": 198,
+  "name": "Drippin",
+  "code": "DPN",
+  "members": [
+    { "name": "Changuk", "initial": "CG" },
+    { "name": "Dongyun", "initial": "DY" },
+    { "name": "Hyeop", "initial": "HY" },
+    { "name": "Junho", "initial": "JH" },
+    { "name": "Minseo", "initial": "MS" },
+    { "name": "Yunseong", "initial": "YS" }
+  ],
+  "cards": [
+    { "code": "DPN#CG001", "member": "Changuk", "initial": "CG", "rarity": 1, "set": 1, "description": "Seven Sins", "link": "https://i.imgur.com/gzCKbmb.png" },
+    { "code": "DPN#DY001", "member": "Dongyun", "initial": "DY", "rarity": 1, "set": 1, "description": "Seven Sins", "link": "https://i.imgur.com/ibFhZRp.png" },
+    { "code": "DPN#HY001", "member": "Hyeop", "initial": "HY", "rarity": 1, "set": 1, "description": "Seven Sins", "link": "https://i.imgur.com/VpEl06U.png" },
+    { "code": "DPN#JH001", "member": "Junho", "initial": "JH", "rarity": 1, "set": 1, "description": "Seven Sins", "link": "https://i.imgur.com/FV5qhxx.png" },
+    { "code": "DPN#MS001", "member": "Minseo", "initial": "MS", "rarity": 1, "set": 1, "description": "Seven Sins", "link": "https://i.imgur.com/cgzxSOz.png" },
+    { "code": "DPN#YS001", "member": "Yunseong", "initial": "YS", "rarity": 1, "set": 1, "description": "Seven Sins", "link": "https://i.imgur.com/IZqHMoS.png" },
+    { "code": "DPN#CG002", "member": "Changuk", "initial": "CG", "rarity": 2, "set": 1, "description": "Beautiful Maze", "link": "https://i.imgur.com/5ww3H4B.png" },
+    { "code": "DPN#DY002", "member": "Dongyun", "initial": "DY", "rarity": 2, "set": 1, "description": "Beautiful Maze", "link": "https://i.imgur.com/ArV4P3p.png" },
+    { "code": "DPN#HY002", "member": "Hyeop", "initial": "HY", "rarity": 2, "set": 1, "description": "Beautiful Maze", "link": "https://i.imgur.com/YmMLDWu.png" },
+    { "code": "DPN#JH002", "member": "Junho", "initial": "JH", "rarity": 2, "set": 1, "description": "Beautiful Maze", "link": "https://i.imgur.com/Oi8Fo0b.png" },
+    { "code": "DPN#MS002", "member": "Minseo", "initial": "MS", "rarity": 2, "set": 1, "description": "Beautiful Maze", "link": "https://i.imgur.com/wNOa2Hc.png" },
+    { "code": "DPN#YS002", "member": "Yunseong", "initial": "YS", "rarity": 2, "set": 1, "description": "Beautiful Maze", "link": "https://i.imgur.com/qEQdIgR.png" }
+  ]
+}

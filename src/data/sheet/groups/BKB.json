@@ -1,0 +1,23 @@
+{
+  "number": 97,
+  "name": "Block B",
+  "code": "BKB",
+  "members": [
+    { "name": "B-Bomb", "initial": "BB" },
+    { "name": "Jaehyo", "initial": "JH" },
+    { "name": "Kyung", "initial": "KY" },
+    { "name": "P.O.", "initial": "PO" },
+    { "name": "Taeil", "initial": "TI" },
+    { "name": "U-Kwon", "initial": "UK" },
+    { "name": "Zico", "initial": "ZC" }
+  ],
+  "cards": [
+    { "code": "BKB#BB001", "member": "B-Bomb", "initial": "BB", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/IgvbGOl.png" },
+    { "code": "BKB#JH001", "member": "Jaehyo", "initial": "JH", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/rq105vd.png" },
+    { "code": "BKB#KY001", "member": "Kyung", "initial": "KY", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/BXFTMuB.png" },
+    { "code": "BKB#PO001", "member": "P.O.", "initial": "PO", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/3gYr9JL.png" },
+    { "code": "BKB#TI001", "member": "Taeil", "initial": "TI", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/gs8bWyL.png" },
+    { "code": "BKB#UK001", "member": "U-Kwon", "initial": "UK", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/zGbs8Av.png" },
+    { "code": "BKB#ZC001", "member": "Zico", "initial": "ZC", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/urNpzr6.png" }
+  ]
+}

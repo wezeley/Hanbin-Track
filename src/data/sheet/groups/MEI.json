@@ -1,0 +1,42 @@
+{
+  "number": 337,
+  "name": "ME:I",
+  "code": "MEI",
+  "members": [
+    { "name": "Ayane", "initial": "AY" },
+    { "name": "Keiko", "initial": "KE" },
+    { "name": "Kokona", "initial": "KK" },
+    { "name": "Cocoro", "initial": "CO" },
+    { "name": "Miu", "initial": "MU" },
+    { "name": "Momona", "initial": "MM" },
+    { "name": "Ran", "initial": "RN" },
+    { "name": "Rinon", "initial": "RO" },
+    { "name": "Shizuku", "initial": "SK" },
+    { "name": "Suzu", "initial": "SZ" },
+    { "name": "Tsuzumi", "initial": "TZ" }
+  ],
+  "cards": [
+    { "code": "MEI#AY001", "member": "Ayane", "initial": "AY", "rarity": 1, "set": 1, "description": "Produce (2023)", "link": "https://i.imgur.com/999drJA.png" },
+    { "code": "MEI#KE001", "member": "Keiko", "initial": "KE", "rarity": 1, "set": 1, "description": "Produce (2023)", "link": "https://i.imgur.com/5RfmTwh.png" },
+    { "code": "MEI#KK001", "member": "Kokona", "initial": "KK", "rarity": 1, "set": 1, "description": "Produce (2023)", "link": "https://i.imgur.com/q4ea8yx.png" },
+    { "code": "MEI#CO001", "member": "Cocoro", "initial": "CO", "rarity": 1, "set": 1, "description": "Produce (2023)", "link": "https://i.imgur.com/CoCQhP7.png" },
+    { "code": "MEI#MU001", "member": "Miu", "initial": "MU", "rarity": 1, "set": 1, "description": "Produce (2023)", "link": "https://i.imgur.com/Mccck8d.png" },
+    { "code": "MEI#MM001", "member": "Momona", "initial": "MM", "rarity": 1, "set": 1, "description": "Produce (2023)", "link": "https://i.imgur.com/uuNZZm4.png" },
+    { "code": "MEI#RN001", "member": "Ran", "initial": "RN", "rarity": 1, "set": 1, "description": "Produce (2023)", "link": "https://i.imgur.com/UlspzjF.png" },
+    { "code": "MEI#RO001", "member": "Rinon", "initial": "RO", "rarity": 1, "set": 1, "description": "Produce (2023)", "link": "https://i.imgur.com/1RbHGN5.png" },
+    { "code": "MEI#SK001", "member": "Shizuku", "initial": "SK", "rarity": 1, "set": 1, "description": "Produce (2023)", "link": "https://i.imgur.com/AM63CQ9.png" },
+    { "code": "MEI#SZ001", "member": "Suzu", "initial": "SZ", "rarity": 1, "set": 1, "description": "Produce (2023)", "link": "https://i.imgur.com/rSKjp9Q.png" },
+    { "code": "MEI#TZ001", "member": "Tsuzumi", "initial": "TZ", "rarity": 1, "set": 1, "description": "Produce (2023)", "link": "https://i.imgur.com/bRpabm4.png" },
+    { "code": "MEI#AY002", "member": "Ayane", "initial": "AY", "rarity": 2, "set": 1, "description": "Mirai (2024)", "link": "https://i.imgur.com/T86EAqP.png" },
+    { "code": "MEI#KE002", "member": "Keiko", "initial": "KE", "rarity": 2, "set": 1, "description": "Mirai (2024)", "link": "https://i.imgur.com/Jktfq0Q.png" },
+    { "code": "MEI#KK002", "member": "Kokona", "initial": "KK", "rarity": 2, "set": 1, "description": "Mirai (2024)", "link": "https://i.imgur.com/PEtekuc.png" },
+    { "code": "MEI#CO002", "member": "Cocoro", "initial": "CO", "rarity": 2, "set": 1, "description": "Mirai (2024)", "link": "https://i.imgur.com/P8s5EB6.png" },
+    { "code": "MEI#MU002", "member": "Miu", "initial": "MU", "rarity": 2, "set": 1, "description": "Mirai (2024)", "link": "https://i.imgur.com/A6tU46c.png" },
+    { "code": "MEI#MM002", "member": "Momona", "initial": "MM", "rarity": 2, "set": 1, "description": "Mirai (2024)", "link": "https://i.imgur.com/EA7vqtx.png" },
+    { "code": "MEI#RN002", "member": "Ran", "initial": "RN", "rarity": 2, "set": 1, "description": "Mirai (2024)", "link": "https://i.imgur.com/cFH6WkJ.png" },
+    { "code": "MEI#RO002", "member": "Rinon", "initial": "RO", "rarity": 2, "set": 1, "description": "Mirai (2024)", "link": "https://i.imgur.com/w0RRdY8.png" },
+    { "code": "MEI#SK002", "member": "Shizuku", "initial": "SK", "rarity": 2, "set": 1, "description": "Mirai (2024)", "link": "https://i.imgur.com/RFlY5Eh.png" },
+    { "code": "MEI#SZ002", "member": "Suzu", "initial": "SZ", "rarity": 2, "set": 1, "description": "Mirai (2024)", "link": "https://i.imgur.com/IYp4r7X.png" },
+    { "code": "MEI#TZ002", "member": "Tsuzumi", "initial": "TZ", "rarity": 2, "set": 1, "description": "Mirai (2024)", "link": "https://i.imgur.com/4OpTCom.png" }
+  ]
+}

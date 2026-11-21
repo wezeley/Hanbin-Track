@@ -1,0 +1,27 @@
+{
+  "number": 186,
+  "name": "Just B",
+  "code": "JSTB",
+  "members": [
+    { "name": "Bain", "initial": "BN" },
+    { "name": "DY", "initial": "DY" },
+    { "name": "Geonu", "initial": "GN" },
+    { "name": "Siwoo", "initial": "JM" },
+    { "name": "Lim Jimin", "initial": "LJ" },
+    { "name": "Sangwoo", "initial": "SW" }
+  ],
+  "cards": [
+    { "code": "JSTB#BN001", "member": "Bain", "initial": "BN", "rarity": 1, "set": 1, "description": "Daddy's Girl", "link": "https://i.imgur.com/aVprb7R.png" },
+    { "code": "JSTB#DY001", "member": "DY", "initial": "DY", "rarity": 1, "set": 1, "description": "Daddy's Girl", "link": "https://i.imgur.com/5EzngjZ.png" },
+    { "code": "JSTB#GN001", "member": "Geonu", "initial": "GN", "rarity": 1, "set": 1, "description": "Daddy's Girl", "link": "https://i.imgur.com/SdAURdd.png" },
+    { "code": "JSTB#JM001", "member": "Siwoo", "initial": "JM", "rarity": 1, "set": 1, "description": "Daddy's Girl", "link": "https://i.imgur.com/WCLG7I6.png" },
+    { "code": "JSTB#LJ001", "member": "Lim Jimin", "initial": "LJ", "rarity": 1, "set": 1, "description": "Daddy's Girl", "link": "https://i.imgur.com/M9JUQ3H.png" },
+    { "code": "JSTB#SW001", "member": "Sangwoo", "initial": "SW", "rarity": 1, "set": 1, "description": "Daddy's Girl", "link": "https://i.imgur.com/etXuffc.png" },
+    { "code": "JSTB#BN002", "member": "Bain", "initial": "BN", "rarity": 2, "set": 1, "description": "Just Odd", "link": "https://i.imgur.com/4MrMX1f.png" },
+    { "code": "JSTB#DY002", "member": "DY", "initial": "DY", "rarity": 2, "set": 1, "description": "Just Odd", "link": "https://i.imgur.com/HQ8ixIK.png" },
+    { "code": "JSTB#GN002", "member": "Geonu", "initial": "GN", "rarity": 2, "set": 1, "description": "Just Odd", "link": "https://i.imgur.com/DtHTtld.png" },
+    { "code": "JSTB#JM002", "member": "Siwoo", "initial": "JM", "rarity": 2, "set": 1, "description": "Just Odd", "link": "https://i.imgur.com/1iQ4jHm.png" },
+    { "code": "JSTB#LJ002", "member": "Lim Jimin", "initial": "LJ", "rarity": 2, "set": 1, "description": "Just Odd", "link": "https://i.imgur.com/W9yuOPg.png" },
+    { "code": "JSTB#SW002", "member": "Sangwoo", "initial": "SW", "rarity": 2, "set": 1, "description": "Just Odd", "link": "https://i.imgur.com/t4GhMkC.png" }
+  ]
+}

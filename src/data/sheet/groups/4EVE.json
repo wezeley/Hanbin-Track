@@ -1,0 +1,30 @@
+{
+  "number": 335,
+  "name": "4EVE",
+  "code": "4EVE",
+  "members": [
+    { "name": "Aheye", "initial": "AY" },
+    { "name": "Fai", "initial": "FI" },
+    { "name": "Hannah", "initial": "HN" },
+    { "name": "Jorin", "initial": "JR" },
+    { "name": "Mind", "initial": "MD" },
+    { "name": "Punch", "initial": "PN" },
+    { "name": "Taaom", "initial": "TM" }
+  ],
+  "cards": [
+    { "code": "4EVE#AY001", "member": "Aheye", "initial": "AY", "rarity": 1, "set": 1, "description": "ที่ปรึกษา - Concept Photos", "link": "https://i.imgur.com/oExpJ0s.png" },
+    { "code": "4EVE#FI001", "member": "Fai", "initial": "FI", "rarity": 1, "set": 1, "description": "ที่ปรึกษา - Concept Photos", "link": "https://i.imgur.com/Exd1cAw.png" },
+    { "code": "4EVE#HN001", "member": "Hannah", "initial": "HN", "rarity": 1, "set": 1, "description": "ที่ปรึกษา - Concept Photos", "link": "https://i.imgur.com/VGyPH3K.png" },
+    { "code": "4EVE#JR001", "member": "Jorin", "initial": "JR", "rarity": 1, "set": 1, "description": "ที่ปรึกษา - Concept Photos", "link": "https://i.imgur.com/kNGVHAe.png" },
+    { "code": "4EVE#MD001", "member": "Mind", "initial": "MD", "rarity": 1, "set": 1, "description": "ที่ปรึกษา - Concept Photos", "link": "https://i.imgur.com/EVzSlR2.png" },
+    { "code": "4EVE#PN001", "member": "Punch", "initial": "PN", "rarity": 1, "set": 1, "description": "ที่ปรึกษา - Concept Photos", "link": "https://i.imgur.com/yK4n3oP.png" },
+    { "code": "4EVE#TM001", "member": "Taaom", "initial": "TM", "rarity": 1, "set": 1, "description": "ที่ปรึกษา - Concept Photos", "link": "https://i.imgur.com/7Pbif5U.png" },
+    { "code": "4EVE#AY002", "member": "Aheye", "initial": "AY", "rarity": 2, "set": 1, "description": "TEA - Concept Photos", "link": "https://i.imgur.com/2fOwhp0.png" },
+    { "code": "4EVE#FI002", "member": "Fai", "initial": "FI", "rarity": 2, "set": 1, "description": "TEA - Concept Photos", "link": "https://i.imgur.com/f27MINe.png" },
+    { "code": "4EVE#HN002", "member": "Hannah", "initial": "HN", "rarity": 2, "set": 1, "description": "TEA - Concept Photos", "link": "https://i.imgur.com/TiEDIK9.png" },
+    { "code": "4EVE#JR002", "member": "Jorin", "initial": "JR", "rarity": 2, "set": 1, "description": "TEA - Concept Photos", "link": "https://i.imgur.com/N8ixIwV.png" },
+    { "code": "4EVE#MD002", "member": "Mind", "initial": "MD", "rarity": 2, "set": 1, "description": "TEA - Concept Photos", "link": "https://i.imgur.com/gBBkuwZ.png" },
+    { "code": "4EVE#PN002", "member": "Punch", "initial": "PN", "rarity": 2, "set": 1, "description": "TEA - Concept Photos", "link": "https://i.imgur.com/HxsDScL.png" },
+    { "code": "4EVE#TM002", "member": "Taaom", "initial": "TM", "rarity": 2, "set": 1, "description": "TEA - Concept Photos", "link": "https://i.imgur.com/ziBx0qy.png" }
+  ]
+}

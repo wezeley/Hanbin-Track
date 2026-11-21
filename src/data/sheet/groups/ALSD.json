@@ -1,0 +1,17 @@
+{
+  "number": 351,
+  "name": "Alice Syndrome",
+  "code": "ALSD",
+  "members": [
+    { "name": "Awon", "initial": "AW" },
+    { "name": "Jeongmin", "initial": "JM" },
+    { "name": "Sebeen", "initial": "SB" },
+    { "name": "Taira", "initial": "TR" }
+  ],
+  "cards": [
+    { "code": "ALSD#AW001", "member": "Awon", "initial": "AW", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/cJnvYhh.png" },
+    { "code": "ALSD#JM001", "member": "Jeongmin", "initial": "JM", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/4wzhMn8.png" },
+    { "code": "ALSD#SB001", "member": "Sebeen", "initial": "SB", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/vIJYMxF.png" },
+    { "code": "ALSD#TR001", "member": "Taira", "initial": "TR", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/mOMZJy2.png" }
+  ]
+}

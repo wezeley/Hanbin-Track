@@ -1,0 +1,21 @@
+{
+  "number": 112,
+  "name": "EXO-SC",
+  "code": "EXOS",
+  "members": [
+    { "name": "Chanyeol", "initial": "CY" },
+    { "name": "Sehun", "initial": "SH" }
+  ],
+  "cards": [
+    { "code": "EXOS#CY001", "member": "Chanyeol", "initial": "CY", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/jt78ya3.png" },
+    { "code": "EXOS#SH001", "member": "Sehun", "initial": "SH", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/2m7zF3Q.png" },
+    { "code": "EXOS#CY002", "member": "Chanyeol", "initial": "CY", "rarity": 2, "set": 1, "description": null, "link": "https://i.imgur.com/uyTAisV.png" },
+    { "code": "EXOS#SH002", "member": "Sehun", "initial": "SH", "rarity": 2, "set": 1, "description": null, "link": "https://i.imgur.com/IRjplrw.png" },
+    { "code": "EXOS#CY003", "member": "Chanyeol", "initial": "CY", "rarity": 3, "set": 1, "description": "Closer to You", "link": "https://i.imgur.com/55C5rK4.png" },
+    { "code": "EXOS#SH003", "member": "Sehun", "initial": "SH", "rarity": 3, "set": 1, "description": "Closer to You", "link": "https://i.imgur.com/VJNc7FQ.png" },
+    { "code": "EXOS#CY004", "member": "Chanyeol", "initial": "CY", "rarity": 4, "set": 1, "description": "What A Life pcs", "link": "https://i.imgur.com/Gb7ASJU.png" },
+    { "code": "EXOS#SH004", "member": "Sehun", "initial": "SH", "rarity": 4, "set": 1, "description": "What A Life pcs", "link": "https://i.imgur.com/fhCwqHM.png" },
+    { "code": "EXOS#CY005", "member": "Chanyeol", "initial": "CY", "rarity": 5, "set": 1, "description": "SuperELLE China Fall Issue 2019", "link": "https://i.imgur.com/0VFkbFp.png" },
+    { "code": "EXOS#SH005", "member": "Sehun", "initial": "SH", "rarity": 5, "set": 1, "description": "SuperELLE China Fall Issue 2020", "link": "https://i.imgur.com/YoAg7Q2.png" }
+  ]
+}

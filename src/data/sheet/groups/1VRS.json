@@ -1,0 +1,19 @@
+{
+  "number": 257,
+  "name": "1Verse",
+  "code": "1VRS",
+  "members": [
+    { "name": "Aito", "initial": "AT" },
+    { "name": "Hyuk", "initial": "HK" },
+    { "name": "Kenny", "initial": "KN" },
+    { "name": "Nathan", "initial": "NT" },
+    { "name": "Seok", "initial": "SK" }
+  ],
+  "cards": [
+    { "code": "1VRS#AT001", "member": "Aito", "initial": "AT", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/51N0qiO.png" },
+    { "code": "1VRS#HK001", "member": "Hyuk", "initial": "HK", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/0hUBm43.png" },
+    { "code": "1VRS#KN001", "member": "Kenny", "initial": "KN", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/3GMHp14.png" },
+    { "code": "1VRS#NT001", "member": "Nathan", "initial": "NT", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/gvF9ePb.png" },
+    { "code": "1VRS#SK001", "member": "Seok", "initial": "SK", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/q90qa6M.png" }
+  ]
+}

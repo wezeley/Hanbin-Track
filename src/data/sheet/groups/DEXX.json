@@ -1,0 +1,27 @@
+{
+  "number": 310,
+  "name": "DEXX",
+  "code": "DEXX",
+  "members": [
+    { "name": "Auau", "initial": "AU" },
+    { "name": "Jamessu", "initial": "JM" },
+    { "name": "Por", "initial": "PR" },
+    { "name": "Teetee", "initial": "TE" },
+    { "name": "Tutor", "initial": "TT" },
+    { "name": "Yim", "initial": "YM" }
+  ],
+  "cards": [
+    { "code": "DEXX#AU001", "member": "Auau", "initial": "AU", "rarity": 1, "set": 1, "description": "Skinship - Concept Photos", "link": "https://i.imgur.com/Q39apuu.png" },
+    { "code": "DEXX#JM001", "member": "Jamessu", "initial": "JM", "rarity": 1, "set": 1, "description": "Skinship - Concept Photos", "link": "https://i.imgur.com/zM58Bmy.png" },
+    { "code": "DEXX#PR001", "member": "Por", "initial": "PR", "rarity": 1, "set": 1, "description": "Skinship - Concept Photos", "link": "https://i.imgur.com/aTrJwRA.png" },
+    { "code": "DEXX#TE001", "member": "Teetee", "initial": "TE", "rarity": 1, "set": 1, "description": "Skinship - Concept Photos", "link": "https://i.imgur.com/73RNNzJ.png" },
+    { "code": "DEXX#TT001", "member": "Tutor", "initial": "TT", "rarity": 1, "set": 1, "description": "Skinship - Concept Photos", "link": "https://i.imgur.com/6h8G0i0.png" },
+    { "code": "DEXX#YM001", "member": "Yim", "initial": "YM", "rarity": 1, "set": 1, "description": "Skinship - Concept Photos", "link": "https://i.imgur.com/LHQossf.png" },
+    { "code": "DEXX#AU002", "member": "Auau", "initial": "AU", "rarity": 2, "set": 1, "description": "Skinship - Concept Photos", "link": "https://i.imgur.com/zzK1fJR.png" },
+    { "code": "DEXX#JM002", "member": "Jamessu", "initial": "JM", "rarity": 2, "set": 1, "description": "Skinship - Concept Photos", "link": "https://i.imgur.com/j1GErPu.png" },
+    { "code": "DEXX#PR002", "member": "Por", "initial": "PR", "rarity": 2, "set": 1, "description": "Skinship - Concept Photos", "link": "https://i.imgur.com/T9frLxI.png" },
+    { "code": "DEXX#TE002", "member": "Teetee", "initial": "TE", "rarity": 2, "set": 1, "description": "Skinship - Concept Photos", "link": "https://i.imgur.com/uX2rPC5.png" },
+    { "code": "DEXX#TT002", "member": "Tutor", "initial": "TT", "rarity": 2, "set": 1, "description": "Skinship - Concept Photos", "link": "https://i.imgur.com/Gvt6ddD.png" },
+    { "code": "DEXX#YM002", "member": "Yim", "initial": "YM", "rarity": 2, "set": 1, "description": "Skinship - Concept Photos", "link": "https://i.imgur.com/qDoqWMw.png" }
+  ]
+}

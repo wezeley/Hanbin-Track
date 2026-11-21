@@ -1,0 +1,17 @@
+{
+  "number": 281,
+  "name": "Wolf Howl Harmony",
+  "code": "WHH",
+  "members": [
+    { "name": "Ghee", "initial": "GH" },
+    { "name": "Hiroto", "initial": "HR" },
+    { "name": "Ryoji", "initial": "RJ" },
+    { "name": "Suzuki", "initial": "SZ" }
+  ],
+  "cards": [
+    { "code": "WHH#GH001", "member": "Ghee", "initial": "GH", "rarity": 1, "set": 1, "description": "tera - Concept Photos", "link": "https://i.imgur.com/akBqJXa.png" },
+    { "code": "WHH#HR001", "member": "Hiroto", "initial": "HR", "rarity": 1, "set": 1, "description": "tera - Concept Photos", "link": "https://i.imgur.com/HmQIfk7.png" },
+    { "code": "WHH#RJ001", "member": "Ryoji", "initial": "RJ", "rarity": 1, "set": 1, "description": "tera - Concept Photos", "link": "https://i.imgur.com/viijeIi.png" },
+    { "code": "WHH#SZ001", "member": "Suzuki", "initial": "SZ", "rarity": 1, "set": 1, "description": "tera - Concept Photos", "link": "https://i.imgur.com/rfS6R5G.png" }
+  ]
+}

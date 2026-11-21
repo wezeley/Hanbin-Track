@@ -1,0 +1,29 @@
+{
+  "number": 250,
+  "name": "MBLAQ",
+  "code": "MBLQ",
+  "members": [
+    { "name": "G.O", "initial": "GO" },
+    { "name": "Joon", "initial": "JN" },
+    { "name": "Mir", "initial": "MR" },
+    { "name": "Seungho", "initial": "SH" },
+    { "name": "Thunder", "initial": "TD" }
+  ],
+  "cards": [
+    { "code": "MBLQ#GO001", "member": "G.O", "initial": "GO", "rarity": 1, "set": 1, "description": "Sexy Beath 5th Album", "link": "https://i.imgur.com/aezFtmv.png" },
+    { "code": "MBLQ#JN001", "member": "Joon", "initial": "JN", "rarity": 1, "set": 1, "description": "Sexy Beath 5th Album", "link": "https://i.imgur.com/ngLnRrj.png" },
+    { "code": "MBLQ#MR001", "member": "Mir", "initial": "MR", "rarity": 1, "set": 1, "description": "Sexy Beath 5th Album", "link": "https://i.imgur.com/Mo255Rb.png" },
+    { "code": "MBLQ#SH001", "member": "Seungho", "initial": "SH", "rarity": 1, "set": 1, "description": "Sexy Beath 5th Album", "link": "https://i.imgur.com/3z1Jw76.png" },
+    { "code": "MBLQ#TD001", "member": "Thunder", "initial": "TD", "rarity": 1, "set": 1, "description": "Sexy Beath 5th Album", "link": "https://i.imgur.com/OxU7FA0.png" },
+    { "code": "MBLQ#GO002", "member": "G.O", "initial": "GO", "rarity": 2, "set": 1, "description": "Special Album Lovebeat", "link": "https://i.imgur.com/lcC1xMC.png" },
+    { "code": "MBLQ#JN002", "member": "Joon", "initial": "JN", "rarity": 2, "set": 1, "description": "Special Album Lovebeat", "link": "https://i.imgur.com/h0S5y4w.png" },
+    { "code": "MBLQ#MR002", "member": "Mir", "initial": "MR", "rarity": 2, "set": 1, "description": "Special Album Lovebeat", "link": "https://i.imgur.com/lRaNHFU.png" },
+    { "code": "MBLQ#SH002", "member": "Seungho", "initial": "SH", "rarity": 2, "set": 1, "description": "Special Album Lovebeat", "link": "https://i.imgur.com/kKu4L0v.png" },
+    { "code": "MBLQ#TD002", "member": "Thunder", "initial": "TD", "rarity": 2, "set": 1, "description": "Special Album Lovebeat", "link": "https://i.imgur.com/M0M2ttN.png" },
+    { "code": "MBLQ#GO003", "member": "G.O", "initial": "GO", "rarity": 3, "set": 1, "description": "Broken 6th Album", "link": "https://i.imgur.com/oxIb6pt.png" },
+    { "code": "MBLQ#JN003", "member": "Joon", "initial": "JN", "rarity": 3, "set": 1, "description": "Broken 6th Album", "link": "https://i.imgur.com/zepZ9f2.png" },
+    { "code": "MBLQ#MR003", "member": "Mir", "initial": "MR", "rarity": 3, "set": 1, "description": "Broken 6th Album", "link": "https://i.imgur.com/Dz1shRO.png" },
+    { "code": "MBLQ#SH003", "member": "Seungho", "initial": "SH", "rarity": 3, "set": 1, "description": "Broken 6th Album", "link": "https://i.imgur.com/qtXadsd.png" },
+    { "code": "MBLQ#TD003", "member": "Thunder", "initial": "TD", "rarity": 3, "set": 1, "description": "Broken 6th Album", "link": "https://i.imgur.com/q3gCrJ3.png" }
+  ]
+}

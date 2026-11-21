@@ -1,0 +1,39 @@
+{
+  "number": 312,
+  "name": "DICE",
+  "code": "DICE",
+  "members": [
+    { "name": "Alex", "initial": "AL" },
+    { "name": "Apo", "initial": "AP" },
+    { "name": "Cheese", "initial": "CS" },
+    { "name": "Frame", "initial": "FM" },
+    { "name": "Jay", "initial": "JY" },
+    { "name": "Jisang", "initial": "JS" },
+    { "name": "Maddoc", "initial": "MD" },
+    { "name": "Min", "initial": "MN" },
+    { "name": "Obo", "initial": "OB" },
+    { "name": "Otto", "initial": "OT" }
+  ],
+  "cards": [
+    { "code": "DICE#AL001", "member": "Alex", "initial": "AL", "rarity": 1, "set": 1, "description": "So Dern", "link": "https://i.imgur.com/fq5ZWbJ.png" },
+    { "code": "DICE#AP001", "member": "Apo", "initial": "AP", "rarity": 1, "set": 1, "description": "So Dern", "link": "https://i.imgur.com/6gkC5No.png" },
+    { "code": "DICE#CS001", "member": "Cheese", "initial": "CS", "rarity": 1, "set": 1, "description": "So Dern", "link": "https://i.imgur.com/3bWNOnQ.png" },
+    { "code": "DICE#FM001", "member": "Frame", "initial": "FM", "rarity": 1, "set": 1, "description": "So Dern", "link": "https://i.imgur.com/dGOOd2H.png" },
+    { "code": "DICE#JY001", "member": "Jay", "initial": "JY", "rarity": 1, "set": 1, "description": "So Dern", "link": "https://i.imgur.com/OHICumk.png" },
+    { "code": "DICE#JS001", "member": "Jisang", "initial": "JS", "rarity": 1, "set": 1, "description": "So Dern", "link": "https://i.imgur.com/WWfhZQg.png" },
+    { "code": "DICE#MD001", "member": "Maddoc", "initial": "MD", "rarity": 1, "set": 1, "description": "So Dern", "link": "https://i.imgur.com/zmhCK8F.png" },
+    { "code": "DICE#MN001", "member": "Min", "initial": "MN", "rarity": 1, "set": 1, "description": "So Dern", "link": "https://i.imgur.com/Eh2v9pl.png" },
+    { "code": "DICE#OB001", "member": "Obo", "initial": "OB", "rarity": 1, "set": 1, "description": "So Dern", "link": "https://i.imgur.com/1RDKK98.png" },
+    { "code": "DICE#OT001", "member": "Otto", "initial": "OT", "rarity": 1, "set": 1, "description": "So Dern", "link": "https://i.imgur.com/fv4aO46.png" },
+    { "code": "DICE#AL002", "member": "Alex", "initial": "AL", "rarity": 2, "set": 1, "description": "Not That Bad - Concept Photos", "link": "https://i.imgur.com/vAGgLCj.png" },
+    { "code": "DICE#AP002", "member": "Apo", "initial": "AP", "rarity": 2, "set": 1, "description": "Not That Bad - Concept Photos", "link": "https://i.imgur.com/Rd7fWr0.png" },
+    { "code": "DICE#CS002", "member": "Cheese", "initial": "CS", "rarity": 2, "set": 1, "description": "Not That Bad - Concept Photos", "link": "https://i.imgur.com/WnIOBCi.png" },
+    { "code": "DICE#FM002", "member": "Frame", "initial": "FM", "rarity": 2, "set": 1, "description": "Not That Bad - Concept Photos", "link": "https://i.imgur.com/no0GO82.png" },
+    { "code": "DICE#JY002", "member": "Jay", "initial": "JY", "rarity": 2, "set": 1, "description": "Not That Bad - Concept Photos", "link": "https://i.imgur.com/T8GNzKl.png" },
+    { "code": "DICE#JS002", "member": "Jisang", "initial": "JS", "rarity": 2, "set": 1, "description": "Not That Bad - Concept Photos", "link": "https://i.imgur.com/cs8n6Ex.png" },
+    { "code": "DICE#MD002", "member": "Maddoc", "initial": "MD", "rarity": 2, "set": 1, "description": "Not That Bad - Concept Photos", "link": "https://i.imgur.com/XNHOA4v.png" },
+    { "code": "DICE#MN002", "member": "Min", "initial": "MN", "rarity": 2, "set": 1, "description": "Not That Bad - Concept Photos", "link": "https://i.imgur.com/v2Q3Anl.png" },
+    { "code": "DICE#OB002", "member": "Obo", "initial": "OB", "rarity": 2, "set": 1, "description": "Not That Bad - Concept Photos", "link": "https://i.imgur.com/0Dtpp6X.png" },
+    { "code": "DICE#OT002", "member": "Otto", "initial": "OT", "rarity": 2, "set": 1, "description": "Not That Bad - Concept Photos", "link": "https://i.imgur.com/84sRUAf.png" }
+  ]
+}

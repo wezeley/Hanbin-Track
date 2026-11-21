@@ -1,0 +1,19 @@
+{
+  "number": 138,
+  "name": "DXMON",
+  "code": "DXM",
+  "members": [
+    { "name": "Hee", "initial": "HE" },
+    { "name": "Minjae", "initial": "MJ" },
+    { "name": "Rex", "initial": "RX" },
+    { "name": "Seita", "initial": "ST" },
+    { "name": "TK", "initial": "TK" }
+  ],
+  "cards": [
+    { "code": "DXM#HE001", "member": "Hee", "initial": "HE", "rarity": 1, "set": 1, "description": "Youth Never Die", "link": "https://i.imgur.com/C5bgpJt.png" },
+    { "code": "DXM#MJ001", "member": "Minjae", "initial": "MJ", "rarity": 1, "set": 1, "description": "Youth Never Die", "link": "https://i.imgur.com/F1Ibbj2.png" },
+    { "code": "DXM#RX001", "member": "Rex", "initial": "RX", "rarity": 1, "set": 1, "description": "Youth Never Die", "link": "https://i.imgur.com/Zpax9Kb.png" },
+    { "code": "DXM#ST001", "member": "Seita", "initial": "ST", "rarity": 1, "set": 1, "description": "Youth Never Die", "link": "https://i.imgur.com/LkhAJsL.png" },
+    { "code": "DXM#TK001", "member": "TK", "initial": "TK", "rarity": 1, "set": 1, "description": "Youth Never Die", "link": "https://i.imgur.com/Cr0wmHs.png" }
+  ]
+}

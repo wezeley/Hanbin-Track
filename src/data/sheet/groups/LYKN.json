@@ -1,0 +1,24 @@
+{
+  "number": 309,
+  "name": "LYKN",
+  "code": "LYKN",
+  "members": [
+    { "name": "Hong", "initial": "HG" },
+    { "name": "Lego", "initial": "LG" },
+    { "name": "Nut", "initial": "NT" },
+    { "name": "Tui", "initial": "TI" },
+    { "name": "William", "initial": "WL" }
+  ],
+  "cards": [
+    { "code": "LYKN#HG001", "member": "Hong", "initial": "HG", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/iYoVejf.png" },
+    { "code": "LYKN#LG001", "member": "Lego", "initial": "LG", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/MWMuRgy.png" },
+    { "code": "LYKN#NT001", "member": "Nut", "initial": "NT", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/nkDr2XA.png" },
+    { "code": "LYKN#TI001", "member": "Tui", "initial": "TI", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/QLrFodK.png" },
+    { "code": "LYKN#WL001", "member": "William", "initial": "WL", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/opuPCPZ.png" },
+    { "code": "LYKN#HG002", "member": "Hong", "initial": "HG", "rarity": 2, "set": 1, "description": "Oh My Gosh - Concept Photos", "link": "https://i.imgur.com/0ba5wVk.png" },
+    { "code": "LYKN#LG002", "member": "Lego", "initial": "LG", "rarity": 2, "set": 1, "description": "Oh My Gosh - Concept Photos", "link": "https://i.imgur.com/lsiwiKb.png" },
+    { "code": "LYKN#NT002", "member": "Nut", "initial": "NT", "rarity": 2, "set": 1, "description": "Oh My Gosh - Concept Photos", "link": "https://i.imgur.com/WEb7jpj.png" },
+    { "code": "LYKN#TI002", "member": "Tui", "initial": "TI", "rarity": 2, "set": 1, "description": "Oh My Gosh - Concept Photos", "link": "https://i.imgur.com/inRPJQo.png" },
+    { "code": "LYKN#WL002", "member": "William", "initial": "WL", "rarity": 2, "set": 1, "description": "Oh My Gosh - Concept Photos", "link": "https://i.imgur.com/6O93FFg.png" }
+  ]
+}

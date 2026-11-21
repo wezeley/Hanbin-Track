@@ -1,0 +1,17 @@
+{
+  "number": 262,
+  "name": "ChRocktikal",
+  "code": "CRTK",
+  "members": [
+    { "name": "Gwanwoo", "initial": "GW" },
+    { "name": "Junyoung", "initial": "JY" },
+    { "name": "Siyeon", "initial": "SY" },
+    { "name": "Wonseok", "initial": "WS" }
+  ],
+  "cards": [
+    { "code": "CRTK#GW001", "member": "Gwanwoo", "initial": "GW", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/SoLpltr.png" },
+    { "code": "CRTK#JY001", "member": "Junyoung", "initial": "JY", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/psKRhbs.png" },
+    { "code": "CRTK#SY001", "member": "Siyeon", "initial": "SY", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/TdBePI3.png" },
+    { "code": "CRTK#WS001", "member": "Wonseok", "initial": "WS", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/YQ6KLng.png" }
+  ]
+}

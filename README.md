@@ -91,6 +91,14 @@ npm run preview   # serve o build localmente
 npm run lint      # analisa o código com Oxlint
 ```
 
+### Dados das cartas
+
+Os arquivos de `src/data/sheet/` já vêm no repositório, então o site roda sem
+nenhum passo extra. Eles são gerados por `npm run planilha` a partir de uma
+planilha privada, usada com permissão do dono do bot. O link dela não é
+público: o script o lê do arquivo `.env.local` (ignorado pelo Git), que só
+existe na máquina do mantenedor.
+
 ## Próximos passos
 
 - [ ] Nova interface visual (o layout atual é uma base focada em funcionalidade)

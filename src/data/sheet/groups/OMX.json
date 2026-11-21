@@ -1,0 +1,31 @@
+{
+  "number": 215,
+  "name": "Omega X",
+  "code": "OMX",
+  "members": [
+    { "name": "Hangyeom", "initial": "HG" },
+    { "name": "Hwichan", "initial": "HC" },
+    { "name": "Hyuk", "initial": "HK" },
+    { "name": "Jaehan", "initial": "JH" },
+    { "name": "Jehyun", "initial": "JY" },
+    { "name": "Junghoon", "initial": "JG" },
+    { "name": "Kevin", "initial": "KV" },
+    { "name": "Sebin", "initial": "SB" },
+    { "name": "Taedong", "initial": "TD" },
+    { "name": "Xen", "initial": "XN" },
+    { "name": "Yechan", "initial": "YC" }
+  ],
+  "cards": [
+    { "code": "OMX#HG001", "member": "Hangyeom", "initial": "HG", "rarity": 1, "set": 1, "description": "Whats Going On", "link": "https://i.imgur.com/yeEkhqX.png" },
+    { "code": "OMX#HC001", "member": "Hwichan", "initial": "HC", "rarity": 1, "set": 1, "description": "Whats Going On", "link": "https://i.imgur.com/mEdHhvd.png" },
+    { "code": "OMX#HK001", "member": "Hyuk", "initial": "HK", "rarity": 1, "set": 1, "description": "Whats Going On", "link": "https://i.imgur.com/Dg774CA.png" },
+    { "code": "OMX#JH001", "member": "Jaehan", "initial": "JH", "rarity": 1, "set": 1, "description": "Whats Going On", "link": "https://i.imgur.com/kblbqIQ.png" },
+    { "code": "OMX#JY001", "member": "Jehyun", "initial": "JY", "rarity": 1, "set": 1, "description": "Whats Going On", "link": "https://i.imgur.com/9fN8Mbg.png" },
+    { "code": "OMX#JG001", "member": "Junghoon", "initial": "JG", "rarity": 1, "set": 1, "description": "Whats Going On", "link": "https://i.imgur.com/pp3zoHP.png" },
+    { "code": "OMX#KV001", "member": "Kevin", "initial": "KV", "rarity": 1, "set": 1, "description": "Whats Going On", "link": "https://i.imgur.com/pySMRm5.png" },
+    { "code": "OMX#SB001", "member": "Sebin", "initial": "SB", "rarity": 1, "set": 1, "description": "Whats Going On", "link": "https://i.imgur.com/HpFnwrF.png" },
+    { "code": "OMX#TD001", "member": "Taedong", "initial": "TD", "rarity": 1, "set": 1, "description": "Whats Going On", "link": "https://i.imgur.com/XyEbot0.png" },
+    { "code": "OMX#XN001", "member": "Xen", "initial": "XN", "rarity": 1, "set": 1, "description": "Whats Going On", "link": "https://i.imgur.com/FMOKXlX.png" },
+    { "code": "OMX#YC001", "member": "Yechan", "initial": "YC", "rarity": 1, "set": 1, "description": "Whats Going On", "link": "https://i.imgur.com/cgIN2oI.png" }
+  ]
+}

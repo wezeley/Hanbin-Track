@@ -1,0 +1,93 @@
+{
+  "number": 80,
+  "name": "ILY:1",
+  "code": "ILY1",
+  "members": [
+    { "name": "Ririka", "initial": "RK" },
+    { "name": "Rona", "initial": "RN" },
+    { "name": "Ara", "initial": "AR" },
+    { "name": "Nayu", "initial": "NY" },
+    { "name": "Hana", "initial": "HN" },
+    { "name": "Elva", "initial": "EV" }
+  ],
+  "cards": [
+    { "code": "ILY1#RK001", "member": "Ririka", "initial": "RK", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/CwNtm7x.png" },
+    { "code": "ILY1#RN001", "member": "Rona", "initial": "RN", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/UpP1LjP.png" },
+    { "code": "ILY1#AR001", "member": "Ara", "initial": "AR", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/c3nGbMm.png" },
+    { "code": "ILY1#NY001", "member": "Nayu", "initial": "NY", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/HUphElP.png" },
+    { "code": "ILY1#HN001", "member": "Hana", "initial": "HN", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/mkdfsdJ.png" },
+    { "code": "ILY1#EV001", "member": "Elva", "initial": "EV", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/cvNhDaS.png" },
+    { "code": "ILY1#RK002", "member": "Ririka", "initial": "RK", "rarity": 2, "set": 1, "description": null, "link": "https://i.imgur.com/R6d4dgs.png" },
+    { "code": "ILY1#RN002", "member": "Rona", "initial": "RN", "rarity": 2, "set": 1, "description": null, "link": "https://i.imgur.com/jxJIiV7.png" },
+    { "code": "ILY1#AR002", "member": "Ara", "initial": "AR", "rarity": 2, "set": 1, "description": null, "link": "https://i.imgur.com/zZumZlH.png" },
+    { "code": "ILY1#NY002", "member": "Nayu", "initial": "NY", "rarity": 2, "set": 1, "description": null, "link": "https://i.imgur.com/0d32KMy.png" },
+    { "code": "ILY1#HN002", "member": "Hana", "initial": "HN", "rarity": 2, "set": 1, "description": null, "link": "https://i.imgur.com/SFmCFhR.png" },
+    { "code": "ILY1#EV002", "member": "Elva", "initial": "EV", "rarity": 2, "set": 1, "description": null, "link": "https://i.imgur.com/T6dw3KZ.png" },
+    { "code": "ILY1#RK003", "member": "Ririka", "initial": "RK", "rarity": 3, "set": 1, "description": null, "link": "https://i.imgur.com/RY3kQ47.png" },
+    { "code": "ILY1#RN003", "member": "Rona", "initial": "RN", "rarity": 3, "set": 1, "description": null, "link": "https://i.imgur.com/4wGBjti.png" },
+    { "code": "ILY1#AR003", "member": "Ara", "initial": "AR", "rarity": 3, "set": 1, "description": null, "link": "https://i.imgur.com/qeAyNuj.png" },
+    { "code": "ILY1#NY003", "member": "Nayu", "initial": "NY", "rarity": 3, "set": 1, "description": null, "link": "https://i.imgur.com/IcXihPS.png" },
+    { "code": "ILY1#HN003", "member": "Hana", "initial": "HN", "rarity": 3, "set": 1, "description": null, "link": "https://i.imgur.com/RSleTIa.png" },
+    { "code": "ILY1#EV003", "member": "Elva", "initial": "EV", "rarity": 3, "set": 1, "description": null, "link": "https://i.imgur.com/kyVzNSo.png" },
+    { "code": "ILY1#RK004", "member": "Ririka", "initial": "RK", "rarity": 4, "set": 1, "description": null, "link": "https://i.imgur.com/dm8HnCa.png" },
+    { "code": "ILY1#RN004", "member": "Rona", "initial": "RN", "rarity": 4, "set": 1, "description": null, "link": "https://i.imgur.com/9MCkqbg.png" },
+    { "code": "ILY1#AR004", "member": "Ara", "initial": "AR", "rarity": 4, "set": 1, "description": null, "link": "https://i.imgur.com/ZbOAs2p.png" },
+    { "code": "ILY1#NY004", "member": "Nayu", "initial": "NY", "rarity": 4, "set": 1, "description": null, "link": "https://i.imgur.com/B4K59Es.png" },
+    { "code": "ILY1#HN004", "member": "Hana", "initial": "HN", "rarity": 4, "set": 1, "description": null, "link": "https://i.imgur.com/uoAGGXg.png" },
+    { "code": "ILY1#EV004", "member": "Elva", "initial": "EV", "rarity": 4, "set": 1, "description": null, "link": "https://i.imgur.com/eQOYe9O.png" },
+    {
+      "code": "ILY1#RK005",
+      "member": "Ririka",
+      "initial": "RK",
+      "rarity": 5,
+      "set": 1,
+      "description": "ERA: 1st Single Album [Love in Bloom] 2022",
+      "link": "https://i.imgur.com/vymuVgP.png"
+    },
+    {
+      "code": "ILY1#RN005",
+      "member": "Rona",
+      "initial": "RN",
+      "rarity": 5,
+      "set": 1,
+      "description": "ERA: 1st Single Album [Love in Bloom] 2023",
+      "link": "https://i.imgur.com/ZPxFVSf.png"
+    },
+    {
+      "code": "ILY1#AR005",
+      "member": "Ara",
+      "initial": "AR",
+      "rarity": 5,
+      "set": 1,
+      "description": "ERA: 1st Single Album [Love in Bloom] 2024",
+      "link": "https://i.imgur.com/KZSkJoj.png"
+    },
+    {
+      "code": "ILY1#NY005",
+      "member": "Nayu",
+      "initial": "NY",
+      "rarity": 5,
+      "set": 1,
+      "description": "ERA: 1st Single Album [Love in Bloom] 2025",
+      "link": "https://i.imgur.com/W6duvHj.png"
+    },
+    {
+      "code": "ILY1#HN005",
+      "member": "Hana",
+      "initial": "HN",
+      "rarity": 5,
+      "set": 1,
+      "description": "ERA: 1st Single Album [Love in Bloom] 2026",
+      "link": "https://i.imgur.com/IJ0ioE8.png"
+    },
+    {
+      "code": "ILY1#EV005",
+      "member": "Elva",
+      "initial": "EV",
+      "rarity": 5,
+      "set": 1,
+      "description": "ERA: 1st Single Album [Love in Bloom] 2027",
+      "link": "https://i.imgur.com/pE8Ef5X.png"
+    }
+  ]
+}

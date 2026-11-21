@@ -1,0 +1,33 @@
+{
+  "number": 345,
+  "name": "KO1KEYZ",
+  "code": "KO1Z",
+  "members": [
+    { "name": "Daiki", "initial": "DK" },
+    { "name": "Issa", "initial": "IS" },
+    { "name": "Keito", "initial": "KT" },
+    { "name": "Kosuke", "initial": "KS" },
+    { "name": "Ryoga", "initial": "RG" },
+    { "name": "Ryuji", "initial": "RJ" },
+    { "name": "Shinhaeng", "initial": "SH" },
+    { "name": "Siyoung", "initial": "SY" },
+    { "name": "Towa", "initial": "TW" },
+    { "name": "Yoshiki", "initial": "YS" },
+    { "name": "Yuki", "initial": "YK" },
+    { "name": "Yura", "initial": "YR" }
+  ],
+  "cards": [
+    { "code": "KO1Z#DK001", "member": "Daiki", "initial": "DK", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/4u3scez.png" },
+    { "code": "KO1Z#IS001", "member": "Issa", "initial": "IS", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/PepU9wj.png" },
+    { "code": "KO1Z#KT001", "member": "Keito", "initial": "KT", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/pGwaLbn.png" },
+    { "code": "KO1Z#KS001", "member": "Kosuke", "initial": "KS", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/TY72ehh.png" },
+    { "code": "KO1Z#RG001", "member": "Ryoga", "initial": "RG", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/0XvBPmy.png" },
+    { "code": "KO1Z#RJ001", "member": "Ryuji", "initial": "RJ", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/niQeryY.png" },
+    { "code": "KO1Z#SH001", "member": "Shinhaeng", "initial": "SH", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/Ld7i1Kl.png" },
+    { "code": "KO1Z#SY001", "member": "Siyoung", "initial": "SY", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/iN3NV4q.png" },
+    { "code": "KO1Z#TW001", "member": "Towa", "initial": "TW", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/bWdGiK4.png" },
+    { "code": "KO1Z#YS001", "member": "Yoshiki", "initial": "YS", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/VXVlGNU.png" },
+    { "code": "KO1Z#YK001", "member": "Yuki", "initial": "YK", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/6LGqWvk.png" },
+    { "code": "KO1Z#YR001", "member": "Yura", "initial": "YR", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/Ib6JkRf.png" }
+  ]
+}

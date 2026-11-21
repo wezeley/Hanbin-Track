@@ -1,0 +1,21 @@
+{
+  "number": 272,
+  "name": "NCT JNJM",
+  "code": "JNJM",
+  "members": [
+    { "name": "Jeno", "initial": "JN" },
+    { "name": "Jaemin", "initial": "JM" }
+  ],
+  "cards": [
+    { "code": "JNJM#JN001", "member": "Jeno", "initial": "JN", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/8aN5UzU.png" },
+    { "code": "JNJM#JM001", "member": "Jaemin", "initial": "JM", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/QhK9nCW.png" },
+    { "code": "JNJM#JN002", "member": "Jeno", "initial": "JN", "rarity": 2, "set": 1, "description": null, "link": "https://i.imgur.com/Tvwn3PL.png" },
+    { "code": "JNJM#JM002", "member": "Jaemin", "initial": "JM", "rarity": 2, "set": 1, "description": null, "link": "https://i.imgur.com/HvpM0ea.png" },
+    { "code": "JNJM#JN003", "member": "Jeno", "initial": "JN", "rarity": 3, "set": 1, "description": null, "link": "https://i.imgur.com/3mJDOpt.png" },
+    { "code": "JNJM#JM003", "member": "Jaemin", "initial": "JM", "rarity": 3, "set": 1, "description": null, "link": "https://i.imgur.com/QhK9nCW.png" },
+    { "code": "JNJM#JN004", "member": "Jeno", "initial": "JN", "rarity": 4, "set": 1, "description": null, "link": "https://i.imgur.com/zhI5wjz.png" },
+    { "code": "JNJM#JM004", "member": "Jaemin", "initial": "JM", "rarity": 4, "set": 1, "description": null, "link": "https://i.imgur.com/PLQbhUU.png" },
+    { "code": "JNJM#JN005", "member": "Jeno", "initial": "JN", "rarity": 5, "set": 1, "description": null, "link": "https://i.imgur.com/3TIPYSe.png" },
+    { "code": "JNJM#JM005", "member": "Jaemin", "initial": "JM", "rarity": 5, "set": 1, "description": null, "link": "https://i.imgur.com/juNcSiW.png" }
+  ]
+}

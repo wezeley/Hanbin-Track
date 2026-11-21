@@ -1,0 +1,33 @@
+{
+  "number": 32,
+  "name": "KARD",
+  "code": "KARD",
+  "members": [
+    { "name": "BM", "initial": "BM" },
+    { "name": "J.Seph", "initial": "JS" },
+    { "name": "Jiwoo", "initial": "JW" },
+    { "name": "Somin", "initial": "SM" }
+  ],
+  "cards": [
+    { "code": "KARD#BM001", "member": "BM", "initial": "BM", "rarity": 1, "set": 1, "description": "\"ICKY\" - Concept Photo", "link": "https://i.imgur.com/7spnjWK.png" },
+    { "code": "KARD#JS001", "member": "J.Seph", "initial": "JS", "rarity": 1, "set": 1, "description": "\"ICKY\" - Concept Photo", "link": "https://i.imgur.com/RTofvFk.png" },
+    { "code": "KARD#JW001", "member": "Jiwoo", "initial": "JW", "rarity": 1, "set": 1, "description": "\"ICKY\" - Concept Photo", "link": "https://i.imgur.com/uL7EUXR.png" },
+    { "code": "KARD#SM001", "member": "Somin", "initial": "SM", "rarity": 1, "set": 1, "description": "\"ICKY\" - Concept Photo", "link": "https://i.imgur.com/Pmb6oJk.png" },
+    { "code": "KARD#BM002", "member": "BM", "initial": "BM", "rarity": 2, "set": 1, "description": "Where to Now - Concept Photo", "link": "https://i.imgur.com/JRVbSO0.png" },
+    { "code": "KARD#JS002", "member": "J.Seph", "initial": "JS", "rarity": 2, "set": 1, "description": "Where to Now - Concept Photo", "link": "https://i.imgur.com/HrWouEs.png" },
+    { "code": "KARD#JW002", "member": "Jiwoo", "initial": "JW", "rarity": 2, "set": 1, "description": "Where to Now - Concept Photo", "link": "https://i.imgur.com/zp16uVg.png" },
+    { "code": "KARD#SM002", "member": "Somin", "initial": "SM", "rarity": 2, "set": 1, "description": "Where to Now - Concept Photo", "link": "https://i.imgur.com/VXxMlSK.png" },
+    { "code": "KARD#BM003", "member": "BM", "initial": "BM", "rarity": 3, "set": 1, "description": "5th Mini Album RE: Concept Photos", "link": "https://i.imgur.com/9BDIEI0.png" },
+    { "code": "KARD#JS003", "member": "J.Seph", "initial": "JS", "rarity": 3, "set": 1, "description": "5th Mini Album RE: Concept Photos", "link": "https://i.imgur.com/srTHaot.png" },
+    { "code": "KARD#JW003", "member": "Jiwoo", "initial": "JW", "rarity": 3, "set": 1, "description": "5th Mini Album RE: Concept Photos", "link": "https://i.imgur.com/QRw2mRK.png" },
+    { "code": "KARD#SM003", "member": "Somin", "initial": "SM", "rarity": 3, "set": 1, "description": "5th Mini Album RE: Concept Photos", "link": "https://i.imgur.com/94N566b.png" },
+    { "code": "KARD#BM004", "member": "BM", "initial": "BM", "rarity": 4, "set": 1, "description": "Blonde Selcas", "link": "https://i.imgur.com/E16C550.png" },
+    { "code": "KARD#JS004", "member": "J.Seph", "initial": "JS", "rarity": 4, "set": 1, "description": "Blonde Selcas", "link": "https://i.imgur.com/QIsPiTX.png" },
+    { "code": "KARD#JW004", "member": "Jiwoo", "initial": "JW", "rarity": 4, "set": 1, "description": "Blonde Selcas", "link": "https://i.imgur.com/956fj8N.png" },
+    { "code": "KARD#SM004", "member": "Somin", "initial": "SM", "rarity": 4, "set": 1, "description": "Blonde Selcas", "link": "https://i.imgur.com/WIK95zr.png" },
+    { "code": "KARD#BM005", "member": "BM", "initial": "BM", "rarity": 5, "set": 1, "description": "Universe Magazine", "link": "https://i.imgur.com/b0QYyYL.png" },
+    { "code": "KARD#JS005", "member": "J.Seph", "initial": "JS", "rarity": 5, "set": 1, "description": "Universe Magazine", "link": "https://i.imgur.com/nDd91QK.png" },
+    { "code": "KARD#JW005", "member": "Jiwoo", "initial": "JW", "rarity": 5, "set": 1, "description": "Universe Magazine", "link": "https://i.imgur.com/HGUOxkJ.png" },
+    { "code": "KARD#SM005", "member": "Somin", "initial": "SM", "rarity": 5, "set": 1, "description": "Universe Magazine", "link": "https://i.imgur.com/LDR39i6.png" }
+  ]
+}

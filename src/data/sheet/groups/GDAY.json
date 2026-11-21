@@ -1,0 +1,29 @@
+{
+  "number": 252,
+  "name": "Girl's Day",
+  "code": "GDAY",
+  "members": [
+    { "name": "Hyeri", "initial": "HR" },
+    { "name": "Jihae", "initial": "JH" },
+    { "name": "Minah", "initial": "MN" },
+    { "name": "Sojin", "initial": "SJ" },
+    { "name": "Yura", "initial": "YR" }
+  ],
+  "cards": [
+    { "code": "GDAY#HR001", "member": "Hyeri", "initial": "HR", "rarity": 1, "set": 1, "description": "Girls Day #3", "link": "https://i.imgur.com/duNyhlu.png" },
+    { "code": "GDAY#JH001", "member": "Jihae", "initial": "JH", "rarity": 1, "set": 1, "description": "Girls Day #3", "link": "https://i.imgur.com/tKfZ7jO.png" },
+    { "code": "GDAY#MN001", "member": "Minah", "initial": "MN", "rarity": 1, "set": 1, "description": "Girls Day #3", "link": "https://i.imgur.com/5kvkssp.png" },
+    { "code": "GDAY#SJ001", "member": "Sojin", "initial": "SJ", "rarity": 1, "set": 1, "description": "Girls Day #3", "link": "https://i.imgur.com/G3szPiP.png" },
+    { "code": "GDAY#YR001", "member": "Yura", "initial": "YR", "rarity": 1, "set": 1, "description": "Girls Day #3", "link": "https://i.imgur.com/0JBo6j3.png" },
+    { "code": "GDAY#HR002", "member": "Hyeri", "initial": "HR", "rarity": 2, "set": 1, "description": "Everyday", "link": "https://i.imgur.com/stc2oZr.png" },
+    { "code": "GDAY#JH002", "member": "Jihae", "initial": "JH", "rarity": 2, "set": 1, "description": "Everyday", "link": "https://i.imgur.com/uMK4BRu.png" },
+    { "code": "GDAY#MN002", "member": "Minah", "initial": "MN", "rarity": 2, "set": 1, "description": "Everyday", "link": "https://i.imgur.com/Uh4bsiT.png" },
+    { "code": "GDAY#SJ002", "member": "Sojin", "initial": "SJ", "rarity": 2, "set": 1, "description": "Everyday", "link": "https://i.imgur.com/y25ZTFF.png" },
+    { "code": "GDAY#YR002", "member": "Yura", "initial": "YR", "rarity": 2, "set": 1, "description": "Everyday", "link": "https://i.imgur.com/WShr1fW.png" },
+    { "code": "GDAY#HR003", "member": "Hyeri", "initial": "HR", "rarity": 3, "set": 1, "description": "Everyday  II", "link": "https://i.imgur.com/WtS22lS.png" },
+    { "code": "GDAY#JH003", "member": "Jihae", "initial": "JH", "rarity": 3, "set": 1, "description": "Everyday  II", "link": "https://i.imgur.com/afcEooK.png" },
+    { "code": "GDAY#MN003", "member": "Minah", "initial": "MN", "rarity": 3, "set": 1, "description": "Everyday  II", "link": "https://i.imgur.com/dz37Bao.png" },
+    { "code": "GDAY#SJ003", "member": "Sojin", "initial": "SJ", "rarity": 3, "set": 1, "description": "Everyday  II", "link": "https://i.imgur.com/jB8aETn.png" },
+    { "code": "GDAY#YR003", "member": "Yura", "initial": "YR", "rarity": 3, "set": 1, "description": "Everyday  II", "link": "https://i.imgur.com/RAbgmXm.png" }
+  ]
+}

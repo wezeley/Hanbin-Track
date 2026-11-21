@@ -1,0 +1,33 @@
+{
+  "number": 207,
+  "name": "Kiiras",
+  "code": "KIRS",
+  "members": [
+    { "name": "Doyeon", "initial": "DY" },
+    { "name": "Harin", "initial": "HR" },
+    { "name": "Kurumi", "initial": "KR" },
+    { "name": "Kylie", "initial": "KL" },
+    { "name": "Roah", "initial": "RA" },
+    { "name": "LingLing", "initial": "LL" }
+  ],
+  "cards": [
+    { "code": "KIRS#DY001", "member": "Doyeon", "initial": "DY", "rarity": 1, "set": 1, "description": "Kill Ma Bo$$", "link": "https://i.imgur.com/V8xTvkv.png" },
+    { "code": "KIRS#HR001", "member": "Harin", "initial": "HR", "rarity": 1, "set": 1, "description": "Kill Ma Bo$$", "link": "https://i.imgur.com/Yrp1yYX.png" },
+    { "code": "KIRS#KR001", "member": "Kurumi", "initial": "KR", "rarity": 1, "set": 1, "description": "Kill Ma Bo$$", "link": "https://i.imgur.com/nSkzZaS.png" },
+    { "code": "KIRS#KL001", "member": "Kylie", "initial": "KL", "rarity": 1, "set": 1, "description": "Kill Ma Bo$$", "link": "https://i.imgur.com/Fjerbbt.png" },
+    { "code": "KIRS#RA001", "member": "Roah", "initial": "RA", "rarity": 1, "set": 1, "description": "Kill Ma Bo$$", "link": "https://i.imgur.com/EsXJ3EM.png" },
+    { "code": "KIRS#LL001", "member": "LingLing", "initial": "LL", "rarity": 1, "set": 1, "description": "Kill Ma Bo$$", "link": "https://i.imgur.com/hZqOJBK.png" },
+    { "code": "KIRS#DY002", "member": "Doyeon", "initial": "DY", "rarity": 2, "set": 1, "description": null, "link": "https://i.imgur.com/meFptr8.png" },
+    { "code": "KIRS#HR002", "member": "Harin", "initial": "HR", "rarity": 2, "set": 1, "description": null, "link": "https://i.imgur.com/Koa5ASz.png" },
+    { "code": "KIRS#KR002", "member": "Kurumi", "initial": "KR", "rarity": 2, "set": 1, "description": null, "link": "https://i.imgur.com/brbgBgp.png" },
+    { "code": "KIRS#KL002", "member": "Kylie", "initial": "KL", "rarity": 2, "set": 1, "description": null, "link": "https://i.imgur.com/UXzE5CM.png" },
+    { "code": "KIRS#RA002", "member": "Roah", "initial": "RA", "rarity": 2, "set": 1, "description": null, "link": "https://i.imgur.com/LRc7fE9.png" },
+    { "code": "KIRS#LL002", "member": "LingLing", "initial": "LL", "rarity": 2, "set": 1, "description": null, "link": "https://i.imgur.com/KPgqgAU.png" },
+    { "code": "KIRS#DY003", "member": "Doyeon", "initial": "DY", "rarity": 3, "set": 1, "description": null, "link": "https://i.imgur.com/w341QyY.png" },
+    { "code": "KIRS#HR003", "member": "Harin", "initial": "HR", "rarity": 3, "set": 1, "description": null, "link": "https://i.imgur.com/Qj0fSqL.png" },
+    { "code": "KIRS#KR003", "member": "Kurumi", "initial": "KR", "rarity": 3, "set": 1, "description": null, "link": "https://i.imgur.com/ESYqNQd.png" },
+    { "code": "KIRS#KL003", "member": "Kylie", "initial": "KL", "rarity": 3, "set": 1, "description": null, "link": "https://i.imgur.com/S8qyAdO.png" },
+    { "code": "KIRS#RA003", "member": "Roah", "initial": "RA", "rarity": 3, "set": 1, "description": null, "link": "https://i.imgur.com/rmInbeI.png" },
+    { "code": "KIRS#LL003", "member": "LingLing", "initial": "LL", "rarity": 3, "set": 1, "description": null, "link": "https://i.imgur.com/F68kDoq.png" }
+  ]
+}

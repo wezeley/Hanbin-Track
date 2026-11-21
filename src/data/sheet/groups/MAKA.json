@@ -1,0 +1,24 @@
+{
+  "number": 166,
+  "name": "Maka'Maka",
+  "code": "MAKA",
+  "members": [
+    { "name": "Chaewon", "initial": "CW" },
+    { "name": "Daseul", "initial": "DS" },
+    { "name": "Dia", "initial": "DA" },
+    { "name": "EunB", "initial": "EB" },
+    { "name": "Heesu", "initial": "HS" }
+  ],
+  "cards": [
+    { "code": "MAKA#CW001", "member": "Chaewon", "initial": "CW", "rarity": 1, "set": 1, "description": "Hey U", "link": "https://i.imgur.com/py6Bm9N.png" },
+    { "code": "MAKA#DS001", "member": "Daseul", "initial": "DS", "rarity": 1, "set": 1, "description": "Hey U", "link": "https://i.imgur.com/GicqLri.png" },
+    { "code": "MAKA#DA001", "member": "Dia", "initial": "DA", "rarity": 1, "set": 1, "description": "Hey U", "link": "https://i.imgur.com/x5hR1bZ.png" },
+    { "code": "MAKA#EB001", "member": "EunB", "initial": "EB", "rarity": 1, "set": 1, "description": "Hey U", "link": "https://i.imgur.com/9B96RZd.png" },
+    { "code": "MAKA#HS001", "member": "Heesu", "initial": "HS", "rarity": 1, "set": 1, "description": "Hey U", "link": "https://i.imgur.com/RqmJP7c.png" },
+    { "code": "MAKA#CW002", "member": "Chaewon", "initial": "CW", "rarity": 2, "set": 1, "description": "Burning Power", "link": "https://i.imgur.com/1W41t31.png" },
+    { "code": "MAKA#DS002", "member": "Daseul", "initial": "DS", "rarity": 2, "set": 1, "description": "Burning Power", "link": "https://i.imgur.com/eBWNsrB.png" },
+    { "code": "MAKA#DA002", "member": "Dia", "initial": "DA", "rarity": 2, "set": 1, "description": "Burning Power", "link": "https://i.imgur.com/JgB3Oh5.png" },
+    { "code": "MAKA#EB002", "member": "EunB", "initial": "EB", "rarity": 2, "set": 1, "description": "Burning Power", "link": "https://i.imgur.com/nTaDm0e.png" },
+    { "code": "MAKA#HS002", "member": "Heesu", "initial": "HS", "rarity": 2, "set": 1, "description": "Burning Power", "link": "https://i.imgur.com/wqw3P8m.png" }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "number": 110,
+  "name": "iKON",
+  "code": "IKON",
+  "members": [
+    { "name": "Bobby", "initial": "BB" },
+    { "name": "Chan", "initial": "CH" },
+    { "name": "DK", "initial": "DK" },
+    { "name": "Jay", "initial": "JY" },
+    { "name": "JUNE", "initial": "JN" },
+    { "name": "Song", "initial": "SG" }
+  ],
+  "cards": [
+    { "code": "IKON#BB001", "member": "Bobby", "initial": "BB", "rarity": 1, "set": 1, "description": "Take Off", "link": "https://i.imgur.com/VONmyfn.png" },
+    { "code": "IKON#CH001", "member": "Chan", "initial": "CH", "rarity": 1, "set": 1, "description": "Take Off", "link": "https://i.imgur.com/a0MOngm.png" },
+    { "code": "IKON#DK001", "member": "DK", "initial": "DK", "rarity": 1, "set": 1, "description": "Take Off", "link": "https://i.imgur.com/C0zDxdn.png" },
+    { "code": "IKON#JY001", "member": "Jay", "initial": "JY", "rarity": 1, "set": 1, "description": "Take Off", "link": "https://i.imgur.com/fELetHT.png" },
+    { "code": "IKON#JN001", "member": "JUNE", "initial": "JN", "rarity": 1, "set": 1, "description": "Take Off", "link": "https://i.imgur.com/3E92KnF.png" },
+    { "code": "IKON#SG001", "member": "Song", "initial": "SG", "rarity": 1, "set": 1, "description": "Take Off", "link": "https://i.imgur.com/TVH9WEd.png" },
+    { "code": "IKON#BB002", "member": "Bobby", "initial": "BB", "rarity": 2, "set": 1, "description": "Flashback", "link": "https://i.imgur.com/njRiyuq.png" },
+    { "code": "IKON#CH002", "member": "Chan", "initial": "CH", "rarity": 2, "set": 1, "description": "Flashback", "link": "https://i.imgur.com/RZrbHGb.png" },
+    { "code": "IKON#DK002", "member": "DK", "initial": "DK", "rarity": 2, "set": 1, "description": "Flashback", "link": "https://i.imgur.com/hGrNJw3.png" },
+    { "code": "IKON#JY002", "member": "Jay", "initial": "JY", "rarity": 2, "set": 1, "description": "Flashback", "link": "https://i.imgur.com/coymVLB.png" },
+    { "code": "IKON#JN002", "member": "JUNE", "initial": "JN", "rarity": 2, "set": 1, "description": "Flashback", "link": "https://i.imgur.com/5NRFu2V.png" },
+    { "code": "IKON#SG002", "member": "Song", "initial": "SG", "rarity": 2, "set": 1, "description": "Flashback", "link": "https://i.imgur.com/FvJoqxJ.png" }
+  ]
+}

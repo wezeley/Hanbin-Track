@@ -1,0 +1,37 @@
+{
+  "number": 342,
+  "name": "SuperM",
+  "code": "SPM",
+  "members": [
+    { "name": "Baekhyun", "initial": "BH" },
+    { "name": "Kai", "initial": "KI" },
+    { "name": "Lucas", "initial": "LC" },
+    { "name": "Mark", "initial": "MK" },
+    { "name": "Taemin", "initial": "TM" },
+    { "name": "Taeyong", "initial": "TY" },
+    { "name": "Ten", "initial": "TN" }
+  ],
+  "cards": [
+    { "code": "SPM#BH001", "member": "Baekhyun", "initial": "BH", "rarity": 1, "set": 1, "description": "Jopping", "link": "https://i.imgur.com/lZTxeS1.png" },
+    { "code": "SPM#KI001", "member": "Kai", "initial": "KI", "rarity": 1, "set": 1, "description": "Jopping", "link": "https://i.imgur.com/7AeTFSM.png" },
+    { "code": "SPM#LC001", "member": "Lucas", "initial": "LC", "rarity": 1, "set": 1, "description": "Jopping", "link": "https://i.imgur.com/PJCh6rJ.png" },
+    { "code": "SPM#MK001", "member": "Mark", "initial": "MK", "rarity": 1, "set": 1, "description": "Jopping", "link": "https://i.imgur.com/pk2ZhdQ.png" },
+    { "code": "SPM#TM001", "member": "Taemin", "initial": "TM", "rarity": 1, "set": 1, "description": "Jopping", "link": "https://i.imgur.com/yHFI43S.png" },
+    { "code": "SPM#TY001", "member": "Taeyong", "initial": "TY", "rarity": 1, "set": 1, "description": "Jopping", "link": "https://i.imgur.com/ChFfhSx.png" },
+    { "code": "SPM#TN001", "member": "Ten", "initial": "TN", "rarity": 1, "set": 1, "description": "Jopping", "link": "https://i.imgur.com/m2xU7hy.png" },
+    { "code": "SPM#BH002", "member": "Baekhyun", "initial": "BH", "rarity": 2, "set": 1, "description": "100", "link": "https://i.imgur.com/ThguIX0.png" },
+    { "code": "SPM#KI002", "member": "Kai", "initial": "KI", "rarity": 2, "set": 1, "description": "100", "link": "https://i.imgur.com/HRed1q3.png" },
+    { "code": "SPM#LC002", "member": "Lucas", "initial": "LC", "rarity": 2, "set": 1, "description": "100", "link": "https://i.imgur.com/nZiLFOW.png" },
+    { "code": "SPM#MK002", "member": "Mark", "initial": "MK", "rarity": 2, "set": 1, "description": "100", "link": "https://i.imgur.com/FHjvJqk.png" },
+    { "code": "SPM#TM002", "member": "Taemin", "initial": "TM", "rarity": 2, "set": 1, "description": "100", "link": "https://i.imgur.com/F0yAlr4.png" },
+    { "code": "SPM#TY002", "member": "Taeyong", "initial": "TY", "rarity": 2, "set": 1, "description": "100", "link": "https://i.imgur.com/SGk9xk8.png" },
+    { "code": "SPM#TN002", "member": "Ten", "initial": "TN", "rarity": 2, "set": 1, "description": "100", "link": "https://i.imgur.com/RT3d8GD.png" },
+    { "code": "SPM#BH003", "member": "Baekhyun", "initial": "BH", "rarity": 3, "set": 1, "description": "Super One", "link": "https://i.imgur.com/Q0ktXlA.png" },
+    { "code": "SPM#KI003", "member": "Kai", "initial": "KI", "rarity": 3, "set": 1, "description": "Super One", "link": "https://i.imgur.com/Et3DR6C.png" },
+    { "code": "SPM#LC003", "member": "Lucas", "initial": "LC", "rarity": 3, "set": 1, "description": "Super One", "link": "https://i.imgur.com/H5HL1FR.png" },
+    { "code": "SPM#MK003", "member": "Mark", "initial": "MK", "rarity": 3, "set": 1, "description": "Super One", "link": "https://i.imgur.com/TyzEPwy.png" },
+    { "code": "SPM#TM003", "member": "Taemin", "initial": "TM", "rarity": 3, "set": 1, "description": "Super One", "link": "https://i.imgur.com/lP5KCbO.png" },
+    { "code": "SPM#TY003", "member": "Taeyong", "initial": "TY", "rarity": 3, "set": 1, "description": "Super One", "link": "https://i.imgur.com/PNUMLLL.png" },
+    { "code": "SPM#TN003", "member": "Ten", "initial": "TN", "rarity": 3, "set": 1, "description": "Super One", "link": "https://i.imgur.com/UE8xWsF.png" }
+  ]
+}

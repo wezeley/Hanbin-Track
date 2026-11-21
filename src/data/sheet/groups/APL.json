@@ -1,0 +1,27 @@
+{
+  "number": 154,
+  "name": "April",
+  "code": "APL",
+  "members": [
+    { "name": "Chaekyung", "initial": "CK" },
+    { "name": "Chaewon", "initial": "CW" },
+    { "name": "Jinsol", "initial": "JS" },
+    { "name": "Naeun", "initial": "NE" },
+    { "name": "Rachel", "initial": "RC" },
+    { "name": "Yena", "initial": "YN" }
+  ],
+  "cards": [
+    { "code": "APL#CK001", "member": "Chaekyung", "initial": "CK", "rarity": 1, "set": 1, "description": "7th Album Da Capo", "link": "https://i.imgur.com/Cb5j8j4.png" },
+    { "code": "APL#CW001", "member": "Chaewon", "initial": "CW", "rarity": 1, "set": 1, "description": "7th Album Da Capo", "link": "https://i.imgur.com/6NzHJBj.png" },
+    { "code": "APL#JS001", "member": "Jinsol", "initial": "JS", "rarity": 1, "set": 1, "description": "7th Album Da Capo", "link": "https://i.imgur.com/p7p3UbR.png" },
+    { "code": "APL#NE001", "member": "Naeun", "initial": "NE", "rarity": 1, "set": 1, "description": "7th Album Da Capo", "link": "https://i.imgur.com/rZBl96f.png" },
+    { "code": "APL#RC001", "member": "Rachel", "initial": "RC", "rarity": 1, "set": 1, "description": "7th Album Da Capo", "link": "https://i.imgur.com/13IWCSj.png" },
+    { "code": "APL#YN001", "member": "Yena", "initial": "YN", "rarity": 1, "set": 1, "description": "7th Album Da Capo", "link": "https://i.imgur.com/iakE3RY.png" },
+    { "code": "APL#CK002", "member": "Chaekyung", "initial": "CK", "rarity": 2, "set": 1, "description": "Hello Summer", "link": "https://i.imgur.com/1sbgbx5.png" },
+    { "code": "APL#CW002", "member": "Chaewon", "initial": "CW", "rarity": 2, "set": 1, "description": "Hello Summer", "link": "https://i.imgur.com/mPmhvM6.png" },
+    { "code": "APL#JS002", "member": "Jinsol", "initial": "JS", "rarity": 2, "set": 1, "description": "Hello Summer", "link": "https://i.imgur.com/bjQd9Qw.png" },
+    { "code": "APL#NE002", "member": "Naeun", "initial": "NE", "rarity": 2, "set": 1, "description": "Hello Summer", "link": "https://i.imgur.com/xfoFO73.png" },
+    { "code": "APL#RC002", "member": "Rachel", "initial": "RC", "rarity": 2, "set": 1, "description": "Hello Summer", "link": "https://i.imgur.com/TTtSpYy.png" },
+    { "code": "APL#YN002", "member": "Yena", "initial": "YN", "rarity": 2, "set": 1, "description": "Hello Summer", "link": "https://i.imgur.com/lWBb6tj.png" }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "number": 329,
+  "name": "CIIU",
+  "code": "CIIU",
+  "members": [
+    { "name": "Tianyi", "initial": "TY" },
+    { "name": "Wenjin", "initial": "WJ" },
+    { "name": "Yan", "initial": "YN" },
+    { "name": "Yuanhao", "initial": "YH" },
+    { "name": "Zeheng", "initial": "ZH" }
+  ],
+  "cards": [
+    { "code": "CIIU#TY001", "member": "Tianyi", "initial": "TY", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/xnn4rdO.png" },
+    { "code": "CIIU#WJ001", "member": "Wenjin", "initial": "WJ", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/AtaJDzk.png" },
+    { "code": "CIIU#YN001", "member": "Yan", "initial": "YN", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/HB9jL1n.png" },
+    { "code": "CIIU#YH001", "member": "Yuanhao", "initial": "YH", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/kMiGNaZ.png" },
+    { "code": "CIIU#ZH001", "member": "Zeheng", "initial": "ZH", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/O5WQr2B.png" }
+  ]
+}

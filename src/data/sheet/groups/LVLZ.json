@@ -1,0 +1,25 @@
+{
+  "number": 288,
+  "name": "Lovelyz",
+  "code": "LVLZ",
+  "members": [
+    { "name": "Baby Soul", "initial": "BS" },
+    { "name": "Jiae", "initial": "JA" },
+    { "name": "Jin", "initial": "JN" },
+    { "name": "Jisoo", "initial": "JS" },
+    { "name": "Kei", "initial": "KI" },
+    { "name": "Mijoo", "initial": "MJ" },
+    { "name": "Sujeong", "initial": "SJ" },
+    { "name": "Yein", "initial": "YI" }
+  ],
+  "cards": [
+    { "code": "LVLZ#BS001", "member": "Baby Soul", "initial": "BS", "rarity": 1, "set": 1, "description": "UNFORGETTABLE - Concept Photos", "link": "https://i.imgur.com/yYWiNir.png" },
+    { "code": "LVLZ#JA001", "member": "Jiae", "initial": "JA", "rarity": 1, "set": 1, "description": "UNFORGETTABLE - Concept Photos", "link": "https://i.imgur.com/Rl0DKVH.png" },
+    { "code": "LVLZ#JN001", "member": "Jin", "initial": "JN", "rarity": 1, "set": 1, "description": "UNFORGETTABLE - Concept Photos", "link": "https://i.imgur.com/kUjPMdD.png" },
+    { "code": "LVLZ#JS001", "member": "Jisoo", "initial": "JS", "rarity": 1, "set": 1, "description": "UNFORGETTABLE - Concept Photos", "link": "https://i.imgur.com/tc2qEKC.png" },
+    { "code": "LVLZ#KI001", "member": "Kei", "initial": "KI", "rarity": 1, "set": 1, "description": "UNFORGETTABLE - Concept Photos", "link": "https://i.imgur.com/TK6uGgr.png" },
+    { "code": "LVLZ#MJ001", "member": "Mijoo", "initial": "MJ", "rarity": 1, "set": 1, "description": "UNFORGETTABLE - Concept Photos", "link": "https://i.imgur.com/ocVZfjk.png" },
+    { "code": "LVLZ#SJ001", "member": "Sujeong", "initial": "SJ", "rarity": 1, "set": 1, "description": "UNFORGETTABLE - Concept Photos", "link": "https://i.imgur.com/gjtsBLA.png" },
+    { "code": "LVLZ#YI001", "member": "Yein", "initial": "YI", "rarity": 1, "set": 1, "description": "UNFORGETTABLE - Concept Photos", "link": "https://i.imgur.com/gjtsBLA.png" }
+  ]
+}

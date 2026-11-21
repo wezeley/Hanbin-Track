@@ -1,0 +1,39 @@
+{
+  "number": 278,
+  "name": "QQQ",
+  "code": "QQQ",
+  "members": [
+    { "name": "Jisung", "initial": "JS" },
+    { "name": "KB", "initial": "KB" },
+    { "name": "Nine", "initial": "NN" }
+  ],
+  "cards": [
+    {
+      "code": "QQQ#JS001",
+      "member": "Jisung",
+      "initial": "JS",
+      "rarity": 1,
+      "set": 1,
+      "description": "[QtoresQ] - Concept Photo",
+      "link": "https://i.imgur.com/qbpJywG.png"
+    },
+    {
+      "code": "QQQ#KB001",
+      "member": "KB",
+      "initial": "KB",
+      "rarity": 1,
+      "set": 1,
+      "description": "[QtoresQ] - Concept Photo",
+      "link": "https://i.imgur.com/t3ZzBwG.png"
+    },
+    {
+      "code": "QQQ#NN001",
+      "member": "Nine",
+      "initial": "NN",
+      "rarity": 1,
+      "set": 1,
+      "description": "[QtoresQ] - Concept Photo",
+      "link": "https://i.imgur.com/kpjuawG.png"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "number": 171,
+  "name": "Vanner",
+  "code": "VNR",
+  "members": [
+    { "name": "Gon", "initial": "GN" },
+    { "name": "Hyesung", "initial": "HS" },
+    { "name": "Sungkook", "initial": "SK" },
+    { "name": "Taehwan", "initial": "TH" },
+    { "name": "Yeonggwang", "initial": "YG" }
+  ],
+  "cards": [
+    { "code": "VNR#GN001", "member": "Gon", "initial": "GN", "rarity": 1, "set": 1, "description": "Capture The Flag", "link": "https://i.imgur.com/1ylHult.png" },
+    { "code": "VNR#HS001", "member": "Hyesung", "initial": "HS", "rarity": 1, "set": 1, "description": "Capture The Flag", "link": "https://i.imgur.com/l9X34vU.png" },
+    { "code": "VNR#SK001", "member": "Sungkook", "initial": "SK", "rarity": 1, "set": 1, "description": "Capture The Flag", "link": "https://i.imgur.com/ni8eSZ0.png" },
+    { "code": "VNR#TH001", "member": "Taehwan", "initial": "TH", "rarity": 1, "set": 1, "description": "Capture The Flag", "link": "https://i.imgur.com/mm1Zh5i.png" },
+    { "code": "VNR#YG001", "member": "Yeonggwang", "initial": "YG", "rarity": 1, "set": 1, "description": "Capture The Flag", "link": "https://i.imgur.com/C5we1yy.png" }
+  ]
+}

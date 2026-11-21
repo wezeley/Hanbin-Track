@@ -1,0 +1,15 @@
+{
+  "number": 318,
+  "name": "Odd Eye Circle",
+  "code": "OEC",
+  "members": [
+    { "name": "Choerry", "initial": "CE" },
+    { "name": "Kim Lip", "initial": "KL" },
+    { "name": "Jinsoul", "initial": "JS" }
+  ],
+  "cards": [
+    { "code": "OEC#CE001", "member": "Choerry", "initial": "CE", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/KWzSH6C.png" },
+    { "code": "OEC#KL001", "member": "Kim Lip", "initial": "KL", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/loWA1OU.png" },
+    { "code": "OEC#JS001", "member": "Jinsoul", "initial": "JS", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/YzdRgKf.png" }
+  ]
+}

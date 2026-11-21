@@ -1,0 +1,37 @@
+{
+  "number": 204,
+  "name": "GOT The Beat",
+  "code": "GTB",
+  "members": [
+    { "name": "BoA", "initial": "BO" },
+    { "name": "Hyoyeon", "initial": "HY" },
+    { "name": "Karina", "initial": "KR" },
+    { "name": "Seulgi", "initial": "SG" },
+    { "name": "Taeyeon", "initial": "TY" },
+    { "name": "Wendy", "initial": "WD" },
+    { "name": "Winter", "initial": "WT" }
+  ],
+  "cards": [
+    { "code": "GTB#BO001", "member": "BoA", "initial": "BO", "rarity": 1, "set": 1, "description": "Step Back", "link": "https://i.imgur.com/w16yj9x.png" },
+    { "code": "GTB#HY001", "member": "Hyoyeon", "initial": "HY", "rarity": 1, "set": 1, "description": "Step Back", "link": "https://i.imgur.com/ZsGuQkp.png" },
+    { "code": "GTB#KR001", "member": "Karina", "initial": "KR", "rarity": 1, "set": 1, "description": "Step Back", "link": "https://i.imgur.com/YpY4lNi.png" },
+    { "code": "GTB#SG001", "member": "Seulgi", "initial": "SG", "rarity": 1, "set": 1, "description": "Step Back", "link": "https://i.imgur.com/iZuZ7qd.png" },
+    { "code": "GTB#TY001", "member": "Taeyeon", "initial": "TY", "rarity": 1, "set": 1, "description": "Step Back", "link": "https://i.imgur.com/2Q6whcR.png" },
+    { "code": "GTB#WD001", "member": "Wendy", "initial": "WD", "rarity": 1, "set": 1, "description": "Step Back", "link": "https://i.imgur.com/I0SRle9.png" },
+    { "code": "GTB#WT001", "member": "Winter", "initial": "WT", "rarity": 1, "set": 1, "description": "Step Back", "link": "https://i.imgur.com/pDyiOMw.png" },
+    { "code": "GTB#BO002", "member": "BoA", "initial": "BO", "rarity": 2, "set": 1, "description": "Stamp on It", "link": "https://i.imgur.com/5hN4rGT.png" },
+    { "code": "GTB#HY002", "member": "Hyoyeon", "initial": "HY", "rarity": 2, "set": 1, "description": "Stamp on It", "link": "https://i.imgur.com/3fAhLI8.png" },
+    { "code": "GTB#KR002", "member": "Karina", "initial": "KR", "rarity": 2, "set": 1, "description": "Stamp on It", "link": "https://i.imgur.com/FVKxYRP.png" },
+    { "code": "GTB#SG002", "member": "Seulgi", "initial": "SG", "rarity": 2, "set": 1, "description": "Stamp on It", "link": "https://i.imgur.com/FOfaelZ.png" },
+    { "code": "GTB#TY002", "member": "Taeyeon", "initial": "TY", "rarity": 2, "set": 1, "description": "Stamp on It", "link": "https://i.imgur.com/TCmg98T.png" },
+    { "code": "GTB#WD002", "member": "Wendy", "initial": "WD", "rarity": 2, "set": 1, "description": "Stamp on It", "link": "https://i.imgur.com/leyzgvV.png" },
+    { "code": "GTB#WT002", "member": "Winter", "initial": "WT", "rarity": 2, "set": 1, "description": "Stamp on It", "link": "https://i.imgur.com/JnlaYdh.png" },
+    { "code": "GTB#BO003", "member": "BoA", "initial": "BO", "rarity": 3, "set": 1, "description": "Stamp on It", "link": "https://i.imgur.com/SGMdaHq.png" },
+    { "code": "GTB#HY003", "member": "Hyoyeon", "initial": "HY", "rarity": 3, "set": 1, "description": "Stamp on It", "link": "https://i.imgur.com/yZEJ4T2.png" },
+    { "code": "GTB#KR003", "member": "Karina", "initial": "KR", "rarity": 3, "set": 1, "description": "Stamp on It", "link": "https://i.imgur.com/XBq8B5p.png" },
+    { "code": "GTB#SG003", "member": "Seulgi", "initial": "SG", "rarity": 3, "set": 1, "description": "Stamp on It", "link": "https://i.imgur.com/6jCC6aI.png" },
+    { "code": "GTB#TY003", "member": "Taeyeon", "initial": "TY", "rarity": 3, "set": 1, "description": "Stamp on It", "link": "https://i.imgur.com/Xq7SaFU.png" },
+    { "code": "GTB#WD003", "member": "Wendy", "initial": "WD", "rarity": 3, "set": 1, "description": "Stamp on It", "link": "https://i.imgur.com/h3tKvxc.png" },
+    { "code": "GTB#WT003", "member": "Winter", "initial": "WT", "rarity": 3, "set": 1, "description": "Stamp on It", "link": "https://i.imgur.com/961PBrR.png" }
+  ]
+}

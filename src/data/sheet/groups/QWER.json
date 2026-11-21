@@ -1,0 +1,37 @@
+{
+  "number": 190,
+  "name": "QWER",
+  "code": "QWER",
+  "members": [
+    { "name": "Chodan", "initial": "CD" },
+    { "name": "Hina", "initial": "HN" },
+    { "name": "Magenta", "initial": "MG" },
+    { "name": "Siyeon", "initial": "SY" }
+  ],
+  "cards": [
+    { "code": "QWER#CD001", "member": "Chodan", "initial": "CD", "rarity": 1, "set": 1, "description": "The 2nd Mini Album ‘Algorithm’s Blossom’", "link": "https://i.imgur.com/uDfNIKu.png" },
+    { "code": "QWER#HN001", "member": "Hina", "initial": "HN", "rarity": 1, "set": 1, "description": "The 2nd Mini Album ‘Algorithm’s Blossom’", "link": "https://i.imgur.com/AcP2hKK.png" },
+    { "code": "QWER#MG001", "member": "Magenta", "initial": "MG", "rarity": 1, "set": 1, "description": "The 2nd Mini Album ‘Algorithm’s Blossom’", "link": "https://i.imgur.com/q7pB2jF.png" },
+    { "code": "QWER#SY001", "member": "Siyeon", "initial": "SY", "rarity": 1, "set": 1, "description": "The 2nd Mini Album ‘Algorithm’s Blossom’", "link": "https://i.imgur.com/rwcpD3f.png" },
+    { "code": "QWER#CD002", "member": "Chodan", "initial": "CD", "rarity": 2, "set": 1, "description": "Manito", "link": "https://i.imgur.com/SKKcWjh.png" },
+    { "code": "QWER#HN002", "member": "Hina", "initial": "HN", "rarity": 2, "set": 1, "description": "Manito", "link": "https://i.imgur.com/o6cjYRM.png" },
+    { "code": "QWER#MG002", "member": "Magenta", "initial": "MG", "rarity": 2, "set": 1, "description": "Manito", "link": "https://i.imgur.com/9BO6KDO.png" },
+    { "code": "QWER#SY002", "member": "Siyeon", "initial": "SY", "rarity": 2, "set": 1, "description": "Manito", "link": "https://i.imgur.com/iAr8gU8.png" },
+    { "code": "QWER#CD003", "member": "Chodan", "initial": "CD", "rarity": 3, "set": 1, "description": "3rd In a million noises, I'll be your harmony", "link": "https://i.imgur.com/71ekZWV.png" },
+    { "code": "QWER#HN003", "member": "Hina", "initial": "HN", "rarity": 3, "set": 1, "description": "3rd In a million noises, I'll be your harmony", "link": "https://i.imgur.com/LTelGnm.png" },
+    { "code": "QWER#MG003", "member": "Magenta", "initial": "MG", "rarity": 3, "set": 1, "description": "3rd In a million noises, I'll be your harmony", "link": "https://i.imgur.com/slGZmly.png" },
+    { "code": "QWER#SY003", "member": "Siyeon", "initial": "SY", "rarity": 3, "set": 1, "description": "3rd In a million noises, I'll be your harmony", "link": "https://i.imgur.com/78KCszO.png" },
+    { "code": "QWER#CD004", "member": "Chodan", "initial": "CD", "rarity": 4, "set": 1, "description": "AAA Backstage Chodan Instagram Post  - https://www.instagram.com/p/DSH_BwCkiYc/?img_index=1", "link": "https://i.imgur.com/CQJqeop.png" },
+    { "code": "QWER#HN004", "member": "Hina", "initial": "HN", "rarity": 4, "set": 1, "description": "AAA Backstage Hina Weverse Post - https://weverse.io/qwer/artist/3-215507083?hl=zh-tw", "link": "https://i.imgur.com/JqRqaYA.png" },
+    { "code": "QWER#MG004", "member": "Magenta", "initial": "MG", "rarity": 4, "set": 1, "description": "AAA Backstage Magente Instagram Post - https://www.instagram.com/p/DR7XX-1E7yw/?img_index=2", "link": "https://i.imgur.com/y1O5NOu.png" },
+    { "code": "QWER#SY004", "member": "Siyeon", "initial": "SY", "rarity": 4, "set": 1, "description": "AAA Backstage Siyeon Instagram Post - https://www.instagram.com/p/DR7bKOLE-nN/?img_index=2", "link": "https://i.imgur.com/q05Vie4.png" },
+    { "code": "QWER#CD005", "member": "Chodan", "initial": "CD", "rarity": 5, "set": 1, "description": "Rocknation 1st Worldtour", "link": "https://i.imgur.com/lraPOmx.png" },
+    { "code": "QWER#HN005", "member": "Hina", "initial": "HN", "rarity": 5, "set": 1, "description": "Rocknation 1st Worldtour", "link": "https://i.imgur.com/lPQAGtN.png" },
+    { "code": "QWER#MG005", "member": "Magenta", "initial": "MG", "rarity": 5, "set": 1, "description": "Rocknation 1st Worldtour", "link": "https://i.imgur.com/O6GOyN8.png" },
+    { "code": "QWER#SY005", "member": "Siyeon", "initial": "SY", "rarity": 5, "set": 1, "description": "Rocknation 1st Worldtour", "link": "https://i.imgur.com/OIbDUMc.png" },
+    { "code": "QWER#CD006", "member": "Chodan", "initial": "CD", "rarity": 1, "set": 2, "description": "Blue Whale Beyond Discord", "link": "https://i.imgur.com/AiKHjBc.png" },
+    { "code": "QWER#HN006", "member": "Hina", "initial": "HN", "rarity": 1, "set": 2, "description": "Blue Whale Beyond Discord", "link": "https://i.imgur.com/IcNJOH9.png" },
+    { "code": "QWER#MG006", "member": "Magenta", "initial": "MG", "rarity": 1, "set": 2, "description": "Blue Whale Beyond Discord", "link": "https://i.imgur.com/kqLsrA7.png" },
+    { "code": "QWER#SY006", "member": "Siyeon", "initial": "SY", "rarity": 1, "set": 2, "description": "Blue Whale Beyond Discord", "link": "https://i.imgur.com/NHly0hB.png" }
+  ]
+}

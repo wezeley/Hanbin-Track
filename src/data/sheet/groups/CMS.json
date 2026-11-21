@@ -1,0 +1,25 @@
+{
+  "number": 197,
+  "name": "cosmosy",
+  "code": "CMS",
+  "members": [
+    { "name": "A'mei", "initial": "AM" },
+    { "name": "De_Hana", "initial": "DH" },
+    { "name": "Himesha", "initial": "HM" },
+    { "name": "Kamion", "initial": "KM" }
+  ],
+  "cards": [
+    { "code": "CMS#AM001", "member": "A'mei", "initial": "AM", "rarity": 1, "set": 1, "description": "zigy=zigy", "link": "https://i.imgur.com/QiX9qOa.png" },
+    { "code": "CMS#DH001", "member": "De_Hana", "initial": "DH", "rarity": 1, "set": 1, "description": "zigy=zigy", "link": "https://i.imgur.com/uWk292R.png" },
+    { "code": "CMS#HM001", "member": "Himesha", "initial": "HM", "rarity": 1, "set": 1, "description": "zigy=zigy", "link": "https://i.imgur.com/lfJlho0.png" },
+    { "code": "CMS#KM001", "member": "Kamion", "initial": "KM", "rarity": 1, "set": 1, "description": "zigy=zigy", "link": "https://i.imgur.com/iEaPvYD.png" },
+    { "code": "CMS#AM002", "member": "A'mei", "initial": "AM", "rarity": 2, "set": 1, "description": "Lucky=One", "link": "https://i.imgur.com/npuj2W9.png" },
+    { "code": "CMS#DH002", "member": "De_Hana", "initial": "DH", "rarity": 2, "set": 1, "description": "Lucky=One", "link": "https://i.imgur.com/flsGwtn.png" },
+    { "code": "CMS#HM002", "member": "Himesha", "initial": "HM", "rarity": 2, "set": 1, "description": "Lucky=One", "link": "https://i.imgur.com/yq4ttkJ.png" },
+    { "code": "CMS#KM002", "member": "Kamion", "initial": "KM", "rarity": 2, "set": 1, "description": "Lucky=One", "link": "https://i.imgur.com/IrWmkZZ.png" },
+    { "code": "CMS#AM003", "member": "A'mei", "initial": "AM", "rarity": 3, "set": 1, "description": "BabyDon'tCry=BreakingTheLove", "link": "https://i.imgur.com/vToeUdy.png" },
+    { "code": "CMS#DH003", "member": "De_Hana", "initial": "DH", "rarity": 3, "set": 1, "description": "BabyDon'tCry=BreakingTheLove", "link": "https://i.imgur.com/a46NCJa.png" },
+    { "code": "CMS#HM003", "member": "Himesha", "initial": "HM", "rarity": 3, "set": 1, "description": "BabyDon'tCry=BreakingTheLove", "link": "https://i.imgur.com/0oZlj6H.png" },
+    { "code": "CMS#KM003", "member": "Kamion", "initial": "KM", "rarity": 3, "set": 1, "description": "BabyDon'tCry=BreakingTheLove", "link": "https://i.imgur.com/alJhtxK.png" }
+  ]
+}

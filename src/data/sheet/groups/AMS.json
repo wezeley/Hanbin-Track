@@ -1,0 +1,21 @@
+{
+  "number": 82,
+  "name": "Aimers",
+  "code": "AMS",
+  "members": [
+    { "name": "Doryun", "initial": "DY" },
+    { "name": "Eunjun", "initial": "EJ" },
+    { "name": "Seunghwan", "initial": "SW" },
+    { "name": "Seunghyun", "initial": "SH" },
+    { "name": "Wooyoung", "initial": "WY" },
+    { "name": "Yoel", "initial": "YL" }
+  ],
+  "cards": [
+    { "code": "AMS#DY001", "member": "Doryun", "initial": "DY", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/rSBV4jE.png" },
+    { "code": "AMS#EJ001", "member": "Eunjun", "initial": "EJ", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/mXURqG8.png" },
+    { "code": "AMS#SW001", "member": "Seunghwan", "initial": "SW", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/FVsVWYO.png" },
+    { "code": "AMS#SH001", "member": "Seunghyun", "initial": "SH", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/3ldSHY0.png" },
+    { "code": "AMS#WY001", "member": "Wooyoung", "initial": "WY", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/sRY6sgB.png" },
+    { "code": "AMS#YL001", "member": "Yoel", "initial": "YL", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/pI7zaRJ.png" }
+  ]
+}

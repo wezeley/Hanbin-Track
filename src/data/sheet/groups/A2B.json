@@ -1,0 +1,24 @@
+{
+  "number": 293,
+  "name": "AND2BLE",
+  "code": "A2B",
+  "members": [
+    { "name": "Gyuvin", "initial": "GV" },
+    { "name": "Ricky", "initial": "RY" },
+    { "name": "Seungeon", "initial": "SG" },
+    { "name": "Yujin", "initial": "YJ" },
+    { "name": "Zhang Hao", "initial": "ZH" }
+  ],
+  "cards": [
+    { "code": "A2B#GV001", "member": "Gyuvin", "initial": "GV", "rarity": 1, "set": 1, "description": "Curious", "link": "https://i.imgur.com/Rt3ayCl.png" },
+    { "code": "A2B#RY001", "member": "Ricky", "initial": "RY", "rarity": 1, "set": 1, "description": "Curious", "link": "https://i.imgur.com/xDpgpI4.png" },
+    { "code": "A2B#SG001", "member": "Seungeon", "initial": "SG", "rarity": 1, "set": 1, "description": "Curious", "link": "https://i.imgur.com/ggpxEAx.png" },
+    { "code": "A2B#YJ001", "member": "Yujin", "initial": "YJ", "rarity": 1, "set": 1, "description": "Curious", "link": "https://i.imgur.com/fZN2mnb.png" },
+    { "code": "A2B#ZH001", "member": "Zhang Hao", "initial": "ZH", "rarity": 1, "set": 1, "description": "Curious", "link": "https://i.imgur.com/ib0KzYW.png" },
+    { "code": "A2B#GV002", "member": "Gyuvin", "initial": "GV", "rarity": 2, "set": 1, "description": "Attraction", "link": "https://i.imgur.com/3QP192u.png" },
+    { "code": "A2B#RY002", "member": "Ricky", "initial": "RY", "rarity": 2, "set": 1, "description": "Attraction", "link": "https://i.imgur.com/4p9rqy3.png" },
+    { "code": "A2B#SG002", "member": "Seungeon", "initial": "SG", "rarity": 2, "set": 1, "description": "Attraction", "link": "https://i.imgur.com/ZA8YXjU.png" },
+    { "code": "A2B#YJ002", "member": "Yujin", "initial": "YJ", "rarity": 2, "set": 1, "description": "Attraction", "link": "https://i.imgur.com/MBdQwOR.png" },
+    { "code": "A2B#ZH002", "member": "Zhang Hao", "initial": "ZH", "rarity": 2, "set": 1, "description": "Attraction", "link": "https://i.imgur.com/CwnoUTn.png" }
+  ]
+}

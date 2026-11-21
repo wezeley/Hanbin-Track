@@ -1,0 +1,39 @@
+{
+  "number": 111,
+  "name": "Nu'est",
+  "code": "NUE",
+  "members": [
+    { "name": "Aron", "initial": "AR" },
+    { "name": "Baekho", "initial": "BH" },
+    { "name": "JR", "initial": "JR" },
+    { "name": "Minhyun", "initial": "MH" },
+    { "name": "Ren", "initial": "RN" }
+  ],
+  "cards": [
+    { "code": "NUE#AR001", "member": "Aron", "initial": "AR", "rarity": 1, "set": 1, "description": "Romanticize", "link": "https://i.imgur.com/jrCLW9s.png" },
+    { "code": "NUE#BH001", "member": "Baekho", "initial": "BH", "rarity": 1, "set": 1, "description": "Romanticize", "link": "https://i.imgur.com/Zgtkxca.png" },
+    { "code": "NUE#JR001", "member": "JR", "initial": "JR", "rarity": 1, "set": 1, "description": "Romanticize", "link": "https://i.imgur.com/RB9at3R.png" },
+    { "code": "NUE#MH001", "member": "Minhyun", "initial": "MH", "rarity": 1, "set": 1, "description": "Romanticize", "link": "https://i.imgur.com/xcrckiK.png" },
+    { "code": "NUE#RN001", "member": "Ren", "initial": "RN", "rarity": 1, "set": 1, "description": "Romanticize", "link": "https://i.imgur.com/OBaKfVy.png" },
+    { "code": "NUE#AR002", "member": "Aron", "initial": "AR", "rarity": 2, "set": 1, "description": "Drive", "link": "https://i.imgur.com/QooriH9.png" },
+    { "code": "NUE#BH002", "member": "Baekho", "initial": "BH", "rarity": 2, "set": 1, "description": "Drive", "link": "https://i.imgur.com/wBr3hp0.png" },
+    { "code": "NUE#JR002", "member": "JR", "initial": "JR", "rarity": 2, "set": 1, "description": "Drive", "link": "https://i.imgur.com/hGVfTEY.png" },
+    { "code": "NUE#MH002", "member": "Minhyun", "initial": "MH", "rarity": 2, "set": 1, "description": "Drive", "link": "https://i.imgur.com/F05NJwl.png" },
+    { "code": "NUE#RN002", "member": "Ren", "initial": "RN", "rarity": 2, "set": 1, "description": "Drive", "link": "https://i.imgur.com/POY8OLw.png" },
+    { "code": "NUE#AR003", "member": "Aron", "initial": "AR", "rarity": 3, "set": 1, "description": "Season Greetings", "link": "https://i.imgur.com/OPApMNc.png" },
+    { "code": "NUE#BH003", "member": "Baekho", "initial": "BH", "rarity": 3, "set": 1, "description": "Season Greetings", "link": "https://i.imgur.com/ne2phLW.png" },
+    { "code": "NUE#JR003", "member": "JR", "initial": "JR", "rarity": 3, "set": 1, "description": "Season Greetings", "link": "https://i.imgur.com/NHpPyaC.png" },
+    { "code": "NUE#MH003", "member": "Minhyun", "initial": "MH", "rarity": 3, "set": 1, "description": "Season Greetings", "link": "https://i.imgur.com/npISLhg.png" },
+    { "code": "NUE#RN003", "member": "Ren", "initial": "RN", "rarity": 3, "set": 1, "description": "Season Greetings", "link": "https://i.imgur.com/Nib1qap.png" },
+    { "code": "NUE#AR004", "member": "Aron", "initial": "AR", "rarity": 4, "set": 1, "description": "Show Champion Trophy Selca", "link": "https://i.imgur.com/2QofsQb.png" },
+    { "code": "NUE#BH004", "member": "Baekho", "initial": "BH", "rarity": 4, "set": 1, "description": "Show Champion Trophy Selca", "link": "https://i.imgur.com/FgCRbY0.png" },
+    { "code": "NUE#JR004", "member": "JR", "initial": "JR", "rarity": 4, "set": 1, "description": "Show Champion Trophy Selca", "link": "https://i.imgur.com/R0ZataY.png" },
+    { "code": "NUE#MH004", "member": "Minhyun", "initial": "MH", "rarity": 4, "set": 1, "description": "Show Champion Trophy Selca", "link": "https://i.imgur.com/cjqLHjw.png" },
+    { "code": "NUE#RN004", "member": "Ren", "initial": "RN", "rarity": 4, "set": 1, "description": "Show Champion Trophy Selca", "link": "https://i.imgur.com/iU7BmET.png" },
+    { "code": "NUE#AR005", "member": "Aron", "initial": "AR", "rarity": 5, "set": 1, "description": "Arena Homme+ Style Korea", "link": "https://i.imgur.com/XyJk4r2.png" },
+    { "code": "NUE#BH005", "member": "Baekho", "initial": "BH", "rarity": 5, "set": 1, "description": "Arena Homme+ Style Korea", "link": "https://i.imgur.com/Ds3sX8H.png" },
+    { "code": "NUE#JR005", "member": "JR", "initial": "JR", "rarity": 5, "set": 1, "description": "Arena Homme+ Style Korea", "link": "https://i.imgur.com/9MovSzo.png" },
+    { "code": "NUE#MH005", "member": "Minhyun", "initial": "MH", "rarity": 5, "set": 1, "description": "Arena Homme+ Style Korea", "link": "https://i.imgur.com/xPzMyP1.png" },
+    { "code": "NUE#RN005", "member": "Ren", "initial": "RN", "rarity": 5, "set": 1, "description": "Arena Homme+ Style Korea", "link": "https://i.imgur.com/ti2NrWi.png" }
+  ]
+}

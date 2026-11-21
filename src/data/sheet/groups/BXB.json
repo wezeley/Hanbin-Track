@@ -1,0 +1,17 @@
+{
+  "number": 132,
+  "name": "BXB",
+  "code": "BXB",
+  "members": [
+    { "name": "Hamin", "initial": "HM" },
+    { "name": "Hyunwoo", "initial": "HW" },
+    { "name": "Jihun", "initial": "JH" },
+    { "name": "Siwoo", "initial": "SW" }
+  ],
+  "cards": [
+    { "code": "BXB#HM001", "member": "Hamin", "initial": "HM", "rarity": 1, "set": 1, "description": "Chapter 2Wings", "link": "https://i.imgur.com/K11Dls9.png" },
+    { "code": "BXB#HW001", "member": "Hyunwoo", "initial": "HW", "rarity": 1, "set": 1, "description": "Chapter 2Wings", "link": "https://i.imgur.com/exEnAHI.png" },
+    { "code": "BXB#JH001", "member": "Jihun", "initial": "JH", "rarity": 1, "set": 1, "description": "Chapter 2Wings", "link": "https://i.imgur.com/JXNhmJ3.png" },
+    { "code": "BXB#SW001", "member": "Siwoo", "initial": "SW", "rarity": 1, "set": 1, "description": "Chapter 2Wings", "link": "https://i.imgur.com/Fc08iA4.png" }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "number": 116,
+  "name": "The Rose",
+  "code": "THER",
+  "members": [
+    { "name": "Doojon", "initial": "DJ" },
+    { "name": "Hajoon", "initial": "HJ" },
+    { "name": "Jaehyeong", "initial": "JH" },
+    { "name": "Woosung", "initial": "WS" }
+  ],
+  "cards": [
+    { "code": "THER#DJ001", "member": "Doojon", "initial": "DJ", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/aQykoqt.png" },
+    { "code": "THER#HJ001", "member": "Hajoon", "initial": "HJ", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/PneXZBy.png" },
+    { "code": "THER#JH001", "member": "Jaehyeong", "initial": "JH", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/y35BSXG.png" },
+    { "code": "THER#WS001", "member": "Woosung", "initial": "WS", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/rUZiKj6.png" },
+    { "code": "THER#DJ002", "member": "Doojon", "initial": "DJ", "rarity": 2, "set": 1, "description": null, "link": "https://i.imgur.com/aQykoqt.png" },
+    { "code": "THER#HJ002", "member": "Hajoon", "initial": "HJ", "rarity": 2, "set": 1, "description": null, "link": "https://i.imgur.com/PneXZBy.png" },
+    { "code": "THER#JH002", "member": "Jaehyeong", "initial": "JH", "rarity": 2, "set": 1, "description": null, "link": "https://i.imgur.com/y35BSXG.png" },
+    { "code": "THER#WS002", "member": "Woosung", "initial": "WS", "rarity": 2, "set": 1, "description": null, "link": "https://i.imgur.com/rUZiKj6.png" },
+    { "code": "THER#DJ003", "member": "Doojon", "initial": "DJ", "rarity": 3, "set": 1, "description": null, "link": "https://i.imgur.com/PKn3ah5.png" },
+    { "code": "THER#HJ003", "member": "Hajoon", "initial": "HJ", "rarity": 3, "set": 1, "description": null, "link": "https://i.imgur.com/PKn3ah5.png" },
+    { "code": "THER#JH003", "member": "Jaehyeong", "initial": "JH", "rarity": 3, "set": 1, "description": null, "link": "https://i.imgur.com/RQ72mox.png" },
+    { "code": "THER#WS003", "member": "Woosung", "initial": "WS", "rarity": 3, "set": 1, "description": null, "link": "https://i.imgur.com/FHvkYQg.png" },
+    { "code": "THER#DJ004", "member": "Doojon", "initial": "DJ", "rarity": 4, "set": 1, "description": "Dawn concept polaroid photocard set", "link": "https://i.imgur.com/AeZzRa0.png" },
+    { "code": "THER#HJ004", "member": "Hajoon", "initial": "HJ", "rarity": 4, "set": 1, "description": "Dawn concept polaroid photocard set", "link": "https://i.imgur.com/5xbAxnJ.png" },
+    { "code": "THER#JH004", "member": "Jaehyeong", "initial": "JH", "rarity": 4, "set": 1, "description": "Dawn concept polaroid photocard set", "link": "https://i.imgur.com/8agvtBm.png" },
+    { "code": "THER#WS004", "member": "Woosung", "initial": "WS", "rarity": 4, "set": 1, "description": "Dawn concept polaroid photocard set", "link": "https://i.imgur.com/btjV6Eb.png" },
+    { "code": "THER#DJ005", "member": "Doojon", "initial": "DJ", "rarity": 5, "set": 1, "description": "DUAL photobook", "link": "https://i.imgur.com/r1cF3sX.png" },
+    { "code": "THER#HJ005", "member": "Hajoon", "initial": "HJ", "rarity": 5, "set": 1, "description": "DUAL photobook", "link": "https://i.imgur.com/itpdTTd.png" },
+    { "code": "THER#JH005", "member": "Jaehyeong", "initial": "JH", "rarity": 5, "set": 1, "description": "DUAL photobook", "link": "https://i.imgur.com/ALx3uTJ.png" },
+    { "code": "THER#WS005", "member": "Woosung", "initial": "WS", "rarity": 5, "set": 1, "description": "DUAL photobook", "link": "https://i.imgur.com/RPToHxM.png" }
+  ]
+}

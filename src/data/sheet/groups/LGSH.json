@@ -1,0 +1,33 @@
+{
+  "number": 259,
+  "name": "Lngshot",
+  "code": "LGSH",
+  "members": [
+    { "name": "Louis", "initial": "LI" },
+    { "name": "Ohyul", "initial": "OY" },
+    { "name": "Ryul", "initial": "RY" },
+    { "name": "Woojin", "initial": "WJ" }
+  ],
+  "cards": [
+    { "code": "LGSH#LI001", "member": "Louis", "initial": "LI", "rarity": 1, "set": 1, "description": "Moonwalkin'", "link": "https://i.imgur.com/B4wZWmG.png" },
+    { "code": "LGSH#OY001", "member": "Ohyul", "initial": "OY", "rarity": 1, "set": 1, "description": "Moonwalkin'", "link": "https://i.imgur.com/R6DlmTf.png" },
+    { "code": "LGSH#RY001", "member": "Ryul", "initial": "RY", "rarity": 1, "set": 1, "description": "Moonwalkin'", "link": "https://i.imgur.com/lNK6K5N.png" },
+    { "code": "LGSH#WJ001", "member": "Woojin", "initial": "WJ", "rarity": 1, "set": 1, "description": "Moonwalkin'", "link": "https://i.imgur.com/817JFoV.png" },
+    { "code": "LGSH#LI002", "member": "Louis", "initial": "LI", "rarity": 2, "set": 1, "description": "Shot Caller", "link": "https://i.imgur.com/stV68V1.png" },
+    { "code": "LGSH#OY002", "member": "Ohyul", "initial": "OY", "rarity": 2, "set": 1, "description": "Shot Caller", "link": "https://i.imgur.com/pTFqoWn.png" },
+    { "code": "LGSH#RY002", "member": "Ryul", "initial": "RY", "rarity": 2, "set": 1, "description": "Shot Caller", "link": "https://i.imgur.com/IxrI011.png" },
+    { "code": "LGSH#WJ002", "member": "Woojin", "initial": "WJ", "rarity": 2, "set": 1, "description": "Shot Caller", "link": "https://i.imgur.com/7mBpiOz.png" },
+    { "code": "LGSH#LI003", "member": "Louis", "initial": "LI", "rarity": 3, "set": 1, "description": "Facetime", "link": "https://i.imgur.com/7tCTR5E.png" },
+    { "code": "LGSH#OY003", "member": "Ohyul", "initial": "OY", "rarity": 3, "set": 1, "description": "Facetime", "link": "https://i.imgur.com/in7Tcck.png" },
+    { "code": "LGSH#RY003", "member": "Ryul", "initial": "RY", "rarity": 3, "set": 1, "description": "Facetime", "link": "https://i.imgur.com/B8dECvh.png" },
+    { "code": "LGSH#WJ003", "member": "Woojin", "initial": "WJ", "rarity": 3, "set": 1, "description": "Facetime", "link": "https://i.imgur.com/nkF3LQB.png" },
+    { "code": "LGSH#LI004", "member": "Louis", "initial": "LI", "rarity": 4, "set": 1, "description": null, "link": "https://i.imgur.com/PHjOftv.png" },
+    { "code": "LGSH#OY004", "member": "Ohyul", "initial": "OY", "rarity": 4, "set": 1, "description": null, "link": "https://i.imgur.com/7217oQf.png" },
+    { "code": "LGSH#RY004", "member": "Ryul", "initial": "RY", "rarity": 4, "set": 1, "description": null, "link": "https://i.imgur.com/GlbPif9.png" },
+    { "code": "LGSH#WJ004", "member": "Woojin", "initial": "WJ", "rarity": 4, "set": 1, "description": null, "link": "https://i.imgur.com/7a19baI.png" },
+    { "code": "LGSH#LI005", "member": "Louis", "initial": "LI", "rarity": 5, "set": 1, "description": null, "link": "https://i.imgur.com/KkTEOtf.png" },
+    { "code": "LGSH#OY005", "member": "Ohyul", "initial": "OY", "rarity": 5, "set": 1, "description": null, "link": "https://i.imgur.com/FMQKwuB.png" },
+    { "code": "LGSH#RY005", "member": "Ryul", "initial": "RY", "rarity": 5, "set": 1, "description": null, "link": "https://i.imgur.com/63DCooe.png" },
+    { "code": "LGSH#WJ005", "member": "Woojin", "initial": "WJ", "rarity": 5, "set": 1, "description": null, "link": "https://i.imgur.com/52zZS0c.png" }
+  ]
+}

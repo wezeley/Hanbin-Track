@@ -1,0 +1,21 @@
+{
+  "number": 260,
+  "name": "DXS",
+  "code": "DXS",
+  "members": [
+    { "name": "DK", "initial": "DK" },
+    { "name": "Seungkwan", "initial": "SK" }
+  ],
+  "cards": [
+    { "code": "DXS#DK001", "member": "DK", "initial": "DK", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/bKMGeG0.png" },
+    { "code": "DXS#SK001", "member": "Seungkwan", "initial": "SK", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/exCVb0s.png" },
+    { "code": "DXS#DK002", "member": "DK", "initial": "DK", "rarity": 2, "set": 1, "description": null, "link": "https://i.imgur.com/Nbz0Yb1.png" },
+    { "code": "DXS#SK002", "member": "Seungkwan", "initial": "SK", "rarity": 2, "set": 1, "description": null, "link": "https://i.imgur.com/8vBkzMN.png" },
+    { "code": "DXS#DK003", "member": "DK", "initial": "DK", "rarity": 3, "set": 1, "description": null, "link": "https://i.imgur.com/XhDFJ4a.png" },
+    { "code": "DXS#SK003", "member": "Seungkwan", "initial": "SK", "rarity": 3, "set": 1, "description": null, "link": "https://i.imgur.com/4xm4xeS.png" },
+    { "code": "DXS#DK004", "member": "DK", "initial": "DK", "rarity": 4, "set": 1, "description": null, "link": "https://i.imgur.com/vb5bJms.png" },
+    { "code": "DXS#SK004", "member": "Seungkwan", "initial": "SK", "rarity": 4, "set": 1, "description": null, "link": "https://i.imgur.com/4RPpcLt.png" },
+    { "code": "DXS#DK005", "member": "DK", "initial": "DK", "rarity": 5, "set": 1, "description": null, "link": "https://i.imgur.com/NFq9tPv.png" },
+    { "code": "DXS#SK005", "member": "Seungkwan", "initial": "SK", "rarity": 5, "set": 1, "description": null, "link": "https://i.imgur.com/pvAIijS.png" }
+  ]
+}

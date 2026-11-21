@@ -1,0 +1,23 @@
+{
+  "number": 226,
+  "name": "Mirae",
+  "code": "MRAE",
+  "members": [
+    { "name": "Dohyun", "initial": "DH" },
+    { "name": "Dongpyo", "initial": "DP" },
+    { "name": "Junhyuk", "initial": "JH" },
+    { "name": "Khael", "initial": "KE" },
+    { "name": "Lien", "initial": "LE" },
+    { "name": "Siyoung", "initial": "SY" },
+    { "name": "Yubin", "initial": "YB" }
+  ],
+  "cards": [
+    { "code": "MRAE#DH001", "member": "Dohyun", "initial": "DH", "rarity": 1, "set": 1, "description": "Running Up", "link": "https://i.imgur.com/sRaqMyL.png" },
+    { "code": "MRAE#DP001", "member": "Dongpyo", "initial": "DP", "rarity": 1, "set": 1, "description": "Running Up", "link": "https://i.imgur.com/bhVLgZU.png" },
+    { "code": "MRAE#JH001", "member": "Junhyuk", "initial": "JH", "rarity": 1, "set": 1, "description": "Running Up", "link": "https://i.imgur.com/xnyW4V8.png" },
+    { "code": "MRAE#KE001", "member": "Khael", "initial": "KE", "rarity": 1, "set": 1, "description": "Running Up", "link": "https://i.imgur.com/n6DpdLG.png" },
+    { "code": "MRAE#LE001", "member": "Lien", "initial": "LE", "rarity": 1, "set": 1, "description": "Running Up", "link": "https://i.imgur.com/obQQqr5.png" },
+    { "code": "MRAE#SY001", "member": "Siyoung", "initial": "SY", "rarity": 1, "set": 1, "description": "Running Up", "link": "https://i.imgur.com/bnanmCf.png" },
+    { "code": "MRAE#YB001", "member": "Yubin", "initial": "YB", "rarity": 1, "set": 1, "description": "Running Up", "link": "https://i.imgur.com/PGI2v0H.png" }
+  ]
+}

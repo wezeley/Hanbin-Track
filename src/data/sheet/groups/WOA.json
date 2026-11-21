@@ -1,0 +1,124 @@
+{
+  "number": 57,
+  "name": "WOOAH",
+  "code": "WOA",
+  "members": [
+    { "name": "Minseo", "initial": "MS" },
+    { "name": "Lucy", "initial": "LC" },
+    { "name": "Sora", "initial": "SR" },
+    { "name": "Wooyeon", "initial": "WY" },
+    { "name": "Nana", "initial": "NN" }
+  ],
+  "cards": [
+    {
+      "code": "WOA#MS001",
+      "member": "Minseo",
+      "initial": "MS",
+      "rarity": 1,
+      "set": 1,
+      "description": "\"[BLUSH]\" - Concept Photo",
+      "link": "https://i.imgur.com/GBzAld9.png"
+    },
+    {
+      "code": "WOA#LC001",
+      "member": "Lucy",
+      "initial": "LC",
+      "rarity": 1,
+      "set": 1,
+      "description": "\"[BLUSH]\" - Concept Photo",
+      "link": "https://i.imgur.com/8OClFqN.png"
+    },
+    {
+      "code": "WOA#SR001",
+      "member": "Sora",
+      "initial": "SR",
+      "rarity": 1,
+      "set": 1,
+      "description": "\"[BLUSH]\" - Concept Photo",
+      "link": "https://i.imgur.com/EpEu3GY.png"
+    },
+    {
+      "code": "WOA#WY001",
+      "member": "Wooyeon",
+      "initial": "WY",
+      "rarity": 1,
+      "set": 1,
+      "description": "\"[BLUSH]\" - Concept Photo",
+      "link": "https://i.imgur.com/FqnYJj7.png"
+    },
+    {
+      "code": "WOA#NN001",
+      "member": "Nana",
+      "initial": "NN",
+      "rarity": 1,
+      "set": 1,
+      "description": "\"[BLUSH]\" - Concept Photo",
+      "link": "https://i.imgur.com/Bc4bnYu.png"
+    },
+    {
+      "code": "WOA#MS002",
+      "member": "Minseo",
+      "initial": "MS",
+      "rarity": 2,
+      "set": 1,
+      "description": "\"[UNFRAMED]\" - Concept Photo",
+      "link": "https://i.imgur.com/tupRFvF.png"
+    },
+    {
+      "code": "WOA#LC002",
+      "member": "Lucy",
+      "initial": "LC",
+      "rarity": 2,
+      "set": 1,
+      "description": "\"[UNFRAMED]\" - Concept Photo",
+      "link": "https://i.imgur.com/ngm6M6A.png"
+    },
+    {
+      "code": "WOA#SR002",
+      "member": "Sora",
+      "initial": "SR",
+      "rarity": 2,
+      "set": 1,
+      "description": "\"[UNFRAMED]\" - Concept Photo",
+      "link": "https://i.imgur.com/NwcRmub.png"
+    },
+    {
+      "code": "WOA#WY002",
+      "member": "Wooyeon",
+      "initial": "WY",
+      "rarity": 2,
+      "set": 1,
+      "description": "\"[UNFRAMED]\" - Concept Photo",
+      "link": "https://i.imgur.com/7DOvQ3v.png"
+    },
+    {
+      "code": "WOA#NN002",
+      "member": "Nana",
+      "initial": "NN",
+      "rarity": 2,
+      "set": 1,
+      "description": "\"[UNFRAMED]\" - Concept Photo",
+      "link": "https://i.imgur.com/xQ1juVG.png"
+    },
+    { "code": "WOA#MS003", "member": "Minseo", "initial": "MS", "rarity": 3, "set": 1, "description": null, "link": "https://i.imgur.com/GKbhk4w.png" },
+    { "code": "WOA#LC003", "member": "Lucy", "initial": "LC", "rarity": 3, "set": 1, "description": null, "link": "https://i.imgur.com/18oKjMt.png" },
+    { "code": "WOA#SR003", "member": "Sora", "initial": "SR", "rarity": 3, "set": 1, "description": null, "link": "https://i.imgur.com/cC9SOCI.png" },
+    { "code": "WOA#WY003", "member": "Wooyeon", "initial": "WY", "rarity": 3, "set": 1, "description": null, "link": "https://i.imgur.com/Irdbbv1.png" },
+    { "code": "WOA#NN003", "member": "Nana", "initial": "NN", "rarity": 3, "set": 1, "description": null, "link": "https://i.imgur.com/YVuvWsd.png" },
+    { "code": "WOA#MS004", "member": "Minseo", "initial": "MS", "rarity": 4, "set": 1, "description": null, "link": "https://i.imgur.com/dk4q04c.png" },
+    { "code": "WOA#LC004", "member": "Lucy", "initial": "LC", "rarity": 4, "set": 1, "description": null, "link": "https://i.imgur.com/7K1LZt1.png" },
+    { "code": "WOA#SR004", "member": "Sora", "initial": "SR", "rarity": 4, "set": 1, "description": null, "link": "https://i.imgur.com/kXOKUx5.png" },
+    { "code": "WOA#WY004", "member": "Wooyeon", "initial": "WY", "rarity": 4, "set": 1, "description": null, "link": "https://i.imgur.com/8iT0cVF.png" },
+    { "code": "WOA#NN004", "member": "Nana", "initial": "NN", "rarity": 4, "set": 1, "description": null, "link": "https://i.imgur.com/hGtu64V.png" },
+    { "code": "WOA#MS005", "member": "Minseo", "initial": "MS", "rarity": 5, "set": 1, "description": null, "link": "https://i.imgur.com/PjCCSLV.png" },
+    { "code": "WOA#LC005", "member": "Lucy", "initial": "LC", "rarity": 5, "set": 1, "description": null, "link": "https://i.imgur.com/JuLpm1S.png" },
+    { "code": "WOA#SR005", "member": "Sora", "initial": "SR", "rarity": 5, "set": 1, "description": null, "link": "https://i.imgur.com/50qnDBW.png" },
+    { "code": "WOA#WY005", "member": "Wooyeon", "initial": "WY", "rarity": 5, "set": 1, "description": null, "link": "https://i.imgur.com/Asq2uAf.png" },
+    { "code": "WOA#NN005", "member": "Nana", "initial": "NN", "rarity": 5, "set": 1, "description": null, "link": "https://i.imgur.com/44rg6nq.png" },
+    { "code": "WOA#MS006", "member": "Minseo", "initial": "MS", "rarity": 1, "set": 2, "description": "Wish With W", "link": "https://i.imgur.com/VELOykN.png" },
+    { "code": "WOA#LC006", "member": "Lucy", "initial": "LC", "rarity": 1, "set": 2, "description": "Wish With W", "link": "https://i.imgur.com/UXbD29X.png" },
+    { "code": "WOA#SR006", "member": "Sora", "initial": "SR", "rarity": 1, "set": 2, "description": "Wish With W", "link": "https://i.imgur.com/uP95U4a.png" },
+    { "code": "WOA#WY006", "member": "Wooyeon", "initial": "WY", "rarity": 1, "set": 2, "description": "Wish With W", "link": "https://i.imgur.com/zMzOZzu.png" },
+    { "code": "WOA#NN006", "member": "Nana", "initial": "NN", "rarity": 1, "set": 2, "description": "Wish With W", "link": "https://i.imgur.com/oMzYkwh.png" }
+  ]
+}

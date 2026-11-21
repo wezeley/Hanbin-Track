@@ -1,0 +1,24 @@
+{
+  "number": 227,
+  "name": "Mimiirose",
+  "code": "MMRS",
+  "members": [
+    { "name": "Hyori", "initial": "HR" },
+    { "name": "Jia", "initial": "JA" },
+    { "name": "Yeonjae", "initial": "YJ" },
+    { "name": "Yewon", "initial": "YW" },
+    { "name": "Yunju", "initial": "YU" }
+  ],
+  "cards": [
+    { "code": "MMRS#HR001", "member": "Hyori", "initial": "HR", "rarity": 1, "set": 1, "description": "Awesome", "link": "https://i.imgur.com/thyPuj4.png" },
+    { "code": "MMRS#JA001", "member": "Jia", "initial": "JA", "rarity": 1, "set": 1, "description": "Awesome", "link": "https://i.imgur.com/ZLXvMbW.png" },
+    { "code": "MMRS#YJ001", "member": "Yeonjae", "initial": "YJ", "rarity": 1, "set": 1, "description": "Awesome", "link": "https://i.imgur.com/sxIVM40.png" },
+    { "code": "MMRS#YW001", "member": "Yewon", "initial": "YW", "rarity": 1, "set": 1, "description": "Awesome", "link": "https://i.imgur.com/X70v6fY.png" },
+    { "code": "MMRS#YU001", "member": "Yunju", "initial": "YU", "rarity": 1, "set": 1, "description": "Awesome", "link": "https://i.imgur.com/YpFAeoz.png" },
+    { "code": "MMRS#HR002", "member": "Hyori", "initial": "HR", "rarity": 2, "set": 1, "description": "LIVE", "link": "https://i.imgur.com/8sqB7RR.png" },
+    { "code": "MMRS#JA002", "member": "Jia", "initial": "JA", "rarity": 2, "set": 1, "description": "LIVE", "link": "https://i.imgur.com/VWYrx4d.png" },
+    { "code": "MMRS#YJ002", "member": "Yeonjae", "initial": "YJ", "rarity": 2, "set": 1, "description": "LIVE", "link": "https://i.imgur.com/8BJ1fVH.png" },
+    { "code": "MMRS#YW002", "member": "Yewon", "initial": "YW", "rarity": 2, "set": 1, "description": "LIVE", "link": "https://i.imgur.com/8ZwvXr7.png" },
+    { "code": "MMRS#YU002", "member": "Yunju", "initial": "YU", "rarity": 2, "set": 1, "description": "LIVE", "link": "https://i.imgur.com/U5OnARX.png" }
+  ]
+}

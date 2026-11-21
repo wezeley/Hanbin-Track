@@ -1,0 +1,27 @@
+{
+  "number": 196,
+  "name": "Misamo",
+  "code": "MSM",
+  "members": [
+    { "name": "Mina", "initial": "MN" },
+    { "name": "Momo", "initial": "MO" },
+    { "name": "Sana", "initial": "SN" }
+  ],
+  "cards": [
+    { "code": "MSM#MN001", "member": "Mina", "initial": "MN", "rarity": 1, "set": 1, "description": "Bouquet", "link": "https://i.imgur.com/d2uXXr2.png" },
+    { "code": "MSM#MO001", "member": "Momo", "initial": "MO", "rarity": 1, "set": 1, "description": "Bouquet", "link": "https://i.imgur.com/x147BRS.png" },
+    { "code": "MSM#SN001", "member": "Sana", "initial": "SN", "rarity": 1, "set": 1, "description": "Bouquet", "link": "https://i.imgur.com/h8BhMaA.png" },
+    { "code": "MSM#MN002", "member": "Mina", "initial": "MN", "rarity": 2, "set": 1, "description": "Masterpiece", "link": "https://i.imgur.com/YCoaCxs.png" },
+    { "code": "MSM#MO002", "member": "Momo", "initial": "MO", "rarity": 2, "set": 1, "description": "Masterpiece", "link": "https://i.imgur.com/gXecDx0.png" },
+    { "code": "MSM#SN002", "member": "Sana", "initial": "SN", "rarity": 2, "set": 1, "description": "Masterpiece", "link": "https://i.imgur.com/n4aSGEu.png" },
+    { "code": "MSM#MN003", "member": "Mina", "initial": "MN", "rarity": 3, "set": 1, "description": "Haute Couture", "link": "https://i.imgur.com/6W84IL6.png" },
+    { "code": "MSM#MO003", "member": "Momo", "initial": "MO", "rarity": 3, "set": 1, "description": "Haute Couture", "link": "https://i.imgur.com/VNKXPmo.png" },
+    { "code": "MSM#SN003", "member": "Sana", "initial": "SN", "rarity": 3, "set": 1, "description": "Haute Couture", "link": "https://i.imgur.com/2n5fYIW.png" },
+    { "code": "MSM#MN004", "member": "Mina", "initial": "MN", "rarity": 4, "set": 1, "description": null, "link": "https://i.imgur.com/vomGR3N.png" },
+    { "code": "MSM#MO004", "member": "Momo", "initial": "MO", "rarity": 4, "set": 1, "description": null, "link": "https://i.imgur.com/WKEG9sj.png" },
+    { "code": "MSM#SN004", "member": "Sana", "initial": "SN", "rarity": 4, "set": 1, "description": null, "link": "https://i.imgur.com/U6yLIhG.png" },
+    { "code": "MSM#MN005", "member": "Mina", "initial": "MN", "rarity": 5, "set": 1, "description": "Vogue Magazine", "link": "https://i.imgur.com/aXl8HnZ.png" },
+    { "code": "MSM#MO005", "member": "Momo", "initial": "MO", "rarity": 5, "set": 1, "description": "Vogue Magazine", "link": "https://i.imgur.com/mRVAM3A.png" },
+    { "code": "MSM#SN005", "member": "Sana", "initial": "SN", "rarity": 5, "set": 1, "description": "Vogue Magazine", "link": "https://i.imgur.com/JvVtn7f.png" }
+  ]
+}

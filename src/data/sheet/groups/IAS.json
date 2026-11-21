@@ -1,0 +1,33 @@
+{
+  "number": 189,
+  "name": "Irene & Seulgi",
+  "code": "IAS",
+  "members": [
+    { "name": "Irene", "initial": "IR" },
+    { "name": "Seulgi", "initial": "SG" }
+  ],
+  "cards": [
+    { "code": "IAS#IR001", "member": "Irene", "initial": "IR", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/Q0iprh7.png" },
+    { "code": "IAS#SG001", "member": "Seulgi", "initial": "SG", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/R5HtRCt.png" },
+    { "code": "IAS#IR002", "member": "Irene", "initial": "IR", "rarity": 2, "set": 1, "description": null, "link": "https://i.imgur.com/axjA0i5.png" },
+    { "code": "IAS#SG002", "member": "Seulgi", "initial": "SG", "rarity": 2, "set": 1, "description": null, "link": "https://i.imgur.com/C0kzWxq.png" },
+    { "code": "IAS#IR003", "member": "Irene", "initial": "IR", "rarity": 3, "set": 1, "description": null, "link": "https://i.imgur.com/f3xi9Qp.png" },
+    { "code": "IAS#SG003", "member": "Seulgi", "initial": "SG", "rarity": 3, "set": 1, "description": null, "link": "https://i.imgur.com/44eA3ga.png" },
+    { "code": "IAS#IR004", "member": "Irene", "initial": "IR", "rarity": 4, "set": 1, "description": null, "link": "https://i.imgur.com/N5XdviO.png" },
+    { "code": "IAS#SG004", "member": "Seulgi", "initial": "SG", "rarity": 4, "set": 1, "description": null, "link": "https://i.imgur.com/z9FzdC3.png" },
+    { "code": "IAS#IR005", "member": "Irene", "initial": "IR", "rarity": 5, "set": 1, "description": null, "link": "https://i.imgur.com/X2py9Xd.png" },
+    { "code": "IAS#SG005", "member": "Seulgi", "initial": "SG", "rarity": 5, "set": 1, "description": null, "link": "https://i.imgur.com/3VLE7Mp.png" },
+    { "code": "IAS#IR006", "member": "Irene", "initial": "IR", "rarity": 1, "set": 2, "description": "TILT", "link": "https://i.imgur.com/SwEm0Bv.png" },
+    { "code": "IAS#SG006", "member": "Seulgi", "initial": "SG", "rarity": 1, "set": 2, "description": "TILT", "link": "https://i.imgur.com/OBYD7PE.png" },
+    { "code": "IAS#IR007", "member": "Irene", "initial": "IR", "rarity": 2, "set": 2, "description": "TILT", "link": "https://i.imgur.com/1vc3si6.png" },
+    { "code": "IAS#SG007", "member": "Seulgi", "initial": "SG", "rarity": 2, "set": 2, "description": "TILT", "link": "https://i.imgur.com/w1ZakYz.png" },
+    { "code": "IAS#IR008", "member": "Irene", "initial": "IR", "rarity": 3, "set": 2, "description": "TILT", "link": "https://i.imgur.com/xHKCxj8.png" },
+    { "code": "IAS#SG008", "member": "Seulgi", "initial": "SG", "rarity": 3, "set": 2, "description": "TILT", "link": "https://i.imgur.com/xviGNuE.png" },
+    { "code": "IAS#IR009", "member": "Irene", "initial": "IR", "rarity": 4, "set": 2, "description": "TILT Scan", "link": "https://i.imgur.com/KiHLb9g.png" },
+    { "code": "IAS#SG009", "member": "Seulgi", "initial": "SG", "rarity": 4, "set": 2, "description": "TILT Scan", "link": "https://i.imgur.com/mQvHyTh.png" },
+    { "code": "IAS#IR010", "member": "Irene", "initial": "IR", "rarity": 5, "set": 2, "description": "Concert", "link": "https://i.imgur.com/oRLgbPm.png" },
+    { "code": "IAS#SG010", "member": "Seulgi", "initial": "SG", "rarity": 5, "set": 2, "description": "Concert", "link": "https://i.imgur.com/ayiswYz.png" },
+    { "code": "IAS#IR011", "member": "Irene", "initial": "IR", "rarity": 1, "set": 3, "description": "Cheetah", "link": "https://i.imgur.com/CADRHHd.png" },
+    { "code": "IAS#SG011", "member": "Seulgi", "initial": "SG", "rarity": 1, "set": 3, "description": "Cheetah", "link": "https://i.imgur.com/L245tSb.png" }
+  ]
+}

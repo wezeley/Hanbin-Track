@@ -1,0 +1,23 @@
+{
+  "number": 280,
+  "name": "Modyssey",
+  "code": "MDSY",
+  "members": [
+    { "name": "Fan Zheyi", "initial": "ZY" },
+    { "name": "Hengyu", "initial": "HG" },
+    { "name": "LynnLynn", "initial": "LL" },
+    { "name": "Rowan", "initial": "RW" },
+    { "name": "Suren", "initial": "SR" },
+    { "name": "Yichen", "initial": "YC" },
+    { "name": "Zihao", "initial": "ZH" }
+  ],
+  "cards": [
+    { "code": "MDSY#ZY001", "member": "Fan Zheyi", "initial": "ZY", "rarity": 1, "set": 1, "description": "1.Got Hooked: An Addictive Symphony - Concept Photos", "link": "https://i.imgur.com/TQAvg45.png" },
+    { "code": "MDSY#HG001", "member": "Hengyu", "initial": "HG", "rarity": 1, "set": 1, "description": "1.Got Hooked: An Addictive Symphony - Concept Photos", "link": "https://i.imgur.com/MImbND6.png" },
+    { "code": "MDSY#LL001", "member": "LynnLynn", "initial": "LL", "rarity": 1, "set": 1, "description": "1.Got Hooked: An Addictive Symphony - Concept Photos", "link": "https://i.imgur.com/BizV8uw.png" },
+    { "code": "MDSY#RW001", "member": "Rowan", "initial": "RW", "rarity": 1, "set": 1, "description": "1.Got Hooked: An Addictive Symphony - Concept Photos", "link": "https://i.imgur.com/W0fRsu1.png" },
+    { "code": "MDSY#SR001", "member": "Suren", "initial": "SR", "rarity": 1, "set": 1, "description": "1.Got Hooked: An Addictive Symphony - Concept Photos", "link": "https://i.imgur.com/Pg9ftBV.png" },
+    { "code": "MDSY#YC001", "member": "Yichen", "initial": "YC", "rarity": 1, "set": 1, "description": "1.Got Hooked: An Addictive Symphony - Concept Photos", "link": "https://i.imgur.com/FHbiGUm.png" },
+    { "code": "MDSY#ZH001", "member": "Zihao", "initial": "ZH", "rarity": 1, "set": 1, "description": "1.Got Hooked: An Addictive Symphony - Concept Photos", "link": "https://i.imgur.com/SPQeelf.png" }
+  ]
+}

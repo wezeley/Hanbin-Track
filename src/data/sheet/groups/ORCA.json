@@ -1,0 +1,27 @@
+{
+  "number": 152,
+  "name": "Orange Caramel",
+  "code": "ORCA",
+  "members": [
+    { "name": "Lizzy", "initial": "LZ" },
+    { "name": "Nana", "initial": "NN" },
+    { "name": "Raina", "initial": "RN" }
+  ],
+  "cards": [
+    { "code": "ORCA#LZ001", "member": "Lizzy", "initial": "LZ", "rarity": 1, "set": 1, "description": "Bangkok City", "link": "https://i.imgur.com/hEtUbzk.png" },
+    { "code": "ORCA#NN001", "member": "Nana", "initial": "NN", "rarity": 1, "set": 1, "description": "Bangkok City", "link": "https://i.imgur.com/xzA60Vu.png" },
+    { "code": "ORCA#RN001", "member": "Raina", "initial": "RN", "rarity": 1, "set": 1, "description": "Bangkok City", "link": "https://i.imgur.com/54eiw5Z.png" },
+    { "code": "ORCA#LZ002", "member": "Lizzy", "initial": "LZ", "rarity": 2, "set": 1, "description": "Catallena", "link": "https://i.imgur.com/kmkIU3n.png" },
+    { "code": "ORCA#NN002", "member": "Nana", "initial": "NN", "rarity": 2, "set": 1, "description": "Catallena", "link": "https://i.imgur.com/Cf9ncqd.png" },
+    { "code": "ORCA#RN002", "member": "Raina", "initial": "RN", "rarity": 2, "set": 1, "description": "Catallena", "link": "https://i.imgur.com/JfMeNPy.png" },
+    { "code": "ORCA#LZ003", "member": "Lizzy", "initial": "LZ", "rarity": 3, "set": 1, "description": "My Copycat", "link": "https://i.imgur.com/0xPlLTO.png" },
+    { "code": "ORCA#NN003", "member": "Nana", "initial": "NN", "rarity": 3, "set": 1, "description": "My Copycat", "link": "https://i.imgur.com/C7sYswY.png" },
+    { "code": "ORCA#RN003", "member": "Raina", "initial": "RN", "rarity": 3, "set": 1, "description": "My Copycat", "link": "https://i.imgur.com/pQdQwWu.png" },
+    { "code": "ORCA#LZ004", "member": "Lizzy", "initial": "LZ", "rarity": 4, "set": 1, "description": "first mini album backstage", "link": "https://i.imgur.com/1o2vCbM.png" },
+    { "code": "ORCA#NN004", "member": "Nana", "initial": "NN", "rarity": 4, "set": 1, "description": "first mini album backstage", "link": "https://i.imgur.com/mh0VzdF.png" },
+    { "code": "ORCA#RN004", "member": "Raina", "initial": "RN", "rarity": 4, "set": 1, "description": "first mini album backstage", "link": "https://i.imgur.com/bEuM4WL.png" },
+    { "code": "ORCA#LZ005", "member": "Lizzy", "initial": "LZ", "rarity": 5, "set": 1, "description": "Ceci Magazine (2010)", "link": "https://i.imgur.com/rAqZcQL.png" },
+    { "code": "ORCA#NN005", "member": "Nana", "initial": "NN", "rarity": 5, "set": 1, "description": "Ceci Magazine (2010)", "link": "https://i.imgur.com/D35fXgV.png" },
+    { "code": "ORCA#RN005", "member": "Raina", "initial": "RN", "rarity": 5, "set": 1, "description": "Ceci Magazine (2010)", "link": "https://i.imgur.com/Jm7nr63.png" }
+  ]
+}

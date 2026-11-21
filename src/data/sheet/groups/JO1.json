@@ -1,0 +1,42 @@
+{
+  "number": 214,
+  "name": "JO1",
+  "code": "JO1",
+  "members": [
+    { "name": "Junki", "initial": "JK" },
+    { "name": "Keigo", "initial": "KG" },
+    { "name": "Mame", "initial": "MM" },
+    { "name": "Ren", "initial": "RN" },
+    { "name": "Ruki", "initial": "RK" },
+    { "name": "Shion", "initial": "SO" },
+    { "name": "Sho", "initial": "SH" },
+    { "name": "Shosei", "initial": "SS" },
+    { "name": "Sky", "initial": "SK" },
+    { "name": "Syoya", "initial": "SY" },
+    { "name": "Takumi", "initial": "TK" }
+  ],
+  "cards": [
+    { "code": "JO1#JK001", "member": "Junki", "initial": "JK", "rarity": 1, "set": 1, "description": "Handz in my Pocket", "link": "https://i.imgur.com/RDhfjbg.png" },
+    { "code": "JO1#KG001", "member": "Keigo", "initial": "KG", "rarity": 1, "set": 1, "description": "Handz in my Pocket", "link": "https://i.imgur.com/C47SV2O.png" },
+    { "code": "JO1#MM001", "member": "Mame", "initial": "MM", "rarity": 1, "set": 1, "description": "Handz in my Pocket", "link": "https://i.imgur.com/m9zzWwy.png" },
+    { "code": "JO1#RN001", "member": "Ren", "initial": "RN", "rarity": 1, "set": 1, "description": "Handz in my Pocket", "link": "https://i.imgur.com/3FloV9x.png" },
+    { "code": "JO1#RK001", "member": "Ruki", "initial": "RK", "rarity": 1, "set": 1, "description": "Handz in my Pocket", "link": "https://i.imgur.com/zqMVqr8.png" },
+    { "code": "JO1#SO001", "member": "Shion", "initial": "SO", "rarity": 1, "set": 1, "description": "Handz in my Pocket", "link": "https://i.imgur.com/wQiX7dL.png" },
+    { "code": "JO1#SH001", "member": "Sho", "initial": "SH", "rarity": 1, "set": 1, "description": "Handz in my Pocket", "link": "https://i.imgur.com/ippG1sI.png" },
+    { "code": "JO1#SS001", "member": "Shosei", "initial": "SS", "rarity": 1, "set": 1, "description": "Handz in my Pocket", "link": "https://i.imgur.com/LmIXO6o.png" },
+    { "code": "JO1#SK001", "member": "Sky", "initial": "SK", "rarity": 1, "set": 1, "description": "Handz in my Pocket", "link": "https://i.imgur.com/mTlj2iv.png" },
+    { "code": "JO1#SY001", "member": "Syoya", "initial": "SY", "rarity": 1, "set": 1, "description": "Handz in my Pocket", "link": "https://i.imgur.com/Jg9Drlq.png" },
+    { "code": "JO1#TK001", "member": "Takumi", "initial": "TK", "rarity": 1, "set": 1, "description": "Handz in my Pocket", "link": "https://i.imgur.com/vcnMbgx.png" },
+    { "code": "JO1#JK002", "member": "Junki", "initial": "JK", "rarity": 2, "set": 1, "description": "Be Classic - Concept Photos", "link": "https://i.imgur.com/HaSr6Hl.png" },
+    { "code": "JO1#KG002", "member": "Keigo", "initial": "KG", "rarity": 2, "set": 1, "description": "Be Classic - Concept Photos", "link": "https://i.imgur.com/vxOKwux.png" },
+    { "code": "JO1#MM002", "member": "Mame", "initial": "MM", "rarity": 2, "set": 1, "description": "Be Classic - Concept Photos", "link": "https://i.imgur.com/qfmRuFw.png" },
+    { "code": "JO1#RN002", "member": "Ren", "initial": "RN", "rarity": 2, "set": 1, "description": "Be Classic - Concept Photos", "link": "https://i.imgur.com/sDTtKP8.png" },
+    { "code": "JO1#RK002", "member": "Ruki", "initial": "RK", "rarity": 2, "set": 1, "description": "Be Classic - Concept Photos", "link": "https://i.imgur.com/E80hR2s.png" },
+    { "code": "JO1#SO002", "member": "Shion", "initial": "SO", "rarity": 2, "set": 1, "description": "Be Classic - Concept Photos", "link": "https://i.imgur.com/QczbFRx.png" },
+    { "code": "JO1#SH002", "member": "Sho", "initial": "SH", "rarity": 2, "set": 1, "description": "Be Classic - Concept Photos", "link": "https://i.imgur.com/X1eU370.png" },
+    { "code": "JO1#SS002", "member": "Shosei", "initial": "SS", "rarity": 2, "set": 1, "description": "Be Classic - Concept Photos", "link": "https://i.imgur.com/9ogbpjq.png" },
+    { "code": "JO1#SK002", "member": "Sky", "initial": "SK", "rarity": 2, "set": 1, "description": "Be Classic - Concept Photos", "link": "https://i.imgur.com/PPyRVY3.png" },
+    { "code": "JO1#SY002", "member": "Syoya", "initial": "SY", "rarity": 2, "set": 1, "description": "Be Classic - Concept Photos", "link": "https://i.imgur.com/ISycFGV.png" },
+    { "code": "JO1#TK002", "member": "Takumi", "initial": "TK", "rarity": 2, "set": 1, "description": "Be Classic - Concept Photos", "link": "https://i.imgur.com/9sMzdwy.png" }
+  ]
+}

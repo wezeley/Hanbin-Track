@@ -1,0 +1,84 @@
+{
+  "number": 35,
+  "name": "MCND",
+  "code": "MCND",
+  "members": [
+    { "name": "Castle J", "initial": "CJ" },
+    { "name": "Huijun", "initial": "HJ" },
+    { "name": "Minjae", "initial": "MJ" },
+    { "name": "BIC", "initial": "BC" },
+    { "name": "Win", "initial": "WN" }
+  ],
+  "cards": [
+    {
+      "code": "MCND#CJ001",
+      "member": "Castle J",
+      "initial": "CJ",
+      "rarity": 1,
+      "set": 1,
+      "description": "\"[X10]\" - Concept Photo",
+      "link": "https://i.imgur.com/zWV3ogu.png"
+    },
+    {
+      "code": "MCND#HJ001",
+      "member": "Huijun",
+      "initial": "HJ",
+      "rarity": 1,
+      "set": 1,
+      "description": "\"[X10]\" - Concept Photo",
+      "link": "https://i.imgur.com/dWaVHvD.png"
+    },
+    {
+      "code": "MCND#MJ001",
+      "member": "Minjae",
+      "initial": "MJ",
+      "rarity": 1,
+      "set": 1,
+      "description": "\"[X10]\" - Concept Photo",
+      "link": "https://i.imgur.com/vH1C9vx.png"
+    },
+    {
+      "code": "MCND#BC001",
+      "member": "BIC",
+      "initial": "BC",
+      "rarity": 1,
+      "set": 1,
+      "description": "\"[X10]\" - Concept Photo",
+      "link": "https://i.imgur.com/thcgrMq.png"
+    },
+    {
+      "code": "MCND#WN001",
+      "member": "Win",
+      "initial": "WN",
+      "rarity": 1,
+      "set": 1,
+      "description": "\"[X10]\" - Concept Photo",
+      "link": "https://i.imgur.com/ze3IrBV.png"
+    },
+    { "code": "MCND#CJ002", "member": "Castle J", "initial": "CJ", "rarity": 2, "set": 1, "description": "Summer Single ADDD - Concept Photo", "link": "https://i.imgur.com/z9tOCoW.png" },
+    { "code": "MCND#HJ002", "member": "Huijun", "initial": "HJ", "rarity": 2, "set": 1, "description": "Summer Single ADDD - Concept Photo", "link": "https://i.imgur.com/OIRV3zc.png" },
+    { "code": "MCND#MJ002", "member": "Minjae", "initial": "MJ", "rarity": 2, "set": 1, "description": "Summer Single ADDD - Concept Photo", "link": "https://i.imgur.com/dj7pDNG.png" },
+    { "code": "MCND#BC002", "member": "BIC", "initial": "BC", "rarity": 2, "set": 1, "description": "Summer Single ADDD - Concept Photo", "link": "https://i.imgur.com/pWwHHz9.png" },
+    { "code": "MCND#WN002", "member": "Win", "initial": "WN", "rarity": 2, "set": 1, "description": "Summer Single ADDD - Concept Photo", "link": "https://i.imgur.com/zurz5Ig.png" },
+    { "code": "MCND#CJ003", "member": "Castle J", "initial": "CJ", "rarity": 3, "set": 1, "description": "Season Greetings Behind", "link": "https://i.imgur.com/6tynDXO.png" },
+    { "code": "MCND#HJ003", "member": "Huijun", "initial": "HJ", "rarity": 3, "set": 1, "description": "Season Greetings Behind", "link": "https://i.imgur.com/CXWz4qj.png" },
+    { "code": "MCND#MJ003", "member": "Minjae", "initial": "MJ", "rarity": 3, "set": 1, "description": "Season Greetings Behind", "link": "https://i.imgur.com/8sqNxhP.png" },
+    { "code": "MCND#BC003", "member": "BIC", "initial": "BC", "rarity": 3, "set": 1, "description": "Season Greetings Behind", "link": "https://i.imgur.com/UfkYjib.png" },
+    { "code": "MCND#WN003", "member": "Win", "initial": "WN", "rarity": 3, "set": 1, "description": "Season Greetings Behind", "link": "https://i.imgur.com/m6cKIs6.png" },
+    { "code": "MCND#CJ004", "member": "Castle J", "initial": "CJ", "rarity": 4, "set": 1, "description": null, "link": "https://i.imgur.com/KUouhle.png" },
+    { "code": "MCND#HJ004", "member": "Huijun", "initial": "HJ", "rarity": 4, "set": 1, "description": null, "link": "https://i.imgur.com/cdm3Oia.png" },
+    { "code": "MCND#MJ004", "member": "Minjae", "initial": "MJ", "rarity": 4, "set": 1, "description": null, "link": "https://i.imgur.com/0ghHEFK.png" },
+    { "code": "MCND#BC004", "member": "BIC", "initial": "BC", "rarity": 4, "set": 1, "description": null, "link": "https://i.imgur.com/BxkBoS3.png" },
+    { "code": "MCND#WN004", "member": "Win", "initial": "WN", "rarity": 4, "set": 1, "description": null, "link": "https://i.imgur.com/9V199j1.png" },
+    { "code": "MCND#CJ005", "member": "Castle J", "initial": "CJ", "rarity": 5, "set": 1, "description": "Official Fanclub", "link": "https://i.imgur.com/azdPfSw.png" },
+    { "code": "MCND#HJ005", "member": "Huijun", "initial": "HJ", "rarity": 5, "set": 1, "description": "Official Fanclub", "link": "https://i.imgur.com/8grUtGr.png" },
+    { "code": "MCND#MJ005", "member": "Minjae", "initial": "MJ", "rarity": 5, "set": 1, "description": "Official Fanclub", "link": "https://i.imgur.com/C0UhSKI.png" },
+    { "code": "MCND#BC005", "member": "BIC", "initial": "BC", "rarity": 5, "set": 1, "description": "Official Fanclub", "link": "https://i.imgur.com/7rO0zGN.png" },
+    { "code": "MCND#WN005", "member": "Win", "initial": "WN", "rarity": 5, "set": 1, "description": "Official Fanclub", "link": "https://i.imgur.com/q5rgaWd.png" },
+    { "code": "MCND#CJ006", "member": "Castle J", "initial": "CJ", "rarity": 1, "set": 2, "description": "Devil Youth Club", "link": "https://i.imgur.com/3yNZqPT.png" },
+    { "code": "MCND#HJ006", "member": "Huijun", "initial": "HJ", "rarity": 1, "set": 2, "description": "Devil Youth Club", "link": "https://i.imgur.com/Kj13Xq4.png" },
+    { "code": "MCND#MJ006", "member": "Minjae", "initial": "MJ", "rarity": 1, "set": 2, "description": "Devil Youth Club", "link": "https://i.imgur.com/2e2oxod.png" },
+    { "code": "MCND#BC006", "member": "BIC", "initial": "BC", "rarity": 1, "set": 2, "description": "Devil Youth Club", "link": "https://i.imgur.com/pUrGKei.png" },
+    { "code": "MCND#WN006", "member": "Win", "initial": "WN", "rarity": 1, "set": 2, "description": "Devil Youth Club", "link": "https://i.imgur.com/AFZBe0g.png" }
+  ]
+}

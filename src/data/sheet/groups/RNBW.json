@@ -1,0 +1,37 @@
+{
+  "number": 287,
+  "name": "Rainbow",
+  "code": "RNBW",
+  "members": [
+    { "name": "Hyunyoung", "initial": "HY" },
+    { "name": "Jaekyung", "initial": "JK" },
+    { "name": "Jisook", "initial": "JS" },
+    { "name": "Noeul", "initial": "NE" },
+    { "name": "Seungah", "initial": "SA" },
+    { "name": "Woori", "initial": "WR" },
+    { "name": "Yoonhye", "initial": "YH" }
+  ],
+  "cards": [
+    { "code": "RNBW#HY001", "member": "Hyunyoung", "initial": "HY", "rarity": 1, "set": 1, "description": "10th Anniversary Special Album: Over The Rainbow - Concept Photo", "link": "https://i.imgur.com/klI0eeb.png" },
+    { "code": "RNBW#JK001", "member": "Jaekyung", "initial": "JK", "rarity": 1, "set": 1, "description": "10th Anniversary Special Album: Over The Rainbow - Concept Photo", "link": "https://i.imgur.com/xdxfGxf.png" },
+    { "code": "RNBW#JS001", "member": "Jisook", "initial": "JS", "rarity": 1, "set": 1, "description": "10th Anniversary Special Album: Over The Rainbow - Concept Photo", "link": "https://i.imgur.com/VPOdBqu.png" },
+    { "code": "RNBW#NE001", "member": "Noeul", "initial": "NE", "rarity": 1, "set": 1, "description": "10th Anniversary Special Album: Over The Rainbow - Concept Photo", "link": "https://i.imgur.com/46iVR4f.png" },
+    { "code": "RNBW#SA001", "member": "Seungah", "initial": "SA", "rarity": 1, "set": 1, "description": "10th Anniversary Special Album: Over The Rainbow - Concept Photo", "link": "https://i.imgur.com/NvkOQ0O.png" },
+    { "code": "RNBW#WR001", "member": "Woori", "initial": "WR", "rarity": 1, "set": 1, "description": "10th Anniversary Special Album: Over The Rainbow - Concept Photo", "link": "https://i.imgur.com/Fim0XZk.png" },
+    { "code": "RNBW#YH001", "member": "Yoonhye", "initial": "YH", "rarity": 1, "set": 1, "description": "10th Anniversary Special Album: Over The Rainbow - Concept Photo", "link": "https://i.imgur.com/c4PgOvr.png" },
+    { "code": "RNBW#HY002", "member": "Hyunyoung", "initial": "HY", "rarity": 2, "set": 1, "description": "Prism - Concept Photo", "link": "https://i.imgur.com/EliWlHT.png" },
+    { "code": "RNBW#JK002", "member": "Jaekyung", "initial": "JK", "rarity": 2, "set": 1, "description": "Prism - Concept Photo", "link": "https://i.imgur.com/qtWzcJy.png" },
+    { "code": "RNBW#JS002", "member": "Jisook", "initial": "JS", "rarity": 2, "set": 1, "description": "Prism - Concept Photo", "link": "https://i.imgur.com/zqW7dGz.png" },
+    { "code": "RNBW#NE002", "member": "Noeul", "initial": "NE", "rarity": 2, "set": 1, "description": "Prism - Concept Photo", "link": "https://i.imgur.com/uTjzUQk.png" },
+    { "code": "RNBW#SA002", "member": "Seungah", "initial": "SA", "rarity": 2, "set": 1, "description": "Prism - Concept Photo", "link": "https://i.imgur.com/RIygh89.png" },
+    { "code": "RNBW#WR002", "member": "Woori", "initial": "WR", "rarity": 2, "set": 1, "description": "Prism - Concept Photo", "link": "https://i.imgur.com/V4Wmhv8.png" },
+    { "code": "RNBW#YH002", "member": "Yoonhye", "initial": "YH", "rarity": 2, "set": 1, "description": "Prism - Concept Photo", "link": "https://i.imgur.com/IgO6HUu.png" },
+    { "code": "RNBW#HY003", "member": "Hyunyoung", "initial": "HY", "rarity": 3, "set": 1, "description": "INNOCENT - Concept Photos", "link": "https://i.imgur.com/3Yk782i.png" },
+    { "code": "RNBW#JK003", "member": "Jaekyung", "initial": "JK", "rarity": 3, "set": 1, "description": "INNOCENT - Concept Photos", "link": "https://i.imgur.com/ZUzJ2h6.png" },
+    { "code": "RNBW#JS003", "member": "Jisook", "initial": "JS", "rarity": 3, "set": 1, "description": "INNOCENT - Concept Photos", "link": "https://i.imgur.com/qeUCqWf.png" },
+    { "code": "RNBW#NE003", "member": "Noeul", "initial": "NE", "rarity": 3, "set": 1, "description": "INNOCENT - Concept Photos", "link": "https://i.imgur.com/zWe3sTI.png" },
+    { "code": "RNBW#SA003", "member": "Seungah", "initial": "SA", "rarity": 3, "set": 1, "description": "INNOCENT - Concept Photos", "link": "https://i.imgur.com/Y9lQYje.png" },
+    { "code": "RNBW#WR003", "member": "Woori", "initial": "WR", "rarity": 3, "set": 1, "description": "INNOCENT - Concept Photos", "link": "https://i.imgur.com/yTFksJI.png" },
+    { "code": "RNBW#YH003", "member": "Yoonhye", "initial": "YH", "rarity": 3, "set": 1, "description": "INNOCENT - Concept Photos", "link": "https://i.imgur.com/V85uok8.png" }
+  ]
+}

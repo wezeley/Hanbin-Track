@@ -1,0 +1,29 @@
+{
+  "number": 270,
+  "name": "Hi-Fi Un!corn",
+  "code": "HFUC",
+  "members": [
+    { "name": "Hyunyul", "initial": "HY" },
+    { "name": "Kiyoon", "initial": "KY" },
+    { "name": "Min", "initial": "MN" },
+    { "name": "Shuto", "initial": "ST" },
+    { "name": "Taemin", "initial": "TM" }
+  ],
+  "cards": [
+    { "code": "HFUC#HY001", "member": "Hyunyul", "initial": "HY", "rarity": 1, "set": 1, "description": "Teenage Blue - Concept Photos", "link": "https://i.imgur.com/cqWfSzX.png" },
+    { "code": "HFUC#KY001", "member": "Kiyoon", "initial": "KY", "rarity": 1, "set": 1, "description": "Teenage Blue - Concept Photos", "link": "https://i.imgur.com/RS3mndS.png" },
+    { "code": "HFUC#MN001", "member": "Min", "initial": "MN", "rarity": 1, "set": 1, "description": "Teenage Blue - Concept Photos", "link": "https://i.imgur.com/5OpNnNh.png" },
+    { "code": "HFUC#ST001", "member": "Shuto", "initial": "ST", "rarity": 1, "set": 1, "description": "Teenage Blue - Concept Photos", "link": "https://i.imgur.com/d6Qwn4d.png" },
+    { "code": "HFUC#TM001", "member": "Taemin", "initial": "TM", "rarity": 1, "set": 1, "description": "Teenage Blue - Concept Photos", "link": "https://i.imgur.com/aLPPSlc.png" },
+    { "code": "HFUC#HY002", "member": "Hyunyul", "initial": "HY", "rarity": 2, "set": 1, "description": "H!dden Color - Vol.1 라일라(LAILA) - Concept Photos", "link": "https://i.imgur.com/rv7aLeW.png" },
+    { "code": "HFUC#KY002", "member": "Kiyoon", "initial": "KY", "rarity": 2, "set": 1, "description": "H!dden Color - Vol.1 라일라(LAILA) - Concept Photos", "link": "https://i.imgur.com/efo6IC8.png" },
+    { "code": "HFUC#MN002", "member": "Min", "initial": "MN", "rarity": 2, "set": 1, "description": "H!dden Color - Vol.1 라일라(LAILA) - Concept Photos", "link": "https://i.imgur.com/KWcpPXc.png" },
+    { "code": "HFUC#ST002", "member": "Shuto", "initial": "ST", "rarity": 2, "set": 1, "description": "H!dden Color - Vol.1 라일라(LAILA) - Concept Photos", "link": "https://i.imgur.com/n8mG6a0.png" },
+    { "code": "HFUC#TM002", "member": "Taemin", "initial": "TM", "rarity": 2, "set": 1, "description": "H!dden Color - Vol.1 라일라(LAILA) - Concept Photos", "link": "https://i.imgur.com/kHrJljp.png" },
+    { "code": "HFUC#HY003", "member": "Hyunyul", "initial": "HY", "rarity": 3, "set": 1, "description": "DREAMING - Concept Photos", "link": "https://i.imgur.com/PhjH8v2.png" },
+    { "code": "HFUC#KY003", "member": "Kiyoon", "initial": "KY", "rarity": 3, "set": 1, "description": "DREAMING - Concept Photos", "link": "https://i.imgur.com/DB4ue8g.png" },
+    { "code": "HFUC#MN003", "member": "Min", "initial": "MN", "rarity": 3, "set": 1, "description": "DREAMING - Concept Photos", "link": "https://i.imgur.com/dMQMmti.png" },
+    { "code": "HFUC#ST003", "member": "Shuto", "initial": "ST", "rarity": 3, "set": 1, "description": "DREAMING - Concept Photos", "link": "https://i.imgur.com/YHkNSs3.png" },
+    { "code": "HFUC#TM003", "member": "Taemin", "initial": "TM", "rarity": 3, "set": 1, "description": "DREAMING - Concept Photos", "link": "https://i.imgur.com/ePPauFK.png" }
+  ]
+}

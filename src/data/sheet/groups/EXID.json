@@ -1,0 +1,29 @@
+{
+  "number": 96,
+  "name": "EXID",
+  "code": "EXID",
+  "members": [
+    { "name": "Elly", "initial": "EL" },
+    { "name": "Hani", "initial": "HN" },
+    { "name": "Hyelin", "initial": "HL" },
+    { "name": "Jeonghwa", "initial": "JH" },
+    { "name": "Solji", "initial": "SJ" }
+  ],
+  "cards": [
+    { "code": "EXID#EL001", "member": "Elly", "initial": "EL", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/4q98qzX.png" },
+    { "code": "EXID#HN001", "member": "Hani", "initial": "HN", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/H9rL3Fo.png" },
+    { "code": "EXID#HL001", "member": "Hyelin", "initial": "HL", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/Vb6QT5C.png" },
+    { "code": "EXID#JH001", "member": "Jeonghwa", "initial": "JH", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/H4lC8xq.png" },
+    { "code": "EXID#SJ001", "member": "Solji", "initial": "SJ", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/e57VIy5.png" },
+    { "code": "EXID#EL002", "member": "Elly", "initial": "EL", "rarity": 2, "set": 1, "description": null, "link": "https://i.imgur.com/5qQcSGa.png" },
+    { "code": "EXID#HN002", "member": "Hani", "initial": "HN", "rarity": 2, "set": 1, "description": null, "link": "https://i.imgur.com/DUPNUJS.png" },
+    { "code": "EXID#HL002", "member": "Hyelin", "initial": "HL", "rarity": 2, "set": 1, "description": null, "link": "https://i.imgur.com/9yibc0N.png" },
+    { "code": "EXID#JH002", "member": "Jeonghwa", "initial": "JH", "rarity": 2, "set": 1, "description": null, "link": "https://i.imgur.com/WyBAd01.png" },
+    { "code": "EXID#SJ002", "member": "Solji", "initial": "SJ", "rarity": 2, "set": 1, "description": null, "link": "https://i.imgur.com/XfuBbCJ.png" },
+    { "code": "EXID#EL003", "member": "Elly", "initial": "EL", "rarity": 3, "set": 1, "description": null, "link": "https://i.imgur.com/cZvSd9a.png" },
+    { "code": "EXID#HN003", "member": "Hani", "initial": "HN", "rarity": 3, "set": 1, "description": null, "link": "https://i.imgur.com/AvnACkS.png" },
+    { "code": "EXID#HL003", "member": "Hyelin", "initial": "HL", "rarity": 3, "set": 1, "description": null, "link": "https://i.imgur.com/1qCNsy1.png" },
+    { "code": "EXID#JH003", "member": "Jeonghwa", "initial": "JH", "rarity": 3, "set": 1, "description": null, "link": "https://i.imgur.com/RBUMhGa.png" },
+    { "code": "EXID#SJ003", "member": "Solji", "initial": "SJ", "rarity": 3, "set": 1, "description": null, "link": "https://i.imgur.com/5MAN3GQ.png" }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "number": 237,
+  "name": "TVXQ",
+  "code": "TVXQ",
+  "members": [
+    { "name": "Max", "initial": "MX" },
+    { "name": "U-Know", "initial": "UK" }
+  ],
+  "cards": [
+    { "code": "TVXQ#MX001", "member": "Max", "initial": "MX", "rarity": 1, "set": 1, "description": "20&2 - Concept Photo", "link": "https://i.imgur.com/WvBwI4F.png" },
+    { "code": "TVXQ#UK001", "member": "U-Know", "initial": "UK", "rarity": 1, "set": 1, "description": "20&2 - Concept Photo", "link": "https://i.imgur.com/oXi0sUW.png" },
+    { "code": "TVXQ#MX002", "member": "Max", "initial": "MX", "rarity": 2, "set": 1, "description": "ZONE - Concept Photo", "link": "https://i.imgur.com/TGlp6it.png" },
+    { "code": "TVXQ#UK002", "member": "U-Know", "initial": "UK", "rarity": 2, "set": 1, "description": "ZONE - Concept Photo", "link": "https://i.imgur.com/jRezIzW.png" },
+    { "code": "TVXQ#MX003", "member": "Max", "initial": "MX", "rarity": 3, "set": 1, "description": "2025 Season's Greetings", "link": "https://i.imgur.com/G1kcXPo.png" },
+    { "code": "TVXQ#UK003", "member": "U-Know", "initial": "UK", "rarity": 3, "set": 1, "description": "2025 Season's Greetings", "link": "https://i.imgur.com/cBcgUfQ.png" },
+    { "code": "TVXQ#MX004", "member": "Max", "initial": "MX", "rarity": 4, "set": 1, "description": null, "link": "https://i.imgur.com/FtKwn9W.png" },
+    { "code": "TVXQ#UK004", "member": "U-Know", "initial": "UK", "rarity": 4, "set": 1, "description": null, "link": "https://i.imgur.com/fxiFgl3.png" },
+    { "code": "TVXQ#MX005", "member": "Max", "initial": "MX", "rarity": 5, "set": 1, "description": null, "link": "https://i.imgur.com/WJ91hRP.png" },
+    { "code": "TVXQ#UK005", "member": "U-Know", "initial": "UK", "rarity": 5, "set": 1, "description": null, "link": "https://i.imgur.com/3bNAhsM.png" }
+  ]
+}

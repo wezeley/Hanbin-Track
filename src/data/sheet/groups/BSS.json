@@ -1,0 +1,27 @@
+{
+  "number": 73,
+  "name": "BSS",
+  "code": "BSS",
+  "members": [
+    { "name": "DK", "initial": "DK" },
+    { "name": "Seungkwan", "initial": "SK" },
+    { "name": "Hoshi", "initial": "HS" }
+  ],
+  "cards": [
+    { "code": "BSS#DK001", "member": "DK", "initial": "DK", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/9YEFUel.png" },
+    { "code": "BSS#SK001", "member": "Seungkwan", "initial": "SK", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/j3TfTkU.png" },
+    { "code": "BSS#HS001", "member": "Hoshi", "initial": "HS", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/PwGEmLC.png" },
+    { "code": "BSS#DK002", "member": "DK", "initial": "DK", "rarity": 2, "set": 1, "description": null, "link": "https://i.imgur.com/cVRLj3e.png" },
+    { "code": "BSS#SK002", "member": "Seungkwan", "initial": "SK", "rarity": 2, "set": 1, "description": null, "link": "https://i.imgur.com/IS3qnqe.png" },
+    { "code": "BSS#HS002", "member": "Hoshi", "initial": "HS", "rarity": 2, "set": 1, "description": null, "link": "https://i.imgur.com/usuKK2x.png" },
+    { "code": "BSS#DK003", "member": "DK", "initial": "DK", "rarity": 3, "set": 1, "description": null, "link": "https://i.imgur.com/wT74RZw.png" },
+    { "code": "BSS#SK003", "member": "Seungkwan", "initial": "SK", "rarity": 3, "set": 1, "description": null, "link": "https://i.imgur.com/0mrMox3.png" },
+    { "code": "BSS#HS003", "member": "Hoshi", "initial": "HS", "rarity": 3, "set": 1, "description": null, "link": "https://i.imgur.com/XaQVZyo.png" },
+    { "code": "BSS#DK004", "member": "DK", "initial": "DK", "rarity": 4, "set": 1, "description": null, "link": "https://i.imgur.com/Z3WXRVR.png" },
+    { "code": "BSS#SK004", "member": "Seungkwan", "initial": "SK", "rarity": 4, "set": 1, "description": null, "link": "https://i.imgur.com/oJW9200.png" },
+    { "code": "BSS#HS004", "member": "Hoshi", "initial": "HS", "rarity": 4, "set": 1, "description": null, "link": "https://i.imgur.com/4SMHtpB.png" },
+    { "code": "BSS#DK005", "member": "DK", "initial": "DK", "rarity": 5, "set": 1, "description": null, "link": "https://i.imgur.com/5XFuB9c.png" },
+    { "code": "BSS#SK005", "member": "Seungkwan", "initial": "SK", "rarity": 5, "set": 1, "description": null, "link": "https://i.imgur.com/rUqBnUx.png" },
+    { "code": "BSS#HS005", "member": "Hoshi", "initial": "HS", "rarity": 5, "set": 1, "description": null, "link": "https://i.imgur.com/mDfszdU.png" }
+  ]
+}

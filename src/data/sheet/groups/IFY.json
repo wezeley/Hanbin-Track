@@ -1,0 +1,33 @@
+{
+  "number": 185,
+  "name": "ifeye",
+  "code": "IFY",
+  "members": [
+    { "name": "Hwayeon", "initial": "HY" },
+    { "name": "Kasia", "initial": "KS" },
+    { "name": "Meu", "initial": "MU" },
+    { "name": "Rahee", "initial": "RH" },
+    { "name": "Sasha", "initial": "SS" },
+    { "name": "Taerin", "initial": "TR" }
+  ],
+  "cards": [
+    { "code": "IFY#HY001", "member": "Hwayeon", "initial": "HY", "rarity": 1, "set": 1, "description": "Erlu Blue", "link": "https://i.imgur.com/cFar5BS.png" },
+    { "code": "IFY#KS001", "member": "Kasia", "initial": "KS", "rarity": 1, "set": 1, "description": "Erlu Blue", "link": "https://i.imgur.com/iAh9AWe.png" },
+    { "code": "IFY#MU001", "member": "Meu", "initial": "MU", "rarity": 1, "set": 1, "description": "Erlu Blue", "link": "https://i.imgur.com/6RwXBHS.png" },
+    { "code": "IFY#RH001", "member": "Rahee", "initial": "RH", "rarity": 1, "set": 1, "description": "Erlu Blue", "link": "https://i.imgur.com/M1HF6Au.png" },
+    { "code": "IFY#SS001", "member": "Sasha", "initial": "SS", "rarity": 1, "set": 1, "description": "Erlu Blue", "link": "https://i.imgur.com/iMpJWS3.png" },
+    { "code": "IFY#TR001", "member": "Taerin", "initial": "TR", "rarity": 1, "set": 1, "description": "Erlu Blue", "link": "https://i.imgur.com/egfm3oQ.png" },
+    { "code": "IFY#HY002", "member": "Hwayeon", "initial": "HY", "rarity": 2, "set": 1, "description": "sweet tang", "link": "https://i.imgur.com/dQp31al.png" },
+    { "code": "IFY#KS002", "member": "Kasia", "initial": "KS", "rarity": 2, "set": 1, "description": "sweet tang", "link": "https://i.imgur.com/5EdpPId.png" },
+    { "code": "IFY#MU002", "member": "Meu", "initial": "MU", "rarity": 2, "set": 1, "description": "sweet tang", "link": "https://i.imgur.com/BjASfws.png" },
+    { "code": "IFY#RH002", "member": "Rahee", "initial": "RH", "rarity": 2, "set": 1, "description": "sweet tang", "link": "https://i.imgur.com/0YFXgZV.png" },
+    { "code": "IFY#SS002", "member": "Sasha", "initial": "SS", "rarity": 2, "set": 1, "description": "sweet tang", "link": "https://i.imgur.com/sewoN0c.png" },
+    { "code": "IFY#TR002", "member": "Taerin", "initial": "TR", "rarity": 2, "set": 1, "description": "sweet tang", "link": "https://i.imgur.com/sCFciH5.png" },
+    { "code": "IFY#HY003", "member": "Hwayeon", "initial": "HY", "rarity": 3, "set": 1, "description": "sweet tang", "link": "https://i.imgur.com/WC81GGS.png" },
+    { "code": "IFY#KS003", "member": "Kasia", "initial": "KS", "rarity": 3, "set": 1, "description": "sweet tang", "link": "https://i.imgur.com/Mw1T9hS.png" },
+    { "code": "IFY#MU003", "member": "Meu", "initial": "MU", "rarity": 3, "set": 1, "description": "sweet tang", "link": "https://i.imgur.com/3XmgN3Q.png" },
+    { "code": "IFY#RH003", "member": "Rahee", "initial": "RH", "rarity": 3, "set": 1, "description": "sweet tang", "link": "https://i.imgur.com/mgF5vZN.png" },
+    { "code": "IFY#SS003", "member": "Sasha", "initial": "SS", "rarity": 3, "set": 1, "description": "sweet tang", "link": "https://i.imgur.com/EvmGCpp.png" },
+    { "code": "IFY#TR003", "member": "Taerin", "initial": "TR", "rarity": 3, "set": 1, "description": "sweet tang", "link": "https://i.imgur.com/Gjwy120.png" }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "number": 124,
+  "name": "A.C.E",
+  "code": "ACE",
+  "members": [
+    { "name": "Byeongkwan", "initial": "BK" },
+    { "name": "Donghun", "initial": "DH" },
+    { "name": "Junhee", "initial": "JH" },
+    { "name": "Wow", "initial": "WW" },
+    { "name": "Yuchan", "initial": "YC" }
+  ],
+  "cards": [
+    { "code": "ACE#BK001", "member": "Byeongkwan", "initial": "BK", "rarity": 1, "set": 1, "description": "Anymore", "link": "https://i.imgur.com/6dbMyGM.png" },
+    { "code": "ACE#DH001", "member": "Donghun", "initial": "DH", "rarity": 1, "set": 1, "description": "Anymore", "link": "https://i.imgur.com/9XDEdj8.png" },
+    { "code": "ACE#JH001", "member": "Junhee", "initial": "JH", "rarity": 1, "set": 1, "description": "Anymore", "link": "https://i.imgur.com/L1mwPzQ.png" },
+    { "code": "ACE#WW001", "member": "Wow", "initial": "WW", "rarity": 1, "set": 1, "description": "Anymore", "link": "https://i.imgur.com/XnhoDER.png" },
+    { "code": "ACE#YC001", "member": "Yuchan", "initial": "YC", "rarity": 1, "set": 1, "description": "Anymore", "link": "https://i.imgur.com/WiGrOWj.png" },
+    { "code": "ACE#BK002", "member": "Byeongkwan", "initial": "BK", "rarity": 2, "set": 1, "description": "Pinata", "link": "https://i.imgur.com/6nKAHjz.png" },
+    { "code": "ACE#DH002", "member": "Donghun", "initial": "DH", "rarity": 2, "set": 1, "description": "Pinata", "link": "https://i.imgur.com/957OHJo.png" },
+    { "code": "ACE#JH002", "member": "Junhee", "initial": "JH", "rarity": 2, "set": 1, "description": "Pinata", "link": "https://i.imgur.com/rXZhykX.png" },
+    { "code": "ACE#WW002", "member": "Wow", "initial": "WW", "rarity": 2, "set": 1, "description": "Pinata", "link": "https://i.imgur.com/SBHeMU2.png" },
+    { "code": "ACE#YC002", "member": "Yuchan", "initial": "YC", "rarity": 2, "set": 1, "description": "Pinata", "link": "https://i.imgur.com/gfj05H4.png" },
+    { "code": "ACE#BK003", "member": "Byeongkwan", "initial": "BK", "rarity": 3, "set": 1, "description": "Supernatural", "link": "https://i.imgur.com/DfM2Z4f.png" },
+    { "code": "ACE#DH003", "member": "Donghun", "initial": "DH", "rarity": 3, "set": 1, "description": "Supernatural", "link": "https://i.imgur.com/cND0EgX.png" },
+    { "code": "ACE#JH003", "member": "Junhee", "initial": "JH", "rarity": 3, "set": 1, "description": "Supernatural", "link": "https://i.imgur.com/QpezKdT.png" },
+    { "code": "ACE#WW003", "member": "Wow", "initial": "WW", "rarity": 3, "set": 1, "description": "Supernatural", "link": "https://i.imgur.com/UGITt5l.png" },
+    { "code": "ACE#YC003", "member": "Yuchan", "initial": "YC", "rarity": 3, "set": 1, "description": "Supernatural", "link": "https://i.imgur.com/XNFDhyg.png" },
+    { "code": "ACE#BK004", "member": "Byeongkwan", "initial": "BK", "rarity": 4, "set": 1, "description": "Cookie Heart Selca", "link": "https://i.imgur.com/GnnNM2U.png" },
+    { "code": "ACE#DH004", "member": "Donghun", "initial": "DH", "rarity": 4, "set": 1, "description": "Cookie Heart Selca", "link": "https://i.imgur.com/colSbiP.png" },
+    { "code": "ACE#JH004", "member": "Junhee", "initial": "JH", "rarity": 4, "set": 1, "description": "Cookie Heart Selca", "link": "https://i.imgur.com/0u6gpcv.png" },
+    { "code": "ACE#WW004", "member": "Wow", "initial": "WW", "rarity": 4, "set": 1, "description": "Cookie Heart Selca", "link": "https://i.imgur.com/coMAE7M.png" },
+    { "code": "ACE#YC004", "member": "Yuchan", "initial": "YC", "rarity": 4, "set": 1, "description": "Cookie Heart Selca", "link": "https://i.imgur.com/YW1aimt.png" },
+    { "code": "ACE#BK005", "member": "Byeongkwan", "initial": "BK", "rarity": 5, "set": 1, "description": "Remember Us Photobook", "link": "https://i.imgur.com/oa5jwLR.png" },
+    { "code": "ACE#DH005", "member": "Donghun", "initial": "DH", "rarity": 5, "set": 1, "description": "Remember Us Photobook", "link": "https://i.imgur.com/pmhVvYX.png" },
+    { "code": "ACE#JH005", "member": "Junhee", "initial": "JH", "rarity": 5, "set": 1, "description": "Remember Us Photobook", "link": "https://i.imgur.com/4pV6Jzq.png" },
+    { "code": "ACE#WW005", "member": "Wow", "initial": "WW", "rarity": 5, "set": 1, "description": "Remember Us Photobook", "link": "https://i.imgur.com/H1mngto.png" },
+    { "code": "ACE#YC005", "member": "Yuchan", "initial": "YC", "rarity": 5, "set": 1, "description": "Remember Us Photobook", "link": "https://i.imgur.com/ErgsqtB.png" }
+  ]
+}

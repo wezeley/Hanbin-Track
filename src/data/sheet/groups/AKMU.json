@@ -1,0 +1,17 @@
+{
+  "number": 22,
+  "name": "AKMU",
+  "code": "AKMU",
+  "members": [
+    { "name": "Chanhyuk", "initial": "CH" },
+    { "name": "Suhyun", "initial": "SH" }
+  ],
+  "cards": [
+    { "code": "AKMU#CH001", "member": "Chanhyuk", "initial": "CH", "rarity": 1, "set": 1, "description": "\"Love Lee\" - Concept Photo", "link": "https://i.imgur.com/i7E0v2m.png" },
+    { "code": "AKMU#SH001", "member": "Suhyun", "initial": "SH", "rarity": 1, "set": 1, "description": "\"Love Lee\" - Concept Photo", "link": "https://i.imgur.com/Xe59j5K.png" },
+    { "code": "AKMU#CH002", "member": "Chanhyuk", "initial": "CH", "rarity": 2, "set": 1, "description": "Happening - Concept Photo", "link": "https://i.imgur.com/8db2o7m.png" },
+    { "code": "AKMU#SH002", "member": "Suhyun", "initial": "SH", "rarity": 2, "set": 1, "description": "Happening - Concept Photo", "link": "https://i.imgur.com/T4aQgGq.png" },
+    { "code": "AKMU#CH003", "member": "Chanhyuk", "initial": "CH", "rarity": 3, "set": 1, "description": "Love Episode - Concept Photo", "link": "https://i.imgur.com/LzXncDt.png" },
+    { "code": "AKMU#SH003", "member": "Suhyun", "initial": "SH", "rarity": 3, "set": 1, "description": "Love Episode - Concept Photo", "link": "https://i.imgur.com/tFIsNCg.png" }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "number": 225,
+  "name": "Onewe",
+  "code": "OWE",
+  "members": [
+    { "name": "Dongmyeong", "initial": "DM" },
+    { "name": "Giuk", "initial": "GU" },
+    { "name": "Harin", "initial": "HR" },
+    { "name": "Kanghyun", "initial": "KH" },
+    { "name": "Yonghoon", "initial": "YH" }
+  ],
+  "cards": [
+    { "code": "OWE#DM001", "member": "Dongmyeong", "initial": "DM", "rarity": 1, "set": 1, "description": "WE: Dream Chaser", "link": "https://i.imgur.com/Mqm2voy.png" },
+    { "code": "OWE#GU001", "member": "Giuk", "initial": "GU", "rarity": 1, "set": 1, "description": "WE: Dream Chaser", "link": "https://i.imgur.com/8QDTtSI.png" },
+    { "code": "OWE#HR001", "member": "Harin", "initial": "HR", "rarity": 1, "set": 1, "description": "WE: Dream Chaser", "link": "https://i.imgur.com/0ujGTAw.png" },
+    { "code": "OWE#KH001", "member": "Kanghyun", "initial": "KH", "rarity": 1, "set": 1, "description": "WE: Dream Chaser", "link": "https://i.imgur.com/yFOz0KB.png" },
+    { "code": "OWE#YH001", "member": "Yonghoon", "initial": "YH", "rarity": 1, "set": 1, "description": "WE: Dream Chaser", "link": "https://i.imgur.com/yWaQ1HD.png" },
+    { "code": "OWE#DM002", "member": "Dongmyeong", "initial": "DM", "rarity": 2, "set": 1, "description": "Ad Astra - Concept Photo", "link": "https://i.imgur.com/DUsEWxG.png" },
+    { "code": "OWE#GU002", "member": "Giuk", "initial": "GU", "rarity": 2, "set": 1, "description": "Ad Astra - Concept Photo", "link": "https://i.imgur.com/cvXPJYn.png" },
+    { "code": "OWE#HR002", "member": "Harin", "initial": "HR", "rarity": 2, "set": 1, "description": "Ad Astra - Concept Photo", "link": "https://i.imgur.com/ZUvA8n9.png" },
+    { "code": "OWE#KH002", "member": "Kanghyun", "initial": "KH", "rarity": 2, "set": 1, "description": "Ad Astra - Concept Photo", "link": "https://i.imgur.com/NlM6lbZ.png" },
+    { "code": "OWE#YH002", "member": "Yonghoon", "initial": "YH", "rarity": 2, "set": 1, "description": "Ad Astra - Concept Photo", "link": "https://i.imgur.com/LqVOCKj.png" },
+    { "code": "OWE#DM003", "member": "Dongmyeong", "initial": "DM", "rarity": 3, "set": 1, "description": "2026Season Greetings", "link": "https://i.imgur.com/GhhrhoZ.png" },
+    { "code": "OWE#GU003", "member": "Giuk", "initial": "GU", "rarity": 3, "set": 1, "description": "2026Season Greetings", "link": "https://i.imgur.com/ySYXFMz.png" },
+    { "code": "OWE#HR003", "member": "Harin", "initial": "HR", "rarity": 3, "set": 1, "description": "2026Season Greetings", "link": "https://i.imgur.com/buLq3Yf.png" },
+    { "code": "OWE#KH003", "member": "Kanghyun", "initial": "KH", "rarity": 3, "set": 1, "description": "2026Season Greetings", "link": "https://i.imgur.com/kCKrqew.png" },
+    { "code": "OWE#YH003", "member": "Yonghoon", "initial": "YH", "rarity": 3, "set": 1, "description": "2026Season Greetings", "link": "https://i.imgur.com/GNUKF4P.png" },
+    { "code": "OWE#DM004", "member": "Dongmyeong", "initial": "DM", "rarity": 4, "set": 1, "description": "Anniv Selca", "link": "https://i.imgur.com/DXKVeRa.png" },
+    { "code": "OWE#GU004", "member": "Giuk", "initial": "GU", "rarity": 4, "set": 1, "description": "Anniv Selca", "link": "https://i.imgur.com/5bVpt7u.png" },
+    { "code": "OWE#HR004", "member": "Harin", "initial": "HR", "rarity": 4, "set": 1, "description": "Anniv Selca", "link": "https://i.imgur.com/4mbjAw7.png" },
+    { "code": "OWE#KH004", "member": "Kanghyun", "initial": "KH", "rarity": 4, "set": 1, "description": "Anniv Selca", "link": "https://i.imgur.com/GmEk93x.png" },
+    { "code": "OWE#YH004", "member": "Yonghoon", "initial": "YH", "rarity": 4, "set": 1, "description": "Anniv Selca", "link": "https://i.imgur.com/wldqlyv.png" },
+    { "code": "OWE#DM005", "member": "Dongmyeong", "initial": "DM", "rarity": 5, "set": 1, "description": "3rd Fanclub", "link": "https://i.imgur.com/zmAN8h7.png" },
+    { "code": "OWE#GU005", "member": "Giuk", "initial": "GU", "rarity": 5, "set": 1, "description": "3rd Fanclub", "link": "https://i.imgur.com/mq2k8ib.png" },
+    { "code": "OWE#HR005", "member": "Harin", "initial": "HR", "rarity": 5, "set": 1, "description": "3rd Fanclub", "link": "https://i.imgur.com/nih4zrt.png" },
+    { "code": "OWE#KH005", "member": "Kanghyun", "initial": "KH", "rarity": 5, "set": 1, "description": "3rd Fanclub", "link": "https://i.imgur.com/0MQysgH.png" },
+    { "code": "OWE#YH005", "member": "Yonghoon", "initial": "YH", "rarity": 5, "set": 1, "description": "3rd Fanclub", "link": "https://i.imgur.com/SP7IEm0.png" }
+  ]
+}

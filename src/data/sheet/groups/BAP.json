@@ -1,0 +1,24 @@
+{
+  "number": 107,
+  "name": "B.A.P",
+  "code": "BAP",
+  "members": [
+    { "name": "Daehyun", "initial": "DH" },
+    { "name": "Zelo", "initial": "ZL" },
+    { "name": "Jongup", "initial": "JU" },
+    { "name": "Yongguk", "initial": "YG" },
+    { "name": "Youngjae", "initial": "YJ" }
+  ],
+  "cards": [
+    { "code": "BAP#DH001", "member": "Daehyun", "initial": "DH", "rarity": 1, "set": 1, "description": "Blue", "link": "https://i.imgur.com/txRr4xD.png" },
+    { "code": "BAP#ZL001", "member": "Zelo", "initial": "ZL", "rarity": 1, "set": 1, "description": "Blue", "link": "https://i.imgur.com/iqeSpzd.png" },
+    { "code": "BAP#JU001", "member": "Jongup", "initial": "JU", "rarity": 1, "set": 1, "description": "Blue", "link": "https://i.imgur.com/j1aGAyX.png" },
+    { "code": "BAP#YG001", "member": "Yongguk", "initial": "YG", "rarity": 1, "set": 1, "description": "Blue", "link": "https://i.imgur.com/vacHAKs.png" },
+    { "code": "BAP#YJ001", "member": "Youngjae", "initial": "YJ", "rarity": 1, "set": 1, "description": "Blue", "link": "https://i.imgur.com/NjZX0Tb.png" },
+    { "code": "BAP#DH002", "member": "Daehyun", "initial": "DH", "rarity": 2, "set": 1, "description": "8th Single EGO", "link": "https://i.imgur.com/KvqdGMs.png" },
+    { "code": "BAP#ZL002", "member": "Zelo", "initial": "ZL", "rarity": 2, "set": 1, "description": "8th Single EGO", "link": "https://i.imgur.com/tYZElV0.png" },
+    { "code": "BAP#JU002", "member": "Jongup", "initial": "JU", "rarity": 2, "set": 1, "description": "8th Single EGO", "link": "https://i.imgur.com/xWrXeNm.png" },
+    { "code": "BAP#YG002", "member": "Yongguk", "initial": "YG", "rarity": 2, "set": 1, "description": "8th Single EGO", "link": "https://i.imgur.com/8Ze31QC.png" },
+    { "code": "BAP#YJ002", "member": "Youngjae", "initial": "YJ", "rarity": 2, "set": 1, "description": "8th Single EGO", "link": "https://i.imgur.com/rpjiFid.png" }
+  ]
+}

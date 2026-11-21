@@ -1,0 +1,34 @@
+{
+  "number": 283,
+  "name": "Bvndit",
+  "code": "BVDT",
+  "members": [
+    { "name": "Jungwoo", "initial": "JW" },
+    { "name": "Seungeun", "initial": "SE" },
+    { "name": "Simyeong", "initial": "SY" },
+    { "name": "Songhee", "initial": "SH" },
+    { "name": "Yiyeon", "initial": "YY" }
+  ],
+  "cards": [
+    { "code": "BVDT#JW001", "member": "Jungwoo", "initial": "JW", "rarity": 1, "set": 1, "description": "Cool.newwav - Concept Photos", "link": "https://i.imgur.com/xzYlZuu.png" },
+    { "code": "BVDT#SE001", "member": "Seungeun", "initial": "SE", "rarity": 1, "set": 1, "description": "Cool.newwav - Concept Photos", "link": "https://i.imgur.com/HycREWF.png" },
+    { "code": "BVDT#SY001", "member": "Simyeong", "initial": "SY", "rarity": 1, "set": 1, "description": "Cool.newwav - Concept Photos", "link": "https://i.imgur.com/TIT46vZ.png" },
+    { "code": "BVDT#SH001", "member": "Songhee", "initial": "SH", "rarity": 1, "set": 1, "description": "Cool.newwav - Concept Photos", "link": "https://i.imgur.com/6Ybgofj.png" },
+    { "code": "BVDT#YY001", "member": "Yiyeon", "initial": "YY", "rarity": 1, "set": 1, "description": "Cool.newwav - Concept Photos", "link": "https://i.imgur.com/ICFnGLS.png" },
+    { "code": "BVDT#JW002", "member": "Jungwoo", "initial": "JW", "rarity": 2, "set": 1, "description": "Carnival - Concept Photos", "link": "https://i.imgur.com/Z4Eam0s.png" },
+    { "code": "BVDT#SE002", "member": "Seungeun", "initial": "SE", "rarity": 2, "set": 1, "description": "Carnival - Concept Photos", "link": "https://i.imgur.com/qb0bdSP.png" },
+    { "code": "BVDT#SY002", "member": "Simyeong", "initial": "SY", "rarity": 2, "set": 1, "description": "Carnival - Concept Photos", "link": "https://i.imgur.com/cSIvcB3.png" },
+    { "code": "BVDT#SH002", "member": "Songhee", "initial": "SH", "rarity": 2, "set": 1, "description": "Carnival - Concept Photos", "link": "https://i.imgur.com/VexQgIf.png" },
+    { "code": "BVDT#YY002", "member": "Yiyeon", "initial": "YY", "rarity": 2, "set": 1, "description": "Carnival - Concept Photos", "link": "https://i.imgur.com/hvQml8O.png" },
+    { "code": "BVDT#JW003", "member": "Jungwoo", "initial": "JW", "rarity": 3, "set": 1, "description": "Re-Original - Concept Photos", "link": "https://i.imgur.com/Z7IMNDl.png" },
+    { "code": "BVDT#SE003", "member": "Seungeun", "initial": "SE", "rarity": 3, "set": 1, "description": "Re-Original - Concept Photos", "link": "https://i.imgur.com/PcccBC4.png" },
+    { "code": "BVDT#SY003", "member": "Simyeong", "initial": "SY", "rarity": 3, "set": 1, "description": "Re-Original - Concept Photos", "link": "https://i.imgur.com/0xKGNzQ.png" },
+    { "code": "BVDT#SH003", "member": "Songhee", "initial": "SH", "rarity": 3, "set": 1, "description": "Re-Original - Concept Photos", "link": "https://i.imgur.com/m4y9lmT.png" },
+    { "code": "BVDT#YY003", "member": "Yiyeon", "initial": "YY", "rarity": 3, "set": 1, "description": "Re-Original - Concept Photos", "link": "https://i.imgur.com/mgwBRsB.png" },
+    { "code": "BVDT#JW004", "member": "Jungwoo", "initial": "JW", "rarity": 4, "set": 1, "description": null, "link": "https://i.imgur.com/aJsSOxA.png" },
+    { "code": "BVDT#SE004", "member": "Seungeun", "initial": "SE", "rarity": 4, "set": 1, "description": null, "link": "https://i.imgur.com/f60XRbV.png" },
+    { "code": "BVDT#SY004", "member": "Simyeong", "initial": "SY", "rarity": 4, "set": 1, "description": null, "link": "https://i.imgur.com/tFFnx9v.png" },
+    { "code": "BVDT#SH004", "member": "Songhee", "initial": "SH", "rarity": 4, "set": 1, "description": null, "link": "https://i.imgur.com/XdbG6Wu.png" },
+    { "code": "BVDT#YY004", "member": "Yiyeon", "initial": "YY", "rarity": 4, "set": 1, "description": null, "link": "https://i.imgur.com/eXefjUr.png" }
+  ]
+}

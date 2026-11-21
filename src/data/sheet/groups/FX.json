@@ -1,0 +1,24 @@
+{
+  "number": 123,
+  "name": "f(x)",
+  "code": "FX",
+  "members": [
+    { "name": "Amber", "initial": "AB" },
+    { "name": "Krystal", "initial": "KT" },
+    { "name": "Luna", "initial": "LN" },
+    { "name": "Sulli", "initial": "SL" },
+    { "name": "Victoria", "initial": "VT" }
+  ],
+  "cards": [
+    { "code": "FX#AB001", "member": "Amber", "initial": "AB", "rarity": 1, "set": 1, "description": "Electric Shock", "link": "https://i.imgur.com/GqZmFTe.png" },
+    { "code": "FX#KT001", "member": "Krystal", "initial": "KT", "rarity": 1, "set": 1, "description": "Electric Shock", "link": "https://i.imgur.com/6Oratpx.png" },
+    { "code": "FX#LN001", "member": "Luna", "initial": "LN", "rarity": 1, "set": 1, "description": "Electric Shock", "link": "https://i.imgur.com/KqIbE9D.png" },
+    { "code": "FX#SL001", "member": "Sulli", "initial": "SL", "rarity": 1, "set": 1, "description": "Electric Shock", "link": "https://i.imgur.com/rBbFy7F.png" },
+    { "code": "FX#VT001", "member": "Victoria", "initial": "VT", "rarity": 1, "set": 1, "description": "Electric Shock", "link": "https://i.imgur.com/ZKUfxuW.png" },
+    { "code": "FX#AB002", "member": "Amber", "initial": "AB", "rarity": 2, "set": 1, "description": "Pinocchio", "link": "https://i.imgur.com/7I9rGGY.png" },
+    { "code": "FX#KT002", "member": "Krystal", "initial": "KT", "rarity": 2, "set": 1, "description": "Pinocchio", "link": "https://i.imgur.com/ZrQcWep.png" },
+    { "code": "FX#LN002", "member": "Luna", "initial": "LN", "rarity": 2, "set": 1, "description": "Pinocchio", "link": "https://i.imgur.com/W4rMfgR.png" },
+    { "code": "FX#SL002", "member": "Sulli", "initial": "SL", "rarity": 2, "set": 1, "description": "Pinocchio", "link": "https://i.imgur.com/GY5FHCt.png" },
+    { "code": "FX#VT002", "member": "Victoria", "initial": "VT", "rarity": 2, "set": 1, "description": "Pinocchio", "link": "https://i.imgur.com/YtO5i2g.png" }
+  ]
+}

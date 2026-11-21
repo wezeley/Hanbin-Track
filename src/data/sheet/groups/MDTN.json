@@ -1,0 +1,37 @@
+{
+  "number": 251,
+  "name": "Madtown",
+  "code": "MDTN",
+  "members": [
+    { "name": "Buffy", "initial": "BF" },
+    { "name": "Daewon", "initial": "DW" },
+    { "name": "H.O", "initial": "HO" },
+    { "name": "Heojun", "initial": "HJ" },
+    { "name": "Jota", "initial": "JT" },
+    { "name": "Geon", "initial": "GO" },
+    { "name": "Moos", "initial": "MS" }
+  ],
+  "cards": [
+    { "code": "MDTN#BF001", "member": "Buffy", "initial": "BF", "rarity": 1, "set": 1, "description": "Welcome to Madtown", "link": "https://i.imgur.com/HOOfeZq.png" },
+    { "code": "MDTN#DW001", "member": "Daewon", "initial": "DW", "rarity": 1, "set": 1, "description": "Welcome to Madtown", "link": "https://i.imgur.com/TES53qK.png" },
+    { "code": "MDTN#HO001", "member": "H.O", "initial": "HO", "rarity": 1, "set": 1, "description": "Welcome to Madtown", "link": "https://i.imgur.com/s4smr20.png" },
+    { "code": "MDTN#HJ001", "member": "Heojun", "initial": "HJ", "rarity": 1, "set": 1, "description": "Welcome to Madtown", "link": "https://i.imgur.com/NcgLoNF.png" },
+    { "code": "MDTN#JT001", "member": "Jota", "initial": "JT", "rarity": 1, "set": 1, "description": "Welcome to Madtown", "link": "https://i.imgur.com/2k7GFlp.png" },
+    { "code": "MDTN#GO001", "member": "Geon", "initial": "GO", "rarity": 1, "set": 1, "description": "Welcome to Madtown", "link": "https://i.imgur.com/3w3bBwx.png" },
+    { "code": "MDTN#MS001", "member": "Moos", "initial": "MS", "rarity": 1, "set": 1, "description": "Welcome to Madtown", "link": "https://i.imgur.com/ZgYSB9n.png" },
+    { "code": "MDTN#BF002", "member": "Buffy", "initial": "BF", "rarity": 2, "set": 1, "description": "OMGT", "link": "https://i.imgur.com/xQSyLyA.png" },
+    { "code": "MDTN#DW002", "member": "Daewon", "initial": "DW", "rarity": 2, "set": 1, "description": "OMGT", "link": "https://i.imgur.com/zC2wtgM.png" },
+    { "code": "MDTN#HO002", "member": "H.O", "initial": "HO", "rarity": 2, "set": 1, "description": "OMGT", "link": "https://i.imgur.com/EF7pszI.png" },
+    { "code": "MDTN#HJ002", "member": "Heojun", "initial": "HJ", "rarity": 2, "set": 1, "description": "OMGT", "link": "https://i.imgur.com/i0sPY8P.png" },
+    { "code": "MDTN#JT002", "member": "Jota", "initial": "JT", "rarity": 2, "set": 1, "description": "OMGT", "link": "https://i.imgur.com/S47Hksy.png" },
+    { "code": "MDTN#GO002", "member": "Geon", "initial": "GO", "rarity": 2, "set": 1, "description": "OMGT", "link": "https://i.imgur.com/WnrgNcC.png" },
+    { "code": "MDTN#MS002", "member": "Moos", "initial": "MS", "rarity": 2, "set": 1, "description": "OMGT", "link": "https://i.imgur.com/wpj1boo.png" },
+    { "code": "MDTN#BF003", "member": "Buffy", "initial": "BF", "rarity": 3, "set": 1, "description": "Emotion", "link": "https://i.imgur.com/bfuB1GX.png" },
+    { "code": "MDTN#DW003", "member": "Daewon", "initial": "DW", "rarity": 3, "set": 1, "description": "Emotion", "link": "https://i.imgur.com/GZtFfwX.png" },
+    { "code": "MDTN#HO003", "member": "H.O", "initial": "HO", "rarity": 3, "set": 1, "description": "Emotion", "link": "https://i.imgur.com/IlGDtK1.png" },
+    { "code": "MDTN#HJ003", "member": "Heojun", "initial": "HJ", "rarity": 3, "set": 1, "description": "Emotion", "link": "https://i.imgur.com/bru4lZQ.png" },
+    { "code": "MDTN#JT003", "member": "Jota", "initial": "JT", "rarity": 3, "set": 1, "description": "Emotion", "link": "https://i.imgur.com/mCuOgW0.png" },
+    { "code": "MDTN#GO003", "member": "Geon", "initial": "GO", "rarity": 3, "set": 1, "description": "Emotion", "link": "https://i.imgur.com/wU8HdBF.png" },
+    { "code": "MDTN#MS003", "member": "Moos", "initial": "MS", "rarity": 3, "set": 1, "description": "Emotion", "link": "https://i.imgur.com/fy9wWRv.png" }
+  ]
+}

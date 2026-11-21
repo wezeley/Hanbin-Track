@@ -1,0 +1,33 @@
+{
+  "number": 170,
+  "name": "DAY6",
+  "code": "DAY6",
+  "members": [
+    { "name": "Dowoon", "initial": "DW" },
+    { "name": "Sungjin", "initial": "SJ" },
+    { "name": "Wonpil", "initial": "WP" },
+    { "name": "Young K", "initial": "YK" }
+  ],
+  "cards": [
+    { "code": "DAY6#DW001", "member": "Dowoon", "initial": "DW", "rarity": 1, "set": 1, "description": "Fourever", "link": "https://i.imgur.com/5fkUo8M.png" },
+    { "code": "DAY6#SJ001", "member": "Sungjin", "initial": "SJ", "rarity": 1, "set": 1, "description": "Fourever", "link": "https://i.imgur.com/0kVfYv5.png" },
+    { "code": "DAY6#WP001", "member": "Wonpil", "initial": "WP", "rarity": 1, "set": 1, "description": "Fourever", "link": "https://i.imgur.com/QlZvXEW.png" },
+    { "code": "DAY6#YK001", "member": "Young K", "initial": "YK", "rarity": 1, "set": 1, "description": "Fourever", "link": "https://i.imgur.com/Tg8Oo59.png" },
+    { "code": "DAY6#DW002", "member": "Dowoon", "initial": "DW", "rarity": 2, "set": 1, "description": "Band Aid", "link": "https://i.imgur.com/nhRzUyK.png" },
+    { "code": "DAY6#SJ002", "member": "Sungjin", "initial": "SJ", "rarity": 2, "set": 1, "description": "Band Aid", "link": "https://i.imgur.com/Ip6Gb6e.png" },
+    { "code": "DAY6#WP002", "member": "Wonpil", "initial": "WP", "rarity": 2, "set": 1, "description": "Band Aid", "link": "https://i.imgur.com/zNBJwj1.png" },
+    { "code": "DAY6#YK002", "member": "Young K", "initial": "YK", "rarity": 2, "set": 1, "description": "Band Aid", "link": "https://i.imgur.com/K8bMiAu.png" },
+    { "code": "DAY6#DW003", "member": "Dowoon", "initial": "DW", "rarity": 3, "set": 1, "description": "2025Season Greetings", "link": "https://i.imgur.com/NvXViEd.png" },
+    { "code": "DAY6#SJ003", "member": "Sungjin", "initial": "SJ", "rarity": 3, "set": 1, "description": "2025Season Greetings", "link": "https://i.imgur.com/MtCAT35.png" },
+    { "code": "DAY6#WP003", "member": "Wonpil", "initial": "WP", "rarity": 3, "set": 1, "description": "2025Season Greetings", "link": "https://i.imgur.com/BwzEPtY.png" },
+    { "code": "DAY6#YK003", "member": "Young K", "initial": "YK", "rarity": 3, "set": 1, "description": "2025Season Greetings", "link": "https://i.imgur.com/o1CLg3I.png" },
+    { "code": "DAY6#DW004", "member": "Dowoon", "initial": "DW", "rarity": 4, "set": 1, "description": null, "link": "https://i.imgur.com/scXGWzV.png" },
+    { "code": "DAY6#SJ004", "member": "Sungjin", "initial": "SJ", "rarity": 4, "set": 1, "description": null, "link": "https://i.imgur.com/fEqGzwa.png" },
+    { "code": "DAY6#WP004", "member": "Wonpil", "initial": "WP", "rarity": 4, "set": 1, "description": null, "link": "https://i.imgur.com/3pTBrpt.png" },
+    { "code": "DAY6#YK004", "member": "Young K", "initial": "YK", "rarity": 4, "set": 1, "description": null, "link": "https://i.imgur.com/kgIKcDW.png" },
+    { "code": "DAY6#DW005", "member": "Dowoon", "initial": "DW", "rarity": 5, "set": 1, "description": "5th Fanclub", "link": "https://i.imgur.com/EcQk3hn.png" },
+    { "code": "DAY6#SJ005", "member": "Sungjin", "initial": "SJ", "rarity": 5, "set": 1, "description": "5th Fanclub", "link": "https://i.imgur.com/8JvwDhR.png" },
+    { "code": "DAY6#WP005", "member": "Wonpil", "initial": "WP", "rarity": 5, "set": 1, "description": "5th Fanclub", "link": "https://i.imgur.com/Q0YScDS.png" },
+    { "code": "DAY6#YK005", "member": "Young K", "initial": "YK", "rarity": 5, "set": 1, "description": "5th Fanclub", "link": "https://i.imgur.com/TJLUyyB.png" }
+  ]
+}

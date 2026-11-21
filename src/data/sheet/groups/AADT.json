@@ -1,0 +1,39 @@
+{
+  "number": 334,
+  "name": "&Audition -The Howling-",
+  "code": "AADT",
+  "members": [
+    { "name": "EJ", "initial": "EJ" },
+    { "name": "Fuma", "initial": "FM" },
+    { "name": "Gaku", "initial": "GK" },
+    { "name": "Harua", "initial": "HR" },
+    { "name": "Hayate", "initial": "HY" },
+    { "name": "Hikaru", "initial": "HK" },
+    { "name": "Jo", "initial": "JO" },
+    { "name": "Junwon", "initial": "JW" },
+    { "name": "K", "initial": "KY" },
+    { "name": "Maki", "initial": "MK" },
+    { "name": "Minhyung", "initial": "MH" },
+    { "name": "Nicholas", "initial": "NC" },
+    { "name": "Taki", "initial": "TK" },
+    { "name": "Yejun", "initial": "YJ" },
+    { "name": "Yuma", "initial": "YM" }
+  ],
+  "cards": [
+    { "code": "AADT#EJ001", "member": "EJ", "initial": "EJ", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/g0f1syf.png" },
+    { "code": "AADT#FM001", "member": "Fuma", "initial": "FM", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/diKx1MJ.png" },
+    { "code": "AADT#GK001", "member": "Gaku", "initial": "GK", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/LbBnFu0.png" },
+    { "code": "AADT#HR001", "member": "Harua", "initial": "HR", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/k1CD3R2.png" },
+    { "code": "AADT#HY001", "member": "Hayate", "initial": "HY", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/gguaue2.png" },
+    { "code": "AADT#HK001", "member": "Hikaru", "initial": "HK", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/X4q4Bmh.png" },
+    { "code": "AADT#JO001", "member": "Jo", "initial": "JO", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/LHXNejm.png" },
+    { "code": "AADT#JW001", "member": "Junwon", "initial": "JW", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/duipezn.png" },
+    { "code": "AADT#KY001", "member": "K", "initial": "KY", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/vmkrUt8.png" },
+    { "code": "AADT#MK001", "member": "Maki", "initial": "MK", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/Xwi51cI.png" },
+    { "code": "AADT#MH001", "member": "Minhyung", "initial": "MH", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/WPDIg4r.png" },
+    { "code": "AADT#NC001", "member": "Nicholas", "initial": "NC", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/VWYcSp6.png" },
+    { "code": "AADT#TK001", "member": "Taki", "initial": "TK", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/2MBe6jg.png" },
+    { "code": "AADT#YJ001", "member": "Yejun", "initial": "YJ", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/EerEO4j.png" },
+    { "code": "AADT#YM001", "member": "Yuma", "initial": "YM", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/XTpUFb3.png" }
+  ]
+}

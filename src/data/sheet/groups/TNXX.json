@@ -1,0 +1,21 @@
+{
+  "number": 282,
+  "name": "TUNEXX",
+  "code": "TNXX",
+  "members": [
+    { "name": "Arctic", "initial": "AT" },
+    { "name": "Donggyu", "initial": "DG" },
+    { "name": "Inhu", "initial": "IH" },
+    { "name": "Sungjun", "initial": "SJ" },
+    { "name": "Taira", "initial": "TR" },
+    { "name": "Zeon", "initial": "ZO" }
+  ],
+  "cards": [
+    { "code": "TNXX#AT001", "member": "Arctic", "initial": "AT", "rarity": 1, "set": 1, "description": "SET BY US ONLY - Concept Photos", "link": "https://i.imgur.com/PAB43AT.png" },
+    { "code": "TNXX#DG001", "member": "Donggyu", "initial": "DG", "rarity": 1, "set": 1, "description": "SET BY US ONLY - Concept Photos", "link": "https://i.imgur.com/xKOBbL9.png" },
+    { "code": "TNXX#IH001", "member": "Inhu", "initial": "IH", "rarity": 1, "set": 1, "description": "SET BY US ONLY - Concept Photos", "link": "https://i.imgur.com/q7It8CH.png" },
+    { "code": "TNXX#SJ001", "member": "Sungjun", "initial": "SJ", "rarity": 1, "set": 1, "description": "SET BY US ONLY - Concept Photos", "link": "https://i.imgur.com/Cx7dfQO.png" },
+    { "code": "TNXX#TR001", "member": "Taira", "initial": "TR", "rarity": 1, "set": 1, "description": "SET BY US ONLY - Concept Photos", "link": "https://i.imgur.com/JyBzLSa.png" },
+    { "code": "TNXX#ZO001", "member": "Zeon", "initial": "ZO", "rarity": 1, "set": 1, "description": "SET BY US ONLY - Concept Photos", "link": "https://i.imgur.com/JXdJyKE.png" }
+  ]
+}

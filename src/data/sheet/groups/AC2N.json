@@ -1,0 +1,19 @@
+{
+  "number": 265,
+  "name": "Asc2nt",
+  "code": "AC2N",
+  "members": [
+    { "name": "Injun", "initial": "IJ" },
+    { "name": "Jay", "initial": "JY" },
+    { "name": "Karam", "initial": "KR" },
+    { "name": "Kyle", "initial": "KL" },
+    { "name": "Reon", "initial": "RO" }
+  ],
+  "cards": [
+    { "code": "AC2N#IJ001", "member": "Injun", "initial": "IJ", "rarity": 1, "set": 1, "description": "Expecting Tomorrow", "link": "https://i.imgur.com/RTHoywy.png" },
+    { "code": "AC2N#JY001", "member": "Jay", "initial": "JY", "rarity": 1, "set": 1, "description": "Expecting Tomorrow", "link": "https://i.imgur.com/zFGUOGe.png" },
+    { "code": "AC2N#KR001", "member": "Karam", "initial": "KR", "rarity": 1, "set": 1, "description": "Expecting Tomorrow", "link": "https://i.imgur.com/qIKBjuY.png" },
+    { "code": "AC2N#KL001", "member": "Kyle", "initial": "KL", "rarity": 1, "set": 1, "description": "Expecting Tomorrow", "link": "https://i.imgur.com/lJO1qii.png" },
+    { "code": "AC2N#RO001", "member": "Reon", "initial": "RO", "rarity": 1, "set": 1, "description": "Expecting Tomorrow", "link": "https://i.imgur.com/RgtjlNm.png" }
+  ]
+}

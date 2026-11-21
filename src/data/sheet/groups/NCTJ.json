@@ -1,0 +1,24 @@
+{
+  "number": 217,
+  "name": "NCT DoJaeJung",
+  "code": "NCTJ",
+  "members": [
+    { "name": "Doyoung", "initial": "DY" },
+    { "name": "Jaehyun", "initial": "JH" },
+    { "name": "Jungwoo", "initial": "JW" }
+  ],
+  "cards": [
+    { "code": "NCTJ#DY001", "member": "Doyoung", "initial": "DY", "rarity": 1, "set": 1, "description": "Perfume", "link": "https://i.imgur.com/eUeaKxn.png" },
+    { "code": "NCTJ#JH001", "member": "Jaehyun", "initial": "JH", "rarity": 1, "set": 1, "description": "Perfume", "link": "https://i.imgur.com/MU2COAY.png" },
+    { "code": "NCTJ#JW001", "member": "Jungwoo", "initial": "JW", "rarity": 1, "set": 1, "description": "Perfume", "link": "https://i.imgur.com/NTPi3gY.png" },
+    { "code": "NCTJ#DY002", "member": "Doyoung", "initial": "DY", "rarity": 2, "set": 1, "description": "Perfume", "link": "https://i.imgur.com/p97e2lK.png" },
+    { "code": "NCTJ#JH002", "member": "Jaehyun", "initial": "JH", "rarity": 2, "set": 1, "description": "Perfume", "link": "https://i.imgur.com/AcPueQW.png" },
+    { "code": "NCTJ#JW002", "member": "Jungwoo", "initial": "JW", "rarity": 2, "set": 1, "description": "Perfume", "link": "https://i.imgur.com/ATqgssM.png" },
+    { "code": "NCTJ#DY003", "member": "Doyoung", "initial": "DY", "rarity": 3, "set": 1, "description": "Perfume", "link": "https://i.imgur.com/KFiDv4j.png" },
+    { "code": "NCTJ#JH003", "member": "Jaehyun", "initial": "JH", "rarity": 3, "set": 1, "description": "Perfume", "link": "https://i.imgur.com/k6urwFB.png" },
+    { "code": "NCTJ#JW003", "member": "Jungwoo", "initial": "JW", "rarity": 3, "set": 1, "description": "Perfume", "link": "https://i.imgur.com/t5TWXnl.png" },
+    { "code": "NCTJ#DY004", "member": "Doyoung", "initial": "DY", "rarity": 4, "set": 1, "description": null, "link": "https://i.imgur.com/vyi5hoI.png" },
+    { "code": "NCTJ#JH004", "member": "Jaehyun", "initial": "JH", "rarity": 4, "set": 1, "description": null, "link": "https://i.imgur.com/YOVYBI4.png" },
+    { "code": "NCTJ#JW004", "member": "Jungwoo", "initial": "JW", "rarity": 4, "set": 1, "description": null, "link": "https://i.imgur.com/svYNEpY.png" }
+  ]
+}

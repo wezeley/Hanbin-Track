@@ -1,0 +1,21 @@
+{
+  "number": 231,
+  "name": "VIXX",
+  "code": "VIXX",
+  "members": [
+    { "name": "Hongbin", "initial": "HB" },
+    { "name": "Hyuk", "initial": "HK" },
+    { "name": "Ken", "initial": "KN" },
+    { "name": "Leo", "initial": "LO" },
+    { "name": "N", "initial": "HY" },
+    { "name": "Ravi", "initial": "RV" }
+  ],
+  "cards": [
+    { "code": "VIXX#HB001", "member": "Hongbin", "initial": "HB", "rarity": 1, "set": 1, "description": "Eau De Vixx", "link": "https://i.imgur.com/UfuZwkJ.png" },
+    { "code": "VIXX#HK001", "member": "Hyuk", "initial": "HK", "rarity": 1, "set": 1, "description": "Eau De Vixx", "link": "https://i.imgur.com/4Mo09Ea.png" },
+    { "code": "VIXX#KN001", "member": "Ken", "initial": "KN", "rarity": 1, "set": 1, "description": "Eau De Vixx", "link": "https://i.imgur.com/zEJydCk.png" },
+    { "code": "VIXX#LO001", "member": "Leo", "initial": "LO", "rarity": 1, "set": 1, "description": "Eau De Vixx", "link": "https://i.imgur.com/QFEyYuJ.png" },
+    { "code": "VIXX#HY001", "member": "N", "initial": "HY", "rarity": 1, "set": 1, "description": "Eau De Vixx", "link": "https://i.imgur.com/K0g1pCs.png" },
+    { "code": "VIXX#RV001", "member": "Ravi", "initial": "RV", "rarity": 1, "set": 1, "description": "Eau De Vixx", "link": "https://i.imgur.com/UUaeCzJ.png" }
+  ]
+}

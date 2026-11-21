@@ -1,0 +1,74 @@
+{
+  "number": 60,
+  "name": "Catch The Young",
+  "code": "CTY",
+  "members": [
+    { "name": "Jungmo", "initial": "JM" },
+    { "name": "Junyong", "initial": "JY" },
+    { "name": "Kihoon", "initial": "KH" },
+    { "name": "Namhyun", "initial": "NH" },
+    { "name": "Sani", "initial": "SN" }
+  ],
+  "cards": [
+    {
+      "code": "CTY#JM001",
+      "member": "Jungmo",
+      "initial": "JM",
+      "rarity": 1,
+      "set": 1,
+      "description": "\"[Catch The Young : Fragments of Odyssey]\" - Concept Photo",
+      "link": "https://i.imgur.com/7hh34kb.png"
+    },
+    {
+      "code": "CTY#JY001",
+      "member": "Junyong",
+      "initial": "JY",
+      "rarity": 1,
+      "set": 1,
+      "description": "\"[Catch The Young : Fragments of Odyssey]\" - Concept Photo",
+      "link": "https://i.imgur.com/wgxpklc.png"
+    },
+    {
+      "code": "CTY#KH001",
+      "member": "Kihoon",
+      "initial": "KH",
+      "rarity": 1,
+      "set": 1,
+      "description": "\"[Catch The Young : Fragments of Odyssey]\" - Concept Photo",
+      "link": "https://i.imgur.com/D8V9K5J.png"
+    },
+    {
+      "code": "CTY#NH001",
+      "member": "Namhyun",
+      "initial": "NH",
+      "rarity": 1,
+      "set": 1,
+      "description": "\"[Catch The Young : Fragments of Odyssey]\" - Concept Photo",
+      "link": "https://i.imgur.com/tNFQc5Y.png"
+    },
+    {
+      "code": "CTY#SN001",
+      "member": "Sani",
+      "initial": "SN",
+      "rarity": 1,
+      "set": 1,
+      "description": "\"[Catch The Young : Fragments of Odyssey]\" - Concept Photo",
+      "link": "https://i.imgur.com/Tx2uRwM.png"
+    },
+    { "code": "CTY#JM002", "member": "Jungmo", "initial": "JM", "rarity": 2, "set": 1, "description": null, "link": "https://i.imgur.com/uoQ0PW5.png" },
+    { "code": "CTY#JY002", "member": "Junyong", "initial": "JY", "rarity": 2, "set": 1, "description": null, "link": "https://i.imgur.com/tc0IRs7.png" },
+    { "code": "CTY#KH002", "member": "Kihoon", "initial": "KH", "rarity": 2, "set": 1, "description": null, "link": "https://i.imgur.com/oVoz9BL.png" },
+    { "code": "CTY#NH002", "member": "Namhyun", "initial": "NH", "rarity": 2, "set": 1, "description": null, "link": "https://i.imgur.com/L3sV8rO.png" },
+    { "code": "CTY#SN002", "member": "Sani", "initial": "SN", "rarity": 2, "set": 1, "description": null, "link": "https://i.imgur.com/toLlgtw.png" },
+    { "code": "CTY#JM003", "member": "Jungmo", "initial": "JM", "rarity": 3, "set": 1, "description": null, "link": "https://i.imgur.com/FR1ykNZ.png" },
+    { "code": "CTY#JY003", "member": "Junyong", "initial": "JY", "rarity": 3, "set": 1, "description": null, "link": "https://i.imgur.com/wbtIUug.png" },
+    { "code": "CTY#KH003", "member": "Kihoon", "initial": "KH", "rarity": 3, "set": 1, "description": null, "link": "https://i.imgur.com/YldDIEW.png" },
+    { "code": "CTY#NH003", "member": "Namhyun", "initial": "NH", "rarity": 3, "set": 1, "description": null, "link": "https://i.imgur.com/ylqmtge.png" },
+    { "code": "CTY#SN003", "member": "Sani", "initial": "SN", "rarity": 3, "set": 1, "description": null, "link": "https://i.imgur.com/5T7NQ4Q.png" },
+    { "code": "CTY#JM004", "member": "Jungmo", "initial": "JM", "rarity": 4, "set": 1, "description": null, "link": "https://i.imgur.com/1JizcgU.png" },
+    { "code": "CTY#JY004", "member": "Junyong", "initial": "JY", "rarity": 4, "set": 1, "description": null, "link": "https://i.imgur.com/Aee2HK5.png" },
+    { "code": "CTY#KH004", "member": "Kihoon", "initial": "KH", "rarity": 4, "set": 1, "description": null, "link": "https://i.imgur.com/if32jui.png" },
+    { "code": "CTY#NH004", "member": "Namhyun", "initial": "NH", "rarity": 4, "set": 1, "description": null, "link": "https://i.imgur.com/nUT9wDE.png" },
+    { "code": "CTY#SN004", "member": "Sani", "initial": "SN", "rarity": 4, "set": 1, "description": null, "link": "https://i.imgur.com/K8ylZXm.png" }
+  ]
+}

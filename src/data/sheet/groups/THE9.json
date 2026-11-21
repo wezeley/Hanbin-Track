@@ -1,0 +1,27 @@
+{
+  "number": 314,
+  "name": "THE9",
+  "code": "THE9",
+  "members": [
+    { "name": "Babymonster An", "initial": "BA" },
+    { "name": "Esther Yu", "initial": "EY" },
+    { "name": "K Lu", "initial": "KL" },
+    { "name": "Kiki Xu", "initial": "KX" },
+    { "name": "Shaking", "initial": "SK" },
+    { "name": "Snow Kong", "initial": "SW" },
+    { "name": "Xiaotang Zhao", "initial": "XZ" },
+    { "name": "XIN Liu", "initial": "XL" },
+    { "name": "Yan Yu", "initial": "YY" }
+  ],
+  "cards": [
+    { "code": "THE9#BA001", "member": "Babymonster An", "initial": "BA", "rarity": 1, "set": 1, "description": "Sphynx", "link": "https://i.imgur.com/Dfz7Xip.png" },
+    { "code": "THE9#EY001", "member": "Esther Yu", "initial": "EY", "rarity": 1, "set": 1, "description": "Sphynx", "link": "https://i.imgur.com/4KsbeBP.png" },
+    { "code": "THE9#KL001", "member": "K Lu", "initial": "KL", "rarity": 1, "set": 1, "description": "Sphynx", "link": "https://i.imgur.com/qHSlTkD.png" },
+    { "code": "THE9#KX001", "member": "Kiki Xu", "initial": "KX", "rarity": 1, "set": 1, "description": "Sphynx", "link": "https://i.imgur.com/5vbfzxQ.png" },
+    { "code": "THE9#SK001", "member": "Shaking", "initial": "SK", "rarity": 1, "set": 1, "description": "Sphynx", "link": "https://i.imgur.com/I6r9Cr3.png" },
+    { "code": "THE9#SW001", "member": "Snow Kong", "initial": "SW", "rarity": 1, "set": 1, "description": "Sphynx", "link": "https://i.imgur.com/TejIILp.png" },
+    { "code": "THE9#XZ001", "member": "Xiaotang Zhao", "initial": "XZ", "rarity": 1, "set": 1, "description": "Sphynx", "link": "https://i.imgur.com/9zMcQxg.png" },
+    { "code": "THE9#XL001", "member": "XIN Liu", "initial": "XL", "rarity": 1, "set": 1, "description": "Sphynx", "link": "https://i.imgur.com/jJgcmJd.png" },
+    { "code": "THE9#YY001", "member": "Yan Yu", "initial": "YY", "rarity": 1, "set": 1, "description": "Sphynx", "link": "https://i.imgur.com/85na4Pf.png" }
+  ]
+}

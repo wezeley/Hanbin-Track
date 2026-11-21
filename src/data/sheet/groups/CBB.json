@@ -1,0 +1,19 @@
+{
+  "number": 317,
+  "name": "can't be blue",
+  "code": "CBB",
+  "members": [
+    { "name": "Chaehyun", "initial": "CH" },
+    { "name": "Daehun", "initial": "DH" },
+    { "name": "Dahyun", "initial": "DY" },
+    { "name": "Dohun", "initial": "DO" },
+    { "name": "Hwuiwon", "initial": "HW" }
+  ],
+  "cards": [
+    { "code": "CBB#CH001", "member": "Chaehyun", "initial": "CH", "rarity": 1, "set": 1, "description": "can't love", "link": "https://i.imgur.com/nlALDNG.png" },
+    { "code": "CBB#DH001", "member": "Daehun", "initial": "DH", "rarity": 1, "set": 1, "description": "can't love", "link": "https://i.imgur.com/URfAH2y.png" },
+    { "code": "CBB#DY001", "member": "Dahyun", "initial": "DY", "rarity": 1, "set": 1, "description": "can't love", "link": "https://i.imgur.com/caFPMwm.png" },
+    { "code": "CBB#DO001", "member": "Dohun", "initial": "DO", "rarity": 1, "set": 1, "description": "can't love", "link": "https://i.imgur.com/5uIAMOI.png" },
+    { "code": "CBB#HW001", "member": "Hwuiwon", "initial": "HW", "rarity": 1, "set": 1, "description": "can't love", "link": "https://i.imgur.com/ljq16Qt.png" }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "number": 346,
+  "name": "A2O Lite",
+  "code": "A2OL",
+  "members": [
+    { "name": "Aijing", "initial": "AJ" },
+    { "name": "Ayune", "initial": "AY" },
+    { "name": "Himeki", "initial": "HM" },
+    { "name": "Merci", "initial": "MC" },
+    { "name": "Oa", "initial": "OA" },
+    { "name": "Rada", "initial": "RD" },
+    { "name": "Vora", "initial": "VR" },
+    { "name": "Xili", "initial": "XL" },
+    { "name": "Young", "initial": "YG" }
+  ],
+  "cards": [
+    { "code": "A2OL#AJ001", "member": "Aijing", "initial": "AJ", "rarity": 1, "set": 1, "description": "Neon", "link": "https://i.imgur.com/rzY2YAu.png" },
+    { "code": "A2OL#AY001", "member": "Ayune", "initial": "AY", "rarity": 1, "set": 1, "description": "Neon", "link": "https://i.imgur.com/Huf4s79.png" },
+    { "code": "A2OL#HM001", "member": "Himeki", "initial": "HM", "rarity": 1, "set": 1, "description": "Neon", "link": "https://i.imgur.com/3S9Njvw.png" },
+    { "code": "A2OL#MC001", "member": "Merci", "initial": "MC", "rarity": 1, "set": 1, "description": "Neon", "link": "https://i.imgur.com/uFfUH9L.png" },
+    { "code": "A2OL#OA001", "member": "Oa", "initial": "OA", "rarity": 1, "set": 1, "description": "Neon", "link": "https://i.imgur.com/DlaHped.png" },
+    { "code": "A2OL#RD001", "member": "Rada", "initial": "RD", "rarity": 1, "set": 1, "description": "Neon", "link": "https://i.imgur.com/h3p3mPu.png" },
+    { "code": "A2OL#VR001", "member": "Vora", "initial": "VR", "rarity": 1, "set": 1, "description": "Neon", "link": "https://i.imgur.com/L8W2yaM.png" },
+    { "code": "A2OL#XL001", "member": "Xili", "initial": "XL", "rarity": 1, "set": 1, "description": "Neon", "link": "https://i.imgur.com/U94Cx3Y.png" },
+    { "code": "A2OL#YG001", "member": "Young", "initial": "YG", "rarity": 1, "set": 1, "description": "Neon", "link": "https://i.imgur.com/IOLHSbB.png" }
+  ]
+}

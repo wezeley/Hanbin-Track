@@ -1,0 +1,24 @@
+{
+  "number": 297,
+  "name": "ChaDongHyeop",
+  "code": "CDH",
+  "members": [
+    { "name": "Dongyun", "initial": "DY" },
+    { "name": "Hyeop", "initial": "HY" },
+    { "name": "Junho", "initial": "JH" }
+  ],
+  "cards": [
+    { "code": "CDH#DY001", "member": "Dongyun", "initial": "DY", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/m4ZV43K.png" },
+    { "code": "CDH#HY001", "member": "Hyeop", "initial": "HY", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/4luxhlD.png" },
+    { "code": "CDH#JH001", "member": "Junho", "initial": "JH", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/EStrOAG.png" },
+    { "code": "CDH#DY002", "member": "Dongyun", "initial": "DY", "rarity": 2, "set": 1, "description": null, "link": "https://i.imgur.com/Tzv42Ok.png" },
+    { "code": "CDH#HY002", "member": "Hyeop", "initial": "HY", "rarity": 2, "set": 1, "description": null, "link": "https://i.imgur.com/RVtr9CS.png" },
+    { "code": "CDH#JH002", "member": "Junho", "initial": "JH", "rarity": 2, "set": 1, "description": null, "link": "https://i.imgur.com/ezjG6CT.png" },
+    { "code": "CDH#DY003", "member": "Dongyun", "initial": "DY", "rarity": 3, "set": 1, "description": null, "link": "https://i.imgur.com/5pSMMav.png" },
+    { "code": "CDH#HY003", "member": "Hyeop", "initial": "HY", "rarity": 3, "set": 1, "description": null, "link": "https://i.imgur.com/KAWeeB2.png" },
+    { "code": "CDH#JH003", "member": "Junho", "initial": "JH", "rarity": 3, "set": 1, "description": null, "link": "https://i.imgur.com/Oylh5bO.png" },
+    { "code": "CDH#DY004", "member": "Dongyun", "initial": "DY", "rarity": 4, "set": 1, "description": null, "link": "https://i.imgur.com/ssI6UFe.png" },
+    { "code": "CDH#HY004", "member": "Hyeop", "initial": "HY", "rarity": 4, "set": 1, "description": null, "link": "https://i.imgur.com/fjw0gSV.png" },
+    { "code": "CDH#JH004", "member": "Junho", "initial": "JH", "rarity": 4, "set": 1, "description": null, "link": "https://i.imgur.com/8NWbqRa.png" }
+  ]
+}

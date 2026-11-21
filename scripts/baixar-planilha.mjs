@@ -1,6 +1,12 @@
 // Baixa a planilha do bot e gera os dados do site em src/data/sheet/.
 // Uso: npm run planilha
 //
+// - O link da planilha NÃO fica no código: fica no arquivo .env.local, na
+//   raiz do projeto, com a linha SHEET_URL=<link da planilha>. O .gitignore
+//   já ignora *.local, então ele nunca vai para o Git. O nome não pode
+//   começar com VITE_: o Vite coloca no site as variáveis com esse prefixo.
+// - O dono da planilha pediu que ela não seja divulgada: os arquivos gerados
+//   (que vão para o Git e para o site) guardam só o que o site mostra.
 // - Tudo vem da planilha: número, nome, código, membro, inicial, raridade e
 //   link. O script nunca inventa um valor; quando algo falta ou está
 //   estranho, ele avisa no resumo do final. Única regra que não vem da
@@ -16,19 +22,35 @@
 //                   e dos solistas (id, nome, inicial, cartas, sets, IDs das cartas)
 //                   e dos eventos/Limiteds/radiantes (id, nome, tipo, cartas, páginas, fotos)
 //   groups/<código>.json   as cartas de um grupo
-//   events.json     Event Overview (blocos de evento + legenda Event/Limited)
+//   events.json     Event Overview (blocos de evento; a legenda Event/Limited
+//                   só é usada aqui no script e não é gravada)
 //   radiants.json   Radiant Overview (blocos de radiantes)
-//   todo.json       To-Do Order e To-Do Order Solo ("released" = já tem carta)
+//   todo.json       To-Do Order e To-Do Order Solo, só os nomes do "Upcoming
+//                   releases" (sem a coluna Ideas, sem o que já tem carta e
+//                   sem nome repetido)
 //   people.json     cada pessoa e onde aparece, para a busca (scripts/montar-pessoas.mjs)
 //   collections.json  as coleções (cartas com a mesma Description) (scripts/montar-colecoes.mjs)
 //   history.json    quando cada carta apareceu, para a aba Cards (scripts/montar-historico.mjs)
 
 import { mkdir, rm, writeFile } from 'node:fs/promises';
+import { fileURLToPath } from 'node:url';
 import { buildPeople } from './montar-pessoas.mjs';
 import { buildCollections } from './montar-colecoes.mjs';
 import { updateHistory } from './montar-historico.mjs';
 
-const SHEET = 'https://docs.google.com/spreadsheets/d/REMOVIDO';
+// Lê o .env.local (o Node já faz isso sozinho, sem pacote extra).
+// Sem o arquivo, vale a variável SHEET_URL do sistema, se existir.
+try {
+  process.loadEnvFile(fileURLToPath(new URL('../.env.local', import.meta.url)));
+} catch {
+  // arquivo não existe: segue para a conferência abaixo
+}
+const SHEET = process.env.SHEET_URL?.trim().replace(/\/+$/, '');
+if (!SHEET) {
+  console.error('Falta o link da planilha. Crie o arquivo .env.local na raiz do projeto com a linha:');
+  console.error('SHEET_URL=<link da planilha>');
+  process.exit(1);
+}
 const OUT_DIR = new URL('../src/data/sheet/', import.meta.url);
 const GROUPS_DIR = new URL('groups/', OUT_DIR);
 const PAUSE_MS = 1000;      // espera entre um download e outro
@@ -451,6 +473,23 @@ function addReleased(columns, owners, where) {
   }
 }
 
+// O que vai para o todo.json: só os nomes que o "Upcoming releases" da Home
+// mostra. O resto da To-Do (coluna "Ideas", o que já tem carta e nome
+// repetido na mesma lista, que é erro da planilha) é planejamento do dono
+// do bot e não precisa ficar público. Coluna sem nenhum nome não é gravada.
+function upcomingColumns(columns) {
+  const listed = columns.filter(column => !/Ideas/i.test(column.header));
+  const timesListed = name =>
+    listed.reduce((total, column) => total + column.names.filter(other => other === name).length, 0);
+  return listed
+    .map(column => ({
+      set: column.set,
+      rarity: column.rarity,
+      names: column.names.filter(name => !column.released.includes(name) && timesListed(name) === 1),
+    }))
+    .filter(column => column.names.length > 0);
+}
+
 // ---------- Solistas ----------
 
 // Cada solista da aba "0 - Solo" vira um "grupo" no site. O id é o código da
@@ -616,9 +655,12 @@ await save(new URL('index.json', OUT_DIR), {
     ...radiants.blocks.map(block => ({ ...block, kind: 'radiant' })),
   ]),
 });
-await save(new URL('events.json', OUT_DIR), events);
+await save(new URL('events.json', OUT_DIR), { blocks: events.blocks });
 await save(new URL('radiants.json', OUT_DIR), radiants);
-await save(new URL('todo.json', OUT_DIR), todo);
+await save(new URL('todo.json', OUT_DIR), {
+  groups: upcomingColumns(todo.groups),
+  solo: upcomingColumns(todo.solo),
+});
 // Lê os arquivos que acabaram de ser gravados
 const peopleCount = await buildPeople();
 const newCards = await updateHistory(); // antes das coleções: elas são ordenadas pelo histórico

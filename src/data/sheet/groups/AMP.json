@@ -1,0 +1,21 @@
+{
+  "number": 236,
+  "name": "AxMxP",
+  "code": "AMP",
+  "members": [
+    { "name": "Cru", "initial": "CR" },
+    { "name": "Juhwan", "initial": "JH" },
+    { "name": "Shin", "initial": "SN" },
+    { "name": "Yoojoon", "initial": "YJ" }
+  ],
+  "cards": [
+    { "code": "AMP#CR001", "member": "Cru", "initial": "CR", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/gsGaUv5.png" },
+    { "code": "AMP#JH001", "member": "Juhwan", "initial": "JH", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/bhs5zhU.png" },
+    { "code": "AMP#SN001", "member": "Shin", "initial": "SN", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/FGaFADs.png" },
+    { "code": "AMP#YJ001", "member": "Yoojoon", "initial": "YJ", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/TIstKlw.png" },
+    { "code": "AMP#CR002", "member": "Cru", "initial": "CR", "rarity": 2, "set": 1, "description": null, "link": "https://i.imgur.com/XUi9WkY.png" },
+    { "code": "AMP#JH002", "member": "Juhwan", "initial": "JH", "rarity": 2, "set": 1, "description": null, "link": "https://i.imgur.com/xAZ5u48.png" },
+    { "code": "AMP#SN002", "member": "Shin", "initial": "SN", "rarity": 2, "set": 1, "description": null, "link": "https://i.imgur.com/5adtbEw.png" },
+    { "code": "AMP#YJ002", "member": "Yoojoon", "initial": "YJ", "rarity": 2, "set": 1, "description": null, "link": "https://i.imgur.com/HEIKXyS.png" }
+  ]
+}

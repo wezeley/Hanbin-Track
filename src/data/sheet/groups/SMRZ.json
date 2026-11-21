@@ -1,0 +1,21 @@
+{
+  "number": 211,
+  "name": "SMORZ",
+  "code": "SMRZ",
+  "members": [
+    { "name": "Charlott", "initial": "CL" },
+    { "name": "Hira", "initial": "HR" },
+    { "name": "Ginni", "initial": "GN" },
+    { "name": "Lika", "initial": "LK" },
+    { "name": "Vicki", "initial": "VC" },
+    { "name": "Zellda", "initial": "ZD" }
+  ],
+  "cards": [
+    { "code": "SMRZ#CL001", "member": "Charlott", "initial": "CL", "rarity": 1, "set": 1, "description": "Always Some More", "link": "https://i.imgur.com/wRn1gmn.png" },
+    { "code": "SMRZ#HR001", "member": "Hira", "initial": "HR", "rarity": 1, "set": 1, "description": "Always Some More", "link": "https://i.imgur.com/OwQetW7.png" },
+    { "code": "SMRZ#GN001", "member": "Ginni", "initial": "GN", "rarity": 1, "set": 1, "description": "Always Some More", "link": "https://i.imgur.com/ClbNQcs.png" },
+    { "code": "SMRZ#LK001", "member": "Lika", "initial": "LK", "rarity": 1, "set": 1, "description": "Always Some More", "link": "https://i.imgur.com/1qcWkdr.png" },
+    { "code": "SMRZ#VC001", "member": "Vicki", "initial": "VC", "rarity": 1, "set": 1, "description": "Always Some More", "link": "https://i.imgur.com/404nhLg.png" },
+    { "code": "SMRZ#ZD001", "member": "Zellda", "initial": "ZD", "rarity": 1, "set": 1, "description": "Always Some More", "link": "https://i.imgur.com/kpJLjsu.png" }
+  ]
+}

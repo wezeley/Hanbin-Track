@@ -1,0 +1,23 @@
+{
+  "number": 324,
+  "name": "TUIDE",
+  "code": "TUID",
+  "members": [
+    { "name": "Elena", "initial": "EN" },
+    { "name": "Jia", "initial": "JA" },
+    { "name": "Saki", "initial": "SK" },
+    { "name": "Seah", "initial": "SA" },
+    { "name": "Seohee", "initial": "SH" },
+    { "name": "Seoyeon", "initial": "SY" },
+    { "name": "Yihani", "initial": "YH" }
+  ],
+  "cards": [
+    { "code": "TUID#EN001", "member": "Elena", "initial": "EN", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/cVPLxQK.png" },
+    { "code": "TUID#JA001", "member": "Jia", "initial": "JA", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/cpnlqok.png" },
+    { "code": "TUID#SK001", "member": "Saki", "initial": "SK", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/ALQci91.png" },
+    { "code": "TUID#SA001", "member": "Seah", "initial": "SA", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/0LM5Kg8.png" },
+    { "code": "TUID#SH001", "member": "Seohee", "initial": "SH", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/bMq0tqv.png" },
+    { "code": "TUID#SY001", "member": "Seoyeon", "initial": "SY", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/7SxekPc.png" },
+    { "code": "TUID#YH001", "member": "Yihani", "initial": "YH", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/ndrNrhQ.png" }
+  ]
+}

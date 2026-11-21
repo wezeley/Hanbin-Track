@@ -1,0 +1,29 @@
+{
+  "number": 275,
+  "name": "Pristin",
+  "code": "PRST",
+  "members": [
+    { "name": "Eunwoo", "initial": "EW" },
+    { "name": "Kyla", "initial": "KL" },
+    { "name": "Kyulkyung", "initial": "KK" },
+    { "name": "Nayoung", "initial": "NY" },
+    { "name": "Rena", "initial": "RN" },
+    { "name": "Roa", "initial": "RA" },
+    { "name": "Sungyeon", "initial": "SY" },
+    { "name": "Xiyeon", "initial": "XY" },
+    { "name": "Yehana", "initial": "YN" },
+    { "name": "Yuha", "initial": "YH" }
+  ],
+  "cards": [
+    { "code": "PRST#EW001", "member": "Eunwoo", "initial": "EW", "rarity": 1, "set": 1, "description": "HI! PRISTIN - Concept Photos", "link": "https://i.imgur.com/mpNjmFx.png" },
+    { "code": "PRST#KL001", "member": "Kyla", "initial": "KL", "rarity": 1, "set": 1, "description": "HI! PRISTIN - Concept Photos", "link": "https://i.imgur.com/IVzqmwx.png" },
+    { "code": "PRST#KK001", "member": "Kyulkyung", "initial": "KK", "rarity": 1, "set": 1, "description": "HI! PRISTIN - Concept Photos", "link": "https://i.imgur.com/YXW1487.png" },
+    { "code": "PRST#NY001", "member": "Nayoung", "initial": "NY", "rarity": 1, "set": 1, "description": "HI! PRISTIN - Concept Photos", "link": "https://i.imgur.com/mDHk310.png" },
+    { "code": "PRST#RN001", "member": "Rena", "initial": "RN", "rarity": 1, "set": 1, "description": "HI! PRISTIN - Concept Photos", "link": "https://i.imgur.com/6NOZYhg.png" },
+    { "code": "PRST#RA001", "member": "Roa", "initial": "RA", "rarity": 1, "set": 1, "description": "HI! PRISTIN - Concept Photos", "link": "https://i.imgur.com/qBbwl8o.png" },
+    { "code": "PRST#SY001", "member": "Sungyeon", "initial": "SY", "rarity": 1, "set": 1, "description": "HI! PRISTIN - Concept Photos", "link": "https://i.imgur.com/oy2xYor.png" },
+    { "code": "PRST#XY001", "member": "Xiyeon", "initial": "XY", "rarity": 1, "set": 1, "description": "HI! PRISTIN - Concept Photos", "link": "https://i.imgur.com/Yl3I0gc.png" },
+    { "code": "PRST#YN001", "member": "Yehana", "initial": "YN", "rarity": 1, "set": 1, "description": "HI! PRISTIN - Concept Photos", "link": "https://i.imgur.com/hozKg0g.png" },
+    { "code": "PRST#YH001", "member": "Yuha", "initial": "YH", "rarity": 1, "set": 1, "description": "HI! PRISTIN - Concept Photos", "link": "https://i.imgur.com/q1XTNv4.png" }
+  ]
+}

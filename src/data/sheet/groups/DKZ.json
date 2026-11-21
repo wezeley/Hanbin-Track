@@ -1,0 +1,19 @@
+{
+  "number": 195,
+  "name": "DKZ",
+  "code": "DKZ",
+  "members": [
+    { "name": "Giseok", "initial": "GS" },
+    { "name": "Jaechan", "initial": "JC" },
+    { "name": "Jonghyeong", "initial": "JH" },
+    { "name": "Mingyu", "initial": "MG" },
+    { "name": "Sehyeon", "initial": "SH" }
+  ],
+  "cards": [
+    { "code": "DKZ#GS001", "member": "Giseok", "initial": "GS", "rarity": 1, "set": 1, "description": "Reboot", "link": "https://i.imgur.com/4VegpRt.png" },
+    { "code": "DKZ#JC001", "member": "Jaechan", "initial": "JC", "rarity": 1, "set": 1, "description": "Reboot", "link": "https://i.imgur.com/aLNPsb9.png" },
+    { "code": "DKZ#JH001", "member": "Jonghyeong", "initial": "JH", "rarity": 1, "set": 1, "description": "Reboot", "link": "https://i.imgur.com/aGI4pLL.png" },
+    { "code": "DKZ#MG001", "member": "Mingyu", "initial": "MG", "rarity": 1, "set": 1, "description": "Reboot", "link": "https://i.imgur.com/DB5eMEj.png" },
+    { "code": "DKZ#SH001", "member": "Sehyeon", "initial": "SH", "rarity": 1, "set": 1, "description": "Reboot", "link": "https://i.imgur.com/Q4snJlq.png" }
+  ]
+}

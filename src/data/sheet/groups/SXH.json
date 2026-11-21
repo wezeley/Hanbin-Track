@@ -1,0 +1,21 @@
+{
+  "number": 218,
+  "name": "Shownu X Hyungwon",
+  "code": "SXH",
+  "members": [
+    { "name": "Hyungwon", "initial": "HW" },
+    { "name": "Shownu", "initial": "SN" }
+  ],
+  "cards": [
+    { "code": "SXH#HW001", "member": "Hyungwon", "initial": "HW", "rarity": 1, "set": 1, "description": "THE UNSEEN", "link": "https://i.imgur.com/jin5mVw.png" },
+    { "code": "SXH#SN001", "member": "Shownu", "initial": "SN", "rarity": 1, "set": 1, "description": "THE UNSEEN", "link": "https://i.imgur.com/uHjPWdW.png" },
+    { "code": "SXH#HW002", "member": "Hyungwon", "initial": "HW", "rarity": 2, "set": 1, "description": "THE UNSEEN", "link": "https://i.imgur.com/USCYqSl.png" },
+    { "code": "SXH#SN002", "member": "Shownu", "initial": "SN", "rarity": 2, "set": 1, "description": "THE UNSEEN", "link": "https://i.imgur.com/z2lENYN.png" },
+    { "code": "SXH#HW003", "member": "Hyungwon", "initial": "HW", "rarity": 3, "set": 1, "description": "THE UNSEEN", "link": "https://i.imgur.com/E11YJpL.png" },
+    { "code": "SXH#SN003", "member": "Shownu", "initial": "SN", "rarity": 3, "set": 1, "description": "THE UNSEEN", "link": "https://i.imgur.com/RLC9Y7N.png" },
+    { "code": "SXH#HW004", "member": "Hyungwon", "initial": "HW", "rarity": 4, "set": 1, "description": null, "link": "https://i.imgur.com/gxJYt6y.png" },
+    { "code": "SXH#SN004", "member": "Shownu", "initial": "SN", "rarity": 4, "set": 1, "description": null, "link": "https://i.imgur.com/7aP0ttm.png" },
+    { "code": "SXH#HW005", "member": "Hyungwon", "initial": "HW", "rarity": 5, "set": 1, "description": null, "link": "https://i.imgur.com/tteBCyf.png" },
+    { "code": "SXH#SN005", "member": "Shownu", "initial": "SN", "rarity": 5, "set": 1, "description": null, "link": "https://i.imgur.com/6Jwp3mq.png" }
+  ]
+}

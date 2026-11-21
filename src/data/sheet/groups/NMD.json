@@ -1,0 +1,39 @@
+{
+  "number": 108,
+  "name": "Nomad",
+  "code": "NMD",
+  "members": [
+    { "name": "DOY", "initial": "DY" },
+    { "name": "Junho", "initial": "JH" },
+    { "name": "ONE", "initial": "ON" },
+    { "name": "RIVR", "initial": "RV" },
+    { "name": "Sangha", "initial": "SH" }
+  ],
+  "cards": [
+    { "code": "NMD#DY001", "member": "DOY", "initial": "DY", "rarity": 1, "set": 1, "description": "1st Album Nomad", "link": "https://i.imgur.com/SzcOmZR.png" },
+    { "code": "NMD#JH001", "member": "Junho", "initial": "JH", "rarity": 1, "set": 1, "description": "1st Album Nomad", "link": "https://i.imgur.com/ilVoA5R.png" },
+    { "code": "NMD#ON001", "member": "ONE", "initial": "ON", "rarity": 1, "set": 1, "description": "1st Album Nomad", "link": "https://i.imgur.com/6cD36U6.png" },
+    { "code": "NMD#RV001", "member": "RIVR", "initial": "RV", "rarity": 1, "set": 1, "description": "1st Album Nomad", "link": "https://i.imgur.com/D2WV3xw.png" },
+    { "code": "NMD#SH001", "member": "Sangha", "initial": "SH", "rarity": 1, "set": 1, "description": "1st Album Nomad", "link": "https://i.imgur.com/LxvjPDS.png" },
+    { "code": "NMD#DY002", "member": "DOY", "initial": "DY", "rarity": 2, "set": 1, "description": "Call Me Back", "link": "https://i.imgur.com/MX8HzKU.png" },
+    { "code": "NMD#JH002", "member": "Junho", "initial": "JH", "rarity": 2, "set": 1, "description": "Call Me Back", "link": "https://i.imgur.com/gRzP9PQ.png" },
+    { "code": "NMD#ON002", "member": "ONE", "initial": "ON", "rarity": 2, "set": 1, "description": "Call Me Back", "link": "https://i.imgur.com/U9PtPZS.png" },
+    { "code": "NMD#RV002", "member": "RIVR", "initial": "RV", "rarity": 2, "set": 1, "description": "Call Me Back", "link": "https://i.imgur.com/gblA00S.png" },
+    { "code": "NMD#SH002", "member": "Sangha", "initial": "SH", "rarity": 2, "set": 1, "description": "Call Me Back", "link": "https://i.imgur.com/xn9xeoN.png" },
+    { "code": "NMD#DY003", "member": "DOY", "initial": "DY", "rarity": 3, "set": 1, "description": null, "link": "https://i.imgur.com/6X6RFWN.png" },
+    { "code": "NMD#JH003", "member": "Junho", "initial": "JH", "rarity": 3, "set": 1, "description": null, "link": "https://i.imgur.com/rGBg9a3.png" },
+    { "code": "NMD#ON003", "member": "ONE", "initial": "ON", "rarity": 3, "set": 1, "description": null, "link": "https://i.imgur.com/ztcMZYr.png" },
+    { "code": "NMD#RV003", "member": "RIVR", "initial": "RV", "rarity": 3, "set": 1, "description": null, "link": "https://i.imgur.com/0YkVSfa.png" },
+    { "code": "NMD#SH003", "member": "Sangha", "initial": "SH", "rarity": 3, "set": 1, "description": null, "link": "https://i.imgur.com/JuUmqDM.png" },
+    { "code": "NMD#DY004", "member": "DOY", "initial": "DY", "rarity": 4, "set": 1, "description": null, "link": "https://i.imgur.com/Ox2ASvQ.png" },
+    { "code": "NMD#JH004", "member": "Junho", "initial": "JH", "rarity": 4, "set": 1, "description": null, "link": "https://i.imgur.com/OtnspjI.png" },
+    { "code": "NMD#ON004", "member": "ONE", "initial": "ON", "rarity": 4, "set": 1, "description": null, "link": "https://i.imgur.com/1Y40Lh6.png" },
+    { "code": "NMD#RV004", "member": "RIVR", "initial": "RV", "rarity": 4, "set": 1, "description": null, "link": "https://i.imgur.com/QBwBaJJ.png" },
+    { "code": "NMD#SH004", "member": "Sangha", "initial": "SH", "rarity": 4, "set": 1, "description": null, "link": "https://i.imgur.com/5NxlsPZ.png" },
+    { "code": "NMD#DY005", "member": "DOY", "initial": "DY", "rarity": 5, "set": 1, "description": null, "link": "https://i.imgur.com/pw3ttL7.png" },
+    { "code": "NMD#JH005", "member": "Junho", "initial": "JH", "rarity": 5, "set": 1, "description": null, "link": "https://i.imgur.com/DxD3bfL.png" },
+    { "code": "NMD#ON005", "member": "ONE", "initial": "ON", "rarity": 5, "set": 1, "description": null, "link": "https://i.imgur.com/FHKpOH2.png" },
+    { "code": "NMD#RV005", "member": "RIVR", "initial": "RV", "rarity": 5, "set": 1, "description": null, "link": "https://i.imgur.com/moPTEFK.png" },
+    { "code": "NMD#SH005", "member": "Sangha", "initial": "SH", "rarity": 5, "set": 1, "description": null, "link": "https://i.imgur.com/y32YnfP.png" }
+  ]
+}

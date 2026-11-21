@@ -1,0 +1,29 @@
+{
+  "number": 322,
+  "name": "B1A4",
+  "code": "B1A4",
+  "members": [
+    { "name": "Baro", "initial": "BR" },
+    { "name": "CNU", "initial": "CN" },
+    { "name": "Gongchan", "initial": "GC" },
+    { "name": "Jinyoung", "initial": "JY" },
+    { "name": "Sandeul", "initial": "SD" }
+  ],
+  "cards": [
+    { "code": "B1A4#BR001", "member": "Baro", "initial": "BR", "rarity": 1, "set": 1, "description": "Sweet Girl (2015)", "link": "https://i.imgur.com/CujMZPh.png" },
+    { "code": "B1A4#CN001", "member": "CNU", "initial": "CN", "rarity": 1, "set": 1, "description": "Sweet Girl (2015)", "link": "https://i.imgur.com/6zk07vB.png" },
+    { "code": "B1A4#GC001", "member": "Gongchan", "initial": "GC", "rarity": 1, "set": 1, "description": "Sweet Girl (2015)", "link": "https://i.imgur.com/wDotLd4.png" },
+    { "code": "B1A4#JY001", "member": "Jinyoung", "initial": "JY", "rarity": 1, "set": 1, "description": "Sweet Girl (2015)", "link": "https://i.imgur.com/OrDC6OF.png" },
+    { "code": "B1A4#SD001", "member": "Sandeul", "initial": "SD", "rarity": 1, "set": 1, "description": "Sweet Girl (2015)", "link": "https://i.imgur.com/MaZ14jf.png" },
+    { "code": "B1A4#BR002", "member": "Baro", "initial": "BR", "rarity": 2, "set": 1, "description": "Good Timing (2016)", "link": "https://i.imgur.com/qtVzcLJ.png" },
+    { "code": "B1A4#CN002", "member": "CNU", "initial": "CN", "rarity": 2, "set": 1, "description": "Good Timing (2016)", "link": "https://i.imgur.com/iFiTOjH.png" },
+    { "code": "B1A4#GC002", "member": "Gongchan", "initial": "GC", "rarity": 2, "set": 1, "description": "Good Timing (2016)", "link": "https://i.imgur.com/uEo1Gmu.png" },
+    { "code": "B1A4#JY002", "member": "Jinyoung", "initial": "JY", "rarity": 2, "set": 1, "description": "Good Timing (2016)", "link": "https://i.imgur.com/IaD3ERQ.png" },
+    { "code": "B1A4#SD002", "member": "Sandeul", "initial": "SD", "rarity": 2, "set": 1, "description": "Good Timing (2016)", "link": "https://i.imgur.com/9yMG8bV.png" },
+    { "code": "B1A4#BR003", "member": "Baro", "initial": "BR", "rarity": 3, "set": 1, "description": "Rollin' (2017)", "link": "https://i.imgur.com/kUjxNCg.png" },
+    { "code": "B1A4#CN003", "member": "CNU", "initial": "CN", "rarity": 3, "set": 1, "description": "Rollin' (2017)", "link": "https://i.imgur.com/kfwge6l.png" },
+    { "code": "B1A4#GC003", "member": "Gongchan", "initial": "GC", "rarity": 3, "set": 1, "description": "Rollin' (2017)", "link": "https://i.imgur.com/5mhA1ah.png" },
+    { "code": "B1A4#JY003", "member": "Jinyoung", "initial": "JY", "rarity": 3, "set": 1, "description": "Rollin' (2017)", "link": "https://i.imgur.com/PKvMlJ8.png" },
+    { "code": "B1A4#SD003", "member": "Sandeul", "initial": "SD", "rarity": 3, "set": 1, "description": "Rollin' (2017)", "link": "https://i.imgur.com/Gub0wXg.png" }
+  ]
+}

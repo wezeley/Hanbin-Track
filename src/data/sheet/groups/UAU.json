@@ -1,0 +1,18 @@
+{
+  "number": 193,
+  "name": "UAU",
+  "code": "UAU",
+  "members": [
+    { "name": "JiU", "initial": "JU" },
+    { "name": "SuA", "initial": "SA" },
+    { "name": "Yoohyeon", "initial": "YH" }
+  ],
+  "cards": [
+    { "code": "UAU#JU001", "member": "JiU", "initial": "JU", "rarity": 1, "set": 1, "description": "Playlist #You Are You", "link": "https://i.imgur.com/PqYZT7d.png" },
+    { "code": "UAU#SA001", "member": "SuA", "initial": "SA", "rarity": 1, "set": 1, "description": "Playlist #You Are You", "link": "https://i.imgur.com/pQJZmvF.png" },
+    { "code": "UAU#YH001", "member": "Yoohyeon", "initial": "YH", "rarity": 1, "set": 1, "description": "Playlist #You Are You", "link": "https://i.imgur.com/7as07nZ.png" },
+    { "code": "UAU#JU002", "member": "JiU", "initial": "JU", "rarity": 2, "set": 1, "description": "Playlist Your Youth", "link": "https://i.imgur.com/5bjyEIU.png" },
+    { "code": "UAU#SA002", "member": "SuA", "initial": "SA", "rarity": 2, "set": 1, "description": "Playlist Your Youth", "link": "https://i.imgur.com/VI6hpgS.png" },
+    { "code": "UAU#YH002", "member": "Yoohyeon", "initial": "YH", "rarity": 2, "set": 1, "description": "Playlist Your Youth", "link": "https://i.imgur.com/rSqgN3o.png" }
+  ]
+}

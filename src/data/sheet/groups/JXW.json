@@ -1,0 +1,21 @@
+{
+  "number": 91,
+  "name": "JxW",
+  "code": "JXW",
+  "members": [
+    { "name": "Jeonghan", "initial": "JH" },
+    { "name": "Wonwoo", "initial": "WW" }
+  ],
+  "cards": [
+    { "code": "JXW#JH001", "member": "Jeonghan", "initial": "JH", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/n4SA5Ss.png" },
+    { "code": "JXW#WW001", "member": "Wonwoo", "initial": "WW", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/HlXUMON.png" },
+    { "code": "JXW#JH002", "member": "Jeonghan", "initial": "JH", "rarity": 2, "set": 1, "description": null, "link": "https://i.imgur.com/Y150xOn.png" },
+    { "code": "JXW#WW002", "member": "Wonwoo", "initial": "WW", "rarity": 2, "set": 1, "description": null, "link": "https://i.imgur.com/shVatSi.png" },
+    { "code": "JXW#JH003", "member": "Jeonghan", "initial": "JH", "rarity": 3, "set": 1, "description": null, "link": "https://i.imgur.com/0U1KRkE.png" },
+    { "code": "JXW#WW003", "member": "Wonwoo", "initial": "WW", "rarity": 3, "set": 1, "description": null, "link": "https://i.imgur.com/NAxxEIq.png" },
+    { "code": "JXW#JH004", "member": "Jeonghan", "initial": "JH", "rarity": 4, "set": 1, "description": null, "link": "https://i.imgur.com/PSj68JQ.png" },
+    { "code": "JXW#WW004", "member": "Wonwoo", "initial": "WW", "rarity": 4, "set": 1, "description": null, "link": "https://i.imgur.com/8uAussG.png" },
+    { "code": "JXW#JH005", "member": "Jeonghan", "initial": "JH", "rarity": 5, "set": 1, "description": null, "link": "https://i.imgur.com/VPhu4wJ.png" },
+    { "code": "JXW#WW005", "member": "Wonwoo", "initial": "WW", "rarity": 5, "set": 1, "description": null, "link": "https://i.imgur.com/PCYDP8H.png" }
+  ]
+}

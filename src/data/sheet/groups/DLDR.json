@@ -1,0 +1,27 @@
+{
+  "number": 277,
+  "name": "Daily:Direction",
+  "code": "DLDR",
+  "members": [
+    { "name": "EN-KIM", "initial": "EK" },
+    { "name": "E-VAN", "initial": "EV" },
+    { "name": "Jihwan", "initial": "JW" },
+    { "name": "Joohyoung", "initial": "JH" },
+    { "name": "Wonwoo", "initial": "WW" },
+    { "name": "Yoonseok", "initial": "YS" }
+  ],
+  "cards": [
+    { "code": "DLDR#EK001", "member": "EN-KIM", "initial": "EK", "rarity": 1, "set": 1, "description": "FIRST:DELIVERY - Concept Photos", "link": "https://i.imgur.com/oDNPKT7.png" },
+    { "code": "DLDR#EV001", "member": "E-VAN", "initial": "EV", "rarity": 1, "set": 1, "description": "FIRST:DELIVERY - Concept Photos", "link": "https://i.imgur.com/bIbU52I.png" },
+    { "code": "DLDR#JW001", "member": "Jihwan", "initial": "JW", "rarity": 1, "set": 1, "description": "FIRST:DELIVERY - Concept Photos", "link": "https://i.imgur.com/XHCNNpK.png" },
+    { "code": "DLDR#JH001", "member": "Joohyoung", "initial": "JH", "rarity": 1, "set": 1, "description": "FIRST:DELIVERY - Concept Photos", "link": "https://i.imgur.com/IxhAxGN.png" },
+    { "code": "DLDR#WW001", "member": "Wonwoo", "initial": "WW", "rarity": 1, "set": 1, "description": "FIRST:DELIVERY - Concept Photos", "link": "https://i.imgur.com/eraWomC.png" },
+    { "code": "DLDR#YS001", "member": "Yoonseok", "initial": "YS", "rarity": 1, "set": 1, "description": "FIRST:DELIVERY - Concept Photos", "link": "https://i.imgur.com/3Lyycy0.png" },
+    { "code": "DLDR#EK002", "member": "EN-KIM", "initial": "EK", "rarity": 2, "set": 1, "description": "Monkey Mode", "link": "https://i.imgur.com/L6Xng7q.png" },
+    { "code": "DLDR#EV002", "member": "E-VAN", "initial": "EV", "rarity": 2, "set": 1, "description": "Monkey Mode", "link": "https://i.imgur.com/KHNDzzx.png" },
+    { "code": "DLDR#JW002", "member": "Jihwan", "initial": "JW", "rarity": 2, "set": 1, "description": "Monkey Mode", "link": "https://i.imgur.com/xUO9Kbr.png" },
+    { "code": "DLDR#JH002", "member": "Joohyoung", "initial": "JH", "rarity": 2, "set": 1, "description": "Monkey Mode", "link": "https://i.imgur.com/WDMCygs.png" },
+    { "code": "DLDR#WW002", "member": "Wonwoo", "initial": "WW", "rarity": 2, "set": 1, "description": "Monkey Mode", "link": "https://i.imgur.com/vkABkOs.png" },
+    { "code": "DLDR#YS002", "member": "Yoonseok", "initial": "YS", "rarity": 2, "set": 1, "description": "Monkey Mode", "link": "https://i.imgur.com/2LJyshw.png" }
+  ]
+}

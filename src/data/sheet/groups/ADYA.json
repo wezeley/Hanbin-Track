@@ -1,0 +1,24 @@
+{
+  "number": 129,
+  "name": "ADYA",
+  "code": "ADYA",
+  "members": [
+    { "name": "Chaeeun", "initial": "CE" },
+    { "name": "Sena", "initial": "SN" },
+    { "name": "Seowon", "initial": "SW" },
+    { "name": "Seungchae", "initial": "SC" },
+    { "name": "Yeonsu", "initial": "YS" }
+  ],
+  "cards": [
+    { "code": "ADYA#CE001", "member": "Chaeeun", "initial": "CE", "rarity": 1, "set": 1, "description": "What's Up?", "link": "https://i.imgur.com/GQAtqAE.png" },
+    { "code": "ADYA#SN001", "member": "Sena", "initial": "SN", "rarity": 1, "set": 1, "description": "What's Up?", "link": "https://i.imgur.com/KkKXdB8.png" },
+    { "code": "ADYA#SW001", "member": "Seowon", "initial": "SW", "rarity": 1, "set": 1, "description": "What's Up?", "link": "https://i.imgur.com/LAfOank.png" },
+    { "code": "ADYA#SC001", "member": "Seungchae", "initial": "SC", "rarity": 1, "set": 1, "description": "What's Up?", "link": "https://i.imgur.com/kr2vkSl.png" },
+    { "code": "ADYA#YS001", "member": "Yeonsu", "initial": "YS", "rarity": 1, "set": 1, "description": "What's Up?", "link": "https://i.imgur.com/wdJYgWt.png" },
+    { "code": "ADYA#CE002", "member": "Chaeeun", "initial": "CE", "rarity": 2, "set": 1, "description": "1st Single Album ADYA", "link": "https://i.imgur.com/2waehnY.png" },
+    { "code": "ADYA#SN002", "member": "Sena", "initial": "SN", "rarity": 2, "set": 1, "description": "1st Single Album ADYA", "link": "https://i.imgur.com/NL4LDIR.png" },
+    { "code": "ADYA#SW002", "member": "Seowon", "initial": "SW", "rarity": 2, "set": 1, "description": "1st Single Album ADYA", "link": "https://i.imgur.com/RzFeSez.png" },
+    { "code": "ADYA#SC002", "member": "Seungchae", "initial": "SC", "rarity": 2, "set": 1, "description": "1st Single Album ADYA", "link": "https://i.imgur.com/IztFupk.png" },
+    { "code": "ADYA#YS002", "member": "Yeonsu", "initial": "YS", "rarity": 2, "set": 1, "description": "1st Single Album ADYA", "link": "https://i.imgur.com/gmHX7MY.png" }
+  ]
+}

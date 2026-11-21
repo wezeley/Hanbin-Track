@@ -1,0 +1,18 @@
+{
+  "number": 188,
+  "name": "3YE",
+  "code": "3YE",
+  "members": [
+    { "name": "Haeun", "initial": "HE" },
+    { "name": "Yuji", "initial": "YJ" },
+    { "name": "Yurim", "initial": "YR" }
+  ],
+  "cards": [
+    { "code": "3YE#HE001", "member": "Haeun", "initial": "HE", "rarity": 1, "set": 1, "description": "Loco", "link": "https://i.imgur.com/ely3nMV.png" },
+    { "code": "3YE#YJ001", "member": "Yuji", "initial": "YJ", "rarity": 1, "set": 1, "description": "Loco", "link": "https://i.imgur.com/TMjghXW.png" },
+    { "code": "3YE#YR001", "member": "Yurim", "initial": "YR", "rarity": 1, "set": 1, "description": "Loco", "link": "https://i.imgur.com/NdCOC42.png" },
+    { "code": "3YE#HE002", "member": "Haeun", "initial": "HE", "rarity": 2, "set": 1, "description": "3YE DMT Concept Photos 2019", "link": "https://i.imgur.com/T2nD5pF.png" },
+    { "code": "3YE#YJ002", "member": "Yuji", "initial": "YJ", "rarity": 2, "set": 1, "description": "3YE DMT Concept Photos 2019", "link": "https://i.imgur.com/gz1Ty3K.png" },
+    { "code": "3YE#YR002", "member": "Yurim", "initial": "YR", "rarity": 2, "set": 1, "description": "3YE DMT Concept Photos 2019", "link": "https://i.imgur.com/A1wtmBk.png" }
+  ]
+}

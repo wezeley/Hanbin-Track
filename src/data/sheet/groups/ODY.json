@@ -1,0 +1,29 @@
+{
+  "number": 221,
+  "name": "Odd Youth",
+  "code": "ODY",
+  "members": [
+    { "name": "Kanie", "initial": "KN" },
+    { "name": "Maika", "initial": "MK" },
+    { "name": "Myah", "initial": "MY" },
+    { "name": "Summer", "initial": "SM" },
+    { "name": "Yeeum", "initial": "YE" }
+  ],
+  "cards": [
+    { "code": "ODY#KN001", "member": "Kanie", "initial": "KN", "rarity": 1, "set": 1, "description": "Best Friendz / Thats Me", "link": "https://i.imgur.com/6iDnwZo.png" },
+    { "code": "ODY#MK001", "member": "Maika", "initial": "MK", "rarity": 1, "set": 1, "description": "Best Friendz / Thats Me", "link": "https://i.imgur.com/8SObMVL.png" },
+    { "code": "ODY#MY001", "member": "Myah", "initial": "MY", "rarity": 1, "set": 1, "description": "Best Friendz / Thats Me", "link": "https://i.imgur.com/qnLJBT8.png" },
+    { "code": "ODY#SM001", "member": "Summer", "initial": "SM", "rarity": 1, "set": 1, "description": "Best Friendz / Thats Me", "link": "https://i.imgur.com/ghHgIeJ.png" },
+    { "code": "ODY#YE001", "member": "Yeeum", "initial": "YE", "rarity": 1, "set": 1, "description": "Best Friendz / Thats Me", "link": "https://i.imgur.com/K3aDVmH.png" },
+    { "code": "ODY#KN002", "member": "Kanie", "initial": "KN", "rarity": 2, "set": 1, "description": "I Like You", "link": "https://i.imgur.com/Pf5HDZO.png" },
+    { "code": "ODY#MK002", "member": "Maika", "initial": "MK", "rarity": 2, "set": 1, "description": "I Like You", "link": "https://i.imgur.com/CO4POhR.png" },
+    { "code": "ODY#MY002", "member": "Myah", "initial": "MY", "rarity": 2, "set": 1, "description": "I Like You", "link": "https://i.imgur.com/KnQEQZT.png" },
+    { "code": "ODY#SM002", "member": "Summer", "initial": "SM", "rarity": 2, "set": 1, "description": "I Like You", "link": "https://i.imgur.com/dKSkIuU.png" },
+    { "code": "ODY#YE002", "member": "Yeeum", "initial": "YE", "rarity": 2, "set": 1, "description": "I Like You", "link": "https://i.imgur.com/jmjwt2v.png" },
+    { "code": "ODY#KN003", "member": "Kanie", "initial": "KN", "rarity": 3, "set": 1, "description": "Babyface", "link": "https://i.imgur.com/OTn06gO.png" },
+    { "code": "ODY#MK003", "member": "Maika", "initial": "MK", "rarity": 3, "set": 1, "description": "Babyface", "link": "https://i.imgur.com/7JZQAGA.png" },
+    { "code": "ODY#MY003", "member": "Myah", "initial": "MY", "rarity": 3, "set": 1, "description": "Babyface", "link": "https://i.imgur.com/ePxa1vz.png" },
+    { "code": "ODY#SM003", "member": "Summer", "initial": "SM", "rarity": 3, "set": 1, "description": "Babyface", "link": "https://i.imgur.com/RBfccP3.png" },
+    { "code": "ODY#YE003", "member": "Yeeum", "initial": "YE", "rarity": 3, "set": 1, "description": "Babyface", "link": "https://i.imgur.com/R2ERkTf.png" }
+  ]
+}

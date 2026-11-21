@@ -1,0 +1,19 @@
+{
+  "number": 300,
+  "name": "Heart of Woman",
+  "code": "HOW",
+  "members": [
+    { "name": "Ayne", "initial": "AN" },
+    { "name": "Chaei", "initial": "CI" },
+    { "name": "Jihyun", "initial": "JH" },
+    { "name": "Liri", "initial": "LR" },
+    { "name": "Liuyin", "initial": "LY" }
+  ],
+  "cards": [
+    { "code": "HOW#AN001", "member": "Ayne", "initial": "AN", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/L4RxZYo.png" },
+    { "code": "HOW#CI001", "member": "Chaei", "initial": "CI", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/X0qXPoF.png" },
+    { "code": "HOW#JH001", "member": "Jihyun", "initial": "JH", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/jhHBsFl.png" },
+    { "code": "HOW#LR001", "member": "Liri", "initial": "LR", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/3q9dNWX.png" },
+    { "code": "HOW#LY001", "member": "Liuyin", "initial": "LY", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/P3fvhWV.png" }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "number": 253,
+  "name": "Girls' Generation-TTS",
+  "code": "TTS",
+  "members": [
+    { "name": "Seohyun", "initial": "SH" },
+    { "name": "Taeyeon", "initial": "TY" },
+    { "name": "Tiffany", "initial": "TF" }
+  ],
+  "cards": [
+    { "code": "TTS#SH001", "member": "Seohyun", "initial": "SH", "rarity": 1, "set": 1, "description": "Twinkle - Concept Photo", "link": "https://i.imgur.com/fCh3Zwv.png" },
+    { "code": "TTS#TY001", "member": "Taeyeon", "initial": "TY", "rarity": 1, "set": 1, "description": "Twinkle - Concept Photo", "link": "https://i.imgur.com/YbmnNit.png" },
+    { "code": "TTS#TF001", "member": "Tiffany", "initial": "TF", "rarity": 1, "set": 1, "description": "Twinkle - Concept Photo", "link": "https://i.imgur.com/MtRQqId.png" },
+    { "code": "TTS#SH002", "member": "Seohyun", "initial": "SH", "rarity": 2, "set": 1, "description": "Holler - Concept Photo", "link": "https://i.imgur.com/nosGG78.png" },
+    { "code": "TTS#TY002", "member": "Taeyeon", "initial": "TY", "rarity": 2, "set": 1, "description": "Holler - Concept Photo", "link": "https://i.imgur.com/CZEl01S.png" },
+    { "code": "TTS#TF002", "member": "Tiffany", "initial": "TF", "rarity": 2, "set": 1, "description": "Holler - Concept Photo", "link": "https://i.imgur.com/4x6mEPo.png" },
+    { "code": "TTS#SH003", "member": "Seohyun", "initial": "SH", "rarity": 3, "set": 1, "description": "Dear Santa - Concept Photo", "link": "https://i.imgur.com/1I5UaZb.png" },
+    { "code": "TTS#TY003", "member": "Taeyeon", "initial": "TY", "rarity": 3, "set": 1, "description": "Dear Santa - Concept Photo", "link": "https://i.imgur.com/VrfRvFy.png" },
+    { "code": "TTS#TF003", "member": "Tiffany", "initial": "TF", "rarity": 3, "set": 1, "description": "Dear Santa - Concept Photo", "link": "https://i.imgur.com/nrRb0No.png" },
+    { "code": "TTS#SH004", "member": "Seohyun", "initial": "SH", "rarity": 4, "set": 1, "description": null, "link": "https://i.imgur.com/xqkbWiK.png" },
+    { "code": "TTS#TY004", "member": "Taeyeon", "initial": "TY", "rarity": 4, "set": 1, "description": null, "link": "https://i.imgur.com/INNyNT2.png" },
+    { "code": "TTS#TF004", "member": "Tiffany", "initial": "TF", "rarity": 4, "set": 1, "description": null, "link": "https://i.imgur.com/UMD8wpP.png" },
+    { "code": "TTS#SH005", "member": "Seohyun", "initial": "SH", "rarity": 5, "set": 1, "description": null, "link": "https://i.imgur.com/LcdvWuh.png" },
+    { "code": "TTS#TY005", "member": "Taeyeon", "initial": "TY", "rarity": 5, "set": 1, "description": null, "link": "https://i.imgur.com/XoP9vdo.png" },
+    { "code": "TTS#TF005", "member": "Tiffany", "initial": "TF", "rarity": 5, "set": 1, "description": null, "link": "https://i.imgur.com/BMIusU7.png" }
+  ]
+}

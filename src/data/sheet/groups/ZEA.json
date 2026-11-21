@@ -1,0 +1,27 @@
+{
+  "number": 139,
+  "name": "ZE:A",
+  "code": "ZEA",
+  "members": [
+    { "name": "Dongjun", "initial": "DJ" },
+    { "name": "Heechul", "initial": "HC" },
+    { "name": "Hyungshik", "initial": "HS" },
+    { "name": "Kevin", "initial": "KV" },
+    { "name": "Kwanghee", "initial": "KH" },
+    { "name": "Lee Hoo", "initial": "LH" },
+    { "name": "Minwoo", "initial": "MW" },
+    { "name": "Siwan", "initial": "SW" },
+    { "name": "Taeheon", "initial": "TH" }
+  ],
+  "cards": [
+    { "code": "ZEA#DJ001", "member": "Dongjun", "initial": "DJ", "rarity": 1, "set": 1, "description": "Spectacular", "link": "https://i.imgur.com/YaK2Xgd.png" },
+    { "code": "ZEA#HC001", "member": "Heechul", "initial": "HC", "rarity": 1, "set": 1, "description": "Spectacular", "link": "https://i.imgur.com/TmQizp9.png" },
+    { "code": "ZEA#HS001", "member": "Hyungshik", "initial": "HS", "rarity": 1, "set": 1, "description": "Spectacular", "link": "https://i.imgur.com/Y9b40Wt.png" },
+    { "code": "ZEA#KV001", "member": "Kevin", "initial": "KV", "rarity": 1, "set": 1, "description": "Spectacular", "link": "https://i.imgur.com/TX3leSa.png" },
+    { "code": "ZEA#KH001", "member": "Kwanghee", "initial": "KH", "rarity": 1, "set": 1, "description": "Spectacular", "link": "https://i.imgur.com/fxzveEd.png" },
+    { "code": "ZEA#LH001", "member": "Lee Hoo", "initial": "LH", "rarity": 1, "set": 1, "description": "Spectacular", "link": "https://i.imgur.com/Wf5gYX8.png" },
+    { "code": "ZEA#MW001", "member": "Minwoo", "initial": "MW", "rarity": 1, "set": 1, "description": "Spectacular", "link": "https://i.imgur.com/ZbYCXZj.png" },
+    { "code": "ZEA#SW001", "member": "Siwan", "initial": "SW", "rarity": 1, "set": 1, "description": "Spectacular", "link": "https://i.imgur.com/Cf1yHWX.png" },
+    { "code": "ZEA#TH001", "member": "Taeheon", "initial": "TH", "rarity": 1, "set": 1, "description": "Spectacular", "link": "https://i.imgur.com/VWVegxd.png" }
+  ]
+}

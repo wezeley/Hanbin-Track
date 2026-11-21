@@ -1,0 +1,24 @@
+{
+  "number": 289,
+  "name": "Keyvitup",
+  "code": "KYVU",
+  "members": [
+    { "name": "Hyunmin", "initial": "HM" },
+    { "name": "Jaein", "initial": "JI" },
+    { "name": "Rukia", "initial": "RK" },
+    { "name": "Sena", "initial": "SN" },
+    { "name": "Taehwan", "initial": "TH" }
+  ],
+  "cards": [
+    { "code": "KYVU#HM001", "member": "Hyunmin", "initial": "HM", "rarity": 1, "set": 1, "description": "KEYVITUP 1st EP - Concept Photos", "link": "https://i.imgur.com/wSuOfd7.png" },
+    { "code": "KYVU#JI001", "member": "Jaein", "initial": "JI", "rarity": 1, "set": 1, "description": "KEYVITUP 1st EP - Concept Photos", "link": "https://i.imgur.com/ZxKtsQu.png" },
+    { "code": "KYVU#RK001", "member": "Rukia", "initial": "RK", "rarity": 1, "set": 1, "description": "KEYVITUP 1st EP - Concept Photos", "link": "https://i.imgur.com/f5G2iCC.png" },
+    { "code": "KYVU#SN001", "member": "Sena", "initial": "SN", "rarity": 1, "set": 1, "description": "KEYVITUP 1st EP - Concept Photos", "link": "https://i.imgur.com/65KxYrw.png" },
+    { "code": "KYVU#TH001", "member": "Taehwan", "initial": "TH", "rarity": 1, "set": 1, "description": "KEYVITUP 1st EP - Concept Photos", "link": "https://i.imgur.com/OAyHcTf.png" },
+    { "code": "KYVU#HM002", "member": "Hyunmin", "initial": "HM", "rarity": 2, "set": 1, "description": "Nagari", "link": "https://i.imgur.com/hOODRww.png" },
+    { "code": "KYVU#JI002", "member": "Jaein", "initial": "JI", "rarity": 2, "set": 1, "description": "Nagari", "link": "https://i.imgur.com/rBZetRT.png" },
+    { "code": "KYVU#RK002", "member": "Rukia", "initial": "RK", "rarity": 2, "set": 1, "description": "Nagari", "link": "https://i.imgur.com/y4RMrrx.png" },
+    { "code": "KYVU#SN002", "member": "Sena", "initial": "SN", "rarity": 2, "set": 1, "description": "Nagari", "link": "https://i.imgur.com/SgrFWxI.png" },
+    { "code": "KYVU#TH002", "member": "Taehwan", "initial": "TH", "rarity": 2, "set": 1, "description": "Nagari", "link": "https://i.imgur.com/0bMPe8h.png" }
+  ]
+}

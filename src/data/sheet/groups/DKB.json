@@ -1,0 +1,25 @@
+{
+  "number": 228,
+  "name": "DKB",
+  "code": "DKB",
+  "members": [
+    { "name": "D1", "initial": "DO" },
+    { "name": "E-Chan", "initial": "EC" },
+    { "name": "GK", "initial": "GK" },
+    { "name": "Harry June", "initial": "HJ" },
+    { "name": "Heechan", "initial": "HC" },
+    { "name": "Junseo", "initial": "JS" },
+    { "name": "Lune", "initial": "LN" },
+    { "name": "Yuku", "initial": "YK" }
+  ],
+  "cards": [
+    { "code": "DKB#DO001", "member": "D1", "initial": "DO", "rarity": 1, "set": 1, "description": "Urban Ride", "link": "https://i.imgur.com/sP4DBTT.png" },
+    { "code": "DKB#EC001", "member": "E-Chan", "initial": "EC", "rarity": 1, "set": 1, "description": "Urban Ride", "link": "https://i.imgur.com/di6NGw9.png" },
+    { "code": "DKB#GK001", "member": "GK", "initial": "GK", "rarity": 1, "set": 1, "description": "Urban Ride", "link": "https://i.imgur.com/Oj1gLke.png" },
+    { "code": "DKB#HJ001", "member": "Harry June", "initial": "HJ", "rarity": 1, "set": 1, "description": "Urban Ride", "link": "https://i.imgur.com/cwrDpgj.png" },
+    { "code": "DKB#HC001", "member": "Heechan", "initial": "HC", "rarity": 1, "set": 1, "description": "Urban Ride", "link": "https://i.imgur.com/lEIOsmA.png" },
+    { "code": "DKB#JS001", "member": "Junseo", "initial": "JS", "rarity": 1, "set": 1, "description": "Urban Ride", "link": "https://i.imgur.com/WbuKYQT.png" },
+    { "code": "DKB#LN001", "member": "Lune", "initial": "LN", "rarity": 1, "set": 1, "description": "Urban Ride", "link": "https://i.imgur.com/MCoZz0L.png" },
+    { "code": "DKB#YK001", "member": "Yuku", "initial": "YK", "rarity": 1, "set": 1, "description": "Urban Ride", "link": "https://i.imgur.com/4ezk4zP.png" }
+  ]
+}

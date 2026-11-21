@@ -1,0 +1,23 @@
+{
+  "number": 286,
+  "name": "TAN",
+  "code": "TAN",
+  "members": [
+    { "name": "Changsun", "initial": "CS" },
+    { "name": "Hyunyeop", "initial": "HY" },
+    { "name": "Jaejun", "initial": "JJ" },
+    { "name": "Jiseong", "initial": "JS" },
+    { "name": "Jooan", "initial": "JA" },
+    { "name": "Sunghyuk", "initial": "SH" },
+    { "name": "Taehoon", "initial": "TH" }
+  ],
+  "cards": [
+    { "code": "TAN#CS001", "member": "Changsun", "initial": "CS", "rarity": 1, "set": 1, "description": "TAN W SERIES '3TAN' - Concept Photos", "link": "https://i.imgur.com/8LwEUZJ.png" },
+    { "code": "TAN#HY001", "member": "Hyunyeop", "initial": "HY", "rarity": 1, "set": 1, "description": "TAN W SERIES '3TAN' - Concept Photos", "link": "https://i.imgur.com/s2JrYiH.png" },
+    { "code": "TAN#JJ001", "member": "Jaejun", "initial": "JJ", "rarity": 1, "set": 1, "description": "TAN W SERIES '3TAN' - Concept Photos", "link": "https://i.imgur.com/iQSlKMv.png" },
+    { "code": "TAN#JS001", "member": "Jiseong", "initial": "JS", "rarity": 1, "set": 1, "description": "TAN W SERIES '3TAN' - Concept Photos", "link": "https://i.imgur.com/g7M8Fxc.png" },
+    { "code": "TAN#JA001", "member": "Jooan", "initial": "JA", "rarity": 1, "set": 1, "description": "TAN W SERIES '3TAN' - Concept Photos", "link": "https://i.imgur.com/kPpRO4J.png" },
+    { "code": "TAN#SH001", "member": "Sunghyuk", "initial": "SH", "rarity": 1, "set": 1, "description": "TAN W SERIES '3TAN' - Concept Photos", "link": "https://i.imgur.com/NJnOXlX.png" },
+    { "code": "TAN#TH001", "member": "Taehoon", "initial": "TH", "rarity": 1, "set": 1, "description": "TAN W SERIES '3TAN' - Concept Photos", "link": "https://i.imgur.com/yG57JQQ.png" }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "number": 78,
+  "name": "The KingDom",
+  "code": "TKD",
+  "members": [
+    { "name": "Jahan", "initial": "JH" },
+    { "name": "Mujin", "initial": "MJ" },
+    { "name": "Louis", "initial": "LI" },
+    { "name": "Ivan", "initial": "IV" },
+    { "name": "Dann", "initial": "DN" },
+    { "name": "Arthur", "initial": "AT" },
+    { "name": "Hwon", "initial": "HW" }
+  ],
+  "cards": [
+    { "code": "TKD#JH001", "member": "Jahan", "initial": "JH", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/0GV9F5i.png" },
+    { "code": "TKD#MJ001", "member": "Mujin", "initial": "MJ", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/xgOuF0u.png" },
+    { "code": "TKD#LI001", "member": "Louis", "initial": "LI", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/h1Bisqj.png" },
+    { "code": "TKD#IV001", "member": "Ivan", "initial": "IV", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/MGPiAvl.png" },
+    { "code": "TKD#DN001", "member": "Dann", "initial": "DN", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/VdeZXf3.png" },
+    { "code": "TKD#AT001", "member": "Arthur", "initial": "AT", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/BCYLtz8.png" },
+    { "code": "TKD#HW001", "member": "Hwon", "initial": "HW", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/8widqBk.png" },
+    { "code": "TKD#JH002", "member": "Jahan", "initial": "JH", "rarity": 2, "set": 1, "description": null, "link": "https://i.imgur.com/r6tCpXP.png" },
+    { "code": "TKD#MJ002", "member": "Mujin", "initial": "MJ", "rarity": 2, "set": 1, "description": null, "link": "https://i.imgur.com/05Vl3FJ.png" },
+    { "code": "TKD#LI002", "member": "Louis", "initial": "LI", "rarity": 2, "set": 1, "description": null, "link": "https://i.imgur.com/Am2nyZf.png" },
+    { "code": "TKD#IV002", "member": "Ivan", "initial": "IV", "rarity": 2, "set": 1, "description": null, "link": "https://i.imgur.com/dOceeTg.png" },
+    { "code": "TKD#DN002", "member": "Dann", "initial": "DN", "rarity": 2, "set": 1, "description": null, "link": "https://i.imgur.com/87oFYAP.png" },
+    { "code": "TKD#AT002", "member": "Arthur", "initial": "AT", "rarity": 2, "set": 1, "description": null, "link": "https://i.imgur.com/nuQnViH.png" },
+    { "code": "TKD#HW002", "member": "Hwon", "initial": "HW", "rarity": 2, "set": 1, "description": null, "link": "https://i.imgur.com/xJutB5h.png" }
+  ]
+}

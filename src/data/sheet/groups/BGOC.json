@@ -1,0 +1,27 @@
+{
+  "number": 184,
+  "name": "Big Ocean",
+  "code": "BGOC",
+  "members": [
+    { "name": "Chanyeon", "initial": "CY" },
+    { "name": "Jiseok", "initial": "JS" },
+    { "name": "PJ", "initial": "PJ" }
+  ],
+  "cards": [
+    { "code": "BGOC#CY001", "member": "Chanyeon", "initial": "CY", "rarity": 1, "set": 1, "description": "Underwater", "link": "https://i.imgur.com/JTvyTNW.png" },
+    { "code": "BGOC#JS001", "member": "Jiseok", "initial": "JS", "rarity": 1, "set": 1, "description": "Underwater", "link": "https://i.imgur.com/nj1SgDG.png" },
+    { "code": "BGOC#PJ001", "member": "PJ", "initial": "PJ", "rarity": 1, "set": 1, "description": "Underwater", "link": "https://i.imgur.com/NsIWNaz.png" },
+    { "code": "BGOC#CY002", "member": "Chanyeon", "initial": "CY", "rarity": 2, "set": 1, "description": "Red-Dy Set Go", "link": "https://i.imgur.com/wPSAjCJ.png" },
+    { "code": "BGOC#JS002", "member": "Jiseok", "initial": "JS", "rarity": 2, "set": 1, "description": "Red-Dy Set Go", "link": "https://i.imgur.com/NSDJilo.png" },
+    { "code": "BGOC#PJ002", "member": "PJ", "initial": "PJ", "rarity": 2, "set": 1, "description": "Red-Dy Set Go", "link": "https://i.imgur.com/p9qspMr.png" },
+    { "code": "BGOC#CY003", "member": "Chanyeon", "initial": "CY", "rarity": 3, "set": 1, "description": "THE GREATEST BATTLE - Concept Photos", "link": "https://i.imgur.com/nub7JTm.png" },
+    { "code": "BGOC#JS003", "member": "Jiseok", "initial": "JS", "rarity": 3, "set": 1, "description": "THE GREATEST BATTLE - Concept Photos", "link": "https://i.imgur.com/dvIAfHk.png" },
+    { "code": "BGOC#PJ003", "member": "PJ", "initial": "PJ", "rarity": 3, "set": 1, "description": "THE GREATEST BATTLE - Concept Photos", "link": "https://i.imgur.com/yqVqL98.png" },
+    { "code": "BGOC#CY004", "member": "Chanyeon", "initial": "CY", "rarity": 4, "set": 1, "description": "Photocard Set", "link": "https://i.imgur.com/A4wSFYm.png" },
+    { "code": "BGOC#JS004", "member": "Jiseok", "initial": "JS", "rarity": 4, "set": 1, "description": "Photocard Set", "link": "https://i.imgur.com/sMt3QeZ.png" },
+    { "code": "BGOC#PJ004", "member": "PJ", "initial": "PJ", "rarity": 4, "set": 1, "description": "Photocard Set", "link": "https://i.imgur.com/CjC1Url.png" },
+    { "code": "BGOC#CY005", "member": "Chanyeon", "initial": "CY", "rarity": 5, "set": 1, "description": "Big Ocean for ENVI Magazine (April 2026)", "link": "https://i.imgur.com/7mLQc94.png" },
+    { "code": "BGOC#JS005", "member": "Jiseok", "initial": "JS", "rarity": 5, "set": 1, "description": "Big Ocean for ENVI Magazine (April 2026)", "link": "https://i.imgur.com/vK1lpGI.png" },
+    { "code": "BGOC#PJ005", "member": "PJ", "initial": "PJ", "rarity": 5, "set": 1, "description": "Big Ocean for ENVI Magazine (April 2026)", "link": "https://i.imgur.com/S9OLJFU.png" }
+  ]
+}

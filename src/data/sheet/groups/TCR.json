@@ -1,0 +1,17 @@
+{
+  "number": 167,
+  "name": "tracer",
+  "code": "TCR",
+  "members": [
+    { "name": "Eunbi", "initial": "EB" },
+    { "name": "Heejin", "initial": "HJ" },
+    { "name": "Sejeong", "initial": "SJ" },
+    { "name": "Soeun", "initial": "SE" }
+  ],
+  "cards": [
+    { "code": "TCR#EB001", "member": "Eunbi", "initial": "EB", "rarity": 1, "set": 1, "description": "365", "link": "https://i.imgur.com/djx3CgH.png" },
+    { "code": "TCR#HJ001", "member": "Heejin", "initial": "HJ", "rarity": 1, "set": 1, "description": "365", "link": "https://i.imgur.com/MZwzKAW.png" },
+    { "code": "TCR#SJ001", "member": "Sejeong", "initial": "SJ", "rarity": 1, "set": 1, "description": "365", "link": "https://i.imgur.com/CRseqUs.png" },
+    { "code": "TCR#SE001", "member": "Soeun", "initial": "SE", "rarity": 1, "set": 1, "description": "365", "link": "https://i.imgur.com/T6uklUo.png" }
+  ]
+}

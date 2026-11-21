@@ -1,0 +1,17 @@
+{
+  "number": 137,
+  "name": "Mave:",
+  "code": "MAVE",
+  "members": [
+    { "name": "Marty:", "initial": "MT" },
+    { "name": "Siu:", "initial": "SU" },
+    { "name": "Tyra:", "initial": "TR" },
+    { "name": "Zena:", "initial": "ZN" }
+  ],
+  "cards": [
+    { "code": "MAVE#MT001", "member": "Marty:", "initial": "MT", "rarity": 1, "set": 1, "description": "Whats My Name", "link": "https://i.imgur.com/TL7tR2B.png" },
+    { "code": "MAVE#SU001", "member": "Siu:", "initial": "SU", "rarity": 1, "set": 1, "description": "Whats My Name", "link": "https://i.imgur.com/ahpdx7h.png" },
+    { "code": "MAVE#TR001", "member": "Tyra:", "initial": "TR", "rarity": 1, "set": 1, "description": "Whats My Name", "link": "https://i.imgur.com/GK9NmeZ.png" },
+    { "code": "MAVE#ZN001", "member": "Zena:", "initial": "ZN", "rarity": 1, "set": 1, "description": "Whats My Name", "link": "https://i.imgur.com/XaPjiry.png" }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "number": 130,
+  "name": "CLASS:y",
+  "code": "CLSY",
+  "members": [
+    { "name": "Boeun", "initial": "BE" },
+    { "name": "Chaewon", "initial": "CW" },
+    { "name": "Hyeju", "initial": "HJ" },
+    { "name": "Hyungseo", "initial": "HS" },
+    { "name": "Jimin", "initial": "JM" },
+    { "name": "Riwon", "initial": "RW" },
+    { "name": "Seonyou", "initial": "SY" }
+  ],
+  "cards": [
+    { "code": "CLSY#BE001", "member": "Boeun", "initial": "BE", "rarity": 1, "set": 1, "description": "LOVE XX", "link": "https://i.imgur.com/fnJr3OF.png" },
+    { "code": "CLSY#CW001", "member": "Chaewon", "initial": "CW", "rarity": 1, "set": 1, "description": "LOVE XX", "link": "https://i.imgur.com/174yAN2.png" },
+    { "code": "CLSY#HJ001", "member": "Hyeju", "initial": "HJ", "rarity": 1, "set": 1, "description": "LOVE XX", "link": "https://i.imgur.com/zbqwhU8.png" },
+    { "code": "CLSY#HS001", "member": "Hyungseo", "initial": "HS", "rarity": 1, "set": 1, "description": "LOVE XX", "link": "https://i.imgur.com/usqkKle.png" },
+    { "code": "CLSY#JM001", "member": "Jimin", "initial": "JM", "rarity": 1, "set": 1, "description": "LOVE XX", "link": "https://i.imgur.com/JgLeLzm.png" },
+    { "code": "CLSY#RW001", "member": "Riwon", "initial": "RW", "rarity": 1, "set": 1, "description": "LOVE XX", "link": "https://i.imgur.com/DGZfAjF.png" },
+    { "code": "CLSY#SY001", "member": "Seonyou", "initial": "SY", "rarity": 1, "set": 1, "description": "LOVE XX", "link": "https://i.imgur.com/DvtD9tS.png" },
+    { "code": "CLSY#BE002", "member": "Boeun", "initial": "BE", "rarity": 2, "set": 1, "description": "Day & Night", "link": "https://i.imgur.com/kqRCyug.png" },
+    { "code": "CLSY#CW002", "member": "Chaewon", "initial": "CW", "rarity": 2, "set": 1, "description": "Day & Night", "link": "https://i.imgur.com/712x2ra.png" },
+    { "code": "CLSY#HJ002", "member": "Hyeju", "initial": "HJ", "rarity": 2, "set": 1, "description": "Day & Night", "link": "https://i.imgur.com/NBj32RO.png" },
+    { "code": "CLSY#HS002", "member": "Hyungseo", "initial": "HS", "rarity": 2, "set": 1, "description": "Day & Night", "link": "https://i.imgur.com/PRbRJdn.png" },
+    { "code": "CLSY#JM002", "member": "Jimin", "initial": "JM", "rarity": 2, "set": 1, "description": "Day & Night", "link": "https://i.imgur.com/zmjI4mQ.png" },
+    { "code": "CLSY#RW002", "member": "Riwon", "initial": "RW", "rarity": 2, "set": 1, "description": "Day & Night", "link": "https://i.imgur.com/bTFod9r.png" },
+    { "code": "CLSY#SY002", "member": "Seonyou", "initial": "SY", "rarity": 2, "set": 1, "description": "Day & Night", "link": "https://i.imgur.com/cUroVJc.png" }
+  ]
+}

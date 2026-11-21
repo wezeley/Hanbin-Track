@@ -1,0 +1,25 @@
+{
+  "number": 313,
+  "name": "Clo'ver",
+  "code": "CLVR",
+  "members": [
+    { "name": "Ashi", "initial": "AS" },
+    { "name": "Aungpao", "initial": "AP" },
+    { "name": "Barcode", "initial": "BC" },
+    { "name": "Keen", "initial": "KN" }
+  ],
+  "cards": [
+    { "code": "CLVR#AS001", "member": "Ashi", "initial": "AS", "rarity": 1, "set": 1, "description": "Next To You", "link": "https://i.imgur.com/49MRutC.png" },
+    { "code": "CLVR#AP001", "member": "Aungpao", "initial": "AP", "rarity": 1, "set": 1, "description": "Next To You", "link": "https://i.imgur.com/ujOXinl.png" },
+    { "code": "CLVR#BC001", "member": "Barcode", "initial": "BC", "rarity": 1, "set": 1, "description": "Next To You", "link": "https://i.imgur.com/bnFwYzc.png" },
+    { "code": "CLVR#KN001", "member": "Keen", "initial": "KN", "rarity": 1, "set": 1, "description": "Next To You", "link": "https://i.imgur.com/f1MbbT4.png" },
+    { "code": "CLVR#AS002", "member": "Ashi", "initial": "AS", "rarity": 2, "set": 1, "description": "Bad Boy No Do", "link": "https://i.imgur.com/6XRsN7F.png" },
+    { "code": "CLVR#AP002", "member": "Aungpao", "initial": "AP", "rarity": 2, "set": 1, "description": "Bad Boy No Do", "link": "https://i.imgur.com/OzoJicv.png" },
+    { "code": "CLVR#BC002", "member": "Barcode", "initial": "BC", "rarity": 2, "set": 1, "description": "Bad Boy No Do", "link": "https://i.imgur.com/pp8AOGb.png" },
+    { "code": "CLVR#KN002", "member": "Keen", "initial": "KN", "rarity": 2, "set": 1, "description": "Bad Boy No Do", "link": "https://i.imgur.com/2y7S1nJ.png" },
+    { "code": "CLVR#AS003", "member": "Ashi", "initial": "AS", "rarity": 3, "set": 1, "description": "Lonely Girl", "link": "https://i.imgur.com/V8u4xgY.png" },
+    { "code": "CLVR#AP003", "member": "Aungpao", "initial": "AP", "rarity": 3, "set": 1, "description": "Lonely Girl", "link": "https://i.imgur.com/h7DfCtb.png" },
+    { "code": "CLVR#BC003", "member": "Barcode", "initial": "BC", "rarity": 3, "set": 1, "description": "Lonely Girl", "link": "https://i.imgur.com/dPhQwW4.png" },
+    { "code": "CLVR#KN003", "member": "Keen", "initial": "KN", "rarity": 3, "set": 1, "description": "Lonely Girl", "link": "https://i.imgur.com/Nb27iIF.png" }
+  ]
+}

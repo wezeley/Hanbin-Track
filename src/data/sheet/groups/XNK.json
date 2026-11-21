@@ -1,0 +1,17 @@
+{
+  "number": 202,
+  "name": "Xonik",
+  "code": "XNK",
+  "members": [
+    { "name": "Hyojin", "initial": "HJ" },
+    { "name": "Juchan", "initial": "JC" },
+    { "name": "Leejun", "initial": "LJ" },
+    { "name": "Yeung", "initial": "YG" }
+  ],
+  "cards": [
+    { "code": "XNK#HJ001", "member": "Hyojin", "initial": "HJ", "rarity": 1, "set": 1, "description": "Private", "link": "https://i.imgur.com/55pyxJY.png" },
+    { "code": "XNK#JC001", "member": "Juchan", "initial": "JC", "rarity": 1, "set": 1, "description": "Private", "link": "https://i.imgur.com/bqHYqUl.png" },
+    { "code": "XNK#LJ001", "member": "Leejun", "initial": "LJ", "rarity": 1, "set": 1, "description": "Private", "link": "https://i.imgur.com/eywuivS.png" },
+    { "code": "XNK#YG001", "member": "Yeung", "initial": "YG", "rarity": 1, "set": 1, "description": "Private", "link": "https://i.imgur.com/rZT6zep.png" }
+  ]
+}

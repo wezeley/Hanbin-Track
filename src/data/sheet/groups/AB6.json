@@ -1,0 +1,37 @@
+{
+  "number": 55,
+  "name": "AB6IX",
+  "code": "AB6",
+  "members": [
+    { "name": "Donghyun", "initial": "DH" },
+    { "name": "Woong", "initial": "WG" },
+    { "name": "Daehwi", "initial": "DW" },
+    { "name": "Woojin", "initial": "WJ" }
+  ],
+  "cards": [
+    { "code": "AB6#DH001", "member": "Donghyun", "initial": "DH", "rarity": 1, "set": 1, "description": "\"THE FUTURE IS OURS : FOUND\" - Concept Photo", "link": "https://i.imgur.com/zT2yC5Z.png" },
+    { "code": "AB6#WG001", "member": "Woong", "initial": "WG", "rarity": 1, "set": 1, "description": "\"THE FUTURE IS OURS : FOUND\" - Concept Photo", "link": "https://i.imgur.com/WlA5vw5.png" },
+    { "code": "AB6#DW001", "member": "Daehwi", "initial": "DW", "rarity": 1, "set": 1, "description": "\"THE FUTURE IS OURS : FOUND\" - Concept Photo", "link": "https://i.imgur.com/DkSwV2M.png" },
+    { "code": "AB6#WJ001", "member": "Woojin", "initial": "WJ", "rarity": 1, "set": 1, "description": "\"THE FUTURE IS OURS : FOUND\" - Concept Photo", "link": "https://i.imgur.com/2rjeOp5.png" },
+    { "code": "AB6#DH002", "member": "Donghyun", "initial": "DH", "rarity": 2, "set": 1, "description": "Born Like This", "link": "https://i.imgur.com/aSyPI1B.png" },
+    { "code": "AB6#WG002", "member": "Woong", "initial": "WG", "rarity": 2, "set": 1, "description": "Born Like This", "link": "https://i.imgur.com/JN90E0W.png" },
+    { "code": "AB6#DW002", "member": "Daehwi", "initial": "DW", "rarity": 2, "set": 1, "description": "Born Like This", "link": "https://i.imgur.com/g97OkEb.png" },
+    { "code": "AB6#WJ002", "member": "Woojin", "initial": "WJ", "rarity": 2, "set": 1, "description": "Born Like This", "link": "https://i.imgur.com/d7A2xCk.png" },
+    { "code": "AB6#DH003", "member": "Donghyun", "initial": "DH", "rarity": 3, "set": 1, "description": null, "link": "https://i.imgur.com/7qATnnJ.png" },
+    { "code": "AB6#WG003", "member": "Woong", "initial": "WG", "rarity": 3, "set": 1, "description": null, "link": "https://i.imgur.com/iJVjols.png" },
+    { "code": "AB6#DW003", "member": "Daehwi", "initial": "DW", "rarity": 3, "set": 1, "description": null, "link": "https://i.imgur.com/hf5Y7pY.png" },
+    { "code": "AB6#WJ003", "member": "Woojin", "initial": "WJ", "rarity": 3, "set": 1, "description": null, "link": "https://i.imgur.com/VDqGO0z.png" },
+    { "code": "AB6#DH004", "member": "Donghyun", "initial": "DH", "rarity": 4, "set": 1, "description": null, "link": "https://i.imgur.com/K7tcKJz.png" },
+    { "code": "AB6#WG004", "member": "Woong", "initial": "WG", "rarity": 4, "set": 1, "description": null, "link": "https://i.imgur.com/hBRWCT7.png" },
+    { "code": "AB6#DW004", "member": "Daehwi", "initial": "DW", "rarity": 4, "set": 1, "description": null, "link": "https://i.imgur.com/sXC45Fl.png" },
+    { "code": "AB6#WJ004", "member": "Woojin", "initial": "WJ", "rarity": 4, "set": 1, "description": null, "link": "https://i.imgur.com/iANXuHo.png" },
+    { "code": "AB6#DH005", "member": "Donghyun", "initial": "DH", "rarity": 5, "set": 1, "description": null, "link": "https://i.imgur.com/qAH5TBR.png" },
+    { "code": "AB6#WG005", "member": "Woong", "initial": "WG", "rarity": 5, "set": 1, "description": null, "link": "https://i.imgur.com/UXMNduj.png" },
+    { "code": "AB6#DW005", "member": "Daehwi", "initial": "DW", "rarity": 5, "set": 1, "description": null, "link": "https://i.imgur.com/V6J7Xpb.png" },
+    { "code": "AB6#WJ005", "member": "Woojin", "initial": "WJ", "rarity": 5, "set": 1, "description": null, "link": "https://i.imgur.com/dIbUSbl.png" },
+    { "code": "AB6#DH006", "member": "Donghyun", "initial": "DH", "rarity": 1, "set": 2, "description": "Born Like This", "link": "https://i.imgur.com/0SG5ejR.png" },
+    { "code": "AB6#WG006", "member": "Woong", "initial": "WG", "rarity": 1, "set": 2, "description": "Born Like This", "link": "https://i.imgur.com/4o7yciR.png" },
+    { "code": "AB6#DW006", "member": "Daehwi", "initial": "DW", "rarity": 1, "set": 2, "description": "Born Like This", "link": "https://i.imgur.com/cIADwbw.png" },
+    { "code": "AB6#WJ006", "member": "Woojin", "initial": "WJ", "rarity": 1, "set": 2, "description": "Born Like This", "link": "https://i.imgur.com/iwJGdWo.png" }
+  ]
+}

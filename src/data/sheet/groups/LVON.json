@@ -1,0 +1,43 @@
+{
+  "number": 239,
+  "name": "Loveone",
+  "code": "LVON",
+  "members": [
+    { "name": "Ayeon", "initial": "AY" },
+    { "name": "Chaei", "initial": "CH" },
+    { "name": "Yousom", "initial": "YS" },
+    { "name": "Yume", "initial": "YM" },
+    { "name": "Yuna", "initial": "YN" }
+  ],
+  "cards": [
+    { "code": "LVON#AY001", "member": "Ayeon", "initial": "AY", "rarity": 1, "set": 1, "description": "Funny Honey", "link": "https://i.imgur.com/PHxNsiF.png" },
+    { "code": "LVON#CH001", "member": "Chaei", "initial": "CH", "rarity": 1, "set": 1, "description": "Funny Honey", "link": "https://i.imgur.com/K7bVPYN.png" },
+    { "code": "LVON#YS001", "member": "Yousom", "initial": "YS", "rarity": 1, "set": 1, "description": "Funny Honey", "link": "https://i.imgur.com/Pr5JfJ7.png" },
+    { "code": "LVON#YM001", "member": "Yume", "initial": "YM", "rarity": 1, "set": 1, "description": "Funny Honey", "link": "https://i.imgur.com/h2H7li9.png" },
+    { "code": "LVON#YN001", "member": "Yuna", "initial": "YN", "rarity": 1, "set": 1, "description": "Funny Honey", "link": "https://i.imgur.com/2kE2ANZ.png" },
+    { "code": "LVON#AY002", "member": "Ayeon", "initial": "AY", "rarity": 2, "set": 1, "description": "Drama Queen", "link": "https://i.imgur.com/rP0U19F.png" },
+    { "code": "LVON#CH002", "member": "Chaei", "initial": "CH", "rarity": 2, "set": 1, "description": "Drama Queen", "link": "https://i.imgur.com/0CHcFxo.png" },
+    { "code": "LVON#YS002", "member": "Yousom", "initial": "YS", "rarity": 2, "set": 1, "description": "Drama Queen", "link": "https://i.imgur.com/KnvONtb.png" },
+    { "code": "LVON#YM002", "member": "Yume", "initial": "YM", "rarity": 2, "set": 1, "description": "Drama Queen", "link": "https://i.imgur.com/dNtpx3o.png" },
+    { "code": "LVON#YN002", "member": "Yuna", "initial": "YN", "rarity": 2, "set": 1, "description": "Drama Queen", "link": "https://i.imgur.com/IY9gsMx.png" },
+    { "code": "LVON#AY003", "member": "Ayeon", "initial": "AY", "rarity": 3, "set": 1, "description": "Drama Queen", "link": "https://i.imgur.com/H8Dgt7L.png" },
+    { "code": "LVON#CH003", "member": "Chaei", "initial": "CH", "rarity": 3, "set": 1, "description": "Drama Queen", "link": "https://i.imgur.com/gRlk4Oq.png" },
+    { "code": "LVON#YS003", "member": "Yousom", "initial": "YS", "rarity": 3, "set": 1, "description": "Drama Queen", "link": "https://i.imgur.com/yOJEyjS.png" },
+    { "code": "LVON#YM003", "member": "Yume", "initial": "YM", "rarity": 3, "set": 1, "description": "Drama Queen", "link": "https://i.imgur.com/ydfSbNg.png" },
+    { "code": "LVON#YN003", "member": "Yuna", "initial": "YN", "rarity": 3, "set": 1, "description": "Drama Queen", "link": "https://i.imgur.com/C3YLV7g.png" },
+    { "code": "LVON#AY004", "member": "Ayeon", "initial": "AY", "rarity": 4, "set": 1, "description": null, "link": "https://i.imgur.com/G93AC7l.png" },
+    { "code": "LVON#CH004", "member": "Chaei", "initial": "CH", "rarity": 4, "set": 1, "description": null, "link": "https://i.imgur.com/1d2tWqI.png" },
+    { "code": "LVON#YS004", "member": "Yousom", "initial": "YS", "rarity": 4, "set": 1, "description": null, "link": "https://i.imgur.com/inYLNwq.png" },
+    { "code": "LVON#YM004", "member": "Yume", "initial": "YM", "rarity": 4, "set": 1, "description": null, "link": "https://i.imgur.com/2yWefQy.png" },
+    { "code": "LVON#YN004", "member": "Yuna", "initial": "YN", "rarity": 4, "set": 1, "description": null, "link": "https://i.imgur.com/M7RVD73.png" },
+    { "code": "LVON#AY005", "member": "Ayeon", "initial": "AY", "rarity": 5, "set": 1, "description": "Debut Concept", "link": "https://i.imgur.com/ho9jeIj.png" },
+    { "code": "LVON#CH005", "member": "Chaei", "initial": "CH", "rarity": 5, "set": 1, "description": "Debut Concept", "link": "https://i.imgur.com/bWPN3Tl.png" },
+    { "code": "LVON#YS005", "member": "Yousom", "initial": "YS", "rarity": 5, "set": 1, "description": "Debut Concept", "link": "https://i.imgur.com/58Z9YUG.png" },
+    { "code": "LVON#YM005", "member": "Yume", "initial": "YM", "rarity": 5, "set": 1, "description": "Debut Concept", "link": "https://i.imgur.com/CTemLcj.png" },
+    { "code": "LVON#YN005", "member": "Yuna", "initial": "YN", "rarity": 5, "set": 1, "description": "Debut Concept", "link": "https://i.imgur.com/Ibj7xdR.png" },
+    { "code": "LVON#AY006", "member": "Ayeon", "initial": "AY", "rarity": 1, "set": 2, "description": "Unica", "link": "https://i.imgur.com/7XthMzD.png" },
+    { "code": "LVON#YS006", "member": "Yousom", "initial": "YS", "rarity": 1, "set": 2, "description": "Unica", "link": "https://i.imgur.com/D3UApBV.png" },
+    { "code": "LVON#YM006", "member": "Yume", "initial": "YM", "rarity": 1, "set": 2, "description": "Unica", "link": "https://i.imgur.com/3MyJMJP.png" },
+    { "code": "LVON#YN006", "member": "Yuna", "initial": "YN", "rarity": 1, "set": 2, "description": "Unica", "link": "https://i.imgur.com/UKoLK1Q.png" }
+  ]
+}

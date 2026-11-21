@@ -1,0 +1,24 @@
+{
+  "number": 235,
+  "name": "AM8IC",
+  "code": "AMIC",
+  "members": [
+    { "name": "Chen", "initial": "CN" },
+    { "name": "Chungyi", "initial": "CY" },
+    { "name": "Mingkai", "initial": "MK" },
+    { "name": "Roux", "initial": "RX" },
+    { "name": "Saho", "initial": "SH" }
+  ],
+  "cards": [
+    { "code": "AMIC#CN001", "member": "Chen", "initial": "CN", "rarity": 1, "set": 1, "description": "Buzzin'", "link": "https://i.imgur.com/uLI6SKM.png" },
+    { "code": "AMIC#CY001", "member": "Chungyi", "initial": "CY", "rarity": 1, "set": 1, "description": "Buzzin'", "link": "https://i.imgur.com/LL5Sda9.png" },
+    { "code": "AMIC#MK001", "member": "Mingkai", "initial": "MK", "rarity": 1, "set": 1, "description": "Buzzin'", "link": "https://i.imgur.com/f1WA69G.png" },
+    { "code": "AMIC#RX001", "member": "Roux", "initial": "RX", "rarity": 1, "set": 1, "description": "Buzzin'", "link": "https://i.imgur.com/iCXSK8b.png" },
+    { "code": "AMIC#SH001", "member": "Saho", "initial": "SH", "rarity": 1, "set": 1, "description": "Buzzin'", "link": "https://i.imgur.com/ymU95bs.png" },
+    { "code": "AMIC#CN002", "member": "Chen", "initial": "CN", "rarity": 2, "set": 1, "description": "Rascals", "link": "https://i.imgur.com/YxlOxyW.png" },
+    { "code": "AMIC#CY002", "member": "Chungyi", "initial": "CY", "rarity": 2, "set": 1, "description": "Rascals", "link": "https://i.imgur.com/VBMPUU8.png" },
+    { "code": "AMIC#MK002", "member": "Mingkai", "initial": "MK", "rarity": 2, "set": 1, "description": "Rascals", "link": "https://i.imgur.com/3fTDhPD.png" },
+    { "code": "AMIC#RX002", "member": "Roux", "initial": "RX", "rarity": 2, "set": 1, "description": "Rascals", "link": "https://i.imgur.com/Z6gjnPj.png" },
+    { "code": "AMIC#SH002", "member": "Saho", "initial": "SH", "rarity": 2, "set": 1, "description": "Rascals", "link": "https://i.imgur.com/2rY2NUc.png" }
+  ]
+}

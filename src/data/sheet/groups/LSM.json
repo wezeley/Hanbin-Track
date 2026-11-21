@@ -1,0 +1,39 @@
+{
+  "number": 84,
+  "name": "Loossemble",
+  "code": "LSM",
+  "members": [
+    { "name": "Gowon", "initial": "GW" },
+    { "name": "Hyeju", "initial": "OH" },
+    { "name": "Hyunjin", "initial": "HY" },
+    { "name": "ViVi", "initial": "VV" },
+    { "name": "Yeojin", "initial": "YJ" }
+  ],
+  "cards": [
+    { "code": "LSM#GW001", "member": "Gowon", "initial": "GW", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/gSJWTVS.png" },
+    { "code": "LSM#OH001", "member": "Hyeju", "initial": "OH", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/mmXlOTr.png" },
+    { "code": "LSM#HY001", "member": "Hyunjin", "initial": "HY", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/sbnZGal.png" },
+    { "code": "LSM#VV001", "member": "ViVi", "initial": "VV", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/grY2eDL.png" },
+    { "code": "LSM#YJ001", "member": "Yeojin", "initial": "YJ", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/JM2EH5S.png" },
+    { "code": "LSM#GW002", "member": "Gowon", "initial": "GW", "rarity": 2, "set": 1, "description": null, "link": "https://i.imgur.com/eKk5Hb9.png" },
+    { "code": "LSM#OH002", "member": "Hyeju", "initial": "OH", "rarity": 2, "set": 1, "description": null, "link": "https://i.imgur.com/aMy4y4c.png" },
+    { "code": "LSM#HY002", "member": "Hyunjin", "initial": "HY", "rarity": 2, "set": 1, "description": null, "link": "https://i.imgur.com/sWi2iG2.png" },
+    { "code": "LSM#VV002", "member": "ViVi", "initial": "VV", "rarity": 2, "set": 1, "description": null, "link": "https://i.imgur.com/zDVI4nD.png" },
+    { "code": "LSM#YJ002", "member": "Yeojin", "initial": "YJ", "rarity": 2, "set": 1, "description": null, "link": "https://i.imgur.com/BmFMSFN.png" },
+    { "code": "LSM#GW003", "member": "Gowon", "initial": "GW", "rarity": 3, "set": 1, "description": null, "link": "https://i.imgur.com/p3PBjKp.png" },
+    { "code": "LSM#OH003", "member": "Hyeju", "initial": "OH", "rarity": 3, "set": 1, "description": null, "link": "https://i.imgur.com/e1PoeGV.png" },
+    { "code": "LSM#HY003", "member": "Hyunjin", "initial": "HY", "rarity": 3, "set": 1, "description": null, "link": "https://i.imgur.com/rLxfec3.png" },
+    { "code": "LSM#VV003", "member": "ViVi", "initial": "VV", "rarity": 3, "set": 1, "description": null, "link": "https://i.imgur.com/NvJwwIp.png" },
+    { "code": "LSM#YJ003", "member": "Yeojin", "initial": "YJ", "rarity": 3, "set": 1, "description": null, "link": "https://i.imgur.com/2ryOX9G.png" },
+    { "code": "LSM#GW004", "member": "Gowon", "initial": "GW", "rarity": 4, "set": 1, "description": null, "link": "https://i.imgur.com/fVgLpHf.png" },
+    { "code": "LSM#OH004", "member": "Hyeju", "initial": "OH", "rarity": 4, "set": 1, "description": null, "link": "https://i.imgur.com/2TWXGEd.png" },
+    { "code": "LSM#HY004", "member": "Hyunjin", "initial": "HY", "rarity": 4, "set": 1, "description": null, "link": "https://i.imgur.com/V1qWhao.png" },
+    { "code": "LSM#VV004", "member": "ViVi", "initial": "VV", "rarity": 4, "set": 1, "description": null, "link": "https://i.imgur.com/fHRcYxk.png" },
+    { "code": "LSM#YJ004", "member": "Yeojin", "initial": "YJ", "rarity": 4, "set": 1, "description": null, "link": "https://i.imgur.com/n5HgXQC.png" },
+    { "code": "LSM#GW005", "member": "Gowon", "initial": "GW", "rarity": 5, "set": 1, "description": null, "link": "https://i.imgur.com/PhCJbWD.png" },
+    { "code": "LSM#OH005", "member": "Hyeju", "initial": "OH", "rarity": 5, "set": 1, "description": null, "link": "https://i.imgur.com/qa82Vng.png" },
+    { "code": "LSM#HY005", "member": "Hyunjin", "initial": "HY", "rarity": 5, "set": 1, "description": null, "link": "https://i.imgur.com/SKIJaEj.png" },
+    { "code": "LSM#VV005", "member": "ViVi", "initial": "VV", "rarity": 5, "set": 1, "description": null, "link": "https://i.imgur.com/blqlbI1.png" },
+    { "code": "LSM#YJ005", "member": "Yeojin", "initial": "YJ", "rarity": 5, "set": 1, "description": null, "link": "https://i.imgur.com/eiRcH9n.png" }
+  ]
+}

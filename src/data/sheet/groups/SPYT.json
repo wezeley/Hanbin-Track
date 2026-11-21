@@ -1,0 +1,19 @@
+{
+  "number": 328,
+  "name": "Splayit",
+  "code": "SPYT",
+  "members": [
+    { "name": "Aydn", "initial": "AD" },
+    { "name": "Eunbin", "initial": "EB" },
+    { "name": "Eunchan", "initial": "EC" },
+    { "name": "Kyunguk", "initial": "KG" },
+    { "name": "Yoonchan", "initial": "YC" }
+  ],
+  "cards": [
+    { "code": "SPYT#AD001", "member": "Aydn", "initial": "AD", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/KgX34a5.png" },
+    { "code": "SPYT#EB001", "member": "Eunbin", "initial": "EB", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/jU355um.png" },
+    { "code": "SPYT#EC001", "member": "Eunchan", "initial": "EC", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/dHSOdDn.png" },
+    { "code": "SPYT#KG001", "member": "Kyunguk", "initial": "KG", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/hRbuqcU.png" },
+    { "code": "SPYT#YC001", "member": "Yoonchan", "initial": "YC", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/37Lo4J5.png" }
+  ]
+}

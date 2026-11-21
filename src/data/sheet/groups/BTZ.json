@@ -1,0 +1,27 @@
+{
+  "number": 183,
+  "name": "Blitzers",
+  "code": "BTZ",
+  "members": [
+    { "name": "Chris", "initial": "CH" },
+    { "name": "Jinhwa", "initial": "JW" },
+    { "name": "Juhan", "initial": "JH" },
+    { "name": "Lutan", "initial": "LT" },
+    { "name": "Sya", "initial": "SY" },
+    { "name": "Wooju", "initial": "WJ" }
+  ],
+  "cards": [
+    { "code": "BTZ#CH001", "member": "Chris", "initial": "CH", "rarity": 1, "set": 1, "description": "Macarena", "link": "https://i.imgur.com/Ih3W0lF.png" },
+    { "code": "BTZ#JW001", "member": "Jinhwa", "initial": "JW", "rarity": 1, "set": 1, "description": "Macarena", "link": "https://i.imgur.com/0sx4dHw.png" },
+    { "code": "BTZ#JH001", "member": "Juhan", "initial": "JH", "rarity": 1, "set": 1, "description": "Macarena", "link": "https://i.imgur.com/idm3dRy.png" },
+    { "code": "BTZ#LT001", "member": "Lutan", "initial": "LT", "rarity": 1, "set": 1, "description": "Macarena", "link": "https://i.imgur.com/w79RxUs.png" },
+    { "code": "BTZ#SY001", "member": "Sya", "initial": "SY", "rarity": 1, "set": 1, "description": "Macarena", "link": "https://i.imgur.com/TKqDWHE.png" },
+    { "code": "BTZ#WJ001", "member": "Wooju", "initial": "WJ", "rarity": 1, "set": 1, "description": "Macarena", "link": "https://i.imgur.com/8Axehxa.png" },
+    { "code": "BTZ#CH002", "member": "Chris", "initial": "CH", "rarity": 2, "set": 1, "description": "Lunch -Box", "link": "https://i.imgur.com/ocTdMlj.png" },
+    { "code": "BTZ#JW002", "member": "Jinhwa", "initial": "JW", "rarity": 2, "set": 1, "description": "Lunch -Box", "link": "https://i.imgur.com/uQD3pnI.png" },
+    { "code": "BTZ#JH002", "member": "Juhan", "initial": "JH", "rarity": 2, "set": 1, "description": "Lunch -Box", "link": "https://i.imgur.com/GxhP7nM.png" },
+    { "code": "BTZ#LT002", "member": "Lutan", "initial": "LT", "rarity": 2, "set": 1, "description": "Lunch -Box", "link": "https://i.imgur.com/rtEbIMS.png" },
+    { "code": "BTZ#SY002", "member": "Sya", "initial": "SY", "rarity": 2, "set": 1, "description": "Lunch -Box", "link": "https://i.imgur.com/LaR6JjK.png" },
+    { "code": "BTZ#WJ002", "member": "Wooju", "initial": "WJ", "rarity": 2, "set": 1, "description": "Lunch -Box", "link": "https://i.imgur.com/ymankze.png" }
+  ]
+}

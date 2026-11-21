@@ -1,0 +1,25 @@
+{
+  "number": 65,
+  "name": "BigBang",
+  "code": "BB",
+  "members": [
+    { "name": "G-Dragon", "initial": "GD" },
+    { "name": "Daesung", "initial": "DS" },
+    { "name": "T.O.P", "initial": "TP" },
+    { "name": "Taeyang", "initial": "TY" }
+  ],
+  "cards": [
+    { "code": "BB#GD001", "member": "G-Dragon", "initial": "GD", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/LYuJ9Es.png" },
+    { "code": "BB#DS001", "member": "Daesung", "initial": "DS", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/e9d89t5.png" },
+    { "code": "BB#TP001", "member": "T.O.P", "initial": "TP", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/HKSA4Mc.png" },
+    { "code": "BB#TY001", "member": "Taeyang", "initial": "TY", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/FPrPgVv.png" },
+    { "code": "BB#GD002", "member": "G-Dragon", "initial": "GD", "rarity": 2, "set": 1, "description": null, "link": "https://i.imgur.com/eF6qhGc.png" },
+    { "code": "BB#DS002", "member": "Daesung", "initial": "DS", "rarity": 2, "set": 1, "description": null, "link": "https://i.imgur.com/eR6dMvs.png" },
+    { "code": "BB#TP002", "member": "T.O.P", "initial": "TP", "rarity": 2, "set": 1, "description": null, "link": "https://i.imgur.com/gl4rISV.png" },
+    { "code": "BB#TY002", "member": "Taeyang", "initial": "TY", "rarity": 2, "set": 1, "description": null, "link": "https://i.imgur.com/wkpAl9u.png" },
+    { "code": "BB#GD003", "member": "G-Dragon", "initial": "GD", "rarity": 3, "set": 1, "description": null, "link": "https://i.imgur.com/BGOvc5T.png" },
+    { "code": "BB#DS003", "member": "Daesung", "initial": "DS", "rarity": 3, "set": 1, "description": null, "link": "https://i.imgur.com/WnL9ENJ.png" },
+    { "code": "BB#TP003", "member": "T.O.P", "initial": "TP", "rarity": 3, "set": 1, "description": null, "link": "https://i.imgur.com/9D678yz.png" },
+    { "code": "BB#TY003", "member": "Taeyang", "initial": "TY", "rarity": 3, "set": 1, "description": null, "link": "https://i.imgur.com/uByS2Kr.png" }
+  ]
+}

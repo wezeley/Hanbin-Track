@@ -1,0 +1,39 @@
+{
+  "number": 338,
+  "name": "M!LK",
+  "code": "MILK",
+  "members": [
+    { "name": "Daichi", "initial": "DC" },
+    { "name": "Hayato", "initial": "HY" },
+    { "name": "Jinto", "initial": "JT" },
+    { "name": "Jyutaro", "initial": "JR" },
+    { "name": "Shunta", "initial": "ST" }
+  ],
+  "cards": [
+    { "code": "MILK#DC001", "member": "Daichi", "initial": "DC", "rarity": 1, "set": 1, "description": "Juvenilizm Seishun Shugi (2020)", "link": "https://i.imgur.com/vLPyoAr.png" },
+    { "code": "MILK#HY001", "member": "Hayato", "initial": "HY", "rarity": 1, "set": 1, "description": "Juvenilizm Seishun Shugi (2020)", "link": "https://i.imgur.com/xeb9MiP.png" },
+    { "code": "MILK#JT001", "member": "Jinto", "initial": "JT", "rarity": 1, "set": 1, "description": "Juvenilizm Seishun Shugi (2020)", "link": "https://i.imgur.com/SUMbZex.png" },
+    { "code": "MILK#JR001", "member": "Jyutaro", "initial": "JR", "rarity": 1, "set": 1, "description": "Juvenilizm Seishun Shugi (2020)", "link": "https://i.imgur.com/zuguPcT.png" },
+    { "code": "MILK#ST001", "member": "Shunta", "initial": "ST", "rarity": 1, "set": 1, "description": "Juvenilizm Seishun Shugi (2020)", "link": "https://i.imgur.com/36NYxTJ.png" },
+    { "code": "MILK#DC002", "member": "Daichi", "initial": "DC", "rarity": 2, "set": 1, "description": "Jewel (2023)", "link": "https://i.imgur.com/bGavUnA.png" },
+    { "code": "MILK#HY002", "member": "Hayato", "initial": "HY", "rarity": 2, "set": 1, "description": "Jewel (2023)", "link": "https://i.imgur.com/8mXKGZD.png" },
+    { "code": "MILK#JT002", "member": "Jinto", "initial": "JT", "rarity": 2, "set": 1, "description": "Jewel (2023)", "link": "https://i.imgur.com/jO7K5F8.png" },
+    { "code": "MILK#JR002", "member": "Jyutaro", "initial": "JR", "rarity": 2, "set": 1, "description": "Jewel (2023)", "link": "https://i.imgur.com/MdWWMMf.png" },
+    { "code": "MILK#ST002", "member": "Shunta", "initial": "ST", "rarity": 2, "set": 1, "description": "Jewel (2023)", "link": "https://i.imgur.com/7yGbjQF.png" },
+    { "code": "MILK#DC003", "member": "Daichi", "initial": "DC", "rarity": 3, "set": 1, "description": "Hapidan (2023)", "link": "https://i.imgur.com/Txbuwx8.png" },
+    { "code": "MILK#HY003", "member": "Hayato", "initial": "HY", "rarity": 3, "set": 1, "description": "Hapidan (2023)", "link": "https://i.imgur.com/PIPwlVG.png" },
+    { "code": "MILK#JT003", "member": "Jinto", "initial": "JT", "rarity": 3, "set": 1, "description": "Hapidan (2023)", "link": "https://i.imgur.com/YRex7BV.png" },
+    { "code": "MILK#JR003", "member": "Jyutaro", "initial": "JR", "rarity": 3, "set": 1, "description": "Hapidan (2023)", "link": "https://i.imgur.com/C5SUur8.png" },
+    { "code": "MILK#ST003", "member": "Shunta", "initial": "ST", "rarity": 3, "set": 1, "description": "Hapidan (2023)", "link": "https://i.imgur.com/E9ocGKU.png" },
+    { "code": "MILK#DC004", "member": "Daichi", "initial": "DC", "rarity": 4, "set": 1, "description": "X selcas (2022)", "link": "https://i.imgur.com/GftdTYS.png" },
+    { "code": "MILK#HY004", "member": "Hayato", "initial": "HY", "rarity": 4, "set": 1, "description": "X selcas (2022)", "link": "https://i.imgur.com/2ypNPdJ.png" },
+    { "code": "MILK#JT004", "member": "Jinto", "initial": "JT", "rarity": 4, "set": 1, "description": "X selcas (2022)", "link": "https://i.imgur.com/dBUcBVZ.png" },
+    { "code": "MILK#JR004", "member": "Jyutaro", "initial": "JR", "rarity": 4, "set": 1, "description": "X selcas (2022)", "link": "https://i.imgur.com/eOGywtH.png" },
+    { "code": "MILK#ST004", "member": "Shunta", "initial": "ST", "rarity": 4, "set": 1, "description": "X selcas (2022)", "link": "https://i.imgur.com/9RLKlKt.png" },
+    { "code": "MILK#DC005", "member": "Daichi", "initial": "DC", "rarity": 5, "set": 1, "description": "JJ Magazine Interview (2021)", "link": "https://i.imgur.com/MqyF00r.png" },
+    { "code": "MILK#HY005", "member": "Hayato", "initial": "HY", "rarity": 5, "set": 1, "description": "JJ Magazine Interview (2021)", "link": "https://i.imgur.com/TL5TB59.png" },
+    { "code": "MILK#JT005", "member": "Jinto", "initial": "JT", "rarity": 5, "set": 1, "description": "JJ Magazine Interview (2021)", "link": "https://i.imgur.com/ueSBHnz.png" },
+    { "code": "MILK#JR005", "member": "Jyutaro", "initial": "JR", "rarity": 5, "set": 1, "description": "JJ Magazine Interview (2021)", "link": "https://i.imgur.com/K3WnjXO.png" },
+    { "code": "MILK#ST005", "member": "Shunta", "initial": "ST", "rarity": 5, "set": 1, "description": "JJ Magazine Interview (2021)", "link": "https://i.imgur.com/oaSgPCN.png" }
+  ]
+}

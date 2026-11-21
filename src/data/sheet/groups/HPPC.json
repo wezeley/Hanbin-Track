@@ -1,0 +1,23 @@
+{
+  "number": 301,
+  "name": "H//PE Princess",
+  "code": "HPPC",
+  "members": [
+    { "name": "Coco", "initial": "CC" },
+    { "name": "Doi", "initial": "DI" },
+    { "name": "Niko", "initial": "NK" },
+    { "name": "Rino", "initial": "RN" },
+    { "name": "Sujin", "initial": "SJ" },
+    { "name": "YSY", "initial": "YS" },
+    { "name": "Yuju", "initial": "YJ" }
+  ],
+  "cards": [
+    { "code": "HPPC#CC001", "member": "Coco", "initial": "CC", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/ykZ4lFR.png" },
+    { "code": "HPPC#DI001", "member": "Doi", "initial": "DI", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/SEGtmEd.png" },
+    { "code": "HPPC#NK001", "member": "Niko", "initial": "NK", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/EcRIv8f.png" },
+    { "code": "HPPC#RN001", "member": "Rino", "initial": "RN", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/xUzqJSf.png" },
+    { "code": "HPPC#SJ001", "member": "Sujin", "initial": "SJ", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/Yk5nRxB.png" },
+    { "code": "HPPC#YS001", "member": "YSY", "initial": "YS", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/6ukBLRQ.png" },
+    { "code": "HPPC#YJ001", "member": "Yuju", "initial": "YJ", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/2537zAh.png" }
+  ]
+}

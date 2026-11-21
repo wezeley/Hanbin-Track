@@ -1,0 +1,24 @@
+{
+  "number": 307,
+  "name": "Dignity",
+  "code": "DNTY",
+  "members": [
+    { "name": "Hyeongjin", "initial": "HJ" },
+    { "name": "Luke", "initial": "LK" },
+    { "name": "Luo", "initial": "LO" },
+    { "name": "Minseok", "initial": "MS" },
+    { "name": "On", "initial": "ON" }
+  ],
+  "cards": [
+    { "code": "DNTY#HJ001", "member": "Hyeongjin", "initial": "HJ", "rarity": 1, "set": 1, "description": "Digmotion", "link": "https://i.imgur.com/RReqdre.png" },
+    { "code": "DNTY#LK001", "member": "Luke", "initial": "LK", "rarity": 1, "set": 1, "description": "Digmotion", "link": "https://i.imgur.com/MAaSM7i.png" },
+    { "code": "DNTY#LO001", "member": "Luo", "initial": "LO", "rarity": 1, "set": 1, "description": "Digmotion", "link": "https://i.imgur.com/o5qAnDs.png" },
+    { "code": "DNTY#MS001", "member": "Minseok", "initial": "MS", "rarity": 1, "set": 1, "description": "Digmotion", "link": "https://i.imgur.com/wL1dZ3e.png" },
+    { "code": "DNTY#ON001", "member": "On", "initial": "ON", "rarity": 1, "set": 1, "description": "Digmotion", "link": "https://i.imgur.com/0SIgoDO.png" },
+    { "code": "DNTY#HJ002", "member": "Hyeongjin", "initial": "HJ", "rarity": 2, "set": 1, "description": "Sweet Victory", "link": "https://i.imgur.com/1oNhx7u.png" },
+    { "code": "DNTY#LK002", "member": "Luke", "initial": "LK", "rarity": 2, "set": 1, "description": "Sweet Victory", "link": "https://i.imgur.com/KIMsyky.png" },
+    { "code": "DNTY#LO002", "member": "Luo", "initial": "LO", "rarity": 2, "set": 1, "description": "Sweet Victory", "link": "https://i.imgur.com/RC03VQX.png" },
+    { "code": "DNTY#MS002", "member": "Minseok", "initial": "MS", "rarity": 2, "set": 1, "description": "Sweet Victory", "link": "https://i.imgur.com/kzMqpm8.png" },
+    { "code": "DNTY#ON002", "member": "On", "initial": "ON", "rarity": 2, "set": 1, "description": "Sweet Victory", "link": "https://i.imgur.com/EMXfhBu.png" }
+  ]
+}

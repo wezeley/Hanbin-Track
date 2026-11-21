@@ -1,0 +1,25 @@
+{
+  "number": 305,
+  "name": "Jasp.er",
+  "code": "JSPR",
+  "members": [
+    { "name": "Aou", "initial": "AU" },
+    { "name": "Joong", "initial": "JO" },
+    { "name": "Pond", "initial": "PD" },
+    { "name": "Santa", "initial": "ST" }
+  ],
+  "cards": [
+    { "code": "JSPR#AU001", "member": "Aou", "initial": "AU", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/IztpxIQ.png" },
+    { "code": "JSPR#JO001", "member": "Joong", "initial": "JO", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/9vHENHC.png" },
+    { "code": "JSPR#PD001", "member": "Pond", "initial": "PD", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/lBdCg1x.png" },
+    { "code": "JSPR#ST001", "member": "Santa", "initial": "ST", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/zGP9lQB.png" },
+    { "code": "JSPR#AU002", "member": "Aou", "initial": "AU", "rarity": 2, "set": 1, "description": "Touch - Concept Photos", "link": "https://i.imgur.com/8e8PJgd.png" },
+    { "code": "JSPR#JO002", "member": "Joong", "initial": "JO", "rarity": 2, "set": 1, "description": "Touch - Concept Photos", "link": "https://i.imgur.com/Gxq5E8s.png" },
+    { "code": "JSPR#PD002", "member": "Pond", "initial": "PD", "rarity": 2, "set": 1, "description": "Touch - Concept Photos", "link": "https://i.imgur.com/RtKd8v9.png" },
+    { "code": "JSPR#ST002", "member": "Santa", "initial": "ST", "rarity": 2, "set": 1, "description": "Touch - Concept Photos", "link": "https://i.imgur.com/7wlpngU.png" },
+    { "code": "JSPR#AU003", "member": "Aou", "initial": "AU", "rarity": 3, "set": 1, "description": "Love Scene - Concept Photos", "link": "https://i.imgur.com/zCwTFAq.png" },
+    { "code": "JSPR#JO003", "member": "Joong", "initial": "JO", "rarity": 3, "set": 1, "description": "Love Scene - Concept Photos", "link": "https://i.imgur.com/kOF6hX0.png" },
+    { "code": "JSPR#PD003", "member": "Pond", "initial": "PD", "rarity": 3, "set": 1, "description": "Love Scene - Concept Photos", "link": "https://i.imgur.com/rZ3Ir8Z.png" },
+    { "code": "JSPR#ST003", "member": "Santa", "initial": "ST", "rarity": 3, "set": 1, "description": "Love Scene - Concept Photos", "link": "https://i.imgur.com/abpsGwT.png" }
+  ]
+}

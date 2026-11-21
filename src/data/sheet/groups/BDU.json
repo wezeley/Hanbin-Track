@@ -1,0 +1,17 @@
+{
+  "number": 81,
+  "name": "B.D.U",
+  "code": "BDU",
+  "members": [
+    { "name": "Bitsaeon", "initial": "BS" },
+    { "name": "Jay Chang", "initial": "JC" },
+    { "name": "Minseo", "initial": "MS" },
+    { "name": "Seunghun", "initial": "SH" }
+  ],
+  "cards": [
+    { "code": "BDU#BS001", "member": "Bitsaeon", "initial": "BS", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/59vXN41.png" },
+    { "code": "BDU#JC001", "member": "Jay Chang", "initial": "JC", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/TsUcVe0.png" },
+    { "code": "BDU#MS001", "member": "Minseo", "initial": "MS", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/HyESauC.png" },
+    { "code": "BDU#SH001", "member": "Seunghun", "initial": "SH", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/v8K2kyz.png" }
+  ]
+}

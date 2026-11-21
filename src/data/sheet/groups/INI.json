@@ -1,0 +1,42 @@
+{
+  "number": 279,
+  "name": "INI",
+  "code": "INI",
+  "members": [
+    { "name": "Fengfan", "initial": "FF" },
+    { "name": "Hiromu", "initial": "HR" },
+    { "name": "Hiroto", "initial": "HT" },
+    { "name": "Jin", "initial": "JN" },
+    { "name": "Kyosuke", "initial": "KS" },
+    { "name": "Masaya", "initial": "MS" },
+    { "name": "Rihito", "initial": "RH" },
+    { "name": "Shogo", "initial": "SH" },
+    { "name": "Takeru", "initial": "TK" },
+    { "name": "Takumi", "initial": "TM" },
+    { "name": "Yudai", "initial": "YD" }
+  ],
+  "cards": [
+    { "code": "INI#FF001", "member": "Fengfan", "initial": "FF", "rarity": 1, "set": 1, "description": "\"PULSE\" - Concept Photos", "link": "https://i.imgur.com/DJtK9q3.png" },
+    { "code": "INI#HR001", "member": "Hiromu", "initial": "HR", "rarity": 1, "set": 1, "description": "\"PULSE\" - Concept Photos", "link": "https://i.imgur.com/Rbiv9zx.png" },
+    { "code": "INI#HT001", "member": "Hiroto", "initial": "HT", "rarity": 1, "set": 1, "description": "\"PULSE\" - Concept Photos", "link": "https://i.imgur.com/RLccSBu.png" },
+    { "code": "INI#JN001", "member": "Jin", "initial": "JN", "rarity": 1, "set": 1, "description": "\"PULSE\" - Concept Photos", "link": "https://i.imgur.com/1tna9RP.png" },
+    { "code": "INI#KS001", "member": "Kyosuke", "initial": "KS", "rarity": 1, "set": 1, "description": "\"PULSE\" - Concept Photos", "link": "https://i.imgur.com/f04ZcwO.png" },
+    { "code": "INI#MS001", "member": "Masaya", "initial": "MS", "rarity": 1, "set": 1, "description": "\"PULSE\" - Concept Photos", "link": "https://i.imgur.com/vVhS88Q.png" },
+    { "code": "INI#RH001", "member": "Rihito", "initial": "RH", "rarity": 1, "set": 1, "description": "\"PULSE\" - Concept Photos", "link": "https://i.imgur.com/PGkJZ8h.png" },
+    { "code": "INI#SH001", "member": "Shogo", "initial": "SH", "rarity": 1, "set": 1, "description": "\"PULSE\" - Concept Photos", "link": "https://i.imgur.com/SOg2UZ9.png" },
+    { "code": "INI#TK001", "member": "Takeru", "initial": "TK", "rarity": 1, "set": 1, "description": "\"PULSE\" - Concept Photos", "link": "https://i.imgur.com/X4h0SHq.png" },
+    { "code": "INI#TM001", "member": "Takumi", "initial": "TM", "rarity": 1, "set": 1, "description": "\"PULSE\" - Concept Photos", "link": "https://i.imgur.com/9qgT6re.png" },
+    { "code": "INI#YD001", "member": "Yudai", "initial": "YD", "rarity": 1, "set": 1, "description": "\"PULSE\" - Concept Photos", "link": "https://i.imgur.com/0J99IL2.png" },
+    { "code": "INI#FF002", "member": "Fengfan", "initial": "FF", "rarity": 2, "set": 1, "description": "Anthem (2026)", "link": "https://i.imgur.com/1oM2f77.png" },
+    { "code": "INI#HR002", "member": "Hiromu", "initial": "HR", "rarity": 2, "set": 1, "description": "Anthem (2026)", "link": "https://i.imgur.com/NAcSzMz.png" },
+    { "code": "INI#HT002", "member": "Hiroto", "initial": "HT", "rarity": 2, "set": 1, "description": "Anthem (2026)", "link": "https://i.imgur.com/gM8AgoD.png" },
+    { "code": "INI#JN002", "member": "Jin", "initial": "JN", "rarity": 2, "set": 1, "description": "Anthem (2026)", "link": "https://i.imgur.com/iBIen0R.png" },
+    { "code": "INI#KS002", "member": "Kyosuke", "initial": "KS", "rarity": 2, "set": 1, "description": "Anthem (2026)", "link": "https://i.imgur.com/F5w8gQK.png" },
+    { "code": "INI#MS002", "member": "Masaya", "initial": "MS", "rarity": 2, "set": 1, "description": "Anthem (2026)", "link": "https://i.imgur.com/LQ2eTqG.png" },
+    { "code": "INI#RH002", "member": "Rihito", "initial": "RH", "rarity": 2, "set": 1, "description": "Anthem (2026)", "link": "https://i.imgur.com/tzGWQKU.png" },
+    { "code": "INI#SH002", "member": "Shogo", "initial": "SH", "rarity": 2, "set": 1, "description": "Anthem (2026)", "link": "https://i.imgur.com/P1AwG01.png" },
+    { "code": "INI#TK002", "member": "Takeru", "initial": "TK", "rarity": 2, "set": 1, "description": "Anthem (2026)", "link": "https://i.imgur.com/PrvK1Kv.png" },
+    { "code": "INI#TM002", "member": "Takumi", "initial": "TM", "rarity": 2, "set": 1, "description": "Anthem (2026)", "link": "https://i.imgur.com/1mG0opS.png" },
+    { "code": "INI#YD002", "member": "Yudai", "initial": "YD", "rarity": 2, "set": 1, "description": "Anthem (2026)", "link": "https://i.imgur.com/RYt4rdx.png" }
+  ]
+}

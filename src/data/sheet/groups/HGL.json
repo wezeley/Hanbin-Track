@@ -1,0 +1,65 @@
+{
+  "number": 43,
+  "name": "Highlight",
+  "code": "HGL",
+  "members": [
+    { "name": "Gikwang", "initial": "GK" },
+    { "name": "Yoseob", "initial": "YS" },
+    { "name": "Dongwoon", "initial": "DW" },
+    { "name": "Dujun", "initial": "DJ" }
+  ],
+  "cards": [
+    {
+      "code": "HGL#GK001",
+      "member": "Gikwang",
+      "initial": "GK",
+      "rarity": 1,
+      "set": 1,
+      "description": "\"[Switch On]\" - Concept Photo Good Night ver.",
+      "link": "https://i.imgur.com/vFx1QER.png"
+    },
+    {
+      "code": "HGL#YS001",
+      "member": "Yoseob",
+      "initial": "YS",
+      "rarity": 1,
+      "set": 1,
+      "description": "\"[Switch On]\" - Concept Photo Good Night ver.",
+      "link": "https://i.imgur.com/5OP8UNW.png"
+    },
+    {
+      "code": "HGL#DW001",
+      "member": "Dongwoon",
+      "initial": "DW",
+      "rarity": 1,
+      "set": 1,
+      "description": "\"[Switch On]\" - Concept Photo Good Night ver.",
+      "link": "https://i.imgur.com/jrgH8JZ.png"
+    },
+    {
+      "code": "HGL#DJ001",
+      "member": "Dujun",
+      "initial": "DJ",
+      "rarity": 1,
+      "set": 1,
+      "description": "\"[Switch On]\" - Concept Photo Good Night ver.",
+      "link": "https://i.imgur.com/8uhbHix.png"
+    },
+    { "code": "HGL#GK002", "member": "Gikwang", "initial": "GK", "rarity": 2, "set": 1, "description": null, "link": "https://i.imgur.com/qdAaMix.png" },
+    { "code": "HGL#YS002", "member": "Yoseob", "initial": "YS", "rarity": 2, "set": 1, "description": null, "link": "https://i.imgur.com/FWyNItO.png" },
+    { "code": "HGL#DW002", "member": "Dongwoon", "initial": "DW", "rarity": 2, "set": 1, "description": null, "link": "https://i.imgur.com/9Nffsq1.png" },
+    { "code": "HGL#DJ002", "member": "Dujun", "initial": "DJ", "rarity": 2, "set": 1, "description": null, "link": "https://i.imgur.com/SN8bKmx.png" },
+    { "code": "HGL#GK003", "member": "Gikwang", "initial": "GK", "rarity": 3, "set": 1, "description": null, "link": "https://i.imgur.com/oIWd353.png" },
+    { "code": "HGL#YS003", "member": "Yoseob", "initial": "YS", "rarity": 3, "set": 1, "description": null, "link": "https://i.imgur.com/SbcT2HA.png" },
+    { "code": "HGL#DW003", "member": "Dongwoon", "initial": "DW", "rarity": 3, "set": 1, "description": null, "link": "https://i.imgur.com/tgh4A8S.png" },
+    { "code": "HGL#DJ003", "member": "Dujun", "initial": "DJ", "rarity": 3, "set": 1, "description": null, "link": "https://i.imgur.com/tEKqOMa.png" },
+    { "code": "HGL#GK004", "member": "Gikwang", "initial": "GK", "rarity": 4, "set": 1, "description": null, "link": "https://i.imgur.com/ERyk3bh.png" },
+    { "code": "HGL#YS004", "member": "Yoseob", "initial": "YS", "rarity": 4, "set": 1, "description": null, "link": "https://i.imgur.com/FOFzru9.png" },
+    { "code": "HGL#DW004", "member": "Dongwoon", "initial": "DW", "rarity": 4, "set": 1, "description": null, "link": "https://i.imgur.com/3JWHfgU.png" },
+    { "code": "HGL#DJ004", "member": "Dujun", "initial": "DJ", "rarity": 4, "set": 1, "description": null, "link": "https://i.imgur.com/NDNPb6w.png" },
+    { "code": "HGL#GK005", "member": "Gikwang", "initial": "GK", "rarity": 5, "set": 1, "description": null, "link": "https://i.imgur.com/CJl3hLF.png" },
+    { "code": "HGL#YS005", "member": "Yoseob", "initial": "YS", "rarity": 5, "set": 1, "description": null, "link": "https://i.imgur.com/zyotVUS.png" },
+    { "code": "HGL#DW005", "member": "Dongwoon", "initial": "DW", "rarity": 5, "set": 1, "description": null, "link": "https://i.imgur.com/xjfv3L4.png" },
+    { "code": "HGL#DJ005", "member": "Dujun", "initial": "DJ", "rarity": 5, "set": 1, "description": null, "link": "https://i.imgur.com/cMTrdGx.png" }
+  ]
+}

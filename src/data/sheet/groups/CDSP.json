@@ -1,0 +1,17 @@
+{
+  "number": 222,
+  "name": "Candy Shop",
+  "code": "CDSP",
+  "members": [
+    { "name": "Sarang", "initial": "SR" },
+    { "name": "Soram", "initial": "SM" },
+    { "name": "Sui", "initial": "SI" },
+    { "name": "Yuina", "initial": "YI" }
+  ],
+  "cards": [
+    { "code": "CDSP#SR001", "member": "Sarang", "initial": "SR", "rarity": 1, "set": 1, "description": "Hashtag#", "link": "https://i.imgur.com/llPwxa5.png" },
+    { "code": "CDSP#SM001", "member": "Soram", "initial": "SM", "rarity": 1, "set": 1, "description": "Hashtag#", "link": "https://i.imgur.com/jNVij0X.png" },
+    { "code": "CDSP#SI001", "member": "Sui", "initial": "SI", "rarity": 1, "set": 1, "description": "Hashtag#", "link": "https://i.imgur.com/YZgGbpl.png" },
+    { "code": "CDSP#YI001", "member": "Yuina", "initial": "YI", "rarity": 1, "set": 1, "description": "Hashtag#", "link": "https://i.imgur.com/wW7VOKj.png" }
+  ]
+}

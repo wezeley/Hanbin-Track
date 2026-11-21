@@ -1,0 +1,30 @@
+{
+  "number": 157,
+  "name": "BadVillain",
+  "code": "BDV",
+  "members": [
+    { "name": "Chloe", "initial": "CH" },
+    { "name": "Emma", "initial": "EM" },
+    { "name": "HU'E", "initial": "HE" },
+    { "name": "INA", "initial": "IN" },
+    { "name": "Kelly", "initial": "KL" },
+    { "name": "Vin", "initial": "VN" },
+    { "name": "YunSeo", "initial": "YS" }
+  ],
+  "cards": [
+    { "code": "BDV#CH001", "member": "Chloe", "initial": "CH", "rarity": 1, "set": 1, "description": "Overstep", "link": "https://i.imgur.com/3Hh5cF7.png" },
+    { "code": "BDV#EM001", "member": "Emma", "initial": "EM", "rarity": 1, "set": 1, "description": "Overstep", "link": "https://i.imgur.com/nksMwBV.png" },
+    { "code": "BDV#HE001", "member": "HU'E", "initial": "HE", "rarity": 1, "set": 1, "description": "Overstep", "link": "https://i.imgur.com/L9exKdj.png" },
+    { "code": "BDV#IN001", "member": "INA", "initial": "IN", "rarity": 1, "set": 1, "description": "Overstep", "link": "https://i.imgur.com/JmLleBs.png" },
+    { "code": "BDV#KL001", "member": "Kelly", "initial": "KL", "rarity": 1, "set": 1, "description": "Overstep", "link": "https://i.imgur.com/oLTF4pl.png" },
+    { "code": "BDV#VN001", "member": "Vin", "initial": "VN", "rarity": 1, "set": 1, "description": "Overstep", "link": "https://i.imgur.com/pUYrnvx.png" },
+    { "code": "BDV#YS001", "member": "YunSeo", "initial": "YS", "rarity": 1, "set": 1, "description": "Overstep", "link": "https://i.imgur.com/55ez3dD.png" },
+    { "code": "BDV#CH002", "member": "Chloe", "initial": "CH", "rarity": 2, "set": 1, "description": "Zoom", "link": "https://i.imgur.com/4ZbAhIV.png" },
+    { "code": "BDV#EM002", "member": "Emma", "initial": "EM", "rarity": 2, "set": 1, "description": "Zoom", "link": "https://i.imgur.com/uYxk7qt.png" },
+    { "code": "BDV#HE002", "member": "HU'E", "initial": "HE", "rarity": 2, "set": 1, "description": "Zoom", "link": "https://i.imgur.com/vTlKJAa.png" },
+    { "code": "BDV#IN002", "member": "INA", "initial": "IN", "rarity": 2, "set": 1, "description": "Zoom", "link": "https://i.imgur.com/JXl3ieq.png" },
+    { "code": "BDV#KL002", "member": "Kelly", "initial": "KL", "rarity": 2, "set": 1, "description": "Zoom", "link": "https://i.imgur.com/bxFN6gJ.png" },
+    { "code": "BDV#VN002", "member": "Vin", "initial": "VN", "rarity": 2, "set": 1, "description": "Zoom", "link": "https://i.imgur.com/s3O503a.png" },
+    { "code": "BDV#YS002", "member": "YunSeo", "initial": "YS", "rarity": 2, "set": 1, "description": "Zoom", "link": "https://i.imgur.com/pgPWZUm.png" }
+  ]
+}

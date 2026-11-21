@@ -1,0 +1,19 @@
+{
+  "number": 299,
+  "name": "Dodree",
+  "code": "DDRE",
+  "members": [
+    { "name": "Songhyun", "initial": "SH" },
+    { "name": "Yeongjoo", "initial": "YJ" }
+  ],
+  "cards": [
+    { "code": "DDRE#SH001", "member": "Songhyun", "initial": "SH", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/eGoUUdW.png" },
+    { "code": "DDRE#YJ001", "member": "Yeongjoo", "initial": "YJ", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/301OGIb.png" },
+    { "code": "DDRE#SH002", "member": "Songhyun", "initial": "SH", "rarity": 2, "set": 1, "description": null, "link": "https://i.imgur.com/9Bp4KT9.png" },
+    { "code": "DDRE#YJ002", "member": "Yeongjoo", "initial": "YJ", "rarity": 2, "set": 1, "description": null, "link": "https://i.imgur.com/oVHRHAk.png" },
+    { "code": "DDRE#SH003", "member": "Songhyun", "initial": "SH", "rarity": 3, "set": 1, "description": null, "link": "https://i.imgur.com/wl65en7.png" },
+    { "code": "DDRE#YJ003", "member": "Yeongjoo", "initial": "YJ", "rarity": 3, "set": 1, "description": null, "link": "https://i.imgur.com/jA7nMPv.png" },
+    { "code": "DDRE#SH004", "member": "Songhyun", "initial": "SH", "rarity": 4, "set": 1, "description": "Dodree Twitter Update https://x.com/dodree_INNIT/status/2070703664956879332", "link": "https://i.imgur.com/QgsZ2NQ.png" },
+    { "code": "DDRE#YJ004", "member": "Yeongjoo", "initial": "YJ", "rarity": 4, "set": 1, "description": "Dodree Twitter Update https://x.com/dodree_INNIT/status/2070703664956879332", "link": "https://i.imgur.com/JB8r9Uc.png" }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "number": 238,
+  "name": "Psychic Fever",
+  "code": "PSYF",
+  "members": [
+    { "name": "Jimmy", "initial": "JM" },
+    { "name": "Kokoro", "initial": "KK" },
+    { "name": "Ren", "initial": "RN" },
+    { "name": "Ryoga", "initial": "RG" },
+    { "name": "Ryushin", "initial": "RS" },
+    { "name": "Tsurugi", "initial": "TR" },
+    { "name": "Weesa", "initial": "WS" }
+  ],
+  "cards": [
+    { "code": "PSYF#JM001", "member": "Jimmy", "initial": "JM", "rarity": 1, "set": 1, "description": "Swish Dat", "link": "https://i.imgur.com/pwlDK6H.png" },
+    { "code": "PSYF#KK001", "member": "Kokoro", "initial": "KK", "rarity": 1, "set": 1, "description": "Swish Dat", "link": "https://i.imgur.com/fZEC2Kr.png" },
+    { "code": "PSYF#RN001", "member": "Ren", "initial": "RN", "rarity": 1, "set": 1, "description": "Swish Dat", "link": "https://i.imgur.com/putdINB.png" },
+    { "code": "PSYF#RG001", "member": "Ryoga", "initial": "RG", "rarity": 1, "set": 1, "description": "Swish Dat", "link": "https://i.imgur.com/dKDbJha.png" },
+    { "code": "PSYF#RS001", "member": "Ryushin", "initial": "RS", "rarity": 1, "set": 1, "description": "Swish Dat", "link": "https://i.imgur.com/zKYTmeP.png" },
+    { "code": "PSYF#TR001", "member": "Tsurugi", "initial": "TR", "rarity": 1, "set": 1, "description": "Swish Dat", "link": "https://i.imgur.com/VzzepZm.png" },
+    { "code": "PSYF#WS001", "member": "Weesa", "initial": "WS", "rarity": 1, "set": 1, "description": "Swish Dat", "link": "https://i.imgur.com/7sSuzJD.png" },
+    { "code": "PSYF#JM002", "member": "Jimmy", "initial": "JM", "rarity": 2, "set": 1, "description": "Different", "link": "https://i.imgur.com/pBs7uhC.png" },
+    { "code": "PSYF#KK002", "member": "Kokoro", "initial": "KK", "rarity": 2, "set": 1, "description": "Different", "link": "https://i.imgur.com/vcTqFaQ.png" },
+    { "code": "PSYF#RN002", "member": "Ren", "initial": "RN", "rarity": 2, "set": 1, "description": "Different", "link": "https://i.imgur.com/fj7VdCk.png" },
+    { "code": "PSYF#RG002", "member": "Ryoga", "initial": "RG", "rarity": 2, "set": 1, "description": "Different", "link": "https://i.imgur.com/wmHBswZ.png" },
+    { "code": "PSYF#RS002", "member": "Ryushin", "initial": "RS", "rarity": 2, "set": 1, "description": "Different", "link": "https://i.imgur.com/wVS5jya.png" },
+    { "code": "PSYF#TR002", "member": "Tsurugi", "initial": "TR", "rarity": 2, "set": 1, "description": "Different", "link": "https://i.imgur.com/GlfMhIi.png" },
+    { "code": "PSYF#WS002", "member": "Weesa", "initial": "WS", "rarity": 2, "set": 1, "description": "Different", "link": "https://i.imgur.com/CcqEKqb.png" },
+    { "code": "PSYF#JM003", "member": "Jimmy", "initial": "JM", "rarity": 3, "set": 1, "description": "Different", "link": "https://i.imgur.com/C7DUsTH.png" },
+    { "code": "PSYF#KK003", "member": "Kokoro", "initial": "KK", "rarity": 3, "set": 1, "description": "Different", "link": "https://i.imgur.com/LzIHtH7.png" },
+    { "code": "PSYF#RN003", "member": "Ren", "initial": "RN", "rarity": 3, "set": 1, "description": "Different", "link": "https://i.imgur.com/E6yLviV.png" },
+    { "code": "PSYF#RG003", "member": "Ryoga", "initial": "RG", "rarity": 3, "set": 1, "description": "Different", "link": "https://i.imgur.com/uf2Vc7f.png" },
+    { "code": "PSYF#RS003", "member": "Ryushin", "initial": "RS", "rarity": 3, "set": 1, "description": "Different", "link": "https://i.imgur.com/YQlMa50.png" },
+    { "code": "PSYF#TR003", "member": "Tsurugi", "initial": "TR", "rarity": 3, "set": 1, "description": "Different", "link": "https://i.imgur.com/RVbL1Jf.png" },
+    { "code": "PSYF#WS003", "member": "Weesa", "initial": "WS", "rarity": 3, "set": 1, "description": "Different", "link": "https://i.imgur.com/1X4P1Ab.png" }
+  ]
+}

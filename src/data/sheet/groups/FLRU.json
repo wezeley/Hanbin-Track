@@ -1,0 +1,21 @@
+{
+  "number": 291,
+  "name": "Flare U",
+  "code": "FLRU",
+  "members": [
+    { "name": "Liyu", "initial": "LY" },
+    { "name": "Woojin", "initial": "WJ" }
+  ],
+  "cards": [
+    { "code": "FLRU#LY001", "member": "Liyu", "initial": "LY", "rarity": 1, "set": 1, "description": "Youth Error", "link": "https://i.imgur.com/tklNkow.png" },
+    { "code": "FLRU#WJ001", "member": "Woojin", "initial": "WJ", "rarity": 1, "set": 1, "description": "Youth Error", "link": "https://i.imgur.com/QSHlq9e.png" },
+    { "code": "FLRU#LY002", "member": "Liyu", "initial": "LY", "rarity": 2, "set": 1, "description": "Youth Error", "link": "https://i.imgur.com/GztScOK.png" },
+    { "code": "FLRU#WJ002", "member": "Woojin", "initial": "WJ", "rarity": 2, "set": 1, "description": "Youth Error", "link": "https://i.imgur.com/ohZQBj0.png" },
+    { "code": "FLRU#LY003", "member": "Liyu", "initial": "LY", "rarity": 3, "set": 1, "description": "Lovehood", "link": "https://i.imgur.com/0r97oDk.png" },
+    { "code": "FLRU#WJ003", "member": "Woojin", "initial": "WJ", "rarity": 3, "set": 1, "description": "Lovehood", "link": "https://i.imgur.com/tFlb9Yt.png" },
+    { "code": "FLRU#LY004", "member": "Liyu", "initial": "LY", "rarity": 4, "set": 1, "description": null, "link": "https://i.imgur.com/hkJSkwk.png" },
+    { "code": "FLRU#WJ004", "member": "Woojin", "initial": "WJ", "rarity": 4, "set": 1, "description": null, "link": "https://i.imgur.com/Z3YC3MF.png" },
+    { "code": "FLRU#LY005", "member": "Liyu", "initial": "LY", "rarity": 5, "set": 1, "description": "Membership", "link": "https://i.imgur.com/APfEzqs.png" },
+    { "code": "FLRU#WJ005", "member": "Woojin", "initial": "WJ", "rarity": 5, "set": 1, "description": "Membership", "link": "https://i.imgur.com/vaoaDK3.png" }
+  ]
+}

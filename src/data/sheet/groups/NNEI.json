@@ -1,0 +1,29 @@
+{
+  "number": 273,
+  "name": "NINE.i",
+  "code": "NNEI",
+  "members": [
+    { "name": "Eden", "initial": "ED" },
+    { "name": "Jewon", "initial": "JW" },
+    { "name": "Jiho", "initial": "JH" },
+    { "name": "Joohyoung", "initial": "JY" },
+    { "name": "Minjun", "initial": "MJ" },
+    { "name": "Seowon", "initial": "SW" },
+    { "name": "Taehun", "initial": "TH" },
+    { "name": "Vahn", "initial": "VN" },
+    { "name": "Vari", "initial": "VR" },
+    { "name": "Winnie", "initial": "WN" }
+  ],
+  "cards": [
+    { "code": "NNEI#ED001", "member": "Eden", "initial": "ED", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/2OXZroM.png" },
+    { "code": "NNEI#JW001", "member": "Jewon", "initial": "JW", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/Txlq7PQ.png" },
+    { "code": "NNEI#JH001", "member": "Jiho", "initial": "JH", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/ajNwJ51.png" },
+    { "code": "NNEI#JY001", "member": "Joohyoung", "initial": "JY", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/p2eSLpJ.png" },
+    { "code": "NNEI#MJ001", "member": "Minjun", "initial": "MJ", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/s1XtyBJ.png" },
+    { "code": "NNEI#SW001", "member": "Seowon", "initial": "SW", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/hKoWbGQ.png" },
+    { "code": "NNEI#TH001", "member": "Taehun", "initial": "TH", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/4Czgebz.png" },
+    { "code": "NNEI#VN001", "member": "Vahn", "initial": "VN", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/IAtyw5j.png" },
+    { "code": "NNEI#VR001", "member": "Vari", "initial": "VR", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/DPc206H.png" },
+    { "code": "NNEI#WN001", "member": "Winnie", "initial": "WN", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/HzoIJlf.png" }
+  ]
+}

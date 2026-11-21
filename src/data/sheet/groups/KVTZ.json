@@ -1,0 +1,19 @@
+{
+  "number": 326,
+  "name": "Keyveatz",
+  "code": "KVTZ",
+  "members": [
+    { "name": "Jione", "initial": "JI" },
+    { "name": "Juone", "initial": "JU" },
+    { "name": "Newy", "initial": "NW" },
+    { "name": "Yeseul", "initial": "YS" },
+    { "name": "Yuna", "initial": "YN" }
+  ],
+  "cards": [
+    { "code": "KVTZ#JI001", "member": "Jione", "initial": "JI", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/GBWNdT7.png" },
+    { "code": "KVTZ#JU001", "member": "Juone", "initial": "JU", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/FObfHZy.png" },
+    { "code": "KVTZ#NW001", "member": "Newy", "initial": "NW", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/iYycgs4.png" },
+    { "code": "KVTZ#YS001", "member": "Yeseul", "initial": "YS", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/CXOqGC5.png" },
+    { "code": "KVTZ#YN001", "member": "Yuna", "initial": "YN", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/yyS9ZK5.png" }
+  ]
+}

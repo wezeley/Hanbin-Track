@@ -1,0 +1,37 @@
+{
+  "number": 254,
+  "name": "ARrC",
+  "code": "ARRC",
+  "members": [
+    { "name": "Andy", "initial": "AD" },
+    { "name": "Doha", "initial": "DH" },
+    { "name": "Han", "initial": "HN" },
+    { "name": "Hyunmin", "initial": "HM" },
+    { "name": "Jibeen", "initial": "JB" },
+    { "name": "Kien", "initial": "KE" },
+    { "name": "Rioto", "initial": "RT" }
+  ],
+  "cards": [
+    { "code": "ARRC#AD001", "member": "Andy", "initial": "AD", "rarity": 1, "set": 1, "description": "nu kidz: out the box", "link": "https://i.imgur.com/AIx7mv4.png" },
+    { "code": "ARRC#DH001", "member": "Doha", "initial": "DH", "rarity": 1, "set": 1, "description": "nu kidz: out the box", "link": "https://i.imgur.com/QjcuSUU.png" },
+    { "code": "ARRC#HN001", "member": "Han", "initial": "HN", "rarity": 1, "set": 1, "description": "nu kidz: out the box", "link": "https://i.imgur.com/PTyTlN0.png" },
+    { "code": "ARRC#HM001", "member": "Hyunmin", "initial": "HM", "rarity": 1, "set": 1, "description": "nu kidz: out the box", "link": "https://i.imgur.com/o3ZbRma.png" },
+    { "code": "ARRC#JB001", "member": "Jibeen", "initial": "JB", "rarity": 1, "set": 1, "description": "nu kidz: out the box", "link": "https://i.imgur.com/VPcHHCB.png" },
+    { "code": "ARRC#KE001", "member": "Kien", "initial": "KE", "rarity": 1, "set": 1, "description": "nu kidz: out the box", "link": "https://i.imgur.com/oBUbutp.png" },
+    { "code": "ARRC#RT001", "member": "Rioto", "initial": "RT", "rarity": 1, "set": 1, "description": "nu kidz: out the box", "link": "https://i.imgur.com/J5JcLQS.png" },
+    { "code": "ARRC#AD002", "member": "Andy", "initial": "AD", "rarity": 2, "set": 1, "description": "HOPE", "link": "https://i.imgur.com/GiTe6gQ.png" },
+    { "code": "ARRC#DH002", "member": "Doha", "initial": "DH", "rarity": 2, "set": 1, "description": "HOPE", "link": "https://i.imgur.com/ypnK81k.png" },
+    { "code": "ARRC#HN002", "member": "Han", "initial": "HN", "rarity": 2, "set": 1, "description": "HOPE", "link": "https://i.imgur.com/OipkfY4.png" },
+    { "code": "ARRC#HM002", "member": "Hyunmin", "initial": "HM", "rarity": 2, "set": 1, "description": "HOPE", "link": "https://i.imgur.com/vWxfDDH.png" },
+    { "code": "ARRC#JB002", "member": "Jibeen", "initial": "JB", "rarity": 2, "set": 1, "description": "HOPE", "link": "https://i.imgur.com/wftV0mD.png" },
+    { "code": "ARRC#KE002", "member": "Kien", "initial": "KE", "rarity": 2, "set": 1, "description": "HOPE", "link": "https://i.imgur.com/IBEJKkv.png" },
+    { "code": "ARRC#RT002", "member": "Rioto", "initial": "RT", "rarity": 2, "set": 1, "description": "HOPE", "link": "https://i.imgur.com/FSRNybk.png" },
+    { "code": "ARRC#AD003", "member": "Andy", "initial": "AD", "rarity": 3, "set": 1, "description": "CTRL+ALT+SKIID - Concept Photos", "link": "https://i.imgur.com/WI0nbkE.png" },
+    { "code": "ARRC#DH003", "member": "Doha", "initial": "DH", "rarity": 3, "set": 1, "description": "CTRL+ALT+SKIID - Concept Photos", "link": "https://i.imgur.com/p42sr2y.png" },
+    { "code": "ARRC#HN003", "member": "Han", "initial": "HN", "rarity": 3, "set": 1, "description": "CTRL+ALT+SKIID - Concept Photos", "link": "https://i.imgur.com/9TZcsAD.png" },
+    { "code": "ARRC#HM003", "member": "Hyunmin", "initial": "HM", "rarity": 3, "set": 1, "description": "CTRL+ALT+SKIID - Concept Photos", "link": "https://i.imgur.com/KruEoHa.png" },
+    { "code": "ARRC#JB003", "member": "Jibeen", "initial": "JB", "rarity": 3, "set": 1, "description": "CTRL+ALT+SKIID - Concept Photos", "link": "https://i.imgur.com/OVoOTGv.png" },
+    { "code": "ARRC#KE003", "member": "Kien", "initial": "KE", "rarity": 3, "set": 1, "description": "CTRL+ALT+SKIID - Concept Photos", "link": "https://i.imgur.com/yRyguL7.png" },
+    { "code": "ARRC#RT003", "member": "Rioto", "initial": "RT", "rarity": 3, "set": 1, "description": "CTRL+ALT+SKIID - Concept Photos", "link": "https://i.imgur.com/ILUXPMm.png" }
+  ]
+}

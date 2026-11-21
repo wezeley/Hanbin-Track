@@ -1,0 +1,19 @@
+{
+  "number": 118,
+  "name": "U-Kiss",
+  "code": "UKS",
+  "members": [
+    { "name": "Alexander", "initial": "AX" },
+    { "name": "Eli", "initial": "EL" },
+    { "name": "Hoon", "initial": "HN" },
+    { "name": "Kiseop", "initial": "KS" },
+    { "name": "Soohyun", "initial": "SH" }
+  ],
+  "cards": [
+    { "code": "UKS#AX001", "member": "Alexander", "initial": "AX", "rarity": 1, "set": 1, "description": "Let's get started", "link": "https://i.imgur.com/Yu8gBGY.png" },
+    { "code": "UKS#EL001", "member": "Eli", "initial": "EL", "rarity": 1, "set": 1, "description": "Let's get started", "link": "https://i.imgur.com/huvGbYr.png" },
+    { "code": "UKS#HN001", "member": "Hoon", "initial": "HN", "rarity": 1, "set": 1, "description": "Let's get started", "link": "https://i.imgur.com/xMJZm4u.png" },
+    { "code": "UKS#KS001", "member": "Kiseop", "initial": "KS", "rarity": 1, "set": 1, "description": "Let's get started", "link": "https://i.imgur.com/DJzuUS6.png" },
+    { "code": "UKS#SH001", "member": "Soohyun", "initial": "SH", "rarity": 1, "set": 1, "description": "Let's get started", "link": "https://i.imgur.com/2WWNi4u.png" }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "number": 330,
+  "name": "Irise",
+  "code": "IRSE",
+  "members": [
+    { "name": "Kiiri", "initial": "KR" },
+    { "name": "Lune", "initial": "LN" },
+    { "name": "Shana", "initial": "SN" },
+    { "name": "Tiz", "initial": "TZ" },
+    { "name": "Zero", "initial": "ZR" }
+  ],
+  "cards": [
+    { "code": "IRSE#KR001", "member": "Kiiri", "initial": "KR", "rarity": 1, "set": 1, "description": "Debut", "link": "https://i.imgur.com/027WSmZ.png" },
+    { "code": "IRSE#LN001", "member": "Lune", "initial": "LN", "rarity": 1, "set": 1, "description": "Debut", "link": "https://i.imgur.com/Wy8EXDF.png" },
+    { "code": "IRSE#SN001", "member": "Shana", "initial": "SN", "rarity": 1, "set": 1, "description": "Debut", "link": "https://i.imgur.com/8z8Vc4q.png" },
+    { "code": "IRSE#TZ001", "member": "Tiz", "initial": "TZ", "rarity": 1, "set": 1, "description": "Debut", "link": "https://i.imgur.com/F8MFdOE.png" },
+    { "code": "IRSE#ZR001", "member": "Zero", "initial": "ZR", "rarity": 1, "set": 1, "description": "Debut", "link": "https://i.imgur.com/ZGI3trc.png" },
+    { "code": "IRSE#KR002", "member": "Kiiri", "initial": "KR", "rarity": 2, "set": 1, "description": "Iridiscent", "link": "https://i.imgur.com/l5zh4ZI.png" },
+    { "code": "IRSE#LN002", "member": "Lune", "initial": "LN", "rarity": 2, "set": 1, "description": "Iridiscent", "link": "https://i.imgur.com/NVyuFDc.png" },
+    { "code": "IRSE#SN002", "member": "Shana", "initial": "SN", "rarity": 2, "set": 1, "description": "Iridiscent", "link": "https://i.imgur.com/BVfuEef.png" },
+    { "code": "IRSE#TZ002", "member": "Tiz", "initial": "TZ", "rarity": 2, "set": 1, "description": "Iridiscent", "link": "https://i.imgur.com/R26IEKi.png" },
+    { "code": "IRSE#ZR002", "member": "Zero", "initial": "ZR", "rarity": 2, "set": 1, "description": "Iridiscent", "link": "https://i.imgur.com/wfyu0Wl.png" },
+    { "code": "IRSE#KR003", "member": "Kiiri", "initial": "KR", "rarity": 3, "set": 1, "description": "Love Game", "link": "https://i.imgur.com/aQKfAax.png" },
+    { "code": "IRSE#LN003", "member": "Lune", "initial": "LN", "rarity": 3, "set": 1, "description": "Love Game", "link": "https://i.imgur.com/VXew3sp.png" },
+    { "code": "IRSE#SN003", "member": "Shana", "initial": "SN", "rarity": 3, "set": 1, "description": "Love Game", "link": "https://i.imgur.com/UY9xWxr.png" },
+    { "code": "IRSE#TZ003", "member": "Tiz", "initial": "TZ", "rarity": 3, "set": 1, "description": "Love Game", "link": "https://i.imgur.com/PqCZN0Y.png" },
+    { "code": "IRSE#ZR003", "member": "Zero", "initial": "ZR", "rarity": 3, "set": 1, "description": "Love Game", "link": "https://i.imgur.com/xPXydNt.png" },
+    { "code": "IRSE#KR004", "member": "Kiiri", "initial": "KR", "rarity": 4, "set": 1, "description": "Weverse", "link": "https://i.imgur.com/FRZr0Hm.png" },
+    { "code": "IRSE#LN004", "member": "Lune", "initial": "LN", "rarity": 4, "set": 1, "description": "Weverse", "link": "https://i.imgur.com/m9Ls2u7.png" },
+    { "code": "IRSE#SN004", "member": "Shana", "initial": "SN", "rarity": 4, "set": 1, "description": "Weverse", "link": "https://i.imgur.com/fLsjBZ9.png" },
+    { "code": "IRSE#TZ004", "member": "Tiz", "initial": "TZ", "rarity": 4, "set": 1, "description": "Weverse", "link": "https://i.imgur.com/OKPGIOg.png" },
+    { "code": "IRSE#ZR004", "member": "Zero", "initial": "ZR", "rarity": 4, "set": 1, "description": "Weverse", "link": "https://i.imgur.com/MjFue5T.png" },
+    { "code": "IRSE#KR005", "member": "Kiiri", "initial": "KR", "rarity": 5, "set": 1, "description": null, "link": "https://i.imgur.com/5b8ostA.png" },
+    { "code": "IRSE#LN005", "member": "Lune", "initial": "LN", "rarity": 5, "set": 1, "description": null, "link": "https://i.imgur.com/u7Dl0QR.png" },
+    { "code": "IRSE#SN005", "member": "Shana", "initial": "SN", "rarity": 5, "set": 1, "description": null, "link": "https://i.imgur.com/kTNmukc.png" },
+    { "code": "IRSE#TZ005", "member": "Tiz", "initial": "TZ", "rarity": 5, "set": 1, "description": null, "link": "https://i.imgur.com/c0PZCZQ.png" },
+    { "code": "IRSE#ZR005", "member": "Zero", "initial": "ZR", "rarity": 5, "set": 1, "description": null, "link": "https://i.imgur.com/nRiLs8J.png" }
+  ]
+}

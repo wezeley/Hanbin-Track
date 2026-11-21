@@ -1,0 +1,24 @@
+{
+  "number": 332,
+  "name": "MW:MEU",
+  "code": "MWMU",
+  "members": [
+    { "name": "Choeun", "initial": "CE" },
+    { "name": "Ivi", "initial": "IV" },
+    { "name": "Kana", "initial": "KN" },
+    { "name": "Sua", "initial": "SA" },
+    { "name": "Z-Han", "initial": "ZH" }
+  ],
+  "cards": [
+    { "code": "MWMU#CE001", "member": "Choeun", "initial": "CE", "rarity": 1, "set": 1, "description": "Girls Night", "link": "https://i.imgur.com/Cu9e7fJ.png" },
+    { "code": "MWMU#IV001", "member": "Ivi", "initial": "IV", "rarity": 1, "set": 1, "description": "Girls Night", "link": "https://i.imgur.com/LsKoVq8.png" },
+    { "code": "MWMU#KN001", "member": "Kana", "initial": "KN", "rarity": 1, "set": 1, "description": "Girls Night", "link": "https://i.imgur.com/hPJFROd.png" },
+    { "code": "MWMU#SA001", "member": "Sua", "initial": "SA", "rarity": 1, "set": 1, "description": "Girls Night", "link": "https://i.imgur.com/jWzhapg.png" },
+    { "code": "MWMU#ZH001", "member": "Z-Han", "initial": "ZH", "rarity": 1, "set": 1, "description": "Girls Night", "link": "https://i.imgur.com/h8S6pde.png" },
+    { "code": "MWMU#CE002", "member": "Choeun", "initial": "CE", "rarity": 2, "set": 1, "description": "With U", "link": "https://i.imgur.com/Eo4yGZo.png" },
+    { "code": "MWMU#IV002", "member": "Ivi", "initial": "IV", "rarity": 2, "set": 1, "description": "With U", "link": "https://i.imgur.com/NAw9DJ1.png" },
+    { "code": "MWMU#KN002", "member": "Kana", "initial": "KN", "rarity": 2, "set": 1, "description": "With U", "link": "https://i.imgur.com/oE7QEeb.png" },
+    { "code": "MWMU#SA002", "member": "Sua", "initial": "SA", "rarity": 2, "set": 1, "description": "With U", "link": "https://i.imgur.com/WRBUUbj.png" },
+    { "code": "MWMU#ZH002", "member": "Z-Han", "initial": "ZH", "rarity": 2, "set": 1, "description": "With U", "link": "https://i.imgur.com/Ex2SFsG.png" }
+  ]
+}

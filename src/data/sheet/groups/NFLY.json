@@ -1,0 +1,19 @@
+{
+  "number": 229,
+  "name": "N.Flying",
+  "code": "NFLY",
+  "members": [
+    { "name": "Dongsung", "initial": "DS" },
+    { "name": "Hun", "initial": "HN" },
+    { "name": "Hweseung", "initial": "HW" },
+    { "name": "Jaehyun", "initial": "JH" },
+    { "name": "Seunghyub", "initial": "SH" }
+  ],
+  "cards": [
+    { "code": "NFLY#DS001", "member": "Dongsung", "initial": "DS", "rarity": 1, "set": 1, "description": "Everlasting", "link": "https://i.imgur.com/zjF0rtz.png" },
+    { "code": "NFLY#HN001", "member": "Hun", "initial": "HN", "rarity": 1, "set": 1, "description": "Everlasting", "link": "https://i.imgur.com/Y9JgaRu.png" },
+    { "code": "NFLY#HW001", "member": "Hweseung", "initial": "HW", "rarity": 1, "set": 1, "description": "Everlasting", "link": "https://i.imgur.com/xLOLcZa.png" },
+    { "code": "NFLY#JH001", "member": "Jaehyun", "initial": "JH", "rarity": 1, "set": 1, "description": "Everlasting", "link": "https://i.imgur.com/UDY9HUz.png" },
+    { "code": "NFLY#SH001", "member": "Seunghyub", "initial": "SH", "rarity": 1, "set": 1, "description": "Everlasting", "link": "https://i.imgur.com/OuRDQHN.png" }
+  ]
+}

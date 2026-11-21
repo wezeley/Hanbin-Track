@@ -1,0 +1,21 @@
+{
+  "number": 174,
+  "name": "HxW",
+  "code": "HXW",
+  "members": [
+    { "name": "Hoshi", "initial": "HS" },
+    { "name": "Woozi", "initial": "WZ" }
+  ],
+  "cards": [
+    { "code": "HXW#HS001", "member": "Hoshi", "initial": "HS", "rarity": 1, "set": 1, "description": "1st Single Album Beam", "link": "https://i.imgur.com/i5wyKsg.png" },
+    { "code": "HXW#WZ001", "member": "Woozi", "initial": "WZ", "rarity": 1, "set": 1, "description": "1st Single Album Beam", "link": "https://i.imgur.com/ganaaEJ.png" },
+    { "code": "HXW#HS002", "member": "Hoshi", "initial": "HS", "rarity": 2, "set": 1, "description": "1st Single Album Beam", "link": "https://i.imgur.com/LBqs7Ku.png" },
+    { "code": "HXW#WZ002", "member": "Woozi", "initial": "WZ", "rarity": 2, "set": 1, "description": "1st Single Album Beam", "link": "https://i.imgur.com/p7nlAPi.png" },
+    { "code": "HXW#HS003", "member": "Hoshi", "initial": "HS", "rarity": 3, "set": 1, "description": "1st Single Album Beam", "link": "https://i.imgur.com/rISJkXp.png" },
+    { "code": "HXW#WZ003", "member": "Woozi", "initial": "WZ", "rarity": 3, "set": 1, "description": "1st Single Album Beam", "link": "https://i.imgur.com/XN5NnNM.png" },
+    { "code": "HXW#HS004", "member": "Hoshi", "initial": "HS", "rarity": 4, "set": 1, "description": null, "link": "https://i.imgur.com/zpYxV8a.png" },
+    { "code": "HXW#WZ004", "member": "Woozi", "initial": "WZ", "rarity": 4, "set": 1, "description": null, "link": "https://i.imgur.com/Fm4Z8O8.png" },
+    { "code": "HXW#HS005", "member": "Hoshi", "initial": "HS", "rarity": 5, "set": 1, "description": null, "link": "https://i.imgur.com/WfaWtyn.png" },
+    { "code": "HXW#WZ005", "member": "Woozi", "initial": "WZ", "rarity": 5, "set": 1, "description": null, "link": "https://i.imgur.com/jtGCKRe.png" }
+  ]
+}

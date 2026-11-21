@@ -1,0 +1,24 @@
+{
+  "number": 284,
+  "name": "Hrtz.Wav",
+  "code": "HZWV",
+  "members": [
+    { "name": "Dane", "initial": "DN" },
+    { "name": "Hagiwa", "initial": "HG" },
+    { "name": "Keiten", "initial": "KT" },
+    { "name": "Riaan", "initial": "RA" },
+    { "name": "Youngjun", "initial": "YJ" }
+  ],
+  "cards": [
+    { "code": "HZWV#DN001", "member": "Dane", "initial": "DN", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/BaZvz9e.png" },
+    { "code": "HZWV#HG001", "member": "Hagiwa", "initial": "HG", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/gJxCJIg.png" },
+    { "code": "HZWV#KT001", "member": "Keiten", "initial": "KT", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/ycUQWXQ.png" },
+    { "code": "HZWV#RA001", "member": "Riaan", "initial": "RA", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/0Z4l0wF.png" },
+    { "code": "HZWV#YJ001", "member": "Youngjun", "initial": "YJ", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/X8uuls2.png" },
+    { "code": "HZWV#DN002", "member": "Dane", "initial": "DN", "rarity": 2, "set": 1, "description": "2nd Album", "link": "https://i.imgur.com/aibzvRM.png" },
+    { "code": "HZWV#HG002", "member": "Hagiwa", "initial": "HG", "rarity": 2, "set": 1, "description": "2nd Album", "link": "https://i.imgur.com/5FregRh.png" },
+    { "code": "HZWV#KT002", "member": "Keiten", "initial": "KT", "rarity": 2, "set": 1, "description": "2nd Album", "link": "https://i.imgur.com/57rR8Yx.png" },
+    { "code": "HZWV#RA002", "member": "Riaan", "initial": "RA", "rarity": 2, "set": 1, "description": "2nd Album", "link": "https://i.imgur.com/IFOhnCG.png" },
+    { "code": "HZWV#YJ002", "member": "Youngjun", "initial": "YJ", "rarity": 2, "set": 1, "description": "2nd Album", "link": "https://i.imgur.com/MKk0zMe.png" }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "number": 206,
+  "name": "Baby DONT Cry",
+  "code": "BDCY",
+  "members": [
+    { "name": "Beni", "initial": "BN" },
+    { "name": "Kumi", "initial": "KM" },
+    { "name": "Mia", "initial": "MA" },
+    { "name": "Yihyun", "initial": "YH" }
+  ],
+  "cards": [
+    { "code": "BDCY#BN001", "member": "Beni", "initial": "BN", "rarity": 1, "set": 1, "description": "F Girl", "link": "https://i.imgur.com/RPlBRPp.png" },
+    { "code": "BDCY#KM001", "member": "Kumi", "initial": "KM", "rarity": 1, "set": 1, "description": "F Girl", "link": "https://i.imgur.com/ZkGRCP7.png" },
+    { "code": "BDCY#MA001", "member": "Mia", "initial": "MA", "rarity": 1, "set": 1, "description": "F Girl", "link": "https://i.imgur.com/nXE0yUs.png" },
+    { "code": "BDCY#YH001", "member": "Yihyun", "initial": "YH", "rarity": 1, "set": 1, "description": "F Girl", "link": "https://i.imgur.com/ZkGRCP7.png" },
+    { "code": "BDCY#BN002", "member": "Beni", "initial": "BN", "rarity": 2, "set": 1, "description": "I Dont Care", "link": "https://i.imgur.com/dmZvOMW.png" },
+    { "code": "BDCY#KM002", "member": "Kumi", "initial": "KM", "rarity": 2, "set": 1, "description": "I Dont Care", "link": "https://i.imgur.com/AuFZwep.png" },
+    { "code": "BDCY#MA002", "member": "Mia", "initial": "MA", "rarity": 2, "set": 1, "description": "I Dont Care", "link": "https://i.imgur.com/BCxYP29.png" },
+    { "code": "BDCY#YH002", "member": "Yihyun", "initial": "YH", "rarity": 2, "set": 1, "description": "I Dont Care", "link": "https://i.imgur.com/GF66735.png" },
+    { "code": "BDCY#BN003", "member": "Beni", "initial": "BN", "rarity": 3, "set": 1, "description": "AFTER CRY - Concept Photos", "link": "https://i.imgur.com/B3cRSSJ.png" },
+    { "code": "BDCY#KM003", "member": "Kumi", "initial": "KM", "rarity": 3, "set": 1, "description": "AFTER CRY - Concept Photos", "link": "https://i.imgur.com/FzNjqeS.png" },
+    { "code": "BDCY#MA003", "member": "Mia", "initial": "MA", "rarity": 3, "set": 1, "description": "AFTER CRY - Concept Photos", "link": "https://i.imgur.com/VpFNxSl.png" },
+    { "code": "BDCY#YH003", "member": "Yihyun", "initial": "YH", "rarity": 3, "set": 1, "description": "AFTER CRY - Concept Photos", "link": "https://i.imgur.com/CHJNghw.png" },
+    { "code": "BDCY#BN004", "member": "Beni", "initial": "BN", "rarity": 4, "set": 1, "description": "Weverse Update https://weverse.io/babydontcry/artist/0-171880457", "link": "https://i.imgur.com/TTKcNpd.png" },
+    { "code": "BDCY#KM004", "member": "Kumi", "initial": "KM", "rarity": 4, "set": 1, "description": "Weverse Update https://weverse.io/babydontcry/artist/3-224466474", "link": "https://i.imgur.com/CLdRUqP.png" },
+    { "code": "BDCY#MA004", "member": "Mia", "initial": "MA", "rarity": 4, "set": 1, "description": "Weverse Update https://weverse.io/babydontcry/artist/1-171938842", "link": "https://i.imgur.com/a5uHCXx.png" },
+    { "code": "BDCY#YH004", "member": "Yihyun", "initial": "YH", "rarity": 4, "set": 1, "description": "Weverse Update https://weverse.io/babydontcry/artist/4-224465431", "link": "https://i.imgur.com/IdA0uij.png" },
+    { "code": "BDCY#BN005", "member": "Beni", "initial": "BN", "rarity": 5, "set": 1, "description": "Kitto Magazine", "link": "https://i.imgur.com/wjgtw2J.png" },
+    { "code": "BDCY#KM005", "member": "Kumi", "initial": "KM", "rarity": 5, "set": 1, "description": "Kitto Magazine", "link": "https://i.imgur.com/phH0Mvf.png" },
+    { "code": "BDCY#MA005", "member": "Mia", "initial": "MA", "rarity": 5, "set": 1, "description": "Kitto Magazine", "link": "https://i.imgur.com/z4fZLeC.png" },
+    { "code": "BDCY#YH005", "member": "Yihyun", "initial": "YH", "rarity": 5, "set": 1, "description": "Kitto Magazine", "link": "https://i.imgur.com/dvbbZ9n.png" }
+  ]
+}

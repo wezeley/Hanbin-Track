@@ -1,0 +1,23 @@
+{
+  "number": 325,
+  "name": "Ourbirthday",
+  "code": "OBDY",
+  "members": [
+    { "name": "Achiraya", "initial": "AR" },
+    { "name": "Baby", "initial": "BB" },
+    { "name": "Chorok", "initial": "CR" },
+    { "name": "Hyejin", "initial": "HJ" },
+    { "name": "Hyewon", "initial": "HW" },
+    { "name": "Kilala", "initial": "KL" },
+    { "name": "U", "initial": "YU" }
+  ],
+  "cards": [
+    { "code": "OBDY#AR001", "member": "Achiraya", "initial": "AR", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/OgpiEMD.png" },
+    { "code": "OBDY#BB001", "member": "Baby", "initial": "BB", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/a9oPVDS.png" },
+    { "code": "OBDY#CR001", "member": "Chorok", "initial": "CR", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/wFUVIZU.png" },
+    { "code": "OBDY#HJ001", "member": "Hyejin", "initial": "HJ", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/duHzmW8.png" },
+    { "code": "OBDY#HW001", "member": "Hyewon", "initial": "HW", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/NFI1aQB.png" },
+    { "code": "OBDY#KL001", "member": "Kilala", "initial": "KL", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/TyGyCmg.png" },
+    { "code": "OBDY#YU001", "member": "U", "initial": "YU", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/REmVspO.png" }
+  ]
+}

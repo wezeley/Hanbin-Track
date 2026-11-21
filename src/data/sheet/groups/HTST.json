@@ -1,0 +1,27 @@
+{
+  "number": 147,
+  "name": "Heartsteel",
+  "code": "HTST",
+  "members": [
+    { "name": "Aphelios", "initial": "AP" },
+    { "name": "Ezreal", "initial": "EZ" },
+    { "name": "Kayn", "initial": "KY" },
+    { "name": "K'Sante", "initial": "KS" },
+    { "name": "Sett", "initial": "ST" },
+    { "name": "Yone", "initial": "YN" }
+  ],
+  "cards": [
+    { "code": "HTST#AP001", "member": "Aphelios", "initial": "AP", "rarity": 1, "set": 1, "description": "Paranoia Skins", "link": "https://i.imgur.com/s2SxUQC.png" },
+    { "code": "HTST#EZ001", "member": "Ezreal", "initial": "EZ", "rarity": 1, "set": 1, "description": "Paranoia Skins", "link": "https://i.imgur.com/RiaXaIA.png" },
+    { "code": "HTST#KY001", "member": "Kayn", "initial": "KY", "rarity": 1, "set": 1, "description": "Paranoia Skins", "link": "https://i.imgur.com/MSdw8pz.png" },
+    { "code": "HTST#KS001", "member": "K'Sante", "initial": "KS", "rarity": 1, "set": 1, "description": "Paranoia Skins", "link": "https://i.imgur.com/pwobv2q.png" },
+    { "code": "HTST#ST001", "member": "Sett", "initial": "ST", "rarity": 1, "set": 1, "description": "Paranoia Skins", "link": "https://i.imgur.com/GThCFEG.png" },
+    { "code": "HTST#YN001", "member": "Yone", "initial": "YN", "rarity": 1, "set": 1, "description": "Paranoia Skins", "link": "https://i.imgur.com/E9gQ66f.png" },
+    { "code": "HTST#AP002", "member": "Aphelios", "initial": "AP", "rarity": 2, "set": 1, "description": "Live my Life", "link": "https://i.imgur.com/TwFsB3D.png" },
+    { "code": "HTST#EZ002", "member": "Ezreal", "initial": "EZ", "rarity": 2, "set": 1, "description": "Live my Life", "link": "https://i.imgur.com/PF7uQk0.png" },
+    { "code": "HTST#KY002", "member": "Kayn", "initial": "KY", "rarity": 2, "set": 1, "description": "Live my Life", "link": "https://i.imgur.com/xECb6cZ.png" },
+    { "code": "HTST#KS002", "member": "K'Sante", "initial": "KS", "rarity": 2, "set": 1, "description": "Live my Life", "link": "https://i.imgur.com/oEn38DA.png" },
+    { "code": "HTST#ST002", "member": "Sett", "initial": "ST", "rarity": 2, "set": 1, "description": "Live my Life", "link": "https://i.imgur.com/aHN2ftj.png" },
+    { "code": "HTST#YN002", "member": "Yone", "initial": "YN", "rarity": 2, "set": 1, "description": "Live my Life", "link": "https://i.imgur.com/Ihof3U3.png" }
+  ]
+}

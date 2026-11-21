@@ -1,0 +1,33 @@
+{
+  "number": 142,
+  "name": "H1-Key",
+  "code": "H1KY",
+  "members": [
+    { "name": "Hwiseo", "initial": "HS" },
+    { "name": "Riina", "initial": "RN" },
+    { "name": "Seoi", "initial": "SO" },
+    { "name": "Yel", "initial": "YL" }
+  ],
+  "cards": [
+    { "code": "H1KY#HS001", "member": "Hwiseo", "initial": "HS", "rarity": 1, "set": 1, "description": "Love or Hate", "link": "https://i.imgur.com/BBVsChO.png" },
+    { "code": "H1KY#RN001", "member": "Riina", "initial": "RN", "rarity": 1, "set": 1, "description": "Love or Hate", "link": "https://i.imgur.com/gRlwvsd.png" },
+    { "code": "H1KY#SO001", "member": "Seoi", "initial": "SO", "rarity": 1, "set": 1, "description": "Love or Hate", "link": "https://i.imgur.com/tn3hCOt.png" },
+    { "code": "H1KY#YL001", "member": "Yel", "initial": "YL", "rarity": 1, "set": 1, "description": "Love or Hate", "link": "https://i.imgur.com/5LaYqJf.png" },
+    { "code": "H1KY#HS002", "member": "Hwiseo", "initial": "HS", "rarity": 2, "set": 1, "description": "4th Mini Album Lovestruck", "link": "https://i.imgur.com/JsJFsTH.png" },
+    { "code": "H1KY#RN002", "member": "Riina", "initial": "RN", "rarity": 2, "set": 1, "description": "4th Mini Album Lovestruck", "link": "https://i.imgur.com/RrnuxSI.png" },
+    { "code": "H1KY#SO002", "member": "Seoi", "initial": "SO", "rarity": 2, "set": 1, "description": "4th Mini Album Lovestruck", "link": "https://i.imgur.com/YLdiUsb.png" },
+    { "code": "H1KY#YL002", "member": "Yel", "initial": "YL", "rarity": 2, "set": 1, "description": "4th Mini Album Lovestruck", "link": "https://i.imgur.com/H5Q0KqK.png" },
+    { "code": "H1KY#HS003", "member": "Hwiseo", "initial": "HS", "rarity": 3, "set": 1, "description": "Lovestruck Jpn. Ver.", "link": "https://i.imgur.com/qOS8QNp.png" },
+    { "code": "H1KY#RN003", "member": "Riina", "initial": "RN", "rarity": 3, "set": 1, "description": "Lovestruck Jpn. Ver.", "link": "https://i.imgur.com/QIl23eR.png" },
+    { "code": "H1KY#SO003", "member": "Seoi", "initial": "SO", "rarity": 3, "set": 1, "description": "Lovestruck Jpn. Ver.", "link": "https://i.imgur.com/7wDiNWw.png" },
+    { "code": "H1KY#YL003", "member": "Yel", "initial": "YL", "rarity": 3, "set": 1, "description": "Lovestruck Jpn. Ver.", "link": "https://i.imgur.com/K1BAvb3.png" },
+    { "code": "H1KY#HS004", "member": "Hwiseo", "initial": "HS", "rarity": 4, "set": 1, "description": "2024Season Greetings Selca", "link": "https://i.imgur.com/Iu6GAlA.png" },
+    { "code": "H1KY#RN004", "member": "Riina", "initial": "RN", "rarity": 4, "set": 1, "description": "2024Season Greetings Selca", "link": "https://i.imgur.com/lYawqXp.png" },
+    { "code": "H1KY#SO004", "member": "Seoi", "initial": "SO", "rarity": 4, "set": 1, "description": "2024Season Greetings Selca", "link": "https://i.imgur.com/KWyJ4dW.png" },
+    { "code": "H1KY#YL004", "member": "Yel", "initial": "YL", "rarity": 4, "set": 1, "description": "2024Season Greetings Selca", "link": "https://i.imgur.com/CeUU0xH.png" },
+    { "code": "H1KY#HS005", "member": "Hwiseo", "initial": "HS", "rarity": 5, "set": 1, "description": "Official Membership", "link": "https://i.imgur.com/kzxFUjp.png" },
+    { "code": "H1KY#RN005", "member": "Riina", "initial": "RN", "rarity": 5, "set": 1, "description": "Official Membership", "link": "https://i.imgur.com/ysf6vqk.png" },
+    { "code": "H1KY#SO005", "member": "Seoi", "initial": "SO", "rarity": 5, "set": 1, "description": "Official Membership", "link": "https://i.imgur.com/p84JMB7.png" },
+    { "code": "H1KY#YL005", "member": "Yel", "initial": "YL", "rarity": 5, "set": 1, "description": "Official Membership", "link": "https://i.imgur.com/fQ4mJU0.png" }
+  ]
+}

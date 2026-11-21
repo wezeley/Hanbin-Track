@@ -1,0 +1,41 @@
+{
+  "number": 126,
+  "name": "XLOV",
+  "code": "XLOV",
+  "members": [
+    { "name": "Haru", "initial": "HR" },
+    { "name": "Hyun", "initial": "HY" },
+    { "name": "Rui", "initial": "RI" },
+    { "name": "Wumuti", "initial": "WM" }
+  ],
+  "cards": [
+    { "code": "XLOV#HR001", "member": "Haru", "initial": "HR", "rarity": 1, "set": 1, "description": "I'mma Be", "link": "https://i.imgur.com/kc1Jp3G.png" },
+    { "code": "XLOV#HY001", "member": "Hyun", "initial": "HY", "rarity": 1, "set": 1, "description": "I'mma Be", "link": "https://i.imgur.com/bFv0ZGr.png" },
+    { "code": "XLOV#RI001", "member": "Rui", "initial": "RI", "rarity": 1, "set": 1, "description": "I'mma Be", "link": "https://i.imgur.com/RHb3k4w.png" },
+    { "code": "XLOV#WM001", "member": "Wumuti", "initial": "WM", "rarity": 1, "set": 1, "description": "I'mma Be", "link": "https://i.imgur.com/hsyB7M3.png" },
+    { "code": "XLOV#HR002", "member": "Haru", "initial": "HR", "rarity": 2, "set": 1, "description": "I One", "link": "https://i.imgur.com/qQ1pyG5.png" },
+    { "code": "XLOV#HY002", "member": "Hyun", "initial": "HY", "rarity": 2, "set": 1, "description": "I One", "link": "https://i.imgur.com/IbZBlD5.png" },
+    { "code": "XLOV#RI002", "member": "Rui", "initial": "RI", "rarity": 2, "set": 1, "description": "I One", "link": "https://i.imgur.com/DHYxr01.png" },
+    { "code": "XLOV#WM002", "member": "Wumuti", "initial": "WM", "rarity": 2, "set": 1, "description": "I One", "link": "https://i.imgur.com/k2qtQon.png" },
+    { "code": "XLOV#HR003", "member": "Haru", "initial": "HR", "rarity": 3, "set": 1, "description": "UXLXVE", "link": "https://i.imgur.com/Whh9lMs.png" },
+    { "code": "XLOV#HY003", "member": "Hyun", "initial": "HY", "rarity": 3, "set": 1, "description": "UXLXVE", "link": "https://i.imgur.com/lS79yjH.png" },
+    { "code": "XLOV#RI003", "member": "Rui", "initial": "RI", "rarity": 3, "set": 1, "description": "UXLXVE", "link": "https://i.imgur.com/uiBgvDC.png" },
+    { "code": "XLOV#WM003", "member": "Wumuti", "initial": "WM", "rarity": 3, "set": 1, "description": "UXLXVE", "link": "https://i.imgur.com/cTUEefv.png" },
+    { "code": "XLOV#HR004", "member": "Haru", "initial": "HR", "rarity": 4, "set": 1, "description": null, "link": "https://i.imgur.com/2qxKRMk.png" },
+    { "code": "XLOV#HY004", "member": "Hyun", "initial": "HY", "rarity": 4, "set": 1, "description": null, "link": "https://i.imgur.com/GKppyl2.png" },
+    { "code": "XLOV#RI004", "member": "Rui", "initial": "RI", "rarity": 4, "set": 1, "description": null, "link": "https://i.imgur.com/f9OFTsG.png" },
+    { "code": "XLOV#WM004", "member": "Wumuti", "initial": "WM", "rarity": 4, "set": 1, "description": null, "link": "https://i.imgur.com/HREOYaN.png" },
+    { "code": "XLOV#HR005", "member": "Haru", "initial": "HR", "rarity": 5, "set": 1, "description": "S Cawaii Magazine", "link": "https://i.imgur.com/6Gk8Dr9.png" },
+    { "code": "XLOV#HY005", "member": "Hyun", "initial": "HY", "rarity": 5, "set": 1, "description": "S Cawaii Magazine", "link": "https://i.imgur.com/lmfFjuy.png" },
+    { "code": "XLOV#RI005", "member": "Rui", "initial": "RI", "rarity": 5, "set": 1, "description": "S Cawaii Magazine", "link": "https://i.imgur.com/nbb2z5R.png" },
+    { "code": "XLOV#WM005", "member": "Wumuti", "initial": "WM", "rarity": 5, "set": 1, "description": "S Cawaii Magazine", "link": "https://i.imgur.com/23TpxWk.png" },
+    { "code": "XLOV#HR006", "member": "Haru", "initial": "HR", "rarity": 1, "set": 2, "description": "I, GOD", "link": "https://i.imgur.com/ZZAP4ml.png" },
+    { "code": "XLOV#HY006", "member": "Hyun", "initial": "HY", "rarity": 1, "set": 2, "description": "I, GOD", "link": "https://i.imgur.com/jy3Ocvb.png" },
+    { "code": "XLOV#RI006", "member": "Rui", "initial": "RI", "rarity": 1, "set": 2, "description": "I, GOD", "link": "https://i.imgur.com/ytWtB5v.png" },
+    { "code": "XLOV#WM006", "member": "Wumuti", "initial": "WM", "rarity": 1, "set": 2, "description": "I, GOD", "link": "https://i.imgur.com/DrJlMIK.png" },
+    { "code": "XLOV#HR007", "member": "Haru", "initial": "HR", "rarity": 2, "set": 2, "description": "I, GOD", "link": "https://i.imgur.com/GWJxCAo.png" },
+    { "code": "XLOV#HY007", "member": "Hyun", "initial": "HY", "rarity": 2, "set": 2, "description": "I, GOD", "link": "https://i.imgur.com/de7QDL8.png" },
+    { "code": "XLOV#RI007", "member": "Rui", "initial": "RI", "rarity": 2, "set": 2, "description": "I, GOD", "link": "https://i.imgur.com/nUK10IT.png" },
+    { "code": "XLOV#WM007", "member": "Wumuti", "initial": "WM", "rarity": 2, "set": 2, "description": "I, GOD", "link": "https://i.imgur.com/ttA1H9k.png" }
+  ]
+}

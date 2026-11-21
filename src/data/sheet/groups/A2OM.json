@@ -1,0 +1,19 @@
+{
+  "number": 348,
+  "name": "A2O May",
+  "code": "A2OM",
+  "members": [
+    { "name": "Chenyu", "initial": "CY" },
+    { "name": "Kat", "initial": "KT" },
+    { "name": "Miche", "initial": "MC" },
+    { "name": "Quchang", "initial": "QC" },
+    { "name": "Shijie", "initial": "SJ" }
+  ],
+  "cards": [
+    { "code": "A2OM#CY001", "member": "Chenyu", "initial": "CY", "rarity": 1, "set": 1, "description": "Love Got Me Ooh", "link": "https://i.imgur.com/r8Smgrw.png" },
+    { "code": "A2OM#KT001", "member": "Kat", "initial": "KT", "rarity": 1, "set": 1, "description": "Love Got Me Ooh", "link": "https://i.imgur.com/iv2sXf8.png" },
+    { "code": "A2OM#MC001", "member": "Miche", "initial": "MC", "rarity": 1, "set": 1, "description": "Love Got Me Ooh", "link": "https://i.imgur.com/gh1Y9ub.png" },
+    { "code": "A2OM#QC001", "member": "Quchang", "initial": "QC", "rarity": 1, "set": 1, "description": "Love Got Me Ooh", "link": "https://i.imgur.com/9u9T5zX.png" },
+    { "code": "A2OM#SJ001", "member": "Shijie", "initial": "SJ", "rarity": 1, "set": 1, "description": "Love Got Me Ooh", "link": "https://i.imgur.com/lxUbPGT.png" }
+  ]
+}

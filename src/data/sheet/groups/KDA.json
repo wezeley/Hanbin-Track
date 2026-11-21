@@ -1,0 +1,33 @@
+{
+  "number": 146,
+  "name": "K/DA",
+  "code": "KDA",
+  "members": [
+    { "name": "Ahri", "initial": "AR" },
+    { "name": "Akali", "initial": "AK" },
+    { "name": "Evelynn", "initial": "EL" },
+    { "name": "Kai'sa", "initial": "KS" }
+  ],
+  "cards": [
+    { "code": "KDA#AR001", "member": "Ahri", "initial": "AR", "rarity": 1, "set": 1, "description": "Pop/Stars Skins", "link": "https://i.imgur.com/PkgErx9.png" },
+    { "code": "KDA#AK001", "member": "Akali", "initial": "AK", "rarity": 1, "set": 1, "description": "Pop/Stars Skins", "link": "https://i.imgur.com/VDwVPfm.png" },
+    { "code": "KDA#EL001", "member": "Evelynn", "initial": "EL", "rarity": 1, "set": 1, "description": "Pop/Stars Skins", "link": "https://i.imgur.com/KCja5Wa.png" },
+    { "code": "KDA#KS001", "member": "Kai'sa", "initial": "KS", "rarity": 1, "set": 1, "description": "Pop/Stars Skins", "link": "https://i.imgur.com/LxmX9jw.png" },
+    { "code": "KDA#AR002", "member": "Ahri", "initial": "AR", "rarity": 2, "set": 1, "description": "Pop/Stars Prestige", "link": "https://i.imgur.com/EOYumjm.png" },
+    { "code": "KDA#AK002", "member": "Akali", "initial": "AK", "rarity": 2, "set": 1, "description": "Pop/Stars Prestige", "link": "https://i.imgur.com/p0T1wxN.png" },
+    { "code": "KDA#EL002", "member": "Evelynn", "initial": "EL", "rarity": 2, "set": 1, "description": "Pop/Stars Prestige", "link": "https://i.imgur.com/05djH02.png" },
+    { "code": "KDA#KS002", "member": "Kai'sa", "initial": "KS", "rarity": 2, "set": 1, "description": "Pop/Stars Prestige", "link": "https://i.imgur.com/O5TwqSy.png" },
+    { "code": "KDA#AR003", "member": "Ahri", "initial": "AR", "rarity": 3, "set": 1, "description": "All Out", "link": "https://i.imgur.com/OrBZlaq.png" },
+    { "code": "KDA#AK003", "member": "Akali", "initial": "AK", "rarity": 3, "set": 1, "description": "All Out", "link": "https://i.imgur.com/iY4hLqK.png" },
+    { "code": "KDA#EL003", "member": "Evelynn", "initial": "EL", "rarity": 3, "set": 1, "description": "All Out", "link": "https://i.imgur.com/jAkjYAf.png" },
+    { "code": "KDA#KS003", "member": "Kai'sa", "initial": "KS", "rarity": 3, "set": 1, "description": "All Out", "link": "https://i.imgur.com/sacqxQD.png" },
+    { "code": "KDA#AR004", "member": "Ahri", "initial": "AR", "rarity": 4, "set": 1, "description": "Statement Photo", "link": "https://i.imgur.com/9df612E.png" },
+    { "code": "KDA#AK004", "member": "Akali", "initial": "AK", "rarity": 4, "set": 1, "description": "Statement Photo", "link": "https://i.imgur.com/xuQXnmq.png" },
+    { "code": "KDA#EL004", "member": "Evelynn", "initial": "EL", "rarity": 4, "set": 1, "description": "Statement Photo", "link": "https://i.imgur.com/DDwjjlj.png" },
+    { "code": "KDA#KS004", "member": "Kai'sa", "initial": "KS", "rarity": 4, "set": 1, "description": "Statement Photo", "link": "https://i.imgur.com/1Nwmwzp.png" },
+    { "code": "KDA#AR005", "member": "Ahri", "initial": "AR", "rarity": 5, "set": 1, "description": "Dazed China", "link": "https://i.imgur.com/P76DSb5.png" },
+    { "code": "KDA#AK005", "member": "Akali", "initial": "AK", "rarity": 5, "set": 1, "description": "Dazed China", "link": "https://i.imgur.com/RkaLEei.png" },
+    { "code": "KDA#EL005", "member": "Evelynn", "initial": "EL", "rarity": 5, "set": 1, "description": "Dazed China", "link": "https://i.imgur.com/ETucNff.png" },
+    { "code": "KDA#KS005", "member": "Kai'sa", "initial": "KS", "rarity": 5, "set": 1, "description": "Dazed China", "link": "https://i.imgur.com/QvrI9l5.png" }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "number": 168,
+  "name": "GenBlue",
+  "code": "GNBL",
+  "members": [
+    { "name": "Ayako", "initial": "AK" },
+    { "name": "Ayeon", "initial": "AY" },
+    { "name": "Lili", "initial": "LL" },
+    { "name": "Nico", "initial": "NC" },
+    { "name": "XXIN", "initial": "XX" },
+    { "name": "Yuan", "initial": "YA" }
+  ],
+  "cards": [
+    { "code": "GNBL#AK001", "member": "Ayako", "initial": "AK", "rarity": 1, "set": 1, "description": "CoCoCo", "link": "https://i.imgur.com/q9mUIEq.png" },
+    { "code": "GNBL#AY001", "member": "Ayeon", "initial": "AY", "rarity": 1, "set": 1, "description": "CoCoCo", "link": "https://i.imgur.com/JXs7chh.png" },
+    { "code": "GNBL#LL001", "member": "Lili", "initial": "LL", "rarity": 1, "set": 1, "description": "CoCoCo", "link": "https://i.imgur.com/2iSKhaa.png" },
+    { "code": "GNBL#NC001", "member": "Nico", "initial": "NC", "rarity": 1, "set": 1, "description": "CoCoCo", "link": "https://i.imgur.com/rWf6phF.png" },
+    { "code": "GNBL#XX001", "member": "XXIN", "initial": "XX", "rarity": 1, "set": 1, "description": "CoCoCo", "link": "https://i.imgur.com/1NsXTr1.png" },
+    { "code": "GNBL#YA001", "member": "Yuan", "initial": "YA", "rarity": 1, "set": 1, "description": "CoCoCo", "link": "https://i.imgur.com/vOGZhl5.png" }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "number": 219,
+  "name": "Golden Child",
+  "code": "GDC",
+  "members": [
+    { "name": "Bomin", "initial": "BM" },
+    { "name": "Daeyeol", "initial": "DY" },
+    { "name": "Donghyun", "initial": "DH" },
+    { "name": "Jaehyun", "initial": "JH" },
+    { "name": "Jangjun", "initial": "JJ" },
+    { "name": "Jibeom", "initial": "JB" },
+    { "name": "Joochan", "initial": "JC" },
+    { "name": "Seungmin", "initial": "SM" },
+    { "name": "TAG", "initial": "TG" },
+    { "name": "Y", "initial": "SY" }
+  ],
+  "cards": [
+    { "code": "GDC#BM001", "member": "Bomin", "initial": "BM", "rarity": 1, "set": 1, "description": "Pump It Up", "link": "https://i.imgur.com/agfQYtw.png" },
+    { "code": "GDC#DY001", "member": "Daeyeol", "initial": "DY", "rarity": 1, "set": 1, "description": "Pump It Up", "link": "https://i.imgur.com/0LhjoJM.png" },
+    { "code": "GDC#DH001", "member": "Donghyun", "initial": "DH", "rarity": 1, "set": 1, "description": "Pump It Up", "link": "https://i.imgur.com/wJUmgsO.png" },
+    { "code": "GDC#JH001", "member": "Jaehyun", "initial": "JH", "rarity": 1, "set": 1, "description": "Pump It Up", "link": "https://i.imgur.com/x4dOUgd.png" },
+    { "code": "GDC#JJ001", "member": "Jangjun", "initial": "JJ", "rarity": 1, "set": 1, "description": "Pump It Up", "link": "https://i.imgur.com/M05vJjL.png" },
+    { "code": "GDC#JB001", "member": "Jibeom", "initial": "JB", "rarity": 1, "set": 1, "description": "Pump It Up", "link": "https://i.imgur.com/xXvMFg7.png" },
+    { "code": "GDC#JC001", "member": "Joochan", "initial": "JC", "rarity": 1, "set": 1, "description": "Pump It Up", "link": "https://i.imgur.com/hptHejL.png" },
+    { "code": "GDC#SM001", "member": "Seungmin", "initial": "SM", "rarity": 1, "set": 1, "description": "Pump It Up", "link": "https://i.imgur.com/qzHlSi6.png" },
+    { "code": "GDC#TG001", "member": "TAG", "initial": "TG", "rarity": 1, "set": 1, "description": "Pump It Up", "link": "https://i.imgur.com/KGQYSYp.png" },
+    { "code": "GDC#SY001", "member": "Y", "initial": "SY", "rarity": 1, "set": 1, "description": "Pump It Up", "link": "https://i.imgur.com/ecGyFaS.png" }
+  ]
+}

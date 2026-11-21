@@ -1,0 +1,19 @@
+{
+  "number": 268,
+  "name": "Chaser",
+  "code": "CHSR",
+  "members": [
+    { "name": "Kangbin", "initial": "KB" },
+    { "name": "Keisuke", "initial": "KS" },
+    { "name": "Ren", "initial": "RN" },
+    { "name": "Sihun", "initial": "SH" },
+    { "name": "Yunseong", "initial": "YS" }
+  ],
+  "cards": [
+    { "code": "CHSR#KB001", "member": "Kangbin", "initial": "KB", "rarity": 1, "set": 1, "description": "Route 01: Burning Point - Concept Photos", "link": "https://i.imgur.com/JoWYTxF.png" },
+    { "code": "CHSR#KS001", "member": "Keisuke", "initial": "KS", "rarity": 1, "set": 1, "description": "Route 01: Burning Point - Concept Photos", "link": "https://i.imgur.com/1XQeLIJ.png" },
+    { "code": "CHSR#RN001", "member": "Ren", "initial": "RN", "rarity": 1, "set": 1, "description": "Route 01: Burning Point - Concept Photos", "link": "https://i.imgur.com/xQYNYby.png" },
+    { "code": "CHSR#SH001", "member": "Sihun", "initial": "SH", "rarity": 1, "set": 1, "description": "Route 01: Burning Point - Concept Photos", "link": "https://i.imgur.com/9u1O3g2.png" },
+    { "code": "CHSR#YS001", "member": "Yunseong", "initial": "YS", "rarity": 1, "set": 1, "description": "Route 01: Burning Point - Concept Photos", "link": "https://i.imgur.com/YraZsyE.png" }
+  ]
+}

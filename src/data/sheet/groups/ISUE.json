@@ -1,0 +1,33 @@
+{
+  "number": 340,
+  "name": "IS:SUE",
+  "code": "ISUE",
+  "members": [
+    { "name": "Nano", "initial": "NN" },
+    { "name": "Rin", "initial": "RN" },
+    { "name": "Rino", "initial": "RO" },
+    { "name": "Yuuki", "initial": "YK" }
+  ],
+  "cards": [
+    { "code": "ISUE#NN001", "member": "Nano", "initial": "NN", "rarity": 1, "set": 1, "description": "Connect (2024)", "link": "https://i.imgur.com/ssCbG70.png" },
+    { "code": "ISUE#RN001", "member": "Rin", "initial": "RN", "rarity": 1, "set": 1, "description": "Connect (2024)", "link": "https://i.imgur.com/HegljgG.png" },
+    { "code": "ISUE#RO001", "member": "Rino", "initial": "RO", "rarity": 1, "set": 1, "description": "Connect (2024)", "link": "https://i.imgur.com/RlDr1rl.png" },
+    { "code": "ISUE#YK001", "member": "Yuuki", "initial": "YK", "rarity": 1, "set": 1, "description": "Connect (2024)", "link": "https://i.imgur.com/JKNCz7V.png" },
+    { "code": "ISUE#NN002", "member": "Nano", "initial": "NN", "rarity": 2, "set": 1, "description": "The Flash Girl (2024)", "link": "https://i.imgur.com/nT9zO1i.png" },
+    { "code": "ISUE#RN002", "member": "Rin", "initial": "RN", "rarity": 2, "set": 1, "description": "The Flash Girl (2024)", "link": "https://i.imgur.com/GYUD60H.png" },
+    { "code": "ISUE#RO002", "member": "Rino", "initial": "RO", "rarity": 2, "set": 1, "description": "The Flash Girl (2024)", "link": "https://i.imgur.com/Hfjnpvi.png" },
+    { "code": "ISUE#YK002", "member": "Yuuki", "initial": "YK", "rarity": 2, "set": 1, "description": "The Flash Girl (2024)", "link": "https://i.imgur.com/E7n7rNF.png" },
+    { "code": "ISUE#NN003", "member": "Nano", "initial": "NN", "rarity": 3, "set": 1, "description": "Welcome Strangers (2024)", "link": "https://i.imgur.com/61JJgWf.png" },
+    { "code": "ISUE#RN003", "member": "Rin", "initial": "RN", "rarity": 3, "set": 1, "description": "Welcome Strangers (2024)", "link": "https://i.imgur.com/AQtpQSj.png" },
+    { "code": "ISUE#RO003", "member": "Rino", "initial": "RO", "rarity": 3, "set": 1, "description": "Welcome Strangers (2024)", "link": "https://i.imgur.com/xH6d5Hh.png" },
+    { "code": "ISUE#YK003", "member": "Yuuki", "initial": "YK", "rarity": 3, "set": 1, "description": "Welcome Strangers (2024)", "link": "https://i.imgur.com/97upHJK.png" },
+    { "code": "ISUE#NN004", "member": "Nano", "initial": "NN", "rarity": 4, "set": 1, "description": "Mcountdown backstage (2024)", "link": "https://i.imgur.com/JAUoz1g.png" },
+    { "code": "ISUE#RN004", "member": "Rin", "initial": "RN", "rarity": 4, "set": 1, "description": "Mcountdown backstage (2024)", "link": "https://i.imgur.com/TxcsI5Y.png" },
+    { "code": "ISUE#RO004", "member": "Rino", "initial": "RO", "rarity": 4, "set": 1, "description": "Mcountdown backstage (2024)", "link": "https://i.imgur.com/PixIgwF.png" },
+    { "code": "ISUE#YK004", "member": "Yuuki", "initial": "YK", "rarity": 4, "set": 1, "description": "Mcountdown backstage (2024)", "link": "https://i.imgur.com/pxl8899.png" },
+    { "code": "ISUE#NN005", "member": "Nano", "initial": "NN", "rarity": 5, "set": 1, "description": "Natalie interview (2024)", "link": "https://i.imgur.com/OBkLI0y.png" },
+    { "code": "ISUE#RN005", "member": "Rin", "initial": "RN", "rarity": 5, "set": 1, "description": "Natalie interview (2024)", "link": "https://i.imgur.com/4Ti0gsz.png" },
+    { "code": "ISUE#RO005", "member": "Rino", "initial": "RO", "rarity": 5, "set": 1, "description": "Natalie interview (2024)", "link": "https://i.imgur.com/Kv5eYuO.png" },
+    { "code": "ISUE#YK005", "member": "Yuuki", "initial": "YK", "rarity": 5, "set": 1, "description": "Natalie interview (2024)", "link": "https://i.imgur.com/IwQyBnH.png" }
+  ]
+}

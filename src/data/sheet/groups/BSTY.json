@@ -1,0 +1,21 @@
+{
+  "number": 212,
+  "name": "Boy Story",
+  "code": "BSTY",
+  "members": [
+    { "name": "Hanyu", "initial": "HY" },
+    { "name": "Mingrui", "initial": "MR" },
+    { "name": "Shuyang", "initial": "SY" },
+    { "name": "Xinlong", "initial": "XL" },
+    { "name": "Zeyu", "initial": "ZY" },
+    { "name": "Zihao", "initial": "ZH" }
+  ],
+  "cards": [
+    { "code": "BSTY#HY001", "member": "Hanyu", "initial": "HY", "rarity": 1, "set": 1, "description": "Pump It Up", "link": "https://i.imgur.com/ITQr3A6.png" },
+    { "code": "BSTY#MR001", "member": "Mingrui", "initial": "MR", "rarity": 1, "set": 1, "description": "Pump It Up", "link": "https://i.imgur.com/PE2huVf.png" },
+    { "code": "BSTY#SY001", "member": "Shuyang", "initial": "SY", "rarity": 1, "set": 1, "description": "Pump It Up", "link": "https://i.imgur.com/IAy5Ixl.png" },
+    { "code": "BSTY#XL001", "member": "Xinlong", "initial": "XL", "rarity": 1, "set": 1, "description": "Pump It Up", "link": "https://i.imgur.com/EdVyeik.png" },
+    { "code": "BSTY#ZY001", "member": "Zeyu", "initial": "ZY", "rarity": 1, "set": 1, "description": "Pump It Up", "link": "https://i.imgur.com/D9349a9.png" },
+    { "code": "BSTY#ZH001", "member": "Zihao", "initial": "ZH", "rarity": 1, "set": 1, "description": "Pump It Up", "link": "https://i.imgur.com/zxeJwJt.png" }
+  ]
+}

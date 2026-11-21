@@ -1,0 +1,19 @@
+{
+  "number": 210,
+  "name": "Saja Boys",
+  "code": "SAJA",
+  "members": [
+    { "name": "Jinu", "initial": "JN" },
+    { "name": "Abby", "initial": "AB" },
+    { "name": "Baby", "initial": "BB" },
+    { "name": "Mystery", "initial": "MS" },
+    { "name": "Romance", "initial": "RM" }
+  ],
+  "cards": [
+    { "code": "SAJA#JN005", "member": "Jinu", "initial": "JN", "rarity": 5, "set": 1, "description": null, "link": "https://i.imgur.com/cIV5BPP.png" },
+    { "code": "SAJA#AB005", "member": "Abby", "initial": "AB", "rarity": 5, "set": 1, "description": null, "link": "https://i.imgur.com/tAMxt4W.png" },
+    { "code": "SAJA#BB005", "member": "Baby", "initial": "BB", "rarity": 5, "set": 1, "description": null, "link": "https://i.imgur.com/rwcCvci.png" },
+    { "code": "SAJA#MS005", "member": "Mystery", "initial": "MS", "rarity": 5, "set": 1, "description": null, "link": "https://i.imgur.com/sVOOhag.png" },
+    { "code": "SAJA#RM005", "member": "Romance", "initial": "RM", "rarity": 5, "set": 1, "description": null, "link": "https://i.imgur.com/CzusJ3V.png" }
+  ]
+}

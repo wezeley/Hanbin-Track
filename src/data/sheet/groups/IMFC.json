@@ -1,0 +1,19 @@
+{
+  "number": 140,
+  "name": "Imfact",
+  "code": "IMFC",
+  "members": [
+    { "name": "Jeup", "initial": "JE" },
+    { "name": "Jian", "initial": "JA" },
+    { "name": "Sang", "initial": "SG" },
+    { "name": "Taeho", "initial": "TH" },
+    { "name": "Ungjae", "initial": "UJ" }
+  ],
+  "cards": [
+    { "code": "IMFC#JE001", "member": "Jeup", "initial": "JE", "rarity": 1, "set": 1, "description": "Imfactory Part 3. Tension Up", "link": "https://i.imgur.com/H90jwy6.png" },
+    { "code": "IMFC#JA001", "member": "Jian", "initial": "JA", "rarity": 1, "set": 1, "description": "Imfactory Part 3. Tension Up", "link": "https://i.imgur.com/1nHR8s9.png" },
+    { "code": "IMFC#SG001", "member": "Sang", "initial": "SG", "rarity": 1, "set": 1, "description": "Imfactory Part 3. Tension Up", "link": "https://i.imgur.com/Rf19l7R.png" },
+    { "code": "IMFC#TH001", "member": "Taeho", "initial": "TH", "rarity": 1, "set": 1, "description": "Imfactory Part 3. Tension Up", "link": "https://i.imgur.com/1AubALl.png" },
+    { "code": "IMFC#UJ001", "member": "Ungjae", "initial": "UJ", "rarity": 1, "set": 1, "description": "Imfactory Part 3. Tension Up", "link": "https://i.imgur.com/lW0Zums.png" }
+  ]
+}

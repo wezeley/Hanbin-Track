@@ -1,0 +1,39 @@
+{
+  "number": 347,
+  "name": "A2O Soul",
+  "code": "A2OS",
+  "members": [
+    { "name": "Alure", "initial": "AL" },
+    { "name": "Ayden", "initial": "AD" },
+    { "name": "Gaku", "initial": "GK" },
+    { "name": "Hansung", "initial": "HS" },
+    { "name": "June", "initial": "JN" },
+    { "name": "Lucien", "initial": "LC" },
+    { "name": "Moon", "initial": "MN" },
+    { "name": "See-One", "initial": "SO" },
+    { "name": "Seoha", "initial": "SH" },
+    { "name": "Sono", "initial": "SN" },
+    { "name": "Sora", "initial": "SR" },
+    { "name": "Tai", "initial": "TI" },
+    { "name": "Teo", "initial": "TO" },
+    { "name": "Zai", "initial": "ZI" },
+    { "name": "Zet", "initial": "ZT" }
+  ],
+  "cards": [
+    { "code": "A2OS#AL001", "member": "Alure", "initial": "AL", "rarity": 1, "set": 1, "description": "Superstar", "link": "https://i.imgur.com/pDgNKti.png" },
+    { "code": "A2OS#AD001", "member": "Ayden", "initial": "AD", "rarity": 1, "set": 1, "description": "Superstar", "link": "https://i.imgur.com/XImbHQq.png" },
+    { "code": "A2OS#GK001", "member": "Gaku", "initial": "GK", "rarity": 1, "set": 1, "description": "Superstar", "link": "https://i.imgur.com/G90iLZF.png" },
+    { "code": "A2OS#HS001", "member": "Hansung", "initial": "HS", "rarity": 1, "set": 1, "description": "Superstar", "link": "https://i.imgur.com/l40GiIH.png" },
+    { "code": "A2OS#JN001", "member": "June", "initial": "JN", "rarity": 1, "set": 1, "description": "Superstar", "link": "https://i.imgur.com/PKOW1bL.png" },
+    { "code": "A2OS#LC001", "member": "Lucien", "initial": "LC", "rarity": 1, "set": 1, "description": "Superstar", "link": "https://i.imgur.com/NJnFIQz.png" },
+    { "code": "A2OS#MN001", "member": "Moon", "initial": "MN", "rarity": 1, "set": 1, "description": "Superstar", "link": "https://i.imgur.com/5cPi0Ow.png" },
+    { "code": "A2OS#SO001", "member": "See-One", "initial": "SO", "rarity": 1, "set": 1, "description": "Superstar", "link": "https://i.imgur.com/NE61jCc.png" },
+    { "code": "A2OS#SH001", "member": "Seoha", "initial": "SH", "rarity": 1, "set": 1, "description": "Superstar", "link": "https://i.imgur.com/Ct18bju.png" },
+    { "code": "A2OS#SN001", "member": "Sono", "initial": "SN", "rarity": 1, "set": 1, "description": "Superstar", "link": "https://i.imgur.com/Ca1o3ED.png" },
+    { "code": "A2OS#SR001", "member": "Sora", "initial": "SR", "rarity": 1, "set": 1, "description": "Superstar", "link": "https://i.imgur.com/GoKudWp.png" },
+    { "code": "A2OS#TI001", "member": "Tai", "initial": "TI", "rarity": 1, "set": 1, "description": "Superstar", "link": "https://i.imgur.com/sjWdL3W.png" },
+    { "code": "A2OS#TO001", "member": "Teo", "initial": "TO", "rarity": 1, "set": 1, "description": "Superstar", "link": "https://i.imgur.com/Ly7vSJz.png" },
+    { "code": "A2OS#ZI001", "member": "Zai", "initial": "ZI", "rarity": 1, "set": 1, "description": "Superstar", "link": "https://i.imgur.com/RBPHqmE.png" },
+    { "code": "A2OS#ZT001", "member": "Zet", "initial": "ZT", "rarity": 1, "set": 1, "description": "Superstar", "link": "https://i.imgur.com/94mee5v.png" }
+  ]
+}

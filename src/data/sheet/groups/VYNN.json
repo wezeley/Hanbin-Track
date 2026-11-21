@@ -1,0 +1,21 @@
+{
+  "number": 306,
+  "name": "Vayonn",
+  "code": "VYNN",
+  "members": [
+    { "name": "Ayang", "initial": "AY" },
+    { "name": "Jinyu", "initial": "JY" },
+    { "name": "Mano", "initial": "MN" },
+    { "name": "Masato", "initial": "MS" },
+    { "name": "Sen", "initial": "SN" },
+    { "name": "Teru", "initial": "TR" }
+  ],
+  "cards": [
+    { "code": "VYNN#AY001", "member": "Ayang", "initial": "AY", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/V2VCq3g.png" },
+    { "code": "VYNN#JY001", "member": "Jinyu", "initial": "JY", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/sUidmdL.png" },
+    { "code": "VYNN#MN001", "member": "Mano", "initial": "MN", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/FXwP2xK.png" },
+    { "code": "VYNN#MS001", "member": "Masato", "initial": "MS", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/O3PlyTS.png" },
+    { "code": "VYNN#SN001", "member": "Sen", "initial": "SN", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/iT9rEJv.png" },
+    { "code": "VYNN#TR001", "member": "Teru", "initial": "TR", "rarity": 1, "set": 1, "description": null, "link": "https://i.imgur.com/LQMjq5F.png" }
+  ]
+}

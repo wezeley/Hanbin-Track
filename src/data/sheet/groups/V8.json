@@ -1,0 +1,21 @@
+{
+  "number": 319,
+  "name": "V8",
+  "code": "V8",
+  "members": [
+    { "name": "THE8", "initial": "TE" },
+    { "name": "Vernon", "initial": "VN" }
+  ],
+  "cards": [
+    { "code": "V8#TE001", "member": "THE8", "initial": "TE", "rarity": 1, "set": 1, "description": "V8 - Concept Photos", "link": "https://i.imgur.com/LKMVXfb.png" },
+    { "code": "V8#VN001", "member": "Vernon", "initial": "VN", "rarity": 1, "set": 1, "description": "V8 - Concept Photos", "link": "https://i.imgur.com/XRlGoty.png" },
+    { "code": "V8#TE002", "member": "THE8", "initial": "TE", "rarity": 2, "set": 1, "description": "V8 - Concept Photos", "link": "https://i.imgur.com/xzx6BSs.png" },
+    { "code": "V8#VN002", "member": "Vernon", "initial": "VN", "rarity": 2, "set": 1, "description": "V8 - Concept Photos", "link": "https://i.imgur.com/DtAlTGX.png" },
+    { "code": "V8#TE003", "member": "THE8", "initial": "TE", "rarity": 3, "set": 1, "description": "V8 - Concept Photos", "link": "https://i.imgur.com/ivkgfK1.png" },
+    { "code": "V8#VN003", "member": "Vernon", "initial": "VN", "rarity": 3, "set": 1, "description": "V8 - Concept Photos", "link": "https://i.imgur.com/PND6w8v.png" },
+    { "code": "V8#TE004", "member": "THE8", "initial": "TE", "rarity": 4, "set": 1, "description": "V8 Photocard Scan", "link": "https://i.imgur.com/dfb7STN.png" },
+    { "code": "V8#VN004", "member": "Vernon", "initial": "VN", "rarity": 4, "set": 1, "description": "V8 Photocard Scan", "link": "https://i.imgur.com/TEBxAXV.png" },
+    { "code": "V8#TE005", "member": "THE8", "initial": "TE", "rarity": 5, "set": 1, "description": "THE8xVernon For Allure (April 2026)", "link": "https://i.imgur.com/EKf07Ii.png" },
+    { "code": "V8#VN005", "member": "Vernon", "initial": "VN", "rarity": 5, "set": 1, "description": "THE8xVernon For Allure (April 2026)", "link": "https://i.imgur.com/1w5x51h.png" }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "number": 264,
+  "name": "bugAboo",
+  "code": "BGBO",
+  "members": [
+    { "name": "Choyeon", "initial": "CY" },
+    { "name": "Cyan", "initial": "CN" },
+    { "name": "Eunchae", "initial": "EC" },
+    { "name": "Rainie", "initial": "RN" },
+    { "name": "Yoona", "initial": "YN" },
+    { "name": "Zin", "initial": "ZN" }
+  ],
+  "cards": [
+    { "code": "BGBO#CY001", "member": "Choyeon", "initial": "CY", "rarity": 1, "set": 1, "description": "bugaboo", "link": "https://i.imgur.com/iqxry5R.png" },
+    { "code": "BGBO#CN001", "member": "Cyan", "initial": "CN", "rarity": 1, "set": 1, "description": "bugaboo", "link": "https://i.imgur.com/vpXI65k.png" },
+    { "code": "BGBO#EC001", "member": "Eunchae", "initial": "EC", "rarity": 1, "set": 1, "description": "bugaboo", "link": "https://i.imgur.com/EHlPXOg.png" },
+    { "code": "BGBO#RN001", "member": "Rainie", "initial": "RN", "rarity": 1, "set": 1, "description": "bugaboo", "link": "https://i.imgur.com/bRS6S6G.png" },
+    { "code": "BGBO#YN001", "member": "Yoona", "initial": "YN", "rarity": 1, "set": 1, "description": "bugaboo", "link": "https://i.imgur.com/16eJXJt.png" },
+    { "code": "BGBO#ZN001", "member": "Zin", "initial": "ZN", "rarity": 1, "set": 1, "description": "bugaboo", "link": "https://i.imgur.com/iistYfg.png" },
+    { "code": "BGBO#CY002", "member": "Choyeon", "initial": "CY", "rarity": 2, "set": 1, "description": "BugAboo Debut Teasers Concept 2 2021", "link": "https://i.imgur.com/qnXTbmG.png" },
+    { "code": "BGBO#CN002", "member": "Cyan", "initial": "CN", "rarity": 2, "set": 1, "description": "BugAboo Debut Teasers Concept 2 2021", "link": "https://i.imgur.com/bmaos5J.png" },
+    { "code": "BGBO#EC002", "member": "Eunchae", "initial": "EC", "rarity": 2, "set": 1, "description": "BugAboo Debut Teasers Concept 2 2021", "link": "https://i.imgur.com/q8TG4l8.png" },
+    { "code": "BGBO#RN002", "member": "Rainie", "initial": "RN", "rarity": 2, "set": 1, "description": "BugAboo Debut Teasers Concept 2 2021", "link": "https://i.imgur.com/7XvVoQc.png" },
+    { "code": "BGBO#YN002", "member": "Yoona", "initial": "YN", "rarity": 2, "set": 1, "description": "BugAboo Debut Teasers Concept 2 2021", "link": "https://i.imgur.com/Xzmq5XP.png" },
+    { "code": "BGBO#ZN002", "member": "Zin", "initial": "ZN", "rarity": 2, "set": 1, "description": "BugAboo Debut Teasers Concept 2 2021", "link": "https://i.imgur.com/97Ejjt2.png" }
+  ]
+}

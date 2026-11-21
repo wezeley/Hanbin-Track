@@ -1,0 +1,25 @@
+{
+  "number": 343,
+  "name": "Wonder Girls",
+  "code": "WDGS",
+  "members": [
+    { "name": "Hyelim", "initial": "HL" },
+    { "name": "Sunmi", "initial": "SM" },
+    { "name": "Yeeun", "initial": "YE" },
+    { "name": "Yubin", "initial": "YB" }
+  ],
+  "cards": [
+    { "code": "WDGS#HL001", "member": "Hyelim", "initial": "HL", "rarity": 1, "set": 1, "description": "REBOOT", "link": "https://i.imgur.com/lRe7FAA.png" },
+    { "code": "WDGS#SM001", "member": "Sunmi", "initial": "SM", "rarity": 1, "set": 1, "description": "REBOOT", "link": "https://i.imgur.com/JqEMjHC.png" },
+    { "code": "WDGS#YE001", "member": "Yeeun", "initial": "YE", "rarity": 1, "set": 1, "description": "REBOOT", "link": "https://i.imgur.com/toeaVRd.png" },
+    { "code": "WDGS#YB001", "member": "Yubin", "initial": "YB", "rarity": 1, "set": 1, "description": "REBOOT", "link": "https://i.imgur.com/08HJ8qP.png" },
+    { "code": "WDGS#HL002", "member": "Hyelim", "initial": "HL", "rarity": 2, "set": 1, "description": "REBOOT", "link": "https://i.imgur.com/IPnxkAg.png" },
+    { "code": "WDGS#SM002", "member": "Sunmi", "initial": "SM", "rarity": 2, "set": 1, "description": "REBOOT", "link": "https://i.imgur.com/LArRQrb.png" },
+    { "code": "WDGS#YE002", "member": "Yeeun", "initial": "YE", "rarity": 2, "set": 1, "description": "REBOOT", "link": "https://i.imgur.com/kURz0zj.png" },
+    { "code": "WDGS#YB002", "member": "Yubin", "initial": "YB", "rarity": 2, "set": 1, "description": "REBOOT", "link": "https://i.imgur.com/FxH8cB7.png" },
+    { "code": "WDGS#HL003", "member": "Hyelim", "initial": "HL", "rarity": 3, "set": 1, "description": "Why so lonely", "link": "https://i.imgur.com/46ELjIm.png" },
+    { "code": "WDGS#SM003", "member": "Sunmi", "initial": "SM", "rarity": 3, "set": 1, "description": "Why so lonely", "link": "https://i.imgur.com/4AHZiCf.png" },
+    { "code": "WDGS#YE003", "member": "Yeeun", "initial": "YE", "rarity": 3, "set": 1, "description": "Why so lonely", "link": "https://i.imgur.com/kSQyLta.png" },
+    { "code": "WDGS#YB003", "member": "Yubin", "initial": "YB", "rarity": 3, "set": 1, "description": "Why so lonely", "link": "https://i.imgur.com/bWhtHog.png" }
+  ]
+}

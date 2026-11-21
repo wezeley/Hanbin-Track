@@ -1,0 +1,29 @@
+{
+  "number": 349,
+  "name": "Teen Top",
+  "code": "TTOP",
+  "members": [
+    { "name": "Changjo", "initial": "CG" },
+    { "name": "Chunji", "initial": "CJ" },
+    { "name": "Niel", "initial": "NL" },
+    { "name": "Ricky", "initial": "RC" }
+  ],
+  "cards": [
+    { "code": "TTOP#CG001", "member": "Changjo", "initial": "CG", "rarity": 1, "set": 1, "description": "4SHO", "link": "https://i.imgur.com/J4qBXbu.png" },
+    { "code": "TTOP#CJ001", "member": "Chunji", "initial": "CJ", "rarity": 1, "set": 1, "description": "4SHO", "link": "https://i.imgur.com/uyMithB.png" },
+    { "code": "TTOP#NL001", "member": "Niel", "initial": "NL", "rarity": 1, "set": 1, "description": "4SHO", "link": "https://i.imgur.com/86oFPz3.png" },
+    { "code": "TTOP#RC001", "member": "Ricky", "initial": "RC", "rarity": 1, "set": 1, "description": "4SHO", "link": "https://i.imgur.com/17eyZPh.png" },
+    { "code": "TTOP#CG002", "member": "Changjo", "initial": "CG", "rarity": 2, "set": 1, "description": "Just 15, Just Teen Top", "link": "https://i.imgur.com/T4GeXNe.png" },
+    { "code": "TTOP#CJ002", "member": "Chunji", "initial": "CJ", "rarity": 2, "set": 1, "description": "Just 15, Just Teen Top", "link": "https://i.imgur.com/t77n5ix.png" },
+    { "code": "TTOP#NL002", "member": "Niel", "initial": "NL", "rarity": 2, "set": 1, "description": "Just 15, Just Teen Top", "link": "https://i.imgur.com/7rSqb8F.png" },
+    { "code": "TTOP#RC002", "member": "Ricky", "initial": "RC", "rarity": 2, "set": 1, "description": "Just 15, Just Teen Top", "link": "https://i.imgur.com/z5n7XhT.png" },
+    { "code": "TTOP#CG003", "member": "Changjo", "initial": "CG", "rarity": 3, "set": 1, "description": "Dont Stop", "link": "https://i.imgur.com/TSjNlBr.png" },
+    { "code": "TTOP#CJ003", "member": "Chunji", "initial": "CJ", "rarity": 3, "set": 1, "description": "Dont Stop", "link": "https://i.imgur.com/f3h1YGO.png" },
+    { "code": "TTOP#NL003", "member": "Niel", "initial": "NL", "rarity": 3, "set": 1, "description": "Dont Stop", "link": "https://i.imgur.com/szAMeYK.png" },
+    { "code": "TTOP#RC003", "member": "Ricky", "initial": "RC", "rarity": 3, "set": 1, "description": "Dont Stop", "link": "https://i.imgur.com/IKWaWNK.png" },
+    { "code": "TTOP#CG004", "member": "Changjo", "initial": "CG", "rarity": 4, "set": 1, "description": null, "link": "https://i.imgur.com/xE2GgMV.png" },
+    { "code": "TTOP#CJ004", "member": "Chunji", "initial": "CJ", "rarity": 4, "set": 1, "description": null, "link": "https://i.imgur.com/HumSiJ6.png" },
+    { "code": "TTOP#NL004", "member": "Niel", "initial": "NL", "rarity": 4, "set": 1, "description": null, "link": "https://i.imgur.com/o9ubVJx.png" },
+    { "code": "TTOP#RC004", "member": "Ricky", "initial": "RC", "rarity": 4, "set": 1, "description": null, "link": "https://i.imgur.com/Sx0dszZ.png" }
+  ]
+}

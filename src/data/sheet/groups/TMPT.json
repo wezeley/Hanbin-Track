@@ -1,0 +1,23 @@
+{
+  "number": 230,
+  "name": "Tempest",
+  "code": "TMPT",
+  "members": [
+    { "name": "Eunchan", "initial": "EC" },
+    { "name": "Hanbin", "initial": "HB" },
+    { "name": "Hwarang", "initial": "HR" },
+    { "name": "Hyeongseop", "initial": "HS" },
+    { "name": "Hyuk", "initial": "HK" },
+    { "name": "LEW", "initial": "LW" },
+    { "name": "Taerae", "initial": "TR" }
+  ],
+  "cards": [
+    { "code": "TMPT#EC001", "member": "Eunchan", "initial": "EC", "rarity": 1, "set": 1, "description": "Its me, its we / Debut", "link": "https://i.imgur.com/FLDm0Ko.png" },
+    { "code": "TMPT#HB001", "member": "Hanbin", "initial": "HB", "rarity": 1, "set": 1, "description": "Its me, its we / Debut", "link": "https://i.imgur.com/3vfQG9K.png" },
+    { "code": "TMPT#HR001", "member": "Hwarang", "initial": "HR", "rarity": 1, "set": 1, "description": "Its me, its we / Debut", "link": "https://i.imgur.com/y9dBn40.png" },
+    { "code": "TMPT#HS001", "member": "Hyeongseop", "initial": "HS", "rarity": 1, "set": 1, "description": "Its me, its we / Debut", "link": "https://i.imgur.com/u6w445W.png" },
+    { "code": "TMPT#HK001", "member": "Hyuk", "initial": "HK", "rarity": 1, "set": 1, "description": "Its me, its we / Debut", "link": "https://i.imgur.com/QMNIrTm.png" },
+    { "code": "TMPT#LW001", "member": "LEW", "initial": "LW", "rarity": 1, "set": 1, "description": "Its me, its we / Debut", "link": "https://i.imgur.com/TLjEJTb.png" },
+    { "code": "TMPT#TR001", "member": "Taerae", "initial": "TR", "rarity": 1, "set": 1, "description": "Its me, its we / Debut", "link": "https://i.imgur.com/3DxhpA5.png" }
+  ]
+}

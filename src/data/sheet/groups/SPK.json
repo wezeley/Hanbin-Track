@@ -1,0 +1,23 @@
+{
+  "number": 135,
+  "name": "Superkind",
+  "code": "SPK",
+  "members": [
+    { "name": "Daemon", "initial": "DM" },
+    { "name": "Eugeme", "initial": "EG" },
+    { "name": "Geon", "initial": "GO" },
+    { "name": "JDV", "initial": "JD" },
+    { "name": "Saejin", "initial": "SJ" },
+    { "name": "Seung", "initial": "SE" },
+    { "name": "Sio", "initial": "SO" }
+  ],
+  "cards": [
+    { "code": "SPK#DM001", "member": "Daemon", "initial": "DM", "rarity": 1, "set": 1, "description": "Profiles of The Future", "link": "https://i.imgur.com/4LbHTRp.png" },
+    { "code": "SPK#EG001", "member": "Eugeme", "initial": "EG", "rarity": 1, "set": 1, "description": "Profiles of The Future", "link": "https://i.imgur.com/6yh1kXf.png" },
+    { "code": "SPK#GO001", "member": "Geon", "initial": "GO", "rarity": 1, "set": 1, "description": "Profiles of The Future", "link": "https://i.imgur.com/55qQd6D.png" },
+    { "code": "SPK#JD001", "member": "JDV", "initial": "JD", "rarity": 1, "set": 1, "description": "Profiles of The Future", "link": "https://i.imgur.com/dpeDhwZ.png" },
+    { "code": "SPK#SJ001", "member": "Saejin", "initial": "SJ", "rarity": 1, "set": 1, "description": "Profiles of The Future", "link": "https://i.imgur.com/DCGZnjS.png" },
+    { "code": "SPK#SE001", "member": "Seung", "initial": "SE", "rarity": 1, "set": 1, "description": "Profiles of The Future", "link": "https://i.imgur.com/mveZcOV.png" },
+    { "code": "SPK#SO001", "member": "Sio", "initial": "SO", "rarity": 1, "set": 1, "description": "Profiles of The Future", "link": "https://i.imgur.com/fiNx0pL.png" }
+  ]
+}
