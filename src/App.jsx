@@ -5,16 +5,26 @@ import { Header } from "./components/Header";
 import { CategoryView } from "./components/CategoryView";
 import { Dashboard } from "./components/Dashboard";
 import { GroupView } from "./components/GroupView";
+import { navigate, useHashRoute } from "./hooks/useHashRoute";
+import { categoryPath, groupPath, homePath, parseRoute, tabPath } from "./utils/routes";
 import "./App.css";
 
 function App() {
   const [ownedCards, setOwnedCards] = useState(
     () => JSON.parse(localStorage.getItem("hanbin-collection")) || [],
   );
-  const [activeTab, setActiveTab] = useState(null);
-  const [selectedGroup, setSelectedGroup] = useState(null);
   const [expandedSets, setExpandedSets] = useState({});
-  const [currentView, setCurrentView] = useState("dashboard");
+
+  // A tela atual vem do endereço (#/group/SKZ): é a única fonte. Clicar em
+  // algo muda o endereço; daqui sai o que mostrar.
+  //   currentView: "dashboard" (Home, categoria e grupo) ou uma aba do topo
+  //   activeTab:   a categoria aberta (ou a do grupo aberto), ou null na Home
+  //   selectedGroup: o grupo aberto, ou null
+  const route = parseRoute(useHashRoute(), SIDEBAR_CATEGORIES, GROUPS);
+  const isTopTab = !["home", "category", "group"].includes(route.view);
+  const currentView = isTopTab ? route.view : "dashboard";
+  const activeTab = route.category;
+  const selectedGroup = route.group;
   // Busca da categoria: o texto fica guardado junto com a categoria em que foi
   // digitado. Assim continua ao voltar de um grupo e some ao trocar de categoria.
   const [categorySearch, setCategorySearch] = useState({ category: null, text: "" });
@@ -40,30 +50,12 @@ function App() {
         : prev.filter((x) => !ids.includes(x)),
     );
 
-  const handleTabChange = (cat) => {
-    setCurrentView("dashboard");
-    setActiveTab(cat);
-    setSelectedGroup(null);
-  };
-
-  const handleGroupSelect = (group) => {
-    setActiveTab(group.category);
-    setSelectedGroup(group);
-  };
-
-  const resetNavigation = () => {
-    setCurrentView("dashboard");
-    setActiveTab(null);
-    setSelectedGroup(null);
-  };
-
-  const handleViewChange = (view) => {
-    if (view === "dashboard") {
-      resetNavigation();
-    } else {
-      setCurrentView(view);
-    }
-  };
+  // Navegação: cada clique só muda o endereço
+  const handleTabChange = (cat) => navigate(categoryPath(cat));
+  const handleGroupSelect = (group) => navigate(groupPath(group));
+  const resetNavigation = () => navigate(homePath());
+  const handleViewChange = (view) =>
+    navigate(view === "dashboard" ? homePath() : tabPath(view));
 
   const toggleSet = (id) =>
     setExpandedSets((p) => ({
@@ -167,17 +159,18 @@ function App() {
               query={categoryQuery}
               onQueryChange={(text) => setCategorySearch({ category: activeTab, text })}
               ownedCards={ownedCards}
-              onGroupSelect={setSelectedGroup}
+              onGroupSelect={handleGroupSelect}
             />
           ) : (
             <GroupView
+              key={selectedGroup.code} // outro grupo (pelo botão voltar) começa do zero, com filtro All
               group={selectedGroup}
               ownedCards={ownedCards}
               expandedSets={expandedSets}
               onToggleSet={toggleSet}
               onToggleCard={toggleCard}
               onSetCardsOwned={setCardsOwned}
-              onBack={() => setSelectedGroup(null)}
+              onBack={() => handleTabChange(selectedGroup.category)}
             />
           )}
         </main>
