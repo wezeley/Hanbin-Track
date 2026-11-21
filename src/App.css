@@ -185,53 +185,49 @@
 .dashboard {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 16px;
 }
 
 .dashboard-title {
-  margin: 0 0 4px;
+  margin: 0;
   font-family: var(--font-display);
   font-weight: 800;
-  font-size: 34px;
-  letter-spacing: -0.03em;
+  font-size: 28px;
+  letter-spacing: -0.02em;
 }
 
+/* Progress, Upcoming e Quick search: 3 por linha no computador; em tela
+   mais estreita, quantas couberem com no mínimo 300px (no celular, 1). */
 .dashboard-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.dashboard-row .dash-box {
-  flex: 1 1 360px;
-  min-width: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+  gap: 16px;
+  align-items: start;
 }
 
 .dash-box {
+  min-width: 0;
   background: var(--color-surface);
   border: 1px solid var(--color-border);
-  border-radius: var(--radius-lg);
-  padding: 24px;
+  border-radius: 12px;
+  padding: 16px;
   display: flex;
   flex-direction: column;
 }
 
-.dash-progress { gap: 16px; }
-.dash-upcoming { gap: 6px; }
+.dash-progress { gap: 12px; }
 .dash-search { gap: 10px; }
-.dash-groups { gap: 4px; }
 
 .dash-label {
   margin: 0;
-  font-size: 13px;
+  font-size: 11px;
   font-weight: 600;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--color-text-muted);
 }
 
 .dash-upcoming .dash-label { margin-bottom: 6px; }
-.dash-groups .dash-label { margin-bottom: 8px; }
 
 .text-muted { color: var(--color-text-muted); }
 
@@ -239,13 +235,13 @@
 .dash-stats {
   display: flex;
   align-items: baseline;
-  gap: 10px;
+  gap: 8px;
 }
 
 .dash-stats-number {
   font-family: var(--font-display);
   font-weight: 800;
-  font-size: 56px;
+  font-size: 40px;
   line-height: 1;
   letter-spacing: -0.04em;
 }
@@ -259,7 +255,7 @@
   overflow: hidden;
 }
 
-.progress-lg { height: 10px; }
+.progress-lg { height: 6px; }
 .progress-sm { height: 8px; }
 
 .progress-fill {
@@ -269,41 +265,58 @@
   background: var(--color-accent);
 }
 
-/* 1H a 5H e EV, LTD, RAD: 8 caixinhas numa linha; no celular, 2 linhas de 4 */
+/* 1H a 5H numa fileira; embaixo, os especiais (símbolos E, S e R) */
 .rarity-grid {
   display: grid;
-  grid-template-columns: repeat(8, minmax(0, 1fr));
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 6px;
+}
+
+.rarity-grid-specials { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+
+.rarity-box {
+  min-width: 0;
+  background: var(--color-surface-muted);
+  border-radius: 8px;
+  padding: 6px 8px;
+}
+
+.rarity-box-special {
+  display: flex;
+  align-items: center;
   gap: 8px;
 }
 
-@media (max-width: 560px) {
-  .rarity-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
-}
-
-.rarity-box {
-  background: var(--color-surface-muted);
-  border-radius: var(--radius-sm);
-  padding: 8px 10px;
+.rarity-symbol {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+  flex: none;
 }
 
 .rarity-label {
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 600;
   color: var(--color-text-muted);
 }
 
-.rarity-count { font-weight: 700; }
+.rarity-count {
+  font-size: 14px;
+  font-weight: 700;
+}
 
 /* Upcoming releases */
 .upcoming-row {
   display: flex;
   justify-content: space-between;
   gap: 12px;
-  padding: 12px 0;
+  padding: 7px 0;
   border-top: 1px solid var(--color-divider);
+  font-size: 14px;
 }
 
 .upcoming-info {
+  font-size: 12px;
   color: var(--color-text-muted);
   text-align: right;
 }
@@ -355,28 +368,81 @@
   color: var(--color-text-muted);
 }
 
-/* Your groups */
-.group-row {
-  width: 100%;
+/* Seus grupos: Recent | Almost there | Completed, lado a lado.
+   As abas só aparecem no celular (no bloco do celular, lá embaixo). */
+.your-groups {
+  margin-top: 8px;
+}
+
+.your-groups-tabs { display: none; }
+
+.your-groups-columns {
   display: grid;
-  grid-template-columns: minmax(120px, 1fr) minmax(0, 2fr) 72px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 16px;
-  align-items: center;
-  padding: 12px 0;
+  align-items: start;
+}
+
+.your-column {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Título da coluna com uma linha colorida embaixo */
+.your-column-header {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  padding: 0 2px 4px;
+  border-bottom: 2px solid var(--color-accent);
+}
+
+.your-column-almost .your-column-header { border-bottom-color: var(--color-underline); }
+.your-column-completed .your-column-header { border-bottom-color: var(--color-success); }
+
+.your-column-title {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.your-column-count,
+.your-column-hint {
+  font-size: 12px;
+  color: var(--color-text-muted);
+}
+
+.your-column-hint { margin-left: auto; }
+
+.your-column-empty {
+  margin: 4px 2px;
+  font-size: 13px;
+  color: var(--color-text-muted);
+}
+
+.your-column-more {
+  align-self: flex-start;
+  padding: 2px;
   border: 0;
-  border-top: 1px solid var(--color-divider);
   background: transparent;
-  text-align: left;
+  color: var(--color-link);
+  font-size: 13px;
+  font-weight: 600;
   cursor: pointer;
 }
 
-.group-row-name { font-weight: 700; }
+/* Card baixo das colunas (76px): nome numa linha, sem a linha de detalhes */
+.group-card.is-compact { height: 76px; }
+.group-card.is-compact .group-card-photo { width: 45%; }
+.group-card.is-compact .group-card-info { padding: 10px 12px; }
+.group-card.is-compact .group-card-name { -webkit-line-clamp: 1; line-clamp: 1; }
 
-.group-row-progress {
-  font-size: 14px;
-  color: var(--color-text-muted);
-  text-align: right;
-}
+/* Completo: barra verde */
+.your-column-completed .group-card .progress-fill { background: var(--color-success); }
 
 /* ===== Collection ===== */
 /* Mesmas colunas das categorias (4 por linha num monitor 1920), mas o card é baixo */
@@ -1110,20 +1176,50 @@
 
   .group-title { font-size: 28px; }
 
-  .dash-stats-number { font-size: 40px; }
+  .dash-stats-number { font-size: 34px; }
 
-  .dash-box { padding: 16px; }
+  .dash-box { padding: 14px; }
 
-  /* Your groups: nome e contagem em cima, barra embaixo */
-  .group-row {
-    grid-template-columns: minmax(0, 1fr) auto;
-    gap: 6px 12px;
+  /* Seus grupos: as 3 colunas viram abas; só a coluna ativa aparece */
+  .your-groups-tabs {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 4px;
+    margin-bottom: 10px;
+    padding: 4px;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 12px;
   }
 
-  .group-row .progress {
-    grid-column: 1 / -1;
-    grid-row: 2;
+  .your-groups-tab {
+    min-height: 36px;
+    border: 0;
+    border-radius: 9px;
+    background: transparent;
+    color: var(--color-text-muted);
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
   }
+
+  .your-groups-tab.active {
+    background: var(--color-text);
+    color: var(--color-surface);
+  }
+
+  .your-groups-tab-count {
+    font-weight: 500;
+    opacity: 0.75;
+  }
+
+  .your-groups-columns { grid-template-columns: minmax(0, 1fr); }
+
+  .your-column { display: none; }
+  .your-column.active { display: flex; }
+
+  /* A aba já diz qual é a lista: o título da coluna some */
+  .your-column-header { display: none; }
 
   /* Progresso do grupo ocupa a largura toda */
   .group-header-progress {

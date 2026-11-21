@@ -1,14 +1,8 @@
 import { getGroupProgress } from '../utils/groupProgress';
 import { plural } from '../utils/plural';
-import BANNERS from '../data/banners.json';
+import { pickPhoto } from '../utils/groupPhoto';
 import { GroupCard } from './GroupCard';
 import { CategoryChips } from './CategoryChips';
-
-// Foto do card: a do grupo (banners.json); evento sorteia uma das cartas dele
-// cada vez que a categoria aparece.
-const pickPhoto = (group) => group.photos?.length
-  ? group.photos[Math.floor(Math.random() * group.photos.length)]
-  : BANNERS[group.code];
 
 export function CategoryView({ category, categories, onCategoryChange, groups, query, onQueryChange, ownedCards, onGroupSelect }) {
   // ===== Cálculos =====

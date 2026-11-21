@@ -15,9 +15,11 @@ function CardPhoto({ getPhoto }) {
 // detalhes ("8 members", opcional) e o progresso à esquerda; a foto fica
 // por trás da metade direita, com fade até o texto, e a etiqueta no canto.
 // O nome comprido termina em "…"; o nome inteiro aparece no title (mouse).
-export function GroupCard({ name, details, owned, total, pct, tag, getPhoto, onClick }) {
+// compact: versão baixa (76px) das colunas da Home.
+// note: texto depois da contagem ("15%", "12 to go", "complete").
+export function GroupCard({ name, details, owned, total, pct, tag, getPhoto, onClick, compact = false, note }) {
   return (
-    <button type="button" className="group-card" onClick={onClick} title={name}>
+    <button type="button" className={`group-card ${compact ? 'is-compact' : ''}`} onClick={onClick} title={name}>
       <span className="group-card-photo" aria-hidden="true">
         <CardPhoto getPhoto={getPhoto} />
       </span>
@@ -30,7 +32,7 @@ export function GroupCard({ name, details, owned, total, pct, tag, getPhoto, onC
           <span className="progress group-card-bar">
             <span className="progress-fill" style={{ width: `${pct}%` }} />
           </span>
-          <span className="group-card-count">{owned}/{total}</span>
+          <span className="group-card-count">{owned}/{total}{note && ` · ${note}`}</span>
         </span>
       </span>
     </button>
