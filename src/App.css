@@ -1091,3 +1091,169 @@
   font-weight: 600;
   color: var(--color-text-muted);
 }
+
+/* ===== Celular (até 720px) =====
+   Opção B do mockup: no topo, o logo e o colecionador; embaixo, as abas
+   (Home, Cards...) num seletor de 4 partes; depois, as categorias em
+   pílulas que rolam de lado. No computador nada disso vale.
+   "display: contents" faz a sidebar, a coluna e o header sumirem como
+   caixa: os filhos deles viram itens da grade do .app e são posicionados
+   pelas áreas (grid-area), sem mudar o JSX. */
+@media (max-width: 720px) {
+  .app {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-areas:
+      "logo user"
+      "tabs tabs"
+      "cats cats"
+      "main main";
+    align-content: start;
+  }
+
+  .sidebar,
+  .app-column,
+  .header {
+    display: contents;
+  }
+
+  /* Item de grade não encolhe menos que o conteúdo (min-width: auto):
+     sem isto, a linha de categorias alarga a página inteira. */
+  .app > *,
+  .sidebar > *,
+  .app-column > *,
+  .header > * {
+    min-width: 0;
+  }
+
+  /* Faixa branca do topo: cada peça tem o próprio fundo.
+     ".sidebar .sidebar-logo" para vencer o ".sidebar button" lá de cima. */
+  .sidebar .sidebar-logo,
+  .header-user,
+  .header-nav,
+  .sidebar-nav {
+    background: var(--color-surface);
+  }
+
+  .sidebar .sidebar-logo {
+    grid-area: logo;
+    padding: 12px 16px 10px;
+  }
+
+  .sidebar-logo-text { font-size: 17px; }
+
+  .header-user {
+    grid-area: user;
+    padding: 12px 16px 10px 0;
+  }
+
+  .header-name { width: 90px; }
+
+  .header-badge { display: none; }
+
+  /* Abas: seletor de 4 partes iguais */
+  .header-nav {
+    grid-area: tabs;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 4px;
+    padding: 0 16px 10px;
+  }
+
+  .header-pill {
+    min-height: 36px;
+    padding: 0 4px;
+    border-radius: var(--radius-sm);
+    background: var(--color-surface-muted);
+    font-size: 14px;
+  }
+
+  /* Categorias: uma linha só, arrastando para o lado */
+  .sidebar-nav {
+    grid-area: cats;
+    flex-direction: row;
+    gap: 8px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    padding: 0 16px 12px;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  /* Home e o título "Categories" já estão nas abas: somem aqui */
+  .sidebar-home,
+  .sidebar-label {
+    display: none;
+  }
+
+  .sidebar .sidebar-item {
+    flex: none;
+    gap: 6px;
+    min-height: 36px;
+    padding: 0 14px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-pill);
+    font-size: 14px;
+    white-space: nowrap;
+  }
+
+  .sidebar .sidebar-item.active {
+    border-color: transparent;
+    background: var(--color-accent-soft);
+  }
+
+  .app-main {
+    grid-area: main;
+    padding: 20px 16px 40px;
+    gap: 16px;
+  }
+
+  .app-main-wide { padding-top: 16px; }
+
+  /* Tamanhos menores */
+  .dashboard-title,
+  .category-title { font-size: 28px; }
+
+  .group-title { font-size: 28px; }
+
+  .dash-stats-number { font-size: 40px; }
+
+  .dash-box { padding: 16px; }
+
+  /* Your groups: nome e contagem em cima, barra embaixo */
+  .group-row {
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 6px 12px;
+  }
+
+  .group-row .progress {
+    grid-column: 1 / -1;
+    grid-row: 2;
+  }
+
+  /* Progresso do grupo ocupa a largura toda */
+  .group-header-progress {
+    flex: 1 1 100%;
+    min-width: 0;
+  }
+
+  /* Card de coleção: leque mais estreito, mais espaço para o texto */
+  .collection-card { grid-template-columns: minmax(0, 1fr) 120px; }
+
+  /* Fichário: lombada fina e menos espaço em volta, para caberem 3 cartas
+     por linha num celular de 390px (cada carta tem no mínimo 100px). */
+  .binder { padding: 0 4px 4px 0; }
+  .binder-back { left: 4px; top: 4px; }
+  .binder-page { padding-left: 14px; }
+  .binder-spine { width: 14px; }
+  .binder-spine span { width: 7px; height: 7px; }
+  .set-header { padding: 14px 12px; gap: 10px 16px; }
+  .set-content { padding: 12px 8px 14px; }
+
+  /* "1H" vai para cima das cartas em vez de ocupar uma coluna à esquerda */
+  .rarity-row {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 4px;
+  }
+
+  .rarity-row-label { margin-left: 0; }
+}
