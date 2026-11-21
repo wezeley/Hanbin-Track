@@ -68,4 +68,44 @@ export const HANBIN_DATA = {
     VIBY: "Boy Group",   // VIBY (japonês)
     ALST: "Co-Ed",       // Alien Stage (websérie: Mizi e Sua, Ivan e Till)
   },
+
+  // Foto dos solistas: página da Wikipedia certa, pelo nome EXATAMENTE como na
+  // planilha (Lisa e LiSA são pessoas diferentes). Quem está aqui não usa o
+  // Deezer (nome repetido com outro artista). null = sem foto (fundo pastel),
+  // melhor que uma foto errada. Depois de mudar, rode npm run categorias e
+  // npm run fotos. Foto colocada à mão em public/banners/ sempre vence.
+  soloistPhotoPages: {
+    Lisa: "Lisa (rapper)",                     // BLACKPINK (LiSA é a japonesa)
+    Adela: "Adéla",                            // Adéla Jergová (Dream Academy)
+    Bibi: "Bibi (singer)",
+    BM: "BM (rapper)",                         // KARD
+    Dawn: "Dawn (rapper)",
+    Dino: "Dino (South Korean singer)",        // SEVENTEEN
+    Evan: "Evan (singer)",
+    Fourth: "Nattawat Jirochtikul",
+    Gemini: "Norawit Titicharoenrak",
+    Hanbin: "Hanbin (singer)",                 // TEMPEST
+    Hoshi: "Hoshi (South Korean singer)",      // SEVENTEEN
+    Huta: "Hui (singer)",                      // PENTAGON
+    Irene: "Irene (singer)",                   // Red Velvet
+    Jin: "Jin (singer)",                       // BTS
+    Jisoo: "Jisoo",                            // BLACKPINK
+    Kai: "Kai (entertainer, born 1994)",       // EXO
+    Kino: "Kino (singer)",                     // PENTAGON
+    Lay: "Lay Zhang",                          // EXO
+    "Lee Hangyul": "Lee Han-gyul",
+    Leo: "Lee Leo",
+    Lucas: "Lucas (rapper)",                   // NCT / WayV
+    Mark: "Mark Lee (singer)",                 // NCT
+    Somi: "Jeon Somi",
+    "T.O.P": "T.O.P",                          // BIGBANG
+    Taemin: "Taemin",                          // SHINee
+    Ten: "Ten (singer)",                       // NCT / WayV
+    Wendy: "Wendy (singer)",                   // Red Velvet
+    Wonho: "Wonho",
+    Yuna: "Yuna (singer, born 2003)",          // ITZY
+    Keonhee: null,                             // ONEUS, sem página
+    Leedo: null,                               // ONEUS, sem página
+    Xion: null,                                // ONEUS, sem página
+  },
 };

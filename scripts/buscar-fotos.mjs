@@ -51,6 +51,12 @@ for (const [code, info] of Object.entries(categories)) {
   if (current && !sources[code]) continue;            // foto colocada à mão
   if (current && sources[code] === url) continue;     // já é a foto certa
   if (!url) {
+    // Foto que o script baixou e agora não vale mais (correção para "sem foto"): apaga
+    if (current) {
+      await rm(new URL(current, BANNERS_DIR));
+      delete sources[code];
+      console.log(`-  ${code}: foto antiga apagada (agora sem foto)`);
+    }
     noPhoto.push(code);
     continue;
   }

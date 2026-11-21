@@ -20,9 +20,11 @@ export function CategoryView({ category, groups, query, onQueryChange, ownedCard
   const visibleGroups = search
     ? groups.filter(g => g.name.toLowerCase().includes(search) || g.tag.toLowerCase().includes(search))
     : groups;
+  // Soloists conta "artists"; as outras categorias, "groups"
+  const noun = groups.length > 0 && groups.every(g => g.type === 'soloist') ? 'artist' : 'group';
   const groupCountLabel = search
-    ? `${visibleGroups.length} of ${plural(groups.length, 'group')}`
-    : plural(groups.length, 'group');
+    ? `${visibleGroups.length} of ${plural(groups.length, noun)}`
+    : plural(groups.length, noun);
 
   // ===== Tela =====
   return (
@@ -46,7 +48,7 @@ export function CategoryView({ category, groups, query, onQueryChange, ownedCard
         />
       </div>
 
-      {visibleGroups.length === 0 && <p className="text-muted">No groups found.</p>}
+      {visibleGroups.length === 0 && <p className="text-muted">No {noun}s found.</p>}
 
       <div className="group-grid">
         {visibleGroups.map(g => {

@@ -30,6 +30,9 @@
 // (O K-pop Wiki não serve para fotos: o servidor de imagens dele bloqueia
 // downloads que não venham do próprio site.)
 //   Se der mais de uma categoria, ou nenhuma, fica "?" para revisar.
+//
+// Solistas (aba "0 - Solo"): entram com o id do index.json (SOLO-LS001) e a
+// categoria já é Soloists. Só procura a foto, igual aos grupos.
 
 import { readFile, writeFile } from 'node:fs/promises';
 import { HANBIN_DATA } from '../src/data/hanbinData.js';
@@ -206,7 +209,8 @@ function variants(name) {
 // ---------- Arquivo ----------
 
 const index = JSON.parse(await readFile(INDEX, 'utf8'));
-const order = index.groups.map(group => group.code);
+// Ordem do arquivo: grupos na ordem da planilha, depois os solistas
+const order = [...index.groups.map(group => group.code), ...(index.soloists ?? []).map(soloist => soloist.id)];
 let saved = {};
 try {
   saved = JSON.parse(await readFile(OUT, 'utf8'));
@@ -414,6 +418,44 @@ for (const [code, entry] of fandomPending.filter(([, e]) => e.fandom === undefin
   await save();
 }
 
+// Solistas: a categoria já é Soloists; aqui só procura a página da Wikipedia,
+// que dá a foto de reserva (passo 8). A página só vale se for de cantor ou
+// rapper ("Key" sozinho é a nota musical). 12 solistas por pergunta (4 títulos cada).
+const SOLOIST_VARIANTS = name => [`${name} (singer)`, `${name} (rapper)`, `${name} (South Korean singer)`, name];
+const IS_SINGER = /singers|rappers|musicians|idols|entertainers/i;
+const soloTodo = (index.soloists ?? []).filter(soloist => !saved[soloist.id]);
+const soloChunks = inChunks(soloTodo, Math.floor(MAX_TITLES / 4));
+for (const [i, chunk] of soloChunks.entries()) {
+  console.log(`Solistas (Wikipedia): pergunta ${i + 1} de ${soloChunks.length}`);
+  const titles = unique(chunk.flatMap(soloist => SOLOIST_VARIANTS(soloist.name)));
+  const find = await lookupTitles(titles, { prop: 'categories', cllimit: 'max', clshow: '!hidden' });
+  for (const soloist of chunk) {
+    const page = SOLOIST_VARIANTS(soloist.name)
+      .map(find)
+      .find(p => p && !p.fragment && p.categories.some(c => IS_SINGER.test(c)));
+    saved[soloist.id] = { name: soloist.name, category: 'Soloists', page: page?.title ?? null, found: [] };
+  }
+  await save();
+}
+
+// Correções de foto dos solistas (soloistPhotoPages no hanbinData.js): usa a
+// página da Wikipedia indicada e não o Deezer. "manualPage" lembra a correção
+// aplicada; se ela mudar, a foto é buscada de novo. null = sem foto.
+const photoPages = HANBIN_DATA.soloistPhotoPages ?? {};
+for (const soloist of index.soloists ?? []) {
+  const entry = saved[soloist.id];
+  if (!entry || !Object.hasOwn(photoPages, soloist.name)) continue;
+  const page = photoPages[soloist.name];
+  if (entry.manualPage === page) continue;
+  entry.manualPage = page;
+  entry.page = page;
+  entry.deezerPhoto = null; // null (e não vazio): o passo 7 não pergunta de novo
+  delete entry.deezerNote;
+  if (page) delete entry.photo; // o passo 8 busca a foto da página nova
+  else entry.photo = null;
+}
+await save();
+
 // Passo 7: foto oficial do Deezer (a foto do artista no app, enviada pela
 // gravadora). Escolhe o artista com o nome igual ao do grupo e mais fãs; se
 // houver outro com o mesmo nome e muitos fãs também, avisa no resumo
@@ -431,9 +473,14 @@ for (const [i, code] of deezerPending.entries()) {
   const entry = saved[code];
   console.log(`Deezer ${i + 1} de ${deezerPending.length}: ${entry.name}`);
   const data = await askDeezer(entry.name);
-  const sameName = (data.data ?? [])
+  // Mais fãs primeiro. Nome escrito exatamente igual (LiSA x LISA) passa na
+  // frente só se tiver pelo menos 20% dos fãs do maior: o Deezer escreve muita
+  // gente em maiúsculas (JENNIE, 655 mil fãs x um "Jennie" com 23).
+  const byFans = (data.data ?? [])
     .filter(artist => simplify(artist.name) === simplify(entry.name))
     .sort((a, b) => b.nb_fan - a.nb_fan);
+  const exact = byFans.find(artist => artist.name === entry.name && artist.nb_fan >= (byFans[0]?.nb_fan ?? 0) * 0.2);
+  const sameName = exact ? [exact, ...byFans.filter(artist => artist !== exact)] : byFans;
   const [best, second] = sameName;
 
   // Artista sem foto no Deezer vem com o código da imagem vazio: .../images/artist//500x500...
@@ -493,4 +540,10 @@ const doubtful = all.filter(g => g.deezerNote);
 if (doubtful.length) {
   console.log(`\nConfira a foto do Deezer (nome repetido): ${doubtful.length}`);
   for (const g of doubtful) console.log(`   ${g.code} (${g.name}): ${g.deezerNote}`);
+}
+// Nome de 3 letras ou menos (V, L, IU, Key...) acha outro artista com facilidade.
+const shortNames = all.filter(g => g.category === 'Soloists' && g.manualPage === undefined && simplify(g.name).length <= 3);
+if (shortNames.length) {
+  console.log(`\nSolistas de nome curto (confira a foto): ${shortNames.length}`);
+  console.log(`   ${shortNames.map(g => `${g.code} (${g.name})`).join(', ')}`);
 }
