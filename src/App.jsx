@@ -27,6 +27,15 @@ function App() {
       prev.includes(id) ? prev.filter((x) => x !== id) : [...prev, id],
     );
 
+  // Marca (owned = true) ou desmarca (false) várias cartas de uma vez,
+  // como uma linha inteira de raridade no fichário.
+  const setCardsOwned = (ids, owned) =>
+    setOwnedCards((prev) =>
+      owned
+        ? [...prev, ...ids.filter((id) => !prev.includes(id))]
+        : prev.filter((x) => !ids.includes(x)),
+    );
+
   const handleTabChange = (cat) => {
     setCurrentView("dashboard");
     setActiveTab(cat);
@@ -161,6 +170,7 @@ function App() {
               expandedSets={expandedSets}
               onToggleSet={toggleSet}
               onToggleCard={toggleCard}
+              onSetCardsOwned={setCardsOwned}
               onBack={() => setSelectedGroup(null)}
             />
           )}

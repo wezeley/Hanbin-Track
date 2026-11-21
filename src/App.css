@@ -799,10 +799,23 @@
   align-items: center;
 }
 
+/* Botão: clicar marca (ou desmarca) a linha inteira. O margin negativo
+   compensa o padding, para o texto ficar no mesmo lugar de antes. */
 .rarity-row-label {
+  justify-self: start;
+  margin-left: -8px;
+  padding: 6px 8px;
+  border: 0;
+  border-radius: 8px;
+  background: transparent;
+  color: inherit;
+  font: inherit;
   font-size: 16px;
   font-weight: 800;
+  cursor: pointer;
 }
+
+.rarity-row-label:hover { background: var(--set-back); }
 
 /* --cols vem do SetBinder (getCardColumns); cada carta tem no máximo 120px.
    A área tem só a largura das colunas e fica centralizada na página do fichário;

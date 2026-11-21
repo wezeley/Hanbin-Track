@@ -27,7 +27,7 @@ function SetSymbol({ setId }) {
 }
 
 // set vem de getGroupSets (src/utils/groupSets.js)
-export function SetBinder({ set, ownedCards, filter, isOpen, onToggleOpen, onToggleCard }) {
+export function SetBinder({ set, ownedCards, filter, isOpen, onToggleOpen, onToggleCard, onSetCardsOwned }) {
   const colors = HANBIN_DATA.setColors[set.id] || NEUTRAL_COLORS;
   const firstRarity = set.rarities[0];
   const lastRarity = set.rarities[set.rarities.length - 1];
@@ -50,6 +50,12 @@ export function SetBinder({ set, ownedCards, filter, isOpen, onToggleOpen, onTog
   const visibleRows = set.rows.filter(row =>
     row.cards.some(card => card && !isCardHidden(ownedCards.includes(card.code)))
   );
+
+  // Clique no rótulo da raridade (1H, 2H...): se falta alguma carta da linha,
+  // marca todas; se já tenho todas, desmarca todas. Bolso vazio (null) não conta.
+  const rowCodes = (row) => row.cards.filter(Boolean).map(card => card.code);
+  const isRowComplete = (row) => rowCodes(row).every(code => ownedCards.includes(code));
+  const toggleRow = (row) => onSetCardsOwned(rowCodes(row), !isRowComplete(row));
 
   return (
     <div
@@ -94,7 +100,14 @@ export function SetBinder({ set, ownedCards, filter, isOpen, onToggleOpen, onTog
           <div className="set-content">
             {visibleRows.map((row, i) => (
               <div key={row.rarity} className="rarity-row">
-                <span className="rarity-row-label">{row.rarity}H</span>
+                <button
+                  type="button"
+                  className="rarity-row-label"
+                  onClick={() => toggleRow(row)}
+                  title={`${isRowComplete(row) ? 'Remove' : 'Mark'} all ${row.rarity}H`}
+                >
+                  {row.rarity}H
+                </button>
                 <div className="rarity-row-cards" ref={i === 0 ? cardsRef : undefined}>
                   <div className="cards-grid" style={{ '--cols': columns }}>
                     {row.cards.map((card, col) => {

@@ -11,7 +11,7 @@ const FILTERS = [
   { id: 'missing', label: 'Missing' },
 ];
 
-export function GroupView({ group, ownedCards, expandedSets, onToggleSet, onToggleCard, onBack }) {
+export function GroupView({ group, ownedCards, expandedSets, onToggleSet, onToggleCard, onSetCardsOwned, onBack }) {
   const [filter, setFilter] = useState('all');
   const { data, error } = useGroupData(group.code);
 
@@ -80,6 +80,7 @@ export function GroupView({ group, ownedCards, expandedSets, onToggleSet, onTogg
             isOpen={expandedSets[key] !== false}
             onToggleOpen={() => onToggleSet(key)}
             onToggleCard={onToggleCard}
+            onSetCardsOwned={onSetCardsOwned}
           />
         );
       })}
