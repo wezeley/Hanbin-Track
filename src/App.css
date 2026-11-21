@@ -1,27 +1,7 @@
 /* ===== Estrutura da página ===== */
+/* Header em cima, conteúdo embaixo (a sidebar saiu na etapa B1) */
 .app {
   min-height: 100vh;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: stretch;
-}
-
-.sidebar {
-  flex: 1 1 240px;
-  max-width: 100%;
-  background: var(--color-surface);
-  border-right: 1px solid var(--color-border);
-  padding: 24px 16px;
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-}
-
-.app-column {
-  flex: 999 1 560px;
-  min-width: 0;
-  display: flex;
-  flex-direction: column;
 }
 
 .app-main {
@@ -33,104 +13,88 @@
   gap: 20px;
 }
 
-/* ===== Sidebar ===== */
-.sidebar button {
-  border: 0;
-  background: transparent;
-  cursor: pointer;
-  text-align: left;
-}
-
-.sidebar-logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 0 8px;
-  color: var(--color-text);
-}
-
-.sidebar-logo-mark {
-  width: 32px;
-  height: 32px;
-  border-radius: 9px;
+/* ===== Logo (quadrado roxo com 3 bolinhas + nome) ===== */
+.logo-mark {
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
   background: var(--color-accent);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 4px;
-  padding-left: 7px;
+  align-items: center;
+  gap: 3px;
+  flex: none;
 }
 
-.sidebar-logo-mark span {
-  width: 6px;
-  height: 6px;
+.logo-mark span {
+  width: 4px;
+  height: 4px;
   border-radius: 50%;
   background: var(--color-surface);
 }
 
-.sidebar-logo-text {
+.logo-text {
   font-family: var(--font-display);
   font-weight: 800;
-  font-size: 19px;
+  font-size: 17px;
   letter-spacing: -0.02em;
 }
 
-.sidebar-nav {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-}
-
-.sidebar-home,
-.sidebar-item {
-  display: flex;
-  align-items: center;
-  min-height: 40px;
-  padding: 0 12px;
-  border-radius: var(--radius-sm);
-  color: var(--color-text);
-  font-weight: 500;
-}
-
-.sidebar-home {
-  gap: 10px;
-  min-height: 44px;
-}
-
-.sidebar-item {
-  justify-content: space-between;
-}
-
-.sidebar-label {
-  padding: 18px 12px 6px;
-  font-size: 12px;
-  font-weight: 600;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--color-text-muted);
-}
-
-.sidebar-count {
-  font-size: 12px;
-  color: var(--color-text-muted);
-}
-
-.sidebar-home.active,
-.sidebar-item.active {
-  background: var(--color-accent-soft);
-  color: var(--color-on-accent-soft);
-  font-weight: 600;
-}
-
-/* ===== Header ===== */
+/* ===== Header =====
+   Uma linha de 60px: logo, links e colecionador. O link ativo é
+   sublinhado com box-shadow "inset": a linha é desenhada por dentro do
+   botão, então ele não muda de altura (com border-bottom, o ativo
+   ficaria 2px mais alto que os outros). */
 .header {
   background: var(--color-surface);
   border-bottom: 1px solid var(--color-border);
-  padding: 12px 28px;
+}
+
+.header-inner {
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 0 32px;
+  min-height: 60px;
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
-  gap: 12px 24px;
+  gap: 28px;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--color-text);
+  cursor: pointer;
+}
+
+.header-nav {
+  flex: 1;
+  display: flex;
+  gap: 4px;
+}
+
+.header-link {
+  padding: 0 12px;
+  min-height: 60px;
+  border: 0;
+  background: transparent;
+  color: var(--color-text-muted);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.header-link:hover { color: var(--color-text); }
+
+.header-link.active {
+  color: var(--color-text);
+  font-weight: 600;
+  box-shadow: inset 0 -2px 0 var(--color-accent);
 }
 
 .header-user {
@@ -140,8 +104,8 @@
 }
 
 .header-avatar {
-  width: 34px;
-  height: 34px;
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
   background: var(--color-text);
   color: var(--color-surface);
@@ -161,50 +125,58 @@
 }
 
 .header-name {
-  width: 120px;
+  width: 110px;
   padding: 0;
   border: 0;
   border-bottom: 1px dashed var(--color-underline);
   outline: 0;
   background: transparent;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 600;
   color: var(--color-text);
 }
 
-.header-nav {
-  flex: 1 1 auto;
+/* ===== Chips de categoria (embaixo do título da categoria) =====
+   Uma linha só; se não couber, rola para o lado. */
+.category-chips {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 4px;
+  gap: 6px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  padding-bottom: 2px;
 }
 
-.header-pill {
-  padding: 10px 14px;
-  border: 0;
+.category-chip {
+  flex: none;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 32px;
+  padding: 0 12px;
+  border: 1px solid var(--color-border);
   border-radius: var(--radius-pill);
-  background: transparent;
-  color: var(--color-text-muted);
+  background: var(--color-surface);
+  color: var(--color-text);
+  font-size: 13px;
   font-weight: 500;
+  white-space: nowrap;
   cursor: pointer;
 }
 
-.header-pill.active {
-  background: var(--color-text);
-  color: var(--color-surface);
-  font-weight: 600;
+.category-chip:hover { border-color: var(--color-underline); }
+
+.category-chip-count {
+  font-size: 11px;
+  color: var(--color-text-muted);
 }
 
-.header-badge {
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  color: var(--color-text-muted);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-pill);
-  padding: 6px 12px;
+.category-chip.active {
+  background: var(--color-text);
+  border-color: var(--color-text);
+  color: var(--color-surface);
 }
+
+.category-chip.active .category-chip-count { color: var(--color-border); }
 
 /* ===== Dashboard ===== */
 .dashboard {
@@ -1093,116 +1065,56 @@
 }
 
 /* ===== Celular (até 720px) =====
-   Opção B do mockup: no topo, o logo e o colecionador; embaixo, as abas
-   (Home, Cards...) num seletor de 4 partes; depois, as categorias em
-   pílulas que rolam de lado. No computador nada disso vale.
-   "display: contents" faz a sidebar, a coluna e o header sumirem como
-   caixa: os filhos deles viram itens da grade do .app e são posicionados
-   pelas áreas (grid-area), sem mudar o JSX. */
+   Linha 1: logo e colecionador. Linha 2: os 5 links como abas que rolam
+   para o lado (opção b), com a aba ativa escura, como o celular já era.
+   As categorias ficam nos chips da página de categoria.
+   No computador nada disso vale. */
 @media (max-width: 720px) {
-  .app {
+  .header-inner {
     display: grid;
     grid-template-columns: minmax(0, 1fr) auto;
     grid-template-areas:
       "logo user"
-      "tabs tabs"
-      "cats cats"
-      "main main";
-    align-content: start;
+      "nav nav";
+    gap: 10px 12px;
+    padding: 12px 16px;
+    min-height: 0;
   }
 
-  .sidebar,
-  .app-column,
-  .header {
-    display: contents;
-  }
+  .header-logo { grid-area: logo; }
 
-  /* Item de grade não encolhe menos que o conteúdo (min-width: auto):
-     sem isto, a linha de categorias alarga a página inteira. */
-  .app > *,
-  .sidebar > *,
-  .app-column > *,
-  .header > * {
-    min-width: 0;
-  }
-
-  /* Faixa branca do topo: cada peça tem o próprio fundo.
-     ".sidebar .sidebar-logo" para vencer o ".sidebar button" lá de cima. */
-  .sidebar .sidebar-logo,
-  .header-user,
-  .header-nav,
-  .sidebar-nav {
-    background: var(--color-surface);
-  }
-
-  .sidebar .sidebar-logo {
-    grid-area: logo;
-    padding: 12px 16px 10px;
-  }
-
-  .sidebar-logo-text { font-size: 17px; }
-
-  .header-user {
-    grid-area: user;
-    padding: 12px 16px 10px 0;
-  }
+  .header-user { grid-area: user; }
 
   .header-name { width: 90px; }
 
-  .header-badge { display: none; }
-
-  /* Abas: seletor de 4 partes iguais */
+  /* Abas: uma linha só; o que não couber rola para o lado.
+     min-width: 0 deixa a linha encolher dentro da grade (sem ele, o item
+     de grade cresce até caber todo o conteúdo e alarga a página). */
   .header-nav {
-    grid-area: tabs;
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 4px;
-    padding: 0 16px 10px;
-  }
-
-  .header-pill {
-    min-height: 36px;
-    padding: 0 4px;
-    border-radius: var(--radius-sm);
-    background: var(--color-surface-muted);
-    font-size: 14px;
-  }
-
-  /* Categorias: uma linha só, arrastando para o lado */
-  .sidebar-nav {
-    grid-area: cats;
-    flex-direction: row;
-    gap: 8px;
+    grid-area: nav;
+    min-width: 0;
     overflow-x: auto;
     scrollbar-width: none;
-    padding: 0 16px 12px;
-    border-bottom: 1px solid var(--color-border);
-  }
-
-  /* Home e o título "Categories" já estão nas abas: somem aqui */
-  .sidebar-home,
-  .sidebar-label {
-    display: none;
-  }
-
-  .sidebar .sidebar-item {
-    flex: none;
     gap: 6px;
+  }
+
+  .header-link {
+    flex: none;
     min-height: 36px;
     padding: 0 14px;
-    border: 1px solid var(--color-border);
-    border-radius: var(--radius-pill);
-    font-size: 14px;
+    border-radius: var(--radius-sm);
+    background: var(--color-surface-muted);
+    color: var(--color-text);
     white-space: nowrap;
   }
 
-  .sidebar .sidebar-item.active {
-    border-color: transparent;
-    background: var(--color-accent-soft);
+  .header-link.active {
+    background: var(--color-text);
+    color: var(--color-surface);
+    box-shadow: none;
   }
 
   .app-main {
-    grid-area: main;
     padding: 20px 16px 40px;
     gap: 16px;
   }
