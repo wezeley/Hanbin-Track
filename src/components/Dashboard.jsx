@@ -18,7 +18,7 @@ export function Dashboard({ ownedCards, onGroupSelect }) {
   const progressPct = totalCards ? Math.round(ownedCount / totalCards * 100) : 0;
 
   // Raridade pelo número do ID (001 = 1H, 007 = 2H...): vale para todos os
-  // grupos da planilha. Solistas e eventos (partes 5 e 6) vão precisar de outra conta.
+  // grupos e solistas da planilha. Eventos (parte 6) vão precisar de outra conta.
   const rarityCounts = [0, 0, 0, 0, 0];
   ownedCards.forEach(id => {
     const seq = Number(id.slice(-3));

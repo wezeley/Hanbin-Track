@@ -27,15 +27,20 @@ function SetSymbol({ setId }) {
 }
 
 // set vem de getGroupSets (src/utils/groupSets.js)
-export function SetBinder({ set, ownedCards, filter, isOpen, onToggleOpen, onToggleCard, onSetCardsOwned }) {
+// isSoloist: o set vira UMA fileira, as raridades lado a lado, com a raridade embaixo
+// de cada carta (no grupo, cada raridade é uma linha com uma carta por membro).
+export function SetBinder({ set, ownedCards, filter, isSoloist, isOpen, onToggleOpen, onToggleCard, onSetCardsOwned }) {
   const colors = HANBIN_DATA.setColors[set.id] || NEUTRAL_COLORS;
   const firstRarity = set.rarities[0];
   const lastRarity = set.rarities[set.rarities.length - 1];
   const setSize = set.codes.length;
 
-  // Mede a área das cartas da 1ª raridade visível (todas têm a mesma largura)
+  // Solista: uma carta por raridade que existe no set (a que ainda não saiu não aparece)
+  const soloCards = set.rows.map(row => row.cards[0]);
+
+  // Mede a área das cartas da 1ª linha visível (todas têm a mesma largura)
   const [cardsRef, cardsWidth] = useElementWidth();
-  const columns = getCardColumns(set.members.length, cardsWidth);
+  const columns = getCardColumns(isSoloist ? soloCards.length : set.members.length, cardsWidth);
 
   // ===== Cálculos =====
   const ownedInSet = set.codes.filter(code => ownedCards.includes(code)).length;
@@ -56,6 +61,22 @@ export function SetBinder({ set, ownedCards, filter, isOpen, onToggleOpen, onTog
   const rowCodes = (row) => row.cards.filter(Boolean).map(card => card.code);
   const isRowComplete = (row) => rowCodes(row).every(code => ownedCards.includes(code));
   const toggleRow = (row) => onSetCardsOwned(rowCodes(row), !isRowComplete(row));
+
+  // Uma carta do fichário (igual para grupo e solista)
+  const renderCard = (card) => {
+    const isOwned = ownedCards.includes(card.code);
+    return (
+      <Card
+        key={card.code}
+        cardId={card.code}
+        label={`${card.member}, set ${set.id}, ${card.rarity}H, ${isOwned ? 'owned' : 'missing'}`}
+        imagePath={card.link}
+        isOwned={isOwned}
+        isHidden={isCardHidden(isOwned)}
+        onToggle={onToggleCard}
+      />
+    );
+  };
 
   return (
     <div
@@ -96,7 +117,22 @@ export function SetBinder({ set, ownedCards, filter, isOpen, onToggleOpen, onTog
           </span>
         </button>
 
-        {isOpen && visibleRows.length > 0 && (
+        {isOpen && visibleRows.length > 0 && isSoloist && (
+          <div className="set-content">
+            <div ref={cardsRef}>
+              <div className="cards-grid" style={{ '--cols': columns }}>
+                {soloCards.map(card => (
+                  <div key={card.code} className="solo-slot">
+                    {renderCard(card)}
+                    <span className="solo-slot-label">{card.rarity}H</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        )}
+
+        {isOpen && visibleRows.length > 0 && !isSoloist && (
           <div className="set-content">
             {visibleRows.map((row, i) => (
               <div key={row.rarity} className="rarity-row">
@@ -110,25 +146,10 @@ export function SetBinder({ set, ownedCards, filter, isOpen, onToggleOpen, onTog
                 </button>
                 <div className="rarity-row-cards" ref={i === 0 ? cardsRef : undefined}>
                   <div className="cards-grid" style={{ '--cols': columns }}>
-                    {row.cards.map((card, col) => {
+                    {row.cards.map((card, col) =>
                       // Membro sem essa carta: bolso vazio, para as colunas não andarem
-                      if (!card) {
-                        return <div key={`empty-${col}`} className="card-slot-empty" aria-hidden="true" />;
-                      }
-
-                      const isOwned = ownedCards.includes(card.code);
-                      return (
-                        <Card
-                          key={card.code}
-                          cardId={card.code}
-                          label={`${card.member}, set ${set.id}, ${card.rarity}H, ${isOwned ? 'owned' : 'missing'}`}
-                          imagePath={card.link}
-                          isOwned={isOwned}
-                          isHidden={isCardHidden(isOwned)}
-                          onToggle={onToggleCard}
-                        />
-                      );
-                    })}
+                      card ? renderCard(card) : <div key={`empty-${col}`} className="card-slot-empty" aria-hidden="true" />
+                    )}
                   </div>
                 </div>
               </div>

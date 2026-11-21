@@ -13,6 +13,7 @@
 //
 // Arquivos gerados:
 //   index.json      lista dos grupos (número, nome, código, cartas, membros, sets)
+//                   e dos solistas (id, nome, inicial, cartas, sets, IDs das cartas)
 //   groups/<código>.json   as cartas de um grupo
 //   events.json     Event Overview (blocos de evento + legenda Event/Limited)
 //   radiants.json   Radiant Overview (blocos de radiantes)
@@ -434,6 +435,25 @@ function addReleased(columns, owners, where) {
   }
 }
 
+// ---------- Solistas ----------
+
+// Cada solista da aba "0 - Solo" vira um "grupo" no site. O id é o código da
+// 1ª carta (SOLO#LS001 -> SOLO-LS001): Lisa e LiSA têm a mesma inicial (LS),
+// mas nunca a mesma carta. "codes" serve para contar o progresso de cada um.
+function soloSummary(solo) {
+  return solo.members.map(member => {
+    const cards = solo.cards.filter(card => card.member === member.name && card.initial === member.initial);
+    return {
+      id: cards[0].code.replace('#', '-'),
+      name: member.name,
+      initial: member.initial,
+      cards: cards.length,
+      sets: Math.max(0, ...cards.map(card => card.set ?? 0)),
+      codes: cards.map(card => card.code),
+    };
+  });
+}
+
 // ---------- Gravar ----------
 
 // JSON com 2 espaços, mas cada objeto simples (uma carta, um membro) numa linha só.
@@ -549,6 +569,7 @@ await save(new URL('index.json', OUT_DIR), {
     members: g.members.length,
     sets: Math.max(0, ...g.cards.map(c => c.set ?? 0)),
   })),
+  soloists: solo ? soloSummary(solo) : [],
 });
 await save(new URL('events.json', OUT_DIR), events);
 await save(new URL('radiants.json', OUT_DIR), radiants);

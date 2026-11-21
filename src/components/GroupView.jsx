@@ -20,7 +20,14 @@ export function GroupView({ group, ownedCards, expandedSets, onToggleSet, onTogg
   // Os sets só existem depois que o arquivo do grupo chega.
   const sets = data ? getGroupSets(data) : [];
   const { owned, total, pct } = getGroupProgress(group, ownedCards);
-  const metaLabel = `${group.code} · ${plural(group.members, 'member')} · ${plural(group.sets, 'set')} · ${plural(total, 'card')}`;
+  const isSoloist = group.type === 'soloist';
+  // Solista: sem "members" (LS · 1 set · 5 cards)
+  const metaLabel = [
+    group.tag,
+    !isSoloist && plural(group.members, 'member'),
+    plural(group.sets, 'set'),
+    plural(total, 'card'),
+  ].filter(Boolean).join(' · ');
 
   return (
     <div className="group-page">
@@ -77,6 +84,7 @@ export function GroupView({ group, ownedCards, expandedSets, onToggleSet, onTogg
             set={set}
             ownedCards={ownedCards}
             filter={filter}
+            isSoloist={isSoloist}
             isOpen={expandedSets[key] !== false}
             onToggleOpen={() => onToggleSet(key)}
             onToggleCard={onToggleCard}

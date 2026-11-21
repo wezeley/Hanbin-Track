@@ -1,4 +1,5 @@
-const MIN_CARD_WIDTH = 80;
+// 100px: largura em que o ID inteiro (AADT#EJ001) e o ✓ ainda cabem na carta
+const MIN_CARD_WIDTH = 100;
 const GAP = 10;
 
 // Quantas colunas de cartas usar para que as linhas fiquem equilibradas:

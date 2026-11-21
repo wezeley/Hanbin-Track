@@ -15,10 +15,10 @@ function GroupPhoto({ group }) {
 
 export function CategoryView({ category, groups, query, onQueryChange, ownedCards, onGroupSelect }) {
   // ===== Cálculos =====
-  // Busca pelo nome ou pelo código (SKZ acha o Stray Kids), sem diferenciar maiúsculas.
+  // Busca pelo nome ou pela etiqueta (SKZ acha o Stray Kids), sem diferenciar maiúsculas.
   const search = query.trim().toLowerCase();
   const visibleGroups = search
-    ? groups.filter(g => g.name.toLowerCase().includes(search) || g.code.toLowerCase().includes(search))
+    ? groups.filter(g => g.name.toLowerCase().includes(search) || g.tag.toLowerCase().includes(search))
     : groups;
   const groupCountLabel = search
     ? `${visibleGroups.length} of ${plural(groups.length, 'group')}`
@@ -51,7 +51,10 @@ export function CategoryView({ category, groups, query, onQueryChange, ownedCard
       <div className="group-grid">
         {visibleGroups.map(g => {
           const { owned, total, pct } = getGroupProgress(g, ownedCards);
-          const stats = [['Cards', total], ['Members', g.members], ['Sets', g.sets]];
+          // Solista não tem "Members" (seria sempre 1)
+          const stats = g.type === 'soloist'
+            ? [['Cards', total], ['Sets', g.sets]]
+            : [['Cards', total], ['Members', g.members], ['Sets', g.sets]];
 
           return (
             <button key={g.code} type="button" className="group-card" onClick={() => onGroupSelect(g)}>
@@ -76,7 +79,7 @@ export function CategoryView({ category, groups, query, onQueryChange, ownedCard
                 <span className="group-card-photo-img">
                   <GroupPhoto group={g} />
                 </span>
-                <span className="group-card-code">{g.code}</span>
+                <span className="group-card-code">{g.tag}</span>
               </span>
             </button>
           );

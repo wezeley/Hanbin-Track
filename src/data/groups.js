@@ -27,16 +27,41 @@ function categoryOf(code, seen = new Set()) {
   return fromParents.length === 1 ? fromParents[0] : UNCATEGORIZED;
 }
 
-// Grupos que aparecem no site: todos os grupos da planilha (o Solo entra na parte 5).
-// Cada um tem: number, name, code, type, cards, members, sets e category
+const SOLOISTS_CATEGORY = 'Soloists';
+
+// Grupos da planilha. Cada um tem: number, name, code, type, cards, members,
+// sets, category e tag (o texto da etiqueta: o código do grupo)
 // (cards, members e sets são quantidades; as cartas mesmo ficam no arquivo do grupo).
-export const GROUPS = SHEET_INDEX.groups
+const SHEET_GROUPS = SHEET_INDEX.groups
   .filter(group => group.type === 'group')
   .map(group => ({
     ...group,
     name: HANBIN_DATA.groupNames[group.code] ?? group.name, // correção manual de nome
     category: categoryOf(group.code),
+    tag: group.code,
   }));
+
+// Solistas: cada um da aba "0 - Solo" aparece como um grupo próprio, em ordem
+// alfabética. O code é o id do index.json (SOLO-LS001), a etiqueta é a inicial
+// e "codes" são os IDs das cartas (Lisa e LiSA têm a mesma inicial, então o
+// progresso não dá para contar pelo começo do ID, como nos grupos).
+const SOLOISTS = (SHEET_INDEX.soloists ?? [])
+  .map(soloist => ({
+    number: 0,
+    name: soloist.name,
+    code: soloist.id,
+    type: 'soloist',
+    cards: soloist.cards,
+    members: 1,
+    sets: soloist.sets,
+    category: SOLOISTS_CATEGORY,
+    tag: soloist.initial,
+    codes: soloist.codes,
+  }))
+  .sort((a, b) => a.name.localeCompare(b.name, 'en', { sensitivity: 'base' }));
+
+// Tudo o que aparece no site como "grupo": grupos e solistas.
+export const GROUPS = [...SHEET_GROUPS, ...SOLOISTS];
 
 // Categorias da sidebar: as fixas e, se tiver algum grupo sem categoria, Uncategorized no fim.
 export const SIDEBAR_CATEGORIES = GROUPS.some(group => group.category === UNCATEGORIZED)
@@ -47,7 +72,17 @@ export const SIDEBAR_CATEGORIES = GROUPS.some(group => group.category === UNCATE
 const GROUP_FILES = import.meta.glob('./sheet/groups/*.json', { import: 'default' });
 
 // Devolve uma Promise com { number, name, code, members, cards } do grupo.
+// Solista: abre o arquivo do Solo e fica só com as cartas dele.
 export function loadGroup(code) {
+  const soloist = SOLOISTS.find(s => s.code === code);
+  if (soloist) {
+    return loadGroup('SOLO').then(solo => {
+      const cards = solo.cards.filter(card => soloist.codes.includes(card.code));
+      const members = cards.length ? [{ name: cards[0].member, initial: cards[0].initial }] : [];
+      return { number: 0, name: soloist.name, code, members, cards };
+    });
+  }
+
   const load = GROUP_FILES[`./sheet/groups/${code}.json`];
   if (!load) return Promise.reject(new Error(`Grupo ${code} não encontrado em src/data/sheet/groups/`));
   return load();
