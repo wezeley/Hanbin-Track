@@ -1,7 +1,8 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { GROUPS } from '../data/groups';
 import { getGroupProgress } from '../utils/groupProgress';
 import { pickUpcoming } from '../utils/upcoming';
+import { quickSearch } from '../utils/quickSearch';
 import TODO from '../data/sheet/todo.json';
 
 // Caixinhas do Global progress: as 5 raridades e os 3 tipos especiais
@@ -18,11 +19,19 @@ const RARITY_BOXES = [
 // Código do evento (SS24) -> tipo (event, limited ou radiant)
 const EVENT_KINDS = new Map(GROUPS.filter(g => g.type === 'event').map(g => [g.code, g.kind]));
 const UPCOMING_COUNT = 5;
+const SEARCH_LIMIT = 8;
 
 export function Dashboard({ ownedCards, onGroupSelect }) {
   const [query, setQuery] = useState('');
   // Sorteia uma vez cada vez que a Home aparece (não a cada tecla na busca).
   const [upcoming] = useState(() => pickUpcoming(TODO, UPCOMING_COUNT));
+
+  // Lista de pessoas da busca (people.json): só é baixada quando começo a digitar
+  const [people, setPeople] = useState(null);
+  useEffect(() => {
+    if (!query || people) return;
+    import('../data/sheet/people.json').then(module => setPeople(module.default));
+  }, [query, people]);
 
   // ===== Cálculos =====
   // Specials (Limiteds) ficam fora da contagem total, como no bot:
@@ -47,9 +56,8 @@ export function Dashboard({ ownedCards, onGroupSelect }) {
   // "Your groups": só os grupos em que tenho pelo menos uma carta
   const yourGroups = GROUPS.filter(g => getGroupProgress(g, ownedCards).owned > 0);
 
-  const results = GROUPS
-    .filter(g => g.name.toLowerCase().includes(query.toLowerCase()))
-    .slice(0, 5);
+  // Grupos e pessoas (enquanto people.json não chega, só grupos)
+  const results = quickSearch(query, GROUPS, people, SEARCH_LIMIT);
 
   // ===== Tela =====
   return (
@@ -97,18 +105,22 @@ export function Dashboard({ ownedCards, onGroupSelect }) {
           <input
             id="quick-search"
             type="search"
-            placeholder="Search for a group..."
+            placeholder="Search for a group or member..."
             value={query}
             onChange={(e) => setQuery(e.target.value)}
           />
         </div>
         {query && results.length > 0 && (
           <div className="search-results">
-            {results.map(g => {
-              const { owned, total } = getGroupProgress(g, ownedCards);
+            {results.map(({ key, group, person, origin }) => {
+              const { owned, total } = getGroupProgress(group, ownedCards);
+              // Grupo: "Stray Kids · Boy Group". Pessoa: "Juyeon · Pool Party (The Boyz)"
+              const where = person
+                ? `${group.name}${origin ? ` (${origin})` : ''}`
+                : group.category;
               return (
-                <button key={g.code} type="button" className="search-result" onClick={() => onGroupSelect(g)}>
-                  <span><b>{g.name}</b> <span className="text-muted">· {g.category}</span></span>
+                <button key={key} type="button" className="search-result" onClick={() => onGroupSelect(group)}>
+                  <span><b>{person ?? group.name}</b> <span className="text-muted">· {where}</span></span>
                   <span className="search-result-progress">{owned} / {total}</span>
                 </button>
               );

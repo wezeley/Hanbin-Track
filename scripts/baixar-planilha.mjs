@@ -19,8 +19,10 @@
 //   events.json     Event Overview (blocos de evento + legenda Event/Limited)
 //   radiants.json   Radiant Overview (blocos de radiantes)
 //   todo.json       To-Do Order e To-Do Order Solo ("released" = já tem carta)
+//   people.json     cada pessoa e onde aparece, para a busca (scripts/montar-pessoas.mjs)
 
 import { mkdir, rm, writeFile } from 'node:fs/promises';
+import { buildPeople } from './montar-pessoas.mjs';
 
 const SHEET = 'https://docs.google.com/spreadsheets/d/REMOVIDO';
 const OUT_DIR = new URL('../src/data/sheet/', import.meta.url);
@@ -609,6 +611,8 @@ await save(new URL('index.json', OUT_DIR), {
 await save(new URL('events.json', OUT_DIR), events);
 await save(new URL('radiants.json', OUT_DIR), radiants);
 await save(new URL('todo.json', OUT_DIR), todo);
+// Lê os arquivos que acabaram de ser gravados
+const peopleCount = await buildPeople();
 
 // ---------- Resumo ----------
 
@@ -618,6 +622,7 @@ console.log(`Abas na planilha: ${tabs.length}`);
 console.log(`Grupos gravados: ${groups.length} (${count(groups)} cartas)`);
 console.log(`Eventos: ${events.blocks.length} blocos (${count(events.blocks)} cartas)`);
 console.log(`Radiantes: ${radiants.blocks.length} blocos (${count(radiants.blocks)} cartas)`);
+console.log(`Pessoas para a busca (people.json): ${peopleCount}`);
 console.log(`Abas de evento/radiante puladas (vêm dos Overviews): ${skippedAsEvent.length}`);
 console.log(`Outras abas: ${otherTabs.join(', ')} (${SKIPPED_TABS.join(', ')} fica de fora)`);
 
