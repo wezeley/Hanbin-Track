@@ -41,10 +41,12 @@ export function SetBinder({ set, ownedCards, filter, layout, isOpen, onToggleOpe
 
   // Faixa (solista, evento e coleção): cada carta com o rótulo que vai embaixo dela.
   // Solista: só as raridades que existem no set (a que ainda não saiu não aparece).
+  // Grupo não usa faixa (e o set de grupo não tem "cards"): lista vazia.
   const isStrip = layout !== 'group';
-  const stripSlots = layout === 'soloist'
-    ? set.rows.map(row => ({ card: row.cards[0], label: `${row.rarity}H` }))
-    : set.cards.map(card => ({ card, label: layout === 'event' ? card.group : card.member }));
+  const stripSlots = !isStrip ? []
+    : layout === 'soloist'
+      ? set.rows.map(row => ({ card: row.cards[0], label: `${row.rarity}H` }))
+      : set.cards.map(card => ({ card, label: layout === 'event' ? card.group : card.member }));
 
   // Mede a área das cartas da 1ª linha visível (todas têm a mesma largura)
   const [cardsRef, cardsWidth] = useElementWidth();
