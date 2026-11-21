@@ -547,8 +547,10 @@
 }
 
 /* ===== Página do grupo ===== */
+/* Página do grupo: mesma largura da categoria, para as cartas não encolherem
+   em grupos grandes (9 cartas de 120px precisam de ~1160px só para a fileira). */
 .app-main-wide {
-  max-width: 1180px;
+  max-width: 1600px;
   padding-top: 24px;
 }
 
@@ -803,17 +805,23 @@
 }
 
 /* --cols vem do SetBinder (getCardColumns); cada carta tem no máximo 120px.
-   A área tem só a largura das colunas, e a última linha fica centralizada nela. */
+   A área tem só a largura das colunas e fica centralizada na página do fichário;
+   a última linha também fica centralizada nela. */
 .cards-grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
   max-width: calc(var(--cols) * 120px + (var(--cols) - 1) * 10px);
+  margin-inline: auto;
 }
 
+/* O "- 0.5px" é folga para o arredondamento: sem ela, as colunas somadas passam
+   da largura por uma fração de pixel e a última carta cai para a linha de baixo.
+   min-width: 0 deixa a carta mais fina que o texto do ID (o ID ganha "…"). */
 .cards-grid > * {
-  flex: 0 0 calc((100% - (var(--cols) - 1) * 10px) / var(--cols));
+  flex: 0 0 calc((100% - (var(--cols) - 1) * 10px) / var(--cols) - 0.5px);
+  min-width: 0;
 }
 
 /* Sleeve */
@@ -874,7 +882,17 @@
   color: var(--color-text-muted);
 }
 
-.card-sleeve-footer svg { color: var(--color-success); }
+.card-sleeve-footer span {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.card-sleeve-footer svg {
+  flex-shrink: 0;
+  color: var(--color-success);
+}
 
 .card-slot-empty {
   width: 100%;
