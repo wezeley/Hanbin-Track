@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { getGroupProgress } from '../utils/groupProgress';
 import { plural } from '../utils/plural';
+import { getNameSize } from '../utils/groupCard';
 import BANNERS from '../data/banners.json';
 
 function GroupPhoto({ group }) {
@@ -27,25 +28,32 @@ export function CategoryView({ category, groups, ownedCards, onGroupSelect }) {
       <div className="group-grid">
         {groups.map(g => {
           const { owned, total, pct } = getGroupProgress(g, ownedCards);
-          const metaLabel = `${plural(g.members, 'member')} · ${plural(g.sets, 'set')} · ${plural(total, 'card')}`;
+          const stats = [['Cards', total], ['Members', g.members], ['Sets', g.sets]];
 
           return (
             <button key={g.code} type="button" className="group-card" onClick={() => onGroupSelect(g)}>
-              <span className="group-card-photo">
-                <GroupPhoto group={g} />
-              </span>
               <span className="group-card-info">
-                <span className="group-card-title">
-                  <span className="group-card-name">{g.name}</span>
-                  <span className="group-card-code">{g.code}</span>
+                <span className="group-card-name" style={{ fontSize: getNameSize(g.name) }}>{g.name}</span>
+                <span className="group-card-stats">
+                  {stats.map(([label, value]) => (
+                    <span key={label} className="group-card-stat">
+                      <span className="group-card-label">{label}</span>
+                      <b>{value}</b>
+                    </span>
+                  ))}
                 </span>
-                <span className="group-card-meta">{metaLabel}</span>
                 <span className="group-card-progress">
                   <span className="progress group-card-bar">
                     <span className="progress-fill" style={{ width: `${pct}%` }} />
                   </span>
                   <span className="group-card-count">{owned} / {total}</span>
                 </span>
+              </span>
+              <span className="group-card-photo">
+                <span className="group-card-photo-img">
+                  <GroupPhoto group={g} />
+                </span>
+                <span className="group-card-code">{g.code}</span>
               </span>
             </button>
           );

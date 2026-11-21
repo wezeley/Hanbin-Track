@@ -422,37 +422,104 @@
 
 .group-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(min(360px, 100%), 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(280px, 100%), 1fr));
   gap: 16px;
 }
 
+/* Retângulo 8:5 — escrita no branco à esquerda, foto quadrada à direita */
 .group-card {
-  position: relative;
+  aspect-ratio: 8 / 5;
   overflow: hidden;
-  min-height: 150px;
   padding: 0;
   background: var(--color-surface);
   border: 1px solid var(--color-border);
   border-radius: 22px;
-  display: flex;
-  align-items: center;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
   text-align: left;
   cursor: pointer;
 }
 
-/* Foto com fade para a esquerda */
-.group-card-photo {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  width: 62%;
-  background: var(--pastel-1);
-  -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 55%);
-  mask-image: linear-gradient(to right, transparent 0%, #000 55%);
+.group-card-info {
+  min-width: 0;
+  padding: 16px 8px 14px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
 }
 
-.group-card-photo img {
+/* O tamanho da fonte vem do componente (getNameSize): depende da maior palavra */
+.group-card-name {
+  font-family: var(--font-display);
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* CARDS / MEMBERS / SETS, um embaixo do outro */
+.group-card-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.group-card-stat {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  font-size: 13px;
+}
+
+.group-card-label {
+  width: 54px;
+  flex-shrink: 0;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+/* Barra curta na coluna dos rótulos, contagem alinhada com os números */
+.group-card-progress {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.group-card-bar {
+  width: 54px;
+  flex-shrink: 0;
+  height: 5px;
+}
+
+.group-card-count {
+  font-size: 11px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+/* Foto quadrada (altura do card) com fade curto na borda esquerda */
+.group-card-photo {
+  position: relative;
+  height: 100%;
+  aspect-ratio: 1 / 1;
+}
+
+.group-card-photo-img {
+  position: absolute;
+  inset: 0;
+  background: var(--pastel-1);
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 25%);
+  mask-image: linear-gradient(to right, transparent 0%, #000 25%);
+}
+
+.group-card-photo-img img {
   display: block;
   width: 100%;
   height: 100%;
@@ -460,66 +527,23 @@
 }
 
 /* Paleta alternando: 1º, 2º, 3º... e recomeça no 7º */
-.group-card:nth-child(6n+2) .group-card-photo { background: var(--pastel-2); }
-.group-card:nth-child(6n+3) .group-card-photo { background: var(--pastel-3); }
-.group-card:nth-child(6n+4) .group-card-photo { background: var(--pastel-4); }
-.group-card:nth-child(6n+5) .group-card-photo { background: var(--pastel-5); }
-.group-card:nth-child(6n+6) .group-card-photo { background: var(--pastel-6); }
+.group-card:nth-child(6n+2) .group-card-photo-img { background: var(--pastel-2); }
+.group-card:nth-child(6n+3) .group-card-photo-img { background: var(--pastel-3); }
+.group-card:nth-child(6n+4) .group-card-photo-img { background: var(--pastel-4); }
+.group-card:nth-child(6n+5) .group-card-photo-img { background: var(--pastel-5); }
+.group-card:nth-child(6n+6) .group-card-photo-img { background: var(--pastel-6); }
 
-/* Texto à esquerda, por cima da foto */
-.group-card-info {
-  position: relative;
-  width: 52%;
-  min-width: 0;
-  padding: 20px 0 20px 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-.group-card-title {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.group-card-name {
-  font-family: var(--font-display);
-  font-weight: 800;
-  font-size: 19px;
-  line-height: 1.2;
-  letter-spacing: -0.01em;
-}
-
+/* Código do grupo numa etiqueta escura no canto da foto */
 .group-card-code {
-  font-size: 13px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 11px;
   font-weight: 700;
-  color: var(--color-on-accent-soft);
-  background: var(--color-accent-soft);
+  color: #FFFFFF;
+  background: rgba(24, 21, 43, 0.78);
   border-radius: var(--radius-pill);
   padding: 2px 9px;
-}
-
-.group-card-meta {
-  font-size: 13px;
-  color: var(--color-text-muted);
-}
-
-.group-card-progress {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.group-card-bar {
-  width: 120px;
-  flex-shrink: 0;
-  height: 6px;
-}
-
-.group-card-count {
-  font-size: 12px;
-  font-weight: 700;
 }
 
 /* ===== Página do grupo ===== */
