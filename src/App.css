@@ -526,114 +526,46 @@
 /* Busca da categoria: mesmo campo da Quick search, sem ocupar a linha inteira */
 .category-search { max-width: 420px; }
 
+/* Grade dos cards: quantos couberem com no mínimo 240px cada (auto-fill) */
 .group-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(min(240px, 100%), 1fr));
+  gap: 12px;
 }
 
-/* Retângulo 8:5 — escrita no branco à esquerda (40%), foto à direita (60%).
-   Com 8:5, 60% da largura é quase a altura: a foto fica praticamente quadrada. */
+/* Card compacto de 112px. A foto fica por trás da metade direita
+   (position: absolute) e o texto por cima dela (z-index), então o texto
+   pode usar mais da metade da largura: o fade da foto abre espaço. */
 .group-card {
-  aspect-ratio: 8 / 5;
+  position: relative;
+  height: 112px;
   overflow: hidden;
   padding: 0;
   background: var(--color-surface);
   border: 1px solid var(--color-border);
-  border-radius: 22px;
-  display: grid;
-  grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
+  border-radius: 12px;
+  display: flex;
   text-align: left;
+  color: var(--color-text);
   cursor: pointer;
 }
 
-.group-card-info {
-  min-width: 0;
-  padding: 16px 8px 14px 16px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 10px;
-}
+.group-card:hover { border-color: var(--color-underline); }
 
-/* O tamanho da fonte vem do componente (getNameSize): depende da maior palavra */
-.group-card-name {
-  font-family: var(--font-display);
-  font-weight: 800;
-  line-height: 1.15;
-  letter-spacing: -0.01em;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-
-/* CARDS / MEMBERS / SETS, um embaixo do outro */
-.group-card-stats {
-  display: flex;
-  flex-direction: column;
-  gap: 1px;
-}
-
-.group-card-stat {
-  display: flex;
-  align-items: baseline;
-  gap: 8px;
-  font-size: 13px;
-}
-
-/* Valor comprido (nome do grupo na Collection) termina em "…" */
-.group-card-stat b {
-  min-width: 0;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.group-card-label {
-  width: 54px;
-  flex-shrink: 0;
-  font-size: 10px;
-  font-weight: 600;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  color: var(--color-text-muted);
-}
-
-/* Barra curta na coluna dos rótulos, contagem alinhada com os números */
-.group-card-progress {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.group-card-bar {
-  width: 54px;
-  flex-shrink: 0;
-  height: 5px;
-}
-
-.group-card-count {
-  font-size: 11px;
-  font-weight: 700;
-  white-space: nowrap;
-}
-
-/* Foto com fade curto na borda esquerda (ocupa a coluna inteira) */
+/* Foto: 52% da direita, apagada da esquerda (transparente) para a direita
+   (opaca) com mask-image. Sem foto, fica a cor pastel de fundo. */
 .group-card-photo {
-  position: relative;
-}
-
-.group-card-photo-img {
   position: absolute;
-  inset: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 52%;
   background: var(--pastel-1);
-  -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 25%);
-  mask-image: linear-gradient(to right, transparent 0%, #000 25%);
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 45%);
+  mask-image: linear-gradient(to right, transparent 0%, #000 45%);
 }
 
-.group-card-photo-img img {
+.group-card-photo img {
   display: block;
   width: 100%;
   height: 100%;
@@ -641,23 +573,76 @@
 }
 
 /* Paleta alternando: 1º, 2º, 3º... e recomeça no 7º */
-.group-card:nth-child(6n+2) .group-card-photo-img { background: var(--pastel-2); }
-.group-card:nth-child(6n+3) .group-card-photo-img { background: var(--pastel-3); }
-.group-card:nth-child(6n+4) .group-card-photo-img { background: var(--pastel-4); }
-.group-card:nth-child(6n+5) .group-card-photo-img { background: var(--pastel-5); }
-.group-card:nth-child(6n+6) .group-card-photo-img { background: var(--pastel-6); }
+.group-card:nth-child(6n+2) .group-card-photo { background: var(--pastel-2); }
+.group-card:nth-child(6n+3) .group-card-photo { background: var(--pastel-3); }
+.group-card:nth-child(6n+4) .group-card-photo { background: var(--pastel-4); }
+.group-card:nth-child(6n+5) .group-card-photo { background: var(--pastel-5); }
+.group-card:nth-child(6n+6) .group-card-photo { background: var(--pastel-6); }
 
 /* Código do grupo numa etiqueta escura no canto da foto */
 .group-card-code {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  z-index: 2;
+  top: 8px;
+  right: 8px;
   font-size: 11px;
   font-weight: 700;
   color: #FFFFFF;
   background: rgba(24, 21, 43, 0.78);
-  border-radius: var(--radius-pill);
-  padding: 2px 9px;
+  border-radius: 6px;
+  padding: 2px 6px;
+}
+
+.group-card-info {
+  position: relative;
+  z-index: 1;
+  width: 62%;
+  min-width: 0;
+  padding: 12px 14px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Nome em até 2 linhas (quebra entre palavras); passando disso, "…" no
+   fim da 2ª. line-clamp precisa do display -webkit-box e do overflow. */
+.group-card-name {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.3;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  overflow: hidden;
+}
+
+.group-card-details {
+  margin-top: 2px;
+  font-size: 12px;
+  color: var(--color-text-muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Progresso no pé do card (margin-top: auto empurra para baixo) */
+.group-card-progress {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.group-card-bar {
+  width: 70px;
+  flex: none;
+  height: 4px;
+}
+
+.group-card-count {
+  font-size: 12px;
+  color: var(--color-text-muted);
+  white-space: nowrap;
 }
 
 /* ===== Página do grupo ===== */

@@ -54,19 +54,16 @@ export function CategoryView({ category, categories, onCategoryChange, groups, q
       <div className="group-grid">
         {visibleGroups.map(g => {
           const { owned, total, pct } = getGroupProgress(g, ownedCards);
-          // Solista não tem "Members" (seria sempre 1); evento só mostra "Sets"
-          // se tiver mais de uma página (Hanbin Comics)
-          const stats = [
-            ['Cards', total],
-            g.type === 'group' && ['Members', g.members],
-            (g.type !== 'event' || g.sets > 1) && ['Sets', g.sets],
-          ].filter(Boolean);
+          // Linha de baixo do nome: só "8 members", nos grupos. Solista e
+          // evento ficam sem (os sets a pessoa descobre dentro do grupo, e a
+          // quantidade de cartas já está no progresso).
+          const details = g.type === 'group' ? plural(g.members, 'member') : null;
 
           return (
             <GroupCard
               key={g.code}
               name={g.name}
-              stats={stats}
+              details={details}
               owned={owned}
               total={total}
               pct={pct}
