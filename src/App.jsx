@@ -15,6 +15,10 @@ function App() {
   const [selectedGroup, setSelectedGroup] = useState(null);
   const [expandedSets, setExpandedSets] = useState({});
   const [currentView, setCurrentView] = useState("dashboard");
+  // Busca da categoria: o texto fica guardado junto com a categoria em que foi
+  // digitado. Assim continua ao voltar de um grupo e some ao trocar de categoria.
+  const [categorySearch, setCategorySearch] = useState({ category: null, text: "" });
+  const categoryQuery = categorySearch.category === activeTab ? categorySearch.text : "";
 
   useEffect(
     () => localStorage.setItem("hanbin-collection", JSON.stringify(ownedCards)),
@@ -160,6 +164,8 @@ function App() {
             <CategoryView
               category={activeTab}
               groups={filteredGroups}
+              query={categoryQuery}
+              onQueryChange={(text) => setCategorySearch({ category: activeTab, text })}
               ownedCards={ownedCards}
               onGroupSelect={setSelectedGroup}
             />

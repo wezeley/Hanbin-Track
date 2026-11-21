@@ -13,9 +13,16 @@ function GroupPhoto({ group }) {
   return <img src={url} alt="" loading="lazy" onError={() => setFailed(true)} />;
 }
 
-export function CategoryView({ category, groups, ownedCards, onGroupSelect }) {
+export function CategoryView({ category, groups, query, onQueryChange, ownedCards, onGroupSelect }) {
   // ===== Cálculos =====
-  const groupCountLabel = plural(groups.length, 'group');
+  // Busca pelo nome ou pelo código (SKZ acha o Stray Kids), sem diferenciar maiúsculas.
+  const search = query.trim().toLowerCase();
+  const visibleGroups = search
+    ? groups.filter(g => g.name.toLowerCase().includes(search) || g.code.toLowerCase().includes(search))
+    : groups;
+  const groupCountLabel = search
+    ? `${visibleGroups.length} of ${plural(groups.length, 'group')}`
+    : plural(groups.length, 'group');
 
   // ===== Tela =====
   return (
@@ -25,8 +32,24 @@ export function CategoryView({ category, groups, ownedCards, onGroupSelect }) {
         <span className="text-muted">{groupCountLabel}</span>
       </div>
 
+      <div className="search-field category-search">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" aria-hidden="true">
+          <circle cx="11" cy="11" r="7" />
+          <path d="M20 20l-3.5-3.5" />
+        </svg>
+        <input
+          type="search"
+          placeholder={`Search in ${category}...`}
+          aria-label={`Search in ${category}`}
+          value={query}
+          onChange={(e) => onQueryChange(e.target.value)}
+        />
+      </div>
+
+      {visibleGroups.length === 0 && <p className="text-muted">No groups found.</p>}
+
       <div className="group-grid">
-        {groups.map(g => {
+        {visibleGroups.map(g => {
           const { owned, total, pct } = getGroupProgress(g, ownedCards);
           const stats = [['Cards', total], ['Members', g.members], ['Sets', g.sets]];
 

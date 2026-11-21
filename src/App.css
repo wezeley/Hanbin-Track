@@ -420,6 +420,9 @@
   letter-spacing: -0.03em;
 }
 
+/* Busca da categoria: mesmo campo da Quick search, sem ocupar a linha inteira */
+.category-search { max-width: 420px; }
+
 .group-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr));
