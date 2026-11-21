@@ -61,6 +61,12 @@ function App() {
   const filteredGroups = GROUPS.filter(
     (g) => g.category?.toLowerCase() === activeTab?.toLowerCase(),
   );
+
+  // Largura da área principal: a página do grupo é um pouco mais larga e a
+  // da categoria usa a tela inteira (até 1600px) para caber mais cards.
+  const isGroupPage = currentView === "dashboard" && selectedGroup;
+  const isCategoryPage = currentView === "dashboard" && activeTab && !selectedGroup;
+  const mainWidthClass = isGroupPage ? "app-main-wide" : isCategoryPage ? "app-main-full" : "";
   const isHomeActive = currentView !== "dashboard" || !activeTab;
 
   return (
@@ -132,7 +138,7 @@ function App() {
         />
 
         <main
-          className={`app-main ${selectedGroup && currentView === "dashboard" ? "app-main-wide" : ""}`}
+          className={`app-main ${mainWidthClass}`}
         >
           {currentView !== "dashboard" ? (
             <p>Em breve.</p>
