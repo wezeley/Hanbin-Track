@@ -20,9 +20,13 @@
 //   radiants.json   Radiant Overview (blocos de radiantes)
 //   todo.json       To-Do Order e To-Do Order Solo ("released" = já tem carta)
 //   people.json     cada pessoa e onde aparece, para a busca (scripts/montar-pessoas.mjs)
+//   collections.json  as coleções (cartas com a mesma Description) (scripts/montar-colecoes.mjs)
+//   history.json    quando cada carta apareceu, para a aba Cards (scripts/montar-historico.mjs)
 
 import { mkdir, rm, writeFile } from 'node:fs/promises';
 import { buildPeople } from './montar-pessoas.mjs';
+import { buildCollections } from './montar-colecoes.mjs';
+import { updateHistory } from './montar-historico.mjs';
 
 const SHEET = 'https://docs.google.com/spreadsheets/d/REMOVIDO';
 const OUT_DIR = new URL('../src/data/sheet/', import.meta.url);
@@ -189,6 +193,9 @@ function readGroupTab(tab, number, rows) {
     warn('Aba em formato diferente', where, `cabeçalho: ${(rows[0] ?? []).filter(Boolean).join(' | ')}`);
     return null;
   }
+  // Description (o comeback ou photoshoot da carta: "ATE - Concept Photos") é
+  // opcional: aba sem essa coluna continua sendo lida, com description null.
+  const descriptionCol = (rows[0] ?? []).indexOf('Description');
 
   const cards = [];
   const seenCodes = new Set();
@@ -213,6 +220,7 @@ function readGroupTab(tab, number, rows) {
       initial: row[col.Initial],
       rarity: readRarity(row[col.Rarity], code, invalidRarities),
       set: null,
+      description: (descriptionCol >= 0 && row[descriptionCol]?.trim()) || null,
       link: readLink(row[col.Link], code, missingLinks),
     });
   }
@@ -613,6 +621,8 @@ await save(new URL('radiants.json', OUT_DIR), radiants);
 await save(new URL('todo.json', OUT_DIR), todo);
 // Lê os arquivos que acabaram de ser gravados
 const peopleCount = await buildPeople();
+const newCards = await updateHistory(); // antes das coleções: elas são ordenadas pelo histórico
+const collectionCount = await buildCollections();
 
 // ---------- Resumo ----------
 
@@ -623,6 +633,8 @@ console.log(`Grupos gravados: ${groups.length} (${count(groups)} cartas)`);
 console.log(`Eventos: ${events.blocks.length} blocos (${count(events.blocks)} cartas)`);
 console.log(`Radiantes: ${radiants.blocks.length} blocos (${count(radiants.blocks)} cartas)`);
 console.log(`Pessoas para a busca (people.json): ${peopleCount}`);
+console.log(`Coleções (collections.json): ${collectionCount}`);
+console.log(`Cartas novas desde a última vez (history.json): ${newCards}`);
 console.log(`Abas de evento/radiante puladas (vêm dos Overviews): ${skippedAsEvent.length}`);
 console.log(`Outras abas: ${otherTabs.join(', ')} (${SKIPPED_TABS.join(', ')} fica de fora)`);
 

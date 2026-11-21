@@ -11,7 +11,9 @@
     "fotos": "node scripts/buscar-fotos.mjs",
     "planilha": "node scripts/baixar-planilha.mjs",
     "categorias": "node scripts/buscar-categorias.mjs",
-    "pessoas": "node scripts/montar-pessoas.mjs"
+    "pessoas": "node scripts/montar-pessoas.mjs",
+    "colecoes": "node scripts/montar-colecoes.mjs",
+    "historico": "node scripts/montar-historico.mjs"
   },
   "dependencies": {
     "react": "^19.2.7",
