@@ -1047,12 +1047,12 @@
   color: var(--color-text-muted);
 }
 
-/* ===== Celular (até 720px) =====
+/* ===== Celular (até 768px) =====
    Linha 1: logo e colecionador. Linha 2: os 5 links como abas que rolam
    para o lado (opção b), com a aba ativa escura, como o celular já era.
    As categorias ficam nos chips da página de categoria.
    No computador nada disso vale. */
-@media (max-width: 720px) {
+@media (max-width: 768px) {
   .header-inner {
     display: grid;
     grid-template-columns: minmax(0, 1fr) auto;
@@ -1133,6 +1133,22 @@
 
   /* Card de coleção: leque mais estreito, mais espaço para o texto */
   .collection-card { grid-template-columns: minmax(0, 1fr) 120px; }
+
+  /* Cards de grupo: 1 coluna, 76px de altura. Nome, "8 members" e barra
+     só cabem nessa altura com o nome em 1 linha (o "…" é raro: o card
+     ocupa a largura toda). A foto encolhe para 45%. */
+  .group-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 8px;
+  }
+
+  .group-card { height: 76px; }
+
+  .group-card-photo { width: 45%; }
+
+  .group-card-info { padding: 10px 12px; }
+
+  .group-card-name { -webkit-line-clamp: 1; line-clamp: 1; }
 
   /* Fichário: lombada fina e menos espaço em volta, para caberem 3 cartas
      por linha num celular de 390px (cada carta tem no mínimo 100px). */
